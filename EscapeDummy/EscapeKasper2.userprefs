@@ -1,0 +1,20 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AttackEnemy.cs">
+    <Files>
+      <File FileName="Assets\Scripts\AttackEnemyManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\Effects\ImageEffects\Scripts\SepiaTone.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlatformerCharacter2D.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\EnemyMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\AttackEnemy.cs" Line="73" Column="33" />
+      <File FileName="Assets\Scripts\HitpointsPlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ComboManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\HitpointsPlayerTotal.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerDetect.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

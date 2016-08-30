@@ -1,0 +1,1347 @@
+fileFormatVersion: 2
+guid: 81e86761387f66945887af05a392ad37
+timeCreated: 1471591819
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: LeadCharAnimsIdleLookUp_0
+    21300002: LeadCharAnimsIdleLookUp_1
+    21300004: LeadCharAnimsIdleLookUp_2
+    21300006: LeadCharAnimsIdleLookUp_3
+    21300008: LeadCharAnimsIdleLookUp_4
+    21300010: LeadCharAnimsIdleLookUp_5
+    21300012: LeadCharAnimsIdleLookUp_6
+    21300014: LeadCharAnimsIdleLookUp_7
+    21300016: LeadCharAnimsIdleLookUp_8
+    21300018: LeadCharAnimsIdleLookUp_9
+    21300020: LeadCharAnimsIdleLookUp_10
+    21300022: LeadCharAnimsIdleLookUp_11
+    21300024: LeadCharAnimsIdleLookUp_12
+    21300026: LeadCharAnimsIdleLookUp_13
+    21300028: LeadCharAnimsIdleLookUp_14
+    21300030: LeadCharAnimsIdleLookUp_15
+    21300032: LeadCharAnimsIdleLookUp_16
+    21300034: LeadCharAnimsIdleLookUp_17
+    21300036: LeadCharAnimsIdleLookUp_18
+    21300038: LeadCharAnimsIdleLookUp_19
+    21300040: LeadCharAnimsIdleLookUp_20
+    21300042: LeadCharAnimsIdleLookUp_21
+    21300044: LeadCharAnimsIdleLookUp_22
+    21300046: LeadCharAnimsIdleLookUp_23
+    21300048: LeadCharAnimsIdleLookUp_24
+    21300050: LeadCharAnimsIdleLookUp_25
+    21300052: LeadCharAnimsIdleLookUp_26
+    21300054: LeadCharAnimsIdleLookUp_27
+    21300056: LeadCharAnimsIdleLookUp_28
+    21300058: LeadCharAnimsIdleLookUp_29
+    21300060: LeadCharAnimsIdleLookUp_30
+    21300062: LeadCharAnimsIdleLookUp_31
+    21300064: LeadCharAnimsIdleLookUp_32
+    21300066: LeadCharAnimsIdleLookUp_33
+    21300068: LeadCharAnimsIdleLookUp_34
+    21300070: LeadCharAnimsIdleLookUp_35
+    21300072: LeadCharAnimsIdleLookUp_36
+    21300074: LeadCharAnimsIdleLookUp_37
+    21300076: LeadCharAnimsIdleLookUp_38
+    21300078: LeadCharAnimsIdleLookUp_39
+    21300080: LeadCharAnimsIdleLookUp_40
+    21300082: LeadCharAnimsIdleLookUp_41
+    21300084: LeadCharAnimsIdleLookUp_42
+    21300086: LeadCharAnimsIdleLookUp_43
+    21300088: LeadCharAnimsIdleLookUp_44
+    21300090: LeadCharAnimsIdleLookUp_45
+    21300092: LeadCharAnimsIdleLookUp_46
+    21300094: LeadCharAnimsIdleLookUp_47
+    21300096: LeadCharAnimsIdleLookUp_48
+    21300098: LeadCharAnimsIdleLookUp_49
+    21300100: LeadCharAnimsIdleLookUp_50
+    21300102: LeadCharAnimsIdleLookUp_51
+    21300104: LeadCharAnimsIdleLookUp_52
+    21300106: LeadCharAnimsIdleLookUp_53
+    21300108: LeadCharAnimsIdleLookUp_54
+    21300110: LeadCharAnimsIdleLookUp_55
+    21300112: LeadCharAnimsIdleLookUp_56
+    21300114: LeadCharAnimsIdleLookUp_57
+    21300116: LeadCharAnimsIdleLookUp_58
+    21300118: LeadCharAnimsIdleLookUp_59
+    21300120: LeadCharAnimsIdleLookUp_60
+    21300122: LeadCharAnimsIdleLookUp_61
+    21300124: LeadCharAnimsIdleLookUp_62
+    21300126: LeadCharAnimsIdleLookUp_63
+    21300128: LeadCharAnimsIdleLookUp_64
+    21300130: LeadCharAnimsIdleLookUp_65
+    21300132: LeadCharAnimsIdleLookUp_66
+    21300134: LeadCharAnimsIdleLookUp_67
+    21300136: LeadCharAnimsIdleLookUp_68
+    21300138: LeadCharAnimsIdleLookUp_69
+    21300140: LeadCharAnimsIdleLookUp_70
+    21300142: LeadCharAnimsIdleLookUp_71
+    21300144: LeadCharAnimsIdleLookUp_72
+    21300146: LeadCharAnimsIdleLookUp_73
+    21300148: LeadCharAnimsIdleLookUp_74
+    21300150: LeadCharAnimsIdleLookUp_75
+    21300152: LeadCharAnimsIdleLookUp_76
+    21300154: LeadCharAnimsIdleLookUp_77
+    21300156: LeadCharAnimsIdleLookUp_78
+    21300158: LeadCharAnimsIdleLookUp_79
+    21300160: LeadCharAnimsIdleLookUp_80
+    21300162: LeadCharAnimsIdleLookUp_81
+    21300164: LeadCharAnimsIdleLookUp_82
+    21300166: LeadCharAnimsIdleLookUp_83
+    21300168: LeadCharAnimsIdleLookUp_84
+    21300170: LeadCharAnimsIdleLookUp_85
+    21300172: LeadCharAnimsIdleLookUp_86
+    21300174: LeadCharAnimsIdleLookUp_87
+    21300176: LeadCharAnimsIdleLookUp_88
+    21300178: LeadCharAnimsIdleLookUp_89
+    21300180: LeadCharAnimsIdleLookUp_90
+    21300182: LeadCharAnimsIdleLookUp_91
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_1
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_2
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_3
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_4
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_5
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_6
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_7
+      rect:
+        serializedVersion: 2
+        x: 4361
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_8
+      rect:
+        serializedVersion: 2
+        x: 4984
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_9
+      rect:
+        serializedVersion: 2
+        x: 5607
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_10
+      rect:
+        serializedVersion: 2
+        x: 6230
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_11
+      rect:
+        serializedVersion: 2
+        x: 6853
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_12
+      rect:
+        serializedVersion: 2
+        x: 7476
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_14
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_15
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_16
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_17
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_18
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_19
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_20
+      rect:
+        serializedVersion: 2
+        x: 4361
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_21
+      rect:
+        serializedVersion: 2
+        x: 4984
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_22
+      rect:
+        serializedVersion: 2
+        x: 5607
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_23
+      rect:
+        serializedVersion: 2
+        x: 6230
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_24
+      rect:
+        serializedVersion: 2
+        x: 6853
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_25
+      rect:
+        serializedVersion: 2
+        x: 7476
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_27
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_28
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_29
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_30
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_31
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_32
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_33
+      rect:
+        serializedVersion: 2
+        x: 4361
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_34
+      rect:
+        serializedVersion: 2
+        x: 4984
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_35
+      rect:
+        serializedVersion: 2
+        x: 5607
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_36
+      rect:
+        serializedVersion: 2
+        x: 6230
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_37
+      rect:
+        serializedVersion: 2
+        x: 6853
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_38
+      rect:
+        serializedVersion: 2
+        x: 7476
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_40
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_41
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_42
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_43
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_44
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_45
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_46
+      rect:
+        serializedVersion: 2
+        x: 4361
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_47
+      rect:
+        serializedVersion: 2
+        x: 4984
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_48
+      rect:
+        serializedVersion: 2
+        x: 5607
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_49
+      rect:
+        serializedVersion: 2
+        x: 6230
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_50
+      rect:
+        serializedVersion: 2
+        x: 6853
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_51
+      rect:
+        serializedVersion: 2
+        x: 7476
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_53
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_54
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_55
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_56
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_57
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_58
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_59
+      rect:
+        serializedVersion: 2
+        x: 4361
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_60
+      rect:
+        serializedVersion: 2
+        x: 4984
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_61
+      rect:
+        serializedVersion: 2
+        x: 5607
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_62
+      rect:
+        serializedVersion: 2
+        x: 6230
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_63
+      rect:
+        serializedVersion: 2
+        x: 6853
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_64
+      rect:
+        serializedVersion: 2
+        x: 7476
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2564
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_66
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 2564
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_67
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 2564
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_68
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 2564
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_69
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 2564
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_70
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 2564
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_71
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 2564
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_72
+      rect:
+        serializedVersion: 2
+        x: 4361
+        y: 2564
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_73
+      rect:
+        serializedVersion: 2
+        x: 4984
+        y: 2564
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_74
+      rect:
+        serializedVersion: 2
+        x: 5607
+        y: 2564
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_75
+      rect:
+        serializedVersion: 2
+        x: 6230
+        y: 2564
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_76
+      rect:
+        serializedVersion: 2
+        x: 6853
+        y: 2564
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_77
+      rect:
+        serializedVersion: 2
+        x: 7476
+        y: 2564
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1626
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_79
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1626
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_80
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 1626
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_81
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 1626
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_82
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 1626
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_83
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 1626
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_84
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 1626
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_85
+      rect:
+        serializedVersion: 2
+        x: 4361
+        y: 1626
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_86
+      rect:
+        serializedVersion: 2
+        x: 4984
+        y: 1626
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_87
+      rect:
+        serializedVersion: 2
+        x: 5607
+        y: 1626
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_88
+      rect:
+        serializedVersion: 2
+        x: 6230
+        y: 1626
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_89
+      rect:
+        serializedVersion: 2
+        x: 6853
+        y: 1626
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_90
+      rect:
+        serializedVersion: 2
+        x: 7476
+        y: 1626
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookUp_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 688
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

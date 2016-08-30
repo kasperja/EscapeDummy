@@ -1,0 +1,381 @@
+fileFormatVersion: 2
+guid: 4afc137a4b70f074a873726a5879cf30
+timeCreated: 1472465410
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: LeadCharStrike01_0
+    21300002: LeadCharStrike01_1
+    21300004: LeadCharStrike01_2
+    21300006: LeadCharStrike01_3
+    21300008: LeadCharStrike01_4
+    21300010: LeadCharStrike01_5
+    21300012: LeadCharStrike01_6
+    21300014: LeadCharStrike01_7
+    21300016: LeadCharStrike01_8
+    21300018: LeadCharStrike01_9
+    21300020: LeadCharStrike01_10
+    21300022: LeadCharStrike01_11
+    21300024: LeadCharStrike01_12
+    21300026: LeadCharStrike01_13
+    21300028: LeadCharStrike01_14
+    21300030: LeadCharStrike01_15
+    21300032: LeadCharStrike01_16
+    21300034: LeadCharStrike01_17
+    21300036: LeadCharStrike01_18
+    21300038: LeadCharStrike01_19
+    21300040: LeadCharStrike01_20
+    21300042: LeadCharStrike01_21
+    21300044: LeadCharStrike01_22
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LeadCharStrike01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7159
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_1
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 7159
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_2
+      rect:
+        serializedVersion: 2
+        x: 2906
+        y: 7159
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_3
+      rect:
+        serializedVersion: 2
+        x: 4359
+        y: 7159
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_4
+      rect:
+        serializedVersion: 2
+        x: 5812
+        y: 7159
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6126
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_6
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 6126
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_7
+      rect:
+        serializedVersion: 2
+        x: 2906
+        y: 6126
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_8
+      rect:
+        serializedVersion: 2
+        x: 4359
+        y: 6126
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_9
+      rect:
+        serializedVersion: 2
+        x: 5812
+        y: 6126
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5093
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_11
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 5093
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_12
+      rect:
+        serializedVersion: 2
+        x: 2906
+        y: 5093
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_13
+      rect:
+        serializedVersion: 2
+        x: 4359
+        y: 5093
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_14
+      rect:
+        serializedVersion: 2
+        x: 5812
+        y: 5093
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4060
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_16
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 4060
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_17
+      rect:
+        serializedVersion: 2
+        x: 2906
+        y: 4060
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_18
+      rect:
+        serializedVersion: 2
+        x: 4359
+        y: 4060
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_19
+      rect:
+        serializedVersion: 2
+        x: 5812
+        y: 4060
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3027
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_21
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 3027
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharStrike01_22
+      rect:
+        serializedVersion: 2
+        x: 2906
+        y: 3027
+        width: 1453
+        height: 1033
+      alignment: 9
+      pivot: {x: 0.385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

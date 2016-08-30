@@ -1,0 +1,395 @@
+fileFormatVersion: 2
+guid: 84427bb550cf639439d5833f61f15d35
+timeCreated: 1471592155
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: LeadCharAnims02_0
+    21300002: LeadCharAnims02_1
+    21300004: LeadCharAnims02_2
+    21300006: LeadCharAnims02_3
+    21300008: LeadCharAnims02_4
+    21300010: LeadCharAnims02_5
+    21300012: LeadCharAnims02_6
+    21300014: LeadCharAnims02_7
+    21300016: LeadCharAnims02_8
+    21300018: LeadCharAnims02_9
+    21300020: LeadCharAnims02_10
+    21300022: LeadCharAnims02_11
+    21300024: LeadCharAnims02_12
+    21300026: LeadCharAnims02_13
+    21300028: LeadCharAnims02_14
+    21300030: LeadCharAnims02_15
+    21300032: LeadCharAnims02_16
+    21300034: LeadCharAnims02_17
+    21300036: LeadCharAnims02_18
+    21300038: LeadCharAnims02_19
+    21300040: LeadCharAnims02_20
+    21300042: LeadCharAnims02_21
+    21300044: LeadCharAnims02_22
+    21300046: LeadCharAnims02_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LeadCharAnims02_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7252
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_1
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 7252
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_2
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 7252
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_3
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 7252
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6312
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_5
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 6312
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_6
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 6312
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_7
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 6312
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5372
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_9
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 5372
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_10
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 5372
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_11
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 5372
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4432
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_13
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 4432
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_14
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 4432
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_15
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 4432
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3492
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_17
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 3492
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_18
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 3492
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_19
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 3492
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2552
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_21
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2552
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_22
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 2552
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnims02_23
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 2552
+        width: 864
+        height: 940
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

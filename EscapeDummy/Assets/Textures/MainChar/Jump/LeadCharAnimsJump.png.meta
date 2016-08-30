@@ -1,0 +1,647 @@
+fileFormatVersion: 2
+guid: 99f70201094cbd043ab55dcdb1b577f7
+timeCreated: 1471592463
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: LeadCharAnimsJump_0
+    21300002: LeadCharAnimsJump_1
+    21300004: LeadCharAnimsJump_2
+    21300006: LeadCharAnimsJump_3
+    21300008: LeadCharAnimsJump_4
+    21300010: LeadCharAnimsJump_5
+    21300012: LeadCharAnimsJump_6
+    21300014: LeadCharAnimsJump_7
+    21300016: LeadCharAnimsJump_8
+    21300018: LeadCharAnimsJump_9
+    21300020: LeadCharAnimsJump_10
+    21300022: LeadCharAnimsJump_11
+    21300024: LeadCharAnimsJump_12
+    21300026: LeadCharAnimsJump_13
+    21300028: LeadCharAnimsJump_14
+    21300030: LeadCharAnimsJump_15
+    21300032: LeadCharAnimsJump_16
+    21300034: LeadCharAnimsJump_17
+    21300036: LeadCharAnimsJump_18
+    21300038: LeadCharAnimsJump_19
+    21300040: LeadCharAnimsJump_20
+    21300042: LeadCharAnimsJump_21
+    21300044: LeadCharAnimsJump_22
+    21300046: LeadCharAnimsJump_23
+    21300048: LeadCharAnimsJump_24
+    21300050: LeadCharAnimsJump_25
+    21300052: LeadCharAnimsJump_26
+    21300054: LeadCharAnimsJump_27
+    21300056: LeadCharAnimsJump_28
+    21300058: LeadCharAnimsJump_29
+    21300060: LeadCharAnimsJump_30
+    21300062: LeadCharAnimsJump_31
+    21300064: LeadCharAnimsJump_32
+    21300066: LeadCharAnimsJump_33
+    21300068: LeadCharAnimsJump_34
+    21300070: LeadCharAnimsJump_35
+    21300072: LeadCharAnimsJump_36
+    21300074: LeadCharAnimsJump_37
+    21300076: LeadCharAnimsJump_38
+    21300078: LeadCharAnimsJump_39
+    21300080: LeadCharAnimsJump_40
+    21300082: LeadCharAnimsJump_41
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7037
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_1
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 7037
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_2
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 7037
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_3
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 7037
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_4
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 7037
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_5
+      rect:
+        serializedVersion: 2
+        x: 3550
+        y: 7037
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_6
+      rect:
+        serializedVersion: 2
+        x: 4260
+        y: 7037
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_7
+      rect:
+        serializedVersion: 2
+        x: 4970
+        y: 7037
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_8
+      rect:
+        serializedVersion: 2
+        x: 5680
+        y: 7037
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_9
+      rect:
+        serializedVersion: 2
+        x: 6390
+        y: 7037
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_10
+      rect:
+        serializedVersion: 2
+        x: 7100
+        y: 7037
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5882
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_12
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 5882
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_13
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 5882
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_14
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 5882
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_15
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 5882
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_16
+      rect:
+        serializedVersion: 2
+        x: 3550
+        y: 5882
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_17
+      rect:
+        serializedVersion: 2
+        x: 4260
+        y: 5882
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_18
+      rect:
+        serializedVersion: 2
+        x: 4970
+        y: 5882
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_19
+      rect:
+        serializedVersion: 2
+        x: 5680
+        y: 5882
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_20
+      rect:
+        serializedVersion: 2
+        x: 6390
+        y: 5882
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_21
+      rect:
+        serializedVersion: 2
+        x: 7100
+        y: 5882
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4727
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_23
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 4727
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_24
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 4727
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_25
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 4727
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_26
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 4727
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_27
+      rect:
+        serializedVersion: 2
+        x: 3550
+        y: 4727
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_28
+      rect:
+        serializedVersion: 2
+        x: 4260
+        y: 4727
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_29
+      rect:
+        serializedVersion: 2
+        x: 4970
+        y: 4727
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_30
+      rect:
+        serializedVersion: 2
+        x: 5680
+        y: 4727
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_31
+      rect:
+        serializedVersion: 2
+        x: 6390
+        y: 4727
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_32
+      rect:
+        serializedVersion: 2
+        x: 7100
+        y: 4727
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3572
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_34
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 3572
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_35
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 3572
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_36
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 3572
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_37
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 3572
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_38
+      rect:
+        serializedVersion: 2
+        x: 3550
+        y: 3572
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_39
+      rect:
+        serializedVersion: 2
+        x: 4260
+        y: 3572
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_40
+      rect:
+        serializedVersion: 2
+        x: 4970
+        y: 3572
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJump_41
+      rect:
+        serializedVersion: 2
+        x: 5680
+        y: 3572
+        width: 710
+        height: 1155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

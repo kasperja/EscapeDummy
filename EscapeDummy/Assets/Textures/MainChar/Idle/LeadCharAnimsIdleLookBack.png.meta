@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: e0fb3f06710c72a4dacfd6aca7761971
+timeCreated: 1471591944
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: LeadCharAnimsIdleLookBack_0
+    21300002: LeadCharAnimsIdleLookBack_1
+    21300004: LeadCharAnimsIdleLookBack_2
+    21300006: LeadCharAnimsIdleLookBack_3
+    21300008: LeadCharAnimsIdleLookBack_4
+    21300010: LeadCharAnimsIdleLookBack_5
+    21300012: LeadCharAnimsIdleLookBack_6
+    21300014: LeadCharAnimsIdleLookBack_7
+    21300016: LeadCharAnimsIdleLookBack_8
+    21300018: LeadCharAnimsIdleLookBack_9
+    21300020: LeadCharAnimsIdleLookBack_10
+    21300022: LeadCharAnimsIdleLookBack_11
+    21300024: LeadCharAnimsIdleLookBack_12
+    21300026: LeadCharAnimsIdleLookBack_13
+    21300028: LeadCharAnimsIdleLookBack_14
+    21300030: LeadCharAnimsIdleLookBack_15
+    21300032: LeadCharAnimsIdleLookBack_16
+    21300034: LeadCharAnimsIdleLookBack_17
+    21300036: LeadCharAnimsIdleLookBack_18
+    21300038: LeadCharAnimsIdleLookBack_19
+    21300040: LeadCharAnimsIdleLookBack_20
+    21300042: LeadCharAnimsIdleLookBack_21
+    21300044: LeadCharAnimsIdleLookBack_22
+    21300046: LeadCharAnimsIdleLookBack_23
+    21300048: LeadCharAnimsIdleLookBack_24
+    21300050: LeadCharAnimsIdleLookBack_25
+    21300052: LeadCharAnimsIdleLookBack_26
+    21300054: LeadCharAnimsIdleLookBack_27
+    21300056: LeadCharAnimsIdleLookBack_28
+    21300058: LeadCharAnimsIdleLookBack_29
+    21300060: LeadCharAnimsIdleLookBack_30
+    21300062: LeadCharAnimsIdleLookBack_31
+    21300064: LeadCharAnimsIdleLookBack_32
+    21300066: LeadCharAnimsIdleLookBack_33
+    21300068: LeadCharAnimsIdleLookBack_34
+    21300070: LeadCharAnimsIdleLookBack_35
+    21300072: LeadCharAnimsIdleLookBack_36
+    21300074: LeadCharAnimsIdleLookBack_37
+    21300076: LeadCharAnimsIdleLookBack_38
+    21300078: LeadCharAnimsIdleLookBack_39
+    21300080: LeadCharAnimsIdleLookBack_40
+    21300082: LeadCharAnimsIdleLookBack_41
+    21300084: LeadCharAnimsIdleLookBack_42
+    21300086: LeadCharAnimsIdleLookBack_43
+    21300088: LeadCharAnimsIdleLookBack_44
+    21300090: LeadCharAnimsIdleLookBack_45
+    21300092: LeadCharAnimsIdleLookBack_46
+    21300094: LeadCharAnimsIdleLookBack_47
+    21300096: LeadCharAnimsIdleLookBack_48
+    21300098: LeadCharAnimsIdleLookBack_49
+    21300100: LeadCharAnimsIdleLookBack_50
+    21300102: LeadCharAnimsIdleLookBack_51
+    21300104: LeadCharAnimsIdleLookBack_52
+    21300106: LeadCharAnimsIdleLookBack_53
+    21300108: LeadCharAnimsIdleLookBack_54
+    21300110: LeadCharAnimsIdleLookBack_55
+    21300112: LeadCharAnimsIdleLookBack_56
+    21300114: LeadCharAnimsIdleLookBack_57
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7264
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_1
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 7264
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_2
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 7264
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_3
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 7264
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_4
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 7264
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_5
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 7264
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_6
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 7264
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_7
+      rect:
+        serializedVersion: 2
+        x: 4361
+        y: 7264
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_8
+      rect:
+        serializedVersion: 2
+        x: 4984
+        y: 7264
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_9
+      rect:
+        serializedVersion: 2
+        x: 5607
+        y: 7264
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_10
+      rect:
+        serializedVersion: 2
+        x: 6230
+        y: 7264
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_11
+      rect:
+        serializedVersion: 2
+        x: 6853
+        y: 7264
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_12
+      rect:
+        serializedVersion: 2
+        x: 7476
+        y: 7264
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6336
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_14
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 6336
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_15
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 6336
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_16
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 6336
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_17
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 6336
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_18
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 6336
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_19
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 6336
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_20
+      rect:
+        serializedVersion: 2
+        x: 4361
+        y: 6336
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_21
+      rect:
+        serializedVersion: 2
+        x: 4984
+        y: 6336
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_22
+      rect:
+        serializedVersion: 2
+        x: 5607
+        y: 6336
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_23
+      rect:
+        serializedVersion: 2
+        x: 6230
+        y: 6336
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_24
+      rect:
+        serializedVersion: 2
+        x: 6853
+        y: 6336
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_25
+      rect:
+        serializedVersion: 2
+        x: 7476
+        y: 6336
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5408
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_27
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 5408
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_28
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 5408
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_29
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 5408
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_30
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 5408
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_31
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 5408
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_32
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 5408
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_33
+      rect:
+        serializedVersion: 2
+        x: 4361
+        y: 5408
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_34
+      rect:
+        serializedVersion: 2
+        x: 4984
+        y: 5408
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_35
+      rect:
+        serializedVersion: 2
+        x: 5607
+        y: 5408
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_36
+      rect:
+        serializedVersion: 2
+        x: 6230
+        y: 5408
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_37
+      rect:
+        serializedVersion: 2
+        x: 6853
+        y: 5408
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_38
+      rect:
+        serializedVersion: 2
+        x: 7476
+        y: 5408
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4480
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_40
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 4480
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_41
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 4480
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_42
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 4480
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_43
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 4480
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_44
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 4480
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_45
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 4480
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_46
+      rect:
+        serializedVersion: 2
+        x: 4361
+        y: 4480
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_47
+      rect:
+        serializedVersion: 2
+        x: 4984
+        y: 4480
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_48
+      rect:
+        serializedVersion: 2
+        x: 5607
+        y: 4480
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_49
+      rect:
+        serializedVersion: 2
+        x: 6230
+        y: 4480
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_50
+      rect:
+        serializedVersion: 2
+        x: 6853
+        y: 4480
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_51
+      rect:
+        serializedVersion: 2
+        x: 7476
+        y: 4480
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3552
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_53
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 3552
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_54
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 3552
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_55
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 3552
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_56
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 3552
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsIdleLookBack_57
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 3552
+        width: 623
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
