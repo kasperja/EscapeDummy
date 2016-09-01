@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/RazChanges.unity
+=======
+- path: Assets/KasperChanges.unity
+>>>>>>> refs/remotes/kasperja/master
   isLoaded: 1
   isActive: 1
