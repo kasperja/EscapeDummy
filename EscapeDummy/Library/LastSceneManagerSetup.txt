@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/RazChanges.unity
+- path: Assets/KasperChanges.unity
   isLoaded: 1
   isActive: 1
