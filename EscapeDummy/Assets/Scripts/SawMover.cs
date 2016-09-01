@@ -15,7 +15,7 @@ public class SawMover : MonoBehaviour {
 	void Update () {
 	
 
-		transform.Translate (useSpeed * Time.deltaTime, 0, 0);
+		transform.Translate (0, useSpeed * Time.deltaTime, 0);
 
 	}
 
