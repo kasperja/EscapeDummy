@@ -22,6 +22,8 @@ TagManager:
   - SawMoveTriggers
   - HookStraightCol
   - HookJoint
+  - MeatFront
+  - WaitForHooked
   layers:
   - Default
   - TransparentFX
@@ -38,8 +40,8 @@ TagManager:
   - hookUp
   - hook
   - Saw
-  - 
-  - 
+  - MeatLayerSaw
+  - WaitForHooked
   - 
   - 
   - 
