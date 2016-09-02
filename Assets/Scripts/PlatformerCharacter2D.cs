@@ -52,6 +52,7 @@ using System.Collections;
 	private float timer = 0.0f;
 	public float friction = 0.7f;
 	private bool jumpOnce = true;
+	public GameObject WaitForHookedCol;
 
 
 
@@ -91,6 +92,7 @@ using System.Collections;
 			//MainCharObj.SetActive(false);
 			m_AnimHooked.SetBool("Grab", true);
 			m_AnimHooked.SetBool ("Hold", true);
+			WaitForHookedCol.SetActive (false);
 			gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
 		}
@@ -98,7 +100,7 @@ using System.Collections;
 		if (!hooked) {
 
 
-
+			WaitForHookedCol.SetActive (true);
 			//MainCharObj.SetActive(true);
 			graphicsHooked.transform.position = graphicsNorm.transform.position;
 			graphicsHooked.transform.rotation = graphicsNorm.transform.rotation;
