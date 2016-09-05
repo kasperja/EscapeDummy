@@ -75,12 +75,12 @@ public class MeatHingeMovement : MonoBehaviour {
 
 		}
 
-		if (other.gameObject.tag == "SawCol") {
+		/*if (other.gameObject.tag == "SawCol") {
 			//Debug.Log("COL!");
 
 			meat.GetComponent<SpriteRenderer> ().sprite = meatSpriteHalf;
 
-		}
+		}*/
 
 		if (other.gameObject.tag == "MeatUpCol") {
 

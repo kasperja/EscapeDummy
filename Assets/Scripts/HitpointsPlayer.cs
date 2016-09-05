@@ -15,6 +15,7 @@ public class HitpointsPlayer : MonoBehaviour {
 	public GameObject hitParticle;
 	public PlatformerCharacter2D MainCharScript;
 
+
 	// Use this for initialization
 	void Start () {
 	
