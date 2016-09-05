@@ -28,6 +28,8 @@ TagManager:
   - DetectMeat
   - DetectHook
   - SawMoveBottom
+  - SawMoveTop
+  - SawMoveBottomNorm
   layers:
   - Default
   - TransparentFX

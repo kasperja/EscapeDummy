@@ -3,13 +3,16 @@ using System.Collections;
 
 public class SawMover : MonoBehaviour {
 
-	public float useSpeed = 10f;
+	private float useSpeed = 20f;
+	public float startSpeed = 20f;
 	public float damage = 1400f;
 	public bool hookDetected = false;
 	public float hookDetectSpeed = -10f;
 
 	// Use this for initialization
 	void Start () {
+
+		useSpeed = startSpeed;
 	
 	}
 	
@@ -42,10 +45,16 @@ public class SawMover : MonoBehaviour {
 		
 		} 
 
-		if (other.gameObject.tag == "SawMoveTriggers") {
+		if (other.gameObject.tag == "SawMoveTop") {
 
 
-			useSpeed = -useSpeed;
+			useSpeed = -startSpeed;
+
+		}
+		if (other.gameObject.tag == "SawMoveBottomNorm") {
+
+
+			useSpeed = startSpeed;
 
 		}
 
