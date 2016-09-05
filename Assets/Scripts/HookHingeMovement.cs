@@ -20,13 +20,18 @@ public class HookHingeMovement : MonoBehaviour {
 	private float moveUpRadians;
 	public Transform startPosY;
 
+	public float speedUpStart = 0f;
+
+
+	public SawMover SawMoverScript;
+
 	// Use this for initialization
 	void Start () {
 
 		moveUpRadians = moveUpAngle * Mathf.Deg2Rad;
 		meatSpeedUp = (meatSpeed / Mathf.Sin ((90f* Mathf.Deg2Rad) - moveUpRadians)) * Mathf.Sin(moveUpRadians);
 		meatStartPosY = startPosY.position.y;
-		meatSpeedVector = new Vector2(meatSpeed, 0f);
+		meatSpeedVector = new Vector2(meatSpeed, speedUpStart);
 
 
 	}
@@ -82,7 +87,18 @@ public class HookHingeMovement : MonoBehaviour {
 		
 			meatSpeedVector = new Vector2(meatSpeed, 0f);
 		
-		} 
+		}
+		if (other.gameObject.tag == "DetectHook") {
+	
+			SawMoverScript.hookDetected = true;
+		
+		}
+		if (other.gameObject.tag == "MeatPassedCol") {
+
+			SawMoverScript.hookDetected = false;
+			SawMoverScript.hookDetectSpeed = -10f;
+		
+		}
 
 	}
 	IEnumerator WaitNumerator(float waitTime)

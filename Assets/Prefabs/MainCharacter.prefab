@@ -520,7 +520,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014109482998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -784, y: 22, z: 30}
+  m_LocalPosition: {x: 256.2, y: 22, z: 30}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -997,6 +997,7 @@ MonoBehaviour:
   anchor: {fileID: 0}
   sideArrowsBool: 0
   friction: 1
+  WaitForHookedCol: {fileID: 0}
 --- !u!114 &114000010480083346
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1269,7 +1270,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 142
   m_Sprite: {fileID: 21300000, guid: 84427bb550cf639439d5833f61f15d35, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1302,7 +1303,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 141
   m_Sprite: {fileID: 21300046, guid: 2ee388f59ee900a4aaeeffd75f1da2a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1452,7 +1453,7 @@ HingeJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0.01, y: 0.395}
+  m_Anchor: {x: -0.03, y: 0.495}
   m_ConnectedAnchor: {x: 0, y: -0.2}
   m_UseMotor: 0
   m_Motor:
