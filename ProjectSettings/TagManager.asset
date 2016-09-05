@@ -24,6 +24,7 @@ TagManager:
   - HookJoint
   - MeatFront
   - WaitForHooked
+  - MeatPassedCol
   layers:
   - Default
   - TransparentFX

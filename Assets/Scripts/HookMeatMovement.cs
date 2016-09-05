@@ -22,6 +22,8 @@ public class HookMeatMovement : MonoBehaviour {
 	public GameObject MeatBackObj;
 	public MeatCutScript MeatCutScript;
 
+
+
 	// Use this for initialization
 	void Start () {
 
@@ -79,6 +81,8 @@ public class HookMeatMovement : MonoBehaviour {
 
 			MeatCutScript.MeatBackObj.SetActive (false);
 			MeatCutScript.MeatBackUncutObj.SetActive (true);
+			MeatCutScript.cutMeatOnce = true;
+			MeatCutScript.meatPassedBool = false;
 
 		}
 
@@ -96,6 +100,8 @@ public class HookMeatMovement : MonoBehaviour {
 			meatSpeedVector = new Vector2(meatSpeed, 0f);
 
 		} 
+
+
 
 	}
 	IEnumerator WaitNumerator(float waitTime)
