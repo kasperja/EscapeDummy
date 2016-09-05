@@ -54,8 +54,8 @@ GameObject:
   - 4: {fileID: 4000012312385984}
   - 61: {fileID: 61000014275717872}
   m_Layer: 14
-  m_Name: LeftTrigger
-  m_TagString: SawMoveTriggers
+  m_Name: BottomTrigger
+  m_TagString: SawMoveBottomNorm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,6 +75,22 @@ GameObject:
   m_Layer: 14
   m_Name: Blade
   m_TagString: SawCol
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000012260343908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000010419399378}
+  - 61: {fileID: 61000013123673354}
+  m_Layer: 14
+  m_Name: BottomTriggerHook
+  m_TagString: SawMoveBottom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,8 +122,8 @@ GameObject:
   - 4: {fileID: 4000013639427012}
   - 61: {fileID: 61000010742557090}
   m_Layer: 14
-  m_Name: RightTrigger
-  m_TagString: SawMoveTriggers
+  m_Name: TopTrigger
+  m_TagString: SawMoveTop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,6 +162,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &4000010419399378
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012260343908}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.57000065, y: -4.7600007, z: 0}
+  m_LocalScale: {x: 0.2554757, y: 0.6941489, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000012954054848}
+  m_RootOrder: 4
 --- !u!4 &4000010426131252
 Transform:
   m_ObjectHideFlags: 1
@@ -179,7 +208,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011482511984}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.57, y: -3.63, z: 0}
+  m_LocalPosition: {x: -0.57, y: -4.19, z: 0}
   m_LocalScale: {x: 0.2554757, y: 0.69414884, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -192,14 +221,15 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013719388696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 377.1, y: -10.8, z: 49.915}
+  m_LocalPosition: {x: 377.1, y: -10.8, z: 50}
   m_LocalScale: {x: 5.8653116, y: 5.8653107, z: 3.469762}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 4000013179750108}
   - {fileID: 4000013639427012}
+  - {fileID: 4000013179750108}
   - {fileID: 4000012312385984}
   - {fileID: 4000010426131252}
+  - {fileID: 4000010419399378}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &4000013179750108
@@ -216,7 +246,7 @@ Transform:
   - {fileID: 4000013244958240}
   - {fileID: 4000013433801936}
   m_Father: {fileID: 4000012954054848}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!4 &4000013244958240
 Transform:
   m_ObjectHideFlags: 1
@@ -251,12 +281,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013334952036}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.56, y: 5.18, z: 0}
+  m_LocalPosition: {x: -0.56, y: 7.05, z: 0}
   m_LocalScale: {x: 0.2554757, y: 0.69414884, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012954054848}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!50 &50000010027602484
 Rigidbody2D:
   serializedVersion: 2
@@ -330,6 +360,20 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 3.38, y: 100}
+--- !u!61 &61000013123673354
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012260343908}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2.56, y: 2.56}
 --- !u!61 &61000014275717872
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -372,8 +416,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e49be985aded834cb96bb0de4d18631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useSpeed: 10
+  startSpeed: 20
   damage: 14000
+  hookDetected: 0
+  hookDetectSpeed: -30
 --- !u!198 &198000011381762580
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -579,7 +625,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       minMaxState: 0
     startSize:
-      scalar: 4
+      scalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -787,7 +833,7 @@ ParticleSystem:
     serializedVersion: 2
     enabled: 1
     type: 10
-    radius: 3
+    radius: 6
     angle: 25
     length: 5
     boxX: 1
@@ -808,7 +854,7 @@ ParticleSystem:
     serializedVersion: 2
     m_Type: 0
     rate:
-      scalar: 300
+      scalar: 600
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1083,10 +1129,10 @@ ParticleSystem:
       maxGradient:
         key0:
           serializedVersion: 2
-          rgba: 94
+          rgba: 64
         key1:
           serializedVersion: 2
-          rgba: 4278190245
+          rgba: 4278190123
         key2:
           serializedVersion: 2
           rgba: 4278190245
@@ -2317,7 +2363,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       minMaxState: 0
     startSize:
-      scalar: 4
+      scalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2525,7 +2571,7 @@ ParticleSystem:
     serializedVersion: 2
     enabled: 1
     type: 10
-    radius: 5
+    radius: 10
     angle: 25
     length: 5
     boxX: 1
@@ -2546,7 +2592,7 @@ ParticleSystem:
     serializedVersion: 2
     m_Type: 0
     rate:
-      scalar: 300
+      scalar: 600
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2821,10 +2867,10 @@ ParticleSystem:
       maxGradient:
         key0:
           serializedVersion: 2
-          rgba: 94
+          rgba: 32
         key1:
           serializedVersion: 2
-          rgba: 4278190245
+          rgba: 4278190144
         key2:
           serializedVersion: 2
           rgba: 4278190245
