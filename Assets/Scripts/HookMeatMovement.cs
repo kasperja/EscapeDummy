@@ -21,6 +21,7 @@ public class HookMeatMovement : MonoBehaviour {
 	public Transform startPosY;
 	public GameObject MeatBackObj;
 	public MeatCutScript MeatCutScript;
+	public float speedUpStart = 0f;
 
 
 
@@ -30,7 +31,7 @@ public class HookMeatMovement : MonoBehaviour {
 		moveUpRadians = moveUpAngle * Mathf.Deg2Rad;
 		meatSpeedUp = (meatSpeed / Mathf.Sin ((90f* Mathf.Deg2Rad) - moveUpRadians)) * Mathf.Sin(moveUpRadians);
 		meatStartPosY = startPosY.position.y;
-		meatSpeedVector = new Vector2(meatSpeed, 0f);
+		meatSpeedVector = new Vector2(meatSpeed, speedUpStart);
 
 
 	}

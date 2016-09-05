@@ -25,6 +25,9 @@ TagManager:
   - MeatFront
   - WaitForHooked
   - MeatPassedCol
+  - DetectMeat
+  - DetectHook
+  - SawMoveBottom
   layers:
   - Default
   - TransparentFX
