@@ -30,6 +30,7 @@ TagManager:
   - SawMoveBottom
   - SawMoveTop
   - SawMoveBottomNorm
+  - StairsTrigger
   layers:
   - Default
   - TransparentFX

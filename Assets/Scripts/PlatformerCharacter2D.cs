@@ -54,6 +54,10 @@ using System.Collections;
 	private bool jumpOnce = true;
 	public GameObject WaitForHookedCol;
 
+	public Vector2 direction;
+
+	public bool climbingStairsBool = false;
+
 
 
         private void Awake()
@@ -83,6 +87,18 @@ using System.Collections;
 				playOnce4 = true;
 			
 			}*/
+
+		/*RaycastHit2D hit = Physics2D.Raycast (this.gameObject.transform.position, direction);
+
+
+
+		if (hit.collider != null) {
+		
+			float distanceToGround = hit.distance;
+
+			transform.position = new Vector3 (this.gameObject.transform.position.x, hit.distance - transform.GetComponent<BoxCollider2D> ().bounds.extents.y, transform.position.z);
+		
+		}*/
 
 		if (hooked) {
 			
@@ -280,8 +296,32 @@ using System.Collections;
 			//if (m_Rigidbody2D.velocity.x < 60f && m_Rigidbody2D.velocity.x > -60f) {
 				
 				timer = 0.0f;
-				m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed, m_Rigidbody2D.velocity.y);
 
+
+
+			if (climbingStairsBool) {
+				
+				m_Grounded = true;
+
+				if(Input.GetKey(KeyCode.LeftArrow)){
+
+					//down Stairs
+				m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 0.7f, move * m_MaxSpeed * 1.7f);
+				
+				
+				}else{
+
+
+					//up Stairs
+					m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 1.5f, -move * m_MaxSpeed * 0.5f);
+
+				}
+			
+			} else {
+			
+				m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed, m_Rigidbody2D.velocity.y);
+			
+			}
 				//m_Rigidbody2D.AddForce (new Vector2 (0f, m_Rigidbody2D.velocity.y));
 			//}
                 // If the input is moving the player right and the player is facing left...
@@ -414,7 +454,7 @@ using System.Collections;
 	}
 		void OnTriggerEnter2D(Collider2D other)
 		{
-		if (other.gameObject.tag == "HookJoint"){
+		if (other.gameObject.tag == "HookJoint") {
 
 			if (hookOnce) {
 				hooked = true;
@@ -434,12 +474,29 @@ using System.Collections;
 
 
 
-		}
 
+
+			}
+
+		if (other.gameObject.tag == "StairsTrigger") {
+
+			climbingStairsBool = true;
+
+		}
 
 
 	
 		}
+
+	void OnTriggerExit2D(Collider2D other)
+	{
+		if (other.gameObject.tag == "StairsTrigger") {
+
+			climbingStairsBool = false;
+
+		}
+
+	}
         private void Flip()
         {
             // Switch the way the player is labelled as facing.
