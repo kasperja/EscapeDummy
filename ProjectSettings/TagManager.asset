@@ -31,6 +31,7 @@ TagManager:
   - SawMoveTop
   - SawMoveBottomNorm
   - StairsTrigger
+  - CamTargetEndTrigger
   layers:
   - Default
   - TransparentFX
