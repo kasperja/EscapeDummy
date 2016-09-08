@@ -9,6 +9,8 @@ public class MeatCutScript : MonoBehaviour {
 	public bool cutMeatOnce = true;
 	private float punchAmmount = 0.4f;
 	public bool meatPassedBool = false;
+
+	public ParticleSystem bloodDripParticle;
 	// Use this for initialization
 	void Start () {
 	
@@ -26,6 +28,8 @@ public class MeatCutScript : MonoBehaviour {
 		
 		if (other.gameObject.tag == "SawCol" && !meatPassedBool) {
 			BloodSawParticle.Play ();
+			bloodDripParticle.Play ();
+
 			iTween.PunchScale (gameObject, new Vector3 (punchAmmount, -punchAmmount, 0f), 1f);
 			iTween.PunchScale (MeatBackUncutObj, new Vector3 (punchAmmount, -punchAmmount, 0f), 1f);
 
