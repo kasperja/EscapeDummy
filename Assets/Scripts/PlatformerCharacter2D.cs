@@ -373,6 +373,8 @@ using System.Collections;
 				
 				m_Grounded = true;
 
+
+
 				if(Input.GetKey(KeyCode.LeftArrow)){
 
 					//down Stairs
@@ -469,6 +471,13 @@ using System.Collections;
 
 
 			m_Rigidbody2D.velocity = new Vector2 (Mathf.Lerp(m_Rigidbody2D.velocity.x,  0f , timer), m_Rigidbody2D.velocity.y);
+
+
+			if (climbingStairsBool) {
+				
+				m_Rigidbody2D.velocity = new Vector2 (4.2f, 0f);
+			}
+
 			//m_Rigidbody2D.position = new Vector2 (Mathf.Lerp( m_Rigidbody2D.position.x , m_Rigidbody2D.position.x , timer), m_Rigidbody2D.position.y);
 			timer += friction * Time.deltaTime; 
 
