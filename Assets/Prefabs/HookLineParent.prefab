@@ -242,6 +242,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1000010389694940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000013003483706}
+  - 61: {fileID: 61000010371316400}
+  m_Layer: 12
+  m_Name: DetectHookTrigger
+  m_TagString: DetectHook
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1000010390881572
 GameObject:
   m_ObjectHideFlags: 1
@@ -754,9 +770,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010295698900}
   - 61: {fileID: 61000011655033668}
-  m_Layer: 12
-  m_Name: DetectHookTrigger
-  m_TagString: DetectHook
+  m_Layer: 0
+  m_Name: SawSoundTrigger
+  m_TagString: SawSound
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2209,7 +2225,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012881303552}
-  m_RootOrder: 12
+  m_RootOrder: 13
 --- !u!4 &4000010076430906
 Transform:
   m_ObjectHideFlags: 1
@@ -2282,12 +2298,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011566844484}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -81.2, y: 3.7501469, z: -1.3125004}
-  m_LocalScale: {x: 46.108562, y: 167.78757, z: 797.5687}
+  m_LocalPosition: {x: -87, y: 3.7501469, z: -1.3125004}
+  m_LocalScale: {x: 454.37177, y: 167.78757, z: 797.5687}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012881303552}
-  m_RootOrder: 9
+  m_RootOrder: 12
 --- !u!4 &4000010296304474
 Transform:
   m_ObjectHideFlags: 1
@@ -2410,7 +2426,7 @@ Transform:
   - {fileID: 4000014172875634}
   - {fileID: 4000014013498514}
   m_Father: {fileID: 4000012881303552}
-  m_RootOrder: 27
+  m_RootOrder: 28
 --- !u!4 &4000010784273846
 Transform:
   m_ObjectHideFlags: 1
@@ -2509,7 +2525,7 @@ Transform:
   - {fileID: 4000012819603142}
   - {fileID: 4000012302936252}
   m_Father: {fileID: 4000012881303552}
-  m_RootOrder: 16
+  m_RootOrder: 17
 --- !u!4 &4000010995497318
 Transform:
   m_ObjectHideFlags: 1
@@ -2529,7 +2545,7 @@ Transform:
   - {fileID: 4000010480767264}
   - {fileID: 4000014105875928}
   m_Father: {fileID: 4000012881303552}
-  m_RootOrder: 15
+  m_RootOrder: 16
 --- !u!4 &4000011015071228
 Transform:
   m_ObjectHideFlags: 1
@@ -2581,7 +2597,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012881303552}
-  m_RootOrder: 25
+  m_RootOrder: 26
 --- !u!4 &4000011293700614
 Transform:
   m_ObjectHideFlags: 1
@@ -2607,7 +2623,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012881303552}
-  m_RootOrder: 23
+  m_RootOrder: 24
 --- !u!4 &4000011388920600
 Transform:
   m_ObjectHideFlags: 1
@@ -2623,7 +2639,7 @@ Transform:
   - {fileID: 4000012096688124}
   - {fileID: 4000011186914228}
   m_Father: {fileID: 4000012881303552}
-  m_RootOrder: 29
+  m_RootOrder: 30
 --- !u!4 &4000011394378896
 Transform:
   m_ObjectHideFlags: 1
@@ -2761,7 +2777,7 @@ Transform:
   - {fileID: 4000013902536614}
   - {fileID: 4000010634823386}
   m_Father: {fileID: 4000012881303552}
-  m_RootOrder: 18
+  m_RootOrder: 19
 --- !u!4 &4000011588270510
 Transform:
   m_ObjectHideFlags: 1
@@ -2777,7 +2793,7 @@ Transform:
   - {fileID: 4000012913117510}
   - {fileID: 4000014035693794}
   m_Father: {fileID: 4000012881303552}
-  m_RootOrder: 28
+  m_RootOrder: 29
 --- !u!4 &4000011627242664
 Transform:
   m_ObjectHideFlags: 1
@@ -3179,7 +3195,7 @@ Transform:
   - {fileID: 4000013270590922}
   - {fileID: 4000012524389280}
   m_Father: {fileID: 4000012881303552}
-  m_RootOrder: 21
+  m_RootOrder: 22
 --- !u!4 &4000012524389280
 Transform:
   m_ObjectHideFlags: 1
@@ -3218,7 +3234,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012881303552}
-  m_RootOrder: 26
+  m_RootOrder: 27
 --- !u!4 &4000012571216694
 Transform:
   m_ObjectHideFlags: 1
@@ -3264,7 +3280,7 @@ Transform:
   - {fileID: 4000010637904660}
   - {fileID: 4000012821907330}
   m_Father: {fileID: 4000012881303552}
-  m_RootOrder: 14
+  m_RootOrder: 15
 --- !u!4 &4000012748416542
 Transform:
   m_ObjectHideFlags: 1
@@ -3319,7 +3335,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012881303552}
-  m_RootOrder: 24
+  m_RootOrder: 25
 --- !u!4 &4000012783368990
 Transform:
   m_ObjectHideFlags: 1
@@ -3405,9 +3421,10 @@ Transform:
   - {fileID: 4000011663567342}
   - {fileID: 4000012303304414}
   - {fileID: 4000014129098652}
-  - {fileID: 4000010295698900}
+  - {fileID: 4000013003483706}
   - {fileID: 4000012392418226}
   - {fileID: 4000010305264182}
+  - {fileID: 4000010295698900}
   - {fileID: 4000010013708730}
   - {fileID: 4000013071849254}
   - {fileID: 4000012646630308}
@@ -3493,6 +3510,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000012772323872}
   m_RootOrder: 1
+--- !u!4 &4000013003483706
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010389694940}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -81.2, y: 3.7501469, z: -1.3125004}
+  m_LocalScale: {x: 46.108562, y: 167.78757, z: 797.5687}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000012881303552}
+  m_RootOrder: 9
 --- !u!4 &4000013010551346
 Transform:
   m_ObjectHideFlags: 1
@@ -3578,7 +3608,7 @@ Transform:
   - {fileID: 4000012367160102}
   - {fileID: 4000011878619890}
   m_Father: {fileID: 4000012881303552}
-  m_RootOrder: 13
+  m_RootOrder: 14
 --- !u!4 &4000013270590922
 Transform:
   m_ObjectHideFlags: 1
@@ -3716,7 +3746,7 @@ Transform:
   - {fileID: 4000013058645224}
   - {fileID: 4000011293700614}
   m_Father: {fileID: 4000012881303552}
-  m_RootOrder: 22
+  m_RootOrder: 23
 --- !u!4 &4000013902536614
 Transform:
   m_ObjectHideFlags: 1
@@ -3840,7 +3870,7 @@ Transform:
   - {fileID: 4000010784273846}
   - {fileID: 4000012612854612}
   m_Father: {fileID: 4000012881303552}
-  m_RootOrder: 20
+  m_RootOrder: 21
 --- !u!4 &4000014129098652
 Transform:
   m_ObjectHideFlags: 1
@@ -3873,7 +3903,7 @@ Transform:
   - {fileID: 4000011248548598}
   - {fileID: 4000013066391126}
   m_Father: {fileID: 4000012881303552}
-  m_RootOrder: 17
+  m_RootOrder: 18
 --- !u!4 &4000014162066886
 Transform:
   m_ObjectHideFlags: 1
@@ -3959,7 +3989,7 @@ Transform:
   - {fileID: 4000010206725122}
   - {fileID: 4000012748416542}
   m_Father: {fileID: 4000012881303552}
-  m_RootOrder: 19
+  m_RootOrder: 20
 --- !u!50 &50000010057837666
 Rigidbody2D:
   serializedVersion: 2
@@ -5552,6 +5582,20 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!61 &61000010371316400
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010389694940}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 0cb77231a430b454fb792ff7ffcc3943, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!61 &61000010667210544
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -5645,7 +5689,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 0cb77231a430b454fb792ff7ffcc3943, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -5848,6 +5892,8 @@ MonoBehaviour:
   BloodSawParticle: {fileID: 0}
   cutMeatOnce: 1
   meatPassedBool: 0
+  sawSound: {fileID: 0}
+  waitForSoundBool: 1
   bloodDripParticle: {fileID: 198000010596488626}
 --- !u!114 &114000010086985312
 MonoBehaviour:
@@ -5865,6 +5911,8 @@ MonoBehaviour:
   BloodSawParticle: {fileID: 0}
   cutMeatOnce: 1
   meatPassedBool: 0
+  sawSound: {fileID: 0}
+  waitForSoundBool: 1
   bloodDripParticle: {fileID: 198000014170172562}
 --- !u!114 &114000010637041422
 MonoBehaviour:
@@ -5882,6 +5930,8 @@ MonoBehaviour:
   BloodSawParticle: {fileID: 0}
   cutMeatOnce: 1
   meatPassedBool: 0
+  sawSound: {fileID: 0}
+  waitForSoundBool: 1
   bloodDripParticle: {fileID: 198000012819374266}
 --- !u!114 &114000010930648538
 MonoBehaviour:
@@ -5946,6 +5996,8 @@ MonoBehaviour:
   BloodSawParticle: {fileID: 0}
   cutMeatOnce: 1
   meatPassedBool: 0
+  sawSound: {fileID: 0}
+  waitForSoundBool: 1
   bloodDripParticle: {fileID: 198000012720015960}
 --- !u!114 &114000011059954274
 MonoBehaviour:
@@ -6035,6 +6087,8 @@ MonoBehaviour:
   BloodSawParticle: {fileID: 0}
   cutMeatOnce: 1
   meatPassedBool: 0
+  sawSound: {fileID: 0}
+  waitForSoundBool: 1
   bloodDripParticle: {fileID: 198000010032636944}
 --- !u!114 &114000011459115140
 MonoBehaviour:
@@ -6052,6 +6106,8 @@ MonoBehaviour:
   BloodSawParticle: {fileID: 0}
   cutMeatOnce: 1
   meatPassedBool: 0
+  sawSound: {fileID: 0}
+  waitForSoundBool: 1
   bloodDripParticle: {fileID: 198000011762581254}
 --- !u!114 &114000011823205528
 MonoBehaviour:
@@ -6069,6 +6125,8 @@ MonoBehaviour:
   BloodSawParticle: {fileID: 0}
   cutMeatOnce: 1
   meatPassedBool: 0
+  sawSound: {fileID: 0}
+  waitForSoundBool: 1
   bloodDripParticle: {fileID: 198000013476944228}
 --- !u!114 &114000011933343474
 MonoBehaviour:
@@ -6110,6 +6168,8 @@ MonoBehaviour:
   BloodSawParticle: {fileID: 0}
   cutMeatOnce: 1
   meatPassedBool: 0
+  sawSound: {fileID: 0}
+  waitForSoundBool: 1
   bloodDripParticle: {fileID: 198000012591502310}
 --- !u!114 &114000012303256494
 MonoBehaviour:
@@ -6175,6 +6235,8 @@ MonoBehaviour:
   BloodSawParticle: {fileID: 0}
   cutMeatOnce: 1
   meatPassedBool: 0
+  sawSound: {fileID: 0}
+  waitForSoundBool: 1
   bloodDripParticle: {fileID: 198000011444602228}
 --- !u!114 &114000012833742720
 MonoBehaviour:
@@ -6262,6 +6324,8 @@ MonoBehaviour:
   BloodSawParticle: {fileID: 0}
   cutMeatOnce: 1
   meatPassedBool: 0
+  sawSound: {fileID: 0}
+  waitForSoundBool: 1
   bloodDripParticle: {fileID: 198000013167313042}
 --- !u!114 &114000013739145424
 MonoBehaviour:
@@ -6549,7 +6613,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       minMaxState: 0
     startSize:
-      scalar: 1
+      scalar: 1.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -8247,7 +8311,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       minMaxState: 0
     startSize:
-      scalar: 1
+      scalar: 1.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -9945,7 +10009,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       minMaxState: 0
     startSize:
-      scalar: 1
+      scalar: 1.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -11643,7 +11707,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       minMaxState: 0
     startSize:
-      scalar: 1
+      scalar: 1.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -13341,7 +13405,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       minMaxState: 0
     startSize:
-      scalar: 1
+      scalar: 1.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -15039,7 +15103,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       minMaxState: 0
     startSize:
-      scalar: 1
+      scalar: 1.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -16737,7 +16801,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       minMaxState: 0
     startSize:
-      scalar: 1
+      scalar: 1.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -18435,7 +18499,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       minMaxState: 0
     startSize:
-      scalar: 1
+      scalar: 1.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -20133,7 +20197,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       minMaxState: 0
     startSize:
-      scalar: 1
+      scalar: 1.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -21831,7 +21895,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       minMaxState: 0
     startSize:
-      scalar: 1
+      scalar: 1.5
       maxCurve:
         serializedVersion: 2
         m_Curve:

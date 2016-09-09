@@ -65,6 +65,7 @@ using System.Collections;
 	private float minScale = 4.5f;
 	private float maxScale = 5f;
 	private float scaleSpeed = 10f;
+	public AudioSource sawSound;
 
 
 
@@ -578,7 +579,11 @@ using System.Collections;
 
 		}
 
+		if (other.gameObject.tag == "SawSound") {
 
+			sawSound.volume = 0.4f;
+
+		}
 	
 		}
 
@@ -597,6 +602,11 @@ using System.Collections;
 			endCamBool = false;
 
 			StartCoroutine (waitCamEnd (0.5f));
+
+		}
+		if (other.gameObject.tag == "SawSound") {
+
+			sawSound.volume = 0f;
 
 		}
 

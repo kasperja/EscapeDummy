@@ -9,11 +9,14 @@ public class MeatCutScript : MonoBehaviour {
 	public bool cutMeatOnce = true;
 	private float punchAmmount = 0.4f;
 	public bool meatPassedBool = false;
+	public AudioSource sawSound;
+	public bool waitForSoundBool = true; 
 
 	public ParticleSystem bloodDripParticle;
 	// Use this for initialization
 	void Start () {
 	
+
 		BloodSawParticle.Stop ();
 
 	}
@@ -30,6 +33,14 @@ public class MeatCutScript : MonoBehaviour {
 			BloodSawParticle.Play ();
 			bloodDripParticle.Play ();
 
+			if (waitForSoundBool) {
+				
+				sawSound.Play ();
+				waitForSoundBool = false;
+
+			}
+
+
 			iTween.PunchScale (gameObject, new Vector3 (punchAmmount, -punchAmmount, 0f), 1f);
 			iTween.PunchScale (MeatBackUncutObj, new Vector3 (punchAmmount, -punchAmmount, 0f), 1f);
 
@@ -42,8 +53,10 @@ public class MeatCutScript : MonoBehaviour {
 			meatPassedBool = true;
 
 		}
+			
 
 	}
+		
 	void OnTriggerExit2D(Collider2D other){
 
 		if (other.gameObject.tag == "SawCol") {
@@ -51,6 +64,7 @@ public class MeatCutScript : MonoBehaviour {
 			BloodSawParticle.Stop ();
 
 		}
+			
 	}
 	IEnumerator waitAndCut(float waitTime){
 
@@ -75,11 +89,16 @@ public class MeatCutScript : MonoBehaviour {
 
 		yield return new WaitForSeconds (0.2f);
 		BloodSawParticle.Stop ();
+
 		gameObject.GetComponent<CircleCollider2D> ().enabled = false;
+
+		waitForSoundBool = true;
 
 		yield return new WaitForSeconds (5f);
 		gameObject.GetComponent<CircleCollider2D> ().enabled = true;
 
+
 	
 	}
+
 }
