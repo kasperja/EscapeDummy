@@ -87,6 +87,8 @@ public class HookMeatMovement : MonoBehaviour {
 			MeatCutScript.cutMeatOnce = true;
 			MeatCutScript.meatPassedBool = false;
 
+			MeatCutScript.resetPosBool = true;
+
 			MeatCutScript.bloodDripParticle.Stop ();
 
 		}
