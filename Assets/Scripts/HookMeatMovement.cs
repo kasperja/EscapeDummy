@@ -28,6 +28,7 @@ public class HookMeatMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+		MeatCutScript.bloodDripParticle.Stop ();
 		moveUpRadians = moveUpAngle * Mathf.Deg2Rad;
 		meatSpeedUp = (meatSpeed / Mathf.Sin ((90f* Mathf.Deg2Rad) - moveUpRadians)) * Mathf.Sin(moveUpRadians);
 		meatStartPosY = startPosY.position.y;
@@ -84,6 +85,8 @@ public class HookMeatMovement : MonoBehaviour {
 			MeatCutScript.MeatBackUncutObj.SetActive (true);
 			MeatCutScript.cutMeatOnce = true;
 			MeatCutScript.meatPassedBool = false;
+
+			MeatCutScript.bloodDripParticle.Stop ();
 
 		}
 

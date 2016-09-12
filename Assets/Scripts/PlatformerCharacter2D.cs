@@ -58,6 +58,16 @@ using System.Collections;
 
 	public bool climbingStairsBool = false;
 
+	public bool endCamBool = false;
+	public bool endCamBackBool = false;
+
+	private float scale = 5f;
+	private float minScale = 4.5f;
+	private float maxScale = 5f;
+	private float scaleSpeed = 10f;
+	public AudioSource sawSound;
+
+
 
 
         private void Awake()
@@ -72,6 +82,21 @@ using System.Collections;
         }
 
 		private void Update(){
+
+		/*
+		 
+		 RaycastHit2D hit = Physics2D.Raycast (transform.position, -Vector2.up);
+
+		if (true) {
+		
+		
+			float distanceToGround = hit.distance;
+
+			transform.position = new Vector2(transform.position.x, hit.distance - transform.GetComponent<BoxCollider2D> ().bounds.extents.y);
+		
+
+		
+		}*/
 
 		vSpeed = m_Rigidbody2D.velocity.y;
 
@@ -143,6 +168,50 @@ using System.Collections;
 			StartCoroutine (waitHook (1f));
 
 
+		}
+
+		if (endCamBool) {
+
+			scale -= scaleSpeed * Time.deltaTime;
+
+			if (scale > maxScale) {
+			
+				scale = maxScale;
+			
+			}
+
+			if (scale < minScale) {
+			
+				scale = minScale;
+			
+			}
+
+			graphicsNorm.transform.localScale = new Vector3 (scale, scale, 1f);
+		
+			friction = 4f;
+		
+		}
+
+		if (endCamBackBool) {
+
+			scale += scaleSpeed * Time.deltaTime;
+
+			if (scale > maxScale) {
+
+				scale = maxScale;
+
+			}
+
+			if (scale < minScale) {
+
+				scale = minScale;
+
+			}
+
+			graphicsNorm.transform.localScale = new Vector3 (scale, scale, 1f);
+
+			friction = 1f;
+		
 		}
 		/*if (m_Grounded) {
 			
@@ -236,8 +305,10 @@ using System.Collections;
 
         private void FixedUpdate()
         {
-            m_Grounded = false;
 
+		if (!climbingStairsBool) {
+			m_Grounded = false;
+		}
 
 
             // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
@@ -303,17 +374,19 @@ using System.Collections;
 				
 				m_Grounded = true;
 
+
+
 				if(Input.GetKey(KeyCode.LeftArrow)){
 
 					//down Stairs
-				m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 0.7f, move * m_MaxSpeed * 1.7f);
+				m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 1f, move * m_MaxSpeed * 0.8f);
 				
 				
 				}else{
 
 
 					//up Stairs
-					m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 1.5f, -move * m_MaxSpeed * 0.5f);
+					m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 1f, move * m_MaxSpeed * 0.1f);
 
 				}
 			
@@ -338,7 +411,7 @@ using System.Collections;
                 }
             }
             // If the player should jump...
-		if (m_Grounded && jump && m_Anim.GetBool("Ground") && !hooked)
+		if (m_Grounded && jump && m_Anim.GetBool("Ground") && !hooked && !climbingStairsBool)
             {
 			if (!sideArrowsBool) {
 				if (jumpOnce) {
@@ -398,7 +471,19 @@ using System.Collections;
 			//if (m_Rigidbody2D.velocity.x < 60f && m_Rigidbody2D.velocity.x > -60f) {
 
 
-			m_Rigidbody2D.velocity = new Vector2 (Mathf.Lerp(m_Rigidbody2D.velocity.x,  0f , timer), m_Rigidbody2D.velocity.y);
+
+
+
+			if (climbingStairsBool) {
+				
+				m_Rigidbody2D.velocity = new Vector2 (20.4f, -20f);
+			} else {
+				
+				m_Rigidbody2D.velocity = new Vector2 (Mathf.Lerp(m_Rigidbody2D.velocity.x,  0f , timer), m_Rigidbody2D.velocity.y);
+			
+			
+			}
+
 			//m_Rigidbody2D.position = new Vector2 (Mathf.Lerp( m_Rigidbody2D.position.x , m_Rigidbody2D.position.x , timer), m_Rigidbody2D.position.y);
 			timer += friction * Time.deltaTime; 
 
@@ -419,7 +504,7 @@ using System.Collections;
 			}
 		}
 		// If the player should jump...
-		if (m_Grounded && jump && m_Anim.GetBool("Ground"))
+		if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool)
 		{
 			if (!sideArrowsBool) {
 				if (jumpOnce) {
@@ -480,11 +565,25 @@ using System.Collections;
 
 		if (other.gameObject.tag == "StairsTrigger") {
 
+			m_Grounded = true;
+
 			climbingStairsBool = true;
 
 		}
+		if (other.gameObject.tag == "CamTargetEndTrigger") {
 
 
+
+
+			endCamBool = true;
+
+		}
+
+		if (other.gameObject.tag == "SawSound") {
+
+			sawSound.volume = 0.4f;
+
+		}
 	
 		}
 
@@ -495,8 +594,51 @@ using System.Collections;
 			climbingStairsBool = false;
 
 		}
+		if (other.gameObject.tag == "CamTargetEndTrigger") {
+
+
+			endCamBackBool = true;
+
+			endCamBool = false;
+
+			StartCoroutine (waitCamEnd (0.5f));
+
+		}
+		if (other.gameObject.tag == "SawSound") {
+
+			sawSound.volume = 0f;
+
+		}
 
 	}
+
+	void OnTriggerStay2D(Collider2D other)
+	{
+		if (other.gameObject.tag == "StairsTrigger") {
+
+			m_Grounded = true;
+
+
+			climbingStairsBool = true;
+
+		}
+
+		if (other.gameObject.tag == "CamTargetEndTrigger") {
+
+		
+
+
+			endCamBool = true;
+
+		}
+
+	}
+
+
+
+
+
+
         private void Flip()
         {
             // Switch the way the player is labelled as facing.
@@ -542,6 +684,14 @@ using System.Collections;
 		yield return new WaitForSeconds (waitTime + 1f);
 		jumpOnce = true;
 
+	}
+
+	IEnumerator waitCamEnd(float waitTime){
+
+		yield return new WaitForSeconds (waitTime);
+
+		endCamBackBool = false;
+	
 	}
 
     }

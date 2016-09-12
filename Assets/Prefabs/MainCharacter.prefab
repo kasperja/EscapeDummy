@@ -481,7 +481,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012319212694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.92, z: 0}
+  m_LocalPosition: {x: 0, y: -0.99, z: 0}
   m_LocalScale: {x: 0.56448287, y: 0.5644837, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -520,7 +520,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014109482998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 256.2, y: 22, z: 30}
+  m_LocalPosition: {x: -775, y: 22, z: 30}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -918,9 +918,9 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 3626fe8e008014f6bbd19bb72937b311, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -0.1}
+  m_Offset: {x: -0.15, y: -0.1}
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 1.2}
+  m_Size: {x: 0.2, y: 1.2}
 --- !u!95 &95000010344365076
 Animator:
   serializedVersion: 3
@@ -998,6 +998,11 @@ MonoBehaviour:
   sideArrowsBool: 0
   friction: 1
   WaitForHookedCol: {fileID: 0}
+  direction: {x: 0, y: -1}
+  climbingStairsBool: 0
+  endCamBool: 0
+  endCamBackBool: 0
+  sawSound: {fileID: 0}
 --- !u!114 &114000010480083346
 MonoBehaviour:
   m_ObjectHideFlags: 1

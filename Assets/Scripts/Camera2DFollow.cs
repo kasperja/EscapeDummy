@@ -6,10 +6,11 @@ namespace UnityStandardAssets._2D
     public class Camera2DFollow : MonoBehaviour
     {
         public Transform target;
+		public Transform targetEnd;
 		public Transform targetHooked;
 		public Transform targetNotHooked;
 		public PlatformerCharacter2D MainCharScript;
-        public float damping = 1;
+        public float damping = 0.1f;
         public float lookAheadFactor = 3;
         public float lookAheadReturnSpeed = 0.5f;
         public float lookAheadMoveThreshold = 0.1f;
@@ -34,10 +35,23 @@ namespace UnityStandardAssets._2D
         {
 			if (MainCharScript.hooked) {
 			
+				damping = .1f;
 				target = targetHooked;
 			
-			} else {
+			} else if (MainCharScript.endCamBool) {
 			
+				damping = 0.5f;
+				target = targetEnd;
+			
+			
+			} else if (MainCharScript.endCamBackBool){
+				
+				damping = 0.1f;
+				target = targetNotHooked;
+			
+			}else {
+			
+				damping = .1f;
 				target = targetNotHooked;
 			
 			}
@@ -62,5 +76,8 @@ namespace UnityStandardAssets._2D
 
             m_LastTargetPosition = target.position;
         }
+
+
     }
+
 }
