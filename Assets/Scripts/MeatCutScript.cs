@@ -12,10 +12,21 @@ public class MeatCutScript : MonoBehaviour {
 	public AudioSource sawSound;
 	public bool waitForSoundBool = true; 
 
+	public bool resetPosBool = false;
+
+	private Transform startPos;
+	private Transform startPosBack;
+
 	public ParticleSystem bloodDripParticle;
 	// Use this for initialization
 	void Start () {
 	
+		startPos = transform;
+		startPosBack = MeatBackObj.transform;
+
+		startPos.localPosition = gameObject.transform.localPosition;
+		startPosBack.localPosition = MeatBackObj.transform.localPosition;
+
 
 		BloodSawParticle.Stop ();
 
@@ -23,6 +34,14 @@ public class MeatCutScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (resetPosBool) {
+		
+			transform.localPosition = startPos.localPosition;
+			MeatBackObj.transform.localPosition = startPosBack.localPosition;
+			resetPosBool = false;
+		
+		}
 	
 	}
 

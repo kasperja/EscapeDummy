@@ -24,6 +24,7 @@ public class HookMeatMovement : MonoBehaviour {
 	public float speedUpStart = 0f;
 
 
+	public SawMover SawMoverScript;
 
 	// Use this for initialization
 	void Start () {
@@ -86,6 +87,8 @@ public class HookMeatMovement : MonoBehaviour {
 			MeatCutScript.cutMeatOnce = true;
 			MeatCutScript.meatPassedBool = false;
 
+			MeatCutScript.resetPosBool = true;
+
 			MeatCutScript.bloodDripParticle.Stop ();
 
 		}
@@ -104,6 +107,40 @@ public class HookMeatMovement : MonoBehaviour {
 			meatSpeedVector = new Vector2(meatSpeed, 0f);
 
 		} 
+
+		if (other.gameObject.tag == "DetectHook") {
+
+			SawMoverScript.meatDetected = true;
+
+		}
+
+		if (other.gameObject.tag == "MeatPassedCol") {
+
+			SawMoverScript.meatDetected = false;
+			SawMoverScript.meatDetectSpeed = 20f;
+
+		}
+
+
+
+	}
+	void OnTriggerStay2D(Collider2D other)
+	{
+
+		/*if (other.gameObject.tag == "SawCol") {
+		
+			Debug.Log ("jj");
+			MeatBackObj.SetActive(true);
+		
+		}*/
+
+		if (other.gameObject.tag == "DetectHook") {
+
+			SawMoverScript.meatDetected = true;
+
+		}
+
+
 
 
 

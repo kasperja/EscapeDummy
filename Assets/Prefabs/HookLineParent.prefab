@@ -776,7 +776,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000011590916588
 GameObject:
   m_ObjectHideFlags: 0
@@ -5091,7 +5091,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -0.9}
   serializedVersion: 2
-  m_Radius: 1.3
+  m_Radius: 0.7
 --- !u!58 &58000010306797982
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -5105,7 +5105,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -0.9}
   serializedVersion: 2
-  m_Radius: 1.3
+  m_Radius: 0.7
 --- !u!58 &58000010352953254
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -5343,7 +5343,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -0.9}
   serializedVersion: 2
-  m_Radius: 1.3
+  m_Radius: 0.7
 --- !u!58 &58000011988592666
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -5371,7 +5371,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -0.9}
   serializedVersion: 2
-  m_Radius: 1.3
+  m_Radius: 0.7
 --- !u!58 &58000012084938142
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -5385,7 +5385,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -0.9}
   serializedVersion: 2
-  m_Radius: 1.3
+  m_Radius: 0.7
 --- !u!58 &58000012117748298
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -5455,7 +5455,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -0.9}
   serializedVersion: 2
-  m_Radius: 1.3
+  m_Radius: 0.7
 --- !u!58 &58000012937243912
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -5469,7 +5469,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -0.9}
   serializedVersion: 2
-  m_Radius: 1.3
+  m_Radius: 0.7
 --- !u!58 &58000012942672470
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -5483,7 +5483,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -0.9}
   serializedVersion: 2
-  m_Radius: 1.3
+  m_Radius: 0.7
 --- !u!58 &58000013190237816
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -5497,7 +5497,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -0.9}
   serializedVersion: 2
-  m_Radius: 1.3
+  m_Radius: 0.7
 --- !u!58 &58000013221477440
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -5539,7 +5539,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -0.9}
   serializedVersion: 2
-  m_Radius: 1.3
+  m_Radius: 0.7
 --- !u!58 &58000014277884924
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -5894,6 +5894,7 @@ MonoBehaviour:
   meatPassedBool: 0
   sawSound: {fileID: 0}
   waitForSoundBool: 1
+  resetPosBool: 0
   bloodDripParticle: {fileID: 198000010596488626}
 --- !u!114 &114000010086985312
 MonoBehaviour:
@@ -5913,6 +5914,7 @@ MonoBehaviour:
   meatPassedBool: 0
   sawSound: {fileID: 0}
   waitForSoundBool: 1
+  resetPosBool: 0
   bloodDripParticle: {fileID: 198000014170172562}
 --- !u!114 &114000010637041422
 MonoBehaviour:
@@ -5932,6 +5934,7 @@ MonoBehaviour:
   meatPassedBool: 0
   sawSound: {fileID: 0}
   waitForSoundBool: 1
+  resetPosBool: 0
   bloodDripParticle: {fileID: 198000012819374266}
 --- !u!114 &114000010930648538
 MonoBehaviour:
@@ -5980,6 +5983,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000012436850864}
   MeatCutScript: {fileID: 114000011459115140}
   speedUpStart: 11.547
+  SawMoverScript: {fileID: 0}
 --- !u!114 &114000011033719464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5998,6 +6002,7 @@ MonoBehaviour:
   meatPassedBool: 0
   sawSound: {fileID: 0}
   waitForSoundBool: 1
+  resetPosBool: 0
   bloodDripParticle: {fileID: 198000012720015960}
 --- !u!114 &114000011059954274
 MonoBehaviour:
@@ -6023,6 +6028,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000011548123150}
   MeatCutScript: {fileID: 114000013510162718}
   speedUpStart: 11.547
+  SawMoverScript: {fileID: 0}
 --- !u!114 &114000011090240666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6047,6 +6053,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000010959921918}
   MeatCutScript: {fileID: 114000010086985312}
   speedUpStart: -11.547
+  SawMoverScript: {fileID: 0}
 --- !u!114 &114000011184152536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6071,6 +6078,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000010227178448}
   MeatCutScript: {fileID: 114000012588858918}
   speedUpStart: -11.547
+  SawMoverScript: {fileID: 0}
 --- !u!114 &114000011333357028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6089,6 +6097,7 @@ MonoBehaviour:
   meatPassedBool: 0
   sawSound: {fileID: 0}
   waitForSoundBool: 1
+  resetPosBool: 0
   bloodDripParticle: {fileID: 198000010032636944}
 --- !u!114 &114000011459115140
 MonoBehaviour:
@@ -6108,6 +6117,7 @@ MonoBehaviour:
   meatPassedBool: 0
   sawSound: {fileID: 0}
   waitForSoundBool: 1
+  resetPosBool: 0
   bloodDripParticle: {fileID: 198000011762581254}
 --- !u!114 &114000011823205528
 MonoBehaviour:
@@ -6127,6 +6137,7 @@ MonoBehaviour:
   meatPassedBool: 0
   sawSound: {fileID: 0}
   waitForSoundBool: 1
+  resetPosBool: 0
   bloodDripParticle: {fileID: 198000013476944228}
 --- !u!114 &114000011933343474
 MonoBehaviour:
@@ -6152,6 +6163,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000012341370388}
   MeatCutScript: {fileID: 114000011333357028}
   speedUpStart: 0
+  SawMoverScript: {fileID: 0}
 --- !u!114 &114000012225741362
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6170,6 +6182,7 @@ MonoBehaviour:
   meatPassedBool: 0
   sawSound: {fileID: 0}
   waitForSoundBool: 1
+  resetPosBool: 0
   bloodDripParticle: {fileID: 198000012591502310}
 --- !u!114 &114000012303256494
 MonoBehaviour:
@@ -6195,6 +6208,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000010568345832}
   MeatCutScript: {fileID: 114000011033719464}
   speedUpStart: 0
+  SawMoverScript: {fileID: 0}
 --- !u!114 &114000012522524440
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6219,6 +6233,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000010285352768}
   MeatCutScript: {fileID: 114000011823205528}
   speedUpStart: 11.547
+  SawMoverScript: {fileID: 0}
 --- !u!114 &114000012588858918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6237,6 +6252,7 @@ MonoBehaviour:
   meatPassedBool: 0
   sawSound: {fileID: 0}
   waitForSoundBool: 1
+  resetPosBool: 0
   bloodDripParticle: {fileID: 198000011444602228}
 --- !u!114 &114000012833742720
 MonoBehaviour:
@@ -6262,6 +6278,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000010856874586}
   MeatCutScript: {fileID: 114000010637041422}
   speedUpStart: 0
+  SawMoverScript: {fileID: 0}
 --- !u!114 &114000013022497822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6326,6 +6343,7 @@ MonoBehaviour:
   meatPassedBool: 0
   sawSound: {fileID: 0}
   waitForSoundBool: 1
+  resetPosBool: 0
   bloodDripParticle: {fileID: 198000013167313042}
 --- !u!114 &114000013739145424
 MonoBehaviour:
@@ -6374,6 +6392,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000013342688840}
   MeatCutScript: {fileID: 114000010067801054}
   speedUpStart: 0
+  SawMoverScript: {fileID: 0}
 --- !u!114 &114000014094545768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6398,6 +6417,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000013706794276}
   MeatCutScript: {fileID: 114000012225741362}
   speedUpStart: -11.547
+  SawMoverScript: {fileID: 0}
 --- !u!198 &198000010032636944
 ParticleSystem:
   m_ObjectHideFlags: 1
