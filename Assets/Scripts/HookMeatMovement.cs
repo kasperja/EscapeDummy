@@ -122,6 +122,27 @@ public class HookMeatMovement : MonoBehaviour {
 
 
 	}
+	void OnTriggerStay2D(Collider2D other)
+	{
+
+		/*if (other.gameObject.tag == "SawCol") {
+		
+			Debug.Log ("jj");
+			MeatBackObj.SetActive(true);
+		
+		}*/
+
+		if (other.gameObject.tag == "DetectHook") {
+
+			SawMoverScript.meatDetected = true;
+
+		}
+
+
+
+
+
+	}
 	IEnumerator WaitNumerator(float waitTime)
 	{
 		yield return new WaitForSeconds(waitTime);
