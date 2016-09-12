@@ -419,7 +419,9 @@ MonoBehaviour:
   startSpeed: 20
   damage: 14000
   hookDetected: 0
+  meatDetected: 0
   hookDetectSpeed: -30
+  meatDetectSpeed: 20
 --- !u!198 &198000011381762580
 ParticleSystem:
   m_ObjectHideFlags: 1
