@@ -7,7 +7,9 @@ public class SawMover : MonoBehaviour {
 	public float startSpeed = 20f;
 	public float damage = 1400f;
 	public bool hookDetected = false;
+	public bool meatDetected = false;
 	public float hookDetectSpeed = -10f;
+	public float meatDetectSpeed = 20f;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +26,12 @@ public class SawMover : MonoBehaviour {
 
 			transform.Translate (0, hookDetectSpeed * Time.deltaTime, 0);
 		
+
+		} else if (meatDetected){
+
+
+			transform.Translate (0, meatDetectSpeed * Time.deltaTime, 0);
+
 
 		} else {
 
@@ -44,6 +52,13 @@ public class SawMover : MonoBehaviour {
 
 		
 		} 
+
+		if (meatDetected && other.gameObject.tag == "SawMoveTop") {
+
+
+			meatDetectSpeed = 0f;
+
+		}
 
 		if (other.gameObject.tag == "SawMoveTop") {
 

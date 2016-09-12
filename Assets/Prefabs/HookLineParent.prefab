@@ -5980,6 +5980,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000012436850864}
   MeatCutScript: {fileID: 114000011459115140}
   speedUpStart: 11.547
+  SawMoverScript: {fileID: 0}
 --- !u!114 &114000011033719464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6023,6 +6024,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000011548123150}
   MeatCutScript: {fileID: 114000013510162718}
   speedUpStart: 11.547
+  SawMoverScript: {fileID: 0}
 --- !u!114 &114000011090240666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6047,6 +6049,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000010959921918}
   MeatCutScript: {fileID: 114000010086985312}
   speedUpStart: -11.547
+  SawMoverScript: {fileID: 0}
 --- !u!114 &114000011184152536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6071,6 +6074,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000010227178448}
   MeatCutScript: {fileID: 114000012588858918}
   speedUpStart: -11.547
+  SawMoverScript: {fileID: 0}
 --- !u!114 &114000011333357028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6152,6 +6156,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000012341370388}
   MeatCutScript: {fileID: 114000011333357028}
   speedUpStart: 0
+  SawMoverScript: {fileID: 0}
 --- !u!114 &114000012225741362
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6195,6 +6200,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000010568345832}
   MeatCutScript: {fileID: 114000011033719464}
   speedUpStart: 0
+  SawMoverScript: {fileID: 0}
 --- !u!114 &114000012522524440
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6219,6 +6225,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000010285352768}
   MeatCutScript: {fileID: 114000011823205528}
   speedUpStart: 11.547
+  SawMoverScript: {fileID: 0}
 --- !u!114 &114000012588858918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6262,6 +6269,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000010856874586}
   MeatCutScript: {fileID: 114000010637041422}
   speedUpStart: 0
+  SawMoverScript: {fileID: 0}
 --- !u!114 &114000013022497822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6374,6 +6382,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000013342688840}
   MeatCutScript: {fileID: 114000010067801054}
   speedUpStart: 0
+  SawMoverScript: {fileID: 0}
 --- !u!114 &114000014094545768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6398,6 +6407,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000013706794276}
   MeatCutScript: {fileID: 114000012225741362}
   speedUpStart: -11.547
+  SawMoverScript: {fileID: 0}
 --- !u!198 &198000010032636944
 ParticleSystem:
   m_ObjectHideFlags: 1

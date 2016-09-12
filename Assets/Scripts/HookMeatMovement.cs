@@ -24,6 +24,7 @@ public class HookMeatMovement : MonoBehaviour {
 	public float speedUpStart = 0f;
 
 
+	public SawMover SawMoverScript;
 
 	// Use this for initialization
 	void Start () {
@@ -104,6 +105,19 @@ public class HookMeatMovement : MonoBehaviour {
 			meatSpeedVector = new Vector2(meatSpeed, 0f);
 
 		} 
+
+		if (other.gameObject.tag == "DetectHook") {
+
+			SawMoverScript.meatDetected = true;
+
+		}
+
+		if (other.gameObject.tag == "MeatPassedCol") {
+
+			SawMoverScript.meatDetected = false;
+			SawMoverScript.meatDetectSpeed = 20f;
+
+		}
 
 
 
