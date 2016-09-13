@@ -36,6 +36,7 @@ TagManager:
   - ScaleCharTrigger
   - CamTargetEndTriggerBack
   - StairsTriggerColScale
+  - TopStairTrigger
   layers:
   - Default
   - TransparentFX
