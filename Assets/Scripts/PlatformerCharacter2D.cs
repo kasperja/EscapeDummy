@@ -50,7 +50,7 @@ using System.Collections;
 
 	public bool sideArrowsBool = false;
 	private float timer = 0.0f;
-	public float friction = 0.7f;
+	public float friction = 0.9f;
 	private bool jumpOnce = true;
 	public GameObject WaitForHookedCol;
 
@@ -219,7 +219,7 @@ using System.Collections;
 
 
 			}
-			friction = 1f;
+			//friction = 1f;
 		
 		}
 
@@ -263,7 +263,7 @@ using System.Collections;
 				//stairColsObj.transform.localPosition = Vector3.Lerp (stairColsObj.transform.localPosition, stairPosDown.localPosition, 2f * Time.deltaTime);
 			
 			}
-			friction = 1f;
+			//friction = 1f;
 		
 
 
@@ -625,6 +625,11 @@ using System.Collections;
 			climbingStairsBool = true;
 
 		}
+		if (other.gameObject.tag == "TopStairTrigger") {
+
+			friction = 4f;
+
+		}
 		if (other.gameObject.tag == "StairsTriggerColScale") {
 
 			//m_Grounded = true;
@@ -662,6 +667,11 @@ using System.Collections;
 		if (other.gameObject.tag == "StairsTrigger") {
 
 			climbingStairsBool = false;
+
+		}
+		if (other.gameObject.tag == "TopStairTrigger") {
+
+			friction = 0.9f;
 
 		}
 		if (other.gameObject.tag == "StairsTriggerColScale") {
@@ -734,6 +744,11 @@ using System.Collections;
 			scaleCharBool = true;
 			scaleCharBackBool = false;
 		
+		}
+		if (other.gameObject.tag == "TopStairTrigger") {
+
+			friction = 4f;
+
 		}
 
 	}
