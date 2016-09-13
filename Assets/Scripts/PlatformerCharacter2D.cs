@@ -50,7 +50,7 @@ using System.Collections;
 
 	public bool sideArrowsBool = false;
 	private float timer = 0.0f;
-	public float friction = 0.7f;
+	public float friction = 0.9f;
 	private bool jumpOnce = true;
 	public GameObject WaitForHookedCol;
 
@@ -62,12 +62,26 @@ using System.Collections;
 	public bool endCamBackBool = false;
 
 	private float scale = 5f;
-	private float minScale = 4.5f;
+	private float minScale = 4.7f;
 	private float maxScale = 5f;
-	private float scaleSpeed = 10f;
+	private float scaleSpeed = 20f;
+	private bool scaleCharBool = false;
+	private bool scaleCharBackBool = false;
 	public AudioSource sawSound;
+	private Vector3 posMoveBack;
+	private Vector3 posMoveForward;
+	public float moveBackAmmount = 0.45f;
+	//public GameObject groundColObj;
 
 
+	public GameObject stairColsObj;
+	public Transform stairPosUp;
+	public Transform stairPosDown;
+
+	private bool moveColUpBool = false;
+	private bool moveColDownBool = false;
+
+	private bool climbingStairsBoolCol = false;
 
 
         private void Awake()
@@ -81,6 +95,16 @@ using System.Collections;
 		//tempHinge = gameObject.GetComponent<FixedJoint2D> ();
         }
 
+	private void Start()
+	{
+		posMoveBack = new Vector3 (graphicsNorm.transform.localPosition.x, 
+			graphicsNorm.transform.localPosition.y +moveBackAmmount, graphicsNorm.transform.localPosition.z);
+
+		posMoveForward = new Vector3 (graphicsNorm.transform.localPosition.x, 
+			graphicsNorm.transform.localPosition.y, graphicsNorm.transform.localPosition.z);
+
+
+	}
 		private void Update(){
 
 		/*
@@ -170,9 +194,12 @@ using System.Collections;
 
 		}
 
-		if (endCamBool) {
+		if (scaleCharBool) {
 
+			//stairColsObj.transform.position = stairPosUp.position;
 			scale -= scaleSpeed * Time.deltaTime;
+
+
 
 			if (scale > maxScale) {
 			
@@ -181,19 +208,39 @@ using System.Collections;
 			}
 
 			if (scale < minScale) {
-			
+
 				scale = minScale;
 			
 			}
 
-			graphicsNorm.transform.localScale = new Vector3 (scale, scale, 1f);
-		
-			friction = 4f;
+			if (sideArrowsBool) {
+				graphicsNorm.transform.localScale = new Vector3 (scale, scale, 1f);
+				graphicsNorm.transform.localPosition = Vector3.Lerp (graphicsNorm.transform.localPosition, posMoveBack, 2f * Time.deltaTime);
+
+
+			}
+			//friction = 1f;
 		
 		}
 
-		if (endCamBackBool) {
+		if (climbingStairsBoolCol && Input.GetKey(KeyCode.RightArrow)) {
+			
+			// if (sideArrowsBool) {
+				
+				stairColsObj.transform.localPosition = Vector3.Lerp (stairColsObj.transform.localPosition, stairPosUp.localPosition, 5f * Time.deltaTime);
+			// }
+		}
 
+		else if (climbingStairsBoolCol && Input.GetKey(KeyCode.LeftArrow)) {
+			
+				//if (sideArrowsBool) {
+					stairColsObj.transform.localPosition = Vector3.Lerp (stairColsObj.transform.localPosition, stairPosDown.localPosition, 5f * Time.deltaTime);
+				//}
+		}
+
+		if (scaleCharBackBool) {
+
+			//stairColsObj.transform.position = stairPosDown.position;
 			scale += scaleSpeed * Time.deltaTime;
 
 			if (scale > maxScale) {
@@ -208,10 +255,18 @@ using System.Collections;
 
 			}
 
-			graphicsNorm.transform.localScale = new Vector3 (scale, scale, 1f);
+			if (sideArrowsBool) {
+				graphicsNorm.transform.localScale = new Vector3 (scale, scale, 1f);
 
-			friction = 1f;
+				graphicsNorm.transform.localPosition = Vector3.Lerp (graphicsNorm.transform.localPosition, posMoveForward, 2f * Time.deltaTime);
+			
+				//stairColsObj.transform.localPosition = Vector3.Lerp (stairColsObj.transform.localPosition, stairPosDown.localPosition, 2f * Time.deltaTime);
+			
+			}
+			//friction = 1f;
 		
+
+
 		}
 		/*if (m_Grounded) {
 			
@@ -570,6 +625,19 @@ using System.Collections;
 			climbingStairsBool = true;
 
 		}
+		if (other.gameObject.tag == "TopStairTrigger") {
+
+			friction = 4f;
+
+		}
+		if (other.gameObject.tag == "StairsTriggerColScale") {
+
+			//m_Grounded = true;
+			//Debug.Log("HI");
+
+			climbingStairsBoolCol = true;
+
+		}
 		if (other.gameObject.tag == "CamTargetEndTrigger") {
 
 
@@ -584,6 +652,13 @@ using System.Collections;
 			sawSound.volume = 0.4f;
 
 		}
+		if (other.gameObject.tag == "ScaleCharTrigger") {
+
+			scaleCharBool = true;
+			scaleCharBackBool = false;
+
+
+		}
 	
 		}
 
@@ -592,6 +667,19 @@ using System.Collections;
 		if (other.gameObject.tag == "StairsTrigger") {
 
 			climbingStairsBool = false;
+
+		}
+		if (other.gameObject.tag == "TopStairTrigger") {
+
+			friction = 0.9f;
+
+		}
+		if (other.gameObject.tag == "StairsTriggerColScale") {
+
+			//m_Grounded = true;
+
+
+			climbingStairsBoolCol = false;
 
 		}
 		if (other.gameObject.tag == "CamTargetEndTrigger") {
@@ -609,6 +697,18 @@ using System.Collections;
 			sawSound.volume = 0f;
 
 		}
+		if (other.gameObject.tag == "ScaleCharTrigger") {
+
+			scaleCharBool = false;
+			scaleCharBackBool = true;
+
+		}
+		/*if (other.gameObject.tag == "moveColTrigger") {
+
+			moveColUpBool = false;
+			scaleCharBackBool = true;
+
+		}*/
 
 	}
 
@@ -622,6 +722,14 @@ using System.Collections;
 			climbingStairsBool = true;
 
 		}
+		if (other.gameObject.tag == "StairsTriggerColScale") {
+
+			//m_Grounded = true;
+
+
+			climbingStairsBoolCol = true;
+
+		}
 
 		if (other.gameObject.tag == "CamTargetEndTrigger") {
 
@@ -629,6 +737,17 @@ using System.Collections;
 
 
 			endCamBool = true;
+
+		}
+		if (other.gameObject.tag == "ScaleCharTrigger") {
+		
+			scaleCharBool = true;
+			scaleCharBackBool = false;
+		
+		}
+		if (other.gameObject.tag == "TopStairTrigger") {
+
+			friction = 4f;
 
 		}
 

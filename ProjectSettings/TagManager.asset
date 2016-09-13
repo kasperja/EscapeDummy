@@ -33,6 +33,10 @@ TagManager:
   - StairsTrigger
   - CamTargetEndTrigger
   - SawSound
+  - ScaleCharTrigger
+  - CamTargetEndTriggerBack
+  - StairsTriggerColScale
+  - TopStairTrigger
   layers:
   - Default
   - TransparentFX
