@@ -1,9 +1,66 @@
 fileFormatVersion: 2
 guid: 2a9219ed0b1bb384fbcf672939c7faa5
-timeCreated: 1473070279
-licenseType: Pro
+timeCreated: 1473765470
+licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: EnemyWorkingSawIdle_0
+    21300002: EnemyWorkingSawIdle_1
+    21300004: EnemyWorkingSawIdle_2
+    21300006: EnemyWorkingSawIdle_3
+    21300008: EnemyWorkingSawIdle_4
+    21300010: EnemyWorkingSawIdle_5
+    21300012: EnemyWorkingSawIdle_6
+    21300014: EnemyWorkingSawIdle_7
+    21300016: EnemyWorkingSawIdle_8
+    21300018: EnemyWorkingSawIdle_9
+    21300020: EnemyWorkingSawIdle_10
+    21300022: EnemyWorkingSawIdle_11
+    21300024: EnemyWorkingSawIdle_12
+    21300026: EnemyWorkingSawIdle_13
+    21300028: EnemyWorkingSawIdle_14
+    21300030: EnemyWorkingSawIdle_15
+    21300032: EnemyWorkingSawIdle_16
+    21300034: EnemyWorkingSawIdle_17
+    21300036: EnemyWorkingSawIdle_18
+    21300038: EnemyWorkingSawIdle_19
+    21300040: EnemyWorkingSawIdle_20
+    21300042: EnemyWorkingSawIdle_21
+    21300044: EnemyWorkingSawIdle_22
+    21300046: EnemyWorkingSawIdle_23
+    21300048: EnemyWorkingSawIdle_24
+    21300050: EnemyWorkingSawIdle_25
+    21300052: EnemyWorkingSawIdle_26
+    21300054: EnemyWorkingSawIdle_27
+    21300056: EnemyWorkingSawIdle_28
+    21300058: EnemyWorkingSawIdle_29
+    21300060: EnemyWorkingSawIdle_30
+    21300062: EnemyWorkingSawIdle_31
+    21300064: EnemyWorkingSawIdle_32
+    21300066: EnemyWorkingSawIdle_33
+    21300068: EnemyWorkingSawIdle_34
+    21300070: EnemyWorkingSawIdle_35
+    21300072: EnemyWorkingSawIdle_36
+    21300074: EnemyWorkingSawIdle_37
+    21300076: EnemyWorkingSawIdle_38
+    21300078: EnemyWorkingSawIdle_39
+    21300080: EnemyWorkingSawIdle_40
+    21300082: EnemyWorkingSawIdle_41
+    21300084: EnemyWorkingSawIdle_42
+    21300086: EnemyWorkingSawIdle_43
+    21300088: EnemyWorkingSawIdle_44
+    21300090: EnemyWorkingSawIdle_45
+    21300092: EnemyWorkingSawIdle_46
+    21300094: EnemyWorkingSawIdle_47
+    21300096: EnemyWorkingSawIdle_48
+    21300098: EnemyWorkingSawIdle_49
+    21300100: EnemyWorkingSawIdle_50
+    21300102: EnemyWorkingSawIdle_51
+    21300104: EnemyWorkingSawIdle_52
+    21300106: EnemyWorkingSawIdle_53
+    21300108: EnemyWorkingSawIdle_54
+    21300110: EnemyWorkingSawIdle_55
+    21300112: EnemyWorkingSawIdle_56
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,28 +87,774 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
+  alignment: 7
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
-  alphaIsTransparency: 0
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: -1
-  buildTargetSettings: []
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    textureFormat: -1
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7392
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_1
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 7392
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_2
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 7392
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_3
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 7392
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_4
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 7392
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_5
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 7392
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_6
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 7392
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_7
+      rect:
+        serializedVersion: 2
+        x: 4032
+        y: 7392
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_8
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 7392
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_9
+      rect:
+        serializedVersion: 2
+        x: 5184
+        y: 7392
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_10
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 7392
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_11
+      rect:
+        serializedVersion: 2
+        x: 6336
+        y: 7392
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_12
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 7392
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_13
+      rect:
+        serializedVersion: 2
+        x: 7488
+        y: 7392
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6592
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_15
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 6592
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_16
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 6592
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_17
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 6592
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_18
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 6592
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_19
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 6592
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_20
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 6592
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_21
+      rect:
+        serializedVersion: 2
+        x: 4032
+        y: 6592
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_22
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 6592
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_23
+      rect:
+        serializedVersion: 2
+        x: 5184
+        y: 6592
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_24
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 6592
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_25
+      rect:
+        serializedVersion: 2
+        x: 6336
+        y: 6592
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_26
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 6592
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_27
+      rect:
+        serializedVersion: 2
+        x: 7488
+        y: 6592
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5792
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_29
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 5792
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_30
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 5792
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_31
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 5792
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_32
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 5792
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_33
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 5792
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_34
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 5792
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_35
+      rect:
+        serializedVersion: 2
+        x: 4032
+        y: 5792
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_36
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 5792
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_37
+      rect:
+        serializedVersion: 2
+        x: 5184
+        y: 5792
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_38
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 5792
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_39
+      rect:
+        serializedVersion: 2
+        x: 6336
+        y: 5792
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_40
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 5792
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_41
+      rect:
+        serializedVersion: 2
+        x: 7488
+        y: 5792
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4992
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_43
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 4992
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_44
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 4992
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_45
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 4992
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_46
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 4992
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_47
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 4992
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_48
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 4992
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_49
+      rect:
+        serializedVersion: 2
+        x: 4032
+        y: 4992
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_50
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 4992
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_51
+      rect:
+        serializedVersion: 2
+        x: 5184
+        y: 4992
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_52
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 4992
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_53
+      rect:
+        serializedVersion: 2
+        x: 6336
+        y: 4992
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_54
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 4992
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_55
+      rect:
+        serializedVersion: 2
+        x: 7488
+        y: 4992
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EnemyWorkingSawIdle_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4192
+        width: 576
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
