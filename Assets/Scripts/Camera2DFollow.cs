@@ -40,7 +40,7 @@ namespace UnityStandardAssets._2D
 			
 			} else if (MainCharScript.endCamBool) {
 			
-				damping = 0.5f;
+				damping = 0.15f;
 				target = targetEnd;
 			
 			

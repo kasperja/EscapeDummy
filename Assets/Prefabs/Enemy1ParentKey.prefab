@@ -1003,7 +1003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f40e8e72bf1286243a490425262d835d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1000
+  hitpoints: 1
   maxHitpoints: 0
   healthBar: {fileID: 1000013885377074}
   healthBarRect: {fileID: 224000011896118238}
