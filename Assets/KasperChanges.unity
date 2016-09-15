@@ -6181,9 +6181,9 @@ SpriteRenderer:
   m_FlipY: 0
 --- !u!1 &864568198 stripped
 GameObject:
-  m_PrefabParentObject: {fileID: 1000010287391584, guid: f47f4bd6e5fd53040900caf5abea5d81,
+  m_PrefabParentObject: {fileID: 1000011598575342, guid: a59ec1f2765f3844fb5e444cc1bf5569,
     type: 2}
-  m_PrefabInternal: {fileID: 1625464381}
+  m_PrefabInternal: {fileID: 1462775954}
 --- !u!1001 &866473538
 Prefab:
   m_ObjectHideFlags: 0
@@ -6740,7 +6740,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000011303274688, guid: 378e90563c863e847a34bdba162b6f2c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 357
+      value: 445.4
       objectReference: {fileID: 0}
     - target: {fileID: 4000011303274688, guid: 378e90563c863e847a34bdba162b6f2c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -6770,161 +6770,161 @@ Prefab:
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
-    - target: {fileID: 114000011996070790, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: deathSound
-      value: 
-      objectReference: {fileID: 660004245}
-    - target: {fileID: 114000010838392054, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 142688742}
-    - target: {fileID: 114000012869694790, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: woosh
-      value: 
-      objectReference: {fileID: 20155372}
-    - target: {fileID: 114000011002026668, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: mainCamObj
-      value: 
-      objectReference: {fileID: 1252975311}
-    - target: {fileID: 114000011002026668, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: highDmg
-      value: 
-      objectReference: {fileID: 1726593342}
-    - target: {fileID: 114000011002026668, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: middleDmg
-      value: 
-      objectReference: {fileID: 400591636}
-    - target: {fileID: 114000011002026668, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: lowDmg
-      value: 
-      objectReference: {fileID: 1095296420}
-    - target: {fileID: 114000011002026668, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: punchSound
-      value: 
-      objectReference: {fileID: 2059599485}
-    - target: {fileID: 114000011002026668, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: falconPunchSound
-      value: 
-      objectReference: {fileID: 829976252}
-    - target: {fileID: 114000011002026668, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: comboManager
-      value: 
-      objectReference: {fileID: 142688743}
-    - target: {fileID: 114000010526486568, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: mainCamObj
-      value: 
-      objectReference: {fileID: 1252975311}
-    - target: {fileID: 114000010526486568, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: highDmg
-      value: 
-      objectReference: {fileID: 1726593342}
-    - target: {fileID: 114000010526486568, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: middleDmg
-      value: 
-      objectReference: {fileID: 400591636}
-    - target: {fileID: 114000010526486568, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: lowDmg
-      value: 
-      objectReference: {fileID: 1095296420}
-    - target: {fileID: 114000010526486568, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: punchSound
-      value: 
-      objectReference: {fileID: 2059599485}
-    - target: {fileID: 114000010526486568, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: falconPunchSound
-      value: 
-      objectReference: {fileID: 829976252}
-    - target: {fileID: 114000010526486568, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: comboManager
-      value: 
-      objectReference: {fileID: 142688743}
-    - target: {fileID: 114000011148313302, guid: 378e90563c863e847a34bdba162b6f2c,
+    - target: {fileID: 114000012297356212, guid: 378e90563c863e847a34bdba162b6f2c,
         type: 2}
       propertyPath: attackSound
       value: 
       objectReference: {fileID: 2059599485}
-    - target: {fileID: 114000011148313302, guid: 378e90563c863e847a34bdba162b6f2c,
+    - target: {fileID: 114000012297356212, guid: 378e90563c863e847a34bdba162b6f2c,
         type: 2}
       propertyPath: playerObj
       value: 
       objectReference: {fileID: 142688742}
-    - target: {fileID: 114000014049641370, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: attackSound
-      value: 
-      objectReference: {fileID: 2059599485}
-    - target: {fileID: 114000014049641370, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: playerObj
-      value: 
-      objectReference: {fileID: 142688742}
-    - target: {fileID: 114000014110505942, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: mainCamObj
-      value: 
-      objectReference: {fileID: 1252975311}
-    - target: {fileID: 114000014110505942, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: highDmg
-      value: 
-      objectReference: {fileID: 1726593342}
-    - target: {fileID: 114000014110505942, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: middleDmg
-      value: 
-      objectReference: {fileID: 400591636}
-    - target: {fileID: 114000014110505942, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: lowDmg
-      value: 
-      objectReference: {fileID: 1095296420}
-    - target: {fileID: 114000014110505942, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: punchSound
-      value: 
-      objectReference: {fileID: 2059599485}
-    - target: {fileID: 114000014110505942, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: falconPunchSound
-      value: 
-      objectReference: {fileID: 829976252}
-    - target: {fileID: 114000014110505942, guid: 378e90563c863e847a34bdba162b6f2c,
-        type: 2}
-      propertyPath: comboManager
-      value: 
-      objectReference: {fileID: 142688743}
     - target: {fileID: 114000011821312858, guid: 378e90563c863e847a34bdba162b6f2c,
         type: 2}
       propertyPath: DangerSound
       value: 
       objectReference: {fileID: 1278464863}
-    - target: {fileID: 114000012297356212, guid: 378e90563c863e847a34bdba162b6f2c,
+    - target: {fileID: 114000014110505942, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: mainCamObj
+      value: 
+      objectReference: {fileID: 1252975311}
+    - target: {fileID: 114000014110505942, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: highDmg
+      value: 
+      objectReference: {fileID: 1726593342}
+    - target: {fileID: 114000014110505942, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: middleDmg
+      value: 
+      objectReference: {fileID: 400591636}
+    - target: {fileID: 114000014110505942, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: lowDmg
+      value: 
+      objectReference: {fileID: 1095296420}
+    - target: {fileID: 114000014110505942, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: punchSound
+      value: 
+      objectReference: {fileID: 2059599485}
+    - target: {fileID: 114000014110505942, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: falconPunchSound
+      value: 
+      objectReference: {fileID: 829976252}
+    - target: {fileID: 114000014110505942, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: comboManager
+      value: 
+      objectReference: {fileID: 142688743}
+    - target: {fileID: 114000014049641370, guid: 378e90563c863e847a34bdba162b6f2c,
         type: 2}
       propertyPath: attackSound
       value: 
       objectReference: {fileID: 2059599485}
-    - target: {fileID: 114000012297356212, guid: 378e90563c863e847a34bdba162b6f2c,
+    - target: {fileID: 114000014049641370, guid: 378e90563c863e847a34bdba162b6f2c,
         type: 2}
       propertyPath: playerObj
       value: 
       objectReference: {fileID: 142688742}
+    - target: {fileID: 114000011148313302, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: attackSound
+      value: 
+      objectReference: {fileID: 2059599485}
+    - target: {fileID: 114000011148313302, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: playerObj
+      value: 
+      objectReference: {fileID: 142688742}
+    - target: {fileID: 114000010526486568, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: mainCamObj
+      value: 
+      objectReference: {fileID: 1252975311}
+    - target: {fileID: 114000010526486568, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: highDmg
+      value: 
+      objectReference: {fileID: 1726593342}
+    - target: {fileID: 114000010526486568, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: middleDmg
+      value: 
+      objectReference: {fileID: 400591636}
+    - target: {fileID: 114000010526486568, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: lowDmg
+      value: 
+      objectReference: {fileID: 1095296420}
+    - target: {fileID: 114000010526486568, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: punchSound
+      value: 
+      objectReference: {fileID: 2059599485}
+    - target: {fileID: 114000010526486568, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: falconPunchSound
+      value: 
+      objectReference: {fileID: 829976252}
+    - target: {fileID: 114000010526486568, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: comboManager
+      value: 
+      objectReference: {fileID: 142688743}
+    - target: {fileID: 114000011002026668, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: mainCamObj
+      value: 
+      objectReference: {fileID: 1252975311}
+    - target: {fileID: 114000011002026668, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: highDmg
+      value: 
+      objectReference: {fileID: 1726593342}
+    - target: {fileID: 114000011002026668, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: middleDmg
+      value: 
+      objectReference: {fileID: 400591636}
+    - target: {fileID: 114000011002026668, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: lowDmg
+      value: 
+      objectReference: {fileID: 1095296420}
+    - target: {fileID: 114000011002026668, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: punchSound
+      value: 
+      objectReference: {fileID: 2059599485}
+    - target: {fileID: 114000011002026668, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: falconPunchSound
+      value: 
+      objectReference: {fileID: 829976252}
+    - target: {fileID: 114000011002026668, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: comboManager
+      value: 
+      objectReference: {fileID: 142688743}
+    - target: {fileID: 114000012869694790, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: woosh
+      value: 
+      objectReference: {fileID: 20155372}
+    - target: {fileID: 114000010838392054, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 142688742}
+    - target: {fileID: 114000011996070790, guid: 378e90563c863e847a34bdba162b6f2c,
+        type: 2}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 660004245}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 378e90563c863e847a34bdba162b6f2c, type: 2}
   m_IsPrefabParent: 0
@@ -9766,6 +9766,11 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!4 &1262572791 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000013877167382, guid: a59ec1f2765f3844fb5e444cc1bf5569,
+    type: 2}
+  m_PrefabInternal: {fileID: 1462775954}
 --- !u!1001 &1275895098
 Prefab:
   m_ObjectHideFlags: 0
@@ -12286,6 +12291,11 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 1
+--- !u!4 &1541205352 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000010225890048, guid: a59ec1f2765f3844fb5e444cc1bf5569,
+    type: 2}
+  m_PrefabInternal: {fileID: 1462775954}
 --- !u!1 &1542463140
 GameObject:
   m_ObjectHideFlags: 0
@@ -12995,48 +13005,6 @@ Transform:
   - {fileID: 1324745687}
   m_Father: {fileID: 403798665}
   m_RootOrder: 1
---- !u!1001 &1625464381
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4000013218671038, guid: f47f4bd6e5fd53040900caf5abea5d81, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 380.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013218671038, guid: f47f4bd6e5fd53040900caf5abea5d81, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -11.367336
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013218671038, guid: f47f4bd6e5fd53040900caf5abea5d81, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013218671038, guid: f47f4bd6e5fd53040900caf5abea5d81, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013218671038, guid: f47f4bd6e5fd53040900caf5abea5d81, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013218671038, guid: f47f4bd6e5fd53040900caf5abea5d81, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013218671038, guid: f47f4bd6e5fd53040900caf5abea5d81, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013218671038, guid: f47f4bd6e5fd53040900caf5abea5d81, type: 2}
-      propertyPath: m_RootOrder
-      value: 16
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: f47f4bd6e5fd53040900caf5abea5d81, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1631183536
 GameObject:
   m_ObjectHideFlags: 0
@@ -14297,6 +14265,11 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 440564, guid: d437524b86930a34b94f676908829fca, type: 2}
   m_PrefabInternal: {fileID: 1907830750}
+--- !u!4 &1910291340 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000010948257472, guid: a59ec1f2765f3844fb5e444cc1bf5569,
+    type: 2}
+  m_PrefabInternal: {fileID: 1462775954}
 --- !u!4 &1920351538 stripped
 Transform:
   m_PrefabParentObject: {fileID: 440564, guid: d437524b86930a34b94f676908829fca, type: 2}
@@ -14469,7 +14442,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000011802787232, guid: fc33b3b3eabb2c24da2737445d2a1b6a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -780
+      value: 192.7
       objectReference: {fileID: 0}
     - target: {fileID: 4000011802787232, guid: fc33b3b3eabb2c24da2737445d2a1b6a, type: 2}
       propertyPath: m_LocalPosition.y
@@ -14499,22 +14472,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgHigh
       value: 
       objectReference: {fileID: 880718286}
-    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgMiddle
       value: 
       objectReference: {fileID: 2135202965}
-    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgLow
       value: 
       objectReference: {fileID: 632411383}
-    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: SawTrapDamage
       value: 
@@ -14539,22 +14512,22 @@ Prefab:
       propertyPath: SawTrapDamage
       value: 
       objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgHigh
       value: 
       objectReference: {fileID: 880718286}
-    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgMiddle
       value: 
       objectReference: {fileID: 2135202965}
-    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgLow
       value: 
       objectReference: {fileID: 632411383}
-    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: SawTrapDamage
       value: 
@@ -14584,6 +14557,26 @@ Prefab:
       propertyPath: stairPosDown
       value: 
       objectReference: {fileID: 308368036}
+    - target: {fileID: 114000010164550830, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: wayPointArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 1541205352}
+    - target: {fileID: 114000010164550830, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: wayPointArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 1910291340}
+    - target: {fileID: 114000010164550830, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: wayPointArray.Array.data[2]
+      value: 
+      objectReference: {fileID: 1262572791}
+    - target: {fileID: 114000010164550830, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: sawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
     - target: {fileID: 114000010577870838, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: deathSound
