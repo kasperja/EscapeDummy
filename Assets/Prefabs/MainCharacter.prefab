@@ -87,7 +87,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000011491579272
 GameObject:
   m_ObjectHideFlags: 1
@@ -405,7 +405,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4000010189860808
 Transform:
   m_ObjectHideFlags: 1
@@ -520,7 +520,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014109482998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 589, y: 22, z: 30}
+  m_LocalPosition: {x: 192.7, y: 22, z: 30}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1007,6 +1007,13 @@ MonoBehaviour:
   stairColsObj: {fileID: 0}
   stairPosUp: {fileID: 0}
   stairPosDown: {fileID: 0}
+  wayPointArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hookJumpActive: 0
+  hookJumpActiveOnce: 1
+  sawMoverScript: {fileID: 0}
 --- !u!114 &114000010480083346
 MonoBehaviour:
   m_ObjectHideFlags: 1

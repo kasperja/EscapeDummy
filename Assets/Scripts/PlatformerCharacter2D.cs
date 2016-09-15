@@ -83,6 +83,14 @@ using System.Collections;
 
 	private bool climbingStairsBoolCol = false;
 
+	public Transform[] wayPointArray;
+	float percentsPerSecond = 1f;
+	float currentPathPercent = 0.0f;
+
+	public bool hookJumpActive = false;
+	public bool hookJumpActiveOnce = true;
+
+	public SawMover sawMoverScript;
 
         private void Awake()
         {
@@ -107,92 +115,37 @@ using System.Collections;
 	}
 		private void Update(){
 
-		/*
-		 
-		 RaycastHit2D hit = Physics2D.Raycast (transform.position, -Vector2.up);
 
-		if (true) {
-		
-		
-			float distanceToGround = hit.distance;
 
-			transform.position = new Vector2(transform.position.x, hit.distance - transform.GetComponent<BoxCollider2D> ().bounds.extents.y);
-		
+			vSpeed = m_Rigidbody2D.velocity.y;
 
-		
-		}*/
 
-		vSpeed = m_Rigidbody2D.velocity.y;
 
-			/*if (hpPlayerTotal.hitpoints <= 0.0f) {
-				m_Attack1 = false;
-				m_Attack2 = false;
-				m_Attack3 = false;
-				m_Attack4 = false;
 
-				playOnce1 = true;
-				playOnce2 = true;
-				playOnce3 = true;
-				playOnce4 = true;
+		if (hooked && Input.GetKey(KeyCode.Space) && sawMoverScript.hookDetected && hookJumpActiveOnce) {
+
 			
-			}*/
-
-		/*RaycastHit2D hit = Physics2D.Raycast (this.gameObject.transform.position, direction);
+			hookJumpActive = true;
 
 
+		} 
 
-		if (hit.collider != null) {
-		
-			float distanceToGround = hit.distance;
-
-			transform.position = new Vector3 (this.gameObject.transform.position.x, hit.distance - transform.GetComponent<BoxCollider2D> ().bounds.extents.y, transform.position.z);
-		
-		}*/
-
-		if (hooked) {
+		if (hookJumpActive && hookJumpActiveOnce) {
 			
+			currentPathPercent += percentsPerSecond * Time.deltaTime;
 
-			transform.position = new Vector3( graphicsHooked.transform.position.x, graphicsHooked.transform.position.y + 20f, transform.position.z);
-			//tempHinge.connectedAnchor = anchor.transform.position;
-			//MainCharObj.SetActive(false);
-			m_AnimHooked.SetBool("Grab", true);
-			m_AnimHooked.SetBool ("Hold", true);
+			iTween.PutOnPath (gameObject, wayPointArray, currentPathPercent);
+
+			//Debug.Log ("hi");
 			WaitForHookedCol.SetActive (false);
-			gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
-		}
-
-		if (!hooked) {
-
-
-			WaitForHookedCol.SetActive (true);
-			//MainCharObj.SetActive(true);
-			graphicsHooked.transform.position = graphicsNorm.transform.position;
-			graphicsHooked.transform.rotation = graphicsNorm.transform.rotation;
-			//m_AnimHooked.SetBool("Grab", false);
-			//m_AnimHooked.SetBool ("Hold", false);
-			//m_AnimHooked.SetBool ("Release", true);
-			graphicsHooked.SetActive (false);
-			gameObject.GetComponent<BoxCollider2D>().enabled = true;
-
-		
-		}
-
-		if(hooked && Input.GetKeyDown(KeyCode.Space)){
-
-			gameObject.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0.0f, 0.0f);
-			//gameObject.GetComponent<Rigidbody2D> ().gravityScale = 7;
-			//transform.position = new Vector3( graphicsHooked.transform.position.x, graphicsHooked.transform.position.y + 20f, transform.position.z);
-			hooked = false;
-			tempHinge.enabled = false;
-			graphicsNorm.SetActive (true);
-			graphicsHooked.SetActive (false);
-			//hookParent.GetComponent<BoxCollider2D> ().enabled = false;
-			//tempHinge.connectedBody = gameObject.GetComponent<Rigidbody2D> ();
 			StartCoroutine (waitHook (1f));
 
 
+
+		
 		}
+			
 
 		if (scaleCharBool) {
 
@@ -358,6 +311,8 @@ using System.Collections;
 			playOnce4 = true;
 		}
 
+
+
         private void FixedUpdate()
         {
 
@@ -466,7 +421,7 @@ using System.Collections;
                 }
             }
             // If the player should jump...
-		if (m_Grounded && jump && m_Anim.GetBool("Ground") && !hooked && !climbingStairsBool)
+		if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive)
             {
 			if (!sideArrowsBool) {
 				if (jumpOnce) {
@@ -559,7 +514,7 @@ using System.Collections;
 			}
 		}
 		// If the player should jump...
-		if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool)
+		if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive)
 		{
 			if (!sideArrowsBool) {
 				if (jumpOnce) {
@@ -594,7 +549,9 @@ using System.Collections;
 	}
 		void OnTriggerEnter2D(Collider2D other)
 		{
-		if (other.gameObject.tag == "HookJoint") {
+
+
+		/*if (other.gameObject.tag == "HookJoint") {
 
 			if (hookOnce) {
 				hooked = true;
@@ -616,7 +573,30 @@ using System.Collections;
 
 
 
+			}*/
+
+		/*if (other.gameObject.tag == "WayPoint1Trigger") {
+		
+		
+			wayPointBool1 = true;
+
+		
+		}*/
+
+
+		if (other.gameObject.tag == "HookTrigger") {
+		
+		
+			if (hookOnce) {
+			
+				hooked = true;
+				hookOnce = false;
+			
 			}
+		
+		
+		}
+
 
 		if (other.gameObject.tag == "StairsTrigger") {
 
@@ -664,6 +644,20 @@ using System.Collections;
 
 	void OnTriggerExit2D(Collider2D other)
 	{
+	if (other.gameObject.tag == "HookTrigger") {
+
+			hooked = false;
+			hookJumpActive = false;
+			
+
+			//hookOnce = true;
+
+
+	}
+
+
+
+
 		if (other.gameObject.tag == "StairsTrigger") {
 
 			climbingStairsBool = false;
@@ -722,6 +716,14 @@ using System.Collections;
 			climbingStairsBool = true;
 
 		}
+		
+	if (other.gameObject.tag == "HookTrigger") {
+
+			hooked = true;
+
+
+
+	}
 		if (other.gameObject.tag == "StairsTriggerColScale") {
 
 			//m_Grounded = true;
@@ -774,13 +776,9 @@ using System.Collections;
 
 
 		yield return new WaitForSeconds (waitTime);
-		//hookParent.GetComponent<BoxCollider2D> ().enabled = true;
-		//tempHinge.enabled = true;
-
-			tempHinge.enabled = true;
-			//hookParent.GetComponent<BoxCollider2D> ().enabled = true;
-			hookOnce = true;
-			hooked = false;
+		
+		hookJumpActiveOnce = false;
+		hookJumpActive = false;
 
 	
 	}
@@ -812,6 +810,12 @@ using System.Collections;
 		endCamBackBool = false;
 	
 	}
+	
+void OnDrawGizmos(){
+
+		iTween.DrawPath (wayPointArray);
+
+}
 
     }
 //}
