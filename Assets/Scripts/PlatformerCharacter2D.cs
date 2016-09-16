@@ -131,7 +131,9 @@ using System.Collections;
 		} 
 
 		if (hookJumpActive && hookJumpActiveOnce) {
-			
+
+			m_Anim.SetBool ("Grab", true);
+
 			currentPathPercent += percentsPerSecond * Time.deltaTime;
 
 			iTween.PutOnPath (gameObject, wayPointArray, currentPathPercent);
@@ -779,6 +781,7 @@ using System.Collections;
 		
 		hookJumpActiveOnce = false;
 		hookJumpActive = false;
+		m_Anim.SetBool ("Grab", false);
 
 	
 	}

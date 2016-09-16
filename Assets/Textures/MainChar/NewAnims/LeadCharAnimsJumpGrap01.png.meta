@@ -1,9 +1,22 @@
 fileFormatVersion: 2
 guid: 4ab771c57b0f8ec479022ac02fb51655
-timeCreated: 1474009536
+timeCreated: 1474011452
 licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: LeadCharAnimsJumpGrap01_0
+    21300002: LeadCharAnimsJumpGrap01_1
+    21300004: LeadCharAnimsJumpGrap01_2
+    21300006: LeadCharAnimsJumpGrap01_3
+    21300008: LeadCharAnimsJumpGrap01_4
+    21300010: LeadCharAnimsJumpGrap01_5
+    21300012: LeadCharAnimsJumpGrap01_6
+    21300014: LeadCharAnimsJumpGrap01_7
+    21300016: LeadCharAnimsJumpGrap01_8
+    21300018: LeadCharAnimsJumpGrap01_9
+    21300020: LeadCharAnimsJumpGrap01_10
+    21300022: LeadCharAnimsJumpGrap01_11
+    21300024: LeadCharAnimsJumpGrap01_12
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -27,31 +40,200 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 2048
+  maxTextureSize: 8192
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
-  alphaIsTransparency: 0
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: -1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: LeadCharAnimsJumpGrap01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6958
+        width: 858
+        height: 1234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJumpGrap01_1
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 6958
+        width: 858
+        height: 1234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJumpGrap01_2
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 6958
+        width: 858
+        height: 1234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJumpGrap01_3
+      rect:
+        serializedVersion: 2
+        x: 2574
+        y: 6958
+        width: 858
+        height: 1234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJumpGrap01_4
+      rect:
+        serializedVersion: 2
+        x: 3432
+        y: 6958
+        width: 858
+        height: 1234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJumpGrap01_5
+      rect:
+        serializedVersion: 2
+        x: 4290
+        y: 6958
+        width: 858
+        height: 1234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJumpGrap01_6
+      rect:
+        serializedVersion: 2
+        x: 5148
+        y: 6958
+        width: 858
+        height: 1234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJumpGrap01_7
+      rect:
+        serializedVersion: 2
+        x: 6006
+        y: 6958
+        width: 858
+        height: 1234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJumpGrap01_8
+      rect:
+        serializedVersion: 2
+        x: 6864
+        y: 6958
+        width: 858
+        height: 1234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJumpGrap01_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5724
+        width: 858
+        height: 1234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJumpGrap01_10
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 5724
+        width: 858
+        height: 1234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJumpGrap01_11
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 5724
+        width: 858
+        height: 1234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharAnimsJumpGrap01_12
+      rect:
+        serializedVersion: 2
+        x: 2574
+        y: 5724
+        width: 858
+        height: 1234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
