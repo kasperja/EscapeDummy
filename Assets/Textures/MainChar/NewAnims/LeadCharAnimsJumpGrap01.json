@@ -1,0 +1,115 @@
+﻿{"frames": {
+
+"LeadCharJumpgrap instance 10000":
+{
+	"frame": {"x":0,"y":0,"w":858,"h":1234},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":858,"h":1234},
+	"sourceSize": {"w":858,"h":1234}
+},
+"LeadCharJumpgrap instance 10001":
+{
+	"frame": {"x":858,"y":0,"w":858,"h":1234},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":858,"h":1234},
+	"sourceSize": {"w":858,"h":1234}
+},
+"LeadCharJumpgrap instance 10002":
+{
+	"frame": {"x":1716,"y":0,"w":858,"h":1234},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":858,"h":1234},
+	"sourceSize": {"w":858,"h":1234}
+},
+"LeadCharJumpgrap instance 10003":
+{
+	"frame": {"x":2574,"y":0,"w":858,"h":1234},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":858,"h":1234},
+	"sourceSize": {"w":858,"h":1234}
+},
+"LeadCharJumpgrap instance 10004":
+{
+	"frame": {"x":3432,"y":0,"w":858,"h":1234},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":858,"h":1234},
+	"sourceSize": {"w":858,"h":1234}
+},
+"LeadCharJumpgrap instance 10005":
+{
+	"frame": {"x":4290,"y":0,"w":858,"h":1234},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":858,"h":1234},
+	"sourceSize": {"w":858,"h":1234}
+},
+"LeadCharJumpgrap instance 10006":
+{
+	"frame": {"x":5148,"y":0,"w":858,"h":1234},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":858,"h":1234},
+	"sourceSize": {"w":858,"h":1234}
+},
+"LeadCharJumpgrap instance 10007":
+{
+	"frame": {"x":6006,"y":0,"w":858,"h":1234},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":858,"h":1234},
+	"sourceSize": {"w":858,"h":1234}
+},
+"LeadCharJumpgrap instance 10008":
+{
+	"frame": {"x":6864,"y":0,"w":858,"h":1234},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":858,"h":1234},
+	"sourceSize": {"w":858,"h":1234}
+},
+"LeadCharJumpgrap instance 10009":
+{
+	"frame": {"x":0,"y":1234,"w":858,"h":1234},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":858,"h":1234},
+	"sourceSize": {"w":858,"h":1234}
+},
+"LeadCharJumpgrap instance 10010":
+{
+	"frame": {"x":858,"y":1234,"w":858,"h":1234},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":858,"h":1234},
+	"sourceSize": {"w":858,"h":1234}
+},
+"LeadCharJumpgrap instance 10011":
+{
+	"frame": {"x":1716,"y":1234,"w":858,"h":1234},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":858,"h":1234},
+	"sourceSize": {"w":858,"h":1234}
+},
+"LeadCharJumpgrap instance 10012":
+{
+	"frame": {"x":2574,"y":1234,"w":858,"h":1234},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":858,"h":1234},
+	"sourceSize": {"w":858,"h":1234}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "15.2.1.95",
+	"image": "LeadCharAnimsJumpGrap01.png",
+	"format": "RGBA8888",
+	"size": {"w":8192,"h":8192},
+	"scale": "1"
+}
+}
