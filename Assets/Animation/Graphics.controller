@@ -39,7 +39,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Enemyworkinsaw
-  m_Speed: 30
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours:
@@ -51,7 +51,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 78732d72bb41c5b49b9636422aad298e, type: 2}
+  m_Motion: {fileID: 7400000, guid: 7236ca5158337eb4e9be8a3aec261fda, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
