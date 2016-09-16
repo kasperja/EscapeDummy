@@ -429,7 +429,7 @@ using System.Collections;
 				if (jumpOnce) {
 					// Add a vertical force to the player.
 					m_Anim.SetBool ("StartJump", true);
-					StartCoroutine (waitJump (0.5f));
+					StartCoroutine (waitJump (0.0f));
 					jumpOnce = false;
 				}
 			} else {
@@ -521,8 +521,8 @@ using System.Collections;
 			if (!sideArrowsBool) {
 				if (jumpOnce) {
 					// Add a vertical force to the player.
-					m_Anim.SetBool ("StartJump", true);
-					StartCoroutine (waitJump (0.5f));
+					m_Anim.SetBool ("StartJump", false);
+					StartCoroutine (waitJump (0.0f));
 					jumpOnce = false;
 				}
 			} else {

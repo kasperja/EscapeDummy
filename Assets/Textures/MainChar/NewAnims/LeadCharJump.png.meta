@@ -1,9 +1,29 @@
 fileFormatVersion: 2
 guid: 54ccef6eac180414396f680b917bd6ab
-timeCreated: 1474009539
+timeCreated: 1474019675
 licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: LeadCharJump_0
+    21300002: LeadCharJump_1
+    21300004: LeadCharJump_2
+    21300006: LeadCharJump_3
+    21300008: LeadCharJump_4
+    21300010: LeadCharJump_5
+    21300012: LeadCharJump_6
+    21300014: LeadCharJump_7
+    21300016: LeadCharJump_8
+    21300018: LeadCharJump_9
+    21300020: LeadCharJump_10
+    21300022: LeadCharJump_11
+    21300024: LeadCharJump_12
+    21300026: LeadCharJump_13
+    21300028: LeadCharJump_14
+    21300030: LeadCharJump_15
+    21300032: LeadCharJump_16
+    21300034: LeadCharJump_17
+    21300036: LeadCharJump_18
+    21300038: LeadCharJump_19
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -27,31 +47,291 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 2048
+  maxTextureSize: 8192
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
-  alphaIsTransparency: 0
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: -1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: LeadCharJump_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7175
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharJump_1
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 7175
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharJump_2
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 7175
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharJump_3
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 7175
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharJump_4
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 7175
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharJump_5
+      rect:
+        serializedVersion: 2
+        x: 3735
+        y: 7175
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharJump_6
+      rect:
+        serializedVersion: 2
+        x: 4482
+        y: 7175
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharJump_7
+      rect:
+        serializedVersion: 2
+        x: 5229
+        y: 7175
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharJump_8
+      rect:
+        serializedVersion: 2
+        x: 5976
+        y: 7175
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharJump_9
+      rect:
+        serializedVersion: 2
+        x: 6723
+        y: 7175
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharJump_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6158
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharJump_11
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 6158
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharJump_12
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 6158
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharJump_13
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 6158
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharJump_14
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 6158
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharJump_15
+      rect:
+        serializedVersion: 2
+        x: 3735
+        y: 6158
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharJump_16
+      rect:
+        serializedVersion: 2
+        x: 4482
+        y: 6158
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharJump_17
+      rect:
+        serializedVersion: 2
+        x: 5229
+        y: 6158
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharJump_18
+      rect:
+        serializedVersion: 2
+        x: 5976
+        y: 6158
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharJump_19
+      rect:
+        serializedVersion: 2
+        x: 6723
+        y: 6158
+        width: 747
+        height: 1017
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
