@@ -36,7 +36,7 @@ namespace UnityStandardAssets._2D
 			if (MainCharScript.hooked) {
 			
 				damping = .1f;
-				target = targetHooked;
+				target = targetNotHooked;
 			
 			} else if (MainCharScript.endCamBool) {
 			
