@@ -38,6 +38,7 @@ TagManager:
   - StairsTriggerColScale
   - TopStairTrigger
   - HookTrigger
+  - CamTargetStartTrigger
   layers:
   - Default
   - TransparentFX

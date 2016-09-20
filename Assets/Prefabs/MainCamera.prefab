@@ -319,7 +319,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 105426}
   m_LocalRotation: {x: -0.7622468, y: -0, z: -0, w: 0.64728653}
-  m_LocalPosition: {x: -5, y: -14.2, z: 37.8}
+  m_LocalPosition: {x: -5, y: -26, z: 40}
   m_LocalScale: {x: 1.0874938, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -99.349, y: 0, z: 0}
   m_Children: []
@@ -971,10 +971,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   targetEnd: {fileID: 0}
+  targetStart: {fileID: 0}
   targetHooked: {fileID: 0}
   targetNotHooked: {fileID: 0}
   MainCharScript: {fileID: 0}
-  damping: 0.1
+  damping: 0.4
   lookAheadFactor: 0
   lookAheadReturnSpeed: 50
   lookAheadMoveThreshold: 0.02
@@ -1243,7 +1244,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       minMaxState: 1
     startSize:
-      scalar: 20
+      scalar: 10
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1259,7 +1260,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: 0.5
+          value: 1
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -3561,7 +3562,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       minMaxState: 1
     startSize:
-      scalar: 20
+      scalar: 10
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3577,7 +3578,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: 0.5
+          value: 1
           inSlope: 0
           outSlope: 0
           tangentMode: 0

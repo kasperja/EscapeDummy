@@ -69,7 +69,7 @@ public class HookHingeMovement : MonoBehaviour {
 
 		if (mainCharScript.hookJumpActive && hookForceOnce) {
 
-			StartCoroutine(HookForceWait(0.5f));
+			StartCoroutine(HookForceWait(0.6f));
 			if (hookForceWaitBool) {
 				SawMoverScript.hookDetected = false;
 				//SawMoverScript.hookDetectSpeed = -30f;
