@@ -482,7 +482,7 @@ Transform:
   - {fileID: 1113713268}
   - {fileID: 1255684524}
   m_Father: {fileID: 1493754701}
-  m_RootOrder: 12
+  m_RootOrder: 13
 --- !u!1001 &71150104
 Prefab:
   m_ObjectHideFlags: 0
@@ -669,7 +669,7 @@ Transform:
   - {fileID: 1542463141}
   - {fileID: 820723251}
   m_Father: {fileID: 1493754701}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1001 &85983318
 Prefab:
   m_ObjectHideFlags: 0
@@ -2197,7 +2197,7 @@ Transform:
   - {fileID: 1677351040}
   - {fileID: 1625088126}
   m_Father: {fileID: 1493754701}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &409983431
 GameObject:
   m_ObjectHideFlags: 0
@@ -2278,7 +2278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &416774775
 Transform:
   m_ObjectHideFlags: 0
@@ -2301,7 +2301,7 @@ Transform:
   - {fileID: 1168600641}
   - {fileID: 139997003}
   m_Father: {fileID: 1493754701}
-  m_RootOrder: 11
+  m_RootOrder: 12
 --- !u!4 &422607527 stripped
 Transform:
   m_PrefabParentObject: {fileID: 440564, guid: d437524b86930a34b94f676908829fca, type: 2}
@@ -2632,6 +2632,11 @@ AudioSource:
   m_PrefabParentObject: {fileID: 8256132, guid: a213b38a8a030074f9fee084c6095ca8,
     type: 2}
   m_PrefabInternal: {fileID: 621484736}
+--- !u!4 &473446983 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000013652474298, guid: f883e6a19bd29fa4fb69c7c91e668ea8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1548720324}
 --- !u!1 &478151437
 GameObject:
   m_ObjectHideFlags: 0
@@ -2661,7 +2666,7 @@ Transform:
   - {fileID: 102233262}
   - {fileID: 1565510347}
   m_Father: {fileID: 1493754701}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &488296560
 GameObject:
   m_ObjectHideFlags: 0
@@ -3812,6 +3817,22 @@ Prefab:
       propertyPath: sunTransform
       value: 
       objectReference: {fileID: 740403092}
+    - target: {fileID: 19896540, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: InitialModule.startSize.scalar
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 19896540, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: InitialModule.startSize.maxCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19896540, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: InitialModule.startSize.minCurve.m_Curve.Array.data[0].value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 19896540, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: EmissionModule.rate.scalar
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
   m_IsPrefabParent: 0
@@ -3980,7 +4001,7 @@ Transform:
   - {fileID: 226300249}
   - {fileID: 702799864}
   m_Father: {fileID: 1493754701}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!1001 &647867736
 Prefab:
   m_ObjectHideFlags: 0
@@ -4439,7 +4460,7 @@ Transform:
   - {fileID: 1920351538}
   - {fileID: 422607527}
   m_Father: {fileID: 1493754701}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!1 &683238707
 GameObject:
   m_ObjectHideFlags: 0
@@ -6107,7 +6128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &868333319
 Transform:
   m_ObjectHideFlags: 0
@@ -7275,7 +7296,7 @@ Transform:
   - {fileID: 957498693}
   - {fileID: 1797768887}
   m_Father: {fileID: 1493754701}
-  m_RootOrder: 16
+  m_RootOrder: 17
 --- !u!1 &997168112
 GameObject:
   m_ObjectHideFlags: 0
@@ -8045,7 +8066,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010159846556, guid: d5a55e9fcda9e0742a21412717dcede9, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1000012476631198, guid: d5a55e9fcda9e0742a21412717dcede9, type: 2}
       propertyPath: m_Name
@@ -8149,7 +8170,7 @@ Transform:
   m_Children:
   - {fileID: 1513631933}
   m_Father: {fileID: 1493754701}
-  m_RootOrder: 19
+  m_RootOrder: 21
 --- !u!114 &1095296420 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114000013128530734, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
@@ -8611,218 +8632,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
---- !u!1001 &1167877799
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4000012881303552, guid: 60ff17d3b3014d04e99a90663cb4ee55, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 454.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012881303552, guid: 60ff17d3b3014d04e99a90663cb4ee55, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 22
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012881303552, guid: 60ff17d3b3014d04e99a90663cb4ee55, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 51.628
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012881303552, guid: 60ff17d3b3014d04e99a90663cb4ee55, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012881303552, guid: 60ff17d3b3014d04e99a90663cb4ee55, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012881303552, guid: 60ff17d3b3014d04e99a90663cb4ee55, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012881303552, guid: 60ff17d3b3014d04e99a90663cb4ee55, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012881303552, guid: 60ff17d3b3014d04e99a90663cb4ee55, type: 2}
-      propertyPath: m_RootOrder
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013467894134, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000010637041422, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: BloodSawParticle
-      value: 
-      objectReference: {fileID: 698741098}
-    - target: {fileID: 114000010637041422, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: sawSound
-      value: 
-      objectReference: {fileID: 1071326675}
-    - target: {fileID: 114000012225741362, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: BloodSawParticle
-      value: 
-      objectReference: {fileID: 698741098}
-    - target: {fileID: 114000012225741362, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: sawSound
-      value: 
-      objectReference: {fileID: 1071326675}
-    - target: {fileID: 114000011033719464, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: BloodSawParticle
-      value: 
-      objectReference: {fileID: 698741098}
-    - target: {fileID: 114000011033719464, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: sawSound
-      value: 
-      objectReference: {fileID: 1071326675}
-    - target: {fileID: 114000011459115140, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: BloodSawParticle
-      value: 
-      objectReference: {fileID: 698741098}
-    - target: {fileID: 114000011459115140, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: sawSound
-      value: 
-      objectReference: {fileID: 1071326675}
-    - target: {fileID: 114000013739145424, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000011823205528, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: BloodSawParticle
-      value: 
-      objectReference: {fileID: 698741098}
-    - target: {fileID: 114000011823205528, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: sawSound
-      value: 
-      objectReference: {fileID: 1071326675}
-    - target: {fileID: 114000013022497822, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000012588858918, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: BloodSawParticle
-      value: 
-      objectReference: {fileID: 698741098}
-    - target: {fileID: 114000012588858918, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: sawSound
-      value: 
-      objectReference: {fileID: 1071326675}
-    - target: {fileID: 114000010067801054, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: BloodSawParticle
-      value: 
-      objectReference: {fileID: 698741098}
-    - target: {fileID: 114000010067801054, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: sawSound
-      value: 
-      objectReference: {fileID: 1071326675}
-    - target: {fileID: 114000013510162718, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: BloodSawParticle
-      value: 
-      objectReference: {fileID: 698741098}
-    - target: {fileID: 114000013510162718, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: sawSound
-      value: 
-      objectReference: {fileID: 1071326675}
-    - target: {fileID: 114000011333357028, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: BloodSawParticle
-      value: 
-      objectReference: {fileID: 698741098}
-    - target: {fileID: 114000011333357028, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: sawSound
-      value: 
-      objectReference: {fileID: 1071326675}
-    - target: {fileID: 114000010930648538, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000010086985312, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: BloodSawParticle
-      value: 
-      objectReference: {fileID: 698741098}
-    - target: {fileID: 114000010086985312, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: sawSound
-      value: 
-      objectReference: {fileID: 1071326675}
-    - target: {fileID: 114000010937621070, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000014094545768, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000012833742720, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000014005444778, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000012303256494, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000011184152536, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000012522524440, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000011090240666, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000011933343474, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000011059954274, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 60ff17d3b3014d04e99a90663cb4ee55, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1168600640
 GameObject:
   m_ObjectHideFlags: 0
@@ -9045,7 +8854,7 @@ Transform:
   - {fileID: 284428502}
   - {fileID: 1097997948}
   m_Father: {fileID: 1493754701}
-  m_RootOrder: 18
+  m_RootOrder: 20
 --- !u!1 &1211580572
 GameObject:
   m_ObjectHideFlags: 0
@@ -9224,7 +9033,7 @@ Transform:
   - {fileID: 36963787}
   - {fileID: 1100659284}
   m_Father: {fileID: 1493754701}
-  m_RootOrder: 9
+  m_RootOrder: 10
 --- !u!1 &1227440536
 GameObject:
   m_ObjectHideFlags: 0
@@ -10493,6 +10302,11 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!4 &1363617769 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000013130325182, guid: d903c0b23ae186d44a49343ad7c7cb71,
+    type: 2}
+  m_PrefabInternal: {fileID: 1545663561}
 --- !u!1 &1365466883
 GameObject:
   m_ObjectHideFlags: 0
@@ -10862,7 +10676,7 @@ Transform:
   - {fileID: 1631183537}
   - {fileID: 743718932}
   m_Father: {fileID: 1493754701}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!4 &1396726486 stripped
 Transform:
   m_PrefabParentObject: {fileID: 405316, guid: ed8fbc0d7128cbe45aaa53e69fcf854a, type: 2}
@@ -11545,7 +11359,7 @@ Transform:
   - {fileID: 125126934}
   - {fileID: 1378536236}
   m_Father: {fileID: 1493754701}
-  m_RootOrder: 10
+  m_RootOrder: 11
 --- !u!1 &1493688602
 GameObject:
   m_ObjectHideFlags: 0
@@ -11635,6 +11449,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 868333319}
+  - {fileID: 1363617769}
   - {fileID: 403798665}
   - {fileID: 478151438}
   - {fileID: 2048828986}
@@ -11652,6 +11467,7 @@ Transform:
   - {fileID: 2127709586}
   - {fileID: 987216240}
   - {fileID: 1864581382}
+  - {fileID: 473446983}
   - {fileID: 1211438151}
   - {fileID: 1088404105}
   m_Father: {fileID: 0}
@@ -12278,6 +12094,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2048828986}
   m_RootOrder: 7
+--- !u!1001 &1545663561
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1493754701}
+    m_Modifications:
+    - target: {fileID: 4000013130325182, guid: d903c0b23ae186d44a49343ad7c7cb71, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -812.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013130325182, guid: d903c0b23ae186d44a49343ad7c7cb71, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013130325182, guid: d903c0b23ae186d44a49343ad7c7cb71, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013130325182, guid: d903c0b23ae186d44a49343ad7c7cb71, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013130325182, guid: d903c0b23ae186d44a49343ad7c7cb71, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013130325182, guid: d903c0b23ae186d44a49343ad7c7cb71, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013130325182, guid: d903c0b23ae186d44a49343ad7c7cb71, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013130325182, guid: d903c0b23ae186d44a49343ad7c7cb71, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011949005208, guid: d903c0b23ae186d44a49343ad7c7cb71, type: 2}
+      propertyPath: m_Name
+      value: BloodWall (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d903c0b23ae186d44a49343ad7c7cb71, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1548265875
 GameObject:
   m_ObjectHideFlags: 0
@@ -12308,6 +12170,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1001 &1548720324
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1493754701}
+    m_Modifications:
+    - target: {fileID: 4000013652474298, guid: f883e6a19bd29fa4fb69c7c91e668ea8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 51.054
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013652474298, guid: f883e6a19bd29fa4fb69c7c91e668ea8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.3354
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013652474298, guid: f883e6a19bd29fa4fb69c7c91e668ea8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 21.831
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013652474298, guid: f883e6a19bd29fa4fb69c7c91e668ea8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013652474298, guid: f883e6a19bd29fa4fb69c7c91e668ea8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013652474298, guid: f883e6a19bd29fa4fb69c7c91e668ea8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013652474298, guid: f883e6a19bd29fa4fb69c7c91e668ea8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013652474298, guid: f883e6a19bd29fa4fb69c7c91e668ea8, type: 2}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010164897836, guid: f883e6a19bd29fa4fb69c7c91e668ea8, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010271100828, guid: f883e6a19bd29fa4fb69c7c91e668ea8, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f883e6a19bd29fa4fb69c7c91e668ea8, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1551670946
 GameObject:
   m_ObjectHideFlags: 0
@@ -12532,6 +12444,183 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1001 &1573751352
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000012881303552, guid: 60ff17d3b3014d04e99a90663cb4ee55, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 454.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012881303552, guid: 60ff17d3b3014d04e99a90663cb4ee55, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012881303552, guid: 60ff17d3b3014d04e99a90663cb4ee55, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 51.628
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012881303552, guid: 60ff17d3b3014d04e99a90663cb4ee55, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012881303552, guid: 60ff17d3b3014d04e99a90663cb4ee55, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012881303552, guid: 60ff17d3b3014d04e99a90663cb4ee55, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012881303552, guid: 60ff17d3b3014d04e99a90663cb4ee55, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012881303552, guid: 60ff17d3b3014d04e99a90663cb4ee55, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011033719464, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: BloodSawParticle
+      value: 
+      objectReference: {fileID: 698741098}
+    - target: {fileID: 114000011033719464, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: sawSound
+      value: 
+      objectReference: {fileID: 1071326675}
+    - target: {fileID: 114000012303256494, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: SawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000011059954274, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: SawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000011090240666, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: SawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000012522524440, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: SawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000011184152536, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: SawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000013825478124, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: SawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000010937621070, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: SawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000010086985312, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: BloodSawParticle
+      value: 
+      objectReference: {fileID: 698741098}
+    - target: {fileID: 114000010086985312, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: sawSound
+      value: 
+      objectReference: {fileID: 1071326675}
+    - target: {fileID: 114000013510162718, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: BloodSawParticle
+      value: 
+      objectReference: {fileID: 698741098}
+    - target: {fileID: 114000013510162718, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: sawSound
+      value: 
+      objectReference: {fileID: 1071326675}
+    - target: {fileID: 114000012588858918, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: BloodSawParticle
+      value: 
+      objectReference: {fileID: 698741098}
+    - target: {fileID: 114000012588858918, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: sawSound
+      value: 
+      objectReference: {fileID: 1071326675}
+    - target: {fileID: 114000013022497822, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: mainCharScript
+      value: 
+      objectReference: {fileID: 142688740}
+    - target: {fileID: 114000013022497822, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: SawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000011823205528, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: BloodSawParticle
+      value: 
+      objectReference: {fileID: 698741098}
+    - target: {fileID: 114000011823205528, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: sawSound
+      value: 
+      objectReference: {fileID: 1071326675}
+    - target: {fileID: 114000013739145424, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: mainCharScript
+      value: 
+      objectReference: {fileID: 142688740}
+    - target: {fileID: 114000013739145424, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: SawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000011459115140, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: BloodSawParticle
+      value: 
+      objectReference: {fileID: 698741098}
+    - target: {fileID: 114000011459115140, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: sawSound
+      value: 
+      objectReference: {fileID: 1071326675}
+    - target: {fileID: 114000012925734434, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: BloodSawParticle
+      value: 
+      objectReference: {fileID: 698741098}
+    - target: {fileID: 114000012925734434, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: sawSound
+      value: 
+      objectReference: {fileID: 1071326675}
+    - target: {fileID: 114000013467894134, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: mainCharScript
+      value: 
+      objectReference: {fileID: 142688740}
+    - target: {fileID: 114000013467894134, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: SawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 60ff17d3b3014d04e99a90663cb4ee55, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1582102913
 GameObject:
   m_ObjectHideFlags: 0
@@ -13987,7 +14076,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1864581382
 Transform:
   m_ObjectHideFlags: 0
@@ -14006,7 +14095,7 @@ Transform:
   - {fileID: 1413036441}
   - {fileID: 1129608728}
   m_Father: {fileID: 1493754701}
-  m_RootOrder: 17
+  m_RootOrder: 18
 --- !u!1 &1874880034
 GameObject:
   m_ObjectHideFlags: 0
@@ -14300,7 +14389,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000011802787232, guid: fc33b3b3eabb2c24da2737445d2a1b6a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -757.8
+      value: 221
       objectReference: {fileID: 0}
     - target: {fileID: 4000011802787232, guid: fc33b3b3eabb2c24da2737445d2a1b6a, type: 2}
       propertyPath: m_LocalPosition.y
@@ -14330,22 +14419,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgHigh
       value: 
       objectReference: {fileID: 880718286}
-    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgMiddle
       value: 
       objectReference: {fileID: 2135202965}
-    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgLow
       value: 
       objectReference: {fileID: 632411383}
-    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: SawTrapDamage
       value: 
@@ -14370,22 +14459,22 @@ Prefab:
       propertyPath: SawTrapDamage
       value: 
       objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgHigh
       value: 
       objectReference: {fileID: 880718286}
-    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgMiddle
       value: 
       objectReference: {fileID: 2135202965}
-    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgLow
       value: 
       objectReference: {fileID: 632411383}
-    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: SawTrapDamage
       value: 
@@ -14574,7 +14663,7 @@ Transform:
   - {fileID: 324274966}
   - {fileID: 1011236555}
   m_Father: {fileID: 1493754701}
-  m_RootOrder: 13
+  m_RootOrder: 14
 --- !u!1 &1985835307
 GameObject:
   m_ObjectHideFlags: 0
@@ -15220,7 +15309,7 @@ Transform:
   - {fileID: 1479364316}
   - {fileID: 1290874165}
   m_Father: {fileID: 1493754701}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!1 &2048828985
 GameObject:
   m_ObjectHideFlags: 0
@@ -15259,7 +15348,7 @@ Transform:
   - {fileID: 2139377632}
   - {fileID: 1723823659}
   m_Father: {fileID: 1493754701}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!82 &2059599485 stripped
 AudioSource:
   m_PrefabParentObject: {fileID: 8221314, guid: a213b38a8a030074f9fee084c6095ca8,
@@ -15734,7 +15823,7 @@ Transform:
   - {fileID: 377511654}
   - {fileID: 1424658171}
   m_Father: {fileID: 1493754701}
-  m_RootOrder: 15
+  m_RootOrder: 16
 --- !u!114 &2135202965 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114000011973220604, guid: dab24b96fa42bdb4bbbd4d9746825fe1,
