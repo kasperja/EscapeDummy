@@ -7,6 +7,7 @@ namespace UnityStandardAssets._2D
     {
         public Transform target;
 		public Transform targetEnd;
+		public Transform targetStart;
 		public Transform targetHooked;
 		public Transform targetNotHooked;
 		public PlatformerCharacter2D MainCharScript;
@@ -40,11 +41,22 @@ namespace UnityStandardAssets._2D
 			
 			} else if (MainCharScript.endCamBool) {
 			
-				damping = 0.15f;
+				damping = 0.4f;
 				target = targetEnd;
 			
 			
-			} else if (MainCharScript.endCamBackBool){
+			} else if (MainCharScript.startCamBool) {
+
+				damping = 0.4f;
+				target = targetStart;
+
+
+			} else if (MainCharScript.startCamBackBool){
+
+				damping = 0.1f;
+				target = targetNotHooked;
+
+			}else if (MainCharScript.endCamBackBool){
 				
 				damping = 0.1f;
 				target = targetNotHooked;

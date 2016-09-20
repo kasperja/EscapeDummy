@@ -61,6 +61,9 @@ using System.Collections;
 	public bool endCamBool = false;
 	public bool endCamBackBool = false;
 
+	public bool startCamBool = false;
+	public bool startCamBackBool = false;
+
 	private float scale = 5f;
 	private float minScale = 4.7f;
 	private float maxScale = 5f;
@@ -628,6 +631,11 @@ using System.Collections;
 			endCamBool = true;
 
 		}
+		if (other.gameObject.tag == "CamTargetStartTrigger") {
+
+			startCamBool = true;
+
+		}
 
 		if (other.gameObject.tag == "SawSound") {
 
@@ -688,6 +696,18 @@ using System.Collections;
 			StartCoroutine (waitCamEnd (0.5f));
 
 		}
+
+		if (other.gameObject.tag == "CamTargetStartTrigger") {
+
+		startCamBackBool = true;
+
+		startCamBool = false;
+
+		StartCoroutine (waitCamStart (0.5f));
+
+		}
+
+
 		if (other.gameObject.tag == "SawSound") {
 
 			sawSound.volume = 0f;
@@ -743,6 +763,15 @@ using System.Collections;
 			endCamBool = true;
 
 		}
+
+	if (other.gameObject.tag == "CamTargetStartTrigger") {
+
+
+
+
+		startCamBool = true;
+
+	}
 		if (other.gameObject.tag == "ScaleCharTrigger") {
 		
 			scaleCharBool = true;
@@ -813,6 +842,13 @@ using System.Collections;
 		endCamBackBool = false;
 	
 	}
+IEnumerator waitCamStart(float waitTime){
+
+	yield return new WaitForSeconds (waitTime);
+
+	startCamBackBool = false;
+
+}
 	
 void OnDrawGizmos(){
 
