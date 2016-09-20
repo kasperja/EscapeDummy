@@ -19,6 +19,11 @@ public class HookHingeMovement : MonoBehaviour {
 	public float moveUpAngle;
 	private float moveUpRadians;
 	public Transform startPosY;
+	public Rigidbody2D hookRb;
+	private bool hookForceOnce = true;
+	private bool hookForceWaitBool = false;
+	public PlatformerCharacter2D mainCharScript;
+
 
 	public float speedUpStart = 0f;
 
@@ -62,6 +67,19 @@ public class HookHingeMovement : MonoBehaviour {
 			}
 		}
 
+		if (mainCharScript.hookJumpActive && hookForceOnce) {
+
+			StartCoroutine(HookForceWait(0.5f));
+			if (hookForceWaitBool) {
+				SawMoverScript.hookDetected = false;
+				SawMoverScript.hookDetectSpeed = -30f;
+				hookRb.AddForce (new Vector2 (100f, 0), ForceMode2D.Impulse);
+				hookForceOnce = false;
+
+
+			}
+		}
+
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
@@ -96,10 +114,15 @@ public class HookHingeMovement : MonoBehaviour {
 		if (other.gameObject.tag == "MeatPassedCol") {
 
 			SawMoverScript.hookDetected = false;
-			SawMoverScript.hookDetectSpeed = -10f;
+			SawMoverScript.hookDetectSpeed = -30f;
 		
 		}
 
+	}
+	void OnTriggerStay2D(Collider2D other)
+	{
+	
+	
 	}
 	IEnumerator WaitNumerator(float waitTime)
 	{
@@ -112,6 +135,12 @@ public class HookHingeMovement : MonoBehaviour {
 		yield return new WaitForSeconds(moveTime);
 		isMoving = false;
 		playOnceWait = true;
+	}
+
+	IEnumerator HookForceWait(float moveTime)
+	{
+		yield return new WaitForSeconds(moveTime);
+		hookForceWaitBool = true;
 	}
 
 }

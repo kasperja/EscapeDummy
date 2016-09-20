@@ -529,9 +529,9 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 1101000013019299282}
   - {fileID: 110118794}
   - {fileID: 110192060}
+  - {fileID: 1101000012979788040}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -998,7 +998,7 @@ AnimatorStateTransition:
   m_InterruptionSource: 2
   m_OrderedInterruption: 0
   m_CanTransitionToSelf: 1
---- !u!1101 &1101000013019299282
+--- !u!1101 &1101000012979788040
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1014,9 +1014,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.015272391
-  m_TransitionOffset: 0
-  m_ExitTime: 3.9862696e-10
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0.00724631
+  m_ExitTime: 0
   m_HasExitTime: 0
   m_HasFixedDuration: 0
   m_InterruptionSource: 0

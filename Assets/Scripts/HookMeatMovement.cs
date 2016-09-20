@@ -117,7 +117,7 @@ public class HookMeatMovement : MonoBehaviour {
 		if (other.gameObject.tag == "MeatPassedCol") {
 
 			SawMoverScript.meatDetected = false;
-			SawMoverScript.meatDetectSpeed = 20f;
+			SawMoverScript.meatDetectSpeed = 30f;
 
 		}
 
@@ -134,7 +134,14 @@ public class HookMeatMovement : MonoBehaviour {
 		
 		}*/
 
-		if (other.gameObject.tag == "DetectHook") {
+
+		if (other.gameObject.tag == "MeatPassedCol") {
+
+			SawMoverScript.meatDetected = false;
+			SawMoverScript.meatDetectSpeed = 30f;
+
+		}
+		else if (other.gameObject.tag == "DetectHook") {
 
 			SawMoverScript.meatDetected = true;
 

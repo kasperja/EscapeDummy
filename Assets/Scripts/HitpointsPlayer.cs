@@ -48,7 +48,11 @@ public class HitpointsPlayer : MonoBehaviour {
 			Instantiate (hitParticle, this.gameObject.transform.position, Quaternion.identity);
 			playOnceLow = false;
 		}
+		if (collider.tag == "SawCol" && !MainCharScript.hookJumpActive) {
 
+			hitPointsTotalScript.hitpoints -= SawTrapDamage.damage * Time.deltaTime;
+
+		}
 
 
 		}
@@ -56,7 +60,7 @@ public class HitpointsPlayer : MonoBehaviour {
 	void OnTriggerStay2D(Collider2D collider){
 	
 
-		if (collider.tag == "SawCol" && !MainCharScript.hooked) {
+		if (collider.tag == "SawCol" && !MainCharScript.hookJumpActive) {
 
 			hitPointsTotalScript.hitpoints -= SawTrapDamage.damage * Time.deltaTime;
 

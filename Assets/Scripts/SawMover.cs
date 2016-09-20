@@ -4,12 +4,12 @@ using System.Collections;
 public class SawMover : MonoBehaviour {
 
 	private float useSpeed = 20f;
-	public float startSpeed = 20f;
+	public float startSpeed = 60f;
 	public float damage = 1400f;
 	public bool hookDetected = false;
 	public bool meatDetected = false;
-	public float hookDetectSpeed = -10f;
-	public float meatDetectSpeed = 20f;
+	public float hookDetectSpeed = -60f;
+	public float meatDetectSpeed = 60f;
 
 	// Use this for initialization
 	void Start () {
@@ -51,6 +51,42 @@ public class SawMover : MonoBehaviour {
 			hookDetectSpeed = 0f;
 
 		
+		} 
+
+		if (meatDetected && other.gameObject.tag == "SawMoveTop") {
+
+
+			meatDetectSpeed = 0f;
+
+		}
+
+		if (other.gameObject.tag == "SawMoveTop") {
+
+
+			useSpeed = -startSpeed;
+
+		}
+		if (other.gameObject.tag == "SawMoveBottomNorm") {
+
+
+			useSpeed = startSpeed;
+
+		}
+
+
+
+	}
+	void OnTriggerStay2D(Collider2D other)
+	{
+
+		//Debug.Log ("col");
+
+		if (hookDetected && other.gameObject.tag == "SawMoveBottom") {
+
+
+			hookDetectSpeed = 0f;
+
+
 		} 
 
 		if (meatDetected && other.gameObject.tag == "SawMoveTop") {
