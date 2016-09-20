@@ -66,6 +66,25 @@ public class HookMeatMovement : MonoBehaviour {
 
 	}
 
+	void Update(){
+
+
+		if (SawMoverScript.hookDetected) {
+
+
+			waitTime = 0f;
+
+
+		} else {
+
+
+			waitTime = 1.5f;
+
+		}
+
+
+	}
+
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		
@@ -108,16 +127,18 @@ public class HookMeatMovement : MonoBehaviour {
 
 		} 
 
+
+
+
 		if (other.gameObject.tag == "DetectHook") {
 
 			SawMoverScript.meatDetected = true;
 
 		}
-
-		if (other.gameObject.tag == "MeatPassedCol") {
+		else if (other.gameObject.tag == "MeatPassedCol") {
 
 			SawMoverScript.meatDetected = false;
-			SawMoverScript.meatDetectSpeed = 30f;
+			//SawMoverScript.meatDetectSpeed = -SawMoverScript.startSpeed;
 
 		}
 
@@ -127,25 +148,19 @@ public class HookMeatMovement : MonoBehaviour {
 	void OnTriggerStay2D(Collider2D other)
 	{
 
-		/*if (other.gameObject.tag == "SawCol") {
-		
-			Debug.Log ("jj");
-			MeatBackObj.SetActive(true);
-		
-		}*/
 
-
-		if (other.gameObject.tag == "MeatPassedCol") {
-
-			SawMoverScript.meatDetected = false;
-			SawMoverScript.meatDetectSpeed = 30f;
-
-		}
-		else if (other.gameObject.tag == "DetectHook") {
+		if (other.gameObject.tag == "DetectHook") {
 
 			SawMoverScript.meatDetected = true;
 
 		}
+		else if (other.gameObject.tag == "MeatPassedCol") {
+
+			SawMoverScript.meatDetected = false;
+			//SawMoverScript.meatDetectSpeed = -SawMoverScript.startSpeed;
+
+		}
+
 
 
 

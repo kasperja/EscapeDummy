@@ -72,7 +72,7 @@ public class HookHingeMovement : MonoBehaviour {
 			StartCoroutine(HookForceWait(0.5f));
 			if (hookForceWaitBool) {
 				SawMoverScript.hookDetected = false;
-				SawMoverScript.hookDetectSpeed = -30f;
+				//SawMoverScript.hookDetectSpeed = -30f;
 				hookRb.AddForce (new Vector2 (100f, 0), ForceMode2D.Impulse);
 				hookForceOnce = false;
 
@@ -80,6 +80,25 @@ public class HookHingeMovement : MonoBehaviour {
 			}
 		}
 
+	}
+
+	void Update(){
+	
+	
+		if (SawMoverScript.hookDetected) {
+		
+		
+			waitTime = 0f;
+
+		
+		} else {
+		
+		
+			waitTime = 1.5f;
+		
+		}
+
+	
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
@@ -114,7 +133,7 @@ public class HookHingeMovement : MonoBehaviour {
 		if (other.gameObject.tag == "MeatPassedCol") {
 
 			SawMoverScript.hookDetected = false;
-			SawMoverScript.hookDetectSpeed = -30f;
+			//SawMoverScript.hookDetectSpeed = -30f;
 		
 		}
 
