@@ -179,7 +179,17 @@ public class HookHingeMovement : MonoBehaviour {
 	}
 	void OnTriggerStay2D(Collider2D other)
 	{
-	
+		if (other.gameObject.tag == "DetectHook") {
+
+			SawMoverScript.hookDetected = true;
+
+		}else if (other.gameObject.tag == "MeatPassedCol") {
+
+			SawMoverScript.hookDetected = false;
+			//SawMoverScript.hookDetectSpeed = -30f;
+
+		}
+
 	
 	}
 	IEnumerator WaitNumerator(float waitTime)
@@ -210,6 +220,7 @@ public class HookHingeMovement : MonoBehaviour {
 	}
 	IEnumerator waitIfDetected(float moveTime)
 	{
+		mainCharScript.hookStandingStill = true;
 		yield return new WaitForSeconds(0.5f);
 		isMoving = false;
 		yield return new WaitForSeconds(moveTime);

@@ -65,12 +65,10 @@ public class SawMover : MonoBehaviour {
 			hookDetectSpeed = 0f;
 
 
-		} 
-
-		if (meatDetected && other.gameObject.tag == "SawMoveTop") {
+		} else if (meatDetected && other.gameObject.tag == "SawMoveBottom") {
 
 
-			meatDetectSpeed = 0f;
+			meatDetectSpeed = 30f;
 
 		}
 
@@ -80,14 +78,14 @@ public class SawMover : MonoBehaviour {
 			hookDetectSpeed = -30f;
 
 
-		} 
-
-		if (meatDetected && other.gameObject.tag == "SawMoveBottom") {
+		} else if (meatDetected && other.gameObject.tag == "SawMoveTop") {
 
 
-			meatDetectSpeed = 30f;
+			meatDetectSpeed = 0f;
 
 		}
+			
+
 
 		if (other.gameObject.tag == "SawMoveBottomNorm") {
 
@@ -99,43 +97,7 @@ public class SawMover : MonoBehaviour {
 
 
 
-
-
 		}
-
-		if (hookDetected && other.gameObject.tag == "SawMoveBottom") {
-
-
-			hookDetectSpeed = 0f;
-
-
-		} 
-
-		if (meatDetected && other.gameObject.tag == "SawMoveTop") {
-
-
-			meatDetectSpeed = 0f;
-
-		}
-
-		if (hookDetected && other.gameObject.tag == "SawMoveTop") {
-
-
-			hookDetectSpeed = -30f;
-
-
-		} 
-
-		if (meatDetected && other.gameObject.tag == "SawMoveBottom") {
-
-
-			meatDetectSpeed = 30f;
-
-		}
-		//Debug.Log ("col");
-
-
-
 
 
 
@@ -159,9 +121,7 @@ public class SawMover : MonoBehaviour {
 			hookDetectSpeed = 0f;
 
 
-		} 
-
-		if (meatDetected && other.gameObject.tag == "SawMoveTop") {
+		} else if (meatDetected && other.gameObject.tag == "SawMoveBottom") {
 
 
 			meatDetectSpeed = 0f;
@@ -171,17 +131,19 @@ public class SawMover : MonoBehaviour {
 		if (hookDetected && other.gameObject.tag == "SawMoveTop") {
 
 
-			hookDetectSpeed = 0f;
+			hookDetectSpeed = -30f;
 
 
-		} 
-
-		if (meatDetected && other.gameObject.tag == "SawMoveBottom") {
+		} else if (meatDetected && other.gameObject.tag == "SawMoveTop") {
 
 
 			meatDetectSpeed = 0f;
 
 		}
+
+
+
+
 
 		if (other.gameObject.tag == "SawMoveBottomNorm") {
 
@@ -193,39 +155,6 @@ public class SawMover : MonoBehaviour {
 
 
 		}
-
-		if (hookDetected && other.gameObject.tag == "SawMoveBottom") {
-
-
-			hookDetectSpeed = 0f;
-
-
-		} 
-
-		if (meatDetected && other.gameObject.tag == "SawMoveTop") {
-
-
-			meatDetectSpeed = 0f;
-
-		}
-
-		if (hookDetected && other.gameObject.tag == "SawMoveTop") {
-
-
-			hookDetectSpeed = 0f;
-
-
-		} 
-
-		if (meatDetected && other.gameObject.tag == "SawMoveBottom") {
-
-
-			meatDetectSpeed = 0f;
-
-		}
-		//Debug.Log ("col");
-
-
 
 
 

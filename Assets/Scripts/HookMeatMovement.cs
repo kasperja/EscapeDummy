@@ -164,6 +164,7 @@ public class HookMeatMovement : MonoBehaviour {
 			SawMoverScript.meatDetected = true;
 
 		}
+
 		else if (other.gameObject.tag == "MeatPassedCol") {
 
 			SawMoverScript.meatDetected = false;
