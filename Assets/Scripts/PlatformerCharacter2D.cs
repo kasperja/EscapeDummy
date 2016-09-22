@@ -87,7 +87,7 @@ using System.Collections;
 	private bool climbingStairsBoolCol = false;
 
 	public Transform[] wayPointArray;
-	float percentsPerSecond = 1f;
+	float percentsPerSecond = 0f;
 	float currentPathPercent = 0.0f;
 
 	public bool hookJumpActive = false;
@@ -137,16 +137,27 @@ using System.Collections;
 
 		if (hookJumpActive && hookJumpActiveOnce) {
 
+
+
+
 			m_Anim.SetBool ("Grab", true);
+
+
+			StartCoroutine (stopOnHook (30f));
 
 			currentPathPercent += percentsPerSecond * Time.deltaTime;
 
+			//sawMoverScript.gameObject.GetComponent<CircleCollider2D> ().enabled = false;
+
 			iTween.PutOnPath (gameObject, wayPointArray, currentPathPercent);
+
+
+
 
 			//Debug.Log ("hi");
 			WaitForHookedCol.SetActive (false);
 
-			StartCoroutine (waitHook (1f));
+			//StartCoroutine (waitHook (1f));
 
 
 
@@ -808,7 +819,7 @@ using System.Collections;
 		
 
 
-		yield return new WaitForSeconds (waitTime);
+		yield return new WaitForSeconds (1f);
 		
 		hookJumpActiveOnce = false;
 		hookJumpActive = false;
@@ -842,13 +853,34 @@ using System.Collections;
 		yield return new WaitForSeconds (waitTime);
 
 		endCamBackBool = false;
-	
+
 	}
 IEnumerator waitCamStart(float waitTime){
 
 	yield return new WaitForSeconds (waitTime);
 
 	startCamBackBool = false;
+
+}
+
+IEnumerator stopOnHook(float waitTime){
+
+	//percentsPerSecond = 0f;
+	//yield return new WaitForSeconds (0.1f);
+	percentsPerSecond = 1f;
+	yield return new WaitForSeconds (1f);
+	/*percentsPerSecond = 1f;
+	yield return new WaitForSeconds (0.2f);
+	percentsPerSecond = 0.1f;
+	yield return new WaitForSeconds (0.1f);
+	percentsPerSecond = 1f;
+	yield return new WaitForSeconds (0.7f);
+*/
+	hookJumpActiveOnce = false;
+	hookJumpActive = false;
+	m_Anim.SetBool ("Grab", false);
+
+	//sawMoverScript.gameObject.GetComponent<CircleCollider2D> ().enabled = true;
 
 }
 	
