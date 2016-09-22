@@ -95,6 +95,8 @@ using System.Collections;
 
 	public SawMover sawMoverScript;
 
+	public bool hookStandingStill = false;
+
         private void Awake()
         {
             // Setting up references.
@@ -125,7 +127,7 @@ using System.Collections;
 
 
 
-		if (hooked && Input.GetKey(KeyCode.Space) && sawMoverScript.hookDetected && hookJumpActiveOnce) {
+		if (hooked && Input.GetKey(KeyCode.Space) && sawMoverScript.hookDetected && hookJumpActiveOnce && hookStandingStill) {
 
 			
 			hookJumpActive = true;

@@ -2574,8 +2574,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010389694940}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -70.2, y: 3.7501469, z: -1.3125004}
-  m_LocalScale: {x: 21.307793, y: 167.78757, z: 797.5687}
+  m_LocalPosition: {x: -76.9, y: 3.7501469, z: -1.3125004}
+  m_LocalScale: {x: 29.83124, y: 167.78757, z: 797.5687}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012881303552}
@@ -4409,6 +4409,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000012436850864}
   MeatCutScript: {fileID: 114000011459115140}
   speedUpStart: 11.547
+  hookWaitOnce: 1
   SawMoverScript: {fileID: 0}
 --- !u!114 &114000011033719464
 MonoBehaviour:
@@ -4454,6 +4455,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000011548123150}
   MeatCutScript: {fileID: 114000013510162718}
   speedUpStart: 11.547
+  hookWaitOnce: 1
   SawMoverScript: {fileID: 0}
 --- !u!114 &114000011090240666
 MonoBehaviour:
@@ -4479,6 +4481,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000010959921918}
   MeatCutScript: {fileID: 114000010086985312}
   speedUpStart: -11.547
+  hookWaitOnce: 1
   SawMoverScript: {fileID: 0}
 --- !u!114 &114000011184152536
 MonoBehaviour:
@@ -4504,6 +4507,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000010227178448}
   MeatCutScript: {fileID: 114000012588858918}
   speedUpStart: -11.547
+  hookWaitOnce: 1
   SawMoverScript: {fileID: 0}
 --- !u!114 &114000011459115140
 MonoBehaviour:
@@ -4569,6 +4573,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000010568345832}
   MeatCutScript: {fileID: 114000011033719464}
   speedUpStart: 0
+  hookWaitOnce: 1
   SawMoverScript: {fileID: 0}
 --- !u!114 &114000012522524440
 MonoBehaviour:
@@ -4594,6 +4599,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000010285352768}
   MeatCutScript: {fileID: 114000011823205528}
   speedUpStart: 11.547
+  hookWaitOnce: 1
   SawMoverScript: {fileID: 0}
 --- !u!114 &114000012588858918
 MonoBehaviour:
@@ -4658,6 +4664,7 @@ MonoBehaviour:
   startPosY: {fileID: 4000010305264182}
   hookRb: {fileID: 50000011798016620}
   mainCharScript: {fileID: 0}
+  hookWaitOnce: 1
   speedUpStart: -11.547
   SawMoverScript: {fileID: 0}
 --- !u!114 &114000013467894134
@@ -4683,6 +4690,7 @@ MonoBehaviour:
   startPosY: {fileID: 4000010305264182}
   hookRb: {fileID: 50000010148029138}
   mainCharScript: {fileID: 0}
+  hookWaitOnce: 1
   speedUpStart: 0
   SawMoverScript: {fileID: 0}
 --- !u!114 &114000013510162718
@@ -4728,6 +4736,7 @@ MonoBehaviour:
   startPosY: {fileID: 4000010305264182}
   hookRb: {fileID: 50000011889772376}
   mainCharScript: {fileID: 0}
+  hookWaitOnce: 1
   speedUpStart: 0
   SawMoverScript: {fileID: 0}
 --- !u!114 &114000013825478124
@@ -4754,6 +4763,7 @@ MonoBehaviour:
   MeatBackObj: {fileID: 1000010039871722}
   MeatCutScript: {fileID: 114000012925734434}
   speedUpStart: 0
+  hookWaitOnce: 1
   SawMoverScript: {fileID: 0}
 --- !u!198 &198000011444602228
 ParticleSystem:
