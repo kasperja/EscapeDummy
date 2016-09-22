@@ -24,10 +24,12 @@ public class HookHingeMovement : MonoBehaviour {
 	private bool hookForceWaitBool = false;
 	public PlatformerCharacter2D mainCharScript;
 	public bool hookWaitOnce = true;
+	public bool hookWaitOnceMoving = true;
 
 
 	public float speedUpStart = 0f;
 
+	public bool waitDetectOnce = true;
 
 	public SawMover SawMoverScript;
 
@@ -46,6 +48,9 @@ public class HookHingeMovement : MonoBehaviour {
 	void FixedUpdate () {
 
 
+
+
+
 		if (isMoving)
 		{
 
@@ -54,13 +59,14 @@ public class HookHingeMovement : MonoBehaviour {
 			if (playOnce)
 			{
 
-				if (SawMoverScript.hookDetected && hookWaitOnce) {
+				if (SawMoverScript.hookDetected && hookWaitOnceMoving) {
 
 					mainCharScript.hookStandingStill = true;
 					StartCoroutine (MoveTime (0f));
-					StartCoroutine(HookWaitTrue(7f));
+					StartCoroutine (WaitNumerator (2f));
+					StartCoroutine(HookWaitTrue(5f));
 					playOnce = false;
-					hookWaitOnce = false;
+					hookWaitOnceMoving = false;
 
 				} else {
 					
@@ -80,7 +86,7 @@ public class HookHingeMovement : MonoBehaviour {
 				if (SawMoverScript.hookDetected && hookWaitOnce) {
 					mainCharScript.hookStandingStill = true;
 					StartCoroutine (WaitNumerator (2f));
-					StartCoroutine(HookWaitTrue(7f));
+					StartCoroutine(HookWaitTrue(5f));
 					playOnceWait = false;
 					hookWaitOnce = false;
 				
@@ -110,7 +116,14 @@ public class HookHingeMovement : MonoBehaviour {
 
 	void Update(){
 	
-	
+		if (SawMoverScript.hookDetected && waitDetectOnce) {
+
+
+			StartCoroutine (waitIfDetected (2f));
+			waitDetectOnce = false;
+
+		}
+
 		if (SawMoverScript.hookDetected) {
 		
 		
@@ -120,7 +133,7 @@ public class HookHingeMovement : MonoBehaviour {
 		} else {
 		
 		
-			waitTime = 1.5f;
+			waitTime = 0f;
 		
 		}
 
@@ -192,6 +205,15 @@ public class HookHingeMovement : MonoBehaviour {
 	{
 		yield return new WaitForSeconds(moveTime);
 		hookWaitOnce = true;
+		hookWaitOnceMoving = true;
+		waitDetectOnce = true;
+	}
+	IEnumerator waitIfDetected(float moveTime)
+	{
+		yield return new WaitForSeconds(0.5f);
+		isMoving = false;
+		yield return new WaitForSeconds(moveTime);
+		isMoving = true;
 	}
 
 
