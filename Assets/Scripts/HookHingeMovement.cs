@@ -23,6 +23,7 @@ public class HookHingeMovement : MonoBehaviour {
 	private bool hookForceOnce = true;
 	private bool hookForceWaitBool = false;
 	public PlatformerCharacter2D mainCharScript;
+	public bool hookWaitOnce = true;
 
 
 	public float speedUpStart = 0f;
@@ -52,8 +53,21 @@ public class HookHingeMovement : MonoBehaviour {
 			//this.transform.Translate(Vector3.left * Time.deltaTime * meatSpeed);
 			if (playOnce)
 			{
-				StartCoroutine(MoveTime(moveTime));
-				playOnce = false;
+
+				if (SawMoverScript.hookDetected && hookWaitOnce) {
+
+					mainCharScript.hookStandingStill = true;
+					StartCoroutine (MoveTime (0f));
+					StartCoroutine(HookWaitTrue(7f));
+					playOnce = false;
+					hookWaitOnce = false;
+
+				} else {
+					
+					StartCoroutine (MoveTime (moveTime));
+					playOnce = false;
+
+				}
 			}
 
 
@@ -62,8 +76,20 @@ public class HookHingeMovement : MonoBehaviour {
 
 			if (playOnceWait)
 			{
-				StartCoroutine(WaitNumerator(waitTime));
-				playOnceWait = false;
+
+				if (SawMoverScript.hookDetected && hookWaitOnce) {
+					mainCharScript.hookStandingStill = true;
+					StartCoroutine (WaitNumerator (2f));
+					StartCoroutine(HookWaitTrue(7f));
+					playOnceWait = false;
+					hookWaitOnce = false;
+				
+				} else {
+
+					StartCoroutine (WaitNumerator (waitTime));
+					playOnceWait = false;
+
+				}
 			}
 		}
 
@@ -146,6 +172,7 @@ public class HookHingeMovement : MonoBehaviour {
 	IEnumerator WaitNumerator(float waitTime)
 	{
 		yield return new WaitForSeconds(waitTime);
+		mainCharScript.hookStandingStill = false;
 		isMoving = true;
 		playOnce = true;
 	}
@@ -161,5 +188,11 @@ public class HookHingeMovement : MonoBehaviour {
 		yield return new WaitForSeconds(moveTime);
 		hookForceWaitBool = true;
 	}
+	IEnumerator HookWaitTrue(float moveTime)
+	{
+		yield return new WaitForSeconds(moveTime);
+		hookWaitOnce = true;
+	}
+
 
 }

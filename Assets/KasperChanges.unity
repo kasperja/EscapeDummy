@@ -1755,52 +1755,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 440564, guid: d437524b86930a34b94f676908829fca, type: 2}
   m_PrefabInternal: {fileID: 233341508}
---- !u!1 &236914601
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1000011598575342, guid: a59ec1f2765f3844fb5e444cc1bf5569,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 236914602}
-  - 61: {fileID: 236914603}
-  m_Layer: 16
-  m_Name: WaitForHooked (2)
-  m_TagString: WaitForHooked
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &236914602
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4000013944017500, guid: a59ec1f2765f3844fb5e444cc1bf5569,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 236914601}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.59, y: -0.89, z: -5.764084}
-  m_LocalScale: {x: 2.337878, y: 0.0039533125, z: 0.2882042}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 1043368394}
-  m_RootOrder: 11
---- !u!61 &236914603
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 61000010614661988, guid: a59ec1f2765f3844fb5e444cc1bf5569,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 236914601}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1000}
 --- !u!1001 &284428501
 Prefab:
   m_ObjectHideFlags: 0
@@ -7975,11 +7929,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 440564, guid: d437524b86930a34b94f676908829fca, type: 2}
   m_PrefabInternal: {fileID: 1038780300}
---- !u!4 &1043368394 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4000012954054848, guid: a59ec1f2765f3844fb5e444cc1bf5569,
-    type: 2}
-  m_PrefabInternal: {fileID: 1462775954}
 --- !u!1 &1047167210
 GameObject:
   m_ObjectHideFlags: 0
@@ -12595,6 +12544,116 @@ Prefab:
       propertyPath: m_RootOrder
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013825478124, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: SawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000013739145424, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: mainCharScript
+      value: 
+      objectReference: {fileID: 142688740}
+    - target: {fileID: 114000013739145424, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: SawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000013510162718, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: BloodSawParticle
+      value: 
+      objectReference: {fileID: 698741098}
+    - target: {fileID: 114000013510162718, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: sawSound
+      value: 
+      objectReference: {fileID: 1071326675}
+    - target: {fileID: 114000013467894134, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: mainCharScript
+      value: 
+      objectReference: {fileID: 142688740}
+    - target: {fileID: 114000013467894134, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: SawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000013022497822, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: mainCharScript
+      value: 
+      objectReference: {fileID: 142688740}
+    - target: {fileID: 114000013022497822, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: SawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000012925734434, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: BloodSawParticle
+      value: 
+      objectReference: {fileID: 698741098}
+    - target: {fileID: 114000012925734434, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: sawSound
+      value: 
+      objectReference: {fileID: 1071326675}
+    - target: {fileID: 114000012588858918, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: BloodSawParticle
+      value: 
+      objectReference: {fileID: 698741098}
+    - target: {fileID: 114000012588858918, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: sawSound
+      value: 
+      objectReference: {fileID: 1071326675}
+    - target: {fileID: 114000012522524440, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: SawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000012303256494, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: SawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000011823205528, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: BloodSawParticle
+      value: 
+      objectReference: {fileID: 698741098}
+    - target: {fileID: 114000011823205528, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: sawSound
+      value: 
+      objectReference: {fileID: 1071326675}
+    - target: {fileID: 114000011459115140, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: BloodSawParticle
+      value: 
+      objectReference: {fileID: 698741098}
+    - target: {fileID: 114000011459115140, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: sawSound
+      value: 
+      objectReference: {fileID: 1071326675}
+    - target: {fileID: 114000011184152536, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: SawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000011090240666, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: SawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000011059954274, guid: 60ff17d3b3014d04e99a90663cb4ee55,
+        type: 2}
+      propertyPath: SawMoverScript
+      value: 
+      objectReference: {fileID: 1664072720}
     - target: {fileID: 114000011033719464, guid: 60ff17d3b3014d04e99a90663cb4ee55,
         type: 2}
       propertyPath: BloodSawParticle
@@ -12605,36 +12664,6 @@ Prefab:
       propertyPath: sawSound
       value: 
       objectReference: {fileID: 1071326675}
-    - target: {fileID: 114000012303256494, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000011059954274, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000011090240666, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000012522524440, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000011184152536, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000013825478124, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
     - target: {fileID: 114000010937621070, guid: 60ff17d3b3014d04e99a90663cb4ee55,
         type: 2}
       propertyPath: SawMoverScript
@@ -12650,86 +12679,6 @@ Prefab:
       propertyPath: sawSound
       value: 
       objectReference: {fileID: 1071326675}
-    - target: {fileID: 114000013510162718, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: BloodSawParticle
-      value: 
-      objectReference: {fileID: 698741098}
-    - target: {fileID: 114000013510162718, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: sawSound
-      value: 
-      objectReference: {fileID: 1071326675}
-    - target: {fileID: 114000012588858918, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: BloodSawParticle
-      value: 
-      objectReference: {fileID: 698741098}
-    - target: {fileID: 114000012588858918, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: sawSound
-      value: 
-      objectReference: {fileID: 1071326675}
-    - target: {fileID: 114000013022497822, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: mainCharScript
-      value: 
-      objectReference: {fileID: 142688740}
-    - target: {fileID: 114000013022497822, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000011823205528, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: BloodSawParticle
-      value: 
-      objectReference: {fileID: 698741098}
-    - target: {fileID: 114000011823205528, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: sawSound
-      value: 
-      objectReference: {fileID: 1071326675}
-    - target: {fileID: 114000013739145424, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: mainCharScript
-      value: 
-      objectReference: {fileID: 142688740}
-    - target: {fileID: 114000013739145424, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000011459115140, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: BloodSawParticle
-      value: 
-      objectReference: {fileID: 698741098}
-    - target: {fileID: 114000011459115140, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: sawSound
-      value: 
-      objectReference: {fileID: 1071326675}
-    - target: {fileID: 114000012925734434, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: BloodSawParticle
-      value: 
-      objectReference: {fileID: 698741098}
-    - target: {fileID: 114000012925734434, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: sawSound
-      value: 
-      objectReference: {fileID: 1071326675}
-    - target: {fileID: 114000013467894134, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: mainCharScript
-      value: 
-      objectReference: {fileID: 142688740}
-    - target: {fileID: 114000013467894134, guid: 60ff17d3b3014d04e99a90663cb4ee55,
-        type: 2}
-      propertyPath: SawMoverScript
-      value: 
-      objectReference: {fileID: 1664072720}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60ff17d3b3014d04e99a90663cb4ee55, type: 2}
   m_IsPrefabParent: 0
@@ -14696,7 +14645,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000011802787232, guid: fc33b3b3eabb2c24da2737445d2a1b6a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -799
+      value: 221
       objectReference: {fileID: 0}
     - target: {fileID: 4000011802787232, guid: fc33b3b3eabb2c24da2737445d2a1b6a, type: 2}
       propertyPath: m_LocalPosition.y

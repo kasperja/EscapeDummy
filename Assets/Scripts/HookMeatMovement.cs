@@ -22,9 +22,10 @@ public class HookMeatMovement : MonoBehaviour {
 	public GameObject MeatBackObj;
 	public MeatCutScript MeatCutScript;
 	public float speedUpStart = 0f;
-
+	public bool hookWaitOnce = true;
 
 	public SawMover SawMoverScript;
+
 
 	// Use this for initialization
 	void Start () {
@@ -48,9 +49,17 @@ public class HookMeatMovement : MonoBehaviour {
 			HingeRb.MovePosition(HingeRb.position + Time.deltaTime * meatSpeedVector);
 			//this.transform.Translate(Vector3.left * Time.deltaTime * meatSpeed);
 			if (playOnce)
-			{
-				StartCoroutine(MoveTime(moveTime));
-				playOnce = false;
+			{if (SawMoverScript.hookDetected && hookWaitOnce) {
+
+					StartCoroutine (MoveTime (0f));
+					StartCoroutine (HookWaitTrue (7f));
+					playOnce = false;
+					hookWaitOnce = false;
+
+				} else {
+					StartCoroutine (MoveTime (moveTime));
+					playOnce = false;
+				}
 			}
 
 
@@ -59,8 +68,17 @@ public class HookMeatMovement : MonoBehaviour {
 
 			if (playOnceWait)
 			{
-				StartCoroutine(WaitNumerator(waitTime));
-				playOnceWait = false;
+				if (SawMoverScript.hookDetected && hookWaitOnce) {
+
+					StartCoroutine (WaitNumerator (2f));
+					StartCoroutine (HookWaitTrue (7f));
+					playOnceWait = false;
+					hookWaitOnce = false;
+
+				} else {
+					StartCoroutine (WaitNumerator (waitTime));
+					playOnceWait = false;
+				}
 			}
 		}
 
@@ -178,5 +196,10 @@ public class HookMeatMovement : MonoBehaviour {
 		yield return new WaitForSeconds(moveTime);
 		isMoving = false;
 		playOnceWait = true;
+	}
+	IEnumerator HookWaitTrue(float moveTime)
+	{
+		yield return new WaitForSeconds(moveTime);
+		hookWaitOnce = true;
 	}
 }
