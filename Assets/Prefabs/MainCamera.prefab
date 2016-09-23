@@ -975,7 +975,7 @@ MonoBehaviour:
   targetHooked: {fileID: 0}
   targetNotHooked: {fileID: 0}
   MainCharScript: {fileID: 0}
-  damping: 0.4
+  damping: 0.1
   lookAheadFactor: 0
   lookAheadReturnSpeed: 50
   lookAheadMoveThreshold: 0.02

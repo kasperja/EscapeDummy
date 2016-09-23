@@ -87,7 +87,7 @@ using System.Collections;
 	private bool climbingStairsBoolCol = false;
 
 	public Transform[] wayPointArray;
-	float percentsPerSecond = 0f;
+	float percentsPerSecond = 1f;
 	float currentPathPercent = 0.0f;
 
 	public bool hookJumpActive = false;
@@ -867,8 +867,8 @@ IEnumerator stopOnHook(float waitTime){
 
 	//percentsPerSecond = 0f;
 	//yield return new WaitForSeconds (0.1f);
-	percentsPerSecond = 1f;
-	yield return new WaitForSeconds (1f);
+	//percentsPerSecond = 1f;
+	yield return new WaitForSeconds (0.98f);
 	/*percentsPerSecond = 1f;
 	yield return new WaitForSeconds (0.2f);
 	percentsPerSecond = 0.1f;
