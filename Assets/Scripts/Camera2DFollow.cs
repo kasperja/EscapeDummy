@@ -63,7 +63,7 @@ namespace UnityStandardAssets._2D
 			
 			}else {
 			
-				damping = .1f;
+				damping = 0.1f;
 				target = targetNotHooked;
 			
 			}
