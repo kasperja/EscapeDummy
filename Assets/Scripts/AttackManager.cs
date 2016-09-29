@@ -14,11 +14,13 @@ public class AttackManager : MonoBehaviour {
 //	private float timer = 0.0f;
 //	private float timerMax = 0.5f;
 	public KeyCode AttackKey = KeyCode.F;
+	public PlatformerCharacter2D mainCharScript;
 	public float attackDamage = 100.0f;
-	public AudioSource whooshSound;
+	//public AudioSource whooshSound;
 	public CircleCollider2D hitCollider;
 
 	public AudioSource attackSound;
+	private bool attackSoundOnce = true;
 
 
 	// Use this for initialization
@@ -59,9 +61,8 @@ public class AttackManager : MonoBehaviour {
 	
 
 			
-		if (Input.GetKeyDown (AttackKey) && playOnce) {
+		if (Input.GetKeyDown (AttackKey) && playOnce && !mainCharScript.sideArrowsBool) {
 
-			whooshSound.Play ();
 
 			activate = true;
 			//StopCoroutine ("MoveObjTwo");
@@ -114,7 +115,9 @@ public class AttackManager : MonoBehaviour {
 	}
 
 	IEnumerator MoveObj(Transform thisTransform, Vector3  startPos, Vector3 endPos, float time){
-	
+
+
+
 		yield return new WaitForSeconds (0.3f);
 		hitCollider.enabled = true;
 		thisTransform.position = Vector3.Lerp(startPos, endPos, Time.deltaTime / time);
@@ -133,10 +136,14 @@ public class AttackManager : MonoBehaviour {
 
 
 
-		yield return new WaitForSeconds (0.06f);
+		yield return new WaitForSeconds (1f);
 		playOnce = true;
 
+
 	}
+		
+
+
 
 	IEnumerator MoveObjTwo(Transform thisTransform, Vector3  startPos, Vector3 endPos, float time){
 
