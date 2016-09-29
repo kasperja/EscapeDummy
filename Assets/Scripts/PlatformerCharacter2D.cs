@@ -414,7 +414,7 @@ using System.Collections;
 
 
 					//up Stairs
-					m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 1f, move * m_MaxSpeed * 0.1f);
+					m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 1f, move * m_MaxSpeed * 0.2f);
 
 				}
 			
