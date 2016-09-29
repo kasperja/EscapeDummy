@@ -97,6 +97,9 @@ using System.Collections;
 
 	public bool hookStandingStill = false;
 
+	public AudioSource attackSound1;
+	private bool attackSoundOnce = true;
+
         private void Awake()
         {
             // Setting up references.
@@ -157,7 +160,7 @@ using System.Collections;
 			//Debug.Log ("hi");
 			WaitForHookedCol.SetActive (false);
 
-			//StartCoroutine (waitHook (1f));
+			StartCoroutine (waitHook (1f));
 
 
 
@@ -260,32 +263,51 @@ using System.Collections;
 
 		}
 
-		if (cm.falconPunchBool && playOnce4) {
+		if (cm.falconPunchBool && playOnce4 && !sideArrowsBool) {
 
+			if(attackSoundOnce){
 
+				attackSound1.Play ();
+				attackSoundOnce = false;
+			}
 			m_Attack4 = true;
 			playOnce4 = false;
-			StartCoroutine (WaitForAnim4());
+			StartCoroutine (WaitForAnim4(1f));
 
-		} else if (Input.GetKeyDown (KeyCode.E) && playOnce1 && cm.falconPunchBool == false) {
+		} else if (Input.GetKeyDown (KeyCode.E) && playOnce1 && cm.falconPunchBool == false && !sideArrowsBool) {
 
+			if(attackSoundOnce){
+
+				attackSound1.Play ();
+				attackSoundOnce = false;
+			}
 				m_Attack1 = true;
 				playOnce1 = false;
-				StartCoroutine (WaitForAnim1());
+				StartCoroutine (WaitForAnim1(1f));
 
 			}
-		else if (Input.GetKeyDown (KeyCode.R) && playOnce2 && cm.falconPunchBool == false) {
+		else if (Input.GetKeyDown (KeyCode.R) && playOnce2 && cm.falconPunchBool == false && !sideArrowsBool) {
 
+			if(attackSoundOnce){
+
+				attackSound1.Play ();
+				attackSoundOnce = false;
+			}
 				m_Attack2 = true;
 				playOnce2 = false;
-				StartCoroutine (WaitForAnim2());
+				StartCoroutine (WaitForAnim2(1f));
 
 			}
-		else if (Input.GetKeyDown (KeyCode.W) && playOnce3 && cm.falconPunchBool == false) {
+		else if (Input.GetKeyDown (KeyCode.W) && playOnce3 && cm.falconPunchBool == false && !sideArrowsBool) {
 
+			if(attackSoundOnce){
+
+				attackSound1.Play ();
+				attackSoundOnce = false;
+			}
 				m_Attack3 = true;
 				playOnce3 = false;
-				StartCoroutine (WaitForAnim3());
+				StartCoroutine (WaitForAnim3(1f));
 
 			}
 			
@@ -296,6 +318,7 @@ using System.Collections;
 			m_Attack2 = false;
 			m_Attack3 = false;
 			m_Attack4 = false;
+			attackSoundOnce = true;
 		
 		
 			}
@@ -303,26 +326,26 @@ using System.Collections;
 
 		}
 
-		IEnumerator WaitForAnim1(){
+	IEnumerator WaitForAnim1(float animWaitTime){
 			yield return new WaitForSeconds (animWaitTime);
 				m_Attack1 = false;
 			playOnce1 = true;
 				
 
 		}
-		IEnumerator WaitForAnim2(){
+	IEnumerator WaitForAnim2(float animWaitTime){
 			yield return new WaitForSeconds (animWaitTime);
 			m_Attack2 = false;
 			playOnce2 = true;
 		}
 
-		IEnumerator WaitForAnim3(){
+	IEnumerator WaitForAnim3(float animWaitTime){
 			yield return new WaitForSeconds (animWaitTime);
 			m_Attack3 = false;
 			playOnce3 = true;
 		}
 
-		IEnumerator WaitForAnim4(){
+	IEnumerator WaitForAnim4(float animWaitTime){
 			yield return new WaitForSeconds (animWaitTime);
 			cm.falconPunchBool = false;	
 			m_Attack4 = false;
@@ -824,6 +847,7 @@ using System.Collections;
 		hookJumpActiveOnce = false;
 		hookJumpActive = false;
 		m_Anim.SetBool ("Grab", false);
+		WaitForHookedCol.SetActive (true);
 
 	
 	}
