@@ -133,7 +133,7 @@ using System.Collections;
 		if (hooked && Input.GetKey(KeyCode.Space) && sawMoverScript.hookDetected && hookJumpActiveOnce && hookStandingStill) {
 
 			
-			hookJumpActive = true;
+			StartCoroutine (waitActiveHook ());
 
 
 		} 
@@ -143,7 +143,7 @@ using System.Collections;
 
 
 
-			m_Anim.SetBool ("Grab", true);
+
 
 
 			StartCoroutine (stopOnHook (30f));
@@ -889,9 +889,8 @@ IEnumerator waitCamStart(float waitTime){
 
 IEnumerator stopOnHook(float waitTime){
 
-	//percentsPerSecond = 0f;
-	//yield return new WaitForSeconds (0.1f);
-	//percentsPerSecond = 1f;
+
+
 	yield return new WaitForSeconds (0.98f);
 	/*percentsPerSecond = 1f;
 	yield return new WaitForSeconds (0.2f);
@@ -905,6 +904,14 @@ IEnumerator stopOnHook(float waitTime){
 	m_Anim.SetBool ("Grab", false);
 
 	//sawMoverScript.gameObject.GetComponent<CircleCollider2D> ().enabled = true;
+
+}
+
+IEnumerator waitActiveHook(){
+	
+	m_Anim.SetBool ("Grab", true);
+		yield return new WaitForSeconds (0.05f);
+	hookJumpActive = true;
 
 }
 	
