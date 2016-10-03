@@ -55,7 +55,7 @@ namespace UnityStandardAssets._2D
 
 				if (isStopped) {
 
-					m_Character.Move (h, crouch, m_Jump);
+					m_Character.Stop (h, crouch, m_Jump);
 					playOnce = true;
 
 				} else if (playOnce) {

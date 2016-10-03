@@ -97,6 +97,9 @@ using System.Collections;
 
 	public bool hookStandingStill = false;
 
+	public AudioSource attackSound1;
+	private bool attackSoundOnce = true;
+
         private void Awake()
         {
             // Setting up references.
@@ -137,11 +140,22 @@ using System.Collections;
 
 		if (hookJumpActive && hookJumpActiveOnce) {
 
+
+
+
 			m_Anim.SetBool ("Grab", true);
+
+
+			StartCoroutine (stopOnHook (30f));
 
 			currentPathPercent += percentsPerSecond * Time.deltaTime;
 
+			//sawMoverScript.gameObject.GetComponent<CircleCollider2D> ().enabled = false;
+
 			iTween.PutOnPath (gameObject, wayPointArray, currentPathPercent);
+
+
+
 
 			//Debug.Log ("hi");
 			WaitForHookedCol.SetActive (false);
@@ -249,32 +263,51 @@ using System.Collections;
 
 		}
 
-		if (cm.falconPunchBool && playOnce4) {
+		if (cm.falconPunchBool && playOnce4 && !sideArrowsBool) {
 
+			if(attackSoundOnce){
 
+				attackSound1.Play ();
+				attackSoundOnce = false;
+			}
 			m_Attack4 = true;
 			playOnce4 = false;
-			StartCoroutine (WaitForAnim4());
+			StartCoroutine (WaitForAnim4(1f));
 
-		} else if (Input.GetKeyDown (KeyCode.E) && playOnce1 && cm.falconPunchBool == false) {
+		} else if (Input.GetKeyDown (KeyCode.E) && playOnce1 && cm.falconPunchBool == false && !sideArrowsBool) {
 
+			if(attackSoundOnce){
+
+				attackSound1.Play ();
+				attackSoundOnce = false;
+			}
 				m_Attack1 = true;
 				playOnce1 = false;
-				StartCoroutine (WaitForAnim1());
+				StartCoroutine (WaitForAnim1(1f));
 
 			}
-		else if (Input.GetKeyDown (KeyCode.R) && playOnce2 && cm.falconPunchBool == false) {
+		else if (Input.GetKeyDown (KeyCode.R) && playOnce2 && cm.falconPunchBool == false && !sideArrowsBool) {
 
+			if(attackSoundOnce){
+
+				attackSound1.Play ();
+				attackSoundOnce = false;
+			}
 				m_Attack2 = true;
 				playOnce2 = false;
-				StartCoroutine (WaitForAnim2());
+				StartCoroutine (WaitForAnim2(1f));
 
 			}
-		else if (Input.GetKeyDown (KeyCode.W) && playOnce3 && cm.falconPunchBool == false) {
+		else if (Input.GetKeyDown (KeyCode.W) && playOnce3 && cm.falconPunchBool == false && !sideArrowsBool) {
 
+			if(attackSoundOnce){
+
+				attackSound1.Play ();
+				attackSoundOnce = false;
+			}
 				m_Attack3 = true;
 				playOnce3 = false;
-				StartCoroutine (WaitForAnim3());
+				StartCoroutine (WaitForAnim3(1f));
 
 			}
 			
@@ -285,6 +318,7 @@ using System.Collections;
 			m_Attack2 = false;
 			m_Attack3 = false;
 			m_Attack4 = false;
+			attackSoundOnce = true;
 		
 		
 			}
@@ -292,26 +326,26 @@ using System.Collections;
 
 		}
 
-		IEnumerator WaitForAnim1(){
+	IEnumerator WaitForAnim1(float animWaitTime){
 			yield return new WaitForSeconds (animWaitTime);
 				m_Attack1 = false;
 			playOnce1 = true;
 				
 
 		}
-		IEnumerator WaitForAnim2(){
+	IEnumerator WaitForAnim2(float animWaitTime){
 			yield return new WaitForSeconds (animWaitTime);
 			m_Attack2 = false;
 			playOnce2 = true;
 		}
 
-		IEnumerator WaitForAnim3(){
+	IEnumerator WaitForAnim3(float animWaitTime){
 			yield return new WaitForSeconds (animWaitTime);
 			m_Attack3 = false;
 			playOnce3 = true;
 		}
 
-		IEnumerator WaitForAnim4(){
+	IEnumerator WaitForAnim4(float animWaitTime){
 			yield return new WaitForSeconds (animWaitTime);
 			cm.falconPunchBool = false;	
 			m_Attack4 = false;
@@ -403,7 +437,7 @@ using System.Collections;
 
 
 					//up Stairs
-					m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 1f, move * m_MaxSpeed * 0.1f);
+					m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 1f, move * m_MaxSpeed * 0.2f);
 
 				}
 			
@@ -808,11 +842,12 @@ using System.Collections;
 		
 
 
-		yield return new WaitForSeconds (waitTime);
+		yield return new WaitForSeconds (1f);
 		
 		hookJumpActiveOnce = false;
 		hookJumpActive = false;
 		m_Anim.SetBool ("Grab", false);
+		WaitForHookedCol.SetActive (true);
 
 	
 	}
@@ -842,13 +877,34 @@ using System.Collections;
 		yield return new WaitForSeconds (waitTime);
 
 		endCamBackBool = false;
-	
+
 	}
 IEnumerator waitCamStart(float waitTime){
 
 	yield return new WaitForSeconds (waitTime);
 
 	startCamBackBool = false;
+
+}
+
+IEnumerator stopOnHook(float waitTime){
+
+	//percentsPerSecond = 0f;
+	//yield return new WaitForSeconds (0.1f);
+	//percentsPerSecond = 1f;
+	yield return new WaitForSeconds (0.98f);
+	/*percentsPerSecond = 1f;
+	yield return new WaitForSeconds (0.2f);
+	percentsPerSecond = 0.1f;
+	yield return new WaitForSeconds (0.1f);
+	percentsPerSecond = 1f;
+	yield return new WaitForSeconds (0.7f);
+*/
+	hookJumpActiveOnce = false;
+	hookJumpActive = false;
+	m_Anim.SetBool ("Grab", false);
+
+	//sawMoverScript.gameObject.GetComponent<CircleCollider2D> ().enabled = true;
 
 }
 	

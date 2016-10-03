@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityStandardAssets.ImageEffects;
+using UnityEngine.SceneManagement;
 
 public class DoorAbattoir : MonoBehaviour {
 
@@ -40,6 +41,8 @@ public class DoorAbattoir : MonoBehaviour {
 
 		if (doorOpen) {
 		
+			StartCoroutine (waitForSceneLoad (3f));
+
 			MainCamObj.GetComponent<SunShafts> ().sunShaftIntensity += 3f * Time.deltaTime;
 
 			ambientSound.volume -= 0.1f;
@@ -94,5 +97,10 @@ public class DoorAbattoir : MonoBehaviour {
 
 		yield return new WaitForSeconds (waitTime);
 		doorFullyOpenBool = true;
+	}
+	IEnumerator waitForSceneLoad(float waitTime){
+
+		yield return new WaitForSeconds (waitTime);
+		SceneManager.LoadScene (0);
 	}
 }

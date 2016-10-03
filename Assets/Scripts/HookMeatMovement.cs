@@ -23,8 +23,11 @@ public class HookMeatMovement : MonoBehaviour {
 	public MeatCutScript MeatCutScript;
 	public float speedUpStart = 0f;
 	public bool hookWaitOnce = true;
+	public bool hookWaitOnceMoving = true;
 
 	public SawMover SawMoverScript;
+
+	public bool waitDetectOnce = true;
 
 
 	// Use this for initialization
@@ -43,18 +46,20 @@ public class HookMeatMovement : MonoBehaviour {
 	void FixedUpdate () {
 
 
+
 		if (isMoving)
 		{
 
 			HingeRb.MovePosition(HingeRb.position + Time.deltaTime * meatSpeedVector);
 			//this.transform.Translate(Vector3.left * Time.deltaTime * meatSpeed);
 			if (playOnce)
-			{if (SawMoverScript.hookDetected && hookWaitOnce) {
+			{if (SawMoverScript.hookDetected && hookWaitOnceMoving) {
 
 					StartCoroutine (MoveTime (0f));
-					StartCoroutine (HookWaitTrue (7f));
+					StartCoroutine (WaitNumerator (2f));
+					StartCoroutine (HookWaitTrue (5f));
 					playOnce = false;
-					hookWaitOnce = false;
+					hookWaitOnceMoving = false;
 
 				} else {
 					StartCoroutine (MoveTime (moveTime));
@@ -71,7 +76,7 @@ public class HookMeatMovement : MonoBehaviour {
 				if (SawMoverScript.hookDetected && hookWaitOnce) {
 
 					StartCoroutine (WaitNumerator (2f));
-					StartCoroutine (HookWaitTrue (7f));
+					StartCoroutine (HookWaitTrue (5f));
 					playOnceWait = false;
 					hookWaitOnce = false;
 
@@ -86,6 +91,12 @@ public class HookMeatMovement : MonoBehaviour {
 
 	void Update(){
 
+		if (SawMoverScript.hookDetected && waitDetectOnce) {
+
+			StartCoroutine (waitIfDetected (2));
+			waitDetectOnce = false;
+
+		}
 
 		if (SawMoverScript.hookDetected) {
 
@@ -96,7 +107,7 @@ public class HookMeatMovement : MonoBehaviour {
 		} else {
 
 
-			waitTime = 1.5f;
+			waitTime = 0f;
 
 		}
 
@@ -153,6 +164,7 @@ public class HookMeatMovement : MonoBehaviour {
 			SawMoverScript.meatDetected = true;
 
 		}
+
 		else if (other.gameObject.tag == "MeatPassedCol") {
 
 			SawMoverScript.meatDetected = false;
@@ -201,5 +213,14 @@ public class HookMeatMovement : MonoBehaviour {
 	{
 		yield return new WaitForSeconds(moveTime);
 		hookWaitOnce = true;
+		hookWaitOnceMoving = true;
+		waitDetectOnce = true;
+	}
+	IEnumerator waitIfDetected(float moveTime)
+	{
+		yield return new WaitForSeconds(0.5f);
+		isMoving = false;
+		yield return new WaitForSeconds(moveTime);
+		isMoving = true;
 	}
 }

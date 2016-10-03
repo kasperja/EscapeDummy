@@ -520,7 +520,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014109482998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 221, y: 22, z: 30}
+  m_LocalPosition: {x: 265, y: 22, z: 30}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -972,7 +972,7 @@ MonoBehaviour:
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 4294936782
+    m_Bits: 4294871246
   m_AnimHooked: {fileID: 95000013447369186}
   cm: {fileID: 114000011688461140}
   hpPlayerTotal: {fileID: 114000010577870838}
@@ -1002,18 +1002,21 @@ MonoBehaviour:
   climbingStairsBool: 0
   endCamBool: 0
   endCamBackBool: 0
+  startCamBool: 0
+  startCamBackBool: 0
   sawSound: {fileID: 0}
   moveBackAmmount: 0.45
   stairColsObj: {fileID: 0}
   stairPosUp: {fileID: 0}
   stairPosDown: {fileID: 0}
   wayPointArray:
-  - {fileID: 0}
+  - {fileID: 4000013832108326}
   - {fileID: 0}
   - {fileID: 0}
   hookJumpActive: 0
   hookJumpActiveOnce: 1
   sawMoverScript: {fileID: 0}
+  hookStandingStill: 0
 --- !u!114 &114000010480083346
 MonoBehaviour:
   m_ObjectHideFlags: 1
