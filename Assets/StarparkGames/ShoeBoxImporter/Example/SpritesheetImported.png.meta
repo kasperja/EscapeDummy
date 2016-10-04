@@ -1,0 +1,1163 @@
+fileFormatVersion: 2
+guid: 94dfa7a94fff66d47b7effd89a685689
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: UIbg
+    21300002: background
+    21300004: buttonLarge
+    21300006: buttonSmall
+    21300008: groundDirt
+    21300010: groundGrass
+    21300012: groundIce
+    21300014: groundRock
+    21300016: groundSnow
+    21300018: letterA
+    21300020: letterB
+    21300022: letterC
+    21300024: letterD
+    21300026: letterE
+    21300028: letterF
+    21300030: letterG
+    21300032: letterH
+    21300034: letterI
+    21300036: letterJ
+    21300038: letterK
+    21300040: letterL
+    21300042: letterM
+    21300044: letterN
+    21300046: letterO
+    21300048: letterP
+    21300050: letterQ
+    21300052: letterR
+    21300054: letterS
+    21300056: letterT
+    21300058: letterU
+    21300060: letterV
+    21300062: letterW
+    21300064: letterX
+    21300066: letterY
+    21300068: letterZ
+    21300070: medalBronze
+    21300072: medalGold
+    21300074: medalSilver
+    21300076: number0
+    21300078: number1
+    21300080: number2
+    21300082: number3
+    21300084: number4
+    21300086: number5
+    21300088: number6
+    21300090: number7
+    21300092: number8
+    21300094: number9
+    21300096: planeBlue1
+    21300098: planeBlue2
+    21300100: planeBlue3
+    21300102: planeGreen1
+    21300104: planeGreen2
+    21300106: planeGreen3
+    21300108: planeRed1
+    21300110: planeRed2
+    21300112: planeRed3
+    21300114: planeYellow1
+    21300116: planeYellow2
+    21300118: planeYellow3
+    21300120: puffLarge
+    21300122: puffSmall
+    21300124: rock
+    21300126: rockDown
+    21300128: rockGrass
+    21300130: rockGrassDown
+    21300132: rockIce
+    21300134: rockIceDown
+    21300136: rockSnow
+    21300138: rockSnowDown
+    21300140: starBronze
+    21300142: starGold
+    21300144: starSilver
+    21300146: tap
+    21300148: tapLeft
+    21300150: tapRight
+    21300152: tapTick
+    21300154: textGameOver
+    21300156: textGetReady
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UIbg
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 395
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: background
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 179
+        width: 800
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: buttonLarge
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 27
+        width: 196
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: buttonSmall
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 97
+        width: 136
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: groundDirt
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 953
+        width: 808
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: groundGrass
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 807
+        width: 808
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: groundIce
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 880
+        width: 808
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: groundRock
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 661
+        width: 808
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: groundSnow
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 734
+        width: 808
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterA
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 653
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterB
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 742
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterC
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 958
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterD
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 10
+        width: 54
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterE
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 573
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterF
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 824
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterG
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 890
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterH
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 84
+        width: 51
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterI
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 719
+        width: 22
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterJ
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 958
+        width: 42
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterK
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 719
+        width: 53
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterL
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 329
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterM
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 162
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterN
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 84
+        width: 53
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterO
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 504
+        width: 60
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterP
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 427
+        width: 48
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterQ
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 572
+        width: 60
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterR
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 218
+        width: 51
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterS
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 505
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterT
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 653
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterU
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 150
+        width: 51
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterV
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 719
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterW
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 12
+        width: 76
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterX
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 377
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterY
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 311
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: letterZ
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 573
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medalBronze
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 58
+        width: 114
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medalGold
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 274
+        width: 114
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medalSilver
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 905
+        width: 114
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: number0
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 573
+        width: 53
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: number1
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 310
+        width: 37
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: number2
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 285
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: number3
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 639
+        width: 51
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: number4
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 150
+        width: 55
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: number5
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 196
+        width: 50
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: number6
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 364
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: number7
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 6
+        width: 51
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: number8
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 810
+        width: 51
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: number9
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 494
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: planeBlue1
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 228
+        width: 88
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: planeBlue2
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 78
+        width: 88
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: planeBlue3
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 79
+        width: 88
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: planeGreen1
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 104
+        width: 88
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: planeGreen2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 22
+        width: 88
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: planeGreen3
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 951
+        width: 88
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: planeRed1
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 104
+        width: 88
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: planeRed2
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 228
+        width: 88
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: planeRed3
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 153
+        width: 88
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: planeYellow1
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 4
+        width: 88
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: planeYellow2
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 4
+        width: 88
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: planeYellow3
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 79
+        width: 88
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: puffLarge
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 60
+        width: 42
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: puffSmall
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 4
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: rock
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 664
+        width: 108
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: rockDown
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 785
+        width: 108
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: rockGrass
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 664
+        width: 108
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: rockGrassDown
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 544
+        width: 108
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: rockIce
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 154
+        width: 108
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: rockIceDown
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 785
+        width: 108
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: rockSnow
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 303
+        width: 108
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: rockSnowDown
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 33
+        width: 108
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: starBronze
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 290
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: starGold
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 388
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: starSilver
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 455
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tap
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 16
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tapLeft
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 14
+        width: 85
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tapRight
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 907
+        width: 85
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tapTick
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 443
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: textGameOver
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 99
+        width: 412
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: textGetReady
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 400
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
