@@ -128,6 +128,16 @@ using System.Collections;
 			vSpeed = m_Rigidbody2D.velocity.y;
 
 
+		if (hooked) {
+		
+			m_Anim.SetBool ("LookUpBool", true);
+		
+		} else {
+		
+			m_Anim.SetBool ("LookUpBool", false);
+		
+		
+		}
 
 
 		if (hooked && Input.GetKey(KeyCode.Space) && sawMoverScript.hookDetected && hookJumpActiveOnce && hookStandingStill) {

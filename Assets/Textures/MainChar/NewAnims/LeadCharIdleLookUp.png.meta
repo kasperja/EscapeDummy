@@ -1,9 +1,72 @@
 fileFormatVersion: 2
 guid: 3157b5597c074bd498c58264290e5cd3
-timeCreated: 1474009524
+timeCreated: 1476338035
 licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: LeadCharIdleLookUp_0
+    21300002: LeadCharIdleLookUp_1
+    21300004: LeadCharIdleLookUp_2
+    21300006: LeadCharIdleLookUp_3
+    21300008: LeadCharIdleLookUp_4
+    21300010: LeadCharIdleLookUp_5
+    21300012: LeadCharIdleLookUp_6
+    21300014: LeadCharIdleLookUp_7
+    21300016: LeadCharIdleLookUp_8
+    21300018: LeadCharIdleLookUp_9
+    21300020: LeadCharIdleLookUp_10
+    21300022: LeadCharIdleLookUp_11
+    21300024: LeadCharIdleLookUp_12
+    21300026: LeadCharIdleLookUp_13
+    21300028: LeadCharIdleLookUp_14
+    21300030: LeadCharIdleLookUp_15
+    21300032: LeadCharIdleLookUp_16
+    21300034: LeadCharIdleLookUp_17
+    21300036: LeadCharIdleLookUp_18
+    21300038: LeadCharIdleLookUp_19
+    21300040: LeadCharIdleLookUp_20
+    21300042: LeadCharIdleLookUp_21
+    21300044: LeadCharIdleLookUp_22
+    21300046: LeadCharIdleLookUp_23
+    21300048: LeadCharIdleLookUp_24
+    21300050: LeadCharIdleLookUp_25
+    21300052: LeadCharIdleLookUp_26
+    21300054: LeadCharIdleLookUp_27
+    21300056: LeadCharIdleLookUp_28
+    21300058: LeadCharIdleLookUp_29
+    21300060: LeadCharIdleLookUp_30
+    21300062: LeadCharIdleLookUp_31
+    21300064: LeadCharIdleLookUp_32
+    21300066: LeadCharIdleLookUp_33
+    21300068: LeadCharIdleLookUp_34
+    21300070: LeadCharIdleLookUp_35
+    21300072: LeadCharIdleLookUp_36
+    21300074: LeadCharIdleLookUp_37
+    21300076: LeadCharIdleLookUp_38
+    21300078: LeadCharIdleLookUp_39
+    21300080: LeadCharIdleLookUp_40
+    21300082: LeadCharIdleLookUp_41
+    21300084: LeadCharIdleLookUp_42
+    21300086: LeadCharIdleLookUp_43
+    21300088: LeadCharIdleLookUp_44
+    21300090: LeadCharIdleLookUp_45
+    21300092: LeadCharIdleLookUp_46
+    21300094: LeadCharIdleLookUp_47
+    21300096: LeadCharIdleLookUp_48
+    21300098: LeadCharIdleLookUp_49
+    21300100: LeadCharIdleLookUp_50
+    21300102: LeadCharIdleLookUp_51
+    21300104: LeadCharIdleLookUp_52
+    21300106: LeadCharIdleLookUp_53
+    21300108: LeadCharIdleLookUp_54
+    21300110: LeadCharIdleLookUp_55
+    21300112: LeadCharIdleLookUp_56
+    21300114: LeadCharIdleLookUp_57
+    21300116: LeadCharIdleLookUp_58
+    21300118: LeadCharIdleLookUp_59
+    21300120: LeadCharIdleLookUp_60
+    21300122: LeadCharIdleLookUp_61
+    21300124: LeadCharIdleLookUp_62
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -27,31 +90,850 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 2048
+  maxTextureSize: 8192
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
-  alphaIsTransparency: 0
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: -1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_1
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_2
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_3
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_4
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_5
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_6
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_7
+      rect:
+        serializedVersion: 2
+        x: 4361
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_8
+      rect:
+        serializedVersion: 2
+        x: 4984
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_9
+      rect:
+        serializedVersion: 2
+        x: 5607
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_10
+      rect:
+        serializedVersion: 2
+        x: 6230
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_11
+      rect:
+        serializedVersion: 2
+        x: 6853
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_12
+      rect:
+        serializedVersion: 2
+        x: 7476
+        y: 7254
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_14
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_15
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_16
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_17
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_18
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_19
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_20
+      rect:
+        serializedVersion: 2
+        x: 4361
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_21
+      rect:
+        serializedVersion: 2
+        x: 4984
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_22
+      rect:
+        serializedVersion: 2
+        x: 5607
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_23
+      rect:
+        serializedVersion: 2
+        x: 6230
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_24
+      rect:
+        serializedVersion: 2
+        x: 6853
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_25
+      rect:
+        serializedVersion: 2
+        x: 7476
+        y: 6316
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_27
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_28
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_29
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_30
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_31
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_32
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_33
+      rect:
+        serializedVersion: 2
+        x: 4361
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_34
+      rect:
+        serializedVersion: 2
+        x: 4984
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_35
+      rect:
+        serializedVersion: 2
+        x: 5607
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_36
+      rect:
+        serializedVersion: 2
+        x: 6230
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_37
+      rect:
+        serializedVersion: 2
+        x: 6853
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_38
+      rect:
+        serializedVersion: 2
+        x: 7476
+        y: 5378
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_40
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_41
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_42
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_43
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_44
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_45
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_46
+      rect:
+        serializedVersion: 2
+        x: 4361
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_47
+      rect:
+        serializedVersion: 2
+        x: 4984
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_48
+      rect:
+        serializedVersion: 2
+        x: 5607
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_49
+      rect:
+        serializedVersion: 2
+        x: 6230
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_50
+      rect:
+        serializedVersion: 2
+        x: 6853
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_51
+      rect:
+        serializedVersion: 2
+        x: 7476
+        y: 4440
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_53
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_54
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_55
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_56
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_57
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_58
+      rect:
+        serializedVersion: 2
+        x: 3738
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_59
+      rect:
+        serializedVersion: 2
+        x: 4361
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_60
+      rect:
+        serializedVersion: 2
+        x: 4984
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_61
+      rect:
+        serializedVersion: 2
+        x: 5607
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeadCharIdleLookUp_62
+      rect:
+        serializedVersion: 2
+        x: 6230
+        y: 3502
+        width: 623
+        height: 938
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
