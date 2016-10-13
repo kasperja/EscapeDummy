@@ -27,6 +27,7 @@ using System.Collections;
 		public bool m_Attack2 = false;
 		public bool m_Attack3 = false;
 		public bool m_Attack4 = false;
+		public bool m_Attack5 = false;
 
 	public float vSpeed = 0;
 
@@ -34,6 +35,8 @@ using System.Collections;
 		public bool playOnce2 = true;
 		public bool playOnce3 = true;
 		public bool playOnce4 = true;
+		public bool playOnce5 = true;
+
 		private float animWaitTime = 0.1f;
 
 	public HingeJoint2D tempHinge;
@@ -252,14 +255,11 @@ using System.Collections;
 
 
 		}
-		/*if (m_Grounded) {
+		if (m_Grounded) {
 			
-			tempHinge.enabled = true;
-			hookParent.GetComponent<BoxCollider2D> ().enabled = true;
-			hookOnce = true;
-			hooked = false;
+			m_Anim.SetBool ("JumpKickToJump", false);
 
-		}*/
+		}
 				
 		if (Input.GetKey (KeyCode.RightArrow) || Input.GetKey (KeyCode.LeftArrow)) {
 
@@ -273,7 +273,7 @@ using System.Collections;
 
 		}
 
-		if (cm.falconPunchBool && playOnce4 && !sideArrowsBool) {
+		if (cm.falconPunchBool && playOnce4 && !sideArrowsBool && m_Grounded) {
 
 			if(attackSoundOnce){
 
@@ -284,7 +284,7 @@ using System.Collections;
 			playOnce4 = false;
 			StartCoroutine (WaitForAnim4(1f));
 
-		} else if (Input.GetKeyDown (KeyCode.E) && playOnce1 && cm.falconPunchBool == false && !sideArrowsBool) {
+		} else if (Input.GetKeyDown (KeyCode.E) && playOnce1 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded) {
 
 			if(attackSoundOnce){
 
@@ -296,7 +296,7 @@ using System.Collections;
 				StartCoroutine (WaitForAnim1(1f));
 
 			}
-		else if (Input.GetKeyDown (KeyCode.R) && playOnce2 && cm.falconPunchBool == false && !sideArrowsBool) {
+		else if (Input.GetKeyDown (KeyCode.R) && playOnce2 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded) {
 
 			if(attackSoundOnce){
 
@@ -308,7 +308,7 @@ using System.Collections;
 				StartCoroutine (WaitForAnim2(1f));
 
 			}
-		else if (Input.GetKeyDown (KeyCode.W) && playOnce3 && cm.falconPunchBool == false && !sideArrowsBool) {
+		else if (Input.GetKeyDown (KeyCode.W) && playOnce3 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded) {
 
 			if(attackSoundOnce){
 
@@ -319,7 +319,20 @@ using System.Collections;
 				playOnce3 = false;
 				StartCoroutine (WaitForAnim3(1f));
 
+		}
+
+		else if ((Input.GetKeyDown (KeyCode.R) || Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown (KeyCode.W)) && playOnce5 && cm.falconPunchBool == false && !m_Grounded) {
+
+			if(attackSoundOnce){
+
+				attackSound1.Play ();
+				attackSoundOnce = false;
 			}
+			m_Attack5 = true;
+			playOnce5 = false;
+			StartCoroutine (WaitForAnim5(0.7f));
+
+		}
 			
 		else if (!Input.GetKey (KeyCode.E) && !Input.GetKey (KeyCode.R) && !Input.GetKey (KeyCode.W) 
 			&& cm.falconPunchBool == false) {
@@ -328,10 +341,11 @@ using System.Collections;
 			m_Attack2 = false;
 			m_Attack3 = false;
 			m_Attack4 = false;
+			m_Attack5 = false;
 			attackSoundOnce = true;
 		
 		
-			}
+		} 
 
 
 		}
@@ -362,6 +376,13 @@ using System.Collections;
 			playOnce4 = true;
 		}
 
+	IEnumerator WaitForAnim5(float animWaitTime){
+		yield return new WaitForSeconds (animWaitTime);
+		m_Attack5 = false;
+		playOnce5 = true;
+		m_Anim.SetBool ("JumpKickToJump", true);
+	}
+
 
 
         private void FixedUpdate()
@@ -389,6 +410,7 @@ using System.Collections;
 			m_Anim.SetBool ("Attack2Bool", m_Attack2);
 			m_Anim.SetBool ("Attack3Bool", m_Attack3);
 			m_Anim.SetBool ("Attack4Bool", m_Attack4);
+			m_Anim.SetBool ("Attack5Bool", m_Attack5);
             m_Anim.SetBool("Ground", m_Grounded);
 
             // Set the vertical animation

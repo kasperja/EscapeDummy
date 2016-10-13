@@ -10,10 +10,13 @@ public class AttackManager : MonoBehaviour {
 	public GameObject beginPos;
 	private bool playOnce = true;
 	public bool activate = false;
+	public bool isJumpKick = false;
 	//private bool isLerping = false;
 //	private float timer = 0.0f;
 //	private float timerMax = 0.5f;
 	public KeyCode AttackKey = KeyCode.F;
+	public KeyCode AttackKey2 = KeyCode.F;
+	public KeyCode AttackKey3 = KeyCode.F;
 	public PlatformerCharacter2D mainCharScript;
 	public float attackDamage = 100.0f;
 	//public AudioSource whooshSound;
@@ -36,30 +39,6 @@ public class AttackManager : MonoBehaviour {
 		
 
 
-
-
-
-
-		/*timer += Time.deltaTime;
-
-		if (timer >= timerMax) {
-
-
-			activate = true;
-			//timer = timerMax;
-			//
-
-
-		} else {
-
-
-			activate = false;
-
-
-		}*/
-
-	
-
 			
 		if (Input.GetKeyDown (AttackKey) && playOnce && !mainCharScript.sideArrowsBool) {
 
@@ -78,8 +57,13 @@ public class AttackManager : MonoBehaviour {
 
 
 
-		} 
-			
+		} if ((Input.GetKeyDown (AttackKey) || Input.GetKeyDown (AttackKey2) || Input.GetKeyDown (AttackKey3)) && playOnce && isJumpKick) {
+		
+			activate = true;
+			playOnce = false;
+		
+		
+		}
 
 		if (Input.GetKeyUp (AttackKey)) {
 			//StartCoroutine (MoveObj (this.transform, this.transform.position, beginPos.transform.position, 0.06f));
@@ -96,9 +80,14 @@ public class AttackManager : MonoBehaviour {
 			//transform.position = Vector3.Lerp(transform.position, beginPos.transform.position, Time.fixedDeltaTime);
 
 
-		} else {
+		} else if (isJumpKick && (Input.GetKeyUp (AttackKey) || Input.GetKeyUp (AttackKey2) || Input.GetKeyUp (AttackKey3))) {
 		
 			//activate = false;
+
+			activate = false;
+			playOnce = false;
+
+			StartCoroutine (Waiter());
 		
 		}
 		if (activate) {
