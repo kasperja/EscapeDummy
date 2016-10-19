@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: 97976cf980b44d241a4182700b881d87
+timeCreated: 1476879083
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Strike01-0015
+    21300002: Strike01-0016
+    21300004: Strike01-0017
+    21300006: Strike01-0018
+    21300008: Strike01-0019
+    21300010: Strike01-0020
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Strike01-0015
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1263
+        width: 593
+        height: 784
+      alignment: 9
+      pivot: {x: 0.5413153, y: 0.8979592}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Strike01-0016
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1194
+        width: 377
+        height: 853
+      alignment: 9
+      pivot: {x: 0.90716183, y: 0.8253224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Strike01-0017
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 1158
+        width: 325
+        height: 889
+      alignment: 9
+      pivot: {x: 1.1261538, y: 0.799775}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Strike01-0018
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 1164
+        width: 328
+        height: 883
+      alignment: 9
+      pivot: {x: 1.125, y: 0.806342}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Strike01-0019
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 1167
+        width: 325
+        height: 880
+      alignment: 9
+      pivot: {x: 1.1076924, y: 0.80795455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Strike01-0020
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 276
+        width: 325
+        height: 880
+      alignment: 9
+      pivot: {x: 1.1076924, y: 0.80795455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

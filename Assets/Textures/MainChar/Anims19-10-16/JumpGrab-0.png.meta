@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: 0f1b2f0d63d617c498d03539755c5159
+timeCreated: 1476878957
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: JumpGrab-0000
+    21300002: JumpGrab-0001
+    21300004: JumpGrab-0002
+    21300006: JumpGrab-0003
+    21300008: JumpGrab-0004
+    21300010: JumpGrab-0005
+    21300012: JumpGrab-0006
+    21300014: JumpGrab-0007
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JumpGrab-0000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1167
+        width: 325
+        height: 880
+      alignment: 9
+      pivot: {x: 1.1076924, y: 0.80795455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JumpGrab-0001
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1180
+        width: 326
+        height: 867
+      alignment: 9
+      pivot: {x: 1.1809816, y: 0.8143022}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JumpGrab-0002
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1190
+        width: 344
+        height: 857
+      alignment: 9
+      pivot: {x: 1.130814, y: 0.82380396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JumpGrab-0003
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 1141
+        width: 487
+        height: 906
+      alignment: 9
+      pivot: {x: 0.6837782, y: 0.7913907}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JumpGrab-0004
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 1137
+        width: 535
+        height: 910
+      alignment: 9
+      pivot: {x: 0.60186917, y: 0.7802198}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JumpGrab-0005
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 255
+        width: 509
+        height: 880
+      alignment: 9
+      pivot: {x: 0.6738703, y: 0.7431818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JumpGrab-0006
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 267
+        width: 495
+        height: 868
+      alignment: 9
+      pivot: {x: 0.7838384, y: 0.71428573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JumpGrab-0007
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 307
+        width: 520
+        height: 828
+      alignment: 9
+      pivot: {x: 0.89615387, y: 0.6388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

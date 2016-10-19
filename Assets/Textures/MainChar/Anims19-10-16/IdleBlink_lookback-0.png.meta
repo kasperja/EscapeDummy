@@ -1,0 +1,241 @@
+fileFormatVersion: 2
+guid: 43ff12af14ded374ca79e2c112f0ae4b
+timeCreated: 1476879027
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: IdleBlink lookback-0000
+    21300002: IdleBlink lookback-0001
+    21300004: IdleBlink lookback-0002
+    21300006: IdleBlink lookback-0003
+    21300008: IdleBlink lookback-0004
+    21300010: IdleBlink lookback-0005
+    21300012: IdleBlink lookback-0006
+    21300014: IdleBlink lookback-0007
+    21300016: IdleBlink lookback-0008
+    21300018: IdleBlink lookback-0009
+    21300020: IdleBlink lookback-0010
+    21300022: IdleBlink lookback-0011
+    21300024: IdleBlink lookback-0034
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IdleBlink lookback-0000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1167
+        width: 330
+        height: 880
+      alignment: 9
+      pivot: {x: 1.0909091, y: 0.80795455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleBlink lookback-0001
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1167
+        width: 324
+        height: 880
+      alignment: 9
+      pivot: {x: 1.1234568, y: 0.8090909}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleBlink lookback-0002
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1164
+        width: 330
+        height: 883
+      alignment: 9
+      pivot: {x: 1.1030303, y: 0.806342}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleBlink lookback-0003
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 1166
+        width: 322
+        height: 881
+      alignment: 9
+      pivot: {x: 1.1211181, y: 0.8081725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleBlink lookback-0004
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 1168
+        width: 316
+        height: 879
+      alignment: 9
+      pivot: {x: 1.142405, y: 0.8100114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleBlink lookback-0005
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 1169
+        width: 329
+        height: 878
+      alignment: 9
+      pivot: {x: 1.118541, y: 0.81093395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleBlink lookback-0006
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 280
+        width: 324
+        height: 882
+      alignment: 9
+      pivot: {x: 1.1388888, y: 0.8072562}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleBlink lookback-0007
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 279
+        width: 323
+        height: 883
+      alignment: 9
+      pivot: {x: 1.139319, y: 0.806342}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleBlink lookback-0008
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 286
+        width: 330
+        height: 876
+      alignment: 9
+      pivot: {x: 1.1242424, y: 0.8127854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleBlink lookback-0009
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 279
+        width: 324
+        height: 883
+      alignment: 9
+      pivot: {x: 1.1574074, y: 0.810872}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleBlink lookback-0010
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 292
+        width: 321
+        height: 870
+      alignment: 9
+      pivot: {x: 1.1619937, y: 0.8183908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleBlink lookback-0011
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 283
+        width: 322
+        height: 879
+      alignment: 9
+      pivot: {x: 1.1521739, y: 0.8100114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleBlink lookback-0034
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1167
+        width: 330
+        height: 880
+      alignment: 9
+      pivot: {x: 1.0909091, y: 0.80795455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

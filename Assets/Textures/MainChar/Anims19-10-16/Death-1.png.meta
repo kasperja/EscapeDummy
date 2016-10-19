@@ -1,0 +1,241 @@
+fileFormatVersion: 2
+guid: 4fde016d29853984a883ef1bdabbc755
+timeCreated: 1476879039
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Death-0009
+    21300002: Death-0010
+    21300004: Death-0011
+    21300006: Death-0012
+    21300008: Death-0013
+    21300010: Death-0014
+    21300012: Death-0015
+    21300014: Death-0016
+    21300016: Death-0017
+    21300018: Death-0018
+    21300020: Death-0019
+    21300022: Death-0020
+    21300024: Death-0021
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Death-0009
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1360
+        width: 295
+        height: 687
+      alignment: 9
+      pivot: {x: 0.7728813, y: 1.0640466}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death-0010
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 1355
+        width: 295
+        height: 692
+      alignment: 9
+      pivot: {x: 0.7728813, y: 1.049133}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death-0011
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1362
+        width: 305
+        height: 685
+      alignment: 9
+      pivot: {x: 0.76393443, y: 1.049635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death-0012
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1358
+        width: 295
+        height: 689
+      alignment: 9
+      pivot: {x: 0.7728813, y: 1.0493469}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death-0013
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 1370
+        width: 328
+        height: 677
+      alignment: 9
+      pivot: {x: 0.70731705, y: 1.0605613}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death-0014
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 1376
+        width: 416
+        height: 671
+      alignment: 9
+      pivot: {x: 0.6081731, y: 1.0640835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death-0015
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 700
+        width: 505
+        height: 653
+      alignment: 9
+      pivot: {x: 0.46732673, y: 1.093415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death-0016
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 758
+        width: 653
+        height: 595
+      alignment: 9
+      pivot: {x: 0.3598775, y: 1.1983193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death-0017
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 856
+        width: 728
+        height: 497
+      alignment: 9
+      pivot: {x: 0.30769232, y: 1.4466801}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death-0018
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 478
+        width: 887
+        height: 220
+      alignment: 9
+      pivot: {x: 0.2581736, y: 3.3090909}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death-0019
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 476
+        width: 897
+        height: 222
+      alignment: 9
+      pivot: {x: 0.26198438, y: 3.2837837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death-0020
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 248
+        width: 903
+        height: 226
+      alignment: 9
+      pivot: {x: 0.26024362, y: 3.2477877}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Death-0021
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 249
+        width: 904
+        height: 225
+      alignment: 9
+      pivot: {x: 0.25995576, y: 3.2622223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

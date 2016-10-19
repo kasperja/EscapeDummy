@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: 800fdedf60fb67c479b9736b7e6ef523
+timeCreated: 1476879072
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Run-0014
+    21300002: Run-0015
+    21300004: Run-0016
+    21300006: Run-0017
+    21300008: Run-0018
+    21300010: Run-0019
+    21300012: Run-0020
+    21300014: Run-0021
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Run-0014
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1243
+        width: 521
+        height: 804
+      alignment: 9
+      pivot: {x: 0.92706335, y: 0.8868159}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Run-0015
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1237
+        width: 496
+        height: 810
+      alignment: 9
+      pivot: {x: 0.82459676, y: 0.87901235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Run-0016
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1202
+        width: 350
+        height: 845
+      alignment: 9
+      pivot: {x: 0.9657143, y: 0.8414201}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Run-0017
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 1188
+        width: 292
+        height: 859
+      alignment: 9
+      pivot: {x: 1.1267123, y: 0.82537836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Run-0018
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 1167
+        width: 362
+        height: 880
+      alignment: 9
+      pivot: {x: 1.0303867, y: 0.8056818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Run-0019
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 278
+        width: 468
+        height: 887
+      alignment: 9
+      pivot: {x: 0.9059829, y: 0.80270576}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Run-0020
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 262
+        width: 544
+        height: 903
+      alignment: 9
+      pivot: {x: 0.85110295, y: 0.79512733}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Run-0021
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 346
+        width: 561
+        height: 819
+      alignment: 9
+      pivot: {x: 0.8663102, y: 0.8021978}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
