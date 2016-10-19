@@ -1,0 +1,199 @@
+fileFormatVersion: 2
+guid: 1dc482bb81ae82b41b06a2e8ee5adf1f
+timeCreated: 1476878990
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Jump new02-0000
+    21300002: Jump new02-0001
+    21300004: Jump new02-0002
+    21300006: Jump new02-0003
+    21300008: Jump new02-0004
+    21300010: Jump new02-0005
+    21300012: Jump new02-0006
+    21300014: Jump new02-0007
+    21300016: Jump new02-0008
+    21300018: Jump new02-0009
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jump new02-0000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1167
+        width: 325
+        height: 880
+      alignment: 9
+      pivot: {x: 1.1076924, y: 0.80795455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Jump new02-0001
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1172
+        width: 334
+        height: 875
+      alignment: 9
+      pivot: {x: 1.1107785, y: 0.81371427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Jump new02-0002
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1175
+        width: 326
+        height: 872
+      alignment: 9
+      pivot: {x: 1.1564417, y: 0.8165138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Jump new02-0003
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1169
+        width: 290
+        height: 878
+      alignment: 9
+      pivot: {x: 1.3034483, y: 0.8041002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Jump new02-0004
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 1184
+        width: 316
+        height: 863
+      alignment: 9
+      pivot: {x: 1.221519, y: 0.77404404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Jump new02-0005
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 1243
+        width: 358
+        height: 804
+      alignment: 9
+      pivot: {x: 1.103352, y: 0.72512436}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Jump new02-0006
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 375
+        width: 387
+        height: 790
+      alignment: 9
+      pivot: {x: 1.0490956, y: 0.7101266}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Jump new02-0007
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 393
+        width: 445
+        height: 772
+      alignment: 9
+      pivot: {x: 0.9842697, y: 0.6981865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Jump new02-0008
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 402
+        width: 448
+        height: 763
+      alignment: 9
+      pivot: {x: 1.0178572, y: 0.6920052}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Jump new02-0009
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 407
+        width: 486
+        height: 758
+      alignment: 9
+      pivot: {x: 0.9855967, y: 0.68601584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

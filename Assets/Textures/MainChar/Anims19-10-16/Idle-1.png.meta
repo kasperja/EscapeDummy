@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: a9e0d12842aec234db9d9b5e50d67bf7
+timeCreated: 1476879090
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Idle-0012
+    21300002: Idle-0013
+    21300004: Idle-0014
+    21300006: Idle-0015
+    21300008: Idle-0016
+    21300010: Idle-0017
+    21300012: Idle-0018
+    21300014: Idle-0019
+    21300016: Idle-0020
+    21300018: Idle-0021
+    21300020: Idle-0022
+    21300022: Idle-0023
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Idle-0012
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1168
+        width: 324
+        height: 879
+      alignment: 9
+      pivot: {x: 1.1481482, y: 0.8100114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle-0013
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1165
+        width: 315
+        height: 882
+      alignment: 9
+      pivot: {x: 1.1746032, y: 0.8095238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle-0014
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1166
+        width: 325
+        height: 881
+      alignment: 9
+      pivot: {x: 1.1538461, y: 0.8104427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle-0015
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 1165
+        width: 320
+        height: 882
+      alignment: 9
+      pivot: {x: 1.165625, y: 0.81179136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle-0016
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 1165
+        width: 322
+        height: 882
+      alignment: 9
+      pivot: {x: 1.1645963, y: 0.8095238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle-0017
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 1177
+        width: 322
+        height: 870
+      alignment: 9
+      pivot: {x: 1.1614907, y: 0.8229885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle-0018
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 293
+        width: 328
+        height: 870
+      alignment: 9
+      pivot: {x: 1.1585366, y: 0.8229885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle-0019
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 284
+        width: 334
+        height: 879
+      alignment: 9
+      pivot: {x: 1.1227545, y: 0.8100114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle-0020
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 295
+        width: 325
+        height: 868
+      alignment: 9
+      pivot: {x: 1.1507692, y: 0.8202765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle-0021
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 282
+        width: 318
+        height: 881
+      alignment: 9
+      pivot: {x: 1.1603774, y: 0.8104427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle-0022
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 282
+        width: 320
+        height: 881
+      alignment: 9
+      pivot: {x: 1.15625, y: 0.8081725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Idle-0023
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 283
+        width: 317
+        height: 880
+      alignment: 9
+      pivot: {x: 1.1640378, y: 0.8090909}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

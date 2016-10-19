@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: 73d363893238c70429158be4fec0b270
+timeCreated: 1476879062
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: JumpGrab-0021
+    21300002: JumpGrab-0022
+    21300004: JumpGrab-0023
+    21300006: JumpGrab-0024
+    21300008: JumpGrab-0025
+    21300010: JumpGrab-0026
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JumpGrab-0021
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1245
+        width: 759
+        height: 802
+      alignment: 9
+      pivot: {x: 1.0355731, y: 0.74189526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JumpGrab-0022
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 1150
+        width: 672
+        height: 897
+      alignment: 9
+      pivot: {x: 1.1071428, y: 0.7302118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JumpGrab-0023
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 281
+        width: 646
+        height: 867
+      alignment: 9
+      pivot: {x: 1.123839, y: 0.80738175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JumpGrab-0024
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 298
+        width: 614
+        height: 850
+      alignment: 9
+      pivot: {x: 0.88273615, y: 0.8258824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JumpGrab-0025
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 288
+        width: 316
+        height: 860
+      alignment: 9
+      pivot: {x: 1.1329114, y: 0.81860465}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JumpGrab-0026
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 277
+        width: 299
+        height: 871
+      alignment: 9
+      pivot: {x: 1.173913, y: 0.81171066}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
