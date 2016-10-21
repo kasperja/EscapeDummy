@@ -221,6 +221,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1000013444990046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000010643869802}
+  - 61: {fileID: 61000012499871942}
+  m_Layer: 11
+  m_Name: WaitForHooked (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1 &1000013719388696
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,6 +352,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000013433801936}
   m_RootOrder: 0
+--- !u!4 &4000010643869802
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013444990046}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.25, y: -2.56, z: -5.764084}
+  m_LocalScale: {x: 9.60134, y: 0.006395175, z: 0.2882042}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000012954054848}
+  m_RootOrder: 12
 --- !u!4 &4000010948257472
 Transform:
   m_ObjectHideFlags: 1
@@ -356,7 +385,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011180933628}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.17, y: -0.09672738, z: -5.764084}
+  m_LocalPosition: {x: -0.51, y: -0.09672738, z: -5.764084}
   m_LocalScale: {x: 0.17049393, y: 0.17049396, z: 0.2882042}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -411,6 +440,7 @@ Transform:
   - {fileID: 4000012164071372}
   - {fileID: 4000013944017500}
   - {fileID: 4000012746017572}
+  - {fileID: 4000010643869802}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &4000013179750108
@@ -577,6 +607,20 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1000}
+--- !u!61 &61000012499871942
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013444990046}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2

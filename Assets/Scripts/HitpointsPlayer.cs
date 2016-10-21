@@ -15,6 +15,8 @@ public class HitpointsPlayer : MonoBehaviour {
 	public GameObject hitParticle;
 	public PlatformerCharacter2D MainCharScript;
 
+	public Animator m_Anim;
+
 
 	// Use this for initialization
 	void Start () {
@@ -29,6 +31,7 @@ public class HitpointsPlayer : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D collider){
 		if (collider.tag == "EnemyAttackHigh" && playOnceHigh) {
 
+			StartCoroutine (waitHitAnim ());
 
 			hitPointsTotalScript.hitpoints -= enemyAttackDmgHigh.attackDamage * dmgMultiplier;
 			Instantiate (hitParticle, this.gameObject.transform.position, Quaternion.identity);
@@ -36,20 +39,21 @@ public class HitpointsPlayer : MonoBehaviour {
 
 		}else if (collider.tag == "EnemyAttackMiddle" && playOnceMiddle) {
 
-
+			StartCoroutine (waitHitAnim ());
 			hitPointsTotalScript.hitpoints -= enemyAttackDmgMiddle.attackDamage * dmgMultiplier;
 			Instantiate (hitParticle, this.gameObject.transform.position, Quaternion.identity);
 			playOnceMiddle = false;
 
 		}else if (collider.tag == "EnemyAttackLow" && playOnceLow) {
 
-
+			StartCoroutine (waitHitAnim ());
 			hitPointsTotalScript.hitpoints -= enemyAttackDmgLow.attackDamage * dmgMultiplier;
 			Instantiate (hitParticle, this.gameObject.transform.position, Quaternion.identity);
 			playOnceLow = false;
 		}
-		if (collider.tag == "SawCol" && !MainCharScript.hookJumpActive) {
-
+		if (collider.tag == "SawCol" && !MainCharScript.hookJumpActive && !hitPointsTotalScript.isDead) {
+			
+			StartCoroutine (waitHitAnim ());
 			hitPointsTotalScript.hitpoints -= SawTrapDamage.damage * Time.deltaTime;
 
 		}
@@ -60,7 +64,7 @@ public class HitpointsPlayer : MonoBehaviour {
 	void OnTriggerStay2D(Collider2D collider){
 	
 
-		if (collider.tag == "SawCol" && !MainCharScript.hookJumpActive) {
+		if (collider.tag == "SawCol" && !MainCharScript.hookJumpActive && !hitPointsTotalScript.isDead) {
 
 			hitPointsTotalScript.hitpoints -= SawTrapDamage.damage * Time.deltaTime;
 
@@ -74,6 +78,14 @@ public class HitpointsPlayer : MonoBehaviour {
 		playOnceLow = true;
 
 	
+	}
+	IEnumerator waitHitAnim(){
+
+		m_Anim.SetBool ("Hit", true);
+		yield return new WaitForSeconds (1f);
+		m_Anim.SetBool ("Hit", false);
+
+
 	}
 			
 }

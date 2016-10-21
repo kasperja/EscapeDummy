@@ -6,8 +6,8 @@ using System.Collections;
 //{
     public class PlatformerCharacter2D : MonoBehaviour
     {
-        [SerializeField] private float m_MaxSpeed = 10f;                    // The fastest the player can travel in the x axis.
-        [SerializeField] private float m_JumpForce = 400f;                  // Amount of force added when the player jumps.
+        [SerializeField] public float m_MaxSpeed = 10f;                    // The fastest the player can travel in the x axis.
+        [SerializeField] public float m_JumpForce = 400f;                  // Amount of force added when the player jumps.
         [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;  // Amount of maxSpeed applied to crouching movement. 1 = 100%
         [SerializeField] private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
         [SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
@@ -103,6 +103,9 @@ using System.Collections;
 	public AudioSource attackSound1;
 	private bool attackSoundOnce = true;
 
+	private bool lookUpOnce = true;
+	private bool hookedLookUp = false;
+
         private void Awake()
         {
             // Setting up references.
@@ -131,9 +134,12 @@ using System.Collections;
 			vSpeed = m_Rigidbody2D.velocity.y;
 
 
-		if (hooked) {
+		if (hookedLookUp && lookUpOnce) {
 		
 			m_Anim.SetBool ("LookUpBool", true);
+			StartCoroutine (waitLookUp(4f));
+
+
 		
 		} else {
 		
@@ -593,6 +599,7 @@ using System.Collections;
 				if (jumpOnce) {
 					// Add a vertical force to the player.
 					m_Anim.SetBool ("StartJump", false);
+					m_Anim.SetBool("Ground", false);
 					StartCoroutine (waitJump (0.0f));
 					jumpOnce = false;
 				}
@@ -658,7 +665,8 @@ using System.Collections;
 
 
 		if (other.gameObject.tag == "HookTrigger") {
-		
+
+			hookedLookUp = true;
 		
 			if (hookOnce) {
 			
@@ -726,7 +734,7 @@ using System.Collections;
 
 			hooked = false;
 			hookJumpActive = false;
-			
+			hookedLookUp = false;
 
 			//hookOnce = true;
 
@@ -883,6 +891,19 @@ using System.Collections;
 
 	
 	}
+
+	IEnumerator waitLookUp (float waitTime){
+	
+		yield return new WaitForSeconds (2f);
+
+		lookUpOnce = false;
+
+		yield return new WaitForSeconds (waitTime);
+
+		lookUpOnce = true;
+
+
+	}
 		
 
 	IEnumerator waitJump (float waitTime){
@@ -942,7 +963,7 @@ IEnumerator stopOnHook(float waitTime){
 IEnumerator waitActiveHook(){
 	
 	m_Anim.SetBool ("Grab", true);
-		yield return new WaitForSeconds (0.05f);
+	yield return new WaitForSeconds (0.05f);
 	hookJumpActive = true;
 
 }

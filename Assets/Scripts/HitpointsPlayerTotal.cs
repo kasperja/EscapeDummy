@@ -15,6 +15,15 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 	public EnemyMovement em;
 	public GameObject MainCharacterObj;
 
+	public GameObject UpperTarget;
+	public GameObject MiddleTarget;
+	public GameObject LowerTarget;
+
+	public PlatformerCharacter2D pc2D;
+
+	public Animator m_Anim;
+	public bool isDead = false;
+	public bool dieOnce = true;
 
 	// Use this for initialization
 	void Start () {
@@ -30,17 +39,33 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 
 			//em.isFollowing = false;
 			//em.isInRange = false;
-			Instantiate (deathParticle, particlePosObj.transform.position, Quaternion.identity);
+			if(dieOnce){
+				Instantiate (deathParticle, particlePosObj.transform.position, Quaternion.identity);
 
-			deathSound.Play ();
+				deathSound.Play ();
+
+				healthBar.SetActive (false);
+				healthBarBG.SetActive (false);
+				healthBarRect.sizeDelta = new Vector2(100, 10);
+
+
+
+				UpperTarget.SetActive (false);
+				MiddleTarget.SetActive (false);
+				LowerTarget.SetActive (false);
+
+				dieOnce = false;
+
+
+
 			// death
+			}
 
+			m_Anim.SetBool ("Dead", true);
+			isDead = true;
+		
 
-			healthBar.SetActive (false);
-			healthBarBG.SetActive (false);
-			healthBarRect.sizeDelta = new Vector2(100, 10);
-			MainCharacterObj.SetActive (false);
-
+		
 
 
 		} else if (hitpoints > 0.0f && hitpoints < maxHitpoints) {
