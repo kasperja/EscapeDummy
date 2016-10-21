@@ -992,6 +992,10 @@ MonoBehaviour:
   Player: {fileID: 0}
   hp: {fileID: 0}
   pc2DScript: {fileID: 0}
+  m_Anim: {fileID: 0}
+  UpperTarget: {fileID: 0}
+  MiddleTarget: {fileID: 0}
+  LowerTarget: {fileID: 0}
 --- !u!114 &11453614
 MonoBehaviour:
   m_ObjectHideFlags: 1

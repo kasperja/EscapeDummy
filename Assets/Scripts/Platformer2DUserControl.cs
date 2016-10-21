@@ -3,13 +3,15 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using System.Collections;
 
-namespace UnityStandardAssets._2D
-{
+//namespace UnityStandardAssets._2D
+//{
     [RequireComponent(typeof (PlatformerCharacter2D))]
     public class Platformer2DUserControl : MonoBehaviour
     {
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
+
+	public HitpointsPlayerTotal hp;
 
 		private bool isStopped = true;
 		private bool playOnce = true;
@@ -39,19 +41,19 @@ namespace UnityStandardAssets._2D
 
         private void FixedUpdate()
         {
-			bool crouch = Input.GetKey(KeyCode.LeftControl);
-			float h = CrossPlatformInputManager.GetAxis("Horizontal");
+
+		if (!hp.isDead) {
+			bool crouch = Input.GetKey (KeyCode.LeftControl);
+			float h = CrossPlatformInputManager.GetAxis ("Horizontal");
 			
 			if (m_Character.sideArrowsBool == true) {
 
 				isStopped = false;
 				playOnce = true;
-				m_Character.Move(h, crouch, m_Jump);
+				m_Character.Move (h, crouch, m_Jump);
 
 
-			}
-
-			else if (m_Character.sideArrowsBool == false) {
+			} else if (m_Character.sideArrowsBool == false) {
 
 				if (isStopped) {
 
@@ -65,13 +67,21 @@ namespace UnityStandardAssets._2D
 
 				} else {
 
-					m_Character.Move(h, crouch, m_Jump);
+					m_Character.Move (h, crouch, m_Jump);
 
 				}
 
 			}
 
 			m_Jump = false;
+
+		} else {
+		
+			bool crouch = false;
+			float h = 0f;
+			m_Character.Stop (h, crouch, false);
+		
+		}
         }
 
 		IEnumerator waitAndStop(float waitTime){
@@ -86,4 +96,4 @@ namespace UnityStandardAssets._2D
 
 
 
-}
+//}

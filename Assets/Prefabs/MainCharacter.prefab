@@ -547,7 +547,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012991551484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.05, z: 0}
+  m_LocalPosition: {x: 0.48, y: 0.55, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -654,7 +654,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014109482998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 257, y: 22, z: 30}
+  m_LocalPosition: {x: 431.8, y: 22, z: 30}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1131,7 +1131,7 @@ MonoBehaviour:
   camTarget: {fileID: 4000011773112788}
   anchor: {fileID: 0}
   sideArrowsBool: 0
-  friction: 0.9
+  friction: 2
   WaitForHookedCol: {fileID: 0}
   direction: {x: 0, y: -1}
   climbingStairsBool: 0
@@ -1197,6 +1197,7 @@ MonoBehaviour:
   dmgMultiplier: 1.2
   hitParticle: {fileID: 146322, guid: ef60a279120498e47bf046e1481174a2, type: 2}
   MainCharScript: {fileID: 114000010164550830}
+  m_Anim: {fileID: 95000010344365076}
 --- !u!114 &114000010577870838
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1219,6 +1220,13 @@ MonoBehaviour:
   healthBarRect: {fileID: 0}
   em: {fileID: 0}
   MainCharacterObj: {fileID: 1000014109482998}
+  UpperTarget: {fileID: 1000014124395932}
+  MiddleTarget: {fileID: 1000012765938380}
+  LowerTarget: {fileID: 1000012268561030}
+  pc2D: {fileID: 0}
+  m_Anim: {fileID: 95000010344365076}
+  isDead: 0
+  dieOnce: 1
 --- !u!114 &114000010712801092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1238,6 +1246,7 @@ MonoBehaviour:
   dmgMultiplier: 1
   hitParticle: {fileID: 146322, guid: ef60a279120498e47bf046e1481174a2, type: 2}
   MainCharScript: {fileID: 114000010164550830}
+  m_Anim: {fileID: 95000010344365076}
 --- !u!114 &114000011177026278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1249,6 +1258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3d7b34a3bb2d4e4b926e7e729d3d410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: {fileID: 114000010577870838}
 --- !u!114 &114000011688461140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1347,6 +1357,7 @@ MonoBehaviour:
   dmgMultiplier: 0.8
   hitParticle: {fileID: 146322, guid: ef60a279120498e47bf046e1481174a2, type: 2}
   MainCharScript: {fileID: 114000010164550830}
+  m_Anim: {fileID: 95000010344365076}
 --- !u!114 &114000013693667178
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1460,7 +1471,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 150
-  m_Sprite: {fileID: 21300000, guid: 84427bb550cf639439d5833f61f15d35, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6fb15aca97417244a8929a80d2c8c645, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
