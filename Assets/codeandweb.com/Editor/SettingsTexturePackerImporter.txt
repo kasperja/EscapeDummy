@@ -2,12 +2,6 @@ version: 2
 importPivots: 1
 tpsheetFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
-- Assets/Textures/MainChar/Anims13-10-16/Block-0.tpsheet
-- Assets/Textures/MainChar/Anims13-10-16/Block-1.tpsheet
-- Assets/Textures/MainChar/Anims13-10-16/Block-2.tpsheet
-- Assets/Textures/MainChar/Anims13-10-16/Idle-0.tpsheet
-- Assets/Textures/MainChar/Anims13-10-16/Idle-1.tpsheet
-- Assets/Textures/MainChar/Anims13-10-16/Idle-2.tpsheet
 - Assets/Textures/MainChar/Anims19-10-16/Block-0.tpsheet
 - Assets/Textures/MainChar/Anims19-10-16/Block-1.tpsheet
 - Assets/Textures/MainChar/Anims19-10-16/Block-2.tpsheet
@@ -64,12 +58,6 @@ tpsheetFileNames:
 - Assets/Textures/MainChar/Anims19-10-16/Strike01-3.tpsheet
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
-- Assets/Textures/MainChar/Anims13-10-16/Block-0.png
-- Assets/Textures/MainChar/Anims13-10-16/Block-1.png
-- Assets/Textures/MainChar/Anims13-10-16/Block-2.png
-- Assets/Textures/MainChar/Anims13-10-16/Idle-0.png
-- Assets/Textures/MainChar/Anims13-10-16/Idle-1.png
-- Assets/Textures/MainChar/Anims13-10-16/Idle-2.png
 - Assets/Textures/MainChar/Anims19-10-16/Block-0.png
 - Assets/Textures/MainChar/Anims19-10-16/Block-1.png
 - Assets/Textures/MainChar/Anims19-10-16/Block-2.png
@@ -126,12 +114,6 @@ textureFileNames:
 - Assets/Textures/MainChar/Anims19-10-16/Strike01-3.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
-- 
-- 
-- 
-- 
-- 
-- 
 - 
 - 
 - 

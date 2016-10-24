@@ -107,9 +107,11 @@ using System.Collections;
 	private bool hookedLookUp = false;
 
 	public bool blinkOnce = true;
-	public Animation blinkAnim;
+
 	public bool blink2Once = true;
-	public Animation blink2Anim;
+
+
+	private bool runLookOnce = true;
 
 
         private void Awake()
@@ -140,6 +142,9 @@ using System.Collections;
 			vSpeed = m_Rigidbody2D.velocity.y;
 
 
+
+
+
 		if (hookedLookUp && lookUpOnce && !sideArrowsBool) {
 		
 			m_Anim.SetBool ("LookUpBool", true);
@@ -153,6 +158,15 @@ using System.Collections;
 			m_Anim.SetBool ("LookUpBool", false);
 		
 		
+		}
+
+		if (m_Grounded && sideArrowsBool && runLookOnce) {
+
+			StartCoroutine (waitRunLookBack ());
+
+			runLookOnce = false;
+
+
 		}
 
 		if (m_Grounded && !sideArrowsBool && blinkOnce) {
@@ -1000,7 +1014,7 @@ IEnumerator waitBlink(){
 
 	m_Anim.SetBool ("Blink", true);
 
-	yield return new WaitForSeconds (blinkAnim.clip.length);
+	yield return new WaitForSeconds (4f);
 
 	m_Anim.SetBool ("Blink", false);
 
@@ -1010,7 +1024,7 @@ IEnumerator waitBlink(){
 
 	m_Anim.SetBool ("Blink3-4", true);
 
-	yield return new WaitForSeconds (blink2Anim.clip.length*1.9f);
+	yield return new WaitForSeconds (4f);
 
 
 	m_Anim.SetBool ("Blink3-4", false);
@@ -1027,7 +1041,7 @@ IEnumerator waitBlinkNorm(){
 
 	m_Anim.SetBool ("Blink", true);
 
-	yield return new WaitForSeconds (blinkAnim.clip.length*2f);
+	yield return new WaitForSeconds (4f);
 
 	m_Anim.SetBool ("Blink", false);
 
@@ -1035,6 +1049,25 @@ IEnumerator waitBlinkNorm(){
 
 
 }
+
+IEnumerator waitRunLookBack(){
+
+		yield return new WaitForSeconds (1f);
+
+		m_Anim.SetBool ("Run3-4", true);
+
+		yield return new WaitForSeconds (1.9f);
+
+		m_Anim.SetBool ("Run3-4", false);
+
+
+		yield return new WaitForSeconds (6f);
+
+		runLookOnce = true;
+
+
+	}
+
 	
 void OnDrawGizmos(){
 

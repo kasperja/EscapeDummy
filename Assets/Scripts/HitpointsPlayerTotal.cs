@@ -26,7 +26,7 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 	public bool dieOnce = true;
 
 	public bool blockBool;
-	public Animation blockAnim;
+	//public Animation blockAnim;
 
 	// Use this for initialization
 	void Start () {
@@ -80,7 +80,7 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 
 				m_Anim.SetBool ("Block", true);
 				blockBool = true;
-				StartCoroutine (waitBlock (blockAnim.clip.length));
+				StartCoroutine (waitBlock (0.6f));
 				UpperTarget.SetActive (false);
 				MiddleTarget.SetActive (false);
 				LowerTarget.SetActive (false);
@@ -97,7 +97,7 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 
 				m_Anim.SetBool ("Block", true);
 				blockBool = true;
-				StartCoroutine (waitBlock (blockAnim.clip.length));
+				StartCoroutine (waitBlock (0.6f));
 				UpperTarget.SetActive (false);
 				MiddleTarget.SetActive (false);
 				LowerTarget.SetActive (false);
