@@ -106,6 +106,8 @@ using System.Collections;
 	private bool lookUpOnce = true;
 	private bool hookedLookUp = false;
 
+
+
         private void Awake()
         {
             // Setting up references.
