@@ -106,6 +106,10 @@ using System.Collections;
 	private bool lookUpOnce = true;
 	private bool hookedLookUp = false;
 
+	public bool blinkOnce = true;
+	public Animation blinkAnim;
+	public bool blink2Once = true;
+	public Animation blink2Anim;
 
 
         private void Awake()
@@ -136,9 +140,10 @@ using System.Collections;
 			vSpeed = m_Rigidbody2D.velocity.y;
 
 
-		if (hookedLookUp && lookUpOnce) {
+		if (hookedLookUp && lookUpOnce && !sideArrowsBool) {
 		
 			m_Anim.SetBool ("LookUpBool", true);
+
 			StartCoroutine (waitLookUp(4f));
 
 
@@ -147,6 +152,25 @@ using System.Collections;
 		
 			m_Anim.SetBool ("LookUpBool", false);
 		
+		
+		}
+
+		if (m_Grounded && !sideArrowsBool && blinkOnce) {
+		
+
+			float rdm = UnityEngine.Random.Range (1f, 2f);
+
+			if (rdm < 1.5f) {
+				
+				StartCoroutine (waitBlink ());
+
+			} else {
+			
+				StartCoroutine (waitBlinkNorm ());
+			
+			}
+
+			blinkOnce = false;
 		
 		}
 
@@ -967,6 +991,48 @@ IEnumerator waitActiveHook(){
 	m_Anim.SetBool ("Grab", true);
 	yield return new WaitForSeconds (0.05f);
 	hookJumpActive = true;
+
+}
+
+IEnumerator waitBlink(){
+
+	yield return new WaitForSeconds (2f);
+
+	m_Anim.SetBool ("Blink", true);
+
+	yield return new WaitForSeconds (blinkAnim.clip.length);
+
+	m_Anim.SetBool ("Blink", false);
+
+	yield return new WaitForSeconds (3.2f);
+		
+	m_Anim.SetBool ("Blink", false);
+
+	m_Anim.SetBool ("Blink3-4", true);
+
+	yield return new WaitForSeconds (blink2Anim.clip.length*1.9f);
+
+
+	m_Anim.SetBool ("Blink3-4", false);
+
+
+	blinkOnce = true;
+
+
+}
+
+IEnumerator waitBlinkNorm(){
+
+	yield return new WaitForSeconds (1f);
+
+	m_Anim.SetBool ("Blink", true);
+
+	yield return new WaitForSeconds (blinkAnim.clip.length*2f);
+
+	m_Anim.SetBool ("Blink", false);
+
+	blinkOnce = true;
+
 
 }
 	
