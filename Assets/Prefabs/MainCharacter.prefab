@@ -220,6 +220,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &1000012553882384
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000011054715298}
+  - 111: {fileID: 111000013713075512}
+  m_Layer: 0
+  m_Name: BlinkAnim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1000012668613932
 GameObject:
   m_ObjectHideFlags: 1
@@ -406,6 +422,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1000013997285770
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000012364065540}
+  - 111: {fileID: 111000013519450816}
+  m_Layer: 0
+  m_Name: Blink3-4Anim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1000014109482998
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,6 +586,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000013832108326}
   m_RootOrder: 10
+--- !u!4 &4000011054715298
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012553882384}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000013832108326}
+  m_RootOrder: 11
 --- !u!4 &4000011062188672
 Transform:
   m_ObjectHideFlags: 1
@@ -655,7 +700,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014109482998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 209, y: 22, z: 30}
+  m_LocalPosition: {x: 219.2, y: 22, z: 30}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -691,6 +736,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000011802787232}
   m_RootOrder: 3
+--- !u!4 &4000012364065540
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013997285770}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000013832108326}
+  m_RootOrder: 12
 --- !u!4 &4000012443116518
 Transform:
   m_ObjectHideFlags: 1
@@ -846,6 +904,8 @@ Transform:
   - {fileID: 4000013147828734}
   - {fileID: 4000010672809092}
   - {fileID: 4000010762000728}
+  - {fileID: 4000011054715298}
+  - {fileID: 4000012364065540}
   m_Father: {fileID: 4000011802787232}
   m_RootOrder: 2
 --- !u!4 &4000013998978832
@@ -1103,6 +1163,34 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!111 &111000013519450816
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013997285770}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: dc91993287169534fba3746c3576426e, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!111 &111000013713075512
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012553882384}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 93575b2e00f965643b4461f46a5d037b, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &114000010164550830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1146,7 +1234,7 @@ MonoBehaviour:
   camTarget: {fileID: 4000011773112788}
   anchor: {fileID: 0}
   sideArrowsBool: 0
-  friction: 2
+  friction: 1.7
   WaitForHookedCol: {fileID: 0}
   direction: {x: 0, y: -1}
   climbingStairsBool: 0
@@ -1168,6 +1256,10 @@ MonoBehaviour:
   sawMoverScript: {fileID: 0}
   hookStandingStill: 0
   attackSound1: {fileID: 0}
+  blinkOnce: 1
+  blinkAnim: {fileID: 111000013713075512}
+  blink2Once: 1
+  blink2Anim: {fileID: 111000013519450816}
 --- !u!114 &114000010182849938
 MonoBehaviour:
   m_ObjectHideFlags: 1
