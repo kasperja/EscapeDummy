@@ -25,6 +25,9 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 	public bool isDead = false;
 	public bool dieOnce = true;
 
+	public bool blockBool;
+	public Animation blockAnim;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -73,16 +76,51 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 			healthBar.SetActive (true);
 			healthBarRect.sizeDelta = new Vector2(((hitpoints / maxHitpoints)* 100), 10);
 
+			if (Input.GetKey (KeyCode.Q)) {
 
+				m_Anim.SetBool ("Block", true);
+				blockBool = true;
+				StartCoroutine (waitBlock (blockAnim.clip.length));
+				UpperTarget.SetActive (false);
+				MiddleTarget.SetActive (false);
+				LowerTarget.SetActive (false);
+			
+			}
 
 
 		} else {
 
 			healthBar.SetActive (true);
 
+
+			if (Input.GetKey (KeyCode.Q)) {
+
+				m_Anim.SetBool ("Block", true);
+				blockBool = true;
+				StartCoroutine (waitBlock (blockAnim.clip.length));
+				UpperTarget.SetActive (false);
+				MiddleTarget.SetActive (false);
+				LowerTarget.SetActive (false);
+
+			}
+
 		}
 
 
 
 	}
+
+	IEnumerator waitBlock(float waitTime){
+
+		yield return new WaitForSeconds (waitTime);
+
+		m_Anim.SetBool ("Block", false);
+		blockBool = false;
+		UpperTarget.SetActive (true);
+		MiddleTarget.SetActive (true);
+		LowerTarget.SetActive (true);
+
+
+	}
+
 }

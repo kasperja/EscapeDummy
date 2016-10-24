@@ -29,6 +29,7 @@ GameObject:
   - 114: {fileID: 114000010577870838}
   - 114: {fileID: 114000012810001514}
   - 212: {fileID: 212000013111964620}
+  - 111: {fileID: 111000011654103512}
   m_Layer: 0
   m_Name: CharacterRobotBoy
   m_TagString: Player
@@ -654,7 +655,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014109482998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 431.8, y: 22, z: 30}
+  m_LocalPosition: {x: 209, y: 22, z: 30}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1088,6 +1089,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!111 &111000011654103512
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010055231870}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 740a01c18d385414fae8419877e84897, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &114000010164550830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1227,6 +1242,8 @@ MonoBehaviour:
   m_Anim: {fileID: 95000010344365076}
   isDead: 0
   dieOnce: 1
+  blockBool: 0
+  blockAnim: {fileID: 111000011654103512}
 --- !u!114 &114000010712801092
 MonoBehaviour:
   m_ObjectHideFlags: 1
