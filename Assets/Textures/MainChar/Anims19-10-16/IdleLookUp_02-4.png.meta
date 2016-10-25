@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: f29792cffa783ef45afefc09ca3aca73
+timeCreated: 1477305745
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: IdleLookUp_02-0048
+    21300002: IdleLookUp_02-0049
+    21300004: IdleLookUp_02-0050
+    21300006: IdleLookUp_02-0051
+    21300008: IdleLookUp_02-0052
+    21300010: IdleLookUp_02-0053
+    21300012: IdleLookUp_02-0054
+    21300014: IdleLookUp_02-0055
+    21300016: IdleLookUp_02-0056
+    21300018: IdleLookUp_02-0057
+    21300020: IdleLookUp_02-0058
+    21300022: IdleLookUp_02-0059
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IdleLookUp_02-0048
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1184
+        width: 323
+        height: 863
+      alignment: 9
+      pivot: {x: 1.1609907, y: 0.82734644}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleLookUp_02-0049
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 1196
+        width: 322
+        height: 851
+      alignment: 9
+      pivot: {x: 1.1614907, y: 0.83666277}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleLookUp_02-0050
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1192
+        width: 330
+        height: 855
+      alignment: 9
+      pivot: {x: 1.1575757, y: 0.8374269}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleLookUp_02-0051
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1184
+        width: 326
+        height: 863
+      alignment: 9
+      pivot: {x: 1.1472392, y: 0.82502896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleLookUp_02-0052
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 1195
+        width: 325
+        height: 852
+      alignment: 9
+      pivot: {x: 1.1507692, y: 0.8356807}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleLookUp_02-0053
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 1181
+        width: 319
+        height: 866
+      alignment: 9
+      pivot: {x: 1.1598746, y: 0.82448035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleLookUp_02-0054
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 328
+        width: 320
+        height: 851
+      alignment: 9
+      pivot: {x: 1.15625, y: 0.83666277}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleLookUp_02-0055
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 317
+        width: 317
+        height: 862
+      alignment: 9
+      pivot: {x: 1.1640378, y: 0.8259861}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleLookUp_02-0056
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 317
+        width: 321
+        height: 862
+      alignment: 9
+      pivot: {x: 1.1619937, y: 0.8259861}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleLookUp_02-0057
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 326
+        width: 322
+        height: 853
+      alignment: 9
+      pivot: {x: 1.1459627, y: 0.83470106}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleLookUp_02-0058
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 317
+        width: 333
+        height: 862
+      alignment: 9
+      pivot: {x: 1.1141142, y: 0.83294666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleLookUp_02-0059
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 317
+        width: 325
+        height: 862
+      alignment: 9
+      pivot: {x: 1.1292307, y: 0.8259861}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

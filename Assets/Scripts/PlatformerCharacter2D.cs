@@ -1014,7 +1014,7 @@ IEnumerator waitBlink(){
 
 	m_Anim.SetBool ("Blink", true);
 
-	yield return new WaitForSeconds (4f);
+	yield return new WaitForSeconds (2f);
 
 	m_Anim.SetBool ("Blink", false);
 
@@ -1041,7 +1041,7 @@ IEnumerator waitBlinkNorm(){
 
 	m_Anim.SetBool ("Blink", true);
 
-	yield return new WaitForSeconds (4f);
+	yield return new WaitForSeconds (2f);
 
 	m_Anim.SetBool ("Blink", false);
 
