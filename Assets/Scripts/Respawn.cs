@@ -6,6 +6,7 @@ public class Respawn : MonoBehaviour {
 	public GameObject Player;
 	public HitpointsPlayerTotal hp;
 	public PlatformerCharacter2D pc2DScript;
+
 	public Animator m_Anim;
 
 	public GameObject UpperTarget;
@@ -22,6 +23,8 @@ public class Respawn : MonoBehaviour {
 	void Update () {
 		
 		if (Input.GetKeyDown(KeyCode.Return)) {
+
+
 
 			m_Anim.SetBool ("Dead", false);
 			pc2DScript.playOnce1 = true;
@@ -46,6 +49,8 @@ public class Respawn : MonoBehaviour {
 
 			hp.isDead = false;
 			hp.dieOnce = true;
+
+
 
 
 

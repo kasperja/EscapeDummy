@@ -6,7 +6,9 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 	public float hitpoints = 10000.0f;
 	public AudioSource deathSound;
 	public ParticleSystem deathParticle;
+	public ParticleSystem deathBloodParticle;
 	public GameObject particlePosObj;
+	public GameObject particlePosObjDeathBlood;
 	public float maxHitpoints;
 	public GameObject healthBar;
 	public GameObject healthBarBG;
@@ -44,6 +46,8 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 			//em.isInRange = false;
 			if(dieOnce){
 				Instantiate (deathParticle, particlePosObj.transform.position, Quaternion.identity);
+
+				Instantiate (deathBloodParticle, particlePosObjDeathBlood.transform.position, Quaternion.identity);
 
 				deathSound.Play ();
 
