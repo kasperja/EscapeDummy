@@ -113,9 +113,14 @@ using System.Collections;
 
 	private bool runLookOnce = true;
 
+	private bool lookUpBool = false;
+
+
+
 
         private void Awake()
         {
+			Application.targetFrameRate = 900;
             // Setting up references.
             m_GroundCheck = transform.Find("GroundCheck");
             m_CeilingCheck = transform.Find("CeilingCheck");
@@ -136,7 +141,17 @@ using System.Collections;
 
 	}
 		private void Update(){
+		
+		if (Input.GetKey (KeyCode.Space)) {
+		
+			m_Anim.SetBool ("SpaceBool", true);
+			StartCoroutine (waitSpaceBool(0.01f));
+		
+		} else {
+		
 
+		
+		}
 
 
 			vSpeed = m_Rigidbody2D.velocity.y;
@@ -546,7 +561,7 @@ using System.Collections;
 				if (jumpOnce) {
 					// Add a vertical force to the player.
 					m_Anim.SetBool ("StartJump", true);
-					StartCoroutine (waitJump (0.0f));
+					StartCoroutine (waitJump (0.11f));
 					jumpOnce = false;
 				}
 			} else {
@@ -640,7 +655,7 @@ using System.Collections;
 					// Add a vertical force to the player.
 					m_Anim.SetBool ("StartJump", false);
 					m_Anim.SetBool("Ground", false);
-					StartCoroutine (waitJump (0.0f));
+					StartCoroutine (waitJump (0.11f));
 					jumpOnce = false;
 				}
 			} else {
@@ -706,7 +721,7 @@ using System.Collections;
 
 		if (other.gameObject.tag == "HookTrigger") {
 
-			hookedLookUp = true;
+			
 		
 			if (hookOnce) {
 			
@@ -718,7 +733,12 @@ using System.Collections;
 		
 		}
 
+		if (other.gameObject.tag == "LookUpTrigger") {
+		
+			hookedLookUp = true;
 
+
+		}
 		if (other.gameObject.tag == "StairsTrigger") {
 
 			m_Grounded = true;
@@ -777,6 +797,15 @@ using System.Collections;
 			hookedLookUp = false;
 
 			//hookOnce = true;
+
+
+	}
+	if (other.gameObject.tag == "LookUpTrigger") {
+
+
+		hookedLookUp = false;
+
+		//hookOnce = true;
 
 
 	}
@@ -858,6 +887,14 @@ using System.Collections;
 	if (other.gameObject.tag == "HookTrigger") {
 
 			hooked = true;
+
+
+
+	}
+
+	if (other.gameObject.tag == "LookUpTrigger") {
+
+		hookedLookUp = true;
 
 
 
@@ -960,7 +997,12 @@ using System.Collections;
 
 		m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 
-		yield return new WaitForSeconds (waitTime + 1f);
+		
+
+		yield return new WaitForSeconds (0.2f);
+		
+		
+
 		jumpOnce = true;
 
 	}
@@ -1001,7 +1043,8 @@ IEnumerator stopOnHook(float waitTime){
 }
 
 IEnumerator waitActiveHook(){
-	
+
+		yield return new WaitForSeconds (0.1f);
 	m_Anim.SetBool ("Grab", true);
 	yield return new WaitForSeconds (0.05f);
 	hookJumpActive = true;
@@ -1052,7 +1095,7 @@ IEnumerator waitBlinkNorm(){
 
 IEnumerator waitRunLookBack(){
 
-		yield return new WaitForSeconds (1f);
+		yield return new WaitForSeconds (0f);
 
 		m_Anim.SetBool ("Run3-4", true);
 
@@ -1067,6 +1110,14 @@ IEnumerator waitRunLookBack(){
 
 
 	}
+
+IEnumerator waitSpaceBool(float waitTime){
+
+
+	yield return new WaitForSeconds (waitTime);
+	m_Anim.SetBool ("SpaceBool", false);
+
+}
 
 	
 void OnDrawGizmos(){
