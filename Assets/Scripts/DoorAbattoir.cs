@@ -24,6 +24,9 @@ public class DoorAbattoir : MonoBehaviour {
 
 	public Animator m_AnimDoorAbattoir;
 
+	public GameObject enemyWithKey;
+	public GameObject key;
+
 	private bool doorFullyOpenBool = false;
 	// Use this for initialization
 	void Start () {
@@ -81,6 +84,11 @@ public class DoorAbattoir : MonoBehaviour {
 				}
 				gameObject.GetComponent<SpriteRenderer> ().sprite = doorOpenSprite;
 
+			} else {
+			
+				enemyWithKey.SetActive (true);
+				key.SetActive (true);
+			
 			}
 
 		}

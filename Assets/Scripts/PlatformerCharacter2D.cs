@@ -115,8 +115,9 @@ using System.Collections;
 
 	private bool lookUpBool = false;
 
-
-
+	private float t = 0.0f;
+	private float maxLerp = 400f;
+	private float minLerp = 0f;
 
         private void Awake()
         {
@@ -222,11 +223,33 @@ using System.Collections;
 
 			StartCoroutine (stopOnHook (30f));
 
-			currentPathPercent += percentsPerSecond * Time.deltaTime;
+			//currentPathPercent += percentsPerSecond * Time.deltaTime;
 
 			//sawMoverScript.gameObject.GetComponent<CircleCollider2D> ().enabled = false;
 
-			iTween.PutOnPath (gameObject, wayPointArray, currentPathPercent);
+			float Velocity = Mathf.Lerp(minLerp, maxLerp, t);
+
+			t += 0.5f * Time.deltaTime;
+
+			if (t > 0.5f) {
+			
+				float temp = maxLerp;
+				maxLerp = minLerp;
+				minLerp = temp;
+				t = 0.0f;
+			
+			}
+
+
+			float PathOnePercent = Vector3.Distance(iTween.PointOnPath(wayPointArray, currentPathPercent) , iTween.PointOnPath(wayPointArray, currentPathPercent + 0.1f));
+			float RealOnePercent = iTween.PathLength(wayPointArray) * 0.1f;
+			float Distortion = RealOnePercent/PathOnePercent;
+			float RealPercentToMove = (Velocity * Time.deltaTime) / iTween.PathLength(wayPointArray);
+			currentPathPercent = (RealPercentToMove * Distortion) + currentPathPercent;
+
+			iTween.PutOnPath(gameObject, wayPointArray, currentPathPercent);
+
+			//iTween.PutOnPath (gameObject, wayPointArray, currentPathPercent);
 
 
 
