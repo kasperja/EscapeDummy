@@ -22,6 +22,7 @@ public class AttackManager : MonoBehaviour {
 	//public AudioSource whooshSound;
 	public CircleCollider2D hitCollider;
 
+	public HitpointsPlayerTotal hpT;
 	public AudioSource attackSound;
 	private bool attackSoundOnce = true;
 
@@ -40,7 +41,7 @@ public class AttackManager : MonoBehaviour {
 
 
 			
-		if (Input.GetKeyDown (AttackKey) && playOnce && !mainCharScript.sideArrowsBool) {
+		if (Input.GetKeyDown (AttackKey) && playOnce && !mainCharScript.sideArrowsBool && !hpT.isDead) {
 
 
 			activate = true;
@@ -57,7 +58,7 @@ public class AttackManager : MonoBehaviour {
 
 
 
-		} if ((Input.GetKeyDown (AttackKey) || Input.GetKeyDown (AttackKey2) || Input.GetKeyDown (AttackKey3)) && playOnce && isJumpKick) {
+		} if ((Input.GetKeyDown (AttackKey) || Input.GetKeyDown (AttackKey2) || Input.GetKeyDown (AttackKey3)) && playOnce && isJumpKick && !hpT.isDead) {
 		
 			activate = true;
 			playOnce = false;
@@ -65,7 +66,7 @@ public class AttackManager : MonoBehaviour {
 		
 		}
 
-		if (Input.GetKeyUp (AttackKey)) {
+		if (Input.GetKeyUp (AttackKey) && !hpT.isDead) {
 			//StartCoroutine (MoveObj (this.transform, this.transform.position, beginPos.transform.position, 0.06f));
 			//StopCoroutine ("MoveObj");
 			activate = false;
@@ -80,7 +81,7 @@ public class AttackManager : MonoBehaviour {
 			//transform.position = Vector3.Lerp(transform.position, beginPos.transform.position, Time.fixedDeltaTime);
 
 
-		} else if (isJumpKick && (Input.GetKeyUp (AttackKey) || Input.GetKeyUp (AttackKey2) || Input.GetKeyUp (AttackKey3))) {
+		} else if (isJumpKick && (Input.GetKeyUp (AttackKey) || Input.GetKeyUp (AttackKey2) || Input.GetKeyUp (AttackKey3)) && !hpT.isDead) {
 		
 			//activate = false;
 
@@ -90,7 +91,7 @@ public class AttackManager : MonoBehaviour {
 			StartCoroutine (Waiter());
 		
 		}
-		if (activate) {
+		if (activate && !hpT.isDead) {
 		
 
 			StartCoroutine (MoveObj (this.transform, this.transform.position, hitPos.transform.position, 0.005f));
