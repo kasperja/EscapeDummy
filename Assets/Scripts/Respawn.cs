@@ -6,6 +6,7 @@ public class Respawn : MonoBehaviour {
 	public GameObject Player;
 	public HitpointsPlayerTotal hp;
 	public PlatformerCharacter2D pc2DScript;
+	public GameObject MainCharObj;
 
 	public Animator m_Anim;
 
@@ -46,6 +47,7 @@ public class Respawn : MonoBehaviour {
 			UpperTarget.SetActive (true);
 			MiddleTarget.SetActive (true);
 			LowerTarget.SetActive (true);
+			MainCharObj.GetComponent<BoxCollider2D> ().enabled = true;
 
 			hp.isDead = false;
 			hp.dieOnce = true;
