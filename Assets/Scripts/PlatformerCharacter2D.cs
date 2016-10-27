@@ -119,6 +119,8 @@ using System.Collections;
 	private float maxLerp = 400f;
 	private float minLerp = 0f;
 
+	private float waitJumpTime = 0.2f;
+
         private void Awake()
         {
 			Application.targetFrameRate = 900;
@@ -146,7 +148,7 @@ using System.Collections;
 		if (Input.GetKey (KeyCode.Space)) {
 		
 			m_Anim.SetBool ("SpaceBool", true);
-			StartCoroutine (waitSpaceBool(0.01f));
+			StartCoroutine (waitSpaceBool(0.2f));
 		
 		} else {
 		
@@ -584,7 +586,7 @@ using System.Collections;
 				if (jumpOnce) {
 					// Add a vertical force to the player.
 					m_Anim.SetBool ("StartJump", true);
-					StartCoroutine (waitJump (0.11f));
+					StartCoroutine (waitJump (waitJumpTime));
 					jumpOnce = false;
 				}
 			} else {
@@ -678,7 +680,7 @@ using System.Collections;
 					// Add a vertical force to the player.
 					m_Anim.SetBool ("StartJump", false);
 					m_Anim.SetBool("Ground", false);
-					StartCoroutine (waitJump (0.11f));
+					StartCoroutine (waitJump (waitJumpTime));
 					jumpOnce = false;
 				}
 			} else {
