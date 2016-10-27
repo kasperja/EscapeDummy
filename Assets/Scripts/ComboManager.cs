@@ -7,11 +7,12 @@ public class ComboManager : MonoBehaviour {
 	private KeyCombo falconKick= new KeyCombo(new string[] {"down", "right","Fire1"});
 	public bool falconPunchBool = false;
 	public float falconPunchDmg = 200.0f;
+	public HitpointsPlayerTotal hpPlayerTotal;
 
 	public GameObject mainCamObj;
 
 	void Update () {
-		if (falconPunch.Check())
+		if (falconPunch.Check()  && !hpPlayerTotal.isDead)
 		{
 			falconPunchBool = true;
 			iTween.ShakePosition (mainCamObj, new Vector3 (0.2f,0.2f,0), 0.5f);

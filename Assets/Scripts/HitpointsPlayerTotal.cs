@@ -16,6 +16,7 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 	public RectTransform healthBarRect;
 	public EnemyMovement em;
 	public GameObject MainCharacterObj;
+	public GameObject MainCharObj;
 
 	public GameObject UpperTarget;
 	public GameObject MiddleTarget;
@@ -60,6 +61,7 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 				UpperTarget.SetActive (false);
 				MiddleTarget.SetActive (false);
 				LowerTarget.SetActive (false);
+				MainCharObj.GetComponent<BoxCollider2D> ().enabled = false;
 
 				dieOnce = false;
 

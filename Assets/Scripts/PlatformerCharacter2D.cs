@@ -147,7 +147,7 @@ using System.Collections;
 	}
 		private void Update(){
 		
-		if (Input.GetKey (KeyCode.Space)) {
+		if (Input.GetKey (KeyCode.Space)  && !hpPlayerTotal.isDead) {
 		
 			m_Anim.SetBool ("SpaceBool", true);
 			StartCoroutine (waitSpaceBool(0.2f));
@@ -165,7 +165,7 @@ using System.Collections;
 
 
 
-		if (hookedLookUp && lookUpOnce && !sideArrowsBool) {
+		if (hookedLookUp && lookUpOnce && !sideArrowsBool  && !hpPlayerTotal.isDead) {
 		
 			m_Anim.SetBool ("LookUpBool", true);
 
@@ -180,7 +180,7 @@ using System.Collections;
 		
 		}
 
-		if (m_Grounded && sideArrowsBool && runLookOnce) {
+		if (m_Grounded && sideArrowsBool && runLookOnce  && !hpPlayerTotal.isDead) {
 
 			StartCoroutine (waitRunLookBack ());
 
@@ -189,7 +189,7 @@ using System.Collections;
 
 		}
 
-		if (m_Grounded && !sideArrowsBool && blinkOnce) {
+		if (m_Grounded && !sideArrowsBool && blinkOnce  && !hpPlayerTotal.isDead) {
 		
 
 			float rdm = UnityEngine.Random.Range (1f, 2f);
@@ -370,7 +370,7 @@ using System.Collections;
 			}
 			m_Attack4 = true;
 			playOnce4 = false;
-			StartCoroutine (WaitForAnim4(1f));
+			StartCoroutine (WaitForAnim4(0.5f));
 
 		} else if (Input.GetKeyDown (KeyCode.E) && playOnce1 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead) {
 
@@ -381,7 +381,7 @@ using System.Collections;
 			}
 				m_Attack1 = true;
 				playOnce1 = false;
-				StartCoroutine (WaitForAnim1(1f));
+			StartCoroutine (WaitForAnim1(0.5f));
 
 			}
 		else if (Input.GetKeyDown (KeyCode.R) && playOnce2 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead) {
@@ -393,7 +393,7 @@ using System.Collections;
 			}
 				m_Attack2 = true;
 				playOnce2 = false;
-				StartCoroutine (WaitForAnim2(1f));
+			StartCoroutine (WaitForAnim2(0.5f));
 
 			}
 		else if (Input.GetKeyDown (KeyCode.W) && playOnce3 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead) {
@@ -405,7 +405,7 @@ using System.Collections;
 			}
 				m_Attack3 = true;
 				playOnce3 = false;
-				StartCoroutine (WaitForAnim3(1f));
+			StartCoroutine (WaitForAnim3(0.5f));
 
 		}
 
@@ -582,7 +582,7 @@ using System.Collections;
                 }
             }
             // If the player should jump...
-		if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive)
+		if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive  && !hpPlayerTotal.isDead)
             {
 			if (!sideArrowsBool) {
 				if (jumpOnce) {
@@ -675,7 +675,7 @@ using System.Collections;
 			}
 		}
 		// If the player should jump...
-		if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive)
+		if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive && !hpPlayerTotal.isDead)
 		{
 			if (!sideArrowsBool) {
 				if (jumpOnce) {
