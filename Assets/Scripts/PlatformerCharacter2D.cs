@@ -14,7 +14,7 @@ using System.Collections;
 
         private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
         const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
-        private bool m_Grounded;            // Whether or not the player is grounded.
+        public bool m_Grounded;            // Whether or not the player is grounded.
         private Transform m_CeilingCheck;   // A position marking where to check for ceilings
         const float k_CeilingRadius = .01f; // Radius of the overlap circle to determine if the player can stand up
         private Animator m_Anim;            // Reference to the player's animator component.
@@ -78,6 +78,8 @@ using System.Collections;
 	private Vector3 posMoveForward;
 	public float moveBackAmmount = 0.45f;
 	//public GameObject groundColObj;
+
+	public FollowX fx;
 
 
 	public GameObject stairColsObj;
@@ -359,7 +361,7 @@ using System.Collections;
 
 		}
 
-		if (cm.falconPunchBool && playOnce4 && !sideArrowsBool && m_Grounded) {
+		if (cm.falconPunchBool && playOnce4 && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead) {
 
 			if(attackSoundOnce){
 
@@ -370,7 +372,7 @@ using System.Collections;
 			playOnce4 = false;
 			StartCoroutine (WaitForAnim4(1f));
 
-		} else if (Input.GetKeyDown (KeyCode.E) && playOnce1 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded) {
+		} else if (Input.GetKeyDown (KeyCode.E) && playOnce1 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead) {
 
 			if(attackSoundOnce){
 
@@ -382,7 +384,7 @@ using System.Collections;
 				StartCoroutine (WaitForAnim1(1f));
 
 			}
-		else if (Input.GetKeyDown (KeyCode.R) && playOnce2 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded) {
+		else if (Input.GetKeyDown (KeyCode.R) && playOnce2 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead) {
 
 			if(attackSoundOnce){
 
@@ -394,7 +396,7 @@ using System.Collections;
 				StartCoroutine (WaitForAnim2(1f));
 
 			}
-		else if (Input.GetKeyDown (KeyCode.W) && playOnce3 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded) {
+		else if (Input.GetKeyDown (KeyCode.W) && playOnce3 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead) {
 
 			if(attackSoundOnce){
 
@@ -407,7 +409,7 @@ using System.Collections;
 
 		}
 
-		else if ((Input.GetKeyDown (KeyCode.R) || Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown (KeyCode.W)) && playOnce5 && cm.falconPunchBool == false && !m_Grounded) {
+		else if ((Input.GetKeyDown (KeyCode.R) || Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown (KeyCode.W)) && playOnce5 && cm.falconPunchBool == false && !m_Grounded && !hpPlayerTotal.isDead) {
 
 			if(attackSoundOnce){
 
@@ -978,6 +980,7 @@ using System.Collections;
             Vector3 theScale = transform.localScale;
             theScale.x *= -1;
             transform.localScale = theScale;
+		fx.XOffset *= -1;
         }
 
 	IEnumerator waitHook (float waitTime){
@@ -1141,6 +1144,7 @@ IEnumerator waitSpaceBool(float waitTime){
 
 	yield return new WaitForSeconds (waitTime);
 	m_Anim.SetBool ("SpaceBool", false);
+
 
 }
 
