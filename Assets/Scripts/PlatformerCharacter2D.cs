@@ -214,7 +214,7 @@ using System.Collections;
 		}
 
 
-		if (hooked && Input.GetKey(KeyCode.Space) && sawMoverScript.hookDetected && hookJumpActiveOnce && hookStandingStill) {
+		if (hooked && Input.GetKey(KeyCode.Space) && sawMoverScript.hookDetected && hookJumpActiveOnce && hookStandingStill && !hpPlayerTotal.isDead) {
 
 			
 			StartCoroutine (waitActiveHook ());
@@ -222,7 +222,7 @@ using System.Collections;
 
 		} 
 
-		if (hookJumpActive && hookJumpActiveOnce) {
+		if (hookJumpActive && hookJumpActiveOnce && !hpPlayerTotal.isDead) {
 
 
 
@@ -256,8 +256,9 @@ using System.Collections;
 			float RealPercentToMove = (Velocity * Time.deltaTime) / iTween.PathLength(wayPointArray);
 			currentPathPercent = (RealPercentToMove * Distortion) + currentPathPercent;
 
-			iTween.PutOnPath(gameObject, wayPointArray, currentPathPercent);
 
+				iTween.PutOnPath (gameObject, wayPointArray, currentPathPercent);
+			
 			//iTween.PutOnPath (gameObject, wayPointArray, currentPathPercent);
 
 
@@ -307,7 +308,7 @@ using System.Collections;
 		if (climbingStairsBoolCol && Input.GetKey(KeyCode.RightArrow)) {
 			
 			// if (sideArrowsBool) {
-				
+			m_Grounded = true;
 				stairColsObj.transform.localPosition = Vector3.Lerp (stairColsObj.transform.localPosition, stairPosUp.localPosition, 5f * Time.deltaTime);
 			// }
 		}
@@ -315,6 +316,7 @@ using System.Collections;
 		else if (climbingStairsBoolCol && Input.GetKey(KeyCode.LeftArrow)) {
 			
 				//if (sideArrowsBool) {
+			m_Grounded = true;
 					stairColsObj.transform.localPosition = Vector3.Lerp (stairColsObj.transform.localPosition, stairPosDown.localPosition, 5f * Time.deltaTime);
 				//}
 		}
@@ -482,9 +484,9 @@ using System.Collections;
         private void FixedUpdate()
         {
 
-		if (!climbingStairsBool) {
+		/*if (!climbingStairsBool) {
 			m_Grounded = false;
-		}
+		}*/
 
 
             // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
