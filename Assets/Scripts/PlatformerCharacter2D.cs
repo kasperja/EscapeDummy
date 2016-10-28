@@ -68,15 +68,18 @@ using System.Collections;
 	public bool startCamBackBool = false;
 
 	private float scale = 5f;
-	private float minScale = 4.7f;
+	private float minScale = 4.6f;
 	private float maxScale = 5f;
-	private float scaleSpeed = 20f;
-	private bool scaleCharBool = false;
-	private bool scaleCharBackBool = false;
+	private float scaleSpeed = -40f;
+	public bool scaleCharBool = false;
+	public bool scaleCharBackBool = false;
+
+
 	public AudioSource sawSound;
 	private Vector3 posMoveBack;
 	private Vector3 posMoveForward;
-	public float moveBackAmmount = 0.45f;
+
+	public float moveBackAmmount = 0.25f;
 	//public GameObject groundColObj;
 
 	public FollowX fx;
@@ -138,10 +141,12 @@ using System.Collections;
 	private void Start()
 	{
 		posMoveBack = new Vector3 (graphicsNorm.transform.localPosition.x, 
-			graphicsNorm.transform.localPosition.y +moveBackAmmount, graphicsNorm.transform.localPosition.z);
+			graphicsNorm.transform.localPosition.y + moveBackAmmount, graphicsNorm.transform.localPosition.z);
 
 		posMoveForward = new Vector3 (graphicsNorm.transform.localPosition.x, 
 			graphicsNorm.transform.localPosition.y, graphicsNorm.transform.localPosition.z);
+
+
 
 
 	}
@@ -276,13 +281,13 @@ using System.Collections;
 
 
 
-			if (scale > maxScale) {
+			if (scale >= maxScale) {
 			
 				scale = maxScale;
 			
 			}
 
-			if (scale < minScale) {
+			if (scale <= minScale) {
 
 				scale = minScale;
 			
@@ -290,7 +295,8 @@ using System.Collections;
 
 			if (sideArrowsBool) {
 				graphicsNorm.transform.localScale = new Vector3 (scale, scale, 1f);
-				graphicsNorm.transform.localPosition = Vector3.Lerp (graphicsNorm.transform.localPosition, posMoveBack, 2f * Time.deltaTime);
+
+				graphicsNorm.transform.localPosition = Vector3.Lerp (graphicsNorm.transform.localPosition, posMoveForward, 2f * Time.deltaTime);
 
 
 			}
@@ -318,13 +324,13 @@ using System.Collections;
 			//stairColsObj.transform.position = stairPosDown.position;
 			scale += scaleSpeed * Time.deltaTime;
 
-			if (scale > maxScale) {
+			if (scale >= maxScale) {
 
 				scale = maxScale;
 
 			}
 
-			if (scale < minScale) {
+			if (scale <= minScale) {
 
 				scale = minScale;
 
@@ -333,7 +339,7 @@ using System.Collections;
 			if (sideArrowsBool) {
 				graphicsNorm.transform.localScale = new Vector3 (scale, scale, 1f);
 
-				graphicsNorm.transform.localPosition = Vector3.Lerp (graphicsNorm.transform.localPosition, posMoveForward, 2f * Time.deltaTime);
+				graphicsNorm.transform.localPosition = Vector3.Lerp (graphicsNorm.transform.localPosition, posMoveBack, 2f * Time.deltaTime);
 			
 				//stairColsObj.transform.localPosition = Vector3.Lerp (stairColsObj.transform.localPosition, stairPosDown.localPosition, 2f * Time.deltaTime);
 			
@@ -812,6 +818,7 @@ using System.Collections;
 
 
 		}
+
 	
 		}
 
@@ -887,10 +894,11 @@ using System.Collections;
 		}
 		if (other.gameObject.tag == "ScaleCharTrigger") {
 
-			scaleCharBool = false;
-			scaleCharBackBool = true;
+			scaleCharBool = true;
+			scaleCharBackBool = false;
 
 		}
+
 		/*if (other.gameObject.tag == "moveColTrigger") {
 
 			moveColUpBool = false;
@@ -954,10 +962,11 @@ using System.Collections;
 	}
 		if (other.gameObject.tag == "ScaleCharTrigger") {
 		
-			scaleCharBool = true;
-			scaleCharBackBool = false;
+			scaleCharBool = false;
+			scaleCharBackBool = true;
 		
 		}
+
 		if (other.gameObject.tag == "TopStairTrigger") {
 
 			friction = 4f;

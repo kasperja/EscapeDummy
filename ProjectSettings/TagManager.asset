@@ -41,6 +41,7 @@ TagManager:
   - CamTargetStartTrigger
   - LookUpTrigger
   - DeathCol
+  - ScaleCharTriggerBack
   layers:
   - Default
   - TransparentFX
