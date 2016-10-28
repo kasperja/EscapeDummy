@@ -82,8 +82,10 @@ public class HitpointsPlayer : MonoBehaviour {
 	IEnumerator waitHitAnim(){
 
 		m_Anim.SetBool ("Hit", true);
-		yield return new WaitForSeconds (1f);
+		yield return new WaitForSeconds (0.2f);
 		m_Anim.SetBool ("Hit", false);
+
+	
 
 
 	}

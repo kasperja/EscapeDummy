@@ -9,6 +9,9 @@ public class FollowXShadow : MonoBehaviour {
 	public float YOffset= 10.0f;
 	public PlatformerCharacter2D pc2dScript;
 
+	public bool isJumping = false;
+	public bool jumpOnce = true;
+
 	public float origY;
 	public float stairY;
 	//public string objName;
@@ -29,8 +32,17 @@ public class FollowXShadow : MonoBehaviour {
 		
 			gameObject.SetActive (true);*/
 		if (pc2dScript.scaleCharBool) {
-			iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, Mathf.Lerp(gameObject.transform.position.y, origY, 0.1f), transform.position.z), 0.2f);
-			//transform.position = new Vector3 (target.transform.position.x + XOffset, origY, transform.position.z);
+			
+			if (pc2dScript.sideArrowsBool) {
+				iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, Mathf.Lerp (gameObject.transform.position.y, origY, 0.1f), transform.position.z), 0.2f);
+			} else {
+			
+				iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, gameObject.transform.position.y, transform.position.z), 0.2f);
+
+
+			}
+
+				//transform.position = new Vector3 (target.transform.position.x + XOffset, origY, transform.position.z);
 		} else {
 
 
@@ -38,24 +50,46 @@ public class FollowXShadow : MonoBehaviour {
 			if (!pc2dScript.m_Grounded) {
 
 				if (pc2dScript.sideArrowsBool) {
-				
-					iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, stairY, transform.position.z), 0.2f);
+
+					iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, Mathf.Lerp (gameObject.transform.position.y, target.transform.position.y + YOffset, 0.2f), transform.position.z), 0.2f);
+
 				} else {
-					iTween.MoveTo (gameObject, new Vector3 (target.transform.position.x + XOffset, stairY, transform.position.z), 0.2f);
-				
+
+					iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, stairY, transform.position.z), 0.2f);
+
 				}
 
+				isJumping = true;
+
+
 			
+			}else{
+
+				if (pc2dScript.sideArrowsBool) {
+					iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, Mathf.Lerp (gameObject.transform.position.y, target.transform.position.y + YOffset, 0.6f), transform.position.z), 0.3f);
+				} else {
+				
+					iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, gameObject.transform.position.y, transform.position.z), 0.3f);
+				}
+
+					//transform.position = new Vector3 (target.transform.position.x + XOffset, target.transform.position.y + YOffset, transform.position.z);
 			}
-
-			iTween.MoveUpdate(gameObject, new Vector3 (target.transform.position.x + XOffset, Mathf.Lerp(transform.position.y ,target.transform.position.y + YOffset, 0.4f), transform.position.z), 0.3f);
-			//transform.position = new Vector3 (target.transform.position.x + XOffset, target.transform.position.y + YOffset, transform.position.z);
-
 		}
 		/*} else {
 		
 			gameObject.SetActive (false);
 		}*/
 
+	}
+	IEnumerator waitJump(){
+	
+
+
+		yield return new WaitForSeconds (1f);
+
+		isJumping = false;
+		jumpOnce = true;
+
+	
 	}
 }
