@@ -1093,9 +1093,9 @@ IEnumerator stopOnHook(float waitTime){
 
 IEnumerator waitActiveHook(){
 
-		yield return new WaitForSeconds (0.1f);
+		yield return new WaitForSeconds (0.0f);
 	m_Anim.SetBool ("Grab", true);
-	yield return new WaitForSeconds (0.05f);
+	yield return new WaitForSeconds (0.00f);
 	hookJumpActive = true;
 
 }
