@@ -659,7 +659,7 @@ using System.Collections;
 
 			if (climbingStairsBool) {
 				
-				m_Rigidbody2D.velocity = new Vector2 (20.4f, -20f);
+				m_Rigidbody2D.velocity = new Vector2 (20.4f, -21.5f);
 			} else {
 				
 				m_Rigidbody2D.velocity = new Vector2 (Mathf.Lerp(m_Rigidbody2D.velocity.x,  0f , timer), m_Rigidbody2D.velocity.y);
