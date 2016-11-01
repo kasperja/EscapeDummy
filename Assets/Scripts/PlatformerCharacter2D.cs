@@ -152,7 +152,7 @@ using System.Collections;
 	}
 		private void Update(){
 		
-		if (Input.GetKey (KeyCode.Space)  && !hpPlayerTotal.isDead) {
+		if (Input.GetKeyDown (KeyCode.Space)  && !hpPlayerTotal.isDead) {
 		
 			m_Anim.SetBool ("SpaceBool", true);
 			StartCoroutine (waitSpaceBool(0.2f));
@@ -238,7 +238,7 @@ using System.Collections;
 
 			float Velocity = Mathf.Lerp(minLerp, maxLerp, t);
 
-			t += 0.5f * Time.deltaTime;
+			t += 0.4f * Time.deltaTime;
 
 			if (t > 0.5f) {
 			
@@ -590,7 +590,7 @@ using System.Collections;
                 }
             }
             // If the player should jump...
-		if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive  && !hpPlayerTotal.isDead)
+		if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive  && !hpPlayerTotal.isDead && jumpOnce)
             {
 			if (!sideArrowsBool) {
 				if (jumpOnce) {
@@ -602,16 +602,20 @@ using System.Collections;
 			} else {
 
 
-				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+				//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 				m_Anim.SetBool ("StartJump", true);
+
+
 
 				m_Grounded = false;
 
 				m_Anim.SetBool("Ground", false);
 
-				m_Anim.SetBool("StartJump", false);
+				//m_Anim.SetBool("StartJump", false);
 
+				StartCoroutine (waitJump (0.0f));
 
+				jumpOnce = false;
 
 
 
@@ -683,7 +687,7 @@ using System.Collections;
 			}
 		}
 		// If the player should jump...
-		if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive && !hpPlayerTotal.isDead)
+		if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive && !hpPlayerTotal.isDead && jumpOnce)
 		{
 			if (!sideArrowsBool) {
 				if (jumpOnce) {
@@ -696,7 +700,10 @@ using System.Collections;
 			} else {
 			
 
-				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+				//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+
+
+
 				m_Anim.SetBool ("StartJump", true);
 
 				m_Grounded = false;
@@ -704,6 +711,9 @@ using System.Collections;
 				m_Anim.SetBool("Ground", false);
 
 				m_Anim.SetBool("StartJump", false);
+
+				StartCoroutine (waitJump (0.0f));
+				jumpOnce = false;
 
 
 					
@@ -1038,7 +1048,7 @@ using System.Collections;
 
 		
 
-		yield return new WaitForSeconds (0.2f);
+		yield return new WaitForSeconds (0.0f);
 		
 		
 
