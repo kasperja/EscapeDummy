@@ -7,6 +7,8 @@ public class Respawn : MonoBehaviour {
 	public HitpointsPlayerTotal hp;
 	public PlatformerCharacter2D pc2DScript;
 	public GameObject MainCharObj;
+	public GameObject graphics;
+	public Transform respawnPos;
 
 	public Animator m_Anim;
 
@@ -23,9 +25,10 @@ public class Respawn : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		if (Input.GetKeyDown(KeyCode.Return)) {
+		if (Input.GetKeyDown(KeyCode.Return) && hp.isDead) {
 
-
+			MainCharObj.transform.position = respawnPos.position;
+			graphics.SetActive (true);
 
 			m_Anim.SetBool ("Dead", false);
 			pc2DScript.playOnce1 = true;
@@ -47,8 +50,9 @@ public class Respawn : MonoBehaviour {
 			UpperTarget.SetActive (true);
 			MiddleTarget.SetActive (true);
 			LowerTarget.SetActive (true);
-			MainCharObj.GetComponent<BoxCollider2D> ().enabled = true;
+			//MainCharObj.GetComponent<BoxCollider2D> ().enabled = true;
 
+			m_Anim.SetBool ("hit", false);
 			hp.isDead = false;
 			hp.dieOnce = true;
 

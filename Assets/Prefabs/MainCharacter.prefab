@@ -316,6 +316,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1000012926951392
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000012166226394}
+  m_Layer: 0
+  m_Name: SawDeathParticlePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1000012991551484
 GameObject:
   m_ObjectHideFlags: 1
@@ -448,6 +463,21 @@ GameObject:
   - 4: {fileID: 4000011253183696}
   m_Layer: 0
   m_Name: HitPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000013955707694
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000011314937054}
+  m_Layer: 0
+  m_Name: RespawnPos1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -708,6 +738,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000010118509874}
   m_RootOrder: 2
+--- !u!4 &4000011314937054
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013955707694}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.35, y: 0, z: 0}
+  m_LocalScale: {x: 0.09459094, y: 0.094591066, z: 0.16757095}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000013832108326}
+  m_RootOrder: 13
 --- !u!4 &4000011352107702
 Transform:
   m_ObjectHideFlags: 1
@@ -741,7 +784,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014109482998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 514.2, y: 22, z: 30}
+  m_LocalPosition: {x: 336.3, y: 22, z: 30}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -766,6 +809,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000013147828734}
   m_RootOrder: 2
+--- !u!4 &4000012166226394
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012926951392}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000013832108326}
+  m_RootOrder: 12
 --- !u!4 &4000012289162272
 Transform:
   m_ObjectHideFlags: 1
@@ -935,6 +991,8 @@ Transform:
   - {fileID: 4000010672809092}
   - {fileID: 4000010762000728}
   - {fileID: 4000010638681090}
+  - {fileID: 4000012166226394}
+  - {fileID: 4000011314937054}
   m_Father: {fileID: 4000011802787232}
   m_RootOrder: 5
 --- !u!4 &4000013998978832
@@ -1325,6 +1383,11 @@ MonoBehaviour:
   deathParticle: {fileID: 19802714, guid: 050a96b794bf0c242bfbb65492949822, type: 2}
   deathBloodParticle: {fileID: 198000010837645610, guid: 9d1eeb43b2bcbfd44a007c789037f739,
     type: 2}
+  sawDeathBloodParticle: {fileID: 198000011697979514, guid: 03e3f3025e454e04dbca64b01e3e54d2,
+    type: 2}
+  sawDeathBloodParticlePos: {fileID: 4000012166226394}
+  graphics: {fileID: 1000012991551484}
+  deathSaw: 0
   particlePosObj: {fileID: 1000010055231870}
   particlePosObjDeathBlood: {fileID: 1000012479602566}
   maxHitpoints: 0

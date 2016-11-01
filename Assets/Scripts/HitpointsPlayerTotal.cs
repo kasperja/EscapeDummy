@@ -7,6 +7,10 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 	public AudioSource deathSound;
 	public ParticleSystem deathParticle;
 	public ParticleSystem deathBloodParticle;
+	public ParticleSystem sawDeathBloodParticle;
+	public Transform sawDeathBloodParticlePos;
+	public GameObject graphics;
+	public bool deathSaw = false;
 	public GameObject particlePosObj;
 	public GameObject particlePosObjDeathBlood;
 	public float maxHitpoints;
@@ -17,6 +21,7 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 	public EnemyMovement em;
 	public GameObject MainCharacterObj;
 	public GameObject MainCharObj;
+
 
 	public GameObject UpperTarget;
 	public GameObject MiddleTarget;
@@ -45,35 +50,71 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 
 			//em.isFollowing = false;
 			//em.isInRange = false;
-			if(dieOnce){
-				Instantiate (deathParticle, particlePosObj.transform.position, Quaternion.identity);
 
-				Instantiate (deathBloodParticle, particlePosObjDeathBlood.transform.position, Quaternion.identity);
-
-				deathSound.Play ();
-
-				healthBar.SetActive (false);
-				healthBarBG.SetActive (false);
-				healthBarRect.sizeDelta = new Vector2(100, 10);
+			if (deathSaw) {
+				
+				if (dieOnce) {
+					
+					Instantiate (sawDeathBloodParticle, sawDeathBloodParticlePos.position, Quaternion.identity);
 
 
+					deathSound.Play ();
 
-				UpperTarget.SetActive (false);
-				MiddleTarget.SetActive (false);
-				LowerTarget.SetActive (false);
-				MainCharObj.GetComponent<BoxCollider2D> ().enabled = false;
-
-				dieOnce = false;
+					healthBar.SetActive (false);
+					healthBarBG.SetActive (false);
+					healthBarRect.sizeDelta = new Vector2 (100, 10);
 
 
 
-			// death
-			}
+					UpperTarget.SetActive (false);
+					MiddleTarget.SetActive (false);
+					LowerTarget.SetActive (false);
+					//MainCharObj.GetComponent<BoxCollider2D> ().enabled = false;
 
-			m_Anim.SetBool ("Dead", true);
-			isDead = true;
+					dieOnce = false;
+
+					deathSaw = false;
+
+
+					// death
+				}
+
+				graphics.SetActive (false);
+				//m_Anim.SetBool ("Dead", true);
+				isDead = true;
+
+
+			} else {
+				
+				if (dieOnce) {
+					Instantiate (deathParticle, particlePosObj.transform.position, Quaternion.identity);
+
+					Instantiate (deathBloodParticle, particlePosObjDeathBlood.transform.position, Quaternion.identity);
+
+					deathSound.Play ();
+
+					healthBar.SetActive (false);
+					healthBarBG.SetActive (false);
+					healthBarRect.sizeDelta = new Vector2 (100, 10);
+
+
+
+					UpperTarget.SetActive (false);
+					MiddleTarget.SetActive (false);
+					LowerTarget.SetActive (false);
+					//MainCharObj.GetComponent<BoxCollider2D> ().enabled = false;
+
+					dieOnce = false;
+
+
+
+					// death
+				}
+
+				m_Anim.SetBool ("Dead", true);
+				isDead = true;
 		
-
+			}
 		
 
 
