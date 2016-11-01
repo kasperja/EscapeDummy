@@ -53,8 +53,9 @@ public class HitpointsPlayer : MonoBehaviour {
 		}
 		if (collider.tag == "SawCol" && !MainCharScript.hookJumpActive && !hitPointsTotalScript.isDead) {
 			
-			StartCoroutine (waitHitAnim ());
+			//StartCoroutine (waitHitAnim ());
 			hitPointsTotalScript.hitpoints -= SawTrapDamage.damage * Time.deltaTime;
+			hitPointsTotalScript.deathSaw = true;
 
 		}
 
@@ -67,6 +68,7 @@ public class HitpointsPlayer : MonoBehaviour {
 		if (collider.tag == "SawCol" && !MainCharScript.hookJumpActive && !hitPointsTotalScript.isDead) {
 
 			hitPointsTotalScript.hitpoints -= SawTrapDamage.damage * Time.deltaTime;
+			hitPointsTotalScript.deathSaw = true;
 
 		}
 	
@@ -77,6 +79,13 @@ public class HitpointsPlayer : MonoBehaviour {
 		playOnceMiddle = true;
 		playOnceLow = true;
 
+
+		if (collider.tag == "SawCol" && !MainCharScript.hookJumpActive && !hitPointsTotalScript.isDead) {
+
+
+			hitPointsTotalScript.deathSaw = false;
+
+		}
 	
 	}
 	IEnumerator waitHitAnim(){
@@ -89,5 +98,6 @@ public class HitpointsPlayer : MonoBehaviour {
 
 
 	}
+
 			
 }
