@@ -1559,6 +1559,7 @@ MonoBehaviour:
   pc2dScript: {fileID: 114000010164550830}
   isJumping: 0
   jumpOnce: 1
+  targetSpriteRenderer: {fileID: 212000012151415172}
   origY: 0
   stairY: 0
 --- !u!212 &212000010018038080
