@@ -1,0 +1,269 @@
+fileFormatVersion: 2
+guid: c4b4756aa4354164782cd6d6895ff888
+timeCreated: 1478000040
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ButcherBlock-0024
+    21300002: ButcherBlock-0025
+    21300004: ButcherBlock-0026
+    21300006: ButcherBlock-0027
+    21300008: ButcherBlock-0028
+    21300010: ButcherBlock-0029
+    21300012: ButcherBlock-0030
+    21300014: ButcherBlock-0031
+    21300016: ButcherBlock-0032
+    21300018: ButcherBlock-0033
+    21300020: ButcherBlock-0034
+    21300022: ButcherBlock-0035
+    21300024: ButcherBlock-0036
+    21300026: ButcherBlock-0037
+    21300028: ButcherBlock-0038
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1200
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ButcherBlock-0024
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1502
+        width: 238
+        height: 545
+      alignment: 9
+      pivot: {x: 0.39915967, y: 0.6972477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherBlock-0025
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1505
+        width: 235
+        height: 542
+      alignment: 9
+      pivot: {x: 0.39574468, y: 0.702952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherBlock-0026
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1502
+        width: 236
+        height: 545
+      alignment: 9
+      pivot: {x: 0.3940678, y: 0.6972477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherBlock-0027
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 1503
+        width: 231
+        height: 544
+      alignment: 9
+      pivot: {x: 0.4025974, y: 0.6985294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherBlock-0028
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 1509
+        width: 232
+        height: 538
+      alignment: 9
+      pivot: {x: 0.41379312, y: 0.7063197}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherBlock-0029
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1525
+        width: 235
+        height: 522
+      alignment: 9
+      pivot: {x: 0.41276595, y: 0.710728}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherBlock-0030
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 1527
+        width: 245
+        height: 520
+      alignment: 9
+      pivot: {x: 0.4, y: 0.7134615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherBlock-0031
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 1512
+        width: 240
+        height: 535
+      alignment: 9
+      pivot: {x: 0.4, y: 0.71214956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherBlock-0032
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 969
+        width: 242
+        height: 531
+      alignment: 9
+      pivot: {x: 0.40082645, y: 0.7156309}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherBlock-0033
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 960
+        width: 223
+        height: 540
+      alignment: 9
+      pivot: {x: 0.43049327, y: 0.7037037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherBlock-0034
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 959
+        width: 213
+        height: 541
+      alignment: 9
+      pivot: {x: 0.4460094, y: 0.7042514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherBlock-0035
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 953
+        width: 242
+        height: 547
+      alignment: 9
+      pivot: {x: 0.40495867, y: 0.6965265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherBlock-0036
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 951
+        width: 238
+        height: 549
+      alignment: 9
+      pivot: {x: 0.39915967, y: 0.6939891}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherBlock-0037
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 955
+        width: 238
+        height: 545
+      alignment: 9
+      pivot: {x: 0.39915967, y: 0.6972477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherBlock-0038
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 958
+        width: 235
+        height: 542
+      alignment: 9
+      pivot: {x: 0.39574468, y: 0.702952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

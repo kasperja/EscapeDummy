@@ -1,0 +1,395 @@
+fileFormatVersion: 2
+guid: b6e36daa8cb10ba43bcee5c1638c9f4a
+timeCreated: 1478000032
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ButcherIdleBlink-0000
+    21300002: ButcherIdleBlink-0001
+    21300004: ButcherIdleBlink-0002
+    21300006: ButcherIdleBlink-0003
+    21300008: ButcherIdleBlink-0004
+    21300010: ButcherIdleBlink-0005
+    21300012: ButcherIdleBlink-0006
+    21300014: ButcherIdleBlink-0007
+    21300016: ButcherIdleBlink-0008
+    21300018: ButcherIdleBlink-0009
+    21300020: ButcherIdleBlink-0010
+    21300022: ButcherIdleBlink-0011
+    21300024: ButcherIdleBlink-0012
+    21300026: ButcherIdleBlink-0013
+    21300028: ButcherIdleBlink-0014
+    21300030: ButcherIdleBlink-0015
+    21300032: ButcherIdleBlink-0016
+    21300034: ButcherIdleBlink-0017
+    21300036: ButcherIdleBlink-0018
+    21300038: ButcherIdleBlink-0019
+    21300040: ButcherIdleBlink-0020
+    21300042: ButcherIdleBlink-0021
+    21300044: ButcherIdleBlink-0022
+    21300046: ButcherIdleBlink-0023
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1200
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1502
+        width: 236
+        height: 545
+      alignment: 9
+      pivot: {x: 0.3940678, y: 0.6972477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0001
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 1504
+        width: 243
+        height: 543
+      alignment: 9
+      pivot: {x: 0.39506173, y: 0.6998158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0002
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1507
+        width: 235
+        height: 540
+      alignment: 9
+      pivot: {x: 0.4, y: 0.68703705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0003
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 1499
+        width: 239
+        height: 548
+      alignment: 9
+      pivot: {x: 0.38912135, y: 0.69525546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0004
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 1504
+        width: 237
+        height: 543
+      alignment: 9
+      pivot: {x: 0.39240506, y: 0.6998158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0005
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 1502
+        width: 240
+        height: 545
+      alignment: 9
+      pivot: {x: 0.4, y: 0.7009174}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0006
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 1501
+        width: 241
+        height: 546
+      alignment: 9
+      pivot: {x: 0.3900415, y: 0.6978022}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0007
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 1502
+        width: 242
+        height: 545
+      alignment: 9
+      pivot: {x: 0.39256197, y: 0.6972477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0008
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 967
+        width: 245
+        height: 530
+      alignment: 9
+      pivot: {x: 0.39183673, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0009
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 958
+        width: 244
+        height: 539
+      alignment: 9
+      pivot: {x: 0.39344263, y: 0.70686454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0010
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 956
+        width: 247
+        height: 541
+      alignment: 9
+      pivot: {x: 0.38866398, y: 0.70240295}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0011
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 956
+        width: 247
+        height: 541
+      alignment: 9
+      pivot: {x: 0.38866398, y: 0.70240295}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0012
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 961
+        width: 249
+        height: 536
+      alignment: 9
+      pivot: {x: 0.38554215, y: 0.7089552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0013
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 959
+        width: 250
+        height: 538
+      alignment: 9
+      pivot: {x: 0.396, y: 0.7063197}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0014
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 961
+        width: 257
+        height: 536
+      alignment: 9
+      pivot: {x: 0.3774319, y: 0.6977612}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0015
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 965
+        width: 252
+        height: 532
+      alignment: 9
+      pivot: {x: 0.3888889, y: 0.69736844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0016
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 426
+        width: 253
+        height: 528
+      alignment: 9
+      pivot: {x: 0.38735178, y: 0.7026515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0017
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 416
+        width: 248
+        height: 538
+      alignment: 9
+      pivot: {x: 0.39112905, y: 0.70817846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0018
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 414
+        width: 260
+        height: 540
+      alignment: 9
+      pivot: {x: 0.37307692, y: 0.70555556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0019
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 417
+        width: 247
+        height: 537
+      alignment: 9
+      pivot: {x: 0.39271256, y: 0.7094972}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0020
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 419
+        width: 252
+        height: 535
+      alignment: 9
+      pivot: {x: 0.38492063, y: 0.69906545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0021
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 413
+        width: 252
+        height: 541
+      alignment: 9
+      pivot: {x: 0.3809524, y: 0.7042514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0022
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 414
+        width: 251
+        height: 540
+      alignment: 9
+      pivot: {x: 0.38247013, y: 0.7037037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdleBlink-0023
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 412
+        width: 244
+        height: 542
+      alignment: 9
+      pivot: {x: 0.39344263, y: 0.702952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
