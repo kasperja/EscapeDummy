@@ -1,0 +1,269 @@
+fileFormatVersion: 2
+guid: 5c260f022f8028b4e8e59c0652e11b2b
+timeCreated: 1477999986
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ButcherIdle-0024
+    21300002: ButcherIdle-0025
+    21300004: ButcherIdle-0026
+    21300006: ButcherIdle-0027
+    21300008: ButcherIdle-0028
+    21300010: ButcherIdle-0029
+    21300012: ButcherIdle-0030
+    21300014: ButcherIdle-0031
+    21300016: ButcherIdle-0032
+    21300018: ButcherIdle-0033
+    21300020: ButcherIdle-0034
+    21300022: ButcherIdle-0035
+    21300024: ButcherIdle-0036
+    21300026: ButcherIdle-0037
+    21300028: ButcherIdle-0038
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1200
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ButcherIdle-0024
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1508
+        width: 251
+        height: 539
+      alignment: 9
+      pivot: {x: 0.39442232, y: 0.7050093}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdle-0025
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1503
+        width: 246
+        height: 544
+      alignment: 9
+      pivot: {x: 0.3902439, y: 0.6985294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdle-0026
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1503
+        width: 244
+        height: 544
+      alignment: 9
+      pivot: {x: 0.4057377, y: 0.6985294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdle-0027
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 1506
+        width: 243
+        height: 541
+      alignment: 9
+      pivot: {x: 0.3909465, y: 0.70240295}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdle-0028
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 1506
+        width: 240
+        height: 541
+      alignment: 9
+      pivot: {x: 0.39583334, y: 0.7042514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdle-0029
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 1506
+        width: 240
+        height: 541
+      alignment: 9
+      pivot: {x: 0.39583334, y: 0.7042514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdle-0030
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 1506
+        width: 240
+        height: 541
+      alignment: 9
+      pivot: {x: 0.39166668, y: 0.7042514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdle-0031
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 1505
+        width: 240
+        height: 542
+      alignment: 9
+      pivot: {x: 0.4, y: 0.701107}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdle-0032
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 963
+        width: 238
+        height: 538
+      alignment: 9
+      pivot: {x: 0.3907563, y: 0.7026022}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdle-0033
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 971
+        width: 236
+        height: 530
+      alignment: 9
+      pivot: {x: 0.40254238, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdle-0034
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 956
+        width: 236
+        height: 545
+      alignment: 9
+      pivot: {x: 0.3940678, y: 0.6972477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdle-0035
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 958
+        width: 243
+        height: 543
+      alignment: 9
+      pivot: {x: 0.39506173, y: 0.6998158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdle-0036
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 961
+        width: 235
+        height: 540
+      alignment: 9
+      pivot: {x: 0.4, y: 0.68703705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdle-0037
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 953
+        width: 239
+        height: 548
+      alignment: 9
+      pivot: {x: 0.38912135, y: 0.69525546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherIdle-0038
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 958
+        width: 237
+        height: 543
+      alignment: 9
+      pivot: {x: 0.39240506, y: 0.6998158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,297 @@
+fileFormatVersion: 2
+guid: e220afd9c36a9204eae617f4c8134c5b
+timeCreated: 1478000047
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ButcherWalk-0022
+    21300002: ButcherWalk-0023
+    21300004: ButcherWalk-0024
+    21300006: ButcherWalk-0025
+    21300008: ButcherWalk-0026
+    21300010: ButcherWalk-0027
+    21300012: ButcherWalk-0028
+    21300014: ButcherWalk-0029
+    21300016: ButcherWalk-0030
+    21300018: ButcherWalk-0031
+    21300020: ButcherWalk-0032
+    21300022: ButcherWalk-0033
+    21300024: ButcherWalk-0034
+    21300026: ButcherWalk-0035
+    21300028: ButcherWalk-0036
+    21300030: ButcherWalk-0037
+    21300032: ButcherWalk-0038
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1200
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ButcherWalk-0022
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1503
+        width: 226
+        height: 544
+      alignment: 9
+      pivot: {x: 0.3761062, y: 0.6856618}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherWalk-0023
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1516
+        width: 259
+        height: 531
+      alignment: 9
+      pivot: {x: 0.4092664, y: 0.6817326}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherWalk-0024
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1514
+        width: 279
+        height: 533
+      alignment: 9
+      pivot: {x: 0.44444445, y: 0.68292683}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherWalk-0025
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 1505
+        width: 261
+        height: 542
+      alignment: 9
+      pivot: {x: 0.4099617, y: 0.704797}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherWalk-0026
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1525
+        width: 245
+        height: 522
+      alignment: 9
+      pivot: {x: 0.42857143, y: 0.7011494}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherWalk-0027
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 1530
+        width: 250
+        height: 517
+      alignment: 9
+      pivot: {x: 0.444, y: 0.7079304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherWalk-0028
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 1526
+        width: 226
+        height: 521
+      alignment: 9
+      pivot: {x: 0.42035398, y: 0.7024952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherWalk-0029
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 1523
+        width: 213
+        height: 524
+      alignment: 9
+      pivot: {x: 0.4084507, y: 0.6908397}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherWalk-0030
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 969
+        width: 189
+        height: 532
+      alignment: 9
+      pivot: {x: 0.3915344, y: 0.693609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherWalk-0031
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 967
+        width: 193
+        height: 534
+      alignment: 9
+      pivot: {x: 0.3834197, y: 0.6797753}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherWalk-0032
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 968
+        width: 177
+        height: 533
+      alignment: 9
+      pivot: {x: 0.44067797, y: 0.6697936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherWalk-0033
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 964
+        width: 196
+        height: 537
+      alignment: 9
+      pivot: {x: 0.4642857, y: 0.67597765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherWalk-0034
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 966
+        width: 229
+        height: 535
+      alignment: 9
+      pivot: {x: 0.52401745, y: 0.671028}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherWalk-0035
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 965
+        width: 266
+        height: 536
+      alignment: 9
+      pivot: {x: 0.50751877, y: 0.6791045}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherWalk-0036
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 962
+        width: 294
+        height: 539
+      alignment: 9
+      pivot: {x: 0.5102041, y: 0.6864564}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherWalk-0037
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 968
+        width: 330
+        height: 533
+      alignment: 9
+      pivot: {x: 0.5181818, y: 0.6998124}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherWalk-0038
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 436
+        width: 348
+        height: 524
+      alignment: 9
+      pivot: {x: 0.50287354, y: 0.70229006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

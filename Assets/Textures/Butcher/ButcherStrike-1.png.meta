@@ -1,0 +1,297 @@
+fileFormatVersion: 2
+guid: a0620b21785b5e14d96db6b09473163b
+timeCreated: 1478000028
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ButcherStrike-0018
+    21300002: ButcherStrike-0019
+    21300004: ButcherStrike-0020
+    21300006: ButcherStrike-0021
+    21300008: ButcherStrike-0022
+    21300010: ButcherStrike-0023
+    21300012: ButcherStrike-0024
+    21300014: ButcherStrike-0025
+    21300016: ButcherStrike-0026
+    21300018: ButcherStrike-0027
+    21300020: ButcherStrike-0028
+    21300022: ButcherStrike-0029
+    21300024: ButcherStrike-0030
+    21300026: ButcherStrike-0031
+    21300028: ButcherStrike-0032
+    21300030: ButcherStrike-0033
+    21300032: ButcherStrike-0034
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1200
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ButcherStrike-0018
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1506
+        width: 288
+        height: 541
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0.6987061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherStrike-0019
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1502
+        width: 231
+        height: 545
+      alignment: 9
+      pivot: {x: 0.43722942, y: 0.6972477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherStrike-0020
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1505
+        width: 233
+        height: 542
+      alignment: 9
+      pivot: {x: 0.40772533, y: 0.702952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherStrike-0021
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 1502
+        width: 236
+        height: 545
+      alignment: 9
+      pivot: {x: 0.3940678, y: 0.6972477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherStrike-0022
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 1496
+        width: 335
+        height: 551
+      alignment: 9
+      pivot: {x: 0.45970148, y: 0.69147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherStrike-0023
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 1503
+        width: 373
+        height: 544
+      alignment: 9
+      pivot: {x: 0.49597856, y: 0.6819853}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherStrike-0024
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 949
+        width: 366
+        height: 545
+      alignment: 9
+      pivot: {x: 0.5327869, y: 0.6807339}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherStrike-0025
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 948
+        width: 368
+        height: 546
+      alignment: 9
+      pivot: {x: 0.5407609, y: 0.6849817}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherStrike-0026
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 955
+        width: 358
+        height: 539
+      alignment: 9
+      pivot: {x: 0.547486, y: 0.6938776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherStrike-0027
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 956
+        width: 332
+        height: 538
+      alignment: 9
+      pivot: {x: 0.52409637, y: 0.69330853}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherStrike-0028
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 953
+        width: 275
+        height: 541
+      alignment: 9
+      pivot: {x: 0.44727272, y: 0.69500923}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherStrike-0029
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 959
+        width: 337
+        height: 535
+      alignment: 9
+      pivot: {x: 0.27299702, y: 0.69906545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherStrike-0030
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 420
+        width: 329
+        height: 526
+      alignment: 9
+      pivot: {x: 0.2857143, y: 0.7072243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherStrike-0031
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 417
+        width: 336
+        height: 529
+      alignment: 9
+      pivot: {x: 0.2857143, y: 0.70699435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherStrike-0032
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 421
+        width: 365
+        height: 525
+      alignment: 9
+      pivot: {x: 0.3068493, y: 0.7104762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherStrike-0033
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 416
+        width: 358
+        height: 530
+      alignment: 9
+      pivot: {x: 0.30167598, y: 0.71132076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherStrike-0034
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 423
+        width: 350
+        height: 523
+      alignment: 9
+      pivot: {x: 0.27142859, y: 0.707457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

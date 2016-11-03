@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: 2007e57c59413bd4db80fe061f20e070
+timeCreated: 1477999975
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ButcherDeath-0016
+    21300002: ButcherDeath-0017
+    21300004: ButcherDeath-0018
+    21300006: ButcherDeath-0019
+    21300008: ButcherDeath-0020
+    21300010: ButcherDeath-0021
+    21300012: ButcherDeath-0022
+    21300014: ButcherDeath-0023
+    21300016: ButcherDeath-0024
+    21300018: ButcherDeath-0025
+    21300020: ButcherDeath-0026
+    21300022: ButcherDeath-0027
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1200
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ButcherDeath-0016
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1864
+        width: 595
+        height: 183
+      alignment: 9
+      pivot: {x: 1.082353, y: 2.2349727}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherDeath-0017
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1870
+        width: 597
+        height: 177
+      alignment: 9
+      pivot: {x: 1.080402, y: 2.3050847}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherDeath-0018
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 1502
+        width: 236
+        height: 545
+      alignment: 9
+      pivot: {x: 0.3940678, y: 0.6972477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherDeath-0019
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 1492
+        width: 260
+        height: 555
+      alignment: 9
+      pivot: {x: 0.53846157, y: 0.6846847}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherDeath-0020
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 929
+        width: 352
+        height: 561
+      alignment: 9
+      pivot: {x: 0.61647725, y: 0.6613191}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherDeath-0021
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 990
+        width: 427
+        height: 500
+      alignment: 9
+      pivot: {x: 0.78688526, y: 0.736}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherDeath-0022
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 985
+        width: 502
+        height: 505
+      alignment: 9
+      pivot: {x: 0.9243028, y: 0.74653465}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherDeath-0023
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 1180
+        width: 547
+        height: 310
+      alignment: 9
+      pivot: {x: 1.0219378, y: 1.2161291}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherDeath-0024
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 733
+        width: 598
+        height: 194
+      alignment: 9
+      pivot: {x: 1.0802675, y: 2.1082475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherDeath-0025
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 744
+        width: 595
+        height: 183
+      alignment: 9
+      pivot: {x: 1.082353, y: 2.2349727}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherDeath-0026
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 750
+        width: 597
+        height: 177
+      alignment: 9
+      pivot: {x: 1.080402, y: 2.3050847}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ButcherDeath-0027
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 382
+        width: 236
+        height: 545
+      alignment: 9
+      pivot: {x: 0.3940678, y: 0.6972477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
