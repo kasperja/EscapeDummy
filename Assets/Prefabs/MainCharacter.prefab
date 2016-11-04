@@ -199,7 +199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000012268561030
 GameObject:
   m_ObjectHideFlags: 1
@@ -392,7 +392,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000013242303636
 GameObject:
   m_ObjectHideFlags: 1
@@ -719,7 +719,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014170136116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17, y: 0, z: 0}
+  m_LocalPosition: {x: 10.8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1337,16 +1337,17 @@ MonoBehaviour:
   LowerHitObj: {fileID: 190304, guid: 02c24112785258d4eaf0276e67ff5acb, type: 2}
   hitPos: {fileID: 1000014170136116}
   beginPos: {fileID: 1000012668613932}
-  activate: 1
+  activate: 0
   isJumpKick: 1
   AttackKey: 101
-  AttackKey2: 114
-  AttackKey3: 119
+  AttackKey2: 101
+  AttackKey3: 101
   mainCharScript: {fileID: 114000010164550830}
   attackDamage: 100
   hitCollider: {fileID: 58000013257684832}
   hpT: {fileID: 114000010577870838}
   attackSound: {fileID: 0}
+  attackDelay: 0.2
 --- !u!114 &114000010480083346
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1494,19 +1495,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpperHitObj: {fileID: 188322, guid: 02c24112785258d4eaf0276e67ff5acb, type: 2}
   MiddleHitObj: {fileID: 172444, guid: 02c24112785258d4eaf0276e67ff5acb, type: 2}
-  LowerHitObj: {fileID: 190304, guid: 02c24112785258d4eaf0276e67ff5acb, type: 2}
+  LowerHitObj: {fileID: 0}
   hitPos: {fileID: 1000011491579272}
   beginPos: {fileID: 1000013242303636}
-  activate: 1
+  activate: 0
   isJumpKick: 0
   AttackKey: 119
-  AttackKey2: 102
-  AttackKey3: 102
+  AttackKey2: 119
+  AttackKey3: 119
   mainCharScript: {fileID: 114000010164550830}
   attackDamage: 40
   hitCollider: {fileID: 58000013489782658}
   hpT: {fileID: 114000010577870838}
   attackSound: {fileID: 0}
+  attackDelay: 0.5
 --- !u!114 &114000013360199432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1520,19 +1522,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpperHitObj: {fileID: 188322, guid: 02c24112785258d4eaf0276e67ff5acb, type: 2}
   MiddleHitObj: {fileID: 172444, guid: 02c24112785258d4eaf0276e67ff5acb, type: 2}
-  LowerHitObj: {fileID: 190304, guid: 02c24112785258d4eaf0276e67ff5acb, type: 2}
+  LowerHitObj: {fileID: 0}
   hitPos: {fileID: 1000013438037100}
   beginPos: {fileID: 1000011135612552}
-  activate: 1
+  activate: 0
   isJumpKick: 0
-  AttackKey: 114
-  AttackKey2: 102
-  AttackKey3: 102
+  AttackKey: 119
+  AttackKey2: 119
+  AttackKey3: 119
   mainCharScript: {fileID: 114000010164550830}
   attackDamage: 100
   hitCollider: {fileID: 58000013819224204}
   hpT: {fileID: 114000010577870838}
   attackSound: {fileID: 0}
+  attackDelay: 0.4
 --- !u!114 &114000013524685410
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1578,19 +1581,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpperHitObj: {fileID: 188322, guid: 02c24112785258d4eaf0276e67ff5acb, type: 2}
   MiddleHitObj: {fileID: 172444, guid: 02c24112785258d4eaf0276e67ff5acb, type: 2}
-  LowerHitObj: {fileID: 190304, guid: 02c24112785258d4eaf0276e67ff5acb, type: 2}
+  LowerHitObj: {fileID: 0}
   hitPos: {fileID: 1000013913809944}
   beginPos: {fileID: 1000011558231832}
-  activate: 1
+  activate: 0
   isJumpKick: 0
   AttackKey: 101
-  AttackKey2: 102
-  AttackKey3: 102
+  AttackKey2: 101
+  AttackKey3: 101
   mainCharScript: {fileID: 114000010164550830}
   attackDamage: 60
   hitCollider: {fileID: 58000013629124678}
   hpT: {fileID: 114000010577870838}
   attackSound: {fileID: 0}
+  attackDelay: 0.5
 --- !u!114 &114000013964871146
 MonoBehaviour:
   m_ObjectHideFlags: 1

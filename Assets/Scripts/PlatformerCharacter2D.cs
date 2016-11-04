@@ -380,7 +380,7 @@ using System.Collections;
 			playOnce4 = false;
 			StartCoroutine (WaitForAnim4(0.5f));
 
-		} else if (Input.GetKeyDown (KeyCode.E) && playOnce1 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead) {
+		} /*else if (Input.GetKeyDown (KeyCode.E) && playOnce1 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead) {
 
 			if(attackSoundOnce){
 
@@ -403,7 +403,7 @@ using System.Collections;
 				playOnce2 = false;
 			StartCoroutine (WaitForAnim2(0.5f));
 
-			}
+			}*/
 		else if (Input.GetKeyDown (KeyCode.W) && playOnce3 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead) {
 
 			if(attackSoundOnce){
@@ -414,6 +414,18 @@ using System.Collections;
 				m_Attack3 = true;
 				playOnce3 = false;
 			StartCoroutine (WaitForAnim3(0.5f));
+
+		}
+		else if (Input.GetKeyDown(KeyCode.E) && playOnce5 && cm.falconPunchBool == false && !hpPlayerTotal.isDead) {
+
+			if(attackSoundOnce){
+
+				attackSound1.Play ();
+				attackSoundOnce = false;
+			}
+			m_Attack5 = true;
+			playOnce5 = false;
+			StartCoroutine (WaitForAnim5(0.7f));
 
 		}
 

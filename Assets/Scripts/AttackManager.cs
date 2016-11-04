@@ -25,6 +25,8 @@ public class AttackManager : MonoBehaviour {
 	public HitpointsPlayerTotal hpT;
 	public AudioSource attackSound;
 	private bool attackSoundOnce = true;
+	private bool playOnceMoveObj = true;
+	public float attackDelay = 0.5f;
 
 
 	// Use this for initialization
@@ -91,10 +93,11 @@ public class AttackManager : MonoBehaviour {
 			StartCoroutine (Waiter());
 		
 		}
-		if (activate && !hpT.isDead) {
+		if (activate && !hpT.isDead && playOnceMoveObj) {
 		
 
 			StartCoroutine (MoveObj (this.transform, this.transform.position, hitPos.transform.position, 0.005f));
+			playOnceMoveObj = false;
 
 		} else {
 			
@@ -108,7 +111,7 @@ public class AttackManager : MonoBehaviour {
 
 
 
-		yield return new WaitForSeconds (0.3f);
+		yield return new WaitForSeconds (attackDelay);
 		hitCollider.enabled = true;
 		thisTransform.position = Vector3.Lerp(startPos, endPos, Time.deltaTime / time);
 		yield return new WaitForSeconds (0.1f);
@@ -126,7 +129,7 @@ public class AttackManager : MonoBehaviour {
 
 
 
-		yield return new WaitForSeconds (1f);
+		yield return new WaitForSeconds (0.0f);
 		playOnce = true;
 
 
@@ -140,11 +143,12 @@ public class AttackManager : MonoBehaviour {
 		//yield return new WaitForSeconds(0.06f);
 		thisTransform.position = Vector3.Lerp(startPos, endPos, Time.deltaTime / time);
 
-		yield return new WaitForSeconds (0.4f);
+		yield return new WaitForSeconds (0.0f);
 		hitCollider.enabled = false;
 		//yield return new WaitForSeconds (0.5f);
 		//yield return new WaitForSeconds (0.2f);
 		// StopCoroutine ("MoveObj");
+		playOnceMoveObj = true;
 		yield return null;
 
 
