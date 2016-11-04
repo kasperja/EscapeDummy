@@ -45,14 +45,14 @@ public class AttackEnemyManager : MonoBehaviour {
 			attackEnemyLow.activeAttack = false;
 
 		
-		} else if (randomAttackNumber >= 0.33f && randomAttackNumber < 0.66f) {
+		} else if (randomAttackNumber >= 0.33f && randomAttackNumber <= 0.66f) {
 		
 			attackEnemyMiddle.activeAttack = true;
 			attackEnemyHigh.activeAttack = false;
 			attackEnemyLow.activeAttack = false;
 		
 		
-		} else if (randomAttackNumber >= 0.66f && randomAttackNumber <= 1.0f) {
+		} else if (randomAttackNumber > 0.66f && randomAttackNumber <= 1.0f) {
 		
 			attackEnemyLow.activeAttack = true;
 			attackEnemyHigh.activeAttack = false;
@@ -104,9 +104,9 @@ public class AttackEnemyManager : MonoBehaviour {
 
 
 
-		yield return new WaitForSeconds (1.0f);
+		yield return new WaitForSeconds (0.0f);
 
-		randomAttackNumber = Random.Range (0.0f, 1.0f);
+		randomAttackNumber = Random.Range (0.33f, 0.66f);
 		playOnceWaiter = true;
 	}
 }

@@ -29,6 +29,7 @@ public class AttackManager : MonoBehaviour {
 	public float attackDelay = 0.5f;
 
 
+
 	// Use this for initialization
 	void Start () {
 
@@ -96,12 +97,13 @@ public class AttackManager : MonoBehaviour {
 		if (activate && !hpT.isDead && playOnceMoveObj) {
 		
 
-			StartCoroutine (MoveObj (this.transform, this.transform.position, hitPos.transform.position, 0.005f));
+			StartCoroutine (MoveObj (transform, transform.position, hitPos.transform.position, 1f));
 			playOnceMoveObj = false;
 
 		} else {
-			
-			StartCoroutine (MoveObjTwo (this.transform, this.transform.position, beginPos.transform.position, 0.06f));
+
+
+
 		}
 
 
@@ -112,15 +114,32 @@ public class AttackManager : MonoBehaviour {
 
 
 		yield return new WaitForSeconds (attackDelay);
+
+		float elapsedTime = 0.0f;
 		hitCollider.enabled = true;
-		thisTransform.position = Vector3.Lerp(startPos, endPos, Time.deltaTime / time);
-		yield return new WaitForSeconds (0.1f);
+		while (elapsedTime < time) {
+		
+			elapsedTime += Time.deltaTime * 50f;
+
+			thisTransform.position = Vector3.Lerp(startPos, endPos, (elapsedTime / time));
+
+			yield return null;
+
+			//elapsedTime = 0.0f;
+		
+		}
+
+
+		//thisTransform.position = endPos;
+		//thisTransform.position = Vector3.Lerp(startPos, endPos, Time.deltaTime / time);
+		yield return new WaitForSeconds (0.05f);
 
 		activate = false;
 
+		StartCoroutine (MoveObjTwo (this.transform, this.transform.position, beginPos.transform.position, 0.06f));
 
 		// StopCoroutine ("MoveObj");
-		yield return null;
+		//yield return null;
 
 
 	}
@@ -141,9 +160,24 @@ public class AttackManager : MonoBehaviour {
 	IEnumerator MoveObjTwo(Transform thisTransform, Vector3  startPos, Vector3 endPos, float time){
 
 		//yield return new WaitForSeconds(0.06f);
-		thisTransform.position = Vector3.Lerp(startPos, endPos, Time.deltaTime / time);
 
-		yield return new WaitForSeconds (0.0f);
+		//thisTransform.position = startPos;
+		float elapsedTime = 0.0f;
+
+		while (elapsedTime < time) {
+
+			elapsedTime += Time.deltaTime * 50f;
+
+			thisTransform.position = Vector3.Lerp(startPos, endPos, (elapsedTime / time));
+
+			yield return null;
+			//elapsedTime = 0.0f;
+
+		}
+
+		//thisTransform.position = Vector3.Lerp(startPos, endPos, Time.deltaTime / time);
+
+		yield return new WaitForSeconds (0.06f);
 		hitCollider.enabled = false;
 		//yield return new WaitForSeconds (0.5f);
 		//yield return new WaitForSeconds (0.2f);
