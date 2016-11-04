@@ -165,7 +165,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000011851892592
 GameObject:
   m_ObjectHideFlags: 1
@@ -180,7 +180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000011855302490
 GameObject:
   m_ObjectHideFlags: 1
@@ -654,7 +654,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013165348842}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.72, y: 0, z: 0}
+  m_LocalPosition: {x: -2.83, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1021,12 +1021,14 @@ MonoBehaviour:
   attackCollider: {fileID: 58000011986404360}
   attackFrequency: 0.7
   attackDamage: 50
+  attackDelay: 0
   attackSound: {fileID: 0}
   attackEnemyManager: {fileID: 114000011344686158}
   hitPos: {fileID: 1000013165348842}
   beginPos: {fileID: 1000012814306434}
-  activeAttack: 0
+  activeAttack: 1
   playerObj: {fileID: 0}
+  hptPlayerScript: {fileID: 0}
 --- !u!114 &114000012692433402
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1044,12 +1046,14 @@ MonoBehaviour:
   attackCollider: {fileID: 58000011979635296}
   attackFrequency: 0.7
   attackDamage: 40
+  attackDelay: 0.2
   attackSound: {fileID: 0}
   attackEnemyManager: {fileID: 114000011344686158}
   hitPos: {fileID: 1000014128722602}
   beginPos: {fileID: 1000011855302490}
   activeAttack: 0
   playerObj: {fileID: 0}
+  hptPlayerScript: {fileID: 0}
 --- !u!114 &114000012925518302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1122,12 +1126,14 @@ MonoBehaviour:
   attackCollider: {fileID: 58000010035314294}
   attackFrequency: 0.7
   attackDamage: 60
+  attackDelay: 0.2
   attackSound: {fileID: 0}
   attackEnemyManager: {fileID: 114000011344686158}
   hitPos: {fileID: 1000014103375718}
   beginPos: {fileID: 1000011297579572}
   activeAttack: 0
   playerObj: {fileID: 0}
+  hptPlayerScript: {fileID: 0}
 --- !u!114 &114000013314807234
 MonoBehaviour:
   m_ObjectHideFlags: 1

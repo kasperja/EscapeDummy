@@ -10,18 +10,21 @@ public class AttackEnemy : MonoBehaviour {
 	//public bool playOnceSound = true;
 	public CircleCollider2D attackCollider;
 	 
-	public float attackFrequency = 0.7f;
+	public float attackFrequency = 1.09f;
 
 	public float attackDamage = 100.0f;
+
+	public float attackDelay = 0.2f;
 
 	public AudioSource attackSound;
 
 	public AttackEnemyManager attackEnemyManager;
 	public GameObject hitPos;
 	public GameObject beginPos;
-	public bool activeAttack = false;
+	public bool activeAttack = true;
 
 	public GameObject playerObj;
+	public HitpointsPlayerTotal hptPlayerScript;
 	// Use this for initialization
 
 
@@ -34,7 +37,7 @@ public class AttackEnemy : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Em.isInRange && playOnce && activeAttack && playerObj.activeSelf == true) {
+		if (Em.isInRange && playOnce && activeAttack && !hptPlayerScript.isDead) {
 		
 			activate = true;
 			playOnce = false;
@@ -57,25 +60,41 @@ public class AttackEnemy : MonoBehaviour {
 
 
 		
-			StartCoroutine (MoveObj (this.transform, this.transform.position, hitPos.transform.position, 0.06f));
+			StartCoroutine (MoveObj (this.transform, this.transform.position, hitPos.transform.position, 1f));
 
 
 		} else {
 			
-			StartCoroutine (MoveObjTwo (this.transform, this.transform.position, beginPos.transform.position, 0.06f));
+
 		}
 	
 	}
 
 	IEnumerator MoveObj(Transform thisTransform, Vector3  startPos, Vector3 endPos, float time){
 
+		yield return new WaitForSeconds (attackDelay);
 
 		attackCollider.enabled = true;
-		thisTransform.position = Vector3.Lerp(startPos, endPos, Time.deltaTime / time);
+
+		float elapsedTime = 0.0f;
+
+		while (elapsedTime < time) {
+
+			elapsedTime += Time.deltaTime * 30f;
+
+			thisTransform.position = Vector3.Lerp(startPos, endPos, elapsedTime / time);
+
+			yield return null;
+
+			//elapsedTime = 0.0f;
+
+		}
+
+		//thisTransform.position = Vector3.Lerp(startPos, endPos, Time.deltaTime / time);
 		yield return new WaitForSeconds (0.2f);
 		activate = false;
 
-
+		StartCoroutine (MoveObjTwo (this.transform, this.transform.position, beginPos.transform.position, 1f));
 
 		yield return null;
 
@@ -97,9 +116,22 @@ public class AttackEnemy : MonoBehaviour {
 
 	IEnumerator MoveObjTwo(Transform thisTransform, Vector3  startPos, Vector3 endPos, float time){
 
+		float elapsedTime = 0.0f;
 
+		while (elapsedTime < time) {
 
-		thisTransform.position = Vector3.Lerp(startPos, endPos, Time.deltaTime / time);
+			elapsedTime += Time.deltaTime * 30f;
+
+			thisTransform.position = Vector3.Lerp(startPos, endPos, elapsedTime / time);
+
+			yield return null;
+
+			//elapsedTime = 0.0f;
+
+		}
+
+	
+		//thisTransform.position = Vector3.Lerp(startPos, endPos, Time.deltaTime / time);
 		attackCollider.enabled = false;
 
 		yield return null;
