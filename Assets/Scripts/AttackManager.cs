@@ -41,7 +41,15 @@ public class AttackManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+		if (hpT.isDead) {
 
+
+			hitCollider.enabled = false;
+
+		} else {
+		
+			//hitCollider.enabled = false;
+		}
 
 			
 		if (Input.GetKeyDown (AttackKey) && playOnce && !mainCharScript.sideArrowsBool && !hpT.isDead) {
