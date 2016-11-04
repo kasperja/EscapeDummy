@@ -13,6 +13,7 @@ public class EnemyMovement : MonoBehaviour {
 	public bool isFollowing = false;
 	public bool isInRange = false;
 	public GameObject player;
+	public HitpointsPlayerTotal hptScript;
 	//private Vector3 flipH = new Vector3(-1f,0f,0f);
 	private Vector3 flipHVector;
 	private Vector3 flipHVectorL;
@@ -51,7 +52,7 @@ public class EnemyMovement : MonoBehaviour {
 		} 
 			
 
-		if (isFollowing == false && isInRange == false) {
+		if ((isFollowing == false && isInRange == false) || hptScript.isDead) {
 			
 			if (transform.position.x <= moveDistMax) {
 				
@@ -94,7 +95,7 @@ public class EnemyMovement : MonoBehaviour {
 			
 			transform.Translate (useSpeed * Time.deltaTime, 0, 0);
 
-		} else if (isFollowing == true && isInRange == false && player.gameObject.activeInHierarchy) {
+		} else if (isFollowing == true && isInRange == false && !hptScript.isDead) {
 
 			if (transform.position.x > player.transform.position.x) {
 
@@ -123,7 +124,7 @@ public class EnemyMovement : MonoBehaviour {
 			}
 			transform.Translate (useSpeed * Time.deltaTime, 0, 0);
 
-		} else if (isInRange && player.gameObject.activeInHierarchy) {
+		} else if (isInRange && !hptScript.isDead) {
 		
 			useSpeed = 0.0f;
 		
