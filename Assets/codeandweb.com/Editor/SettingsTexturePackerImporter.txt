@@ -59,9 +59,8 @@ tpsheetFileNames:
 - Assets/Textures/MainChar/Anims19-10-16/JumpGrab-3.tpsheet
 - Assets/Textures/MainChar/Anims19-10-16/JumpGrab-4.tpsheet
 - Assets/Textures/MainChar/Anims19-10-16/JumpGrab-5.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/JumpKick-0.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/JumpKick-1.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/JumpKick-2.tpsheet
+- Assets/Textures/MainChar/Anims19-10-16/JumpKick_02-0.tpsheet
+- Assets/Textures/MainChar/Anims19-10-16/JumpKick_02-1.tpsheet
 - Assets/Textures/MainChar/Anims19-10-16/Run-0.tpsheet
 - Assets/Textures/MainChar/Anims19-10-16/Run-1.tpsheet
 - Assets/Textures/MainChar/Anims19-10-16/Run-2.tpsheet
@@ -133,9 +132,8 @@ textureFileNames:
 - Assets/Textures/MainChar/Anims19-10-16/JumpGrab-3.png
 - Assets/Textures/MainChar/Anims19-10-16/JumpGrab-4.png
 - Assets/Textures/MainChar/Anims19-10-16/JumpGrab-5.png
-- Assets/Textures/MainChar/Anims19-10-16/JumpKick-0.png
-- Assets/Textures/MainChar/Anims19-10-16/JumpKick-1.png
-- Assets/Textures/MainChar/Anims19-10-16/JumpKick-2.png
+- Assets/Textures/MainChar/Anims19-10-16/JumpKick_02-0.png
+- Assets/Textures/MainChar/Anims19-10-16/JumpKick_02-1.png
 - Assets/Textures/MainChar/Anims19-10-16/Run-0.png
 - Assets/Textures/MainChar/Anims19-10-16/Run-1.png
 - Assets/Textures/MainChar/Anims19-10-16/Run-2.png
@@ -150,7 +148,6 @@ textureFileNames:
 - Assets/Textures/MainChar/Anims19-10-16/Strike01-3.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
-- 
 - 
 - 
 - 

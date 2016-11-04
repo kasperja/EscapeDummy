@@ -1,17 +1,16 @@
 fileFormatVersion: 2
-guid: 937a8ec7f4010284d804cfb53c729f4d
-timeCreated: 1476879080
+guid: 8ca3c428b6d5033418cb102e7bfb0548
+timeCreated: 1478250962
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: JumpKick-0008
-    21300002: JumpKick-0009
-    21300004: JumpKick-0010
-    21300006: JumpKick-0011
-    21300008: JumpKick-0012
-    21300010: JumpKick-0013
-    21300012: JumpKick-0014
-    21300014: JumpKick-0015
+    21300000: JumpKick_02-0008
+    21300002: JumpKick_02-0009
+    21300004: JumpKick_02-0010
+    21300006: JumpKick_02-0011
+    21300008: JumpKick_02-0012
+    21300010: JumpKick_02-0013
+    21300012: JumpKick_02-0014
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -61,106 +60,93 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JumpKick-0008
+      name: JumpKick_02-0008
       rect:
         serializedVersion: 2
         x: 1
-        y: 1140
-        width: 457
-        height: 907
+        y: 1121
+        width: 435
+        height: 926
       alignment: 9
-      pivot: {x: 0.8796499, y: 0.6945976}
+      pivot: {x: 0.5908046, y: 0.7516199}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: JumpKick-0009
+      name: JumpKick_02-0009
       rect:
         serializedVersion: 2
-        x: 460
-        y: 1146
-        width: 445
-        height: 901
+        x: 438
+        y: 1120
+        width: 349
+        height: 927
       alignment: 9
-      pivot: {x: 0.9707865, y: 0.68368477}
+      pivot: {x: 0.6532951, y: 0.7626753}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: JumpKick-0010
+      name: JumpKick_02-0010
       rect:
         serializedVersion: 2
-        x: 907
-        y: 1143
-        width: 464
-        height: 904
+        x: 789
+        y: 1139
+        width: 345
+        height: 908
       alignment: 9
-      pivot: {x: 1.0150862, y: 0.6880531}
+      pivot: {x: 0.7188406, y: 0.77863437}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: JumpKick-0011
+      name: JumpKick_02-0011
       rect:
         serializedVersion: 2
-        x: 1373
-        y: 1135
-        width: 457
-        height: 912
+        x: 1136
+        y: 1153
+        width: 364
+        height: 894
       alignment: 9
-      pivot: {x: 1.1006565, y: 0.6885965}
+      pivot: {x: 0.8324176, y: 0.7997763}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: JumpKick-0012
+      name: JumpKick_02-0012
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 1177
+        width: 338
+        height: 870
+      alignment: 9
+      pivot: {x: 1.1153846, y: 0.8172414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JumpKick_02-0013
       rect:
         serializedVersion: 2
         x: 1
-        y: 230
-        width: 454
-        height: 903
+        y: 236
+        width: 327
+        height: 882
       alignment: 9
-      pivot: {x: 1.1651982, y: 0.6866002}
+      pivot: {x: 1.119266, y: 0.8072562}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: JumpKick-0013
+      name: JumpKick_02-0014
       rect:
         serializedVersion: 2
-        x: 457
-        y: 228
-        width: 430
-        height: 905
+        x: 330
+        y: 238
+        width: 325
+        height: 880
       alignment: 9
-      pivot: {x: 1.244186, y: 0.680663}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: JumpKick-0014
-      rect:
-        serializedVersion: 2
-        x: 889
-        y: 255
-        width: 423
-        height: 878
-      alignment: 9
-      pivot: {x: 1.248227, y: 0.76082003}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: JumpKick-0015
-      rect:
-        serializedVersion: 2
-        x: 1314
-        y: 270
-        width: 412
-        height: 863
-      alignment: 9
-      pivot: {x: 1.2864077, y: 0.8053302}
+      pivot: {x: 1.1076924, y: 0.80795455}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
