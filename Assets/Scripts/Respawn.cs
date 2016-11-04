@@ -52,7 +52,8 @@ public class Respawn : MonoBehaviour {
 			LowerTarget.SetActive (true);
 			//MainCharObj.GetComponent<BoxCollider2D> ().enabled = true;
 
-			m_Anim.SetBool ("hit", false);
+
+			m_Anim.SetBool ("Hit", false);
 			hp.isDead = false;
 			hp.dieOnce = true;
 
