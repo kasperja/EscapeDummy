@@ -78,7 +78,7 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 
 					// death
 				}
-
+				m_Anim.SetBool ("Hit", false);
 				graphics.SetActive (false);
 				//m_Anim.SetBool ("Dead", true);
 				isDead = true;
@@ -110,7 +110,7 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 
 					// death
 				}
-
+				m_Anim.SetBool ("Hit", false);
 				m_Anim.SetBool ("Dead", true);
 				isDead = true;
 		
