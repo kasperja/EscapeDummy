@@ -10,7 +10,7 @@ public class AttackEnemy : MonoBehaviour {
 	//public bool playOnceSound = true;
 	public CircleCollider2D attackCollider;
 	 
-	public float attackFrequency = 1.09f;
+	public float attackFrequency = 4.09f;
 
 	public float attackDamage = 100.0f;
 
