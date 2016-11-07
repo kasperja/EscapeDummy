@@ -1023,7 +1023,7 @@ MonoBehaviour:
   activate: 0
   playOnceWaiter: 1
   attackCollider: {fileID: 58000011986404360}
-  attackFrequency: 0.7
+  attackFrequency: 2
   attackDamage: 50
   attackDelay: 0
   attackSound: {fileID: 0}

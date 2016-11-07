@@ -23,6 +23,8 @@ public class EnemyMovement : MonoBehaviour {
 
 	public Animator enemy_Animator;
 	public HitPointsEnemyTotal hpEnemyTotal;
+
+	private bool walkWhenDead = false;
 	//private float flipHFloat;
 
 	void Start(){
@@ -53,7 +55,7 @@ public class EnemyMovement : MonoBehaviour {
 
 		if (hptScript.isDead) {
 			
-			flipDirOnce = true;
+
 			StartCoroutine (Waiter ());
 
 
@@ -67,7 +69,7 @@ public class EnemyMovement : MonoBehaviour {
 			useSpeed = 0.0f;
 		
 		}
-		else if ((isFollowing == false && isInRange == false) || hptScript.isDead && !hpEnemyTotal.isDeadEnemy) {
+		else if (((isFollowing == false && isInRange == false) || walkWhenDead) && !hpEnemyTotal.isDeadEnemy) {
 			
 			if (transform.position.x <= moveDistMax) {
 				
@@ -148,7 +150,9 @@ public class EnemyMovement : MonoBehaviour {
 
 	IEnumerator Waiter(){
 
-		yield return new WaitForSeconds (0.0f);
+		yield return new WaitForSeconds (2f);
+		walkWhenDead = true;
+		flipDirOnce = true;
 		isFollowing = false;
 		isInRange = false;
 
