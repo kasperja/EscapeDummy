@@ -12,8 +12,25 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 	public GameObject particlePosObj;
 	public GameObject EnemyParentObj;
 
+	public GameObject tarHigh;
+	public GameObject tarMid;
+	public GameObject tarLow;
+	public GameObject enemyObj;
+	public GameObject detectTrigger;
+	public GameObject stopTrigger;
+	public GameObject attackHigh;
+	public GameObject attackMid;
+	public GameObject attackLow;
+	public EnemyMovement enemyMoveScript;
+
+
+
 	public ParticleSystem deathParticle;
 	public AudioSource deathSound;
+	public Animator enemy_Animator;
+	public bool isDeadEnemy = false;
+
+	private bool dieOnce = true;
 
 	// Use this for initialization
 	void Start () {
@@ -27,11 +44,37 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 
 		if (hitpoints <= 0.0f) {
 
+			if(dieOnce){
+
+				enemyMoveScript.isFollowing = false;
+				enemyMoveScript.isInRange = false;
+
+
 			Instantiate (deathParticle, particlePosObj.transform.position, Quaternion.identity);
 
 			deathSound.Play ();
-			Destroy (EnemyParentObj);
 
+			isDeadEnemy = true;
+			enemy_Animator.SetBool ("DeadBool", true);
+			enemy_Animator.SetBool ("Attack2Bool", false);
+			enemy_Animator.SetBool ("Attack1Bool", false);
+			enemy_Animator.SetBool ("Attack3Bool", false);
+
+			
+			tarHigh.SetActive (false);
+			tarMid.SetActive (false);
+			tarLow.SetActive (false);
+			attackHigh.SetActive (false);
+			attackMid.SetActive (false);
+			attackLow.SetActive (false);
+			detectTrigger.SetActive (false);
+			stopTrigger.SetActive (false);
+			enemyObj.GetComponent<BoxCollider2D> ().enabled = false;
+			//enemyObj.SetActive (false);
+			//Destroy (EnemyParentObj);
+
+				dieOnce = false;
+			}
 
 		}
 		if (hitpoints > 0.0f && hitpoints < maxHitpoints) {

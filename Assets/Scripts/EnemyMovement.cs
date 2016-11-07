@@ -20,6 +20,9 @@ public class EnemyMovement : MonoBehaviour {
 	private bool hitL = false;
 	private bool hitR = true;
 	private bool flipDirOnce;
+
+	public Animator enemy_Animator;
+	public HitPointsEnemyTotal hpEnemyTotal;
 	//private float flipHFloat;
 
 	void Start(){
@@ -42,17 +45,29 @@ public class EnemyMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		if (player.gameObject.activeInHierarchy == false) {
+		enemy_Animator.SetBool ("StopTrigger", isInRange);
+		enemy_Animator.SetBool ("DetectTrigger", isFollowing);
+
+
+
+
+		if (hptScript.isDead) {
 			
 			flipDirOnce = true;
 			StartCoroutine (Waiter ());
 
 
 
+
+
 		} 
 			
-
-		if ((isFollowing == false && isInRange == false) || hptScript.isDead) {
+		if (hpEnemyTotal.isDeadEnemy) {
+			
+			useSpeed = 0.0f;
+		
+		}
+		else if ((isFollowing == false && isInRange == false) || hptScript.isDead && !hpEnemyTotal.isDeadEnemy) {
 			
 			if (transform.position.x <= moveDistMax) {
 				
@@ -77,15 +92,15 @@ public class EnemyMovement : MonoBehaviour {
 			}
 				
 			if (hitR) {
-					//Debug.Log ("hej");
-					useSpeed = -speed;
-					gameObject.transform.localScale = flipHVectorL;
+				//Debug.Log ("hej");
+				useSpeed = -speed;
+				gameObject.transform.localScale = flipHVectorL;
 
 			} 
 			if (hitL) {
-					//Debug.Log ("hej2");
-					useSpeed = -speed;
-					gameObject.transform.localScale = flipHVector;
+				//Debug.Log ("hej2");
+				useSpeed = -speed;
+				gameObject.transform.localScale = flipHVector;
 				
 			}
 
@@ -95,7 +110,7 @@ public class EnemyMovement : MonoBehaviour {
 			
 			transform.Translate (useSpeed * Time.deltaTime, 0, 0);
 
-		} else if (isFollowing == true && isInRange == false && !hptScript.isDead) {
+		} else if (isFollowing == true && isInRange == false && !hptScript.isDead && !hpEnemyTotal.isDeadEnemy) {
 
 			if (transform.position.x > player.transform.position.x) {
 
@@ -115,7 +130,7 @@ public class EnemyMovement : MonoBehaviour {
 				useSpeed = -followSpeed;
 
 				if (flipDirOnce) {
-					Debug.Log ("wee");
+					
 					flipDirOnce = false;
 					gameObject.transform.localScale = flipHVector;
 
@@ -128,7 +143,7 @@ public class EnemyMovement : MonoBehaviour {
 		
 			useSpeed = 0.0f;
 		
-		}
+		} 
 	}
 
 	IEnumerator Waiter(){

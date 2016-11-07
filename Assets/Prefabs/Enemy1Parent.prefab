@@ -429,8 +429,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010132264068}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 52.844574, y: -19.0361, z: 0}
-  m_LocalScale: {x: -4, y: 4, z: 0.02273927}
+  m_LocalPosition: {x: 52.844574, y: -20.5, z: 21.8}
+  m_LocalScale: {x: -5.346011, y: 5.3460107, z: 0.030391095}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000012097439666}
@@ -544,7 +544,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014272117802}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: -0.23, z: 0}
+  m_LocalPosition: {x: 3.97, y: -2.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -909,6 +909,8 @@ MonoBehaviour:
   isInRange: 0
   player: {fileID: 0}
   hptScript: {fileID: 0}
+  enemy_Animator: {fileID: 95000010490676528}
+  hpEnemyTotal: {fileID: 114000013121274140}
 --- !u!114 &114000010705381250
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -936,7 +938,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8545c0598845e7c4782f479364dff8a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitParticle: {fileID: 146322, guid: ef60a279120498e47bf046e1481174a2, type: 2}
+  hitParticle: {fileID: 1000011638594866, guid: ef60a279120498e47bf046e1481174a2,
+    type: 2}
   mainCamObj: {fileID: 0}
   hitPointsTotalScript: {fileID: 114000013121274140}
   highDmg: {fileID: 0}
@@ -1078,7 +1081,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8545c0598845e7c4782f479364dff8a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitParticle: {fileID: 146322, guid: ef60a279120498e47bf046e1481174a2, type: 2}
+  hitParticle: {fileID: 1000011638594866, guid: ef60a279120498e47bf046e1481174a2,
+    type: 2}
   mainCamObj: {fileID: 0}
   hitPointsTotalScript: {fileID: 114000013121274140}
   highDmg: {fileID: 0}
@@ -1108,8 +1112,21 @@ MonoBehaviour:
   healthBarRect: {fileID: 224000013157589300}
   particlePosObj: {fileID: 1000014272117802}
   EnemyParentObj: {fileID: 1000012576447686}
-  deathParticle: {fileID: 19802714, guid: 050a96b794bf0c242bfbb65492949822, type: 2}
+  tarHigh: {fileID: 1000014010533546}
+  tarMid: {fileID: 1000011393671704}
+  tarLow: {fileID: 1000012823231948}
+  enemyObj: {fileID: 1000010132264068}
+  detectTrigger: {fileID: 1000014042529844}
+  stopTrigger: {fileID: 1000010209672466}
+  attackHigh: {fileID: 1000011557075118}
+  attackMid: {fileID: 1000012319521502}
+  attackLow: {fileID: 1000011851892592}
+  enemyMoveScript: {fileID: 114000010420429406}
+  deathParticle: {fileID: 198000012919405404, guid: a4c192e93b4c8a24da6db3ab59668700,
+    type: 2}
   deathSound: {fileID: 0}
+  enemy_Animator: {fileID: 95000010490676528}
+  isDeadEnemy: 0
 --- !u!114 &114000013299482874
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1146,7 +1163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8545c0598845e7c4782f479364dff8a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitParticle: {fileID: 146322, guid: ef60a279120498e47bf046e1481174a2, type: 2}
+  hitParticle: {fileID: 1000011638594866, guid: ef60a279120498e47bf046e1481174a2,
+    type: 2}
   mainCamObj: {fileID: 0}
   hitPointsTotalScript: {fileID: 114000013121274140}
   highDmg: {fileID: 0}

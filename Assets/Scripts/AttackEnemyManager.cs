@@ -30,6 +30,8 @@ public class AttackEnemyManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+
+
 		if (playOnceWaiter) {
 			playOnceWaiter = false;
 			StartCoroutine (Waiter ());
