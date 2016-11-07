@@ -5,6 +5,9 @@ public class Key : MonoBehaviour {
 
 	private BoxCollider2D boxCol;
 	private bool dropOnce = true;
+
+	public HitPointsEnemyTotal hpEnemyTotal;
+
 	public PickUp pickUpScript;
 	// Use this for initialization
 	void Start () {
@@ -15,7 +18,7 @@ public class Key : MonoBehaviour {
 	void Update () {
 		boxCol = GetComponent<BoxCollider2D> ();
 
-		if (GameObject.Find("Enemy1ParentKey") !=null) {
+		if (!hpEnemyTotal.isDeadEnemy) {
 
 			boxCol.enabled = false;
 
@@ -30,6 +33,7 @@ public class Key : MonoBehaviour {
 
 	IEnumerator pickupWait(float waitTime){
 	
+		gameObject.GetComponent<HingeJoint2D> ().enabled = false;
 		yield return new WaitForSeconds (waitTime);
 		boxCol.enabled = true;
 		pickUpScript.KeyReadyForPickup = true;
