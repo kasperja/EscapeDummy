@@ -29,7 +29,6 @@ public class AttackManager : MonoBehaviour {
 	public float attackDelay = 0.5f;
 
 
-
 	// Use this for initialization
 	void Start () {
 
@@ -199,6 +198,7 @@ public class AttackManager : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D coll){
 	
 		if (coll.tag == "highCol" || coll.tag == "middleCol" || coll.tag == "lowCol") {
+			
 			attackSound.Play ();
 		}
 	}
