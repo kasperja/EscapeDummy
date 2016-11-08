@@ -20,7 +20,7 @@ using System.Collections;
         private Animator m_Anim;            // Reference to the player's animator component.
 	public Animator m_AnimHooked;
         private Rigidbody2D m_Rigidbody2D;
-        private bool m_FacingRight = true;  // For determining which way the player is currently facing.
+        public bool m_FacingRight = true;  // For determining which way the player is currently facing.
 		public ComboManager cm;
 		public HitpointsPlayerTotal hpPlayerTotal;
 		public bool m_Attack1 = false;
