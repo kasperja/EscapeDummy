@@ -61,11 +61,11 @@ public class FollowXShadow : MonoBehaviour {
 
 				if (pc2dScript.sideArrowsBool) {
 
-					iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, Mathf.Lerp (gameObject.transform.position.y, stairY, 0.2f), transform.position.z), 0.2f);
+					iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, Mathf.Lerp (gameObject.transform.position.y, target.transform.position.y, 0.2f), transform.position.z), 0.2f);
 
 				} else {
 
-					iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, stairY, transform.position.z), 0.2f);
+					iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, target.transform.position.y, transform.position.z), 0.2f);
 
 				}
 
@@ -76,7 +76,7 @@ public class FollowXShadow : MonoBehaviour {
 			}else{
 
 				if (pc2dScript.sideArrowsBool) {
-					iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, Mathf.Lerp (gameObject.transform.position.y, stairY, 0.6f), transform.position.z), 0.3f);
+					iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, Mathf.Lerp (gameObject.transform.position.y, target.transform.position.y, 0.6f), transform.position.z), 0.3f);
 				} else {
 				
 					iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, gameObject.transform.position.y, transform.position.z), 0.3f);

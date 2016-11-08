@@ -6,6 +6,7 @@ public class Respawn : MonoBehaviour {
 	public GameObject Player;
 	public HitpointsPlayerTotal hp;
 	public PlatformerCharacter2D pc2DScript;
+	public EnemyMovement em;
 	public GameObject MainCharObj;
 	public GameObject graphics;
 	public Transform respawnPos;
@@ -50,8 +51,10 @@ public class Respawn : MonoBehaviour {
 			UpperTarget.SetActive (true);
 			MiddleTarget.SetActive (true);
 			LowerTarget.SetActive (true);
-			//MainCharObj.GetComponent<BoxCollider2D> ().enabled = true;
-
+			MainCharObj.GetComponent<BoxCollider2D> ().enabled = true;
+			MainCharObj.GetComponent<CircleCollider2D> ().enabled = true;
+			em.walkWhenDead = false;
+			em.killOnce = true;
 
 			m_Anim.SetBool ("Hit", false);
 			hp.isDead = false;

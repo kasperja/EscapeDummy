@@ -69,7 +69,7 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 					UpperTarget.SetActive (false);
 					MiddleTarget.SetActive (false);
 					LowerTarget.SetActive (false);
-					//MainCharObj.GetComponent<BoxCollider2D> ().enabled = false;
+					MainCharObj.GetComponent<BoxCollider2D> ().enabled = false;
 
 					dieOnce = false;
 
@@ -102,7 +102,8 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 					UpperTarget.SetActive (false);
 					MiddleTarget.SetActive (false);
 					LowerTarget.SetActive (false);
-					//MainCharObj.GetComponent<BoxCollider2D> ().enabled = false;
+					MainCharObj.GetComponent<BoxCollider2D> ().enabled = false;
+					MainCharObj.GetComponent<CircleCollider2D> ().enabled = false;
 
 					dieOnce = false;
 
