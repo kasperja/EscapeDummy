@@ -263,7 +263,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 119418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -768, y: 4.4, z: -37}
+  m_LocalPosition: {x: -767, y: 4.4, z: -37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -992,6 +992,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   hp: {fileID: 0}
   pc2DScript: {fileID: 0}
+  em: {fileID: 114000010420429406, guid: dab24b96fa42bdb4bbbd4d9746825fe1, type: 2}
   MainCharObj: {fileID: 0}
   graphics: {fileID: 0}
   respawnPos: {fileID: 0}

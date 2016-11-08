@@ -24,7 +24,10 @@ public class EnemyMovement : MonoBehaviour {
 	public Animator enemy_Animator;
 	public HitPointsEnemyTotal hpEnemyTotal;
 
-	private bool walkWhenDead = false;
+	public bool walkWhenDead = false;
+
+	public bool killOnce = true;
+
 	//private float flipHFloat;
 
 	void Start(){
@@ -51,14 +54,18 @@ public class EnemyMovement : MonoBehaviour {
 		enemy_Animator.SetBool ("DetectTrigger", isFollowing);
 
 
+		if (Input.GetKeyDown (KeyCode.Return) && hptScript.isDead) {
+			
+			StartCoroutine (Waiter ());
+		
+		}
 
-
-		if (hptScript.isDead) {
+		if (hptScript.isDead && killOnce) {
 			
 
 			StartCoroutine (Waiter ());
 
-
+			killOnce = false;
 
 
 
@@ -69,7 +76,7 @@ public class EnemyMovement : MonoBehaviour {
 			useSpeed = 0.0f;
 		
 		}
-		else if (((isFollowing == false && isInRange == false) || walkWhenDead) && !hpEnemyTotal.isDeadEnemy) {
+		else if (((isFollowing == false && isInRange == false) || walkWhenDead) && !hpEnemyTotal.isDeadEnemy ) {
 			
 			if (transform.position.x <= moveDistMax) {
 				
@@ -152,10 +159,14 @@ public class EnemyMovement : MonoBehaviour {
 
 		yield return new WaitForSeconds (2f);
 		walkWhenDead = true;
+
 		flipDirOnce = true;
 		isFollowing = false;
 		isInRange = false;
 
+		yield return new WaitForSeconds (0.1f);
+		walkWhenDead = false;
+		killOnce = true;
 	}
 
 

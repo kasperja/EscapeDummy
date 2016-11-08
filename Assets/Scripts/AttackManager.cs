@@ -28,11 +28,13 @@ public class AttackManager : MonoBehaviour {
 	private bool playOnceMoveObj = true;
 	public float attackDelay = 0.5f;
 
+	public Animator charAnimator;
+
 
 	// Use this for initialization
 	void Start () {
 
-
+		hitCollider.enabled = false;
 
 
 	}
@@ -51,7 +53,7 @@ public class AttackManager : MonoBehaviour {
 		}
 
 			
-		if (Input.GetKeyDown (AttackKey) && playOnce && !mainCharScript.sideArrowsBool && !hpT.isDead) {
+		if (Input.GetKey (AttackKey) && /* playOnce && */ !mainCharScript.sideArrowsBool && !hpT.isDead && (charAnimator.GetBool("Attack3Bool") || charAnimator.GetBool("Attack5Bool") )) {
 
 
 			activate = true;
@@ -68,7 +70,7 @@ public class AttackManager : MonoBehaviour {
 
 
 
-		} if ((Input.GetKeyDown (AttackKey) || Input.GetKeyDown (AttackKey2) || Input.GetKeyDown (AttackKey3)) && playOnce && isJumpKick && !hpT.isDead) {
+		} if ((Input.GetKeyDown (AttackKey) || Input.GetKeyDown (AttackKey2) || Input.GetKeyDown (AttackKey3)) && playOnce && isJumpKick && !hpT.isDead && (charAnimator.GetBool("Attack3Bool") || charAnimator.GetBool("Attack5Bool") )) {
 		
 			activate = true;
 			playOnce = false;
@@ -104,7 +106,7 @@ public class AttackManager : MonoBehaviour {
 		if (activate && !hpT.isDead && playOnceMoveObj) {
 		
 
-			StartCoroutine (MoveObj (transform, transform.position, hitPos.transform.position, 1f));
+			StartCoroutine (MoveObj (transform, transform.position, hitPos.transform.position, 0.05f));
 			playOnceMoveObj = false;
 
 		} else {
@@ -124,17 +126,18 @@ public class AttackManager : MonoBehaviour {
 
 		float elapsedTime = 0.0f;
 		hitCollider.enabled = true;
-		while (elapsedTime < time) {
+		//while (elapsedTime < time) {
 		
-			elapsedTime += Time.deltaTime * 50f;
+		//	elapsedTime += Time.deltaTime * 50f;
 
-			thisTransform.position = Vector3.Lerp(startPos, endPos, (elapsedTime / time));
+			iTween.MoveTo (gameObject, endPos, time);
+			//thisTransform.position = Vector3.Lerp(startPos, endPos, (elapsedTime / time));
 
-			yield return null;
+		//	yield return null;
 
 			//elapsedTime = 0.0f;
 		
-		}
+	//	}
 
 
 		//thisTransform.position = endPos;
@@ -171,16 +174,17 @@ public class AttackManager : MonoBehaviour {
 		//thisTransform.position = startPos;
 		float elapsedTime = 0.0f;
 
-		while (elapsedTime < time) {
+		//while (elapsedTime < time) {
 
-			elapsedTime += Time.deltaTime * 50f;
+			//elapsedTime += Time.deltaTime * 100f;
 
-			thisTransform.position = Vector3.Lerp(startPos, endPos, (elapsedTime / time));
+			iTween.MoveTo (gameObject, endPos, time);
+			//thisTransform.position = Vector3.Lerp(startPos, endPos, (elapsedTime / time));
 
-			yield return null;
+			//yield return null;
 			//elapsedTime = 0.0f;
 
-		}
+		//}
 
 		//thisTransform.position = Vector3.Lerp(startPos, endPos, Time.deltaTime / time);
 

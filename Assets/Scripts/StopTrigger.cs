@@ -4,7 +4,14 @@ using System.Collections;
 public class StopTrigger : MonoBehaviour {
 
 	public EnemyMovement Em;
+	public HitpointsPlayerTotal hptScript;
 
+
+	void Update(){
+
+	
+	
+	}
 	void OnTriggerStay2D(Collider2D collider){
 
 		if (collider.tag == "Player") {
