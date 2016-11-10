@@ -473,7 +473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000013116862248
 GameObject:
   m_ObjectHideFlags: 1
@@ -882,7 +882,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013913809944}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.59, y: 0, z: 0}
+  m_LocalPosition: {x: 11.1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -948,7 +948,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014109482998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -806, y: 22, z: 38.8}
+  m_LocalPosition: {x: -820, y: 22, z: 38.8}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1457,7 +1457,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 3626fe8e008014f6bbd19bb72937b311, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -0.15, y: -0.1}
+  m_Offset: {x: 0, y: -0.1}
   serializedVersion: 2
   m_Size: {x: 0.2, y: 1.2}
 --- !u!95 &95000010344365076
@@ -1593,7 +1593,11 @@ MonoBehaviour:
   hpT: {fileID: 114000010577870838}
   attackSound: {fileID: 0}
   attackDelay: 0.2
+  attackSpeed: 0.4
+  enemyHpOne: {fileID: 0}
+  enemyHpTwo: {fileID: 0}
   charAnimator: {fileID: 95000010344365076}
+  attackHit: 0
 --- !u!114 &114000010480083346
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1694,11 +1698,13 @@ MonoBehaviour:
   attackDelay: 0.1
   slashActive: 0
   attackAnimName: Attack5Bool
+  attackStateName: Attack5
   animatorAttack: {fileID: 95000010344365076}
   rotateEnabled: 0
   rotation: {x: 0, y: 0, z: 0}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
   pc2Dscript: {fileID: 114000010164550830}
+  am: {fileID: 114000013693667178}
 --- !u!114 &114000011177026278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1738,6 +1744,7 @@ MonoBehaviour:
   falconPunchBool: 0
   falconPunchDmg: 200
   hpPlayerTotal: {fileID: 114000010577870838}
+  falconPunchUnlocked: 0
   mainCamObj: {fileID: 0}
 --- !u!114 &114000012429788906
 MonoBehaviour:
@@ -1758,11 +1765,13 @@ MonoBehaviour:
   attackDelay: 0.1
   slashActive: 0
   attackAnimName: Attack5Bool
+  attackStateName: 
   animatorAttack: {fileID: 95000010344365076}
   rotateEnabled: 0
   rotation: {x: 0, y: 0, z: 0}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
   pc2Dscript: {fileID: 114000010164550830}
+  am: {fileID: 0}
 --- !u!114 &114000012788041678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1782,11 +1791,13 @@ MonoBehaviour:
   attackDelay: 0.5
   slashActive: 0
   attackAnimName: Attack3Bool
+  attackStateName: 
   animatorAttack: {fileID: 95000010344365076}
   rotateEnabled: 1
   rotation: {x: 10, y: 0, z: 0}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
   pc2Dscript: {fileID: 114000010164550830}
+  am: {fileID: 0}
 --- !u!114 &114000012810001514
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1829,7 +1840,11 @@ MonoBehaviour:
   hpT: {fileID: 114000010577870838}
   attackSound: {fileID: 0}
   attackDelay: 0.5
+  attackSpeed: 0.4
+  enemyHpOne: {fileID: 0}
+  enemyHpTwo: {fileID: 0}
   charAnimator: {fileID: 95000010344365076}
+  attackHit: 0
 --- !u!114 &114000013360199432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1856,8 +1871,12 @@ MonoBehaviour:
   hitCollider: {fileID: 58000013819224204}
   hpT: {fileID: 114000010577870838}
   attackSound: {fileID: 0}
-  attackDelay: 0.5
+  attackDelay: 0.4
+  attackSpeed: 0.4
+  enemyHpOne: {fileID: 0}
+  enemyHpTwo: {fileID: 0}
   charAnimator: {fileID: 95000010344365076}
+  attackHit: 0
 --- !u!114 &114000013524685410
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1917,8 +1936,12 @@ MonoBehaviour:
   hitCollider: {fileID: 58000013629124678}
   hpT: {fileID: 114000010577870838}
   attackSound: {fileID: 0}
-  attackDelay: 0.2
+  attackDelay: 0.1
+  attackSpeed: 0.2
+  enemyHpOne: {fileID: 0}
+  enemyHpTwo: {fileID: 0}
   charAnimator: {fileID: 95000010344365076}
+  attackHit: 0
 --- !u!114 &114000013919411580
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1938,11 +1961,13 @@ MonoBehaviour:
   attackDelay: 0.5
   slashActive: 0
   attackAnimName: Attack3Bool
+  attackStateName: Attack3
   animatorAttack: {fileID: 95000010344365076}
   rotateEnabled: 1
   rotation: {x: 10, y: 0, z: 0}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
   pc2Dscript: {fileID: 114000010164550830}
+  am: {fileID: 114000013360199432}
 --- !u!114 &114000013964871146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1983,7 +2008,7 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012149168032}
-  serializedVersion: 2
+  serializedVersion: 4
   lengthInSec: 1
   startDelay:
     scalar: 0
@@ -2021,12 +2046,13 @@ ParticleSystem:
       m_RotationOrder: 4
     minMaxState: 0
   speed: 1
-  randomSeed: 1111302376
   looping: 1
   prewarm: 0
   playOnAwake: 0
   moveWithTransform: 0
+  autoRandomSeed: 0
   scalingMode: 1
+  randomSeed: 1111302400
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -3681,7 +3707,7 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010437569210}
-  serializedVersion: 2
+  serializedVersion: 4
   lengthInSec: 1
   startDelay:
     scalar: 0
@@ -3719,12 +3745,13 @@ ParticleSystem:
       m_RotationOrder: 4
     minMaxState: 0
   speed: 1
-  randomSeed: 1111302376
   looping: 1
   prewarm: 0
   playOnAwake: 0
   moveWithTransform: 0
+  autoRandomSeed: 0
   scalingMode: 1
+  randomSeed: 1111302376
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -5379,7 +5406,7 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013727955424}
-  serializedVersion: 2
+  serializedVersion: 4
   lengthInSec: 1
   startDelay:
     scalar: 0
@@ -5417,12 +5444,13 @@ ParticleSystem:
       m_RotationOrder: 4
     minMaxState: 0
   speed: 1
-  randomSeed: 1111302376
   looping: 1
   prewarm: 0
   playOnAwake: 0
   moveWithTransform: 0
+  autoRandomSeed: 0
   scalingMode: 1
+  randomSeed: 1111302400
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -7077,7 +7105,7 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013990866274}
-  serializedVersion: 2
+  serializedVersion: 4
   lengthInSec: 1
   startDelay:
     scalar: 0
@@ -7115,12 +7143,13 @@ ParticleSystem:
       m_RotationOrder: 4
     minMaxState: 0
   speed: 1
-  randomSeed: 1111302376
   looping: 1
   prewarm: 0
   playOnAwake: 0
   moveWithTransform: 0
+  autoRandomSeed: 0
   scalingMode: 1
+  randomSeed: 1111302376
   InitialModule:
     serializedVersion: 2
     enabled: 1

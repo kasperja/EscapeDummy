@@ -11,6 +11,7 @@ public class Key : MonoBehaviour {
 	public PickUp pickUpScript;
 	// Use this for initialization
 	void Start () {
+		gameObject.GetComponent<SpriteRenderer> ().enabled = false;
 	
 	}
 	
@@ -33,6 +34,7 @@ public class Key : MonoBehaviour {
 
 	IEnumerator pickupWait(float waitTime){
 	
+		gameObject.GetComponent<SpriteRenderer> ().enabled = true;
 		gameObject.GetComponent<HingeJoint2D> ().enabled = false;
 		yield return new WaitForSeconds (waitTime);
 		boxCol.enabled = true;

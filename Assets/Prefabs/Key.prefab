@@ -30,7 +30,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000012305606764
 GameObject:
   m_ObjectHideFlags: 0
@@ -66,10 +66,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010102640854}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.5424385, w: 0.8400955}
   m_LocalPosition: {x: 536.4, y: 2.6, z: 52.2}
-  m_LocalScale: {x: 2, y: 2, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4.841057, y: 4.841058, z: 2.420529}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -65.89101}
   m_Children:
   - {fileID: 4000010588768244}
   m_Father: {fileID: 0}
@@ -88,7 +88,7 @@ Rigidbody2D:
   m_GravityScale: 5
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!61 &61000012921500422
@@ -102,9 +102,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.05}
   serializedVersion: 2
-  m_Size: {x: 3.46, y: 2.45}
+  m_Size: {x: 0.6, y: 1}
 --- !u!61 &61000013567361270
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -118,7 +118,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 6, y: 6}
 --- !u!114 &114000011723605750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -145,7 +145,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 92629ec3a751e5d4d8a0c7e9ceb4cbaa, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -161,7 +161,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 9
-  m_Sprite: {fileID: 21300000, guid: 0ac6e751c60568b46a761a809d83af27, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e184b731884c5284b9fd5da4174ef404, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -178,8 +178,8 @@ HingeJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: -1, y: 0}
-  m_ConnectedAnchor: {x: 0.04864502, y: 0}
+  m_Anchor: {x: 0, y: 0.3}
+  m_ConnectedAnchor: {x: 0.6, y: -0.1}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
