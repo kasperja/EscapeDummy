@@ -36,6 +36,8 @@ public class HitPointsEnemy : MonoBehaviour {
 	private bool falconPunchPlayOnce = true;
 
 	public GameObject particlePosObj;
+	public GameObject particlePosObjFalcon;
+
 
 
 
@@ -51,7 +53,7 @@ public class HitPointsEnemy : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-			if (falconPunch.Check())
+		if (falconPunch.Check() && comboManager.falconPunchUnlocked)
 			{
 
 
@@ -96,7 +98,7 @@ public class HitPointsEnemy : MonoBehaviour {
 				//falconParticle.Play ();
 
 
-				Instantiate (falconParticle, particlePosObj.transform.position, Quaternion.identity);
+				Instantiate (falconParticle, particlePosObjFalcon.transform.position, Quaternion.identity);
 
 
 

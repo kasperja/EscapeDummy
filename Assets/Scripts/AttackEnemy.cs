@@ -14,6 +14,7 @@ public class AttackEnemy : MonoBehaviour {
 
 	public float attackDamage = 100.0f;
 
+	public float attackSpeed = 0.4f;
 	public float attackDelay = 0.2f;
 
 	public AudioSource attackSound;
@@ -25,13 +26,15 @@ public class AttackEnemy : MonoBehaviour {
 
 	public GameObject playerObj;
 	public HitpointsPlayerTotal hptPlayerScript;
+
+	private bool attackOnce = true;
 	// Use this for initialization
 
 
 	void Start () {
 		
 
-	
+		attackCollider.enabled = false;
 	}
 	
 	// Update is called once per frame
@@ -56,13 +59,13 @@ public class AttackEnemy : MonoBehaviour {
 		
 		}
 
-		if (activate && activeAttack) {
+		if (activate && activeAttack && attackOnce) {
 
 
 		
-			StartCoroutine (MoveObj (this.transform, this.transform.position, hitPos.transform.position, 1f));
+			StartCoroutine (MoveObj (this.transform, this.transform.position, hitPos.transform.position, attackSpeed));
 
-
+			attackOnce = false;
 		} else {
 			
 
@@ -78,7 +81,10 @@ public class AttackEnemy : MonoBehaviour {
 
 		float elapsedTime = 0.0f;
 
-		while (elapsedTime < time) {
+
+		iTween.MoveTo (gameObject, endPos, time);
+
+		/*while (elapsedTime < time) {
 
 			elapsedTime += Time.deltaTime * 30f;
 
@@ -88,15 +94,14 @@ public class AttackEnemy : MonoBehaviour {
 
 			//elapsedTime = 0.0f;
 
-		}
+		}*/
 
 		//thisTransform.position = Vector3.Lerp(startPos, endPos, Time.deltaTime / time);
-		yield return new WaitForSeconds (0.2f);
+		yield return new WaitForSeconds (attackSpeed);
 		activate = false;
 
 		StartCoroutine (MoveObjTwo (this.transform, this.transform.position, beginPos.transform.position, 1f));
 
-		yield return null;
 
 
 	}
@@ -110,6 +115,7 @@ public class AttackEnemy : MonoBehaviour {
 		yield return new WaitForSeconds (attackFrequency);
 		playOnceWaiter = true;
 		playOnce = true;
+		attackOnce = true;
 	
 
 	}
@@ -118,7 +124,9 @@ public class AttackEnemy : MonoBehaviour {
 
 		float elapsedTime = 0.0f;
 
-		while (elapsedTime < time) {
+
+		iTween.MoveTo (gameObject, endPos, time);
+		/*while (elapsedTime < time) {
 
 			elapsedTime += Time.deltaTime * 30f;
 
@@ -128,7 +136,7 @@ public class AttackEnemy : MonoBehaviour {
 
 			//elapsedTime = 0.0f;
 
-		}
+		}*/
 
 	
 		//thisTransform.position = Vector3.Lerp(startPos, endPos, Time.deltaTime / time);

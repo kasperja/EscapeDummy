@@ -29,7 +29,7 @@ public class HitpointsPlayer : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D collider){
-		if (collider.tag == "EnemyAttackHigh" && playOnceHigh) {
+		if (collider.tag == "EnemyAttackHigh") {
 
 			StartCoroutine (waitHitAnim ());
 
@@ -37,14 +37,14 @@ public class HitpointsPlayer : MonoBehaviour {
 			Instantiate (hitParticle, this.gameObject.transform.position, Quaternion.identity);
 			playOnceHigh = false;
 
-		}else if (collider.tag == "EnemyAttackMiddle" && playOnceMiddle) {
+		}else if (collider.tag == "EnemyAttackMiddle") {
 
 			StartCoroutine (waitHitAnim ());
 			hitPointsTotalScript.hitpoints -= enemyAttackDmgMiddle.attackDamage * dmgMultiplier;
 			Instantiate (hitParticle, this.gameObject.transform.position, Quaternion.identity);
 			playOnceMiddle = false;
 
-		}else if (collider.tag == "EnemyAttackLow" && playOnceLow) {
+		}else if (collider.tag == "EnemyAttackLow") {
 
 			StartCoroutine (waitHitAnim ());
 			hitPointsTotalScript.hitpoints -= enemyAttackDmgLow.attackDamage * dmgMultiplier;

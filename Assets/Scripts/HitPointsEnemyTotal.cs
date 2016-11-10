@@ -73,6 +73,8 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 			//enemyObj.SetActive (false);
 			//Destroy (EnemyParentObj);
 
+
+
 				dieOnce = false;
 			}
 

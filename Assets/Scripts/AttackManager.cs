@@ -27,14 +27,23 @@ public class AttackManager : MonoBehaviour {
 	private bool attackSoundOnce = true;
 	private bool playOnceMoveObj = true;
 	public float attackDelay = 0.5f;
+	public float attackSpeed = 0.4f;
+
+	public HitPointsEnemyTotal enemyHpOne;
+	public HitPointsEnemyTotal enemyHpTwo;
+	private bool enemyOneDieOnce = true;
+	private bool enemyTwoDieOnce = true;
 
 	public Animator charAnimator;
+
+	public bool attackHit = false;
 
 
 	// Use this for initialization
 	void Start () {
 
 		hitCollider.enabled = false;
+
 
 
 	}
@@ -44,14 +53,23 @@ public class AttackManager : MonoBehaviour {
 		
 		if (hpT.isDead) {
 
-
+			attackHit = false;
 			hitCollider.enabled = false;
 
 		} else {
 		
 			//hitCollider.enabled = false;
 		}
-
+		if (enemyHpOne.isDeadEnemy && enemyOneDieOnce) {
+		
+			attackHit = false;
+			enemyOneDieOnce = false;
+		}
+		if (enemyHpTwo.isDeadEnemy && enemyTwoDieOnce) {
+		
+			attackHit = false;
+			enemyTwoDieOnce = false;
+		}
 			
 		if (Input.GetKey (AttackKey) && /* playOnce && */ !mainCharScript.sideArrowsBool && !hpT.isDead && (charAnimator.GetBool("Attack3Bool") || charAnimator.GetBool("Attack5Bool") )) {
 
@@ -106,7 +124,7 @@ public class AttackManager : MonoBehaviour {
 		if (activate && !hpT.isDead && playOnceMoveObj) {
 		
 
-			StartCoroutine (MoveObj (transform, transform.position, hitPos.transform.position, 0.05f));
+			StartCoroutine (MoveObj (transform, transform.position, hitPos.transform.position, attackSpeed));
 			playOnceMoveObj = false;
 
 		} else {
@@ -142,7 +160,7 @@ public class AttackManager : MonoBehaviour {
 
 		//thisTransform.position = endPos;
 		//thisTransform.position = Vector3.Lerp(startPos, endPos, Time.deltaTime / time);
-		yield return new WaitForSeconds (0.05f);
+		yield return new WaitForSeconds (attackSpeed);
 
 		activate = false;
 
@@ -202,9 +220,17 @@ public class AttackManager : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D coll){
 	
 		if (coll.tag == "highCol" || coll.tag == "middleCol" || coll.tag == "lowCol") {
-			
+
+			attackHit = true;
+
 			attackSound.Play ();
 		}
+	}
+
+	IEnumerator waitHit(){
+	
+		yield return new WaitForSeconds (attackSpeed);
+		attackHit = false;
 	}
 
 

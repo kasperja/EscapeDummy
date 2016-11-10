@@ -14,14 +14,18 @@ public class FollowPath : MonoBehaviour {
 	private bool slashStart = false;
 	//public KeyCode attackKey;
 	public string attackAnimName;
+	public string attackStateName;
 	public Animator animatorAttack;
 	public bool rotateEnabled = false;
 	public Vector3 rotation = new Vector3();
 	public Quaternion startRotation;
 
 	public PlatformerCharacter2D pc2Dscript;
+	public AttackManager am;
+
 
 	private bool playOnce = true;
+
 
 	// Use this for initialization
 	void Start () {
@@ -36,7 +40,7 @@ public class FollowPath : MonoBehaviour {
 
 
 
-		if (animatorAttack.GetBool(attackAnimName) && slashOnce) {
+		if (animatorAttack.GetBool(attackAnimName) && animatorAttack.GetCurrentAnimatorStateInfo(0).IsName(attackStateName) && slashOnce && am.attackHit) {
 		
 			slashActive = true;
 			slashOnce = false;
@@ -95,10 +99,11 @@ public class FollowPath : MonoBehaviour {
 	IEnumerator slashDelay(float attackD){
 		
 
-		slashActive = false;
+
 
 		yield return new WaitForSeconds (attackD);
 
+		slashActive = false;
 		slashStart = true;
 
 
