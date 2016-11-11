@@ -18,6 +18,7 @@ public class AttackManager : MonoBehaviour {
 	public KeyCode AttackKey2 = KeyCode.F;
 	public KeyCode AttackKey3 = KeyCode.F;
 	public PlatformerCharacter2D mainCharScript;
+	public GameObject charObj;
 	public float attackDamage = 100.0f;
 	//public AudioSource whooshSound;
 	public CircleCollider2D hitCollider;
@@ -89,7 +90,9 @@ public class AttackManager : MonoBehaviour {
 			
 		if (Input.GetKey (AttackKey) && /* playOnce && */ !mainCharScript.sideArrowsBool && !hpT.isDead && (charAnimator.GetBool("Attack3Bool") || charAnimator.GetBool("Attack5Bool") )) {
 
-
+			if (charAnimator.GetBool ("Attack5Bool")) {
+				iTween.MoveBy (charObj, new Vector3 (10f, 0f, 0f), 0.8f);
+			}
 			activate = true;
 			//StopCoroutine ("MoveObjTwo");
 			playOnce = false;
@@ -236,6 +239,7 @@ public class AttackManager : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D coll){
 	
 		if (coll.tag == "highCol" || coll.tag == "middleCol" || coll.tag == "lowCol") {
+
 
 			attackSound.Play ();
 		}

@@ -38,7 +38,7 @@ public class HitPointsEnemy : MonoBehaviour {
 	public GameObject particlePosObj;
 	public GameObject particlePosObjFalcon;
 
-
+	public GameObject enemyObj;
 
 
 	// Use this for initialization
@@ -108,6 +108,9 @@ public class HitPointsEnemy : MonoBehaviour {
 
 			} else {
 				
+				iTween.PunchScale (enemyObj, new Vector3 (2f, -1f, 0f), 0.5f);
+				iTween.MoveBy (enemyObj, new Vector3 (10f, 0f, 0f), 0.3f);
+
 				hitPointsTotalScript.hitpoints -= highDmg.attackDamage * dmgMultiplier;
 				Instantiate (hitParticle, gameObject.transform.position, Quaternion.identity);
 				playOnceHigh = false;
@@ -135,7 +138,9 @@ public class HitPointsEnemy : MonoBehaviour {
 
 
 			} else {
-				
+
+				iTween.PunchScale (enemyObj, new Vector3 (2f, -1f, 0f), 0.5f);
+				iTween.MoveBy (enemyObj, new Vector3 (20f, 0f, 0f), 0.3f);
 				hitPointsTotalScript.hitpoints -= middleDmg.attackDamage * dmgMultiplier;
 				Instantiate (hitParticle, gameObject.transform.position, Quaternion.identity);
 				playOnceMiddle = false;

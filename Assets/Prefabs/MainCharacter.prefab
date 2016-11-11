@@ -948,7 +948,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014109482998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 323.8, y: 22, z: 38.8}
+  m_LocalPosition: {x: -732, y: 22, z: 38.8}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1592,6 +1592,7 @@ MonoBehaviour:
   AttackKey2: 101
   AttackKey3: 101
   mainCharScript: {fileID: 114000010164550830}
+  charObj: {fileID: 1000010055231870}
   attackDamage: 100
   hitCollider: {fileID: 58000013257684832}
   hpT: {fileID: 114000010577870838}
@@ -1624,6 +1625,8 @@ MonoBehaviour:
   hitParticle: {fileID: 1000011638594866, guid: ef60a279120498e47bf046e1481174a2,
     type: 2}
   MainCharScript: {fileID: 114000010164550830}
+  graphicsObj: {fileID: 1000012991551484}
+  charObj: {fileID: 1000010055231870}
   m_Anim: {fileID: 95000010344365076}
 --- !u!114 &114000010577870838
 MonoBehaviour:
@@ -1684,6 +1687,8 @@ MonoBehaviour:
   hitParticle: {fileID: 1000011638594866, guid: ef60a279120498e47bf046e1481174a2,
     type: 2}
   MainCharScript: {fileID: 114000010164550830}
+  graphicsObj: {fileID: 1000012991551484}
+  charObj: {fileID: 1000010055231870}
   m_Anim: {fileID: 95000010344365076}
 --- !u!114 &114000011110196828
 MonoBehaviour:
@@ -1841,6 +1846,7 @@ MonoBehaviour:
   AttackKey2: 119
   AttackKey3: 119
   mainCharScript: {fileID: 114000010164550830}
+  charObj: {fileID: 1000010055231870}
   attackDamage: 40
   hitCollider: {fileID: 58000013489782658}
   hpT: {fileID: 114000010577870838}
@@ -1875,6 +1881,7 @@ MonoBehaviour:
   AttackKey2: 119
   AttackKey3: 119
   mainCharScript: {fileID: 114000010164550830}
+  charObj: {fileID: 1000010055231870}
   attackDamage: 100
   hitCollider: {fileID: 58000013819224204}
   hpT: {fileID: 114000010577870838}
@@ -1907,6 +1914,8 @@ MonoBehaviour:
   hitParticle: {fileID: 1000011638594866, guid: ef60a279120498e47bf046e1481174a2,
     type: 2}
   MainCharScript: {fileID: 114000010164550830}
+  graphicsObj: {fileID: 1000012991551484}
+  charObj: {fileID: 1000010055231870}
   m_Anim: {fileID: 95000010344365076}
 --- !u!114 &114000013535632038
 MonoBehaviour:
@@ -1942,6 +1951,7 @@ MonoBehaviour:
   AttackKey2: 101
   AttackKey3: 101
   mainCharScript: {fileID: 114000010164550830}
+  charObj: {fileID: 1000010055231870}
   attackDamage: 60
   hitCollider: {fileID: 58000013629124678}
   hpT: {fileID: 114000010577870838}
@@ -2206,7 +2216,7 @@ ParticleSystem:
         atime7: 0
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
-      minColor: {r: 0.14117648, g: 0.043137256, b: 0.043137256, a: 1}
+      minColor: {r: 0.05882353, g: 0.011764706, b: 0.011764706, a: 1}
       maxColor: {r: 0.21176471, g: 0.05882353, b: 0.05882353, a: 1}
       minMaxState: 2
     startSize:
@@ -3763,7 +3773,7 @@ ParticleSystem:
   moveWithTransform: 0
   autoRandomSeed: 0
   scalingMode: 1
-  randomSeed: 1111302376
+  randomSeed: 1111302400
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -3905,7 +3915,7 @@ ParticleSystem:
         atime7: 0
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
-      minColor: {r: 0.14117648, g: 0.043137256, b: 0.043137256, a: 1}
+      minColor: {r: 0.05882353, g: 0.011764706, b: 0.011764706, a: 1}
       maxColor: {r: 0.21176471, g: 0.05882353, b: 0.05882353, a: 1}
       minMaxState: 2
     startSize:
@@ -5604,7 +5614,7 @@ ParticleSystem:
         atime7: 0
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
-      minColor: {r: 0.14117648, g: 0.043137256, b: 0.043137256, a: 1}
+      minColor: {r: 0.05882353, g: 0.011764706, b: 0.011764706, a: 1}
       maxColor: {r: 0.21176471, g: 0.05882353, b: 0.05882353, a: 1}
       minMaxState: 2
     startSize:
@@ -7161,7 +7171,7 @@ ParticleSystem:
   moveWithTransform: 0
   autoRandomSeed: 0
   scalingMode: 1
-  randomSeed: 1111302376
+  randomSeed: 1111302400
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -7303,7 +7313,7 @@ ParticleSystem:
         atime7: 0
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
-      minColor: {r: 0.14117648, g: 0.043137256, b: 0.043137256, a: 1}
+      minColor: {r: 0.05882353, g: 0.011764706, b: 0.011764706, a: 1}
       maxColor: {r: 0.21176471, g: 0.05882353, b: 0.05882353, a: 1}
       minMaxState: 2
     startSize:
