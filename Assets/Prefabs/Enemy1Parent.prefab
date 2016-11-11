@@ -119,6 +119,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1000011158437756
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000012955913238}
+  m_Layer: 9
+  m_Name: ParticlePosFalcon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1000011297579572
 GameObject:
   m_ObjectHideFlags: 1
@@ -415,7 +430,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012086366848}
   m_Layer: 9
-  m_Name: ParticlePosFalcon
+  m_Name: ParticlePosLarger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -459,6 +474,7 @@ Transform:
   - {fileID: 4000010792276214}
   - {fileID: 224000011530156454}
   - {fileID: 4000011937980372}
+  - {fileID: 4000012955913238}
   - {fileID: 4000012086366848}
   m_Father: {fileID: 4000013722216706}
   m_RootOrder: 0
@@ -560,7 +576,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012380057922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.97, y: -2.39, z: 0}
+  m_LocalPosition: {x: 4.27, y: -2.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -573,12 +589,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014272117802}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.11, y: 0.47, z: 0}
+  m_LocalPosition: {x: 0.25, y: 0.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010543049988}
-  m_RootOrder: 11
+  m_RootOrder: 12
 --- !u!4 &4000012097439666
 Transform:
   m_ObjectHideFlags: 1
@@ -621,6 +637,19 @@ Transform:
   - {fileID: 4000013549767734}
   m_Father: {fileID: 4000010543049988}
   m_RootOrder: 2
+--- !u!4 &4000012955913238
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011158437756}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.11, y: 0.47, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000010543049988}
+  m_RootOrder: 11
 --- !u!4 &4000013098082488
 Transform:
   m_ObjectHideFlags: 1
@@ -983,7 +1012,7 @@ MonoBehaviour:
   comboManager: {fileID: 0}
   falconPunchBool: 0
   particlePosObj: {fileID: 1000012380057922}
-  particlePosObjFalcon: {fileID: 1000014272117802}
+  particlePosObjFalcon: {fileID: 1000011158437756}
   enemyObj: {fileID: 1000010132264068}
 --- !u!114 &114000011344686158
 MonoBehaviour:
@@ -1131,7 +1160,7 @@ MonoBehaviour:
   comboManager: {fileID: 0}
   falconPunchBool: 0
   particlePosObj: {fileID: 1000012380057922}
-  particlePosObjFalcon: {fileID: 1000014272117802}
+  particlePosObjFalcon: {fileID: 1000011158437756}
   enemyObj: {fileID: 1000010132264068}
 --- !u!114 &114000013121274140
 MonoBehaviour:
@@ -1148,7 +1177,10 @@ MonoBehaviour:
   maxHitpoints: 0
   healthBar: {fileID: 1000010239694234}
   healthBarRect: {fileID: 224000013157589300}
+  mainCamObj: {fileID: 0}
+  enemyGraphics: {fileID: 1000011064637170}
   particlePosObj: {fileID: 1000012380057922}
+  particleHitPosObj: {fileID: 1000014272117802}
   EnemyParentObj: {fileID: 1000012576447686}
   tarHigh: {fileID: 1000014010533546}
   tarMid: {fileID: 1000011393671704}
@@ -1160,7 +1192,11 @@ MonoBehaviour:
   attackMid: {fileID: 1000012319521502}
   attackLow: {fileID: 1000011851892592}
   enemyMoveScript: {fileID: 114000010420429406}
+  slashHigh: {fileID: 0}
+  slashMiddle: {fileID: 0}
   deathParticle: {fileID: 198000012919405404, guid: a4c192e93b4c8a24da6db3ab59668700,
+    type: 2}
+  hitLargeParticle: {fileID: 198000010405026494, guid: 0145611886b47c4499639bd14b6a999b,
     type: 2}
   deathSound: {fileID: 0}
   enemy_Animator: {fileID: 95000010490676528}
@@ -1216,7 +1252,7 @@ MonoBehaviour:
   comboManager: {fileID: 0}
   falconPunchBool: 0
   particlePosObj: {fileID: 1000012380057922}
-  particlePosObjFalcon: {fileID: 1000014272117802}
+  particlePosObjFalcon: {fileID: 1000011158437756}
   enemyObj: {fileID: 1000010132264068}
 --- !u!114 &114000013391434064
 MonoBehaviour:
