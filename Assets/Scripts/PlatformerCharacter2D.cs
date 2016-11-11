@@ -56,6 +56,9 @@ using System.Collections;
 	public float friction = 0.9f;
 	private bool jumpOnce = true;
 	public GameObject WaitForHookedCol;
+	public GameObject WaitForHookedCol2;
+
+	private bool anticiHook = true;
 
 	public Vector2 direction;
 
@@ -95,11 +98,12 @@ using System.Collections;
 	private bool climbingStairsBoolCol = false;
 
 	public Transform[] wayPointArray;
-	float percentsPerSecond = 1f;
-	float currentPathPercent = 0.0f;
+	private float percentsPerSecond = 1f;
+	private float currentPathPercent = 0.0f;
 
 	public bool hookJumpActive = false;
 	public bool hookJumpActiveOnce = true;
+	public bool hookJumpActiveOnceTween = true;
 
 	public SawMover sawMoverScript;
 
@@ -125,6 +129,8 @@ using System.Collections;
 	private float minLerp = 0f;
 
 	private float waitJumpTime = 0.2f;
+
+	public float velocity = 0f;
 
         private void Awake()
         {
@@ -222,42 +228,40 @@ using System.Collections;
 
 		} 
 
-		if (hookJumpActive && hookJumpActiveOnce && !hpPlayerTotal.isDead) {
+		if (hookJumpActive && !hpPlayerTotal.isDead) {
 
 
 
 
 
+			if (hookJumpActiveOnce) {
 
+				StartCoroutine (stopOnHook (2f));
+				StartCoroutine (waitHook (2f));
 
-			StartCoroutine (stopOnHook (30f));
+				hookJumpActiveOnce = false;
 
+			}
 			//currentPathPercent += percentsPerSecond * Time.deltaTime;
 
 			//sawMoverScript.gameObject.GetComponent<CircleCollider2D> ().enabled = false;
 
-			float Velocity = Mathf.Lerp(minLerp, maxLerp, t);
 
-			t += 0.4f * Time.deltaTime;
+			if (anticiHook) {
 
-			if (t > 0.5f) {
+
 			
-				float temp = maxLerp;
-				maxLerp = minLerp;
-				minLerp = temp;
-				t = 0.0f;
-			
+			} else {
+
+				percentsPerSecond += 1f * Time.deltaTime;
+
+				currentPathPercent += percentsPerSecond * Time.deltaTime;
+
+				iTween.PutOnPath (gameObject, wayPointArray, currentPathPercent);
+
 			}
 
 
-			float PathOnePercent = Vector3.Distance(iTween.PointOnPath(wayPointArray, currentPathPercent) , iTween.PointOnPath(wayPointArray, currentPathPercent + 0.1f));
-			float RealOnePercent = iTween.PathLength(wayPointArray) * 0.1f;
-			float Distortion = RealOnePercent/PathOnePercent;
-			float RealPercentToMove = (Velocity * Time.deltaTime) / iTween.PathLength(wayPointArray);
-			currentPathPercent = (RealPercentToMove * Distortion) + currentPathPercent;
-
-
-				iTween.PutOnPath (gameObject, wayPointArray, currentPathPercent);
 			
 			//iTween.PutOnPath (gameObject, wayPointArray, currentPathPercent);
 
@@ -266,8 +270,9 @@ using System.Collections;
 
 			//Debug.Log ("hi");
 			WaitForHookedCol.SetActive (false);
+			WaitForHookedCol2.SetActive (false);
 
-			StartCoroutine (waitHook (1f));
+
 
 
 
@@ -1020,12 +1025,13 @@ using System.Collections;
 		
 
 
-		yield return new WaitForSeconds (1f);
+	yield return new WaitForSeconds (waitTime);
 		
 		hookJumpActiveOnce = false;
 		hookJumpActive = false;
 		m_Anim.SetBool ("Grab", false);
 		WaitForHookedCol.SetActive (true);
+		WaitForHookedCol2.SetActive (true);
 
 	
 	}
@@ -1085,9 +1091,16 @@ IEnumerator waitCamStart(float waitTime){
 
 IEnumerator stopOnHook(float waitTime){
 
+	currentPathPercent = 0.0f;
 
+		anticiHook = true;
 
-	yield return new WaitForSeconds (0.98f);
+	yield return new WaitForSeconds (0.1f);
+
+		anticiHook = false;
+
+	yield return new WaitForSeconds (waitTime);
+
 	/*percentsPerSecond = 1f;
 	yield return new WaitForSeconds (0.2f);
 	percentsPerSecond = 0.1f;

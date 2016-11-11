@@ -34,6 +34,9 @@ public class AttackManager : MonoBehaviour {
 	private bool enemyOneDieOnce = true;
 	private bool enemyTwoDieOnce = true;
 
+	public EnemyMovement emOne;
+	public EnemyMovement emTwo;
+
 	public Animator charAnimator;
 
 	public bool attackHit = false;
@@ -69,6 +72,19 @@ public class AttackManager : MonoBehaviour {
 		
 			attackHit = false;
 			enemyTwoDieOnce = false;
+		}
+
+		if (emOne.isInRange && mainCharScript.m_FacingRight) {
+		
+			attackHit = true;
+		
+		} else if (emTwo.isInRange && !mainCharScript.m_FacingRight) {
+
+			attackHit = true;
+
+		} else {
+		
+			attackHit = false;
 		}
 			
 		if (Input.GetKey (AttackKey) && /* playOnce && */ !mainCharScript.sideArrowsBool && !hpT.isDead && (charAnimator.GetBool("Attack3Bool") || charAnimator.GetBool("Attack5Bool") )) {
@@ -221,16 +237,8 @@ public class AttackManager : MonoBehaviour {
 	
 		if (coll.tag == "highCol" || coll.tag == "middleCol" || coll.tag == "lowCol") {
 
-			attackHit = true;
-
 			attackSound.Play ();
 		}
-	}
-
-	IEnumerator waitHit(){
-	
-		yield return new WaitForSeconds (attackSpeed);
-		attackHit = false;
 	}
 
 
