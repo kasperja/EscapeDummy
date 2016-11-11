@@ -9,7 +9,11 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 	public GameObject healthBar;
 	public RectTransform healthBarRect;
 
+	public GameObject mainCamObj;
+
+	public GameObject enemyGraphics;
 	public GameObject particlePosObj;
+	public GameObject particleHitPosObj;
 	public GameObject EnemyParentObj;
 
 	public GameObject tarHigh;
@@ -23,9 +27,12 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 	public GameObject attackLow;
 	public EnemyMovement enemyMoveScript;
 
+	public GameObject slashHigh;
+	public GameObject slashMiddle;
 
 
 	public ParticleSystem deathParticle;
+	public ParticleSystem hitLargeParticle;
 	public AudioSource deathSound;
 	public Animator enemy_Animator;
 	public bool isDeadEnemy = false;
@@ -51,6 +58,7 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 
 
 			Instantiate (deathParticle, particlePosObj.transform.position, Quaternion.identity);
+			Instantiate (hitLargeParticle, particleHitPosObj.transform.position, Quaternion.identity);
 
 			deathSound.Play ();
 
@@ -73,7 +81,19 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 			//enemyObj.SetActive (false);
 			//Destroy (EnemyParentObj);
 
-			iTween.PunchScale (enemyObj, new Vector3 (-2f, 2f, 0f), 0.7f);
+				slashHigh.GetComponent<FollowPath> ().slashActive = false;
+				slashHigh.GetComponent<FollowPath> ().slashActive = false;
+				slashHigh.SetActive(false);
+				slashMiddle.SetActive(false);
+
+			
+				iTween.MoveBy (enemyObj, new Vector3 (0f, -2f, 0f), 0.3f);
+				iTween.PunchScale (enemyObj, new Vector3 (-1f, 2f, 0f), 0.7f);
+				iTween.PunchPosition (mainCamObj, new Vector3 (2f, 2f, 0f), 1f);
+
+				StartCoroutine (waitEnableSlash ());
+
+				enemyGraphics.GetComponent<SpriteRenderer> ().sortingOrder = 151;
 
 				dieOnce = false;
 			}
@@ -95,7 +115,13 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 
 	}
 
+	IEnumerator waitEnableSlash(){
 
+		yield return new WaitForSeconds (4f);
+		slashHigh.SetActive(true);
+		slashMiddle.SetActive(true);
+	
+	}
 	
 
 }
