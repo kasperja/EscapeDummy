@@ -984,6 +984,7 @@ MonoBehaviour:
   falconPunchBool: 0
   particlePosObj: {fileID: 1000012380057922}
   particlePosObjFalcon: {fileID: 1000014272117802}
+  enemyObj: {fileID: 1000010132264068}
 --- !u!114 &114000011344686158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1131,6 +1132,7 @@ MonoBehaviour:
   falconPunchBool: 0
   particlePosObj: {fileID: 1000012380057922}
   particlePosObjFalcon: {fileID: 1000014272117802}
+  enemyObj: {fileID: 1000010132264068}
 --- !u!114 &114000013121274140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1215,6 +1217,7 @@ MonoBehaviour:
   falconPunchBool: 0
   particlePosObj: {fileID: 1000012380057922}
   particlePosObjFalcon: {fileID: 1000014272117802}
+  enemyObj: {fileID: 1000010132264068}
 --- !u!114 &114000013391434064
 MonoBehaviour:
   m_ObjectHideFlags: 1

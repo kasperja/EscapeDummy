@@ -73,7 +73,7 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 			//enemyObj.SetActive (false);
 			//Destroy (EnemyParentObj);
 
-
+			iTween.PunchScale (enemyObj, new Vector3 (-2f, 2f, 0f), 0.7f);
 
 				dieOnce = false;
 			}
