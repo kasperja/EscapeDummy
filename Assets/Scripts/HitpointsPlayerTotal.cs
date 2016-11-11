@@ -48,6 +48,7 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 	
 		if (hitpoints <= 0.0f) {
 
+			m_Anim.SetBool ("Hit", false);
 			//em.isFollowing = false;
 			//em.isInRange = false;
 
@@ -127,6 +128,7 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 			if (Input.GetKey (KeyCode.Q)) {
 
 				m_Anim.SetBool ("Block", true);
+				m_Anim.SetBool ("Hit", false);
 				blockBool = true;
 				StartCoroutine (waitBlock (0.6f));
 				UpperTarget.SetActive (false);
@@ -144,6 +146,7 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 			if (Input.GetKey (KeyCode.Q)) {
 
 				m_Anim.SetBool ("Block", true);
+				m_Anim.SetBool ("Hit", false);
 				blockBool = true;
 				StartCoroutine (waitBlock (0.6f));
 				UpperTarget.SetActive (false);
