@@ -1539,7 +1539,7 @@ MonoBehaviour:
   camTarget: {fileID: 4000011352107702}
   anchor: {fileID: 0}
   sideArrowsBool: 0
-  friction: 5
+  friction: 10
   WaitForHookedCol: {fileID: 0}
   WaitForHookedCol2: {fileID: 0}
   direction: {x: 0, y: -1}
@@ -1558,6 +1558,7 @@ MonoBehaviour:
   stairPosDown: {fileID: 0}
   wayPointArray:
   - {fileID: 4000013832108326}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   hookJumpActive: 0
