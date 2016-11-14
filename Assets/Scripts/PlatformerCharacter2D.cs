@@ -817,7 +817,7 @@ using System.Collections;
 		}
 		if (other.gameObject.tag == "TopStairTrigger") {
 
-			friction = 4f;
+			
 
 		}
 		if (other.gameObject.tag == "StairsTriggerColScale") {
@@ -890,7 +890,7 @@ using System.Collections;
 		}
 		if (other.gameObject.tag == "TopStairTrigger") {
 
-			friction = 0.9f;
+			
 
 		}
 		if (other.gameObject.tag == "StairsTriggerColScale") {
@@ -1005,7 +1005,7 @@ using System.Collections;
 
 		if (other.gameObject.tag == "TopStairTrigger") {
 
-			friction = 4f;
+			
 
 		}
 

@@ -1014,7 +1014,9 @@ MonoBehaviour:
   particlePosObj: {fileID: 1000012380057922}
   particlePosObjFalcon: {fileID: 1000011158437756}
   enemyObj: {fileID: 1000010132264068}
+  graphicsObj: {fileID: 1000011064637170}
   enemyAnim: {fileID: 95000010490676528}
+  enemyFacingLeft: 0
 --- !u!114 &114000011344686158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1163,7 +1165,9 @@ MonoBehaviour:
   particlePosObj: {fileID: 1000012380057922}
   particlePosObjFalcon: {fileID: 1000011158437756}
   enemyObj: {fileID: 1000010132264068}
+  graphicsObj: {fileID: 1000011064637170}
   enemyAnim: {fileID: 95000010490676528}
+  enemyFacingLeft: 0
 --- !u!114 &114000013121274140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1256,7 +1260,9 @@ MonoBehaviour:
   particlePosObj: {fileID: 1000012380057922}
   particlePosObjFalcon: {fileID: 1000011158437756}
   enemyObj: {fileID: 1000010132264068}
+  graphicsObj: {fileID: 1000011064637170}
   enemyAnim: {fileID: 95000010490676528}
+  enemyFacingLeft: 0
 --- !u!114 &114000013391434064
 MonoBehaviour:
   m_ObjectHideFlags: 1

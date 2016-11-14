@@ -39,10 +39,13 @@ public class HitPointsEnemy : MonoBehaviour {
 	public GameObject particlePosObjFalcon;
 
 	public GameObject enemyObj;
+	public GameObject graphicsObj;
 
 	public Animator enemyAnim;
 
+	private float punchAmmount = 6f;
 
+	public bool enemyFacingLeft = true;
 	// Use this for initialization
 	/*public Collider2D highCol;
 	public Collider2D middleCol;
@@ -110,7 +113,13 @@ public class HitPointsEnemy : MonoBehaviour {
 
 			} else {
 				
-				iTween.PunchScale (enemyObj, new Vector3 (2f, -1f, 0f), 0.5f);
+				if (enemyFacingLeft) {
+					iTween.PunchScale (graphicsObj, new Vector3 (punchAmmount, -1f, 0f), 0.8f);
+
+				} else {
+
+					iTween.PunchScale (graphicsObj, new Vector3 (-punchAmmount, -1f, 0f), 0.8f);
+				}
 				iTween.MoveBy (enemyObj, new Vector3 (10f, 0f, 0f), 0.3f);
 				StartCoroutine (hitWait ());
 
@@ -142,7 +151,13 @@ public class HitPointsEnemy : MonoBehaviour {
 
 			} else {
 
-				iTween.PunchScale (enemyObj, new Vector3 (2f, -1f, 0f), 0.5f);
+				if (enemyFacingLeft) {
+					iTween.PunchScale (graphicsObj, new Vector3 (punchAmmount, -1f, 0f), 0.8f);
+
+				} else {
+
+					iTween.PunchScale (graphicsObj, new Vector3 (-punchAmmount, -1f, 0f), 0.8f);
+				}
 				iTween.MoveBy (enemyObj, new Vector3 (20f, 0f, 0f), 0.3f);
 				StartCoroutine (hitWait ());
 				hitPointsTotalScript.hitpoints -= middleDmg.attackDamage * dmgMultiplier;
@@ -170,8 +185,14 @@ public class HitPointsEnemy : MonoBehaviour {
 
 
 			} else {
+				if (enemyFacingLeft) {
+					iTween.PunchScale (graphicsObj, new Vector3 (punchAmmount, -1f, 0f), 0.8f);
 
-				iTween.PunchScale (enemyObj, new Vector3 (2f, -1f, 0f), 0.5f);
+				} else {
+				
+					iTween.PunchScale (graphicsObj, new Vector3 (-punchAmmount, -1f, 0f), 0.8f);
+				}
+
 				iTween.MoveBy (enemyObj, new Vector3 (20f, 0f, 0f), 0.3f);
 				StartCoroutine (hitWait ());
 				hitPointsTotalScript.hitpoints -= lowDmg.attackDamage * dmgMultiplier;
