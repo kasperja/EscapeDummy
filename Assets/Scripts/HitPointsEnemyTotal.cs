@@ -88,7 +88,7 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 
 			
 				iTween.MoveBy (enemyObj, new Vector3 (0f, -2f, 0f), 0.3f);
-				iTween.PunchScale (enemyObj, new Vector3 (-1f, 2f, 0f), 0.7f);
+			//	iTween.PunchScale (enemyObj, new Vector3 (-1f, 2f, 0f), 0.7f);
 				iTween.PunchPosition (mainCamObj, new Vector3 (2f, 2f, 0f), 1f);
 
 				StartCoroutine (waitEnableSlash ());
