@@ -42,6 +42,7 @@ TagManager:
   - LookUpTrigger
   - DeathCol
   - ScaleCharTriggerBack
+  - StopGrabTrigger
   layers:
   - Default
   - TransparentFX

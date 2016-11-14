@@ -779,8 +779,15 @@ using System.Collections;
 
 		
 		}*/
+	if (other.gameObject.tag == "StopGrabTrigger") {
+		hookJumpActiveOnce = false;
+		hookJumpActive = false;
+		m_Anim.SetBool ("Grab", false);
+		WaitForHookedCol.SetActive (true);
+		WaitForHookedCol2.SetActive (true);
+		m_Grounded = true;
 
-
+	}
 		if (other.gameObject.tag == "HookTrigger") {
 
 			
