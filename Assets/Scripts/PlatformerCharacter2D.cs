@@ -98,7 +98,7 @@ using System.Collections;
 	private bool climbingStairsBoolCol = false;
 
 	public Transform[] wayPointArray;
-	private float percentsPerSecond = 2.7f;
+	private float percentsPerSecond = 1.4f;
 	private float currentPathPercent = 0.0f;
 
 	public bool hookJumpActive = false;
@@ -236,8 +236,8 @@ using System.Collections;
 
 			if (hookJumpActiveOnce) {
 
-				StartCoroutine (stopOnHook (0.5f));
-				StartCoroutine (waitHook (0.5f));
+				StartCoroutine (stopOnHook (3f));
+				StartCoroutine (waitHook (3f));
 
 				hookJumpActiveOnce = false;
 
@@ -253,7 +253,7 @@ using System.Collections;
 			
 			} else {
 
-				percentsPerSecond += 0f * Time.deltaTime;
+				//percentsPerSecond += 0f * Time.deltaTime;
 
 				currentPathPercent += percentsPerSecond * Time.deltaTime;
 
