@@ -28,6 +28,8 @@ public class EnemyMovement : MonoBehaviour {
 
 	public bool killOnce = true;
 
+	public bool waitForWalk = true;
+
 	//private float flipHFloat;
 
 	void Start(){
@@ -119,7 +121,7 @@ public class EnemyMovement : MonoBehaviour {
 			
 			transform.Translate (useSpeed * Time.deltaTime, 0, 0);
 
-		} else if (isFollowing == true && isInRange == false && !hptScript.isDead && !hpEnemyTotal.isDeadEnemy) {
+		} else if (isFollowing == true && isInRange == false && !hptScript.isDead && !hpEnemyTotal.isDeadEnemy /*&& waitForWalk*/) {
 
 			if (transform.position.x > player.transform.position.x) {
 

@@ -126,10 +126,11 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 		
 
 
-		} else if (hitpoints > 0.0f && hitpoints < maxHitpoints) {
+		} else if (hitpoints > 0.0f && hitpoints <= maxHitpoints) {
 
 			if (enemyMiddleAttack.playerBlockEnabled && blockOncePlayer) {
 				
+				iTween.MoveBy (MainCharObj, new Vector3 (-10f,0f,0f), 0.6f);
 				Instantiate (blockPlayerParticle, blockParticlePosObj.transform.position, Quaternion.identity);
 				StartCoroutine (waitBlockEnable ());
 				blockOncePlayer = false;
@@ -140,7 +141,7 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 			healthBarRect.sizeDelta = new Vector2(((hitpoints / maxHitpoints)* 100), 10);
 
 			if (Input.GetKey (KeyCode.Q)) {
-
+				//iTween.MoveBy (MainCharObj, new Vector3 (-10f,0f,0f), 0.6f);
 				m_Anim.SetBool ("Block", true);
 				m_Anim.SetBool ("Hit", false);
 				blockBool = true;
