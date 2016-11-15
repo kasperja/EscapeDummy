@@ -8,6 +8,7 @@ namespace UnityStandardAssets._2D
         public Transform target;
 		public Transform targetEnd;
 		public Transform targetStart;
+		public Transform targetSaw;
 		public Transform targetHooked;
 		public Transform targetNotHooked;
 		public PlatformerCharacter2D MainCharScript;
@@ -34,10 +35,10 @@ namespace UnityStandardAssets._2D
         // Update is called once per frame
         private void Update()
         {
-			if (MainCharScript.hooked) {
+			if (MainCharScript.hookJumpActive) {
 			
-				damping = .1f;
-				target = targetNotHooked;
+				damping = .4f;
+				target = targetSaw;
 			
 			} else if (MainCharScript.endCamBool) {
 			

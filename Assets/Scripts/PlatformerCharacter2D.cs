@@ -98,7 +98,7 @@ using System.Collections;
 	private bool climbingStairsBoolCol = false;
 
 	public Transform[] wayPointArray;
-	private float percentsPerSecond = 1.4f;
+	private float percentsPerSecond = 1.2f;
 	private float currentPathPercent = 0.0f;
 
 	public bool hookJumpActive = false;

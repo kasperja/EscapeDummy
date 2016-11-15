@@ -970,6 +970,7 @@ MonoBehaviour:
   target: {fileID: 0}
   targetEnd: {fileID: 0}
   targetStart: {fileID: 0}
+  targetSaw: {fileID: 0}
   targetHooked: {fileID: 0}
   targetNotHooked: {fileID: 0}
   MainCharScript: {fileID: 0}
