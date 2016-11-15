@@ -43,6 +43,7 @@ TagManager:
   - DeathCol
   - ScaleCharTriggerBack
   - StopGrabTrigger
+  - blockCol
   layers:
   - Default
   - TransparentFX

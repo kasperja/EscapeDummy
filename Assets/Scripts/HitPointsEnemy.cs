@@ -43,9 +43,14 @@ public class HitPointsEnemy : MonoBehaviour {
 
 	public Animator enemyAnim;
 
-	private float punchAmmount = 6f;
+	private float punchAmmount = -10f;
 
 	public bool enemyFacingLeft = true;
+
+	private bool blockOnce = true;
+
+
+
 	// Use this for initialization
 	/*public Collider2D highCol;
 	public Collider2D middleCol;
@@ -57,6 +62,8 @@ public class HitPointsEnemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+
 
 		if (falconPunch.Check() && comboManager.falconPunchUnlocked)
 			{
@@ -91,6 +98,8 @@ public class HitPointsEnemy : MonoBehaviour {
 
 
 
+
+
 		if (collider.tag == "highCol" && playOnceHigh) {
 			//Debug.Log ("HIT High Attack");
 
@@ -114,11 +123,12 @@ public class HitPointsEnemy : MonoBehaviour {
 			} else {
 				
 				if (enemyFacingLeft) {
-					iTween.PunchScale (graphicsObj, new Vector3 (punchAmmount, -1f, 0f), 0.8f);
+					iTween.PunchScale (graphicsObj, new Vector3 (punchAmmount, -1f, 0f), 0.5f);
+
 
 				} else {
 
-					iTween.PunchScale (graphicsObj, new Vector3 (-punchAmmount, -1f, 0f), 0.8f);
+					iTween.PunchScale (graphicsObj, new Vector3 (-punchAmmount, -1f, 0f), 0.5f);
 				}
 				iTween.MoveBy (enemyObj, new Vector3 (10f, 0f, 0f), 0.3f);
 				StartCoroutine (hitWait ());
@@ -149,14 +159,14 @@ public class HitPointsEnemy : MonoBehaviour {
 				falconPunchPlayOnce = false;
 
 
-			} else {
+			}  else {
 
 				if (enemyFacingLeft) {
-					iTween.PunchScale (graphicsObj, new Vector3 (punchAmmount, -1f, 0f), 0.8f);
+					iTween.PunchScale (graphicsObj, new Vector3 (punchAmmount, -1f, 0f), 0.5f);
 
 				} else {
 
-					iTween.PunchScale (graphicsObj, new Vector3 (-punchAmmount, -1f, 0f), 0.8f);
+					iTween.PunchScale (graphicsObj, new Vector3 (-punchAmmount, -1f, 0f), 0.5f);
 				}
 				iTween.MoveBy (enemyObj, new Vector3 (20f, 0f, 0f), 0.3f);
 				StartCoroutine (hitWait ());
@@ -186,11 +196,11 @@ public class HitPointsEnemy : MonoBehaviour {
 
 			} else {
 				if (enemyFacingLeft) {
-					iTween.PunchScale (graphicsObj, new Vector3 (punchAmmount, -1f, 0f), 0.8f);
+					iTween.PunchScale (graphicsObj, new Vector3 (punchAmmount, -1f, 0f), 0.5f);
 
 				} else {
 				
-					iTween.PunchScale (graphicsObj, new Vector3 (-punchAmmount, -1f, 0f), 0.8f);
+					iTween.PunchScale (graphicsObj, new Vector3 (-punchAmmount, -1f, 0f), 0.5f);
 				}
 
 				iTween.MoveBy (enemyObj, new Vector3 (20f, 0f, 0f), 0.3f);
@@ -221,6 +231,7 @@ public class HitPointsEnemy : MonoBehaviour {
 		enemyAnim.SetBool ("HitBool", false);
 	
 	}
+
 
 
 }
