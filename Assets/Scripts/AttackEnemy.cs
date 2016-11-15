@@ -28,6 +28,7 @@ public class AttackEnemy : MonoBehaviour {
 	public HitpointsPlayerTotal hptPlayerScript;
 
 	private bool attackOnce = true;
+	public bool playerBlockEnabled = false;
 	// Use this for initialization
 
 
@@ -152,6 +153,16 @@ public class AttackEnemy : MonoBehaviour {
 		if (coll.tag == "middlePlayerCol") {
 			attackSound.Play ();
 		}
+		if (coll.tag == "blockColPlayer") {
+			StartCoroutine (waitBlockPlayer ());
+		}
+	
+	}
+
+	IEnumerator waitBlockPlayer(){
+		playerBlockEnabled = true;
+		yield return new WaitForSeconds (1f);
+		playerBlockEnabled = false;
 	
 	}
 

@@ -1147,6 +1147,7 @@ MonoBehaviour:
   activeAttack: 1
   playerObj: {fileID: 0}
   hptPlayerScript: {fileID: 0}
+  playerBlockEnabled: 0
 --- !u!114 &114000012249037516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1203,6 +1204,7 @@ MonoBehaviour:
   activeAttack: 0
   playerObj: {fileID: 0}
   hptPlayerScript: {fileID: 0}
+  playerBlockEnabled: 0
 --- !u!114 &114000012925518302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1322,6 +1324,7 @@ MonoBehaviour:
   activeAttack: 0
   playerObj: {fileID: 0}
   hptPlayerScript: {fileID: 0}
+  playerBlockEnabled: 0
 --- !u!114 &114000013391434064
 MonoBehaviour:
   m_ObjectHideFlags: 1
