@@ -35,7 +35,7 @@ public class HitpointsPlayer : MonoBehaviour {
 		if (collider.tag == "EnemyAttackHigh") {
 
 			StartCoroutine (waitHitAnim ());
-			iTween.PunchScale (graphicsObj, new Vector3 (1f, -1f, 0f), 0.8f);
+			iTween.PunchScale (graphicsObj, new Vector3 (1f, -1f, 0f), 0.5f);
 			iTween.MoveBy (charObj, new Vector3 (-10f, 0f, 0f), 0.5f);
 			hitPointsTotalScript.hitpoints -= enemyAttackDmgHigh.attackDamage * dmgMultiplier;
 			Instantiate (hitParticle, this.gameObject.transform.position, Quaternion.identity);
@@ -44,7 +44,7 @@ public class HitpointsPlayer : MonoBehaviour {
 		}else if (collider.tag == "EnemyAttackMiddle") {
 
 			StartCoroutine (waitHitAnim ());
-			iTween.PunchScale (graphicsObj, new Vector3 (1f, -1f, 0f), 0.8f);
+			iTween.PunchScale (graphicsObj, new Vector3 (1f, -1f, 0f), 0.5f);
 			iTween.MoveBy (charObj, new Vector3 (-10f, 0f, 0f), 0.5f);
 			hitPointsTotalScript.hitpoints -= enemyAttackDmgMiddle.attackDamage * dmgMultiplier;
 			Instantiate (hitParticle, this.gameObject.transform.position, Quaternion.identity);
@@ -53,7 +53,7 @@ public class HitpointsPlayer : MonoBehaviour {
 		}else if (collider.tag == "EnemyAttackLow") {
 
 			StartCoroutine (waitHitAnim ());
-			iTween.PunchScale (graphicsObj, new Vector3 (1f, -1f, 0f), 0.8f);
+			iTween.PunchScale (graphicsObj, new Vector3 (1f, -1f, 0f), 0.5f);
 			iTween.MoveBy (charObj, new Vector3 (-10f, 0f, 0f), 0.5f);
 			hitPointsTotalScript.hitpoints -= enemyAttackDmgLow.attackDamage * dmgMultiplier;
 			Instantiate (hitParticle, this.gameObject.transform.position, Quaternion.identity);

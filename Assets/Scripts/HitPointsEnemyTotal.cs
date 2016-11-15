@@ -48,6 +48,7 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 
 	public bool enemyBlock = false;
 	public bool blockOnce = true;
+	public bool blockOnceTwo = true;
 
 	private bool dieOnce = true;
 
@@ -65,14 +66,15 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if ((highDmg.blockColEnemyEnable || middleDmg.blockColEnemyEnable || lowDmg.blockColEnemyEnable) && blockOnce) {
+		if ((highDmg.blockColEnemyEnable || middleDmg.blockColEnemyEnable || lowDmg.blockColEnemyEnable) && blockOnceTwo) {
+
 
 			Instantiate (blockParticle, blockParticlePos.transform.position, Quaternion.identity);
 			iTween.MoveBy (enemyObj, new Vector3 (20f, 0f, 0f), 0.3f);
-			Debug.Log ("blockeeeed");
+			//Debug.Log ("blockeedd");
 			StartCoroutine (waitBlockTwo ());
+			blockOnceTwo = false;
 
-			blockOnce = false;
 
 		}
 
@@ -166,16 +168,16 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 		enemy_Animator.SetBool ("Block", false);
 
 		blockColObj.SetActive (true);
-		tarHigh.SetActive (false);
-		tarMid.SetActive (false);
-		tarLow.SetActive (false);
+		tarHigh.GetComponent<CircleCollider2D>().enabled = false;
+		tarMid.GetComponent<CircleCollider2D>().enabled = false;
+		tarLow.GetComponent<CircleCollider2D>().enabled = false;
 
 
-		yield return new WaitForSeconds (0.3f);
+		yield return new WaitForSeconds (1f);
 		blockColObj.SetActive (false);
-		tarHigh.SetActive (true);
-		tarMid.SetActive (true);
-		tarLow.SetActive (true);
+		tarHigh.GetComponent<CircleCollider2D>().enabled = true;
+		tarMid.GetComponent<CircleCollider2D>().enabled = true;
+		tarLow.GetComponent<CircleCollider2D>().enabled = true;
 		attackManagerEnemyScript.blockOnce = true;
 
 
@@ -184,7 +186,7 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 	IEnumerator waitBlockTwo(){
 
 		yield return new WaitForSeconds (0.5f);
-		blockOnce = true;
+		blockOnceTwo = true;
 
 	}
 	

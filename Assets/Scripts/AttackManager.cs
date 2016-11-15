@@ -41,7 +41,7 @@ public class AttackManager : MonoBehaviour {
 	public Animator charAnimator;
 
 	public bool blockColEnemyEnable = false;
-
+	private bool blockEnemyOnce = true;
 
 
 	public bool attackHit = false;
@@ -248,11 +248,11 @@ public class AttackManager : MonoBehaviour {
 			attackSound.Play ();
 		}
 
-		if (coll.tag == "blockCol"){
+		if (coll.tag == "blockCol" && blockEnemyOnce){
 
 
 			StartCoroutine (enemyBlock ());
-
+			blockEnemyOnce = false;
 
 		} 
 	}
@@ -261,6 +261,8 @@ public class AttackManager : MonoBehaviour {
 		blockColEnemyEnable = true;
 		yield return new WaitForSeconds (0.1f);
 		blockColEnemyEnable = false;
+		yield return new WaitForSeconds (0.3f);
+		blockEnemyOnce = true;
 
 
 	}
