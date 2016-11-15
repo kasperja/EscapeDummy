@@ -27,6 +27,12 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 	public GameObject MiddleTarget;
 	public GameObject LowerTarget;
 
+	public AttackEnemy enemyMiddleAttack;
+	public bool blockOncePlayer = true;
+	public GameObject blockCollider;
+	public GameObject blockParticlePosObj;
+	public ParticleSystem blockPlayerParticle;
+
 	public PlatformerCharacter2D pc2D;
 
 	public Animator m_Anim;
@@ -45,7 +51,7 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 		if (hitpoints <= 0.0f) {
 
 			m_Anim.SetBool ("Hit", false);
@@ -122,6 +128,14 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 
 		} else if (hitpoints > 0.0f && hitpoints < maxHitpoints) {
 
+			if (enemyMiddleAttack.playerBlockEnabled && blockOncePlayer) {
+				
+				Instantiate (blockPlayerParticle, blockParticlePosObj.transform.position, Quaternion.identity);
+				StartCoroutine (waitBlockEnable ());
+				blockOncePlayer = false;
+			
+			}
+
 			healthBar.SetActive (true);
 			healthBarRect.sizeDelta = new Vector2(((hitpoints / maxHitpoints)* 100), 10);
 
@@ -131,6 +145,8 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 				m_Anim.SetBool ("Hit", false);
 				blockBool = true;
 				StartCoroutine (waitBlock (0.6f));
+
+				blockCollider.GetComponent<BoxCollider2D> ().enabled = true;
 				UpperTarget.SetActive (false);
 				MiddleTarget.SetActive (false);
 				LowerTarget.SetActive (false);
@@ -170,8 +186,15 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 		UpperTarget.SetActive (true);
 		MiddleTarget.SetActive (true);
 		LowerTarget.SetActive (true);
+		blockCollider.GetComponent<BoxCollider2D> ().enabled = false;
 
 
+
+	}
+	IEnumerator waitBlockEnable(){
+		
+		yield return new WaitForSeconds (1f);
+		blockOncePlayer = true;
 	}
 
 }
