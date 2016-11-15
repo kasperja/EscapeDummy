@@ -27,6 +27,15 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 	public GameObject attackLow;
 	public EnemyMovement enemyMoveScript;
 
+	public AttackEnemyManager attackManagerEnemyScript;
+
+	public AttackManager highDmg;
+	public AttackManager middleDmg;
+	public AttackManager lowDmg;
+
+	public ParticleSystem blockParticle;
+	public GameObject blockParticlePos;
+
 	public GameObject slashHigh;
 	public GameObject slashMiddle;
 
@@ -37,17 +46,43 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 	public Animator enemy_Animator;
 	public bool isDeadEnemy = false;
 
+	public bool enemyBlock = false;
+	public bool blockOnce = true;
+
 	private bool dieOnce = true;
+
+	public GameObject blockColObj;
+
+
 
 	// Use this for initialization
 	void Start () {
 	
 		maxHitpoints = hitpoints;
-
+		blockColObj.SetActive (true);
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		if ((highDmg.blockColEnemyEnable || middleDmg.blockColEnemyEnable || lowDmg.blockColEnemyEnable) && blockOnce) {
+
+			Instantiate (blockParticle, blockParticlePos.transform.position, Quaternion.identity);
+			iTween.MoveBy (enemyObj, new Vector3 (20f, 0f, 0f), 0.3f);
+			Debug.Log ("blockeeeed");
+			StartCoroutine (waitBlockTwo ());
+
+			blockOnce = false;
+
+		}
+
+
+		if (enemyBlock && blockOnce) {
+		
+			StartCoroutine (waitBlock ());
+			enemyBlock = false;
+			blockOnce = false;
+		}
 
 		if (hitpoints <= 0.0f) {
 
@@ -121,6 +156,36 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 		slashHigh.SetActive(true);
 		slashMiddle.SetActive(true);
 	
+	}
+
+	IEnumerator waitBlock(){
+
+		enemy_Animator.SetBool ("Block", true);
+		iTween.MoveBy (enemyObj, new Vector3 (5f, 0f, 0f), 0.3f);
+		yield return new WaitForSeconds (0.1f);
+		enemy_Animator.SetBool ("Block", false);
+
+		blockColObj.SetActive (true);
+		tarHigh.SetActive (false);
+		tarMid.SetActive (false);
+		tarLow.SetActive (false);
+
+
+		yield return new WaitForSeconds (0.3f);
+		blockColObj.SetActive (false);
+		tarHigh.SetActive (true);
+		tarMid.SetActive (true);
+		tarLow.SetActive (true);
+		attackManagerEnemyScript.blockOnce = true;
+
+
+	}
+
+	IEnumerator waitBlockTwo(){
+
+		yield return new WaitForSeconds (0.5f);
+		blockOnce = true;
+
 	}
 	
 

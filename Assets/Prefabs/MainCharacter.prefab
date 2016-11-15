@@ -582,21 +582,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1000013955707694
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 4000011314937054}
-  m_Layer: 0
-  m_Name: RespawnPos1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1000013990866274
 GameObject:
   m_ObjectHideFlags: 1
@@ -888,19 +873,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000010118509874}
   m_RootOrder: 2
---- !u!4 &4000011314937054
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013955707694}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.1, y: 0, z: 0}
-  m_LocalScale: {x: 0.09459094, y: 0.094591066, z: 0.16757095}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 4000013832108326}
-  m_RootOrder: 13
 --- !u!4 &4000011318594080
 Transform:
   m_ObjectHideFlags: 1
@@ -1223,7 +1195,6 @@ Transform:
   - {fileID: 4000010762000728}
   - {fileID: 4000010638681090}
   - {fileID: 4000012166226394}
-  - {fileID: 4000011314937054}
   m_Father: {fileID: 4000011802787232}
   m_RootOrder: 5
 --- !u!4 &4000013915200302
@@ -1604,6 +1575,7 @@ MonoBehaviour:
   emOne: {fileID: 0}
   emTwo: {fileID: 0}
   charAnimator: {fileID: 95000010344365076}
+  blockColEnemyEnable: 0
   attackHit: 0
 --- !u!114 &114000010480083346
 MonoBehaviour:
@@ -1858,6 +1830,7 @@ MonoBehaviour:
   emOne: {fileID: 0}
   emTwo: {fileID: 0}
   charAnimator: {fileID: 95000010344365076}
+  blockColEnemyEnable: 0
   attackHit: 0
 --- !u!114 &114000013360199432
 MonoBehaviour:
@@ -1893,6 +1866,7 @@ MonoBehaviour:
   emOne: {fileID: 0}
   emTwo: {fileID: 0}
   charAnimator: {fileID: 95000010344365076}
+  blockColEnemyEnable: 0
   attackHit: 0
 --- !u!114 &114000013524685410
 MonoBehaviour:
@@ -1963,6 +1937,7 @@ MonoBehaviour:
   emOne: {fileID: 0}
   emTwo: {fileID: 0}
   charAnimator: {fileID: 95000010344365076}
+  blockColEnemyEnable: 0
   attackHit: 0
 --- !u!114 &114000013919411580
 MonoBehaviour:

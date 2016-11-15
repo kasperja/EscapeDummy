@@ -14,6 +14,11 @@ public class AttackEnemyManager : MonoBehaviour {
 	public bool wooshPlayOnce = true;
 
 	private Animator m_Anim;
+	public HitPointsEnemyTotal hpt;
+	public bool blockOnce = true;
+	public bool blockActive = true;
+
+	public EnemyMovement em;
 
 	// Use this for initialization
 	private void Awake(){
@@ -39,12 +44,14 @@ public class AttackEnemyManager : MonoBehaviour {
 		}
 
 
-		if (randomAttackNumber >= 0.0f && randomAttackNumber < 0.33f) {
+		if (randomAttackNumber >= 0.0f && randomAttackNumber < 0.33f && blockOnce && em.isInRange && blockActive) {
 		
 
-			attackEnemyHigh.activeAttack = true;
-			attackEnemyMiddle.activeAttack = false;
-			attackEnemyLow.activeAttack = false;
+			hpt.enemyBlock = true;
+
+			blockOnce = false;
+
+			StartCoroutine (waitBlock ());
 
 		
 		} else if (randomAttackNumber >= 0.33f && randomAttackNumber <= 0.66f) {
@@ -62,7 +69,7 @@ public class AttackEnemyManager : MonoBehaviour {
 		
 		}
 
-		if (attackEnemyHigh.activate == true) {
+		if (attackEnemyHigh.activate == true && !m_Anim.GetBool("Block")) {
 
 			m_Anim.SetBool ("Attack1Bool", true);
 
@@ -72,7 +79,7 @@ public class AttackEnemyManager : MonoBehaviour {
 			}
 
 		
-		} else if (attackEnemyMiddle.activate == true) {
+		} else if (attackEnemyMiddle.activate == true && !m_Anim.GetBool("Block")) {
 			
 			m_Anim.SetBool ("Attack2Bool", true);
 
@@ -81,7 +88,7 @@ public class AttackEnemyManager : MonoBehaviour {
 				wooshPlayOnce = false;
 			}
 
-		} else if (attackEnemyLow.activate == true) {
+		} else if (attackEnemyLow.activate == true && !m_Anim.GetBool("Block")) {
 
 			m_Anim.SetBool ("Attack3Bool", true);
 
@@ -108,7 +115,16 @@ public class AttackEnemyManager : MonoBehaviour {
 
 		yield return new WaitForSeconds (0.0f);
 
-		randomAttackNumber = Random.Range (0.33f, 0.66f);
+		randomAttackNumber = Random.Range (0.15f, 0.66f);
 		playOnceWaiter = true;
+		hpt.blockOnce = true;
 	}
+
+	IEnumerator waitBlock(){
+		blockActive = false;
+		yield return new WaitForSeconds (4f);
+		blockActive = true;
+	
+	}
+
 }
