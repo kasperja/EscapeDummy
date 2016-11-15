@@ -117,13 +117,14 @@ public class AttackEnemyManager : MonoBehaviour {
 
 		randomAttackNumber = Random.Range (0.15f, 0.66f);
 		playOnceWaiter = true;
-		hpt.blockOnce = true;
+
 	}
 
 	IEnumerator waitBlock(){
 		blockActive = false;
 		yield return new WaitForSeconds (4f);
 		blockActive = true;
+		hpt.blockOnce = true;
 	
 	}
 

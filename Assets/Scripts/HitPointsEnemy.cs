@@ -47,7 +47,7 @@ public class HitPointsEnemy : MonoBehaviour {
 
 	public bool enemyFacingLeft = true;
 
-	private bool blockOnce = true;
+
 
 
 
@@ -122,14 +122,14 @@ public class HitPointsEnemy : MonoBehaviour {
 
 			} else {
 				
-				if (enemyFacingLeft) {
+				/*if (enemyFacingLeft) {
 					iTween.PunchScale (graphicsObj, new Vector3 (punchAmmount, -1f, 0f), 0.5f);
 
 
 				} else {
 
 					iTween.PunchScale (graphicsObj, new Vector3 (-punchAmmount, -1f, 0f), 0.5f);
-				}
+				}*/
 				iTween.MoveBy (enemyObj, new Vector3 (10f, 0f, 0f), 0.3f);
 				StartCoroutine (hitWait ());
 
@@ -161,13 +161,13 @@ public class HitPointsEnemy : MonoBehaviour {
 
 			}  else {
 
-				if (enemyFacingLeft) {
+				/*if (enemyFacingLeft) {
 					iTween.PunchScale (graphicsObj, new Vector3 (punchAmmount, -1f, 0f), 0.5f);
 
 				} else {
 
 					iTween.PunchScale (graphicsObj, new Vector3 (-punchAmmount, -1f, 0f), 0.5f);
-				}
+				}*/
 				iTween.MoveBy (enemyObj, new Vector3 (20f, 0f, 0f), 0.3f);
 				StartCoroutine (hitWait ());
 				hitPointsTotalScript.hitpoints -= middleDmg.attackDamage * dmgMultiplier;
@@ -195,13 +195,13 @@ public class HitPointsEnemy : MonoBehaviour {
 
 
 			} else {
-				if (enemyFacingLeft) {
+				/*if (enemyFacingLeft) {
 					iTween.PunchScale (graphicsObj, new Vector3 (punchAmmount, -1f, 0f), 0.5f);
 
 				} else {
 				
 					iTween.PunchScale (graphicsObj, new Vector3 (-punchAmmount, -1f, 0f), 0.5f);
-				}
+				}*/
 
 				iTween.MoveBy (enemyObj, new Vector3 (20f, 0f, 0f), 0.3f);
 				StartCoroutine (hitWait ());
