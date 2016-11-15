@@ -1015,6 +1015,7 @@ MonoBehaviour:
   hpEnemyTotal: {fileID: 114000013121274140}
   walkWhenDead: 0
   killOnce: 1
+  waitForWalk: 1
 --- !u!114 &114000010705381250
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1218,6 +1219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Em: {fileID: 114000010420429406}
   hptScript: {fileID: 0}
+  m_AnimEnemy: {fileID: 95000010490676528}
 --- !u!114 &114000013046991970
 MonoBehaviour:
   m_ObjectHideFlags: 1

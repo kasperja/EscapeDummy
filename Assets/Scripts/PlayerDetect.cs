@@ -20,6 +20,7 @@ public class PlayerDetect : MonoBehaviour {
 
 		if (collider.tag == "Player") {
 
+			//Em.waitForWalk = false;
 			if (dangerSoundPlayOnce) {
 				DangerSound.Play ();
 				dangerSoundPlayOnce = false;
@@ -32,6 +33,7 @@ public class PlayerDetect : MonoBehaviour {
 			void OnTriggerExit2D(Collider2D collider){
 
 		if (collider.tag == "Player") {
+
 
 			Em.isFollowing = false;
 			dangerSoundPlayOnce = false;
@@ -47,5 +49,6 @@ public class PlayerDetect : MonoBehaviour {
 
 	
 	}
+
 
 }
