@@ -737,7 +737,7 @@ ParticleSystem:
   moveWithTransform: 0
   autoRandomSeed: 1
   scalingMode: 1
-  randomSeed: 0
+  randomSeed: 63274344
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -893,7 +893,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       minMaxState: 0
     startSize:
-      scalar: 2
+      scalar: 1.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1122,7 +1122,7 @@ ParticleSystem:
     serializedVersion: 2
     m_Type: 0
     rate:
-      scalar: 600
+      scalar: 800
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1440,7 +1440,7 @@ ParticleSystem:
       minGradient:
         key0:
           serializedVersion: 2
-          rgba: 45
+          rgba: 197393
         key1:
           serializedVersion: 2
           rgba: 4278190142
@@ -2476,7 +2476,7 @@ ParticleSystem:
   moveWithTransform: 0
   autoRandomSeed: 1
   scalingMode: 1
-  randomSeed: 0
+  randomSeed: 1945563055
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -2632,7 +2632,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       minMaxState: 0
     startSize:
-      scalar: 2
+      scalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2861,7 +2861,7 @@ ParticleSystem:
     serializedVersion: 2
     m_Type: 0
     rate:
-      scalar: 600
+      scalar: 800
       maxCurve:
         serializedVersion: 2
         m_Curve:
