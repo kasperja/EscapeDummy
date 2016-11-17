@@ -132,6 +132,8 @@ using System.Collections;
 
 	public float velocity = 0f;
 
+	public bool attackDone = true;
+
         private void Awake()
         {
 			Application.targetFrameRate = 900;
@@ -374,7 +376,7 @@ using System.Collections;
 
 		}
 
-		if (cm.falconPunchBool && playOnce4 && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead) {
+		/*if (cm.falconPunchBool && playOnce4 && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead) {
 
 			if(attackSoundOnce){
 
@@ -385,7 +387,7 @@ using System.Collections;
 			playOnce4 = false;
 			StartCoroutine (WaitForAnim4(0.5f));
 
-		} /*else if (Input.GetKeyDown (KeyCode.E) && playOnce1 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead) {
+		}*/ /*else if (Input.GetKeyDown (KeyCode.E) && playOnce1 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead) {
 
 			if(attackSoundOnce){
 
@@ -409,7 +411,7 @@ using System.Collections;
 			StartCoroutine (WaitForAnim2(0.5f));
 
 			}*/
-		else if (Input.GetKeyDown (KeyCode.W) && playOnce3 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead) {
+	if (Input.GetKeyDown (KeyCode.W) && playOnce3 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead && attackDone) {
 
 			if(attackSoundOnce){
 
@@ -418,10 +420,23 @@ using System.Collections;
 			}
 				m_Attack3 = true;
 				playOnce3 = false;
-			StartCoroutine (WaitForAnim3(0.5f));
+			StartCoroutine (WaitForAnim3(1f));
 
 		}
-		else if (Input.GetKeyDown(KeyCode.E) && playOnce5 && cm.falconPunchBool == false && !hpPlayerTotal.isDead) {
+	else if (Input.GetKeyDown(KeyCode.E) && playOnce5 && cm.falconPunchBool == false && m_Grounded && !hpPlayerTotal.isDead && attackDone) {
+
+			if(attackSoundOnce){
+
+				attackSound1.Play ();
+				attackSoundOnce = false;
+			}
+			m_Attack5 = true;
+			playOnce5 = false;
+			StartCoroutine (WaitForAnim5(1f));
+
+		}
+
+		/*else if ((Input.GetKeyDown (KeyCode.R) || Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown (KeyCode.W)) && playOnce5 && cm.falconPunchBool == false && !m_Grounded && !hpPlayerTotal.isDead) {
 
 			if(attackSoundOnce){
 
@@ -432,20 +447,7 @@ using System.Collections;
 			playOnce5 = false;
 			StartCoroutine (WaitForAnim5(0.7f));
 
-		}
-
-		else if ((Input.GetKeyDown (KeyCode.R) || Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown (KeyCode.W)) && playOnce5 && cm.falconPunchBool == false && !m_Grounded && !hpPlayerTotal.isDead) {
-
-			if(attackSoundOnce){
-
-				attackSound1.Play ();
-				attackSoundOnce = false;
-			}
-			m_Attack5 = true;
-			playOnce5 = false;
-			StartCoroutine (WaitForAnim5(0.7f));
-
-		}
+		}*/
 			
 		else if (!Input.GetKey (KeyCode.E) && !Input.GetKey (KeyCode.R) && !Input.GetKey (KeyCode.W) 
 			&& cm.falconPunchBool == false) {
@@ -479,7 +481,8 @@ using System.Collections;
 	IEnumerator WaitForAnim3(float animWaitTime){
 			yield return new WaitForSeconds (animWaitTime);
 			m_Attack3 = false;
-			playOnce3 = true;
+			//playOnce3 = true;
+			m_Grounded = true;
 		}
 
 	IEnumerator WaitForAnim4(float animWaitTime){
@@ -492,8 +495,10 @@ using System.Collections;
 	IEnumerator WaitForAnim5(float animWaitTime){
 		yield return new WaitForSeconds (animWaitTime);
 		m_Attack5 = false;
-		playOnce5 = true;
-		m_Anim.SetBool ("JumpKickToJump", true);
+		//playOnce5 = true;
+		m_Grounded = true;
+		m_Anim.SetBool ("JumpKickToJump", false);
+
 	}
 
 
@@ -607,7 +612,7 @@ using System.Collections;
                 }
             }
             // If the player should jump...
-		if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive  && !hpPlayerTotal.isDead && jumpOnce)
+	if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive  && !hpPlayerTotal.isDead && jumpOnce && !m_Attack3 && !m_Attack5)
             {
 			if (!sideArrowsBool) {
 				if (jumpOnce) {
@@ -704,7 +709,7 @@ using System.Collections;
 			}
 		}
 		// If the player should jump...
-		if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive && !hpPlayerTotal.isDead && jumpOnce)
+	if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive && !hpPlayerTotal.isDead && jumpOnce && !m_Attack3 && !m_Attack5)
 		{
 			if (!sideArrowsBool) {
 				if (jumpOnce) {

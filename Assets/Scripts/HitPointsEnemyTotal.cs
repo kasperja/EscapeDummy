@@ -173,7 +173,7 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 		tarLow.GetComponent<CircleCollider2D>().enabled = false;
 
 
-		yield return new WaitForSeconds (1f);
+		yield return new WaitForSeconds (0.5f);
 		blockColObj.SetActive (false);
 		tarHigh.GetComponent<CircleCollider2D>().enabled = true;
 		tarMid.GetComponent<CircleCollider2D>().enabled = true;

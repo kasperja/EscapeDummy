@@ -46,6 +46,7 @@ public class AttackManager : MonoBehaviour {
 
 	public bool attackHit = false;
 
+	private bool attackDone = true;
 
 	// Use this for initialization
 	void Start () {
@@ -58,7 +59,21 @@ public class AttackManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		mainCharScript.attackDone = attackDone;
+
+		if (charAnimator.GetCurrentAnimatorStateInfo (0).IsName ("Attack3") || charAnimator.GetCurrentAnimatorStateInfo (0).IsName ("Attack5")) {
 		
+			attackDone = false;
+		
+		} else {
+		
+			attackDone = true;
+			mainCharScript.playOnce5 = true;
+			mainCharScript.playOnce3 = true;
+
+		}
+
 		if (hpT.isDead) {
 
 			attackHit = false;
@@ -92,9 +107,9 @@ public class AttackManager : MonoBehaviour {
 			attackHit = false;
 		}
 			
-		if (Input.GetKey (AttackKey) && /* playOnce && */ !mainCharScript.sideArrowsBool && !hpT.isDead && (charAnimator.GetBool("Attack3Bool") || charAnimator.GetBool("Attack5Bool") )) {
+		if (Input.GetKey (AttackKey) && /* playOnce && */ !mainCharScript.sideArrowsBool && !hpT.isDead && (charAnimator.GetBool("Attack3Bool") || charAnimator.GetBool("Attack5Bool") ) ) {
 
-			if (charAnimator.GetBool ("Attack5Bool")) {
+			if (attackDone) {
 				iTween.MoveBy (charObj, new Vector3 (10f, 0f, 0f), 0.8f);
 			}
 			activate = true;
@@ -111,13 +126,13 @@ public class AttackManager : MonoBehaviour {
 
 
 
-		} if ((Input.GetKeyDown (AttackKey) || Input.GetKeyDown (AttackKey2) || Input.GetKeyDown (AttackKey3)) && playOnce && isJumpKick && !hpT.isDead && (charAnimator.GetBool("Attack3Bool") || charAnimator.GetBool("Attack5Bool") )) {
+		} /*if ((Input.GetKeyDown (AttackKey) || Input.GetKeyDown (AttackKey2) || Input.GetKeyDown (AttackKey3)) && playOnce && isJumpKick && !hpT.isDead && (charAnimator.GetBool("Attack3Bool") || charAnimator.GetBool("Attack5Bool") ) && attackDone) {
 		
 			activate = true;
 			playOnce = false;
 		
 		
-		}
+		}*/
 
 		if (Input.GetKeyUp (AttackKey) && !hpT.isDead) {
 			//StartCoroutine (MoveObj (this.transform, this.transform.position, beginPos.transform.position, 0.06f));
@@ -148,6 +163,7 @@ public class AttackManager : MonoBehaviour {
 		
 
 			StartCoroutine (MoveObj (transform, transform.position, hitPos.transform.position, attackSpeed));
+
 			playOnceMoveObj = false;
 
 		} else {
@@ -160,7 +176,6 @@ public class AttackManager : MonoBehaviour {
 	}
 
 	IEnumerator MoveObj(Transform thisTransform, Vector3  startPos, Vector3 endPos, float time){
-
 
 
 		yield return new WaitForSeconds (attackDelay);
@@ -231,6 +246,7 @@ public class AttackManager : MonoBehaviour {
 
 		yield return new WaitForSeconds (0.06f);
 		hitCollider.enabled = false;
+		//attackDone = true;
 		//yield return new WaitForSeconds (0.5f);
 		//yield return new WaitForSeconds (0.2f);
 		// StopCoroutine ("MoveObj");
