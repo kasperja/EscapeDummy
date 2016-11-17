@@ -1934,7 +1934,7 @@ MonoBehaviour:
   hpT: {fileID: 114000010577870838}
   attackSound: {fileID: 0}
   attackDelay: 0.4
-  attackSpeed: 0.4
+  attackSpeed: 0.2
   enemyHpOne: {fileID: 0}
   enemyHpTwo: {fileID: 0}
   emOne: {fileID: 0}
