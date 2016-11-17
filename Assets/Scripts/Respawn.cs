@@ -31,6 +31,11 @@ public class Respawn : MonoBehaviour {
 			MainCharObj.transform.position = respawnPos.position;
 			graphics.SetActive (true);
 
+			pc2DScript.hookJumpActive = false;
+			pc2DScript.hookJumpActiveOnce = true;
+			pc2DScript.hookJumpActiveOnceTween = true;
+
+
 			m_Anim.SetBool ("Dead", false);
 			pc2DScript.playOnce1 = true;
 			pc2DScript.playOnce2 = true;
