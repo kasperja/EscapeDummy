@@ -227,6 +227,7 @@ public class HitPointsEnemy : MonoBehaviour {
 	IEnumerator hitWait(){
 	
 		enemyAnim.SetBool ("HitBool", true);
+		iTween.PunchScale(graphicsObj,  new Vector3 (-5, -7f, 0f), 0.8f);
 		yield return new WaitForSeconds (0.03f);
 		enemyAnim.SetBool ("HitBool", false);
 	

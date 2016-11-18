@@ -224,7 +224,7 @@ using System.Collections;
 
 		if (hooked && Input.GetKey(KeyCode.Space) && sawMoverScript.hookDetected && hookJumpActiveOnce && hookStandingStill && !hpPlayerTotal.isDead) {
 
-			
+			if(!m_FacingRight) Flip();
 			StartCoroutine (waitActiveHook ());
 
 
