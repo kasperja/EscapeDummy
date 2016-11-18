@@ -33,6 +33,9 @@ public class HookHingeMovement : MonoBehaviour {
 
 	public SawMover SawMoverScript;
 
+
+
+
 	// Use this for initialization
 	void Start () {
 
@@ -101,6 +104,7 @@ public class HookHingeMovement : MonoBehaviour {
 
 		if (mainCharScript.hookJumpActive && hookForceOnce) {
 
+
 			StartCoroutine(HookForceWait(0.7f));
 			if (hookForceWaitBool) {
 				SawMoverScript.hookDetected = false;
@@ -126,6 +130,8 @@ public class HookHingeMovement : MonoBehaviour {
 
 		if (SawMoverScript.hookDetected) {
 		
+
+
 		
 			waitTime = 0f;
 
@@ -208,7 +214,9 @@ public class HookHingeMovement : MonoBehaviour {
 
 	IEnumerator HookForceWait(float moveTime)
 	{
-		yield return new WaitForSeconds(moveTime);
+		yield return new WaitForSeconds(moveTime/2f);
+		iTween.PunchScale (hookRb.gameObject, new Vector3 (3f, 4f, 0f), 1.5f);
+		yield return new WaitForSeconds(moveTime/2f);
 		hookForceWaitBool = true;
 	}
 	IEnumerator HookWaitTrue(float moveTime)
