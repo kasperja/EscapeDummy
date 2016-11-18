@@ -134,6 +134,8 @@ using System.Collections;
 
 	public bool attackDone = true;
 
+	public ParticleSystem landingParticle;
+
         private void Awake()
         {
 			Application.targetFrameRate = 900;
@@ -518,7 +520,7 @@ using System.Collections;
             {
 				if (colliders [i].gameObject != gameObject) {
 					m_Grounded = true;
-
+				landingParticle.Play ();
 
 
 				}
@@ -616,6 +618,7 @@ using System.Collections;
             {
 			if (!sideArrowsBool) {
 				if (jumpOnce) {
+					
 					// Add a vertical force to the player.
 					m_Anim.SetBool ("StartJump", true);
 					StartCoroutine (waitJump (waitJumpTime));
@@ -627,7 +630,7 @@ using System.Collections;
 				//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 				m_Anim.SetBool ("StartJump", true);
 
-
+				
 
 				m_Grounded = false;
 
@@ -713,6 +716,7 @@ using System.Collections;
 		{
 			if (!sideArrowsBool) {
 				if (jumpOnce) {
+					
 					// Add a vertical force to the player.
 					m_Anim.SetBool ("StartJump", false);
 					m_Anim.SetBool("Ground", false);
@@ -724,7 +728,7 @@ using System.Collections;
 
 				//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 
-
+				
 
 				m_Anim.SetBool ("StartJump", true);
 
@@ -1070,7 +1074,7 @@ using System.Collections;
 		//hookParent.GetComponent<BoxCollider2D> ().enabled = true;
 		//tempHinge.enabled = true;
 		m_Grounded = false;
-
+		
 		m_Anim.SetBool("Ground", false);
 
 		m_Anim.SetBool("StartJump", false);
@@ -1110,6 +1114,7 @@ IEnumerator stopOnHook(float waitTime){
 
 	yield return new WaitForSeconds (0.1f);
 
+	landingParticle.Play ();
 		anticiHook = false;
 
 	yield return new WaitForSeconds (waitTime);
