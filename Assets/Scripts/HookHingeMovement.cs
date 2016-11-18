@@ -21,7 +21,9 @@ public class HookHingeMovement : MonoBehaviour {
 	public Transform startPosY;
 	public Rigidbody2D hookRb;
 	private bool hookForceOnce = true;
+	private bool hookForceOnceTwo = true;
 	private bool hookForceWaitBool = false;
+	private bool hookForceWaitBoolTwo = false;
 	public PlatformerCharacter2D mainCharScript;
 	public bool hookWaitOnce = true;
 	public bool hookWaitOnceMoving = true;
@@ -106,11 +108,23 @@ public class HookHingeMovement : MonoBehaviour {
 
 
 			StartCoroutine(HookForceWait(0.7f));
+
+			if (hookForceWaitBoolTwo && hookForceOnceTwo) {
+				SawMoverScript.hookDetected = false;
+				//SawMoverScript.hookDetectSpeed = -30f;
+				hookRb.AddForce (new Vector2 (-30f, 0), ForceMode2D.Impulse);
+				hookForceOnceTwo = false;
+				hookForceWaitBoolTwo = false;
+
+
+			}
+
 			if (hookForceWaitBool) {
 				SawMoverScript.hookDetected = false;
 				//SawMoverScript.hookDetectSpeed = -30f;
 				hookRb.AddForce (new Vector2 (100f, 0), ForceMode2D.Impulse);
 				hookForceOnce = false;
+				hookForceWaitBool = false;
 
 
 			}
@@ -215,9 +229,14 @@ public class HookHingeMovement : MonoBehaviour {
 	IEnumerator HookForceWait(float moveTime)
 	{
 		yield return new WaitForSeconds(moveTime/2f);
-		iTween.PunchScale (hookRb.gameObject, new Vector3 (3f, 4f, 0f), 1.5f);
+		hookForceWaitBoolTwo = true;
+		//iTween.PunchScale (hookRb.gameObject, new Vector3 (0.5f, 1f, 0f), 1.5f);
 		yield return new WaitForSeconds(moveTime/2f);
 		hookForceWaitBool = true;
+		yield return new WaitForSeconds(moveTime);
+		hookForceOnce = true;
+		hookForceOnceTwo = true;
+
 	}
 	IEnumerator HookWaitTrue(float moveTime)
 	{
