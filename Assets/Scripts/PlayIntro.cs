@@ -20,6 +20,15 @@ public class PlayIntro : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(Input.GetKeyDown(KeyCode.Space)){
+			
+			fadeAnim.SetBool ("Fade", true);
+			introMovieTex.Stop ();
+			gameObject.SetActive (false);
+			character.SetActive (true);
+
+
+		}
 	
 	}
 
