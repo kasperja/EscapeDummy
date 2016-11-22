@@ -109,6 +109,6 @@ public class DoorAbattoir : MonoBehaviour {
 	IEnumerator waitForSceneLoad(float waitTime){
 
 		yield return new WaitForSeconds (waitTime);
-		SceneManager.LoadScene (2);
+		SceneManager.LoadScene (0);
 	}
 }
