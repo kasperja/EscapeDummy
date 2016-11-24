@@ -76,7 +76,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000010633247864
 GameObject:
   m_ObjectHideFlags: 1
@@ -291,7 +291,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000013875127490}
-  - 114: {fileID: 114000011860055382}
+  - 114: {fileID: 114000013304144382}
   m_Layer: 0
   m_Name: CamTarget
   m_TagString: Untagged
@@ -932,7 +932,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014035437954}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.083905, y: -20.7, z: 15.3}
+  m_LocalPosition: {x: -0.083905, y: -16.9, z: 15.3}
   m_LocalScale: {x: 14.227524, y: 14.227505, z: 8.031194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1684,19 +1684,6 @@ MonoBehaviour:
   graphicsObj: {fileID: 1000012537124234}
   charObj: {fileID: 1000014035437954}
   m_Anim: {fileID: 95000013725915842}
---- !u!114 &114000011860055382
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012116779786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82ee8da5d516e21429765232edb501dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1000014035437954}
-  XOffset: 20
 --- !u!114 &114000011925006484
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1953,7 +1940,7 @@ MonoBehaviour:
   scaleCharBackBool: 0
   sawSound: {fileID: 0}
   moveBackAmmount: 0
-  fx: {fileID: 114000011860055382}
+  fx: {fileID: 114000013304144382}
   stairColsObj: {fileID: 0}
   stairPosUp: {fileID: 0}
   stairPosDown: {fileID: 0}
@@ -1973,6 +1960,20 @@ MonoBehaviour:
   velocity: 0
   attackDone: 1
   landingParticle: {fileID: 198000010359797992}
+  isEndOutside: 0
+--- !u!114 &114000013304144382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012116779786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e5605cbe06008047afc0aeefb84f26f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1000014035437954}
+  XOffset: 22
 --- !u!114 &114000013371163492
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2012,6 +2013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1000011598201560}
   XOffset: 15
+  emHpt: {fileID: 0}
 --- !u!114 &114000013630240450
 MonoBehaviour:
   m_ObjectHideFlags: 1

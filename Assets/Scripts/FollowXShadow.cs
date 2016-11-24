@@ -40,7 +40,7 @@ public class FollowXShadow : MonoBehaviour {
 			gameObject.SetActive (true);*/
 		if (pc2dScript.scaleCharBool) {
 
-			targetSpriteRenderer.color = new Color(0,0,0, Mathf.Lerp(origColor.a, fadeOutColor.a, 0.2f));
+			targetSpriteRenderer.color = new Color(0,0,0, Mathf.Lerp(origColor.a, fadeOutColor.a, 0.6f));
 
 			if (pc2dScript.sideArrowsBool) {
 				iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, Mathf.Lerp (gameObject.transform.position.y, origY, 0.2f), transform.position.z), 0.2f);

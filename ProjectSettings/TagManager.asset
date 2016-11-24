@@ -45,6 +45,7 @@ TagManager:
   - StopGrabTrigger
   - blockCol
   - blockColPlayer
+  - EndTriggerOutside
   layers:
   - Default
   - TransparentFX
