@@ -93,8 +93,8 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 				enemyMoveScript.isFollowing = false;
 				enemyMoveScript.isInRange = false;
 
-
-			Instantiate (deathParticle, particlePosObj.transform.position, Quaternion.identity);
+				StartCoroutine (waitDeathParticle ());
+			//Instantiate (deathParticle, particlePosObj.transform.position, Quaternion.identity);
 			Instantiate (hitLargeParticle, particleHitPosObj.transform.position, Quaternion.identity);
 
 			deathSound.Play ();
@@ -188,6 +188,15 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 		yield return new WaitForSeconds (0.5f);
 		blockOnceTwo = true;
 
+	}
+
+	IEnumerator waitDeathParticle(){
+	
+		yield return new WaitForSeconds (0.5f);
+		Instantiate (deathParticle, particlePosObj.transform.position, Quaternion.identity);
+
+
+	
 	}
 	
 
