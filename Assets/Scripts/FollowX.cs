@@ -4,6 +4,8 @@ using System.Collections;
 public class FollowX : MonoBehaviour {
 	public GameObject target;
 	public float XOffset = 0.0f;
+	public HitPointsEnemyTotal emHpt;
+	private Color tColor = new Color(0f,0f,0f,0f);
 	//public string objName;
 	// Use this for initialization
 	void Start () {
@@ -20,7 +22,16 @@ public class FollowX : MonoBehaviour {
 		
 			gameObject.SetActive (true);*/
 		transform.position = new Vector3 (target.transform.position.x + XOffset, transform.position.y, transform.position.z);
+
+		if (emHpt.isDeadEnemy) {
 		
+			gameObject.SetActive (false);
+		
+		} 
+		
+
+		
+	
 		/*} else {
 		
 			gameObject.SetActive (false);

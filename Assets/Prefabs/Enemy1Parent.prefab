@@ -102,7 +102,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000011064637170
 GameObject:
   m_ObjectHideFlags: 1
@@ -645,8 +645,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010474073600}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 51.2, y: -25.9, z: -22.879639}
-  m_LocalScale: {x: 5.9142876, y: 1.3001442, z: 1.874387}
+  m_LocalPosition: {x: 51.2, y: -32.9, z: 21.8}
+  m_LocalScale: {x: 11.559191, y: 2.541069, z: 3.6633992}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000013722216706}
@@ -1094,7 +1094,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1000010132264068}
-  XOffset: 0
+  XOffset: -3
+  emHpt: {fileID: 114000013121274140}
 --- !u!114 &114000011787699732
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1178,7 +1179,7 @@ MonoBehaviour:
   enemyObj: {fileID: 1000010132264068}
   graphicsObj: {fileID: 1000011064637170}
   enemyAnim: {fileID: 95000010490676528}
-  enemyFacingLeft: 1
+  enemyFacingLeft: 0
 --- !u!114 &114000012692433402
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1455,9 +1456,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 3b2576030bed31248b45449b97d97d66, type: 3}
-  m_Color: {r: 0.001081316, g: 0.07352942, b: 0.046548743, a: 0.522}
+  m_SortingOrder: 147
+  m_Sprite: {fileID: 21300000, guid: 6585e36f7c27ffc4f86ea2f151080ae2, type: 3}
+  m_Color: {r: 0.001081316, g: 0.07352942, b: 0.046548743, a: 0.203}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!212 &212000013502128484

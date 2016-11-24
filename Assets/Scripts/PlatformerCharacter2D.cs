@@ -85,7 +85,7 @@ using System.Collections;
 	public float moveBackAmmount = 0.25f;
 	//public GameObject groundColObj;
 
-	public FollowX fx;
+	public FollowXCam fx;
 
 
 	public GameObject stairColsObj;
@@ -135,6 +135,8 @@ using System.Collections;
 	public bool attackDone = true;
 
 	public ParticleSystem landingParticle;
+
+	public bool isEndOutside = false;
 
         private void Awake()
         {
@@ -373,8 +375,9 @@ using System.Collections;
 
 		} else {
 
-			sideArrowsBool = false;
-			m_Anim.SetBool ("SideArrows", false);
+
+			if(!isEndOutside)sideArrowsBool = false;
+			if(!isEndOutside)m_Anim.SetBool ("SideArrows", false);
 
 		}
 
@@ -557,11 +560,18 @@ using System.Collections;
             m_Anim.SetBool("Crouch", crouch);
 
             //only control the player if grounded or airControl is turned on
-            if (m_Grounded || m_AirControl)
+			if (m_Grounded || m_AirControl || isEndOutside)
             {
                 // Reduce the speed if crouching by the crouchSpeed multiplier
-                move = (crouch ? move*m_CrouchSpeed : move);
+                
+			if (isEndOutside) {
 
+				move = 1f;
+
+			} else {
+			
+				move = (crouch ? move * m_CrouchSpeed : move);
+			}
                 // The Speed animator parameter is set to the absolute value of the horizontal input.
                // m_Anim.SetFloat("Speed", Mathf.Abs(move));
 
@@ -587,10 +597,15 @@ using System.Collections;
 				
 				}else{
 
+					if (isEndOutside) {
 
-					//up Stairs
-					m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 1f, move * m_MaxSpeed * 0.2f);
+						m_Rigidbody2D.velocity = new Vector2 (m_MaxSpeed * 1f, 0f);
+				
+					} else {
+						//up Stairs
 
+						m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 1f, move * m_MaxSpeed * 0.2f);
+					}
 				}
 			
 			} else {
@@ -666,11 +681,18 @@ using System.Collections;
 		m_Anim.SetBool("Crouch", crouch);
 
 		//only control the player if grounded or airControl is turned on
-		if (m_Grounded || m_AirControl)
+	if (m_Grounded || m_AirControl || isEndOutside)
 		{
 			// Reduce the speed if crouching by the crouchSpeed multiplier
-			move = (crouch ? move*m_CrouchSpeed : move);
+			if (isEndOutside) {
 
+				move = 1f;
+
+			} else {
+			
+				move = (crouch ? move * m_CrouchSpeed : move);
+
+			}
 			// The Speed animator parameter is set to the absolute value of the horizontal input.
 			// m_Anim.SetFloat("Speed", Mathf.Abs(move));
 
@@ -686,10 +708,17 @@ using System.Collections;
 				
 				m_Rigidbody2D.velocity = new Vector2 (20.4f, -21.5f);
 			} else {
+
+
+				if (isEndOutside) {
+
+					m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 1f, 0f);
+
+				} else {
 				
-				m_Rigidbody2D.velocity = new Vector2 (Mathf.Lerp(m_Rigidbody2D.velocity.x,  0f , timer), m_Rigidbody2D.velocity.y);
+					m_Rigidbody2D.velocity = new Vector2 (Mathf.Lerp (m_Rigidbody2D.velocity.x, 0f, timer), m_Rigidbody2D.velocity.y);
 			
-			
+				}
 			}
 
 			//m_Rigidbody2D.position = new Vector2 (Mathf.Lerp( m_Rigidbody2D.position.x , m_Rigidbody2D.position.x , timer), m_Rigidbody2D.position.y);
