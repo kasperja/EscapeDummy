@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: 7b79c1844e7c0ba468150060032d4f38
+timeCreated: 1480072495
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: GetUp-0000
+    21300002: GetUp-0001
+    21300004: GetUp-0002
+    21300006: GetUp-0003
+    21300008: GetUp-0004
+    21300010: GetUp-0005
+    21300012: GetUp-0006
+    21300014: GetUp-0007
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GetUp-0000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1601
+        width: 704
+        height: 446
+      alignment: 9
+      pivot: {x: 0.45454547, y: 1.5941705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GetUp-0001
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1586
+        width: 698
+        height: 461
+      alignment: 9
+      pivot: {x: 0.4598854, y: 1.5401301}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GetUp-0002
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1103
+        width: 683
+        height: 481
+      alignment: 9
+      pivot: {x: 0.46998537, y: 1.4802495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GetUp-0003
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 1080
+        width: 662
+        height: 504
+      alignment: 9
+      pivot: {x: 0.4833837, y: 1.4047619}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GetUp-0004
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1055
+        width: 641
+        height: 529
+      alignment: 9
+      pivot: {x: 0.4976599, y: 1.3308128}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GetUp-0005
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 469
+        width: 604
+        height: 584
+      alignment: 9
+      pivot: {x: 0.53145695, y: 1.2037672}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GetUp-0006
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 402
+        width: 547
+        height: 651
+      alignment: 9
+      pivot: {x: 0.6142596, y: 1.0768049}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GetUp-0007
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 339
+        width: 470
+        height: 714
+      alignment: 9
+      pivot: {x: 0.71276593, y: 0.9845938}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

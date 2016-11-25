@@ -127,7 +127,7 @@ GameObject:
   - 114: {fileID: 114000012134312322}
   - 114: {fileID: 114000011342966842}
   - 114: {fileID: 114000013960951214}
-  - 114: {fileID: 114000012715054686}
+  - 114: {fileID: 114000011477751026}
   m_Layer: 0
   m_Name: MainCameraRoadToFarm
   m_TagString: MainCamera
@@ -1702,6 +1702,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 317a115e982c26d4c8a117b77546febb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000011477751026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012502785530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a22b3a7095a744a428c134b5e26ad68e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  quality: 1
+  blurArea: 1.35
+  maxBlurSize: 25
+  downsample: 1
+  tiltShiftShader: {fileID: 4800000, guid: bf34d2a25450349699e8ae6456fa7ca9, type: 3}
 --- !u!114 &114000011806914056
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1813,23 +1830,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114000012715054686
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012502785530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4975a6e437fc3b149a8cd508ce5bdd69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  threshold: 0.43
-  intensity: 0.109
-  blurSize: 0.98
-  blurIterations: 1
-  blurType: 0
-  fastBloomShader: {fileID: 4800000, guid: 68a00c837b82e4c6d92e7da765dc5f1d, type: 3}
 --- !u!114 &114000012816322340
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3633,7 +3633,7 @@ ParticleSystem:
   moveWithTransform: 0
   autoRandomSeed: 1
   scalingMode: 1
-  randomSeed: -1005397676
+  randomSeed: -513985591
   InitialModule:
     serializedVersion: 2
     enabled: 1
