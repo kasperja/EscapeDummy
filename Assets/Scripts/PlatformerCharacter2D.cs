@@ -138,6 +138,7 @@ using System.Collections;
 
 	public bool isEndOutside = false;
 
+	public ParticleSystem runParticle;
         private void Awake()
         {
 			Application.targetFrameRate = 900;
@@ -311,6 +312,10 @@ using System.Collections;
 				graphicsNorm.transform.localPosition = Vector3.Lerp (graphicsNorm.transform.localPosition, posMoveForward, 2f * Time.deltaTime);
 
 
+			} else {
+				
+
+			
 			}
 			//friction = 1f;
 		
@@ -372,6 +377,7 @@ using System.Collections;
 
 			sideArrowsBool = true;
 			m_Anim.SetBool ("SideArrows", true);
+
 
 		} else {
 
@@ -569,7 +575,15 @@ using System.Collections;
 				move = 1f;
 
 			} else {
+
+			if (!scaleCharBool || climbingStairsBool) {
+				runParticle.Stop ();
+				} else {
+				
+				runParticle.Play ();
+					
 			
+			}
 				move = (crouch ? move * m_CrouchSpeed : move);
 			}
                 // The Speed animator parameter is set to the absolute value of the horizontal input.
@@ -689,7 +703,7 @@ using System.Collections;
 				move = 1f;
 
 			} else {
-			
+				runParticle.Stop ();
 				move = (crouch ? move * m_CrouchSpeed : move);
 
 			}

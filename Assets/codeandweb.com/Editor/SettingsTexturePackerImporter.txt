@@ -25,6 +25,8 @@ tpsheetFileNames:
 - Assets/Textures/MainChar/Anims19-10-16/Block-2.tpsheet
 - Assets/Textures/MainChar/Anims19-10-16/Death-0.tpsheet
 - Assets/Textures/MainChar/Anims19-10-16/Death-1.tpsheet
+- Assets/Textures/MainChar/Anims19-10-16/GetUp-0.tpsheet
+- Assets/Textures/MainChar/Anims19-10-16/GetUp-1.tpsheet
 - Assets/Textures/MainChar/Anims19-10-16/hit-0.tpsheet
 - Assets/Textures/MainChar/Anims19-10-16/Idle-0.tpsheet
 - Assets/Textures/MainChar/Anims19-10-16/Idle-1.tpsheet
@@ -98,6 +100,8 @@ textureFileNames:
 - Assets/Textures/MainChar/Anims19-10-16/Block-2.png
 - Assets/Textures/MainChar/Anims19-10-16/Death-0.png
 - Assets/Textures/MainChar/Anims19-10-16/Death-1.png
+- Assets/Textures/MainChar/Anims19-10-16/GetUp-0.png
+- Assets/Textures/MainChar/Anims19-10-16/GetUp-1.png
 - Assets/Textures/MainChar/Anims19-10-16/hit-0.png
 - Assets/Textures/MainChar/Anims19-10-16/Idle-0.png
 - Assets/Textures/MainChar/Anims19-10-16/Idle-1.png
@@ -148,6 +152,8 @@ textureFileNames:
 - Assets/Textures/MainChar/Anims19-10-16/Strike01-3.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
 - 
 - 
 - 
