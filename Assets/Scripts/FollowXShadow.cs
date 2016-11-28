@@ -14,11 +14,16 @@ public class FollowXShadow : MonoBehaviour {
 
 	private Color origColor;
 	private Color fadeOutColor;
+	private Color tempColor;
 
 	public SpriteRenderer targetSpriteRenderer;
 
 	public float origY;
 	public float stairY;
+
+	public float maximum = 1f;
+	public float minimum = 0f;
+	static float t = 0.0f;
 	//public string objName;
 	// Use this for initialization
 	void Start () {
@@ -34,13 +39,22 @@ public class FollowXShadow : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		gameObject.GetComponent<SpriteRenderer> ().color = tempColor;
 
 		/*if (GameObject.Find(objName) == null) {
 		
 			gameObject.SetActive (true);*/
 		if (pc2dScript.scaleCharBool) {
 
-			targetSpriteRenderer.color = new Color(0,0,0, Mathf.Lerp(origColor.a, fadeOutColor.a, 0.6f));
+
+			if (tempColor.a >= 0f && tempColor.a < origColor.a) {
+				tempColor.a += 2f * Time.deltaTime;
+			} else {
+			
+				tempColor.a = origColor.a;
+			
+			}
+
 
 			if (pc2dScript.sideArrowsBool) {
 				iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, Mathf.Lerp (gameObject.transform.position.y, origY, 0.2f), transform.position.z), 0.2f);
@@ -55,17 +69,23 @@ public class FollowXShadow : MonoBehaviour {
 				//transform.position = new Vector3 (target.transform.position.x + XOffset, origY, transform.position.z);
 		} else {
 
-			targetSpriteRenderer.color = new Color(0,0,0, Mathf.Lerp(fadeOutColor.a, origColor.a, 0.2f));
+			if (tempColor.a > 0f && tempColor.a <= origColor.a) {
+				tempColor.a -= 2f * Time.deltaTime;
+			} else {
+			
+				tempColor.a = 0f;
+			
+			}
 
 			if (!pc2dScript.m_Grounded) {
 
 				if (pc2dScript.sideArrowsBool) {
 
-					iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, Mathf.Lerp (gameObject.transform.position.y, target.transform.position.y, 0.2f), transform.position.z), 0.2f);
+					iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, Mathf.Lerp (gameObject.transform.position.y, origY, 0.2f), transform.position.z), 0.2f);
 
 				} else {
 
-					iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, target.transform.position.y, transform.position.z), 0.2f);
+					iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, origY, transform.position.z), 0.2f);
 
 				}
 
@@ -74,9 +94,10 @@ public class FollowXShadow : MonoBehaviour {
 
 			
 			}else{
+				
 
 				if (pc2dScript.sideArrowsBool) {
-					iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, Mathf.Lerp (gameObject.transform.position.y, target.transform.position.y, 0.6f), transform.position.z), 0.3f);
+					iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, Mathf.Lerp (gameObject.transform.position.y, origY, 0.6f), transform.position.z), 0.3f);
 				} else {
 				
 					iTween.MoveUpdate (gameObject, new Vector3 (target.transform.position.x + XOffset, gameObject.transform.position.y, transform.position.z), 0.3f);
