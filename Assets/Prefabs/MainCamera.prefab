@@ -2937,7 +2937,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000010646996192
 GameObject:
   m_ObjectHideFlags: 0
@@ -3037,7 +3037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000014035414518
 GameObject:
   m_ObjectHideFlags: 0
@@ -3071,7 +3071,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4000010049730004
 Transform:
   m_ObjectHideFlags: 1
@@ -3105,8 +3105,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013316137996}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: 1, z: 37}
-  m_LocalScale: {x: 81.08291, y: 47.315277, z: 81.083}
+  m_LocalPosition: {x: 0.1, y: -0.3, z: 37}
+  m_LocalScale: {x: 76.98393, y: 43.303417, z: 390.13013}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 437066}
@@ -3382,7 +3382,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b85e1e143aaba2d41b9204a723d2b6ae, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 56bc40ecadfac3646be7a06a74935a60, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3435,7 +3435,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -3566,7 +3566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b14e4c8bc197b944a97fb93b92d13187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  introMovieTex: {fileID: 15200000, guid: b85e1e143aaba2d41b9204a723d2b6ae, type: 3}
+  introMovieTex: {fileID: 15200000, guid: 56bc40ecadfac3646be7a06a74935a60, type: 3}
   introAudio: {fileID: 82000012847021490}
   character: {fileID: 0}
   fadeAnim: {fileID: 95000013425984318}

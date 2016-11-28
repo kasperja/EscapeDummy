@@ -269,6 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spaceTextAnim: {fileID: 1693754142}
+  textAnim: {fileID: 1602667686}
   startGameSound: {fileID: 1445884789}
 --- !u!82 &1445884789
 AudioSource:
