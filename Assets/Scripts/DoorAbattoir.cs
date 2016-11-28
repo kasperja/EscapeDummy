@@ -12,6 +12,9 @@ public class DoorAbattoir : MonoBehaviour {
 	public AudioSource doorOpenSound;
 	public bool doorSoundPlayOnce = true;
 
+	public GameObject enemyWorkingSaw;
+	public GameObject controller;
+
 	public AudioSource ambientSound;
 
 	public GameObject whiteScreen;
@@ -86,6 +89,8 @@ public class DoorAbattoir : MonoBehaviour {
 
 			} else {
 			
+				enemyWorkingSaw.SetActive (false);
+				controller.SetActive (true);
 				enemyWithKey.SetActive (true);
 				key.SetActive (true);
 			
