@@ -1805,26 +1805,6 @@ Prefab:
       propertyPath: attackSound
       value: 
       objectReference: {fileID: 2059599485}
-    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
-        type: 2}
-      propertyPath: enemyAttackDmgHigh
-      value: 
-      objectReference: {fileID: 880718286}
-    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
-        type: 2}
-      propertyPath: enemyAttackDmgMiddle
-      value: 
-      objectReference: {fileID: 2135202965}
-    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
-        type: 2}
-      propertyPath: enemyAttackDmgLow
-      value: 
-      objectReference: {fileID: 632411383}
-    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
-        type: 2}
-      propertyPath: SawTrapDamage
-      value: 
-      objectReference: {fileID: 1664072720}
     - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgHigh
@@ -1845,22 +1825,22 @@ Prefab:
       propertyPath: SawTrapDamage
       value: 
       objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000010712801092, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgHigh
       value: 
       objectReference: {fileID: 880718286}
-    - target: {fileID: 114000010712801092, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgMiddle
       value: 
       objectReference: {fileID: 2135202965}
-    - target: {fileID: 114000010712801092, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgLow
       value: 
       objectReference: {fileID: 632411383}
-    - target: {fileID: 114000010712801092, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: SawTrapDamage
       value: 
@@ -1881,6 +1861,26 @@ Prefab:
       value: 
       objectReference: {fileID: 632411383}
     - target: {fileID: 114000011102813864, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: SawTrapDamage
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000010712801092, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: enemyAttackDmgHigh
+      value: 
+      objectReference: {fileID: 880718286}
+    - target: {fileID: 114000010712801092, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: enemyAttackDmgMiddle
+      value: 
+      objectReference: {fileID: 2135202965}
+    - target: {fileID: 114000010712801092, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: enemyAttackDmgLow
+      value: 
+      objectReference: {fileID: 632411383}
+    - target: {fileID: 114000010712801092, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: SawTrapDamage
       value: 
@@ -3610,11 +3610,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
-    - target: {fileID: 233000010816353426, guid: 07a720b379b96ff4eb6f6437014caba2,
-        type: 2}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 735106570}
     - target: {fileID: 114000011723605750, guid: 07a720b379b96ff4eb6f6437014caba2,
         type: 2}
       propertyPath: hpEnemyTotal
@@ -3625,6 +3620,11 @@ Prefab:
       propertyPath: pickUpScript
       value: 
       objectReference: {fileID: 142688750}
+    - target: {fileID: 233000010816353426, guid: 07a720b379b96ff4eb6f6437014caba2,
+        type: 2}
+      propertyPath: m_ConnectedRigidBody
+      value: 
+      objectReference: {fileID: 735106570}
     - target: {fileID: 1000010102640854, guid: 07a720b379b96ff4eb6f6437014caba2, type: 2}
       propertyPath: m_IsActive
       value: 0
@@ -3849,11 +3849,39 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000011228446870, guid: a213b38a8a030074f9fee084c6095ca8,
+    - target: {fileID: 114000010267442252, guid: a213b38a8a030074f9fee084c6095ca8,
         type: 2}
-      propertyPath: sunTransform
+      propertyPath: character
       value: 
-      objectReference: {fileID: 740403092}
+      objectReference: {fileID: 142688742}
+    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 291855428}
+    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: targetEnd
+      value: 
+      objectReference: {fileID: 1548265878}
+    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: targetStart
+      value: 
+      objectReference: {fileID: 634456507}
+    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: targetSaw
+      value: 
+      objectReference: {fileID: 1717185043}
+    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: targetHooked
+      value: 
+      objectReference: {fileID: 1341079187}
+    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: targetNotHooked
+      value: 
+      objectReference: {fileID: 291855428}
+    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: MainCharScript
+      value: 
+      objectReference: {fileID: 142688740}
     - target: {fileID: 11452294, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
       propertyPath: Player
       value: 
@@ -3894,51 +3922,11 @@ Prefab:
       propertyPath: LowerTarget
       value: 
       objectReference: {fileID: 692768767}
-    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 291855428}
-    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
-      propertyPath: targetEnd
-      value: 
-      objectReference: {fileID: 1548265878}
-    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
-      propertyPath: targetStart
-      value: 
-      objectReference: {fileID: 634456507}
-    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
-      propertyPath: targetSaw
-      value: 
-      objectReference: {fileID: 1717185043}
-    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
-      propertyPath: targetHooked
-      value: 
-      objectReference: {fileID: 1341079187}
-    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
-      propertyPath: targetNotHooked
-      value: 
-      objectReference: {fileID: 291855428}
-    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
-      propertyPath: MainCharScript
-      value: 
-      objectReference: {fileID: 142688740}
-    - target: {fileID: 114000010267442252, guid: a213b38a8a030074f9fee084c6095ca8,
+    - target: {fileID: 114000011228446870, guid: a213b38a8a030074f9fee084c6095ca8,
         type: 2}
-      propertyPath: character
+      propertyPath: sunTransform
       value: 
-      objectReference: {fileID: 142688742}
-    - target: {fileID: 1000014162286254, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000010159954516, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000013316137996, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 740403092}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
   m_IsPrefabParent: 0

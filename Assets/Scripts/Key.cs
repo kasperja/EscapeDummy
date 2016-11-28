@@ -5,6 +5,7 @@ public class Key : MonoBehaviour {
 
 	private BoxCollider2D boxCol;
 	private bool dropOnce = true;
+	public ParticleSystem pling;
 
 	public HitPointsEnemyTotal hpEnemyTotal;
 
@@ -12,7 +13,7 @@ public class Key : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		gameObject.GetComponent<SpriteRenderer> ().enabled = false;
-	
+		pling.Stop ();
 	}
 	
 	// Update is called once per frame
@@ -26,6 +27,7 @@ public class Key : MonoBehaviour {
 		} else if (dropOnce) {
 		
 			StartCoroutine(pickupWait(1f));
+			pling.Play ();
 			dropOnce = false;
 		}
 
