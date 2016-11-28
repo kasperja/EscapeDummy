@@ -137,6 +137,7 @@ using System.Collections;
 	public ParticleSystem landingParticle;
 
 	public bool isEndOutside = false;
+	public bool isStartOutside = false;
 
 	public ParticleSystem runParticle;
         private void Awake()
@@ -227,7 +228,7 @@ using System.Collections;
 		}
 
 
-		if (hooked && Input.GetKey(KeyCode.Space) && sawMoverScript.hookDetected && hookJumpActiveOnce && hookStandingStill && !hpPlayerTotal.isDead) {
+		if (hooked && Input.GetKey(KeyCode.Space) && sawMoverScript.hookDetected && hookJumpActiveOnce && hookStandingStill && !hpPlayerTotal.isDead && m_Grounded) {
 
 			if(!m_FacingRight) Flip();
 			StartCoroutine (waitActiveHook ());
@@ -373,7 +374,7 @@ using System.Collections;
 
 		}
 				
-		if (Input.GetKey (KeyCode.RightArrow) || Input.GetKey (KeyCode.LeftArrow)) {
+		if (Input.GetKey (KeyCode.RightArrow) || Input.GetKey (KeyCode.LeftArrow) || isStartOutside || isEndOutside) {
 
 			sideArrowsBool = true;
 			m_Anim.SetBool ("SideArrows", true);
@@ -384,6 +385,8 @@ using System.Collections;
 
 			if(!isEndOutside)sideArrowsBool = false;
 			if(!isEndOutside)m_Anim.SetBool ("SideArrows", false);
+			if(!isStartOutside)sideArrowsBool = false;
+			if(!isStartOutside)m_Anim.SetBool ("SideArrows", false);
 
 		}
 
@@ -566,11 +569,11 @@ using System.Collections;
             m_Anim.SetBool("Crouch", crouch);
 
             //only control the player if grounded or airControl is turned on
-			if (m_Grounded || m_AirControl || isEndOutside)
+	if (m_Grounded || m_AirControl || isEndOutside || isStartOutside)
             {
                 // Reduce the speed if crouching by the crouchSpeed multiplier
                 
-			if (isEndOutside) {
+		if (isEndOutside || isStartOutside) {
 
 				move = 1f;
 
@@ -611,7 +614,7 @@ using System.Collections;
 				
 				}else{
 
-					if (isEndOutside) {
+				if (isEndOutside || isStartOutside) {
 
 						m_Rigidbody2D.velocity = new Vector2 (m_MaxSpeed * 1f, 0f);
 				
@@ -695,10 +698,10 @@ using System.Collections;
 		m_Anim.SetBool("Crouch", crouch);
 
 		//only control the player if grounded or airControl is turned on
-	if (m_Grounded || m_AirControl || isEndOutside)
+	if (m_Grounded || m_AirControl || isEndOutside || isStartOutside)
 		{
 			// Reduce the speed if crouching by the crouchSpeed multiplier
-			if (isEndOutside) {
+		if (isEndOutside || isStartOutside) {
 
 				move = 1f;
 
@@ -724,7 +727,7 @@ using System.Collections;
 			} else {
 
 
-				if (isEndOutside) {
+			if (isEndOutside || isStartOutside) {
 
 					m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 1f, 0f);
 

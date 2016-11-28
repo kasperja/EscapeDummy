@@ -46,6 +46,7 @@ TagManager:
   - blockCol
   - blockColPlayer
   - EndTriggerOutside
+  - StartTriggerOutside
   layers:
   - Default
   - TransparentFX

@@ -145,7 +145,7 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 				m_Anim.SetBool ("Block", true);
 				m_Anim.SetBool ("Hit", false);
 				blockBool = true;
-				StartCoroutine (waitBlock (0.6f));
+				StartCoroutine (waitBlock (1.5f));
 
 				blockCollider.GetComponent<BoxCollider2D> ().enabled = true;
 				UpperTarget.SetActive (false);
@@ -165,7 +165,7 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 				m_Anim.SetBool ("Block", true);
 				m_Anim.SetBool ("Hit", false);
 				blockBool = true;
-				StartCoroutine (waitBlock (0.6f));
+				StartCoroutine (waitBlock (1.5f));
 				UpperTarget.SetActive (false);
 				MiddleTarget.SetActive (false);
 				LowerTarget.SetActive (false);
