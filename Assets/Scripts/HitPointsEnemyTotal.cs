@@ -70,7 +70,7 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 
 
 			Instantiate (blockParticle, blockParticlePos.transform.position, Quaternion.identity);
-			iTween.MoveBy (enemyObj, new Vector3 (20f, 0f, 0f), 0.3f);
+			iTween.MoveBy (enemyObj, new Vector3 (-20f, 0f, 0f), 0.3f);
 			//Debug.Log ("blockeedd");
 			StartCoroutine (waitBlockTwo ());
 			blockOnceTwo = false;

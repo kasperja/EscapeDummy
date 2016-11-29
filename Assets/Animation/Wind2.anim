@@ -22,9 +22,9 @@ AnimationClip:
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - time: 1.65
-        value: {x: 0, y: 0, z: 1.166}
-        inSlope: {x: 0, y: 0, z: 0.006642401}
-        outSlope: {x: 0, y: 0, z: 0.006642401}
+        value: {x: 0, y: 0, z: -0.8}
+        inSlope: {x: 0, y: 0, z: 0.00068484247}
+        outSlope: {x: 0, y: 0, z: 0.00068484247}
         tangentMode: 0
       - time: 3.3166666
         value: {x: 0, y: 0, z: -1.026}
@@ -46,9 +46,9 @@ AnimationClip:
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - time: 1.65
-        value: {x: 42, y: 39, z: 41.589657}
-        inSlope: {x: 0.001243718, y: -0.007847428, z: 0}
-        outSlope: {x: 0.001243718, y: -0.007847428, z: 0}
+        value: {x: 41.8, y: 41, z: 41.589657}
+        inSlope: {x: 0.00063765794, y: -0.001786843, z: 0}
+        outSlope: {x: 0.00063765794, y: -0.001786843, z: 0}
         tangentMode: 0
       - time: 3.3166666
         value: {x: 41.589573, y: 41.589657, z: 41.589657}
@@ -111,9 +111,9 @@ AnimationClip:
         outSlope: 0
         tangentMode: 0
       - time: 1.65
-        value: 42
-        inSlope: 0.001243718
-        outSlope: 0.001243718
+        value: 41.8
+        inSlope: 0.00063765794
+        outSlope: 0.00063765794
         tangentMode: 10
       - time: 3.3166666
         value: 41.589573
@@ -136,9 +136,9 @@ AnimationClip:
         outSlope: 0
         tangentMode: 0
       - time: 1.65
-        value: 39
-        inSlope: -0.007847428
-        outSlope: -0.007847428
+        value: 41
+        inSlope: -0.001786843
+        outSlope: -0.001786843
         tangentMode: 10
       - time: 3.3166666
         value: 41.589657
@@ -236,9 +236,9 @@ AnimationClip:
         outSlope: 0
         tangentMode: 0
       - time: 1.65
-        value: 1.166
-        inSlope: 0.006642401
-        outSlope: 0.006642401
+        value: -0.8
+        inSlope: 0.00068484247
+        outSlope: 0.00068484247
         tangentMode: 10
       - time: 3.3166666
         value: -1.026
