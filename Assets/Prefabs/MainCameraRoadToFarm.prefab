@@ -591,7 +591,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012502785530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -767, y: 4.4, z: -37}
+  m_LocalPosition: {x: -725.2, y: 4.4, z: -37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1715,9 +1715,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mode: 0
   quality: 1
-  blurArea: 1.35
+  blurArea: 2.47
   maxBlurSize: 25
-  downsample: 1
+  downsample: 0
   tiltShiftShader: {fileID: 4800000, guid: bf34d2a25450349699e8ae6456fa7ca9, type: 3}
 --- !u!114 &114000011806914056
 MonoBehaviour:
@@ -1845,6 +1845,7 @@ MonoBehaviour:
   introAudio: {fileID: 82000011412981576}
   character: {fileID: 0}
   fadeAnim: {fileID: 95000013225252472}
+  hookForce: {fileID: 0}
 --- !u!114 &114000013166561510
 MonoBehaviour:
   m_ObjectHideFlags: 1
