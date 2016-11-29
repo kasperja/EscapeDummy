@@ -44,7 +44,7 @@ public class EnemyMovement : MonoBehaviour {
 		moveDistMin = transform.position.x + moveDistance;
 
 		useSpeed = -speed;
-		gameObject.transform.localScale = flipHVectorL;
+		gameObject.transform.localScale = flipHVector;
 		//this.transform.Translate (new Vector3 (-15.0f, transform.position.y, 19.0f));
 	
 	}
@@ -110,7 +110,7 @@ public class EnemyMovement : MonoBehaviour {
 			} 
 			if (hitL) {
 				//Debug.Log ("hej2");
-				useSpeed = -speed;
+				useSpeed = speed;
 				gameObject.transform.localScale = flipHVector;
 				
 			}
@@ -132,7 +132,7 @@ public class EnemyMovement : MonoBehaviour {
 
 			} else if (transform.position.x < player.transform.position.x) {
 
-				useSpeed = -followSpeed;
+				useSpeed = followSpeed;
 
 				gameObject.transform.localScale = flipHVector;
 
