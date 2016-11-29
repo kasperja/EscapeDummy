@@ -1713,9 +1713,7 @@ MonoBehaviour:
   attackSound: {fileID: 0}
   attackDelay: 0.2
   attackSpeed: 0.4
-  enemyHpOne: {fileID: 0}
   enemyHpTwo: {fileID: 0}
-  emOne: {fileID: 0}
   emTwo: {fileID: 0}
   charAnimator: {fileID: 95000010344365076}
   blockColEnemyEnable: 0
@@ -2011,9 +2009,7 @@ MonoBehaviour:
   attackSound: {fileID: 0}
   attackDelay: 0.5
   attackSpeed: 0.4
-  enemyHpOne: {fileID: 0}
   enemyHpTwo: {fileID: 0}
-  emOne: {fileID: 0}
   emTwo: {fileID: 0}
   charAnimator: {fileID: 95000010344365076}
   blockColEnemyEnable: 0
@@ -2047,9 +2043,7 @@ MonoBehaviour:
   attackSound: {fileID: 0}
   attackDelay: 0.3
   attackSpeed: 0.2
-  enemyHpOne: {fileID: 0}
   enemyHpTwo: {fileID: 0}
-  emOne: {fileID: 0}
   emTwo: {fileID: 0}
   charAnimator: {fileID: 95000010344365076}
   blockColEnemyEnable: 0
@@ -2118,9 +2112,7 @@ MonoBehaviour:
   attackSound: {fileID: 0}
   attackDelay: 0.1
   attackSpeed: 0.2
-  enemyHpOne: {fileID: 0}
   enemyHpTwo: {fileID: 0}
-  emOne: {fileID: 0}
   emTwo: {fileID: 0}
   charAnimator: {fileID: 95000010344365076}
   blockColEnemyEnable: 0

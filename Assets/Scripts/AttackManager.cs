@@ -30,12 +30,12 @@ public class AttackManager : MonoBehaviour {
 	public float attackDelay = 0.5f;
 	public float attackSpeed = 0.4f;
 
-	public HitPointsEnemyTotal enemyHpOne;
+	//public HitPointsEnemyTotal enemyHpOne;
 	public HitPointsEnemyTotal enemyHpTwo;
-	private bool enemyOneDieOnce = true;
+	//private bool enemyOneDieOnce = true;
 	private bool enemyTwoDieOnce = true;
 
-	public EnemyMovement emOne;
+//	public EnemyMovement emOne;
 	public EnemyMovement emTwo;
 
 	public Animator charAnimator;
@@ -83,22 +83,22 @@ public class AttackManager : MonoBehaviour {
 		
 			//hitCollider.enabled = false;
 		}
-		if (enemyHpOne.isDeadEnemy && enemyOneDieOnce) {
+		/*if (enemyHpOne.isDeadEnemy && enemyOneDieOnce) {
 		
 			attackHit = false;
 			enemyOneDieOnce = false;
-		}
+		}*/
 		if (enemyHpTwo.isDeadEnemy && enemyTwoDieOnce) {
 		
 			attackHit = false;
 			enemyTwoDieOnce = false;
 		}
 
-		if (emOne.isInRange && mainCharScript.m_FacingRight) {
+		/*if (emOne.isInRange && mainCharScript.m_FacingRight) {
 		
 			attackHit = true;
 		
-		} else if (emTwo.isInRange && !mainCharScript.m_FacingRight) {
+		} else*/ if (emTwo.isInRange && !mainCharScript.m_FacingRight) {
 
 			attackHit = true;
 
