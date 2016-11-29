@@ -8,6 +8,7 @@ public class PlayIntro : MonoBehaviour {
 
 	public GameObject character;
 	public Animator fadeAnim;
+	public ForceOnStart hookForce;
 	// Use this for initialization
 	void Start () {
 	
@@ -26,7 +27,7 @@ public class PlayIntro : MonoBehaviour {
 			introMovieTex.Stop ();
 			gameObject.SetActive (false);
 			character.SetActive (true);
-
+			hookForce.gameStarted = true;
 
 		}
 	
@@ -40,6 +41,7 @@ public class PlayIntro : MonoBehaviour {
 		introMovieTex.Stop ();
 		gameObject.SetActive (false);
 		character.SetActive (true);
+		hookForce.gameStarted = true;
 
 	}
 }

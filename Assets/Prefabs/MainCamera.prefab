@@ -1110,7 +1110,7 @@ ParticleSystem:
   moveWithTransform: 0
   autoRandomSeed: 1
   scalingMode: 1
-  randomSeed: 1535645499
+  randomSeed: -213827560
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -3570,6 +3570,7 @@ MonoBehaviour:
   introAudio: {fileID: 82000012847021490}
   character: {fileID: 0}
   fadeAnim: {fileID: 95000013425984318}
+  hookForce: {fileID: 0}
 --- !u!114 &114000010908143008
 MonoBehaviour:
   m_ObjectHideFlags: 1
