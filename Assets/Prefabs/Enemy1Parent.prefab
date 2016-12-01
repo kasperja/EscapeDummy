@@ -307,7 +307,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000012814306434
 GameObject:
   m_ObjectHideFlags: 1
@@ -1094,7 +1094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1000010132264068}
-  XOffset: 3
+  XOffset: -2
   emHpt: {fileID: 114000013121274140}
 --- !u!114 &114000011787699732
 MonoBehaviour:
