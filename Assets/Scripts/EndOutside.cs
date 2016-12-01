@@ -9,8 +9,10 @@ public class EndOutside : MonoBehaviour {
 	public Animator endFadeAnim;
 	public GameObject mainCam;
 	public GameObject endCamTarget;
-	public float waitBeforeEnd = 2f;
+	public float waitBeforeEnd = 60f;
 	public GameObject endFadeLayer;
+	public GameObject titleObj;
+	private bool hasEnded = false;
 	// Use this for initialization
 	void Start () {
 	
@@ -29,6 +31,12 @@ public class EndOutside : MonoBehaviour {
 		
 		}
 
+		if (Input.GetKeyDown (KeyCode.Space) && hasEnded) {
+		
+			StartCoroutine (waitEndTwo());
+		
+		}
+
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
@@ -38,6 +46,7 @@ public class EndOutside : MonoBehaviour {
 		
 			pc2D.isEndOutside = true;
 			pc2D.endCamBool = true;
+
 			StartCoroutine (waitEnd());
 
 		
@@ -62,7 +71,10 @@ public class EndOutside : MonoBehaviour {
 	}
 
 	IEnumerator waitEnd(){
-		
+
+		yield return new WaitForSeconds (1f);
+		titleObj.SetActive (true);
+		hasEnded = true;
 		yield return new WaitForSeconds (waitBeforeEnd);
 
 		endFadeAnim.SetBool ("FadeEnd", true);
@@ -70,5 +82,13 @@ public class EndOutside : MonoBehaviour {
 		yield return new WaitForSeconds (1f);
 		SceneManager.LoadScene (0);
 	
+	}
+	IEnumerator waitEndTwo(){
+
+		endFadeAnim.SetBool ("FadeEnd", true);
+
+		yield return new WaitForSeconds (1f);
+		SceneManager.LoadScene (0);
+
 	}
 }

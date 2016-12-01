@@ -2,6 +2,8 @@ version: 2
 importPivots: 1
 tpsheetFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+- Assets/Cutscenes/TitlePngs/title-0.tpsheet
+- Assets/Cutscenes/TitlePngs/title-1.tpsheet
 - Assets/Textures/Butcher/ButcherBlock-0.tpsheet
 - Assets/Textures/Butcher/ButcherBlock-1.tpsheet
 - Assets/Textures/Butcher/ButcherDeath-0.tpsheet
@@ -77,6 +79,8 @@ tpsheetFileNames:
 - Assets/Textures/MainChar/Anims19-10-16/Strike01-3.tpsheet
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+- Assets/Cutscenes/TitlePngs/title-0.png
+- Assets/Cutscenes/TitlePngs/title-1.png
 - Assets/Textures/Butcher/ButcherBlock-0.png
 - Assets/Textures/Butcher/ButcherBlock-1.png
 - Assets/Textures/Butcher/ButcherDeath-0.png
@@ -152,6 +156,8 @@ textureFileNames:
 - Assets/Textures/MainChar/Anims19-10-16/Strike01-3.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
 - 
 - 
 - 

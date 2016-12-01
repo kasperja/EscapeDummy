@@ -100,5 +100,6 @@ MonoBehaviour:
   endFadeAnim: {fileID: 0}
   mainCam: {fileID: 0}
   endCamTarget: {fileID: 1000010334035436}
-  waitBeforeEnd: 2
+  waitBeforeEnd: 60
   endFadeLayer: {fileID: 0}
+  titleObj: {fileID: 0}
