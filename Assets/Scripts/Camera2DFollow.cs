@@ -22,6 +22,7 @@ namespace UnityStandardAssets._2D
         private Vector3 m_LastTargetPosition;
         private Vector3 m_CurrentVelocity;
         private Vector3 m_LookAheadPos;
+		public bool startOutsideBool = false;
 
         // Use this for initialization
         private void Start()
@@ -49,13 +50,22 @@ namespace UnityStandardAssets._2D
 			
 			} else if (MainCharScript.startCamBool) {
 
-				damping = 0.4f;
+
+				if (startOutsideBool) {
+					damping = 0.5f;
+				} else {
+					damping = 0.4f;
+				}
 				target = targetStart;
 
 
 			} else if (MainCharScript.startCamBackBool){
 
-				damping = 0.1f;
+				if (startOutsideBool) {
+					damping = 0.5f;
+				} else {
+					damping = 0.4f;
+				}
 				target = targetNotHooked;
 
 			}else if (MainCharScript.endCamBackBool){
@@ -65,7 +75,18 @@ namespace UnityStandardAssets._2D
 			
 			}else {
 			
-				damping = 0.1f;
+				if (startOutsideBool) {
+
+					if(damping > 0.1f){
+
+						damping -= 0.7f * Time.deltaTime;
+					}
+
+				} else {
+					
+					damping = 0.1f;
+
+				}
 				target = targetNotHooked;
 			
 			}
