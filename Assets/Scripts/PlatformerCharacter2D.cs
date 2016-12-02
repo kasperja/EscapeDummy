@@ -425,7 +425,7 @@ using System.Collections;
 			StartCoroutine (WaitForAnim2(0.5f));
 
 			}*/
-	if (!m_Anim.GetBool("SpaceBool") && Input.GetKeyDown (KeyCode.W) && playOnce3 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead && attackDone) {
+	if ((m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Idle Lookup") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerIdleBlink3-4") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerIdleBlinkLookback") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Hit")) && !m_Anim.GetBool("SpaceBool") && Input.GetKeyDown (KeyCode.W) && playOnce3 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead && attackDone) {
 
 			if(attackSoundOnce){
 
@@ -437,7 +437,7 @@ using System.Collections;
 			StartCoroutine (WaitForAnim3(0.1f));
 
 		}
-	else if (!m_Anim.GetBool("SpaceBool") && Input.GetKeyDown(KeyCode.E) && playOnce5 && cm.falconPunchBool == false && m_Grounded && !hpPlayerTotal.isDead && attackDone) {
+	else if ((m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Idle Lookup") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerIdleBlink3-4") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerIdleBlinkLookback") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Hit")) && !m_Anim.GetBool("SpaceBool") && Input.GetKeyDown(KeyCode.E) && playOnce5 && cm.falconPunchBool == false && m_Grounded && !hpPlayerTotal.isDead && attackDone) {
 
 			if(attackSoundOnce){
 
