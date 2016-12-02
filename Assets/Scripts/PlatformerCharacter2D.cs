@@ -166,7 +166,7 @@ using System.Collections;
 	}
 		private void Update(){
 		
-		if (Input.GetKeyDown (KeyCode.Space)  && !hpPlayerTotal.isDead) {
+		if (Input.GetKeyDown (KeyCode.Space)  && !hpPlayerTotal.isDead && m_Grounded) {
 		
 			m_Anim.SetBool ("SpaceBool", true);
 			StartCoroutine (waitSpaceBool(0.2f));
@@ -425,7 +425,7 @@ using System.Collections;
 			StartCoroutine (WaitForAnim2(0.5f));
 
 			}*/
-	if (Input.GetKeyDown (KeyCode.W) && playOnce3 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead && attackDone) {
+	if (!m_Anim.GetBool("SpaceBool") && Input.GetKeyDown (KeyCode.W) && playOnce3 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead && attackDone) {
 
 			if(attackSoundOnce){
 
@@ -437,7 +437,7 @@ using System.Collections;
 			StartCoroutine (WaitForAnim3(1f));
 
 		}
-	else if (Input.GetKeyDown(KeyCode.E) && playOnce5 && cm.falconPunchBool == false && m_Grounded && !hpPlayerTotal.isDead && attackDone) {
+	else if (!m_Anim.GetBool("SpaceBool") && Input.GetKeyDown(KeyCode.E) && playOnce5 && cm.falconPunchBool == false && m_Grounded && !hpPlayerTotal.isDead && attackDone) {
 
 			if(attackSoundOnce){
 
@@ -463,7 +463,7 @@ using System.Collections;
 
 		}*/
 			
-		else if (!Input.GetKey (KeyCode.E) && !Input.GetKey (KeyCode.R) && !Input.GetKey (KeyCode.W) 
+		/*else if (!Input.GetKey (KeyCode.E) && !Input.GetKey (KeyCode.R) && !Input.GetKey (KeyCode.W) 
 			&& cm.falconPunchBool == false) {
 		
 			m_Attack1 = false;
@@ -474,7 +474,7 @@ using System.Collections;
 			attackSoundOnce = true;
 		
 		
-		} 
+		} */
 
 
 		}
@@ -651,6 +651,8 @@ using System.Collections;
 			if (!sideArrowsBool) {
 				if (jumpOnce) {
 					
+				m_Anim.SetBool ("SpaceBool", true);
+				StartCoroutine (waitSpaceBool(0.2f));
 					// Add a vertical force to the player.
 					m_Anim.SetBool ("StartJump", true);
 					StartCoroutine (waitJump (waitJumpTime));
@@ -658,23 +660,23 @@ using System.Collections;
 				}
 			} else {
 
-
-				//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-				m_Anim.SetBool ("StartJump", true);
+				if (jumpOnce) {
+					//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+					m_Anim.SetBool ("StartJump", true);
 
 				
 
-				m_Grounded = false;
+					m_Grounded = false;
 
-				m_Anim.SetBool("Ground", false);
+					m_Anim.SetBool ("Ground", false);
 
-				//m_Anim.SetBool("StartJump", false);
+					//m_Anim.SetBool("StartJump", false);
 
-				StartCoroutine (waitJump (0.0f));
+					StartCoroutine (waitJump (0.0f));
 
-				jumpOnce = false;
+					jumpOnce = false;
 
-
+				}
 
 			}
 				
@@ -763,7 +765,9 @@ using System.Collections;
 			if (!sideArrowsBool) {
 				if (jumpOnce) {
 					
-					// Add a vertical force to the player.
+					m_Anim.SetBool ("SpaceBool", true);
+					StartCoroutine (waitSpaceBool(0.2f));
+						// Add a vertical force to the player.
 					m_Anim.SetBool ("StartJump", false);
 					m_Anim.SetBool("Ground", false);
 					StartCoroutine (waitJump (waitJumpTime));
@@ -774,21 +778,21 @@ using System.Collections;
 
 				//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 
-				
+				if (jumpOnce) {
 
-				m_Anim.SetBool ("StartJump", true);
+					m_Anim.SetBool ("StartJump", true);
 
-				m_Grounded = false;
+					m_Grounded = false;
 
-				m_Anim.SetBool("Ground", false);
+					m_Anim.SetBool ("Ground", false);
 
-				m_Anim.SetBool("StartJump", false);
+					m_Anim.SetBool ("StartJump", false);
 
-				StartCoroutine (waitJump (0.0f));
-				jumpOnce = false;
+					StartCoroutine (waitJump (0.0f));
+					jumpOnce = false;
 
 
-					
+				}
 					
 			
 			}
