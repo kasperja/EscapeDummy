@@ -434,7 +434,7 @@ using System.Collections;
 			}
 				m_Attack3 = true;
 				playOnce3 = false;
-			StartCoroutine (WaitForAnim3(1f));
+			StartCoroutine (WaitForAnim3(0.1f));
 
 		}
 	else if (!m_Anim.GetBool("SpaceBool") && Input.GetKeyDown(KeyCode.E) && playOnce5 && cm.falconPunchBool == false && m_Grounded && !hpPlayerTotal.isDead && attackDone) {
@@ -446,7 +446,7 @@ using System.Collections;
 			}
 			m_Attack5 = true;
 			playOnce5 = false;
-			StartCoroutine (WaitForAnim5(1f));
+			StartCoroutine (WaitForAnim5(0.1f));
 
 		}
 
