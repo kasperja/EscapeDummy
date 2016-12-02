@@ -9,9 +9,12 @@ public class PlayIntro : MonoBehaviour {
 	public GameObject character;
 	public Animator fadeAnim;
 	public ForceOnStart hookForce;
+
+	public Platformer2DUserControl userControlScript;
 	// Use this for initialization
 	void Start () {
 	
+
 		character.SetActive (false);
 		introMovieTex.Play ();
 		introAudio.Play ();
@@ -25,9 +28,10 @@ public class PlayIntro : MonoBehaviour {
 			
 			fadeAnim.SetBool ("Fade", true);
 			introMovieTex.Stop ();
-			gameObject.SetActive (false);
+			userControlScript.initiateStanding = true;
 			character.SetActive (true);
 			hookForce.gameStarted = true;
+			gameObject.SetActive (false);
 
 		}
 	
@@ -39,9 +43,12 @@ public class PlayIntro : MonoBehaviour {
 	
 		fadeAnim.SetBool ("Fade", true);
 		introMovieTex.Stop ();
-		gameObject.SetActive (false);
+		userControlScript.initiateStanding = true;
 		character.SetActive (true);
 		hookForce.gameStarted = true;
+		gameObject.SetActive (false);
+
 
 	}
+
 }

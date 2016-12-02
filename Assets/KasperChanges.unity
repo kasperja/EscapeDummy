@@ -1110,6 +1110,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 221629631}
   m_Script: {fileID: 11500000, guid: 66f20a6c889788b48b624bbf4ddf2c7c, type: 3}
+--- !u!114 &142688745 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000011177026278, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    type: 2}
+  m_PrefabInternal: {fileID: 221629631}
+  m_Script: {fileID: 11500000, guid: c3d7b34a3bb2d4e4b926e7e729d3d410, type: 3}
 --- !u!95 &142688749 stripped
 Animator:
   m_PrefabParentObject: {fileID: 95000010344365076, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
@@ -4017,6 +4023,23 @@ Prefab:
       propertyPath: sunTransform
       value: 
       objectReference: {fileID: 740403092}
+    - target: {fileID: 114000010267442252, guid: a213b38a8a030074f9fee084c6095ca8,
+        type: 2}
+      propertyPath: userControlScript
+      value: 
+      objectReference: {fileID: 142688745}
+    - target: {fileID: 1000014162286254, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010159954516, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013316137996, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
   m_IsPrefabParent: 0
