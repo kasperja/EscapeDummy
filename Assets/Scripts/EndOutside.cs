@@ -74,6 +74,8 @@ public class EndOutside : MonoBehaviour {
 
 		yield return new WaitForSeconds (1f);
 		titleObj.SetActive (true);
+
+		yield return new WaitForSeconds (3f);
 		hasEnded = true;
 		yield return new WaitForSeconds (waitBeforeEnd);
 
