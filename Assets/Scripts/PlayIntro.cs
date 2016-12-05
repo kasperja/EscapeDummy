@@ -10,6 +10,8 @@ public class PlayIntro : MonoBehaviour {
 	public Animator fadeAnim;
 	public ForceOnStart hookForce;
 
+	public bool introSkipped = false;
+
 	public Platformer2DUserControl userControlScript;
 	// Use this for initialization
 	void Start () {
@@ -32,6 +34,7 @@ public class PlayIntro : MonoBehaviour {
 			character.SetActive (true);
 			hookForce.gameStarted = true;
 			gameObject.SetActive (false);
+			introSkipped = true;
 
 		}
 	
@@ -47,6 +50,7 @@ public class PlayIntro : MonoBehaviour {
 		character.SetActive (true);
 		hookForce.gameStarted = true;
 		gameObject.SetActive (false);
+		introSkipped = true;
 
 
 	}

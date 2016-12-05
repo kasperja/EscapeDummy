@@ -785,7 +785,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1957,6 +1957,7 @@ MonoBehaviour:
   character: {fileID: 0}
   fadeAnim: {fileID: 95000013425984318}
   hookForce: {fileID: 0}
+  introSkipped: 0
   userControlScript: {fileID: 0}
 --- !u!114 &114000010908143008
 MonoBehaviour:
@@ -2015,7 +2016,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2c050b498b257742819179a038e2b07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeInSpeed: 0.2
+  fadeInSpeed: 0.1
+  playIntroScript: {fileID: 114000010267442252}
 --- !u!166 &166000011840338954
 AudioChorusFilter:
   m_ObjectHideFlags: 1

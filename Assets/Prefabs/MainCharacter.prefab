@@ -1687,6 +1687,9 @@ MonoBehaviour:
   idleSawSound: {fileID: 0}
   cutSawSound: {fileID: 0}
   sawPos: {fileID: 0}
+  isFootstepIndoor: 1
+  footstepIndoor: {fileID: 0}
+  footstepGravel: {fileID: 0}
 --- !u!114 &114000010182849938
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1757,7 +1760,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitpoints: 500
   deathSound: {fileID: 0}
-  deathParticle: {fileID: 19802714, guid: 050a96b794bf0c242bfbb65492949822, type: 2}
+  deathParticle: {fileID: 198000010405026494, guid: 0145611886b47c4499639bd14b6a999b,
+    type: 2}
   deathBloodParticle: {fileID: 198000010837645610, guid: 9d1eeb43b2bcbfd44a007c789037f739,
     type: 2}
   sawDeathBloodParticle: {fileID: 198000011697979514, guid: 03e3f3025e454e04dbca64b01e3e54d2,
