@@ -130,7 +130,7 @@ public class HitPointsEnemy : MonoBehaviour {
 
 					iTween.PunchScale (graphicsObj, new Vector3 (-punchAmmount, -1f, 0f), 0.5f);
 				}*/
-				iTween.MoveBy (enemyObj, new Vector3 (-10f, 0f, 0f), 0.3f);
+				//iTween.MoveBy (enemyObj, new Vector3 (-10f, 0f, 0f), 0.3f);
 				StartCoroutine (hitWait ());
 
 				hitPointsTotalScript.hitpoints -= highDmg.attackDamage * dmgMultiplier;
@@ -168,7 +168,7 @@ public class HitPointsEnemy : MonoBehaviour {
 
 					iTween.PunchScale (graphicsObj, new Vector3 (-punchAmmount, -1f, 0f), 0.5f);
 				}*/
-				iTween.MoveBy (enemyObj, new Vector3 (-20f, 0f, 0f), 0.3f);
+				//iTween.MoveBy (enemyObj, new Vector3 (-20f, 0f, 0f), 0.3f);
 				StartCoroutine (hitWait ());
 				hitPointsTotalScript.hitpoints -= middleDmg.attackDamage * dmgMultiplier;
 				Instantiate (hitParticle, gameObject.transform.position, Quaternion.identity);
@@ -203,7 +203,7 @@ public class HitPointsEnemy : MonoBehaviour {
 					iTween.PunchScale (graphicsObj, new Vector3 (-punchAmmount, -1f, 0f), 0.5f);
 				}*/
 
-				iTween.MoveBy (enemyObj, new Vector3 (-20f, 0f, 0f), 0.3f);
+				//iTween.MoveBy (enemyObj, new Vector3 (-20f, 0f, 0f), 0.3f);
 				StartCoroutine (hitWait ());
 				hitPointsTotalScript.hitpoints -= lowDmg.attackDamage * dmgMultiplier;
 				Instantiate (hitParticle, gameObject.transform.position, Quaternion.identity);
