@@ -166,7 +166,7 @@ using System.Collections;
 	}
 		private void Update(){
 		
-		if (Input.GetKeyDown (KeyCode.Space)  && !hpPlayerTotal.isDead && m_Grounded) {
+		if (Input.GetKeyDown (KeyCode.Space)  && !hpPlayerTotal.isDead && m_Grounded && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5")) {
 		
 			m_Anim.SetBool ("SpaceBool", true);
 			StartCoroutine (waitSpaceBool(0.2f));
@@ -649,7 +649,7 @@ using System.Collections;
 	if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive  && !hpPlayerTotal.isDead && jumpOnce && !m_Attack3 && !m_Attack5)
             {
 			if (!sideArrowsBool) {
-				if (jumpOnce) {
+			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5")) {
 					
 				m_Anim.SetBool ("SpaceBool", true);
 				StartCoroutine (waitSpaceBool(0.2f));
@@ -660,7 +660,7 @@ using System.Collections;
 				}
 			} else {
 
-				if (jumpOnce) {
+			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5")) {
 					//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 					m_Anim.SetBool ("StartJump", true);
 
@@ -763,7 +763,7 @@ using System.Collections;
 	if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive && !hpPlayerTotal.isDead && jumpOnce && !m_Attack3 && !m_Attack5)
 		{
 			if (!sideArrowsBool) {
-				if (jumpOnce) {
+			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5")) {
 					
 					m_Anim.SetBool ("SpaceBool", true);
 					StartCoroutine (waitSpaceBool(0.2f));
@@ -778,7 +778,7 @@ using System.Collections;
 
 				//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 
-				if (jumpOnce) {
+			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5")) {
 
 					m_Anim.SetBool ("StartJump", true);
 
