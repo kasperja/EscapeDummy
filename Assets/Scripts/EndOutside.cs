@@ -13,6 +13,7 @@ public class EndOutside : MonoBehaviour {
 	public GameObject endFadeLayer;
 	public GameObject titleObj;
 	private bool hasEnded = false;
+	public AudioSource footStepsSoundGravel;
 	// Use this for initialization
 	void Start () {
 	
@@ -28,6 +29,7 @@ public class EndOutside : MonoBehaviour {
 		
 			pc2D.sideArrowsBool = true;
 			m_Anim.SetBool ("SideArrows", true);
+			footStepsSoundGravel.volume -= 0.2f * Time.deltaTime;
 		
 		}
 
@@ -71,6 +73,7 @@ public class EndOutside : MonoBehaviour {
 	}
 
 	IEnumerator waitEnd(){
+
 
 		yield return new WaitForSeconds (1f);
 		titleObj.SetActive (true);
