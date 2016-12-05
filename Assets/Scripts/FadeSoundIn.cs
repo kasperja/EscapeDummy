@@ -7,6 +7,7 @@ public class FadeSoundIn : MonoBehaviour {
 	private float maxVol;
 	private bool hasMaxed = false;
 	public float fadeInSpeed = 0.2f;
+	public PlayIntro playIntroScript;
 	// Use this for initialization
 	void Start () {
 	
@@ -19,6 +20,13 @@ public class FadeSoundIn : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+
+		if (playIntroScript.introSkipped) {
+			fadeInSpeed = 0.5f;
+		}
+
+
+
 		if (currentSound.volume < maxVol && !hasMaxed) {
 
 			currentSound.volume += fadeInSpeed * Time.deltaTime;
@@ -28,6 +36,8 @@ public class FadeSoundIn : MonoBehaviour {
 			hasMaxed = true;
 		
 		}
+
+
 	
 	}
 }

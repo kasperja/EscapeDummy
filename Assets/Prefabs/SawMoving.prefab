@@ -778,7 +778,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
-  Pan2D: -1
+  Pan2D: 1
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -852,7 +852,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
-  Pan2D: -1
+  Pan2D: 1
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -934,7 +934,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2c050b498b257742819179a038e2b07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeInSpeed: 0.3
+  fadeInSpeed: 0.1
+  playIntroScript: {fileID: 0}
 --- !u!114 &114000010614363032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -964,7 +965,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2c050b498b257742819179a038e2b07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeInSpeed: 0.3
+  fadeInSpeed: 0.1
+  playIntroScript: {fileID: 0}
 --- !u!198 &198000011381762580
 ParticleSystem:
   m_ObjectHideFlags: 1
