@@ -4384,6 +4384,8 @@ MonoBehaviour:
   sawSound: {fileID: 0}
   waitForSoundBool: 1
   resetPosBool: 0
+  cutSound: {fileID: 0}
+  idleSound: {fileID: 0}
   bloodDripParticle: {fileID: 198000014170172562}
 --- !u!114 &114000010937621070
 MonoBehaviour:
@@ -4432,6 +4434,8 @@ MonoBehaviour:
   sawSound: {fileID: 0}
   waitForSoundBool: 1
   resetPosBool: 0
+  cutSound: {fileID: 0}
+  idleSound: {fileID: 0}
   bloodDripParticle: {fileID: 198000012720015960}
 --- !u!114 &114000011090240666
 MonoBehaviour:
@@ -4536,6 +4540,8 @@ MonoBehaviour:
   sawSound: {fileID: 0}
   waitForSoundBool: 1
   resetPosBool: 0
+  cutSound: {fileID: 0}
+  idleSound: {fileID: 0}
   bloodDripParticle: {fileID: 198000011762581254}
 --- !u!114 &114000011823205528
 MonoBehaviour:
@@ -4556,6 +4562,8 @@ MonoBehaviour:
   sawSound: {fileID: 0}
   waitForSoundBool: 1
   resetPosBool: 0
+  cutSound: {fileID: 0}
+  idleSound: {fileID: 0}
   bloodDripParticle: {fileID: 198000013476944228}
 --- !u!114 &114000012303256494
 MonoBehaviour:
@@ -4632,6 +4640,8 @@ MonoBehaviour:
   sawSound: {fileID: 0}
   waitForSoundBool: 1
   resetPosBool: 0
+  cutSound: {fileID: 0}
+  idleSound: {fileID: 0}
   bloodDripParticle: {fileID: 198000011444602228}
 --- !u!114 &114000012632924170
 MonoBehaviour:
@@ -4652,6 +4662,8 @@ MonoBehaviour:
   sawSound: {fileID: 0}
   waitForSoundBool: 1
   resetPosBool: 0
+  cutSound: {fileID: 0}
+  idleSound: {fileID: 0}
   bloodDripParticle: {fileID: 198000013343234650}
 --- !u!114 &114000012925734434
 MonoBehaviour:
@@ -4672,6 +4684,8 @@ MonoBehaviour:
   sawSound: {fileID: 0}
   waitForSoundBool: 1
   resetPosBool: 0
+  cutSound: {fileID: 0}
+  idleSound: {fileID: 0}
   bloodDripParticle: {fileID: 198000011795285946}
 --- !u!114 &114000013022497822
 MonoBehaviour:
