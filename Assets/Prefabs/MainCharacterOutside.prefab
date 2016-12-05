@@ -1981,6 +1981,14 @@ MonoBehaviour:
   isEndOutside: 0
   isStartOutside: 0
   runParticle: {fileID: 198000010359797992}
+  idleSawSound: {fileID: 82000012692899082, guid: a59ec1f2765f3844fb5e444cc1bf5569,
+    type: 2}
+  cutSawSound: {fileID: 82000011592646060, guid: a59ec1f2765f3844fb5e444cc1bf5569,
+    type: 2}
+  sawPos: {fileID: 4000013179750108, guid: a59ec1f2765f3844fb5e444cc1bf5569, type: 2}
+  isFootstepIndoor: 0
+  footstepIndoor: {fileID: 0}
+  footstepGravel: {fileID: 0}
 --- !u!114 &114000013304144382
 MonoBehaviour:
   m_ObjectHideFlags: 1

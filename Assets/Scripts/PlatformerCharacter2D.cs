@@ -140,6 +140,15 @@ using System.Collections;
 	public bool isStartOutside = false;
 
 	public ParticleSystem runParticle;
+
+	public AudioSource idleSawSound;
+	public AudioSource cutSawSound;
+	public Transform sawPos;
+
+	public bool isFootstepIndoor = true;
+	public AudioSource footstepIndoor;
+	public AudioSource footstepGravel;
+
         private void Awake()
         {
 			Application.targetFrameRate = 900;
@@ -165,6 +174,22 @@ using System.Collections;
 
 	}
 		private void Update(){
+
+		if (sawPos.position.x >= transform.position.x) {
+		
+			if(idleSawSound.panStereo < 1f){
+				idleSawSound.panStereo += 0.3f * Time.deltaTime;
+				cutSawSound.panStereo += 0.3f * Time.deltaTime;
+			}
+
+		} else {
+			if (idleSawSound.panStereo > -1f) {
+				
+				idleSawSound.panStereo -= 0.3f * Time.deltaTime;
+				cutSawSound.panStereo -= 0.3f * Time.deltaTime;
+
+			}
+		}
 		
 		if (Input.GetKeyDown (KeyCode.Space)  && !hpPlayerTotal.isDead && m_Grounded && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") 
 			&& !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
@@ -574,6 +599,15 @@ using System.Collections;
             {
                 // Reduce the speed if crouching by the crouchSpeed multiplier
                 
+			if (isFootstepIndoor) {
+
+			if(!footstepIndoor.isPlaying) footstepIndoor.Play();
+
+			} else {
+
+			if(!footstepGravel.isPlaying) footstepGravel.Play();
+
+			}
 		if (isEndOutside || isStartOutside) {
 
 				move = 1f;
@@ -686,7 +720,9 @@ using System.Collections;
         }
 
 	public void Stop(float move, bool crouch, bool jump){
-	
+
+		footstepIndoor.Stop ();
+		footstepGravel.Stop ();
 
 		if (!crouch && m_Anim.GetBool("Crouch"))
 		{

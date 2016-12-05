@@ -16,6 +16,8 @@ public class DoorAbattoir : MonoBehaviour {
 	public GameObject controller;
 
 	public AudioSource ambientSound;
+	public AudioSource sawIdleSound;
+	public AudioSource sawCutSound;
 
 	public GameObject whiteScreen;
 	public GameObject whiteScreenTwo;
@@ -51,7 +53,9 @@ public class DoorAbattoir : MonoBehaviour {
 
 			MainCamObj.GetComponent<SunShafts> ().sunShaftIntensity += 3f * Time.deltaTime;
 
-			ambientSound.volume -= 0.1f;
+			ambientSound.volume -= 0.5f * Time.deltaTime;
+			sawCutSound.volume -= 0.5f * Time.deltaTime;
+			sawIdleSound.volume -= 0.5f * Time.deltaTime;
 
 			if (doorFullyOpenBool) {
 				whiteScreenColor.a += 0.4f * Time.deltaTime;

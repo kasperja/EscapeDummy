@@ -1684,6 +1684,9 @@ MonoBehaviour:
   isEndOutside: 0
   isStartOutside: 0
   runParticle: {fileID: 198000014177610108}
+  idleSawSound: {fileID: 0}
+  cutSawSound: {fileID: 0}
+  sawPos: {fileID: 0}
 --- !u!114 &114000010182849938
 MonoBehaviour:
   m_ObjectHideFlags: 1

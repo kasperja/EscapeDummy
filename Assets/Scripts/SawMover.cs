@@ -11,6 +11,9 @@ public class SawMover : MonoBehaviour {
 	public float hookDetectSpeed = -30f;
 	public float meatDetectSpeed = 30f;
 
+	//public AudioSource idleSound;
+	//public AudioSource cutSound;
+
 	// Use this for initialization
 	void Start () {
 
