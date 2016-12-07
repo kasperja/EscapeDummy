@@ -149,6 +149,7 @@ using System.Collections;
 	public AudioSource footstepIndoor;
 	public AudioSource footstepGravel;
 
+
         private void Awake()
         {
 			Application.targetFrameRate = 900;
@@ -163,6 +164,12 @@ using System.Collections;
 
 	private void Start()
 	{
+
+		if (isStartOutside) {
+		
+			m_Anim.SetBool ("outsideStart", true);
+		
+		}
 		posMoveBack = new Vector3 (graphicsNorm.transform.localPosition.x, 
 			graphicsNorm.transform.localPosition.y + moveBackAmmount, graphicsNorm.transform.localPosition.z);
 

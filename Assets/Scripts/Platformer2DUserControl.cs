@@ -19,6 +19,7 @@ using System.Collections;
 	public bool initiateStanding = false;
 	private bool initiateOnce = true;
 
+
         private void Awake()
         {
             m_Character = GetComponent<PlatformerCharacter2D>();
@@ -101,8 +102,11 @@ using System.Collections;
 			isStopped = true;
 		}
 	IEnumerator waitForStanding(){
-
-		yield return new WaitForSeconds (0.8f);
+		if (m_Character.isStartOutside) {
+			yield return new WaitForSeconds (0f);
+		} else {
+			yield return new WaitForSeconds (1.8f);
+		}
 		isStandingStart = true;
 
 	}
