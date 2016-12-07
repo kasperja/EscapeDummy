@@ -16,7 +16,7 @@ public class ForceOnStart : MonoBehaviour {
 	void Update () {
 
 		if (gameStarted && gameStartedOnce) {
-			gameObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2 (40f, 0), ForceMode2D.Impulse);
+			gameObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2 (80f, 0), ForceMode2D.Impulse);
 			gameStartedOnce = false;
 		}
 	}

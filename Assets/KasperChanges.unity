@@ -4140,6 +4140,18 @@ Prefab:
       propertyPath: userControlScript
       value: 
       objectReference: {fileID: 142688745}
+    - target: {fileID: 1000014162286254, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013316137996, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010159954516, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
   m_IsPrefabParent: 0
