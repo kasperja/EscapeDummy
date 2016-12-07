@@ -78,7 +78,7 @@ public class EnemyMovement : MonoBehaviour {
 			useSpeed = 0.0f;
 		
 		}
-		else if (((isFollowing == false && isInRange == false) || walkWhenDead) && !hpEnemyTotal.isDeadEnemy ) {
+		else if (((isFollowing == false && isInRange == false) || walkWhenDead || player.GetComponent<PlatformerCharacter2D>().climbingStairsBool) && !hpEnemyTotal.isDeadEnemy ) {
 			
 			if (transform.position.x <= moveDistMax) {
 				
