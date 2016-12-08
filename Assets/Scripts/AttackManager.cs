@@ -25,6 +25,7 @@ public class AttackManager : MonoBehaviour {
 
 	public HitpointsPlayerTotal hpT;
 	public AudioSource attackSound;
+
 	private bool attackSoundOnce = true;
 	private bool playOnceMoveObj = true;
 	public float attackDelay = 0.5f;
@@ -261,7 +262,9 @@ public class AttackManager : MonoBehaviour {
 		if (coll.tag == "highCol" || coll.tag == "middleCol" || coll.tag == "lowCol") {
 
 
-			attackSound.Play ();
+
+				attackSound.Play ();
+			
 		}
 
 		if (coll.tag == "blockCol" && blockEnemyOnce){
