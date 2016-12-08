@@ -25,9 +25,9 @@ public class StartOutside : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (footStepGravel.volume < 0.5f && !hasReachedMax) {
+		if (footStepGravel.volume < 0.2f && !hasReachedMax) {
 		
-			footStepGravel.volume += 0.3f * Time.deltaTime;
+			footStepGravel.volume += 0.1f * Time.deltaTime;
 		
 		} else {
 		

@@ -1690,6 +1690,10 @@ MonoBehaviour:
   isFootstepIndoor: 1
   footstepIndoor: {fileID: 0}
   footstepGravel: {fileID: 0}
+  fadeSoundInSawScript: {fileID: 0}
+  fadeSoundInSawScriptIdle: {fileID: 0}
+  fadeSoundInSawScriptControllerIdle: {fileID: 0}
+  fadeSoundInSawScriptControllerActive: {fileID: 0}
 --- !u!114 &114000010182849938
 MonoBehaviour:
   m_ObjectHideFlags: 1

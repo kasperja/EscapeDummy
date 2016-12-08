@@ -9,6 +9,9 @@ public class EnemyWorkingSaw : MonoBehaviour {
 	private bool workOnce = true;
 
 	private bool workActive = true;
+
+	public AudioSource activeControllerSound;
+	private bool soundOnce = true;
 	// Use this for initialization
 	void Start () {
 	
@@ -24,6 +27,12 @@ public class EnemyWorkingSaw : MonoBehaviour {
 					enemyAnim.SetBool ("Work", true);
 					StartCoroutine (waitForAnim (0.5f));
 					workOnce = false;
+					if (soundOnce) {
+						
+						StartCoroutine (waitSound ());
+						soundOnce = false;
+					
+					}
 
 				}
 
@@ -48,12 +57,22 @@ public class EnemyWorkingSaw : MonoBehaviour {
 	
 	}
 
+	IEnumerator waitSound(){
+		yield return new WaitForSeconds (0.8f);
+		activeControllerSound.Play ();
+		yield return new WaitForSeconds (0.5f);
+		soundOnce = true;
+	
+	}
+
 	IEnumerator waitForActive(float waitTime){
 
 		yield return new WaitForSeconds (waitTime);
 
 		workActive = false;
 		enemyAnim.SetBool ("Work", false);
+
+
 
 		yield return new WaitForSeconds (5f);
 

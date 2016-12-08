@@ -29,7 +29,7 @@ public class EndOutside : MonoBehaviour {
 		
 			pc2D.sideArrowsBool = true;
 			m_Anim.SetBool ("SideArrows", true);
-			footStepsSoundGravel.volume -= 0.2f * Time.deltaTime;
+			footStepsSoundGravel.volume -= 0.1f * Time.deltaTime;
 		
 		}
 
