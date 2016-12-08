@@ -154,6 +154,8 @@ using System.Collections;
 	public FadeSawSoundsIn fadeSoundInSawScriptControllerIdle;
 	public FadeSawSoundsIn fadeSoundInSawScriptControllerActive;
 
+	public bool camSaw = false;
+
 
         private void Awake()
         {
@@ -951,6 +953,14 @@ using System.Collections;
 			endCamBool = true;
 
 		}
+if (other.gameObject.tag == "CamSawTrigger") {
+
+
+
+
+	camSaw = true;
+
+}
 		if (other.gameObject.tag == "CamTargetStartTrigger") {
 
 			startCamBool = true;
@@ -1046,6 +1056,12 @@ using System.Collections;
 		StartCoroutine (waitCamStart (0.5f));
 
 		}
+
+	if (other.gameObject.tag == "CamSawTrigger") {
+
+		camSaw = false;
+
+	}
 
 
 		if (other.gameObject.tag == "SawSound") {

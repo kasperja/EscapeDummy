@@ -48,6 +48,7 @@ TagManager:
   - EndTriggerOutside
   - StartTriggerOutside
   - SoundTriggerSaw
+  - CamSawTrigger
   layers:
   - Default
   - TransparentFX
