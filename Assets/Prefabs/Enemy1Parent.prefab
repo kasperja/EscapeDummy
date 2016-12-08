@@ -1295,6 +1295,7 @@ MonoBehaviour:
   hitLargeParticle: {fileID: 198000010405026494, guid: 0145611886b47c4499639bd14b6a999b,
     type: 2}
   deathSound: {fileID: 0}
+  deathSoundVoice: {fileID: 0}
   enemy_Animator: {fileID: 95000010490676528}
   isDeadEnemy: 0
   enemyBlock: 0

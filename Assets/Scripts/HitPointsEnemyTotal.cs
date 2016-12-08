@@ -43,6 +43,7 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 	public ParticleSystem deathParticle;
 	public ParticleSystem hitLargeParticle;
 	public AudioSource deathSound;
+	public AudioSource deathSoundVoice;
 	public Animator enemy_Animator;
 	public bool isDeadEnemy = false;
 
@@ -98,6 +99,7 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 			Instantiate (hitLargeParticle, particleHitPosObj.transform.position, Quaternion.identity);
 
 			deathSound.Play ();
+			deathSoundVoice.Play ();
 
 			isDeadEnemy = true;
 			enemy_Animator.SetBool ("DeadBool", true);
