@@ -140,3 +140,6 @@ MonoBehaviour:
   endFadeLayer: {fileID: 0}
   titleObj: {fileID: 0}
   footStepsSoundGravel: {fileID: 0}
+  ambienceOne: {fileID: 0}
+  ambienceTwo: {fileID: 0}
+  fadeAmbienceOut: 0
