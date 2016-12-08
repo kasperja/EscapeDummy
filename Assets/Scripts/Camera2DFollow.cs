@@ -11,6 +11,7 @@ namespace UnityStandardAssets._2D
 		public Transform targetSaw;
 		public Transform targetHooked;
 		public Transform targetNotHooked;
+		public Transform targetCamSaw;
 		public PlatformerCharacter2D MainCharScript;
         public float damping = 0.1f;
         public float lookAheadFactor = 3;
@@ -73,6 +74,12 @@ namespace UnityStandardAssets._2D
 				damping = 0.1f;
 				target = targetNotHooked;
 			
+			}else if(MainCharScript.camSaw){
+
+				damping = 0.4f;
+				target = targetCamSaw;
+
+
 			}else {
 			
 				if (startOutsideBool) {

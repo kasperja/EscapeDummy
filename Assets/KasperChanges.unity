@@ -4202,6 +4202,10 @@ Prefab:
       propertyPath: userControlScript
       value: 
       objectReference: {fileID: 142688745}
+    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: targetCamSaw
+      value: 
+      objectReference: {fileID: 1845766807}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
   m_IsPrefabParent: 0
@@ -13065,6 +13069,34 @@ Transform:
   m_PrefabParentObject: {fileID: 4000010583472368, guid: c9863b42d99cf5b41884bf0cadba8b08,
     type: 2}
   m_PrefabInternal: {fileID: 1542917398}
+--- !u!1 &1845766806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1845766807}
+  m_Layer: 0
+  m_Name: CamTarget Saw
+  m_TagString: CamSawTrigger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1845766807
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1845766806}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 373, y: 3.8, z: 57.2}
+  m_LocalScale: {x: 2.7552357, y: 2.7552373, z: 1.6207278}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
 --- !u!1001 &1851946113
 Prefab:
   m_ObjectHideFlags: 0
@@ -13111,6 +13143,49 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d06e7bb33fe03b44a2ae6a7c1b30280, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1857815472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1857815474}
+  - 61: {fileID: 1857815473}
+  m_Layer: 0
+  m_Name: CamSawTrigger
+  m_TagString: CamSawTrigger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1857815473
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1857815472}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!4 &1857815474
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1857815472}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 354, y: -20.197205, z: 0}
+  m_LocalScale: {x: 113.214226, y: 630.3198, z: 630.3198}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 30
 --- !u!1 &1859141937
 GameObject:
   m_ObjectHideFlags: 0
