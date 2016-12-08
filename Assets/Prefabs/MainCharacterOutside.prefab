@@ -1170,7 +1170,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013922651358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -925, y: 22, z: 38.8}
+  m_LocalPosition: {x: -974, y: 22, z: 38.8}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1979,7 +1979,7 @@ MonoBehaviour:
   attackDone: 1
   landingParticle: {fileID: 198000010359797992}
   isEndOutside: 0
-  isStartOutside: 0
+  isStartOutside: 1
   runParticle: {fileID: 198000010359797992}
   idleSawSound: {fileID: 82000012692899082, guid: a59ec1f2765f3844fb5e444cc1bf5569,
     type: 2}
@@ -1989,6 +1989,11 @@ MonoBehaviour:
   isFootstepIndoor: 0
   footstepIndoor: {fileID: 0}
   footstepGravel: {fileID: 0}
+  fadeSoundInSawScript: {fileID: 0}
+  fadeSoundInSawScriptIdle: {fileID: 0}
+  fadeSoundInSawScriptControllerIdle: {fileID: 0}
+  fadeSoundInSawScriptControllerActive: {fileID: 0}
+  camSaw: 0
 --- !u!114 &114000013304144382
 MonoBehaviour:
   m_ObjectHideFlags: 1
