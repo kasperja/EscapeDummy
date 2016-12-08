@@ -185,7 +185,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011241205428}
   - 82: {fileID: 82000011592646060}
-  - 114: {fileID: 114000010548404232}
+  - 114: {fileID: 114000013885074786}
   m_Layer: 14
   m_Name: CutSound
   m_TagString: Untagged
@@ -218,7 +218,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012246189348}
   - 82: {fileID: 82000012692899082}
-  - 114: {fileID: 114000013736828530}
+  - 114: {fileID: 114000010330148328}
   m_Layer: 14
   m_Name: IdleSound
   m_TagString: Untagged
@@ -778,7 +778,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
-  Pan2D: -0.7780543
+  Pan2D: -0.1466095
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -852,7 +852,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
-  Pan2D: -0.7780543
+  Pan2D: -0.1466095
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -923,19 +923,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114000010548404232
+--- !u!114 &114000010330148328
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012863959270}
+  m_GameObject: {fileID: 1000013157939086}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2c050b498b257742819179a038e2b07, type: 3}
+  m_Script: {fileID: 11500000, guid: d5f3d478864fc7345badf7ae1f9a9f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeInSpeed: 0.1
-  playIntroScript: {fileID: 0}
+  fadeInSpeed: 0.4
+  insideTrigger: 0
 --- !u!114 &114000010614363032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -954,19 +954,19 @@ MonoBehaviour:
   meatDetected: 0
   hookDetectSpeed: -60
   meatDetectSpeed: 60
---- !u!114 &114000013736828530
+--- !u!114 &114000013885074786
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013157939086}
+  m_GameObject: {fileID: 1000012863959270}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2c050b498b257742819179a038e2b07, type: 3}
+  m_Script: {fileID: 11500000, guid: d5f3d478864fc7345badf7ae1f9a9f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeInSpeed: 0.1
-  playIntroScript: {fileID: 0}
+  fadeInSpeed: 0.4
+  insideTrigger: 0
 --- !u!198 &198000011381762580
 ParticleSystem:
   m_ObjectHideFlags: 1

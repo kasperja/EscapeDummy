@@ -149,6 +149,11 @@ using System.Collections;
 	public AudioSource footstepIndoor;
 	public AudioSource footstepGravel;
 
+	public FadeSawSoundsIn fadeSoundInSawScript;
+	public FadeSawSoundsIn fadeSoundInSawScriptIdle;
+	public FadeSawSoundsIn fadeSoundInSawScriptControllerIdle;
+	public FadeSawSoundsIn fadeSoundInSawScriptControllerActive;
+
 
         private void Awake()
         {
@@ -850,6 +855,13 @@ using System.Collections;
 		void OnTriggerEnter2D(Collider2D other)
 		{
 
+	if (other.gameObject.tag == "SoundTriggerSaw") {
+
+			fadeSoundInSawScript.insideTrigger = true;
+			fadeSoundInSawScriptIdle.insideTrigger = true;
+		fadeSoundInSawScriptControllerIdle.insideTrigger = true;
+		fadeSoundInSawScriptControllerActive.insideTrigger = true;
+	}
 
 		/*if (other.gameObject.tag == "HookJoint") {
 
@@ -963,6 +975,16 @@ using System.Collections;
 
 	void OnTriggerExit2D(Collider2D other)
 	{
+
+	if (other.gameObject.tag == "SoundTriggerSaw") {
+
+		fadeSoundInSawScript.insideTrigger = false;
+		fadeSoundInSawScriptIdle.insideTrigger = false;
+		fadeSoundInSawScriptControllerIdle.insideTrigger = false;
+		fadeSoundInSawScriptControllerActive.insideTrigger = false;
+	}
+
+
 	if (other.gameObject.tag == "HookTrigger") {
 
 			hooked = false;
