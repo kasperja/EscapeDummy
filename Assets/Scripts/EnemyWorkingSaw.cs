@@ -20,6 +20,17 @@ public class EnemyWorkingSaw : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		if (enemyAnim.GetCurrentAnimatorStateInfo (0).IsName ("EnemyWorkingSaw")) {
+		
+			if (soundOnce) {
+
+				StartCoroutine (waitSound ());
+				soundOnce = false;
+
+			}
+		
+		}
+
 		if (sawMoverScript.hookDetected || sawMoverScript.meatDetected) {
 		
 			if (workActive) {
@@ -27,12 +38,7 @@ public class EnemyWorkingSaw : MonoBehaviour {
 					enemyAnim.SetBool ("Work", true);
 					StartCoroutine (waitForAnim (0.5f));
 					workOnce = false;
-					if (soundOnce) {
-						
-						StartCoroutine (waitSound ());
-						soundOnce = false;
-					
-					}
+
 
 				}
 
@@ -58,9 +64,12 @@ public class EnemyWorkingSaw : MonoBehaviour {
 	}
 
 	IEnumerator waitSound(){
-		yield return new WaitForSeconds (0.8f);
-		activeControllerSound.Play ();
-		yield return new WaitForSeconds (0.5f);
+		yield return new WaitForSeconds (0.6f);
+		if (!activeControllerSound.isPlaying) {
+			activeControllerSound.Play ();
+		}
+
+		yield return new WaitForSeconds (1.2f);
 		soundOnce = true;
 	
 	}
