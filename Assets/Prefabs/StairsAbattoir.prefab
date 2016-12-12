@@ -2063,6 +2063,7 @@ MonoBehaviour:
   m_AnimDoorAbattoir: {fileID: 95000010616585780}
   enemyWithKey: {fileID: 0}
   key: {fileID: 0}
+  mainCharScript: {fileID: 0}
 --- !u!114 &114000013985085476
 MonoBehaviour:
   m_ObjectHideFlags: 1

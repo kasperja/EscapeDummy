@@ -21,6 +21,8 @@ public class EnemyMovement : MonoBehaviour {
 	private bool hitR = true;
 	private bool flipDirOnce;
 
+	public PlatformerCharacter2D mainCharScript;
+
 	public Animator enemy_Animator;
 	public HitPointsEnemyTotal hpEnemyTotal;
 
@@ -29,6 +31,9 @@ public class EnemyMovement : MonoBehaviour {
 	public bool killOnce = true;
 
 	public bool waitForWalk = true;
+
+	private bool breakOnceMusic = true;
+
 
 	//private float flipHFloat;
 
@@ -79,7 +84,13 @@ public class EnemyMovement : MonoBehaviour {
 		
 		}
 		else if (((isFollowing == false && isInRange == false) || walkWhenDead || player.GetComponent<PlatformerCharacter2D>().climbingStairsBool) && !hpEnemyTotal.isDeadEnemy ) {
-			
+
+
+			mainCharScript.FadeOutMusic (mainCharScript.musicScript.breakdownMusic, mainCharScript.musicVolumeBreakDown);
+			mainCharScript.FadeOutMusic (mainCharScript.musicScript.fightMusic, mainCharScript.musicVolumeFight);
+
+
+
 			if (transform.position.x <= moveDistMax) {
 				
 				hitR = false;
@@ -123,6 +134,15 @@ public class EnemyMovement : MonoBehaviour {
 
 		} else if (isFollowing == true && isInRange == false && !hptScript.isDead && !hpEnemyTotal.isDeadEnemy /*&& waitForWalk*/) {
 
+			if (breakOnceMusic) {
+
+				mainCharScript.musicScript.breakdownMusic.Play ();
+				breakOnceMusic = false;
+
+			}
+
+			mainCharScript.FadeInMusic (mainCharScript.musicScript.breakdownMusic, mainCharScript.musicVolumeBreakDown);
+
 			if (transform.position.x > player.transform.position.x) {
 
 				useSpeed = -followSpeed;
@@ -151,6 +171,13 @@ public class EnemyMovement : MonoBehaviour {
 			transform.Translate (useSpeed * Time.deltaTime, 0, 0);
 
 		} else if (isInRange && !hptScript.isDead) {
+
+			if (!mainCharScript.musicScript.fightMusic.isPlaying) {
+			
+				mainCharScript.musicScript.fightMusic.Play ();
+
+			}
+			mainCharScript.FadeInMusic (mainCharScript.musicScript.fightMusic, mainCharScript.musicVolumeFight);
 		
 			useSpeed = 0.0f;
 		

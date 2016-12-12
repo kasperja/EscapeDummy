@@ -1694,6 +1694,15 @@ MonoBehaviour:
   fadeSoundInSawScriptIdle: {fileID: 0}
   fadeSoundInSawScriptControllerIdle: {fileID: 0}
   fadeSoundInSawScriptControllerActive: {fileID: 0}
+  musicIntro: 0
+  musicBreakDown: 0
+  musicFight: 0
+  musicDeath: 0
+  musicScript: {fileID: 0}
+  musicVolumeIntro: 0
+  musicVolumeBreakDown: 0
+  musicVolumeFight: 0
+  musicVolumeDeath: 0
   camSaw: 0
   canHook: 0
 --- !u!114 &114000010182849938
