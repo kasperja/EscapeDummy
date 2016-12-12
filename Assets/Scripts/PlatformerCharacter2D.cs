@@ -156,6 +156,8 @@ using System.Collections;
 
 	public bool camSaw = false;
 
+	public bool canHook = false;
+
 
         private void Awake()
         {
@@ -268,7 +270,7 @@ using System.Collections;
 		}
 
 
-		if (hooked && Input.GetKey(KeyCode.Space) && sawMoverScript.hookDetected && hookJumpActiveOnce && hookStandingStill && !hpPlayerTotal.isDead && m_Grounded) {
+		if (canHook && hooked && Input.GetKey(KeyCode.Space) && sawMoverScript.hookDetected && hookJumpActiveOnce && hookStandingStill && !hpPlayerTotal.isDead && m_Grounded) {
 
 			if(!m_FacingRight) Flip();
 			StartCoroutine (waitActiveHook ());

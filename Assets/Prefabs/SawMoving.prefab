@@ -774,11 +774,11 @@ AudioSource:
   Loop: 0
   Mute: 0
   Spatialize: 0
-  Priority: 128
+  Priority: 256
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
-  Pan2D: 0.018747374
+  Pan2D: 1
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -852,7 +852,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
-  Pan2D: 0.018747374
+  Pan2D: 1
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -935,7 +935,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeInSpeed: 0.4
+  hasBeenInside: 0
+  doorScript: {fileID: 0}
   insideTrigger: 0
+  introScript: {fileID: 0}
 --- !u!114 &114000010614363032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -966,7 +969,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeInSpeed: 0.4
+  hasBeenInside: 0
+  doorScript: {fileID: 0}
   insideTrigger: 0
+  introScript: {fileID: 0}
 --- !u!198 &198000011381762580
 ParticleSystem:
   m_ObjectHideFlags: 1

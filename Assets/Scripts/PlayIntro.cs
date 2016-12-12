@@ -12,6 +12,8 @@ public class PlayIntro : MonoBehaviour {
 
 	public bool introSkipped = false;
 
+	public bool fadeSawSounds = false;
+
 	public Platformer2DUserControl userControlScript;
 	// Use this for initialization
 	void Start () {
@@ -22,6 +24,7 @@ public class PlayIntro : MonoBehaviour {
 		introAudio.Play ();
 
 		StartCoroutine (waitIntro ());
+		StartCoroutine (waitSawSound ());
 	}
 	
 	// Update is called once per frame
@@ -35,9 +38,18 @@ public class PlayIntro : MonoBehaviour {
 			hookForce.gameStarted = true;
 			gameObject.SetActive (false);
 			introSkipped = true;
+			fadeSawSounds = true;
 
 		}
 	
+	}
+
+	IEnumerator waitSawSound(){
+
+		yield return new WaitForSeconds (21f);
+		fadeSawSounds = true;
+
+
 	}
 
 	IEnumerator waitIntro(){

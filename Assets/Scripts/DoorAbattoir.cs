@@ -10,6 +10,7 @@ public class DoorAbattoir : MonoBehaviour {
 	public Sprite doorClosedSprite;
 	public Sprite doorOpenSprite;
 	public AudioSource doorOpenSound;
+	public AudioSource doorLockedSound;
 	public bool doorSoundPlayOnce = true;
 
 	public GameObject enemyWorkingSaw;
@@ -33,6 +34,7 @@ public class DoorAbattoir : MonoBehaviour {
 	public GameObject key;
 
 	private bool doorFullyOpenBool = false;
+
 	// Use this for initialization
 	void Start () {
 
@@ -52,6 +54,7 @@ public class DoorAbattoir : MonoBehaviour {
 			StartCoroutine (waitForSceneLoad (3f));
 
 			MainCamObj.GetComponent<SunShafts> ().sunShaftIntensity += 3f * Time.deltaTime;
+		
 
 			ambientSound.volume -= 0.5f * Time.deltaTime;
 			sawCutSound.volume -= 0.5f * Time.deltaTime;
@@ -93,6 +96,7 @@ public class DoorAbattoir : MonoBehaviour {
 
 			} else {
 			
+				doorLockedSound.Play ();
 				enemyWorkingSaw.SetActive (false);
 				controller.SetActive (true);
 				enemyWithKey.SetActive (true);

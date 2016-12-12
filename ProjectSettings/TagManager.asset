@@ -49,6 +49,7 @@ TagManager:
   - StartTriggerOutside
   - SoundTriggerSaw
   - CamSawTrigger
+  - CanHook
   layers:
   - Default
   - TransparentFX
