@@ -154,6 +154,17 @@ using System.Collections;
 	public FadeSawSoundsIn fadeSoundInSawScriptControllerIdle;
 	public FadeSawSoundsIn fadeSoundInSawScriptControllerActive;
 
+	public bool musicIntro = false;
+	public bool musicBreakDown = false;
+	public bool musicFight = false;
+	public bool musicDeath = false;
+
+	public MusicController musicScript;
+	public float musicVolumeIntro;
+	public float musicVolumeBreakDown;
+	public float musicVolumeFight;
+	public float musicVolumeDeath;
+
 	public bool camSaw = false;
 
 	public bool canHook = false;
@@ -173,6 +184,16 @@ using System.Collections;
 
 	private void Start()
 	{
+		musicVolumeIntro = musicScript.introMusic.volume;
+		musicVolumeBreakDown = musicScript.introMusic.volume;
+		musicVolumeFight = musicScript.introMusic.volume;
+		musicVolumeDeath = musicScript.introMusic.volume;
+
+		musicScript.introMusic.volume = 0f;
+		//musicScript.breakdownMusic.volume = 0f;
+		musicScript.fightMusic.volume = 0f;
+		//musicScript.deathMusic.volume = 0f;
+
 
 		if (isStartOutside) {
 		
@@ -190,6 +211,16 @@ using System.Collections;
 
 	}
 		private void Update(){
+
+		if (musicIntro) {
+
+			FadeInMusic (musicScript.introMusic, musicVolumeIntro);
+
+		} else {
+		
+			FadeOutMusic (musicScript.introMusic, musicVolumeIntro);
+		
+		}
 
 		if (sawPos.position.x >= transform.position.x) {
 		
@@ -957,7 +988,8 @@ using System.Collections;
 		}
 if (other.gameObject.tag == "CamSawTrigger") {
 
-
+			musicScript.introMusic.Play ();
+			musicIntro = true;
 
 
 	camSaw = true;
@@ -1061,6 +1093,8 @@ if (other.gameObject.tag == "CamSawTrigger") {
 
 	if (other.gameObject.tag == "CamSawTrigger") {
 
+			musicIntro = false;
+
 		camSaw = false;
 
 	}
@@ -1154,6 +1188,30 @@ if (other.gameObject.tag == "CamSawTrigger") {
 
 	}
 
+public void FadeInMusic(AudioSource musicSource, float musicVolume){
+
+		// musicSource.Play ();
+
+	if (musicSource.volume >= 0f && musicSource.volume < musicVolume) {
+
+			musicSource.volume += 0.1f * Time.deltaTime;
+		}
+
+}
+public void FadeOutMusic(AudioSource musicSource, float musicVolume){
+
+	if (musicSource.volume > 0f) {
+
+		musicSource.volume -= 0.4f * Time.deltaTime;
+
+		if (musicVolume <= 0.01f) {
+			musicSource.Stop ();
+		}
+
+	}
+
+
+}
 
 
 

@@ -10,6 +10,7 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 	public RectTransform healthBarRect;
 
 	public GameObject mainCamObj;
+	public PlatformerCharacter2D mainCharScript;
 
 	public GameObject enemyGraphics;
 	public GameObject particlePosObj;
@@ -89,8 +90,13 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 
 		if (hitpoints <= 0.0f) {
 
-			if(dieOnce){
+			mainCharScript.FadeInMusic (mainCharScript.musicScript.introMusic, mainCharScript.musicVolumeIntro);
+			mainCharScript.FadeOutMusic (mainCharScript.musicScript.fightMusic, mainCharScript.musicVolumeFight);
 
+
+			if(dieOnce){
+				mainCharScript.musicScript.introMusic.Play ();
+				mainCharScript.musicScript.deathMusic.Play ();
 				enemyMoveScript.isFollowing = false;
 				enemyMoveScript.isInRange = false;
 
@@ -147,6 +153,7 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 		
 		} else {
 		
+
 			healthBar.SetActive (false);
 		
 		}
