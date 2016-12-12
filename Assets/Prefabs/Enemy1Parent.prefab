@@ -784,7 +784,7 @@ Transform:
   m_GameObject: {fileID: 1000010209672466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.3514006, y: 1, z: 1}
+  m_LocalScale: {x: 1.7929429, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010543049988}
@@ -1011,6 +1011,7 @@ MonoBehaviour:
   isInRange: 0
   player: {fileID: 0}
   hptScript: {fileID: 0}
+  mainCharScript: {fileID: 0}
   enemy_Animator: {fileID: 95000010490676528}
   hpEnemyTotal: {fileID: 114000013121274140}
   walkWhenDead: 0
@@ -1267,6 +1268,7 @@ MonoBehaviour:
   healthBar: {fileID: 1000010239694234}
   healthBarRect: {fileID: 224000013157589300}
   mainCamObj: {fileID: 0}
+  mainCharScript: {fileID: 0}
   enemyGraphics: {fileID: 1000011064637170}
   particlePosObj: {fileID: 1000012380057922}
   particleHitPosObj: {fileID: 1000014272117802}

@@ -33,6 +33,8 @@ public class DoorAbattoir : MonoBehaviour {
 	public GameObject enemyWithKey;
 	public GameObject key;
 
+	public PlatformerCharacter2D mainCharScript;
+
 	private bool doorFullyOpenBool = false;
 
 	// Use this for initialization
@@ -51,6 +53,8 @@ public class DoorAbattoir : MonoBehaviour {
 
 		if (doorOpen) {
 		
+			mainCharScript.FadeOutMusic (mainCharScript.musicScript.introMusic, mainCharScript.musicVolumeIntro);
+
 			StartCoroutine (waitForSceneLoad (3f));
 
 			MainCamObj.GetComponent<SunShafts> ().sunShaftIntensity += 3f * Time.deltaTime;
