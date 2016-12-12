@@ -140,6 +140,23 @@ using System.Collections;
 	public bool isStartOutside = false;
 
 	public ParticleSystem runParticle;
+
+	public AudioSource idleSawSound;
+	public AudioSource cutSawSound;
+	public Transform sawPos;
+
+	public bool isFootstepIndoor = true;
+	public AudioSource footstepIndoor;
+	public AudioSource footstepGravel;
+
+	public FadeSawSoundsIn fadeSoundInSawScript;
+	public FadeSawSoundsIn fadeSoundInSawScriptIdle;
+	public FadeSawSoundsIn fadeSoundInSawScriptControllerIdle;
+	public FadeSawSoundsIn fadeSoundInSawScriptControllerActive;
+
+	public bool camSaw = false;
+
+
         private void Awake()
         {
 			Application.targetFrameRate = 900;
@@ -154,6 +171,12 @@ using System.Collections;
 
 	private void Start()
 	{
+
+		if (isStartOutside) {
+		
+			m_Anim.SetBool ("outsideStart", true);
+		
+		}
 		posMoveBack = new Vector3 (graphicsNorm.transform.localPosition.x, 
 			graphicsNorm.transform.localPosition.y + moveBackAmmount, graphicsNorm.transform.localPosition.z);
 
@@ -165,8 +188,25 @@ using System.Collections;
 
 	}
 		private void Update(){
+
+		if (sawPos.position.x >= transform.position.x) {
 		
-		if (Input.GetKeyDown (KeyCode.Space)  && !hpPlayerTotal.isDead) {
+			if(idleSawSound.panStereo < 1f){
+				idleSawSound.panStereo += 0.3f * Time.deltaTime;
+				cutSawSound.panStereo += 0.3f * Time.deltaTime;
+			}
+
+		} else {
+			if (idleSawSound.panStereo > -1f) {
+				
+				idleSawSound.panStereo -= 0.3f * Time.deltaTime;
+				cutSawSound.panStereo -= 0.3f * Time.deltaTime;
+
+			}
+		}
+		
+		if (Input.GetKeyDown (KeyCode.Space)  && !hpPlayerTotal.isDead && m_Grounded && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") 
+			&& !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
 		
 			m_Anim.SetBool ("SpaceBool", true);
 			StartCoroutine (waitSpaceBool(0.2f));
@@ -425,7 +465,7 @@ using System.Collections;
 			StartCoroutine (WaitForAnim2(0.5f));
 
 			}*/
-	if (Input.GetKeyDown (KeyCode.W) && playOnce3 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead && attackDone) {
+	if ((m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Idle Lookup") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerIdleBlink3-4") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerIdleBlinkLookback") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Hit")) && !m_Anim.GetBool("SpaceBool") && Input.GetKeyDown (KeyCode.W) && playOnce3 && cm.falconPunchBool == false && !sideArrowsBool && m_Grounded && !hpPlayerTotal.isDead && attackDone) {
 
 			if(attackSoundOnce){
 
@@ -434,10 +474,10 @@ using System.Collections;
 			}
 				m_Attack3 = true;
 				playOnce3 = false;
-			StartCoroutine (WaitForAnim3(1f));
+			StartCoroutine (WaitForAnim3(0.1f));
 
 		}
-	else if (Input.GetKeyDown(KeyCode.E) && playOnce5 && cm.falconPunchBool == false && m_Grounded && !hpPlayerTotal.isDead && attackDone) {
+	else if ((m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Idle Lookup") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerIdleBlink3-4") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerIdleBlinkLookback") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Hit")) && !m_Anim.GetBool("SpaceBool") && Input.GetKeyDown(KeyCode.E) && playOnce5 && cm.falconPunchBool == false && m_Grounded && !hpPlayerTotal.isDead && attackDone) {
 
 			if(attackSoundOnce){
 
@@ -446,7 +486,7 @@ using System.Collections;
 			}
 			m_Attack5 = true;
 			playOnce5 = false;
-			StartCoroutine (WaitForAnim5(1f));
+			StartCoroutine (WaitForAnim5(0.1f));
 
 		}
 
@@ -463,7 +503,7 @@ using System.Collections;
 
 		}*/
 			
-		else if (!Input.GetKey (KeyCode.E) && !Input.GetKey (KeyCode.R) && !Input.GetKey (KeyCode.W) 
+		/*else if (!Input.GetKey (KeyCode.E) && !Input.GetKey (KeyCode.R) && !Input.GetKey (KeyCode.W) 
 			&& cm.falconPunchBool == false) {
 		
 			m_Attack1 = false;
@@ -474,7 +514,7 @@ using System.Collections;
 			attackSoundOnce = true;
 		
 		
-		} 
+		} */
 
 
 		}
@@ -573,6 +613,15 @@ using System.Collections;
             {
                 // Reduce the speed if crouching by the crouchSpeed multiplier
                 
+			if (isFootstepIndoor) {
+
+			if(!footstepIndoor.isPlaying) footstepIndoor.Play();
+
+			} else {
+
+			if(!footstepGravel.isPlaying) footstepGravel.Play();
+
+			}
 		if (isEndOutside || isStartOutside) {
 
 				move = 1f;
@@ -649,8 +698,10 @@ using System.Collections;
 	if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive  && !hpPlayerTotal.isDead && jumpOnce && !m_Attack3 && !m_Attack5)
             {
 			if (!sideArrowsBool) {
-				if (jumpOnce) {
+			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
 					
+				m_Anim.SetBool ("SpaceBool", true);
+				StartCoroutine (waitSpaceBool(0.2f));
 					// Add a vertical force to the player.
 					m_Anim.SetBool ("StartJump", true);
 					StartCoroutine (waitJump (waitJumpTime));
@@ -658,23 +709,23 @@ using System.Collections;
 				}
 			} else {
 
-
-				//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-				m_Anim.SetBool ("StartJump", true);
+			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
+					//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+					m_Anim.SetBool ("StartJump", true);
 
 				
 
-				m_Grounded = false;
+					m_Grounded = false;
 
-				m_Anim.SetBool("Ground", false);
+					m_Anim.SetBool ("Ground", false);
 
-				//m_Anim.SetBool("StartJump", false);
+					//m_Anim.SetBool("StartJump", false);
 
-				StartCoroutine (waitJump (0.0f));
+					StartCoroutine (waitJump (0.0f));
 
-				jumpOnce = false;
+					jumpOnce = false;
 
-
+				}
 
 			}
 				
@@ -683,7 +734,9 @@ using System.Collections;
         }
 
 	public void Stop(float move, bool crouch, bool jump){
-	
+
+		footstepIndoor.Stop ();
+		footstepGravel.Stop ();
 
 		if (!crouch && m_Anim.GetBool("Crouch"))
 		{
@@ -761,9 +814,11 @@ using System.Collections;
 	if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive && !hpPlayerTotal.isDead && jumpOnce && !m_Attack3 && !m_Attack5)
 		{
 			if (!sideArrowsBool) {
-				if (jumpOnce) {
+			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
 					
-					// Add a vertical force to the player.
+					m_Anim.SetBool ("SpaceBool", true);
+					StartCoroutine (waitSpaceBool(0.2f));
+						// Add a vertical force to the player.
 					m_Anim.SetBool ("StartJump", false);
 					m_Anim.SetBool("Ground", false);
 					StartCoroutine (waitJump (waitJumpTime));
@@ -774,21 +829,21 @@ using System.Collections;
 
 				//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 
-				
+			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
 
-				m_Anim.SetBool ("StartJump", true);
+					m_Anim.SetBool ("StartJump", true);
 
-				m_Grounded = false;
+					m_Grounded = false;
 
-				m_Anim.SetBool("Ground", false);
+					m_Anim.SetBool ("Ground", false);
 
-				m_Anim.SetBool("StartJump", false);
+					m_Anim.SetBool ("StartJump", false);
 
-				StartCoroutine (waitJump (0.0f));
-				jumpOnce = false;
+					StartCoroutine (waitJump (0.0f));
+					jumpOnce = false;
 
 
-					
+				}
 					
 			
 			}
@@ -802,6 +857,13 @@ using System.Collections;
 		void OnTriggerEnter2D(Collider2D other)
 		{
 
+	if (other.gameObject.tag == "SoundTriggerSaw") {
+
+			fadeSoundInSawScript.insideTrigger = true;
+			fadeSoundInSawScriptIdle.insideTrigger = true;
+		fadeSoundInSawScriptControllerIdle.insideTrigger = true;
+		fadeSoundInSawScriptControllerActive.insideTrigger = true;
+	}
 
 		/*if (other.gameObject.tag == "HookJoint") {
 
@@ -891,6 +953,14 @@ using System.Collections;
 			endCamBool = true;
 
 		}
+if (other.gameObject.tag == "CamSawTrigger") {
+
+
+
+
+	camSaw = true;
+
+}
 		if (other.gameObject.tag == "CamTargetStartTrigger") {
 
 			startCamBool = true;
@@ -915,6 +985,16 @@ using System.Collections;
 
 	void OnTriggerExit2D(Collider2D other)
 	{
+
+	if (other.gameObject.tag == "SoundTriggerSaw") {
+
+		fadeSoundInSawScript.insideTrigger = false;
+		fadeSoundInSawScriptIdle.insideTrigger = false;
+		fadeSoundInSawScriptControllerIdle.insideTrigger = false;
+		fadeSoundInSawScriptControllerActive.insideTrigger = false;
+	}
+
+
 	if (other.gameObject.tag == "HookTrigger") {
 
 			hooked = false;
@@ -976,6 +1056,12 @@ using System.Collections;
 		StartCoroutine (waitCamStart (0.5f));
 
 		}
+
+	if (other.gameObject.tag == "CamSawTrigger") {
+
+		camSaw = false;
+
+	}
 
 
 		if (other.gameObject.tag == "SawSound") {

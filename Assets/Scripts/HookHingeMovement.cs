@@ -49,6 +49,7 @@ public class HookHingeMovement : MonoBehaviour {
 
 	}
 
+
 	// Update is called once per frame
 	void FixedUpdate () {
 
@@ -134,6 +135,13 @@ public class HookHingeMovement : MonoBehaviour {
 
 	void Update(){
 	
+		if (mainCharScript.hpPlayerTotal.isDead) {
+			hookForceWaitBool = false;
+			hookForceWaitBoolTwo = false;
+			hookForceOnce = true;
+			hookForceOnceTwo = true;
+		}
+
 		if (SawMoverScript.hookDetected && waitDetectOnce) {
 
 

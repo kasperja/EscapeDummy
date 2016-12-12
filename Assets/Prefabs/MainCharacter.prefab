@@ -1001,7 +1001,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014109482998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1131, y: 22, z: 38.8}
+  m_LocalPosition: {x: -601.3, y: 22, z: 38.8}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1375,7 +1375,7 @@ Rigidbody2D:
   m_Mass: 10
   m_LinearDrag: 1
   m_AngularDrag: 0
-  m_GravityScale: 12
+  m_GravityScale: 22
   m_IsKinematic: 0
   m_Interpolate: 2
   m_SleepingMode: 0
@@ -1615,7 +1615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxSpeed: 110
-  m_JumpForce: 22000
+  m_JumpForce: 28000
   m_CrouchSpeed: 0.25
   m_AirControl: 0
   m_WhatIsGround:
@@ -1684,6 +1684,17 @@ MonoBehaviour:
   isEndOutside: 0
   isStartOutside: 0
   runParticle: {fileID: 198000014177610108}
+  idleSawSound: {fileID: 0}
+  cutSawSound: {fileID: 0}
+  sawPos: {fileID: 0}
+  isFootstepIndoor: 1
+  footstepIndoor: {fileID: 0}
+  footstepGravel: {fileID: 0}
+  fadeSoundInSawScript: {fileID: 0}
+  fadeSoundInSawScriptIdle: {fileID: 0}
+  fadeSoundInSawScriptControllerIdle: {fileID: 0}
+  fadeSoundInSawScriptControllerActive: {fileID: 0}
+  camSaw: 0
 --- !u!114 &114000010182849938
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1754,7 +1765,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitpoints: 500
   deathSound: {fileID: 0}
-  deathParticle: {fileID: 19802714, guid: 050a96b794bf0c242bfbb65492949822, type: 2}
+  deathParticle: {fileID: 198000010405026494, guid: 0145611886b47c4499639bd14b6a999b,
+    type: 2}
   deathBloodParticle: {fileID: 198000010837645610, guid: 9d1eeb43b2bcbfd44a007c789037f739,
     type: 2}
   sawDeathBloodParticle: {fileID: 198000011697979514, guid: 03e3f3025e454e04dbca64b01e3e54d2,
@@ -1870,6 +1882,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: {fileID: 114000010577870838}
+  isStandingStart: 0
+  initiateStanding: 0
 --- !u!114 &114000011688461140
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -307,7 +307,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000012814306434
 GameObject:
   m_ObjectHideFlags: 1
@@ -1295,6 +1295,7 @@ MonoBehaviour:
   hitLargeParticle: {fileID: 198000010405026494, guid: 0145611886b47c4499639bd14b6a999b,
     type: 2}
   deathSound: {fileID: 0}
+  deathSoundVoice: {fileID: 0}
   enemy_Animator: {fileID: 95000010490676528}
   isDeadEnemy: 0
   enemyBlock: 0

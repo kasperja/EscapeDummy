@@ -8,11 +8,14 @@ public class StartOutside : MonoBehaviour {
 
 	public GameObject mainCam;
 	public GameObject boxColStart;
+	public AudioSource footStepGravel;
+	private bool hasReachedMax = false;
 
 
 	// Use this for initialization
 	void Start () {
 
+		footStepGravel.volume = 0f;
 
 		pc2D.isStartOutside = true;
 		pc2D.startCamBool = true;
@@ -21,6 +24,16 @@ public class StartOutside : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+		if (footStepGravel.volume < 0.2f && !hasReachedMax) {
+		
+			footStepGravel.volume += 0.1f * Time.deltaTime;
+		
+		} else {
+		
+			hasReachedMax = true;
+
+		}
 
 		if (pc2D.isStartOutside) {
 

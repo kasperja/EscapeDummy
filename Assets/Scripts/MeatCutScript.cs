@@ -17,6 +17,10 @@ public class MeatCutScript : MonoBehaviour {
 	private Transform startPos;
 	private Transform startPosBack;
 
+	public AudioSource cutSound;
+	public AudioSource idleSound;
+	private bool idleSoundOnce = true;
+
 	public ParticleSystem bloodDripParticle;
 	// Use this for initialization
 	void Start () {
@@ -52,10 +56,13 @@ public class MeatCutScript : MonoBehaviour {
 			BloodSawParticle.Play ();
 			bloodDripParticle.Play ();
 
+
 			if (waitForSoundBool) {
-				
+				cutSound.Play ();
+				idleSound.Stop ();
 				sawSound.Play ();
 				waitForSoundBool = false;
+				idleSoundOnce = true;
 
 			}
 
@@ -66,7 +73,16 @@ public class MeatCutScript : MonoBehaviour {
 			StartCoroutine (waitAndCut (0.5f));
 
 
+		} else {
+		
+			if(idleSoundOnce){
+				idleSound.Play ();
+				idleSoundOnce = false;
+			}
+		
 		}
+
+
 		if (other.gameObject.tag == "MeatPassedCol") {
 
 			meatPassedBool = true;

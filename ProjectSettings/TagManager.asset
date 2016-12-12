@@ -47,6 +47,8 @@ TagManager:
   - blockColPlayer
   - EndTriggerOutside
   - StartTriggerOutside
+  - SoundTriggerSaw
+  - CamSawTrigger
   layers:
   - Default
   - TransparentFX

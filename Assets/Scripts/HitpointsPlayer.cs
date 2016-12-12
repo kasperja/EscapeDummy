@@ -36,7 +36,13 @@ public class HitpointsPlayer : MonoBehaviour {
 
 			StartCoroutine (waitHitAnim ());
 			iTween.PunchScale (graphicsObj, new Vector3 (1f, -1f, 0f), 0.5f);
-			iTween.MoveBy (charObj, new Vector3 (-10f, 0f, 0f), 0.5f);
+			if (!MainCharScript.m_FacingRight) {
+				iTween.MoveBy (charObj, new Vector3 (10f, 0f, 0f), 0.5f);
+			} else {
+
+				iTween.MoveBy (charObj, new Vector3 (-10f, 0f, 0f), 0.5f);
+
+			}
 			hitPointsTotalScript.hitpoints -= enemyAttackDmgHigh.attackDamage * dmgMultiplier;
 			Instantiate (hitParticle, this.gameObject.transform.position, Quaternion.identity);
 			playOnceHigh = false;
@@ -45,7 +51,13 @@ public class HitpointsPlayer : MonoBehaviour {
 
 			StartCoroutine (waitHitAnim ());
 			iTween.PunchScale (graphicsObj, new Vector3 (1f, -1f, 0f), 0.5f);
-			iTween.MoveBy (charObj, new Vector3 (-10f, 0f, 0f), 0.5f);
+			if (!MainCharScript.m_FacingRight) {
+				iTween.MoveBy (charObj, new Vector3 (10f, 0f, 0f), 0.5f);
+			} else {
+			
+				iTween.MoveBy (charObj, new Vector3 (-10f, 0f, 0f), 0.5f);
+			
+			}
 			hitPointsTotalScript.hitpoints -= enemyAttackDmgMiddle.attackDamage * dmgMultiplier;
 			Instantiate (hitParticle, this.gameObject.transform.position, Quaternion.identity);
 			playOnceMiddle = false;
@@ -54,7 +66,13 @@ public class HitpointsPlayer : MonoBehaviour {
 
 			StartCoroutine (waitHitAnim ());
 			iTween.PunchScale (graphicsObj, new Vector3 (1f, -1f, 0f), 0.5f);
-			iTween.MoveBy (charObj, new Vector3 (-10f, 0f, 0f), 0.5f);
+			if (!MainCharScript.m_FacingRight) {
+				iTween.MoveBy (charObj, new Vector3 (10f, 0f, 0f), 0.5f);
+			} else {
+
+				iTween.MoveBy (charObj, new Vector3 (-10f, 0f, 0f), 0.5f);
+
+			}
 			hitPointsTotalScript.hitpoints -= enemyAttackDmgLow.attackDamage * dmgMultiplier;
 			Instantiate (hitParticle, this.gameObject.transform.position, Quaternion.identity);
 			playOnceLow = false;

@@ -130,7 +130,13 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 
 			if (enemyMiddleAttack.playerBlockEnabled && blockOncePlayer) {
 				
-				iTween.MoveBy (MainCharObj, new Vector3 (-10f,0f,0f), 0.6f);
+				if (!pc2D.m_FacingRight) {
+					iTween.MoveBy (MainCharObj, new Vector3 (10f, 0f, 0f), 0.6f);
+				} else {
+				
+					iTween.MoveBy (MainCharObj, new Vector3 (-10f, 0f, 0f), 0.6f);
+
+				}
 				Instantiate (blockPlayerParticle, blockParticlePosObj.transform.position, Quaternion.identity);
 				StartCoroutine (waitBlockEnable ());
 				blockOncePlayer = false;
@@ -145,7 +151,7 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 				m_Anim.SetBool ("Block", true);
 				m_Anim.SetBool ("Hit", false);
 				blockBool = true;
-				StartCoroutine (waitBlock (1.5f));
+				StartCoroutine (waitBlock (0.5f));
 
 				blockCollider.GetComponent<BoxCollider2D> ().enabled = true;
 				UpperTarget.SetActive (false);
@@ -165,7 +171,7 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 				m_Anim.SetBool ("Block", true);
 				m_Anim.SetBool ("Hit", false);
 				blockBool = true;
-				StartCoroutine (waitBlock (1.5f));
+				StartCoroutine (waitBlock (0.5f));
 				UpperTarget.SetActive (false);
 				MiddleTarget.SetActive (false);
 				LowerTarget.SetActive (false);

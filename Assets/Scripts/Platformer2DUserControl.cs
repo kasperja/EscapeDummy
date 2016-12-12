@@ -15,6 +15,10 @@ using System.Collections;
 
 		private bool isStopped = true;
 		private bool playOnce = true;
+	public bool isStandingStart = false;
+	public bool initiateStanding = false;
+	private bool initiateOnce = true;
+
 
         private void Awake()
         {
@@ -31,6 +35,12 @@ using System.Collections;
 			}
 
 
+		if (initiateStanding && initiateOnce) {
+		
+			StartCoroutine (waitForStanding ());
+			initiateOnce = false;
+
+		}
 			// Read the inputs.
 
 			// Pass all parameters to the character control script.
@@ -46,14 +56,14 @@ using System.Collections;
 			bool crouch = Input.GetKey (KeyCode.LeftControl);
 			float h = CrossPlatformInputManager.GetAxis ("Horizontal");
 			
-			if (m_Character.sideArrowsBool == true) {
+			if (m_Character.sideArrowsBool == true && isStandingStart) {
 
 				isStopped = false;
 				playOnce = true;
 				m_Character.Move (h, crouch, m_Jump);
 
 
-			} else if (m_Character.sideArrowsBool == false) {
+			} else if (m_Character.sideArrowsBool == false || !isStandingStart) {
 
 				if (isStopped) {
 
@@ -91,6 +101,16 @@ using System.Collections;
 			playOnce = false;
 			isStopped = true;
 		}
+	IEnumerator waitForStanding(){
+		if (m_Character.isStartOutside) {
+			yield return new WaitForSeconds (0f);
+		} else {
+			yield return new WaitForSeconds (1.8f);
+		}
+		isStandingStart = true;
+
+	}
+
 
     }
 

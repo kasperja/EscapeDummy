@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012291353922}
+  - 95: {fileID: 95000012042436396}
   m_Layer: 0
   m_Name: CamTarget (1)
   m_TagString: Untagged
@@ -36,6 +37,7 @@ GameObject:
   - 4: {fileID: 4000013352085070}
   - 61: {fileID: 61000012422797356}
   - 114: {fileID: 114000010295506488}
+  - 95: {fileID: 95000011970462638}
   m_Layer: 0
   m_Name: EndTriggerOutside
   m_TagString: EndTriggerOutside
@@ -84,6 +86,40 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 100, y: 1000}
+--- !u!95 &95000011970462638
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013047013410}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 73652a1ac36048b43ada8791cde95e42, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &95000012042436396
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010334035436}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a0883bfd9fb357747ab0d17b781baffd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114000010295506488
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -103,3 +139,7 @@ MonoBehaviour:
   waitBeforeEnd: 60
   endFadeLayer: {fileID: 0}
   titleObj: {fileID: 0}
+  footStepsSoundGravel: {fileID: 0}
+  ambienceOne: {fileID: 0}
+  ambienceTwo: {fileID: 0}
+  fadeAmbienceOut: 0
