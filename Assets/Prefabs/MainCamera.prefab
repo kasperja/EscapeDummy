@@ -2167,6 +2167,7 @@ MonoBehaviour:
   fadeAnim: {fileID: 95000013425984318}
   hookForce: {fileID: 0}
   introSkipped: 0
+  fadeSawSounds: 0
   userControlScript: {fileID: 0}
 --- !u!114 &114000010908143008
 MonoBehaviour:
@@ -2225,6 +2226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2c050b498b257742819179a038e2b07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxVol: 0
   fadeInSpeed: 0.1
   playIntroScript: {fileID: 114000010267442252}
 --- !u!166 &166000011840338954
