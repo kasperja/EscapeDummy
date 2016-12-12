@@ -69,13 +69,14 @@ public class HookHingeMovement : MonoBehaviour {
 
 					mainCharScript.hookStandingStill = true;
 					StartCoroutine (MoveTime (0f));
-					StartCoroutine (WaitNumerator (2f));
+					StartCoroutine (WaitNumerator (1.5f));
 					StartCoroutine(HookWaitTrue(5f));
 					playOnce = false;
 					hookWaitOnceMoving = false;
 
 				} else {
-					
+
+					mainCharScript.hookStandingStill = false;
 					StartCoroutine (MoveTime (moveTime));
 					playOnce = false;
 
@@ -91,7 +92,7 @@ public class HookHingeMovement : MonoBehaviour {
 
 				if (SawMoverScript.hookDetected && hookWaitOnce) {
 					mainCharScript.hookStandingStill = true;
-					StartCoroutine (WaitNumerator (2f));
+					StartCoroutine (WaitNumerator (1.5f));
 					StartCoroutine(HookWaitTrue(5f));
 					playOnceWait = false;
 					hookWaitOnce = false;
@@ -193,7 +194,8 @@ public class HookHingeMovement : MonoBehaviour {
 		
 		}
 		if (other.gameObject.tag == "DetectHook") {
-	
+
+
 			SawMoverScript.hookDetected = true;
 		
 		}
@@ -203,6 +205,13 @@ public class HookHingeMovement : MonoBehaviour {
 			//SawMoverScript.hookDetectSpeed = -30f;
 		
 		}
+		if (other.gameObject.tag == "CanHook") {
+
+			mainCharScript.canHook = true;
+			SawMoverScript.hookDetected = true;
+
+		}
+
 
 	}
 	void OnTriggerStay2D(Collider2D other)
@@ -218,6 +227,17 @@ public class HookHingeMovement : MonoBehaviour {
 
 		}
 
+	
+	}
+	void OnTriggerExit2D(Collider2D other){
+		
+		if (other.gameObject.tag == "CanHook") {
+
+			mainCharScript.canHook = false;
+			//SawMoverScript.hookDetected = false;
+
+		}
+	
 	
 	}
 	IEnumerator WaitNumerator(float waitTime)

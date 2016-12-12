@@ -264,6 +264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sawMoverScript: {fileID: 0}
   enemyAnim: {fileID: 95000010342101816}
+  activeControllerSound: {fileID: 0}
 --- !u!212 &212000011704627648
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -325,7 +326,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 153
+  m_SortingOrder: 154
   m_Sprite: {fileID: 21300000, guid: 8750a46cfad0c9a4da0862378fb6acd7, type: 3}
   m_Color: {r: 0, g: 1, b: 0.54482746, a: 0.391}
   m_FlipX: 0
@@ -391,7 +392,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 152
+  m_SortingOrder: 153
   m_Sprite: {fileID: 21300000, guid: 2a9219ed0b1bb384fbcf672939c7faa5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

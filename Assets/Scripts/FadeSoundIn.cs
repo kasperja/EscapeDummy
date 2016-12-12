@@ -4,7 +4,7 @@ using System.Collections;
 public class FadeSoundIn : MonoBehaviour {
 
 	private AudioSource currentSound;
-	private float maxVol;
+	public float maxVol = 1f;
 	private bool hasMaxed = false;
 	public float fadeInSpeed = 0.2f;
 	public PlayIntro playIntroScript;
@@ -12,7 +12,7 @@ public class FadeSoundIn : MonoBehaviour {
 	void Start () {
 	
 		currentSound = gameObject.GetComponent<AudioSource> ();
-		maxVol = currentSound.volume;
+		//maxVol = 1f;
 		currentSound.volume = 0f;
 
 	}
@@ -21,13 +21,13 @@ public class FadeSoundIn : MonoBehaviour {
 	void Update () {
 
 
-		if (playIntroScript.introSkipped) {
+		if (playIntroScript.fadeSawSounds) {
 			fadeInSpeed = 0.5f;
 		}
 
 
 
-		if (currentSound.volume < maxVol && !hasMaxed) {
+		if (currentSound.volume < maxVol && !hasMaxed && playIntroScript.fadeSawSounds) {
 
 			currentSound.volume += fadeInSpeed * Time.deltaTime;
 

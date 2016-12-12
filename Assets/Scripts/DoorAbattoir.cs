@@ -33,6 +33,7 @@ public class DoorAbattoir : MonoBehaviour {
 	public GameObject key;
 
 	private bool doorFullyOpenBool = false;
+
 	// Use this for initialization
 	void Start () {
 
@@ -52,6 +53,7 @@ public class DoorAbattoir : MonoBehaviour {
 			StartCoroutine (waitForSceneLoad (3f));
 
 			MainCamObj.GetComponent<SunShafts> ().sunShaftIntensity += 3f * Time.deltaTime;
+		
 
 			ambientSound.volume -= 0.5f * Time.deltaTime;
 			sawCutSound.volume -= 0.5f * Time.deltaTime;
