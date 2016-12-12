@@ -38,7 +38,7 @@ public class FadeSawSoundsIn : MonoBehaviour {
 
 		}else if(!insideTrigger && currentSound.volume > 0f && doorScript.doorOpen){
 			
-			currentSound.volume -= fadeInSpeed * Time.deltaTime;
+			currentSound.volume -= fadeInSpeed * 2f * Time.deltaTime;
 
 		} else if (!insideTrigger && currentSound.volume > (maxVol / 3f)) {
 
