@@ -88,6 +88,7 @@ public class EnemyMovement : MonoBehaviour {
 
 			mainCharScript.FadeOutMusic (mainCharScript.musicScript.breakdownMusic, mainCharScript.musicVolumeBreakDown);
 			mainCharScript.FadeOutMusic (mainCharScript.musicScript.fightMusic, mainCharScript.musicVolumeFight);
+			mainCharScript.FadeInMusic (mainCharScript.musicScript.introMusic, mainCharScript.musicVolumeIntro);
 
 
 
@@ -142,6 +143,7 @@ public class EnemyMovement : MonoBehaviour {
 			}
 
 			mainCharScript.FadeInMusic (mainCharScript.musicScript.breakdownMusic, mainCharScript.musicVolumeBreakDown);
+			mainCharScript.FadeOutMusic (mainCharScript.musicScript.introMusic, mainCharScript.musicVolumeIntro);
 
 			if (transform.position.x > player.transform.position.x) {
 
@@ -171,6 +173,8 @@ public class EnemyMovement : MonoBehaviour {
 			transform.Translate (useSpeed * Time.deltaTime, 0, 0);
 
 		} else if (isInRange && !hptScript.isDead) {
+			
+			mainCharScript.musicIntro = false;
 
 			if (!mainCharScript.musicScript.fightMusic.isPlaying) {
 			

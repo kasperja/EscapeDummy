@@ -476,7 +476,7 @@ Transform:
   m_GameObject: {fileID: 1000011259138972}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.31, y: 0.12, z: 0}
-  m_LocalScale: {x: 0.24081811, y: 0.25062656, z: 43.976784}
+  m_LocalScale: {x: 0.19151749, y: 0.19931795, z: 34.973797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010543049988}
@@ -542,7 +542,7 @@ Transform:
   m_GameObject: {fileID: 1000012823231948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.33, y: -1.21, z: 0}
-  m_LocalScale: {x: 0.24081811, y: 0.25062656, z: 43.976784}
+  m_LocalScale: {x: 0.19167937, y: 0.19948642, z: 35.003357}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010543049988}
@@ -580,8 +580,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014010533546}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.37, y: 1.34, z: 0}
-  m_LocalScale: {x: 0.24081811, y: 0.25062656, z: 43.976784}
+  m_LocalPosition: {x: 0.37, y: 1.53, z: 0}
+  m_LocalScale: {x: 0.18407872, y: 0.1915762, z: 33.61537}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010543049988}
@@ -933,7 +933,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0.1}
   serializedVersion: 2
-  m_Size: {x: 2.5, y: 3.8}
+  m_Size: {x: 5, y: 3.8}
 --- !u!61 &61000012231637426
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -961,7 +961,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2.4, y: 10}
+  m_Size: {x: 3.5, y: 10}
 --- !u!61 &61000012486132508
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -1304,6 +1304,7 @@ MonoBehaviour:
   blockOnce: 1
   blockOnceTwo: 1
   blockColObj: {fileID: 1000011393671704}
+  doorScript: {fileID: 0}
 --- !u!114 &114000013299482874
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -50,6 +50,7 @@ TagManager:
   - SoundTriggerSaw
   - CamSawTrigger
   - CanHook
+  - IntroMusicTrigger
   layers:
   - Default
   - TransparentFX
@@ -69,8 +70,8 @@ TagManager:
   - MeatLayerSaw
   - WaitForHooked
   - DeathCol
-  - 
-  - 
+  - Boxes
+  - PlayerHitTargets
   - 
   - 
   - 

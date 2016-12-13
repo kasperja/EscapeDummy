@@ -169,6 +169,10 @@ using System.Collections;
 
 	public bool canHook = false;
 
+	public DoorAbattoir doorScript;
+
+	//public AudioSource pickupHook;
+
 
         private void Awake()
         {
@@ -184,6 +188,7 @@ using System.Collections;
 
 	private void Start()
 	{
+		
 		musicVolumeIntro = musicScript.introMusic.volume;
 		musicVolumeBreakDown = musicScript.introMusic.volume;
 		musicVolumeFight = musicScript.introMusic.volume;
@@ -212,11 +217,17 @@ using System.Collections;
 	}
 		private void Update(){
 
-		if (musicIntro) {
+		if (doorScript.doorOpen) {
+			
+			musicIntro = false;
+		
+		}
+
+		if (musicIntro && !doorScript.doorOpen) {
 
 			FadeInMusic (musicScript.introMusic, musicVolumeIntro);
 
-		} else {
+		} else if(!musicIntro){
 		
 			FadeOutMusic (musicScript.introMusic, musicVolumeIntro);
 		
@@ -988,13 +999,20 @@ using System.Collections;
 		}
 if (other.gameObject.tag == "CamSawTrigger") {
 
-			musicScript.introMusic.Play ();
-			musicIntro = true;
+
 
 
 	camSaw = true;
 
 }
+if (other.gameObject.tag == "IntroMusicTrigger") {
+
+			if (!musicScript.introMusic.isPlaying)
+				musicScript.introMusic.Play ();
+
+	musicIntro = true;
+
+	}
 		if (other.gameObject.tag == "CamTargetStartTrigger") {
 
 			startCamBool = true;
@@ -1093,11 +1111,15 @@ if (other.gameObject.tag == "CamSawTrigger") {
 
 	if (other.gameObject.tag == "CamSawTrigger") {
 
-			musicIntro = false;
+			
 
 		camSaw = false;
 
 	}
+
+		if (other.gameObject.tag == "IntroMusicTrigger") {
+			musicIntro = false;
+		}
 
 
 		if (other.gameObject.tag == "SawSound") {
@@ -1194,17 +1216,19 @@ public void FadeInMusic(AudioSource musicSource, float musicVolume){
 
 	if (musicSource.volume >= 0f && musicSource.volume < musicVolume) {
 
-			musicSource.volume += 0.1f * Time.deltaTime;
+		musicSource.volume += 5f * Time.deltaTime;
 		}
 
 }
 public void FadeOutMusic(AudioSource musicSource, float musicVolume){
 
 	if (musicSource.volume > 0f) {
+			
+		//if(musicSource.volume > 1f) musicSource.volume = 1f;
 
 		musicSource.volume -= 0.4f * Time.deltaTime;
 
-		if (musicVolume <= 0.01f) {
+		if (musicVolume <= 0.001f) {
 			musicSource.Stop ();
 		}
 
@@ -1270,10 +1294,20 @@ public void FadeOutMusic(AudioSource musicSource, float musicVolume){
 		m_Anim.SetBool("Ground", false);
 
 		m_Anim.SetBool("StartJump", false);
+	float jumpXforce = m_JumpForce;
+		if (!m_FacingRight) {
+			jumpXforce = -m_JumpForce;
+		} else {
 
-		m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+			jumpXforce = m_JumpForce;
+	
+	}
+
+	m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 
 		
+
+	m_Rigidbody2D.AddForce(new Vector2(jumpXforce /  1f ,0f));
 
 		yield return new WaitForSeconds (0.0f);
 		

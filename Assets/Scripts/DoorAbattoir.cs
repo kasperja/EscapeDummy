@@ -35,6 +35,8 @@ public class DoorAbattoir : MonoBehaviour {
 
 	public PlatformerCharacter2D mainCharScript;
 
+	public HitPointsEnemyTotal hpET;
+
 	private bool doorFullyOpenBool = false;
 
 	// Use this for initialization
@@ -43,9 +45,15 @@ public class DoorAbattoir : MonoBehaviour {
 	
 	
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
+
+		if (hpET.isDeadEnemy && doorOpen == false) {
+			
+			mainCharScript.FadeInMusic (mainCharScript.musicScript.introMusic, mainCharScript.musicVolumeIntro);
+
+		}
 
 		whiteScreen.GetComponent<SpriteRenderer> ().color = whiteScreenColor;
 

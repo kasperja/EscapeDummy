@@ -56,6 +56,8 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 
 	public GameObject blockColObj;
 
+	public DoorAbattoir doorScript;
+
 
 
 	// Use this for initialization
@@ -90,8 +92,10 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 
 		if (hitpoints <= 0.0f) {
 
-			mainCharScript.FadeInMusic (mainCharScript.musicScript.introMusic, mainCharScript.musicVolumeIntro);
+			mainCharScript.musicIntro = true;
 			mainCharScript.FadeOutMusic (mainCharScript.musicScript.fightMusic, mainCharScript.musicVolumeFight);
+
+			if(!doorScript.doorOpen) mainCharScript.FadeInMusic (mainCharScript.musicScript.introMusic, mainCharScript.musicVolumeIntro);
 
 
 			if(dieOnce){
