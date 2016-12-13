@@ -90,7 +90,7 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 
 		if (hitpoints <= 0.0f) {
 
-			mainCharScript.FadeInMusic (mainCharScript.musicScript.introMusic, mainCharScript.musicVolumeIntro);
+
 			mainCharScript.FadeOutMusic (mainCharScript.musicScript.fightMusic, mainCharScript.musicVolumeFight);
 
 

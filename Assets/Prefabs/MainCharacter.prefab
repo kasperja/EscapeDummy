@@ -1706,6 +1706,7 @@ MonoBehaviour:
   musicVolumeDeath: 0
   camSaw: 0
   canHook: 0
+  doorScript: {fileID: 0}
 --- !u!114 &114000010182849938
 MonoBehaviour:
   m_ObjectHideFlags: 1
