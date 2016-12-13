@@ -28,6 +28,7 @@ GameObject:
   - 114: {fileID: 114000011688461140}
   - 114: {fileID: 114000010577870838}
   - 114: {fileID: 114000012810001514}
+  - 114: {fileID: 114000011744373414}
   m_Layer: 0
   m_Name: CharacterRobotBoy
   m_TagString: Player
@@ -274,7 +275,7 @@ GameObject:
   - 4: {fileID: 4000012056467134}
   - 58: {fileID: 58000012851682672}
   - 114: {fileID: 114000011102813864}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: MiddleTarget
   m_TagString: middlePlayerCol
   m_Icon: {fileID: 0}
@@ -339,7 +340,7 @@ GameObject:
   - 4: {fileID: 4000012547852366}
   - 58: {fileID: 58000014009643546}
   - 114: {fileID: 114000013524685410}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: LowerTarget
   m_TagString: middlePlayerCol
   m_Icon: {fileID: 0}
@@ -526,7 +527,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000013007580768
 GameObject:
   m_ObjectHideFlags: 1
@@ -693,7 +694,7 @@ GameObject:
   - 4: {fileID: 4000012443116518}
   - 58: {fileID: 58000010230028858}
   - 114: {fileID: 114000010480083346}
-  m_Layer: 10
+  m_Layer: 19
   m_Name: UpperTarget
   m_TagString: middlePlayerCol
   m_Icon: {fileID: 0}
@@ -1001,7 +1002,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014109482998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -601.3, y: 22, z: 38.8}
+  m_LocalPosition: {x: -600, y: 22, z: 38.8}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1910,6 +1911,19 @@ MonoBehaviour:
   hpPlayerTotal: {fileID: 114000010577870838}
   falconPunchUnlocked: 0
   mainCamObj: {fileID: 0}
+--- !u!114 &114000011744373414
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010055231870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b24c47ad034abbb429f6c0941687bb0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pc2D: {fileID: 0}
+  bc2D: {fileID: 0}
 --- !u!114 &114000012142266028
 MonoBehaviour:
   m_ObjectHideFlags: 1
