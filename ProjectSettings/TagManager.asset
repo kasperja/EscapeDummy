@@ -50,6 +50,7 @@ TagManager:
   - SoundTriggerSaw
   - CamSawTrigger
   - CanHook
+  - IntroMusicTrigger
   layers:
   - Default
   - TransparentFX

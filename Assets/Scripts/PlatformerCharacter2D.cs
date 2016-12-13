@@ -169,6 +169,8 @@ using System.Collections;
 
 	public bool canHook = false;
 
+	public DoorAbattoir doorScript;
+
 
         private void Awake()
         {
@@ -212,11 +214,11 @@ using System.Collections;
 	}
 		private void Update(){
 
-		if (musicIntro) {
+		if (musicIntro && !doorScript.doorOpen) {
 
 			FadeInMusic (musicScript.introMusic, musicVolumeIntro);
 
-		} else {
+		} else if(!musicIntro){
 		
 			FadeOutMusic (musicScript.introMusic, musicVolumeIntro);
 		
@@ -988,13 +990,20 @@ using System.Collections;
 		}
 if (other.gameObject.tag == "CamSawTrigger") {
 
-			musicScript.introMusic.Play ();
-			musicIntro = true;
+
 
 
 	camSaw = true;
 
 }
+if (other.gameObject.tag == "IntroMusicTrigger") {
+
+			if (!musicScript.introMusic.isPlaying)
+				musicScript.introMusic.Play ();
+
+			musicIntro = true;
+
+	}
 		if (other.gameObject.tag == "CamTargetStartTrigger") {
 
 			startCamBool = true;
@@ -1093,11 +1102,15 @@ if (other.gameObject.tag == "CamSawTrigger") {
 
 	if (other.gameObject.tag == "CamSawTrigger") {
 
-			musicIntro = false;
+			
 
 		camSaw = false;
 
 	}
+
+		if (other.gameObject.tag == "IntroMusicTrigger") {
+			musicIntro = false;
+		}
 
 
 		if (other.gameObject.tag == "SawSound") {
@@ -1194,13 +1207,15 @@ public void FadeInMusic(AudioSource musicSource, float musicVolume){
 
 	if (musicSource.volume >= 0f && musicSource.volume < musicVolume) {
 
-			musicSource.volume += 0.1f * Time.deltaTime;
+		musicSource.volume += 5f * Time.deltaTime;
 		}
 
 }
 public void FadeOutMusic(AudioSource musicSource, float musicVolume){
 
 	if (musicSource.volume > 0f) {
+			
+		//if(musicSource.volume > 1f) musicSource.volume = 1f;
 
 		musicSource.volume -= 0.4f * Time.deltaTime;
 
