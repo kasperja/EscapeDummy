@@ -1270,10 +1270,20 @@ public void FadeOutMusic(AudioSource musicSource, float musicVolume){
 		m_Anim.SetBool("Ground", false);
 
 		m_Anim.SetBool("StartJump", false);
+	float jumpXforce = m_JumpForce;
+		if (!m_FacingRight) {
+			jumpXforce = -m_JumpForce;
+		} else {
 
-		m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+			jumpXforce = m_JumpForce;
+	
+	}
+
+	m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 
 		
+
+	m_Rigidbody2D.AddForce(new Vector2(jumpXforce /  1f ,0f));
 
 		yield return new WaitForSeconds (0.0f);
 		
