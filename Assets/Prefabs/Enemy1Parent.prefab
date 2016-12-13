@@ -1304,6 +1304,7 @@ MonoBehaviour:
   blockOnce: 1
   blockOnceTwo: 1
   blockColObj: {fileID: 1000011393671704}
+  doorScript: {fileID: 0}
 --- !u!114 &114000013299482874
 MonoBehaviour:
   m_ObjectHideFlags: 1

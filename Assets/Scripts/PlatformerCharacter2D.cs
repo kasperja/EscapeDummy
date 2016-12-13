@@ -214,6 +214,12 @@ using System.Collections;
 	}
 		private void Update(){
 
+		if (doorScript.doorOpen) {
+			
+			musicIntro = false;
+		
+		}
+
 		if (musicIntro && !doorScript.doorOpen) {
 
 			FadeInMusic (musicScript.introMusic, musicVolumeIntro);
@@ -1001,7 +1007,7 @@ if (other.gameObject.tag == "IntroMusicTrigger") {
 			if (!musicScript.introMusic.isPlaying)
 				musicScript.introMusic.Play ();
 
-			musicIntro = true;
+	musicIntro = true;
 
 	}
 		if (other.gameObject.tag == "CamTargetStartTrigger") {
@@ -1219,7 +1225,7 @@ public void FadeOutMusic(AudioSource musicSource, float musicVolume){
 
 		musicSource.volume -= 0.4f * Time.deltaTime;
 
-		if (musicVolume <= 0.01f) {
+		if (musicVolume <= 0.001f) {
 			musicSource.Stop ();
 		}
 
