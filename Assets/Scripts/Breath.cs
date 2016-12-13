@@ -24,7 +24,7 @@ public class Breath : MonoBehaviour {
 	
 	}
 
-	IEnumerator waitBreath(float waitTime){
+	public IEnumerator waitBreath(float waitTime){
 	
 		yield return new WaitForSeconds (waitTime);
 
