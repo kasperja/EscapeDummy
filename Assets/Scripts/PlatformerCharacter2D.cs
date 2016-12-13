@@ -171,6 +171,8 @@ using System.Collections;
 
 	public DoorAbattoir doorScript;
 
+	//public AudioSource pickupHook;
+
 
         private void Awake()
         {
@@ -186,6 +188,7 @@ using System.Collections;
 
 	private void Start()
 	{
+		
 		musicVolumeIntro = musicScript.introMusic.volume;
 		musicVolumeBreakDown = musicScript.introMusic.volume;
 		musicVolumeFight = musicScript.introMusic.volume;
