@@ -10,7 +10,7 @@ public class EnemyMovement : MonoBehaviour {
 	public float moveDistance = 15.0f;
 	private float moveDistMax;
 	private float moveDistMin;
-	public bool isFollowing = false;
+	public bool isFollowing = true;
 	public bool isInRange = false;
 	public GameObject player;
 	public HitpointsPlayerTotal hptScript;
@@ -83,7 +83,7 @@ public class EnemyMovement : MonoBehaviour {
 			useSpeed = 0.0f;
 		
 		}
-		else if (((isFollowing == false && isInRange == false) || walkWhenDead || player.GetComponent<PlatformerCharacter2D>().climbingStairsBool) && !hpEnemyTotal.isDeadEnemy ) {
+		else if (((isFollowing == false && isInRange == false) || walkWhenDead || mainCharScript.onStairsBool) && !hpEnemyTotal.isDeadEnemy ) {
 
 
 			mainCharScript.FadeOutMusic (mainCharScript.musicScript.breakdownMusic, mainCharScript.musicVolumeBreakDown);

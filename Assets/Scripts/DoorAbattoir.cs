@@ -39,6 +39,7 @@ public class DoorAbattoir : MonoBehaviour {
 
 	private bool doorFullyOpenBool = false;
 
+	public bool enemyActive = false;
 	// Use this for initialization
 	void Start () {
 
@@ -109,10 +110,10 @@ public class DoorAbattoir : MonoBehaviour {
 			} else {
 			
 				doorLockedSound.Play ();
-				enemyWorkingSaw.SetActive (false);
-				controller.SetActive (true);
-				enemyWithKey.SetActive (true);
-				key.SetActive (true);
+
+				enemyActive = true;
+
+
 			
 			}
 

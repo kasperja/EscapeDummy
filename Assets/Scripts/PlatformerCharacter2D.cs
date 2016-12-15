@@ -171,6 +171,11 @@ using System.Collections;
 
 	public DoorAbattoir doorScript;
 
+	public AudioSource wtfSound;
+
+	public bool onStairsBool = false;
+
+
 	//public AudioSource pickupHook;
 
 
@@ -909,6 +914,17 @@ using System.Collections;
 		fadeSoundInSawScriptControllerActive.insideTrigger = true;
 	}
 
+	if (other.gameObject.tag == "WtfTrigger") {
+
+			wtfSound.Play ();
+
+	}
+	if (other.gameObject.tag == "OnStairs") {
+
+			onStairsBool = true;
+
+	}
+
 		/*if (other.gameObject.tag == "HookJoint") {
 
 			if (hookOnce) {
@@ -1010,7 +1026,8 @@ if (other.gameObject.tag == "IntroMusicTrigger") {
 			if (!musicScript.introMusic.isPlaying)
 				musicScript.introMusic.Play ();
 
-	musicIntro = true;
+			musicScript.breakdownMusic.Play ();
+			musicIntro = true;
 
 	}
 		if (other.gameObject.tag == "CamTargetStartTrigger") {
@@ -1037,6 +1054,12 @@ if (other.gameObject.tag == "IntroMusicTrigger") {
 
 	void OnTriggerExit2D(Collider2D other)
 	{
+
+	if (other.gameObject.tag == "OnStairs") {
+
+		onStairsBool = false;
+
+	}
 
 	if (other.gameObject.tag == "SoundTriggerSaw") {
 
@@ -1307,7 +1330,7 @@ public void FadeOutMusic(AudioSource musicSource, float musicVolume){
 
 		
 
-	m_Rigidbody2D.AddForce(new Vector2(jumpXforce /  1f ,0f));
+	//m_Rigidbody2D.AddForce(new Vector2(jumpXforce /  1f ,0f));
 
 		yield return new WaitForSeconds (0.0f);
 		

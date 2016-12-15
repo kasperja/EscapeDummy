@@ -2064,6 +2064,8 @@ MonoBehaviour:
   enemyWithKey: {fileID: 0}
   key: {fileID: 0}
   mainCharScript: {fileID: 0}
+  hpET: {fileID: 0}
+  enemyActive: 0
 --- !u!114 &114000013985085476
 MonoBehaviour:
   m_ObjectHideFlags: 1

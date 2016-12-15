@@ -51,6 +51,9 @@ TagManager:
   - CamSawTrigger
   - CanHook
   - IntroMusicTrigger
+  - WtfTrigger
+  - EnemyActive
+  - OnStairs
   layers:
   - Default
   - TransparentFX
@@ -72,7 +75,7 @@ TagManager:
   - DeathCol
   - Boxes
   - PlayerHitTargets
-  - 
+  - WTF
   - 
   - 
   - 
