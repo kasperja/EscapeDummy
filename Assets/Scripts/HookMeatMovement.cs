@@ -56,7 +56,7 @@ public class HookMeatMovement : MonoBehaviour {
 			{if (SawMoverScript.hookDetected && hookWaitOnceMoving) {
 
 					StartCoroutine (MoveTime (0f));
-					StartCoroutine (WaitNumerator (2f));
+					StartCoroutine (WaitNumerator (1.5f));
 					StartCoroutine (HookWaitTrue (5f));
 					playOnce = false;
 					hookWaitOnceMoving = false;
@@ -75,7 +75,7 @@ public class HookMeatMovement : MonoBehaviour {
 			{
 				if (SawMoverScript.hookDetected && hookWaitOnce) {
 
-					StartCoroutine (WaitNumerator (2f));
+					StartCoroutine (WaitNumerator (1.5f));
 					StartCoroutine (HookWaitTrue (5f));
 					playOnceWait = false;
 					hookWaitOnce = false;
@@ -93,7 +93,7 @@ public class HookMeatMovement : MonoBehaviour {
 
 		if (SawMoverScript.hookDetected && waitDetectOnce) {
 
-			StartCoroutine (waitIfDetected (2));
+			StartCoroutine (waitIfDetected (2f));
 			waitDetectOnce = false;
 
 		}
@@ -101,7 +101,7 @@ public class HookMeatMovement : MonoBehaviour {
 		if (SawMoverScript.hookDetected) {
 
 
-			waitTime = 0f;
+			//waitTime = 1.5f;
 
 
 		} else {
