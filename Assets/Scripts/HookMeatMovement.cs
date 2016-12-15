@@ -29,7 +29,7 @@ public class HookMeatMovement : MonoBehaviour {
 
 	public bool waitDetectOnce = true;
 
-
+	public bool readyToStopMoving = false;
 	// Use this for initialization
 	void Start () {
 
@@ -93,6 +93,8 @@ public class HookMeatMovement : MonoBehaviour {
 
 		if (SawMoverScript.hookDetected && waitDetectOnce) {
 
+			//readyToStopMoving = false;
+
 			StartCoroutine (waitIfDetected (2f));
 			waitDetectOnce = false;
 
@@ -101,8 +103,8 @@ public class HookMeatMovement : MonoBehaviour {
 		if (SawMoverScript.hookDetected) {
 
 
-			//waitTime = 1.5f;
-
+			if(waitDetectOnce)waitTime = 1.5f;
+			StartCoroutine (waitForMove ());
 
 		} else {
 
@@ -215,6 +217,7 @@ public class HookMeatMovement : MonoBehaviour {
 		hookWaitOnce = true;
 		hookWaitOnceMoving = true;
 		waitDetectOnce = true;
+		waitTime = 1.5f;
 	}
 	IEnumerator waitIfDetected(float moveTime)
 	{
@@ -222,5 +225,12 @@ public class HookMeatMovement : MonoBehaviour {
 		isMoving = false;
 		yield return new WaitForSeconds(moveTime);
 		isMoving = true;
+	}
+	IEnumerator waitForMove(){
+	//	yield return new WaitForSeconds (1f);
+		readyToStopMoving = false;
+		yield return new WaitForSeconds (1f);
+		readyToStopMoving = true;
+
 	}
 }
