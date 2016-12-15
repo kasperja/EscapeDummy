@@ -156,7 +156,7 @@ public class HookHingeMovement : MonoBehaviour {
 
 
 		
-			waitTime = 0f;
+			//waitTime = 0f;
 
 		
 		} else {
