@@ -175,7 +175,7 @@ using System.Collections;
 
 	public bool onStairsBool = false;
 
-
+	private bool breakOnce = true;
 	//public AudioSource pickupHook;
 
 
@@ -1026,8 +1026,9 @@ if (other.gameObject.tag == "IntroMusicTrigger") {
 			if (!musicScript.introMusic.isPlaying)
 				musicScript.introMusic.Play ();
 
-			musicScript.breakdownMusic.Play ();
+	if(breakOnce) musicScript.breakdownMusic.Play ();
 			musicIntro = true;
+			breakOnce = false;
 
 	}
 		if (other.gameObject.tag == "CamTargetStartTrigger") {
@@ -1141,7 +1142,7 @@ if (other.gameObject.tag == "IntroMusicTrigger") {
 	}
 
 		if (other.gameObject.tag == "IntroMusicTrigger") {
-			musicIntro = false;
+			//musicIntro = false;
 		}
 
 
