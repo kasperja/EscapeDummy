@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FadeSawSoundsIn : MonoBehaviour {
+public class FadeControllerSoundsIn : MonoBehaviour {
+
 	private AudioSource currentSound;
 	private float maxVol;
 	private bool hasMaxed = false;
@@ -10,7 +11,6 @@ public class FadeSawSoundsIn : MonoBehaviour {
 	public DoorAbattoir doorScript;
 	public bool insideTrigger = false;
 	public PlayIntro introScript;
-	public float startSoundMuting = 3f;
 	// Use this for initialization
 	void Start () {
 
@@ -25,10 +25,10 @@ public class FadeSawSoundsIn : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (introScript.fadeSawSounds && !insideTrigger && currentSound.volume < (maxVol / startSoundMuting)) {
-			
+		if (introScript.fadeSawSounds && !insideTrigger && currentSound.volume < (maxVol / 3f)) {
+
 			currentSound.volume += fadeInSpeed * Time.deltaTime;
-		
+
 		}
 
 
@@ -38,7 +38,7 @@ public class FadeSawSoundsIn : MonoBehaviour {
 			hasBeenInside = true;
 
 		}else if(!insideTrigger && currentSound.volume > 0f && doorScript.doorOpen){
-			
+
 			currentSound.volume -= fadeInSpeed * 2f * Time.deltaTime;
 
 		} else if (!insideTrigger && currentSound.volume > (maxVol / 3f)) {

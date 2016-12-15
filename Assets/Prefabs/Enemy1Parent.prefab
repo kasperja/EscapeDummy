@@ -730,7 +730,7 @@ Transform:
   m_GameObject: {fileID: 1000014042529844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.398538, y: 1, z: 1}
+  m_LocalScale: {x: 11.16257, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010543049988}
@@ -755,7 +755,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012576447686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 438, y: 23.6, z: 30}
+  m_LocalPosition: {x: 327, y: 23.6, z: 30}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1006,8 +1006,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   followSpeed: 40
-  moveDistance: 40
-  isFollowing: 0
+  moveDistance: 10
+  isFollowing: 1
   isInRange: 0
   player: {fileID: 0}
   hptScript: {fileID: 0}
