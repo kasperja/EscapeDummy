@@ -1756,6 +1756,7 @@ MonoBehaviour:
   onStairsBool: 0
   onStairsSoundOnce: 1
   longStopSound: {fileID: 0}
+  landingSound: {fileID: 0}
 --- !u!114 &114000010182849938
 MonoBehaviour:
   m_ObjectHideFlags: 1
