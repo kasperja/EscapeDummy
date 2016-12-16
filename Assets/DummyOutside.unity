@@ -1825,91 +1825,91 @@ Prefab:
       propertyPath: m_RootOrder
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012355904958, guid: 5463defc0323ce649acbd7b885232bf5,
+        type: 2}
+      propertyPath: enemyAttackDmgHigh
+      value: 
+      objectReference: {fileID: 880718286}
+    - target: {fileID: 114000012355904958, guid: 5463defc0323ce649acbd7b885232bf5,
+        type: 2}
+      propertyPath: enemyAttackDmgMiddle
+      value: 
+      objectReference: {fileID: 2135202965}
+    - target: {fileID: 114000012355904958, guid: 5463defc0323ce649acbd7b885232bf5,
+        type: 2}
+      propertyPath: enemyAttackDmgLow
+      value: 
+      objectReference: {fileID: 632411383}
+    - target: {fileID: 114000012355904958, guid: 5463defc0323ce649acbd7b885232bf5,
+        type: 2}
+      propertyPath: SawTrapDamage
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000012113313396, guid: 5463defc0323ce649acbd7b885232bf5,
+        type: 2}
+      propertyPath: enemyAttackDmgHigh
+      value: 
+      objectReference: {fileID: 880718286}
+    - target: {fileID: 114000012113313396, guid: 5463defc0323ce649acbd7b885232bf5,
+        type: 2}
+      propertyPath: enemyAttackDmgMiddle
+      value: 
+      objectReference: {fileID: 2135202965}
+    - target: {fileID: 114000012113313396, guid: 5463defc0323ce649acbd7b885232bf5,
+        type: 2}
+      propertyPath: enemyAttackDmgLow
+      value: 
+      objectReference: {fileID: 632411383}
+    - target: {fileID: 114000012113313396, guid: 5463defc0323ce649acbd7b885232bf5,
+        type: 2}
+      propertyPath: SawTrapDamage
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000011925006484, guid: 5463defc0323ce649acbd7b885232bf5,
+        type: 2}
+      propertyPath: enemyAttackDmgHigh
+      value: 
+      objectReference: {fileID: 880718286}
+    - target: {fileID: 114000011925006484, guid: 5463defc0323ce649acbd7b885232bf5,
+        type: 2}
+      propertyPath: enemyAttackDmgMiddle
+      value: 
+      objectReference: {fileID: 2135202965}
+    - target: {fileID: 114000011925006484, guid: 5463defc0323ce649acbd7b885232bf5,
+        type: 2}
+      propertyPath: enemyAttackDmgLow
+      value: 
+      objectReference: {fileID: 632411383}
+    - target: {fileID: 114000011925006484, guid: 5463defc0323ce649acbd7b885232bf5,
+        type: 2}
+      propertyPath: SawTrapDamage
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000011714461692, guid: 5463defc0323ce649acbd7b885232bf5,
+        type: 2}
+      propertyPath: enemyAttackDmgHigh
+      value: 
+      objectReference: {fileID: 880718286}
+    - target: {fileID: 114000011714461692, guid: 5463defc0323ce649acbd7b885232bf5,
+        type: 2}
+      propertyPath: enemyAttackDmgMiddle
+      value: 
+      objectReference: {fileID: 2135202965}
+    - target: {fileID: 114000011714461692, guid: 5463defc0323ce649acbd7b885232bf5,
+        type: 2}
+      propertyPath: enemyAttackDmgLow
+      value: 
+      objectReference: {fileID: 632411383}
+    - target: {fileID: 114000011714461692, guid: 5463defc0323ce649acbd7b885232bf5,
+        type: 2}
+      propertyPath: SawTrapDamage
+      value: 
+      objectReference: {fileID: 1664072720}
     - target: {fileID: 114000011103810148, guid: 5463defc0323ce649acbd7b885232bf5,
         type: 2}
       propertyPath: attackSound
       value: 
       objectReference: {fileID: 2059599485}
-    - target: {fileID: 114000011714461692, guid: 5463defc0323ce649acbd7b885232bf5,
-        type: 2}
-      propertyPath: enemyAttackDmgHigh
-      value: 
-      objectReference: {fileID: 880718286}
-    - target: {fileID: 114000011714461692, guid: 5463defc0323ce649acbd7b885232bf5,
-        type: 2}
-      propertyPath: enemyAttackDmgMiddle
-      value: 
-      objectReference: {fileID: 2135202965}
-    - target: {fileID: 114000011714461692, guid: 5463defc0323ce649acbd7b885232bf5,
-        type: 2}
-      propertyPath: enemyAttackDmgLow
-      value: 
-      objectReference: {fileID: 632411383}
-    - target: {fileID: 114000011714461692, guid: 5463defc0323ce649acbd7b885232bf5,
-        type: 2}
-      propertyPath: SawTrapDamage
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000011925006484, guid: 5463defc0323ce649acbd7b885232bf5,
-        type: 2}
-      propertyPath: enemyAttackDmgHigh
-      value: 
-      objectReference: {fileID: 880718286}
-    - target: {fileID: 114000011925006484, guid: 5463defc0323ce649acbd7b885232bf5,
-        type: 2}
-      propertyPath: enemyAttackDmgMiddle
-      value: 
-      objectReference: {fileID: 2135202965}
-    - target: {fileID: 114000011925006484, guid: 5463defc0323ce649acbd7b885232bf5,
-        type: 2}
-      propertyPath: enemyAttackDmgLow
-      value: 
-      objectReference: {fileID: 632411383}
-    - target: {fileID: 114000011925006484, guid: 5463defc0323ce649acbd7b885232bf5,
-        type: 2}
-      propertyPath: SawTrapDamage
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000012113313396, guid: 5463defc0323ce649acbd7b885232bf5,
-        type: 2}
-      propertyPath: enemyAttackDmgHigh
-      value: 
-      objectReference: {fileID: 880718286}
-    - target: {fileID: 114000012113313396, guid: 5463defc0323ce649acbd7b885232bf5,
-        type: 2}
-      propertyPath: enemyAttackDmgMiddle
-      value: 
-      objectReference: {fileID: 2135202965}
-    - target: {fileID: 114000012113313396, guid: 5463defc0323ce649acbd7b885232bf5,
-        type: 2}
-      propertyPath: enemyAttackDmgLow
-      value: 
-      objectReference: {fileID: 632411383}
-    - target: {fileID: 114000012113313396, guid: 5463defc0323ce649acbd7b885232bf5,
-        type: 2}
-      propertyPath: SawTrapDamage
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000012355904958, guid: 5463defc0323ce649acbd7b885232bf5,
-        type: 2}
-      propertyPath: enemyAttackDmgHigh
-      value: 
-      objectReference: {fileID: 880718286}
-    - target: {fileID: 114000012355904958, guid: 5463defc0323ce649acbd7b885232bf5,
-        type: 2}
-      propertyPath: enemyAttackDmgMiddle
-      value: 
-      objectReference: {fileID: 2135202965}
-    - target: {fileID: 114000012355904958, guid: 5463defc0323ce649acbd7b885232bf5,
-        type: 2}
-      propertyPath: enemyAttackDmgLow
-      value: 
-      objectReference: {fileID: 632411383}
-    - target: {fileID: 114000012355904958, guid: 5463defc0323ce649acbd7b885232bf5,
-        type: 2}
-      propertyPath: SawTrapDamage
-      value: 
-      objectReference: {fileID: 1664072720}
     - target: {fileID: 114000013216347272, guid: 5463defc0323ce649acbd7b885232bf5,
         type: 2}
       propertyPath: WaitForHookedCol
@@ -1975,6 +1975,16 @@ Prefab:
       propertyPath: footstepGravel
       value: 
       objectReference: {fileID: 1373464197}
+    - target: {fileID: 114000013216347272, guid: 5463defc0323ce649acbd7b885232bf5,
+        type: 2}
+      propertyPath: musicScript
+      value: 
+      objectReference: {fileID: 163242922}
+    - target: {fileID: 114000013216347272, guid: 5463defc0323ce649acbd7b885232bf5,
+        type: 2}
+      propertyPath: landingSound
+      value: 
+      objectReference: {fileID: 1717632720}
     - target: {fileID: 114000012663338526, guid: 5463defc0323ce649acbd7b885232bf5,
         type: 2}
       propertyPath: deathSound
@@ -2079,17 +2089,6 @@ Prefab:
       propertyPath: emTwo
       value: 
       objectReference: {fileID: 423511374}
-    - target: {fileID: 114000013216347272, guid: 5463defc0323ce649acbd7b885232bf5,
-        type: 2}
-      propertyPath: musicScript
-      value: 
-      objectReference: {fileID: 163242922}
-    - target: {fileID: 114000013216347272, guid: 5463defc0323ce649acbd7b885232bf5,
-        type: 2}
-      propertyPath: doorScript
-      value: 
-      objectReference: {fileID: 114000010396708776, guid: 2bedcc68db6da5f469a828640f20924a,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5463defc0323ce649acbd7b885232bf5, type: 2}
   m_IsPrefabParent: 0
@@ -2773,7 +2772,7 @@ MeshFilter:
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!82 &340819380 stripped
 AudioSource:
-  m_PrefabParentObject: {fileID: 82000010880466610, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+  m_PrefabParentObject: {fileID: 82000010862121726, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
     type: 2}
   m_PrefabInternal: {fileID: 1524926264}
 --- !u!1 &354670105
@@ -3795,7 +3794,7 @@ Transform:
   - {fileID: 1782796056}
   - {fileID: 651242036}
   - {fileID: 1274824585}
-  - {fileID: 1323864091}
+  - {fileID: 580894025}
   - {fileID: 594094462}
   - {fileID: 1551119821}
   - {fileID: 1530619187}
@@ -4423,6 +4422,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07a720b379b96ff4eb6f6437014caba2, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &580894025 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000011910817898, guid: 5694a2dda0f13b749a087701fbe9efcd,
+    type: 2}
+  m_PrefabInternal: {fileID: 771149449}
 --- !u!4 &594094462 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013722216706, guid: dab24b96fa42bdb4bbbd4d9746825fe1,
@@ -5567,6 +5571,10 @@ Prefab:
       propertyPath: sawMoverScript
       value: 
       objectReference: {fileID: 1664072720}
+    - target: {fileID: 4000011910817898, guid: 5694a2dda0f13b749a087701fbe9efcd, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5694a2dda0f13b749a087701fbe9efcd, type: 2}
   m_IsPrefabParent: 0
@@ -9372,11 +9380,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1316806303}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1323864091 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4000013267434606, guid: 5694a2dda0f13b749a087701fbe9efcd,
-    type: 2}
-  m_PrefabInternal: {fileID: 771149449}
 --- !u!1 &1325209881
 GameObject:
   m_ObjectHideFlags: 0
@@ -10566,6 +10569,51 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 223000010382386538, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+        type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 811125730}
+    - target: {fileID: 114000012816322340, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 142688742}
+    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+        type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 291855428}
+    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+        type: 2}
+      propertyPath: targetEnd
+      value: 
+      objectReference: {fileID: 307092759}
+    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+        type: 2}
+      propertyPath: targetStart
+      value: 
+      objectReference: {fileID: 634456507}
+    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+        type: 2}
+      propertyPath: targetSaw
+      value: 
+      objectReference: {fileID: 1717185043}
+    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+        type: 2}
+      propertyPath: targetHooked
+      value: 
+      objectReference: {fileID: 1341079187}
+    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+        type: 2}
+      propertyPath: targetNotHooked
+      value: 
+      objectReference: {fileID: 291855428}
+    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+        type: 2}
+      propertyPath: MainCharScript
+      value: 
+      objectReference: {fileID: 142688740}
     - target: {fileID: 114000012058256994, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
         type: 2}
       propertyPath: Player
@@ -10616,51 +10664,6 @@ Prefab:
       propertyPath: LowerTarget
       value: 
       objectReference: {fileID: 692768767}
-    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
-        type: 2}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 291855428}
-    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
-        type: 2}
-      propertyPath: targetEnd
-      value: 
-      objectReference: {fileID: 307092759}
-    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
-        type: 2}
-      propertyPath: targetStart
-      value: 
-      objectReference: {fileID: 634456507}
-    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
-        type: 2}
-      propertyPath: targetSaw
-      value: 
-      objectReference: {fileID: 1717185043}
-    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
-        type: 2}
-      propertyPath: targetHooked
-      value: 
-      objectReference: {fileID: 1341079187}
-    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
-        type: 2}
-      propertyPath: targetNotHooked
-      value: 
-      objectReference: {fileID: 291855428}
-    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
-        type: 2}
-      propertyPath: MainCharScript
-      value: 
-      objectReference: {fileID: 142688740}
-    - target: {fileID: 114000012816322340, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
-        type: 2}
-      propertyPath: character
-      value: 
-      objectReference: {fileID: 142688742}
-    - target: {fileID: 223000010382386538, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
-        type: 2}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 811125730}
     - target: {fileID: 1000012502785530, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6, type: 2}
       propertyPath: m_Name
       value: MainCamera
@@ -11909,6 +11912,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!82 &1717632720 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82000010880466610, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1524926264}
 --- !u!114 &1726593342 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114000013630240450, guid: 5463defc0323ce649acbd7b885232bf5,
@@ -12830,6 +12838,11 @@ Prefab:
       propertyPath: ambienceTwo
       value: 
       objectReference: {fileID: 340819380}
+    - target: {fileID: 114000010295506488, guid: 005188c993e09bf47a86135cb911e713,
+        type: 2}
+      propertyPath: landingSound
+      value: 
+      objectReference: {fileID: 1717632720}
     - target: {fileID: 1000013047013410, guid: 005188c993e09bf47a86135cb911e713, type: 2}
       propertyPath: m_Name
       value: EndTrigger

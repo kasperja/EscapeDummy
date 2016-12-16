@@ -180,6 +180,7 @@ using System.Collections;
 	private bool breakOnce = true;
 
 	public AudioSource landingSound;
+	private bool landOnce = true;
 	//public AudioSource pickupHook;
 
 
@@ -260,7 +261,7 @@ using System.Collections;
 		
 		if (Input.GetKeyDown (KeyCode.Space)  && !hpPlayerTotal.isDead && m_Grounded && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") 
 			&& !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
-		
+			landOnce = true;
 			m_Anim.SetBool ("SpaceBool", true);
 			StartCoroutine (waitSpaceBool(0.2f));
 		
@@ -631,7 +632,10 @@ using System.Collections;
 				if (colliders [i].gameObject != gameObject) {
 					m_Grounded = true;
 			landingParticle.Play ();
-			if(!landingSound.isPlaying)landingSound.Play ();
+				if (!landingSound.isPlaying && landOnce) {
+					landingSound.Play ();
+					landOnce = false;
+				}
 
 
 				}
@@ -1377,7 +1381,10 @@ IEnumerator stopOnHook(float waitTime){
 		anticiHook = true;
 
 	yield return new WaitForSeconds (0.1f);
-	if(!landingSound.isPlaying)landingSound.Play ();
+		if (!landingSound.isPlaying && landOnce) {
+			landingSound.Play ();
+			landOnce = false;
+		}
 	landingParticle.Play ();
 		anticiHook = false;
 
