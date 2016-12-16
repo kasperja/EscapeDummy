@@ -432,112 +432,37 @@ Prefab:
       propertyPath: m_RootOrder
       value: 18
       objectReference: {fileID: 0}
-    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgHigh
       value: 
       objectReference: {fileID: 824413418}
-    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgMiddle
       value: 
       objectReference: {fileID: 1077958414}
-    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgLow
       value: 
       objectReference: {fileID: 1450091794}
-    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: SawTrapDamage
       value: 
       objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000011102813864, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
-        type: 2}
-      propertyPath: enemyAttackDmgHigh
-      value: 
-      objectReference: {fileID: 824413418}
-    - target: {fileID: 114000011102813864, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
-        type: 2}
-      propertyPath: enemyAttackDmgMiddle
-      value: 
-      objectReference: {fileID: 1077958414}
-    - target: {fileID: 114000011102813864, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
-        type: 2}
-      propertyPath: enemyAttackDmgLow
-      value: 
-      objectReference: {fileID: 1450091794}
-    - target: {fileID: 114000011102813864, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
-        type: 2}
-      propertyPath: SawTrapDamage
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000011102813864, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: scream1
       value: 
       objectReference: {fileID: 249876333}
-    - target: {fileID: 114000011102813864, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: scream2
       value: 
       objectReference: {fileID: 1609743971}
-    - target: {fileID: 114000011102813864, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
-        type: 2}
-      propertyPath: scream3
-      value: 
-      objectReference: {fileID: 1539666057}
-    - target: {fileID: 114000010712801092, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
-        type: 2}
-      propertyPath: enemyAttackDmgHigh
-      value: 
-      objectReference: {fileID: 824413418}
-    - target: {fileID: 114000010712801092, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
-        type: 2}
-      propertyPath: enemyAttackDmgMiddle
-      value: 
-      objectReference: {fileID: 1077958414}
-    - target: {fileID: 114000010712801092, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
-        type: 2}
-      propertyPath: enemyAttackDmgLow
-      value: 
-      objectReference: {fileID: 1450091794}
-    - target: {fileID: 114000010712801092, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
-        type: 2}
-      propertyPath: SawTrapDamage
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000011361752430, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
-        type: 2}
-      propertyPath: enemyAttackDmgHigh
-      value: 
-      objectReference: {fileID: 824413418}
-    - target: {fileID: 114000011361752430, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
-        type: 2}
-      propertyPath: enemyAttackDmgMiddle
-      value: 
-      objectReference: {fileID: 1077958414}
-    - target: {fileID: 114000011361752430, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
-        type: 2}
-      propertyPath: enemyAttackDmgLow
-      value: 
-      objectReference: {fileID: 1450091794}
-    - target: {fileID: 114000011361752430, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
-        type: 2}
-      propertyPath: SawTrapDamage
-      value: 
-      objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000011361752430, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
-        type: 2}
-      propertyPath: scream1
-      value: 
-      objectReference: {fileID: 249876333}
-    - target: {fileID: 114000011361752430, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
-        type: 2}
-      propertyPath: scream2
-      value: 
-      objectReference: {fileID: 1609743971}
-    - target: {fileID: 114000011361752430, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: scream3
       value: 
@@ -547,41 +472,116 @@ Prefab:
       propertyPath: attackSound
       value: 
       objectReference: {fileID: 2059599485}
-    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000011361752430, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgHigh
       value: 
       objectReference: {fileID: 824413418}
-    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000011361752430, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgMiddle
       value: 
       objectReference: {fileID: 1077958414}
-    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000011361752430, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: enemyAttackDmgLow
       value: 
       objectReference: {fileID: 1450091794}
-    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000011361752430, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: SawTrapDamage
       value: 
       objectReference: {fileID: 1664072720}
-    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000011361752430, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: scream1
       value: 
       objectReference: {fileID: 249876333}
-    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000011361752430, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: scream2
       value: 
       objectReference: {fileID: 1609743971}
-    - target: {fileID: 114000013524685410, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+    - target: {fileID: 114000011361752430, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: scream3
       value: 
       objectReference: {fileID: 1539666057}
+    - target: {fileID: 114000010712801092, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: enemyAttackDmgHigh
+      value: 
+      objectReference: {fileID: 824413418}
+    - target: {fileID: 114000010712801092, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: enemyAttackDmgMiddle
+      value: 
+      objectReference: {fileID: 1077958414}
+    - target: {fileID: 114000010712801092, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: enemyAttackDmgLow
+      value: 
+      objectReference: {fileID: 1450091794}
+    - target: {fileID: 114000010712801092, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: SawTrapDamage
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000011102813864, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: enemyAttackDmgHigh
+      value: 
+      objectReference: {fileID: 824413418}
+    - target: {fileID: 114000011102813864, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: enemyAttackDmgMiddle
+      value: 
+      objectReference: {fileID: 1077958414}
+    - target: {fileID: 114000011102813864, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: enemyAttackDmgLow
+      value: 
+      objectReference: {fileID: 1450091794}
+    - target: {fileID: 114000011102813864, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: SawTrapDamage
+      value: 
+      objectReference: {fileID: 1664072720}
+    - target: {fileID: 114000011102813864, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: scream1
+      value: 
+      objectReference: {fileID: 249876333}
+    - target: {fileID: 114000011102813864, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: scream2
+      value: 
+      objectReference: {fileID: 1609743971}
+    - target: {fileID: 114000011102813864, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: scream3
+      value: 
+      objectReference: {fileID: 1539666057}
+    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: enemyAttackDmgHigh
+      value: 
+      objectReference: {fileID: 824413418}
+    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: enemyAttackDmgMiddle
+      value: 
+      objectReference: {fileID: 1077958414}
+    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: enemyAttackDmgLow
+      value: 
+      objectReference: {fileID: 1450091794}
+    - target: {fileID: 114000010480083346, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: SawTrapDamage
+      value: 
+      objectReference: {fileID: 1664072720}
     - target: {fileID: 114000010164550830, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: WaitForHookedCol
@@ -702,6 +702,11 @@ Prefab:
       propertyPath: longStopSound
       value: 
       objectReference: {fileID: 966504834}
+    - target: {fileID: 114000010164550830, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
+        type: 2}
+      propertyPath: landingSound
+      value: 
+      objectReference: {fileID: 1205529012}
     - target: {fileID: 114000010577870838, guid: fc33b3b3eabb2c24da2737445d2a1b6a,
         type: 2}
       propertyPath: deathSound
@@ -1358,63 +1363,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114000013500674178, guid: a213b38a8a030074f9fee084c6095ca8,
+    - target: {fileID: 114000011228446870, guid: a213b38a8a030074f9fee084c6095ca8,
         type: 2}
-      propertyPath: doorScript
+      propertyPath: sunTransform
       value: 
-      objectReference: {fileID: 1465872297}
-    - target: {fileID: 114000010639083196, guid: a213b38a8a030074f9fee084c6095ca8,
-        type: 2}
-      propertyPath: doorScript
-      value: 
-      objectReference: {fileID: 1465872297}
-    - target: {fileID: 114000013254524268, guid: a213b38a8a030074f9fee084c6095ca8,
-        type: 2}
-      propertyPath: doorScript
-      value: 
-      objectReference: {fileID: 1465872297}
-    - target: {fileID: 114000013418472294, guid: a213b38a8a030074f9fee084c6095ca8,
-        type: 2}
-      propertyPath: doorScript
-      value: 
-      objectReference: {fileID: 1465872297}
-    - target: {fileID: 114000013885977846, guid: a213b38a8a030074f9fee084c6095ca8,
-        type: 2}
-      propertyPath: doorScript
-      value: 
-      objectReference: {fileID: 1465872297}
-    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 291855428}
-    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
-      propertyPath: targetEnd
-      value: 
-      objectReference: {fileID: 1548265878}
-    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
-      propertyPath: targetStart
-      value: 
-      objectReference: {fileID: 634456507}
-    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
-      propertyPath: targetSaw
-      value: 
-      objectReference: {fileID: 1717185043}
-    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
-      propertyPath: targetHooked
-      value: 
-      objectReference: {fileID: 1341079187}
-    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
-      propertyPath: targetNotHooked
-      value: 
-      objectReference: {fileID: 291855428}
-    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
-      propertyPath: targetCamSaw
-      value: 
-      objectReference: {fileID: 1845766807}
-    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
-      propertyPath: MainCharScript
-      value: 
-      objectReference: {fileID: 142688740}
+      objectReference: {fileID: 740403092}
     - target: {fileID: 11452294, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
       propertyPath: Player
       value: 
@@ -1455,11 +1408,63 @@ Prefab:
       propertyPath: LowerTarget
       value: 
       objectReference: {fileID: 692768767}
-    - target: {fileID: 114000011228446870, guid: a213b38a8a030074f9fee084c6095ca8,
-        type: 2}
-      propertyPath: sunTransform
+    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: target
       value: 
-      objectReference: {fileID: 740403092}
+      objectReference: {fileID: 291855428}
+    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: targetEnd
+      value: 
+      objectReference: {fileID: 1548265878}
+    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: targetStart
+      value: 
+      objectReference: {fileID: 634456507}
+    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: targetSaw
+      value: 
+      objectReference: {fileID: 1717185043}
+    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: targetHooked
+      value: 
+      objectReference: {fileID: 1341079187}
+    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: targetNotHooked
+      value: 
+      objectReference: {fileID: 291855428}
+    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: targetCamSaw
+      value: 
+      objectReference: {fileID: 1845766807}
+    - target: {fileID: 11429676, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
+      propertyPath: MainCharScript
+      value: 
+      objectReference: {fileID: 142688740}
+    - target: {fileID: 114000013885977846, guid: a213b38a8a030074f9fee084c6095ca8,
+        type: 2}
+      propertyPath: doorScript
+      value: 
+      objectReference: {fileID: 1465872297}
+    - target: {fileID: 114000013418472294, guid: a213b38a8a030074f9fee084c6095ca8,
+        type: 2}
+      propertyPath: doorScript
+      value: 
+      objectReference: {fileID: 1465872297}
+    - target: {fileID: 114000013254524268, guid: a213b38a8a030074f9fee084c6095ca8,
+        type: 2}
+      propertyPath: doorScript
+      value: 
+      objectReference: {fileID: 1465872297}
+    - target: {fileID: 114000010639083196, guid: a213b38a8a030074f9fee084c6095ca8,
+        type: 2}
+      propertyPath: doorScript
+      value: 
+      objectReference: {fileID: 1465872297}
+    - target: {fileID: 114000013500674178, guid: a213b38a8a030074f9fee084c6095ca8,
+        type: 2}
+      propertyPath: doorScript
+      value: 
+      objectReference: {fileID: 1465872297}
     - target: {fileID: 114000010267442252, guid: a213b38a8a030074f9fee084c6095ca8,
         type: 2}
       propertyPath: character
@@ -2861,6 +2866,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
+--- !u!82 &1205529012 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82000011455141820, guid: a213b38a8a030074f9fee084c6095ca8,
+    type: 2}
+  m_PrefabInternal: {fileID: 621484736}
 --- !u!1 &1214920450
 GameObject:
   m_ObjectHideFlags: 0

@@ -178,6 +178,8 @@ using System.Collections;
 	public AudioSource longStopSound;
 
 	private bool breakOnce = true;
+
+	public AudioSource landingSound;
 	//public AudioSource pickupHook;
 
 
@@ -628,7 +630,8 @@ using System.Collections;
             {
 				if (colliders [i].gameObject != gameObject) {
 					m_Grounded = true;
-				landingParticle.Play ();
+			landingParticle.Play ();
+			if(!landingSound.isPlaying)landingSound.Play ();
 
 
 				}
@@ -671,11 +674,11 @@ using System.Collections;
                 
 			if (isFootstepIndoor) {
 
-			if(!footstepIndoor.isPlaying) footstepIndoor.Play();
+			if(!footstepIndoor.isPlaying && m_Grounded) footstepIndoor.Play();
 
 			} else {
 
-			if(!footstepGravel.isPlaying) footstepGravel.Play();
+			if(!footstepGravel.isPlaying && m_Grounded) footstepGravel.Play();
 
 			}
 		if (isEndOutside || isStartOutside) {
@@ -1374,7 +1377,7 @@ IEnumerator stopOnHook(float waitTime){
 		anticiHook = true;
 
 	yield return new WaitForSeconds (0.1f);
-
+	if(!landingSound.isPlaying)landingSound.Play ();
 	landingParticle.Play ();
 		anticiHook = false;
 
