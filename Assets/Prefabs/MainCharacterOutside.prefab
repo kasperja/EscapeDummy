@@ -1702,6 +1702,9 @@ MonoBehaviour:
   graphicsObj: {fileID: 1000012537124234}
   charObj: {fileID: 1000014035437954}
   m_Anim: {fileID: 95000013725915842}
+  scream1: {fileID: 0}
+  scream2: {fileID: 0}
+  scream3: {fileID: 0}
 --- !u!114 &114000011925006484
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1725,6 +1728,9 @@ MonoBehaviour:
   graphicsObj: {fileID: 1000012537124234}
   charObj: {fileID: 1000014035437954}
   m_Anim: {fileID: 95000013725915842}
+  scream1: {fileID: 0}
+  scream2: {fileID: 0}
+  scream3: {fileID: 0}
 --- !u!114 &114000012113313396
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1748,6 +1754,9 @@ MonoBehaviour:
   graphicsObj: {fileID: 1000012537124234}
   charObj: {fileID: 1000014035437954}
   m_Anim: {fileID: 95000013725915842}
+  scream1: {fileID: 0}
+  scream2: {fileID: 0}
+  scream3: {fileID: 0}
 --- !u!114 &114000012266126036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1805,6 +1814,9 @@ MonoBehaviour:
   graphicsObj: {fileID: 1000012537124234}
   charObj: {fileID: 1000014035437954}
   m_Anim: {fileID: 95000013725915842}
+  scream1: {fileID: 0}
+  scream2: {fileID: 0}
+  scream3: {fileID: 0}
 --- !u!114 &114000012375375538
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1993,7 +2005,24 @@ MonoBehaviour:
   fadeSoundInSawScriptIdle: {fileID: 0}
   fadeSoundInSawScriptControllerIdle: {fileID: 0}
   fadeSoundInSawScriptControllerActive: {fileID: 0}
+  musicIntro: 0
+  musicBreakDown: 0
+  musicFight: 0
+  musicDeath: 0
+  musicScript: {fileID: 0}
+  musicVolumeIntro: 0
+  musicVolumeBreakDown: 0
+  musicVolumeFight: 0
+  musicVolumeDeath: 0
   camSaw: 0
+  canHook: 0
+  doorScript: {fileID: 114000010396708776, guid: 2bedcc68db6da5f469a828640f20924a,
+    type: 2}
+  wtfSound: {fileID: 0}
+  onStairsBool: 0
+  onStairsSoundOnce: 1
+  longStopSound: {fileID: 0}
+  landingSound: {fileID: 0}
 --- !u!114 &114000013304144382
 MonoBehaviour:
   m_ObjectHideFlags: 1

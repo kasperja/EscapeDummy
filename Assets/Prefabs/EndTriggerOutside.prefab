@@ -142,4 +142,5 @@ MonoBehaviour:
   footStepsSoundGravel: {fileID: 0}
   ambienceOne: {fileID: 0}
   ambienceTwo: {fileID: 0}
+  landingSound: {fileID: 0}
   fadeAmbienceOut: 0
