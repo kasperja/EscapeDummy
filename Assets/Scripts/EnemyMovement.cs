@@ -135,12 +135,7 @@ public class EnemyMovement : MonoBehaviour {
 
 		} else if (isFollowing == true && isInRange == false && !hptScript.isDead && !hpEnemyTotal.isDeadEnemy /*&& waitForWalk*/) {
 
-			if (breakOnceMusic) {
 
-				mainCharScript.musicScript.breakdownMusic.Play ();
-				breakOnceMusic = false;
-
-			}
 
 			mainCharScript.FadeInMusic (mainCharScript.musicScript.breakdownMusic, mainCharScript.musicVolumeBreakDown);
 			mainCharScript.FadeOutMusic (mainCharScript.musicScript.introMusic, mainCharScript.musicVolumeIntro);
@@ -173,6 +168,13 @@ public class EnemyMovement : MonoBehaviour {
 			transform.Translate (useSpeed * Time.deltaTime, 0, 0);
 
 		} else if (isInRange && !hptScript.isDead) {
+
+			if (breakOnceMusic) {
+
+				mainCharScript.musicScript.breakdownMusic.Play ();
+				breakOnceMusic = false;
+
+			}
 			
 			mainCharScript.musicIntro = false;
 
