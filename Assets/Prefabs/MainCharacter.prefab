@@ -1813,6 +1813,9 @@ MonoBehaviour:
   graphicsObj: {fileID: 1000012991551484}
   charObj: {fileID: 1000010055231870}
   m_Anim: {fileID: 95000010344365076}
+  scream1: {fileID: 0}
+  scream2: {fileID: 0}
+  scream3: {fileID: 0}
 --- !u!114 &114000010577870838
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1882,6 +1885,9 @@ MonoBehaviour:
   graphicsObj: {fileID: 1000012991551484}
   charObj: {fileID: 1000010055231870}
   m_Anim: {fileID: 95000010344365076}
+  scream1: {fileID: 0}
+  scream2: {fileID: 0}
+  scream3: {fileID: 0}
 --- !u!114 &114000011102813864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1905,6 +1911,9 @@ MonoBehaviour:
   graphicsObj: {fileID: 1000012991551484}
   charObj: {fileID: 1000010055231870}
   m_Anim: {fileID: 95000010344365076}
+  scream1: {fileID: 0}
+  scream2: {fileID: 0}
+  scream3: {fileID: 0}
 --- !u!114 &114000011110196828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1968,6 +1977,9 @@ MonoBehaviour:
   graphicsObj: {fileID: 1000012991551484}
   charObj: {fileID: 1000010055231870}
   m_Anim: {fileID: 95000010344365076}
+  scream1: {fileID: 0}
+  scream2: {fileID: 0}
+  scream3: {fileID: 0}
 --- !u!114 &114000011688461140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2182,6 +2194,9 @@ MonoBehaviour:
   graphicsObj: {fileID: 1000012991551484}
   charObj: {fileID: 1000010055231870}
   m_Anim: {fileID: 95000010344365076}
+  scream1: {fileID: 0}
+  scream2: {fileID: 0}
+  scream3: {fileID: 0}
 --- !u!114 &114000013535632038
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -574,6 +574,7 @@ using System.Collections;
 			yield return new WaitForSeconds (animWaitTime);
 				m_Attack1 = false;
 			playOnce1 = true;
+	attackSoundOnce = true;
 				
 
 		}
@@ -581,11 +582,13 @@ using System.Collections;
 			yield return new WaitForSeconds (animWaitTime);
 			m_Attack2 = false;
 			playOnce2 = true;
+	attackSoundOnce = true;
 		}
 
 	IEnumerator WaitForAnim3(float animWaitTime){
 			yield return new WaitForSeconds (animWaitTime);
 			m_Attack3 = false;
+		attackSoundOnce = true;
 			//playOnce3 = true;
 			m_Grounded = true;
 		}
@@ -595,6 +598,7 @@ using System.Collections;
 			cm.falconPunchBool = false;	
 			m_Attack4 = false;
 			playOnce4 = true;
+	attackSoundOnce = true;
 		}
 
 	IEnumerator WaitForAnim5(float animWaitTime){
@@ -603,6 +607,7 @@ using System.Collections;
 		//playOnce5 = true;
 		m_Grounded = true;
 		m_Anim.SetBool ("JumpKickToJump", false);
+	attackSoundOnce = true;
 
 	}
 
