@@ -47,8 +47,11 @@ public class HitPointsEnemy : MonoBehaviour {
 
 	public bool enemyFacingLeft = true;
 
+	public AudioSource grunt1;
+	public AudioSource grunt2;
+	public AudioSource grunt3;
 
-
+	private float randomGruntFloat;
 
 
 	// Use this for initialization
@@ -63,7 +66,7 @@ public class HitPointsEnemy : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-
+		randomGruntFloat = Random.Range (0f, 3f);
 
 		if (falconPunch.Check() && comboManager.falconPunchUnlocked)
 			{
@@ -227,6 +230,20 @@ public class HitPointsEnemy : MonoBehaviour {
 	IEnumerator hitWait(){
 	
 		enemyAnim.SetBool ("HitBool", true);
+		if(randomGruntFloat <= 1f){
+
+			grunt1.Play ();
+
+		}else if(randomGruntFloat > 1f && randomGruntFloat <= 2f){
+
+			grunt2.Play ();
+
+		}else{
+
+			grunt3.Play ();
+
+
+		}
 		//iTween.PunchScale(graphicsObj,  new Vector3 (-1, -2f, 0f), 0.8f);
 		yield return new WaitForSeconds (0.03f);
 		enemyAnim.SetBool ("HitBool", false);

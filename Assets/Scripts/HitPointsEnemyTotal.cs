@@ -62,9 +62,9 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+
 		maxHitpoints = hitpoints;
-		blockColObj.SetActive (true);
+		blockColObj.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -186,7 +186,7 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 		tarLow.GetComponent<CircleCollider2D>().enabled = false;
 
 
-		yield return new WaitForSeconds (0.5f);
+		yield return new WaitForSeconds (0.1f);
 		blockColObj.SetActive (false);
 		tarHigh.GetComponent<CircleCollider2D>().enabled = true;
 		tarMid.GetComponent<CircleCollider2D>().enabled = true;

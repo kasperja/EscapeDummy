@@ -44,7 +44,7 @@ public class AttackEnemyManager : MonoBehaviour {
 		}
 
 
-		if (randomAttackNumber >= 0.0f && randomAttackNumber < 0.33f && blockOnce && em.isInRange && blockActive) {
+		if (randomAttackNumber >= 0.0f && randomAttackNumber < 0.05f && blockOnce && em.isInRange && blockActive) {
 		
 
 			hpt.enemyBlock = true;
@@ -54,7 +54,7 @@ public class AttackEnemyManager : MonoBehaviour {
 			StartCoroutine (waitBlock ());
 
 		
-		} else if (randomAttackNumber >= 0.33f && randomAttackNumber <= 0.66f) {
+		} else if (randomAttackNumber >= 0.05f && randomAttackNumber <= 0.66f) {
 		
 			attackEnemyMiddle.activeAttack = true;
 			attackEnemyHigh.activeAttack = false;

@@ -13,6 +13,9 @@ public class DoorAbattoir : MonoBehaviour {
 	public AudioSource doorLockedSound;
 	public bool doorSoundPlayOnce = true;
 
+	public AudioSource iGotKeySound;
+	private bool iGotKeySoundOnce = true;
+
 	public GameObject enemyWorkingSaw;
 	public GameObject controller;
 
@@ -110,6 +113,12 @@ public class DoorAbattoir : MonoBehaviour {
 			} else {
 			
 				doorLockedSound.Play ();
+
+				if (iGotKeySoundOnce) {
+					
+					iGotKeySound.Play ();
+					iGotKeySoundOnce = false;
+				}
 
 				enemyActive = true;
 
