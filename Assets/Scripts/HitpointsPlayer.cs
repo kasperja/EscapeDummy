@@ -20,6 +20,12 @@ public class HitpointsPlayer : MonoBehaviour {
 
 	public Animator m_Anim;
 
+	public AudioSource scream1;
+	public AudioSource scream2;
+	public AudioSource scream3;
+
+	private float randomScreamFloat;
+
 
 	// Use this for initialization
 	void Start () {
@@ -28,6 +34,7 @@ public class HitpointsPlayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		randomScreamFloat = Random.Range (0f, 3f);
 	
 	}
 
@@ -35,12 +42,23 @@ public class HitpointsPlayer : MonoBehaviour {
 		if (collider.tag == "EnemyAttackHigh") {
 
 			StartCoroutine (waitHitAnim ());
-			iTween.PunchScale (graphicsObj, new Vector3 (1f, -1f, 0f), 0.5f);
+
+			if (randomScreamFloat < 1f) {
+				
+				scream1.Play ();
+			} else if (randomScreamFloat >= 1f && randomScreamFloat < 2f) {
+				scream2.Play ();
+
+			} else {
+				scream3.Play ();
+			
+			}
+			//iTween.PunchScale (graphicsObj, new Vector3 (1f, -1f, 0f), 0.5f);
 			if (!MainCharScript.m_FacingRight) {
-				iTween.MoveBy (charObj, new Vector3 (10f, 0f, 0f), 0.5f);
+			//	iTween.MoveBy (charObj, new Vector3 (10f, 0f, 0f), 0.5f);
 			} else {
 
-				iTween.MoveBy (charObj, new Vector3 (-10f, 0f, 0f), 0.5f);
+				//iTween.MoveBy (charObj, new Vector3 (-10f, 0f, 0f), 0.5f);
 
 			}
 			hitPointsTotalScript.hitpoints -= enemyAttackDmgHigh.attackDamage * dmgMultiplier;
@@ -49,13 +67,23 @@ public class HitpointsPlayer : MonoBehaviour {
 
 		}else if (collider.tag == "EnemyAttackMiddle") {
 
+			if (randomScreamFloat < 1f) {
+
+				scream1.Play ();
+			} else if (randomScreamFloat >= 1f && randomScreamFloat < 2f) {
+				scream2.Play ();
+
+			} else {
+				scream3.Play ();
+
+			}
 			StartCoroutine (waitHitAnim ());
-			iTween.PunchScale (graphicsObj, new Vector3 (1f, -1f, 0f), 0.5f);
+			//iTween.PunchScale (graphicsObj, new Vector3 (1f, -1f, 0f), 0.5f);
 			if (!MainCharScript.m_FacingRight) {
-				iTween.MoveBy (charObj, new Vector3 (10f, 0f, 0f), 0.5f);
+				//iTween.MoveBy (charObj, new Vector3 (10f, 0f, 0f), 0.5f);
 			} else {
 			
-				iTween.MoveBy (charObj, new Vector3 (-10f, 0f, 0f), 0.5f);
+				//iTween.MoveBy (charObj, new Vector3 (-10f, 0f, 0f), 0.5f);
 			
 			}
 			hitPointsTotalScript.hitpoints -= enemyAttackDmgMiddle.attackDamage * dmgMultiplier;
@@ -63,14 +91,23 @@ public class HitpointsPlayer : MonoBehaviour {
 			playOnceMiddle = false;
 
 		}else if (collider.tag == "EnemyAttackLow") {
+			if (randomScreamFloat < 1f) {
 
+				scream1.Play ();
+			} else if (randomScreamFloat >= 1f && randomScreamFloat < 2f) {
+				scream2.Play ();
+
+			} else {
+				scream3.Play ();
+
+			}
 			StartCoroutine (waitHitAnim ());
-			iTween.PunchScale (graphicsObj, new Vector3 (1f, -1f, 0f), 0.5f);
+			//iTween.PunchScale (graphicsObj, new Vector3 (1f, -1f, 0f), 0.5f);
 			if (!MainCharScript.m_FacingRight) {
-				iTween.MoveBy (charObj, new Vector3 (10f, 0f, 0f), 0.5f);
+			//	iTween.MoveBy (charObj, new Vector3 (10f, 0f, 0f), 0.5f);
 			} else {
 
-				iTween.MoveBy (charObj, new Vector3 (-10f, 0f, 0f), 0.5f);
+			//	iTween.MoveBy (charObj, new Vector3 (-10f, 0f, 0f), 0.5f);
 
 			}
 			hitPointsTotalScript.hitpoints -= enemyAttackDmgLow.attackDamage * dmgMultiplier;
