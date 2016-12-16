@@ -2052,6 +2052,7 @@ MonoBehaviour:
   doorOpenSound: {fileID: 0}
   doorLockedSound: {fileID: 0}
   doorSoundPlayOnce: 1
+  iGotKeySound: {fileID: 0}
   enemyWorkingSaw: {fileID: 0}
   controller: {fileID: 0}
   ambientSound: {fileID: 0}

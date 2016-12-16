@@ -174,6 +174,8 @@ using System.Collections;
 	public AudioSource wtfSound;
 
 	public bool onStairsBool = false;
+	public bool onStairsSoundOnce = true;
+	public AudioSource longStopSound;
 
 	private bool breakOnce = true;
 	//public AudioSource pickupHook;
@@ -922,6 +924,10 @@ using System.Collections;
 	if (other.gameObject.tag == "OnStairs") {
 
 			onStairsBool = true;
+		if (onStairsSoundOnce){
+				longStopSound.Play ();
+			onStairsSoundOnce = false;
+		}
 
 	}
 
