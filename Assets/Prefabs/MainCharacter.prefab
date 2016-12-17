@@ -1666,7 +1666,7 @@ MonoBehaviour:
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 4294772942
+    m_Bits: 4293134542
   m_Grounded: 1
   m_AnimHooked: {fileID: 95000013447369186}
   m_FacingRight: 1
