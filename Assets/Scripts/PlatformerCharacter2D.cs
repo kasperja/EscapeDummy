@@ -593,7 +593,7 @@ using System.Collections;
 			m_Attack3 = false;
 		attackSoundOnce = true;
 			//playOnce3 = true;
-			m_Grounded = true;
+			//m_Grounded = true;
 		}
 
 	IEnumerator WaitForAnim4(float animWaitTime){
@@ -608,7 +608,7 @@ using System.Collections;
 		yield return new WaitForSeconds (animWaitTime);
 		m_Attack5 = false;
 		//playOnce5 = true;
-		m_Grounded = true;
+		//m_Grounded = true;
 		m_Anim.SetBool ("JumpKickToJump", false);
 	attackSoundOnce = true;
 
@@ -761,7 +761,7 @@ using System.Collections;
 	if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive  && !hpPlayerTotal.isDead && jumpOnce && !m_Attack3 && !m_Attack5)
             {
 			if (!sideArrowsBool) {
-			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
+			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") && /*!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") && */ !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
 					
 				m_Anim.SetBool ("SpaceBool", true);
 				StartCoroutine (waitSpaceBool(0.2f));
@@ -772,7 +772,7 @@ using System.Collections;
 				}
 			} else {
 
-			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
+			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") && /*!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") &&*/ !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
 					//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 					m_Anim.SetBool ("StartJump", true);
 
@@ -877,7 +877,7 @@ using System.Collections;
 	if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive && !hpPlayerTotal.isDead && jumpOnce && !m_Attack3 && !m_Attack5)
 		{
 			if (!sideArrowsBool) {
-			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
+			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") /* && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") */ && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
 					
 					m_Anim.SetBool ("SpaceBool", true);
 					StartCoroutine (waitSpaceBool(0.2f));
@@ -892,7 +892,7 @@ using System.Collections;
 
 				//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 
-			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
+			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") /* && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") */ && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
 
 					m_Anim.SetBool ("StartJump", true);
 
@@ -980,7 +980,7 @@ using System.Collections;
 		m_Anim.SetBool ("Grab", false);
 		WaitForHookedCol.SetActive (true);
 		WaitForHookedCol2.SetActive (true);
-		m_Grounded = true;
+		//m_Grounded = true;
 
 	}
 		if (other.gameObject.tag == "HookTrigger") {
@@ -1306,7 +1306,7 @@ public void FadeOutMusic(AudioSource musicSource, float musicVolume){
 		m_Anim.SetBool ("Grab", false);
 		WaitForHookedCol.SetActive (true);
 		WaitForHookedCol2.SetActive (true);
-		m_Grounded = true;
+		//m_Grounded = true;
 
 	
 	}
@@ -1331,7 +1331,7 @@ public void FadeOutMusic(AudioSource musicSource, float musicVolume){
 		yield return new WaitForSeconds (waitTime);
 		//hookParent.GetComponent<BoxCollider2D> ().enabled = true;
 		//tempHinge.enabled = true;
-		m_Grounded = false;
+		//m_Grounded = false;
 		
 		m_Anim.SetBool("Ground", false);
 
