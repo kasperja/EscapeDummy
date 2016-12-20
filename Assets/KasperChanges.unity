@@ -1495,6 +1495,11 @@ Prefab:
       propertyPath: breath
       value: 
       objectReference: {fileID: 2047599794}
+    - target: {fileID: 23000010563043252, guid: a213b38a8a030074f9fee084c6095ca8,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4264f4d7e31f8c9418643b7fef4b2dec, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a213b38a8a030074f9fee084c6095ca8, type: 2}
   m_IsPrefabParent: 0
