@@ -1,0 +1,395 @@
+fileFormatVersion: 2
+guid: 121172159f9cfa54d81059de81b4f249
+timeCreated: 1482225212
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: surprisedIdle-0024
+    21300002: surprisedIdle-0025
+    21300004: surprisedIdle-0026
+    21300006: surprisedIdle-0027
+    21300008: surprisedIdle-0028
+    21300010: surprisedIdle-0029
+    21300012: surprisedIdle-0030
+    21300014: surprisedIdle-0031
+    21300016: surprisedIdle-0032
+    21300018: surprisedIdle-0033
+    21300020: surprisedIdle-0034
+    21300022: surprisedIdle-0035
+    21300024: surprisedIdle-0036
+    21300026: surprisedIdle-0037
+    21300028: surprisedIdle-0038
+    21300030: surprisedIdle-0039
+    21300032: surprisedIdle-0040
+    21300034: surprisedIdle-0041
+    21300036: surprisedIdle-0042
+    21300038: surprisedIdle-0043
+    21300040: surprisedIdle-0044
+    21300042: surprisedIdle-0045
+    21300044: surprisedIdle-0046
+    21300046: surprisedIdle-0047
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: surprisedIdle-0024
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1641
+        width: 296
+        height: 406
+      alignment: 9
+      pivot: {x: 0.375, y: 0.4729064}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0025
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 1633
+        width: 296
+        height: 414
+      alignment: 9
+      pivot: {x: 0.375, y: 0.4710145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0026
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1638
+        width: 296
+        height: 409
+      alignment: 9
+      pivot: {x: 0.375, y: 0.4767726}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0027
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1637
+        width: 295
+        height: 410
+      alignment: 9
+      pivot: {x: 0.37288135, y: 0.46829268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0028
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 1630
+        width: 296
+        height: 417
+      alignment: 9
+      pivot: {x: 0.375, y: 0.46043167}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0029
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 1636
+        width: 295
+        height: 411
+      alignment: 9
+      pivot: {x: 0.37288135, y: 0.46715328}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0030
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1220
+        width: 297
+        height: 408
+      alignment: 9
+      pivot: {x: 0.37710437, y: 0.4730392}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0031
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1212
+        width: 296
+        height: 416
+      alignment: 9
+      pivot: {x: 0.375, y: 0.46153846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0032
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1221
+        width: 296
+        height: 407
+      alignment: 9
+      pivot: {x: 0.375, y: 0.47174448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0033
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1224
+        width: 296
+        height: 404
+      alignment: 9
+      pivot: {x: 0.375, y: 0.47524753}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0034
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 1218
+        width: 297
+        height: 410
+      alignment: 9
+      pivot: {x: 0.37710437, y: 0.47560975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0035
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 1221
+        width: 294
+        height: 407
+      alignment: 9
+      pivot: {x: 0.3707483, y: 0.4791155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0036
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 796
+        width: 295
+        height: 414
+      alignment: 9
+      pivot: {x: 0.37288135, y: 0.46618357}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0037
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 804
+        width: 294
+        height: 406
+      alignment: 9
+      pivot: {x: 0.3707483, y: 0.47536945}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0038
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 803
+        width: 296
+        height: 407
+      alignment: 9
+      pivot: {x: 0.375, y: 0.4791155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0039
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 802
+        width: 295
+        height: 408
+      alignment: 9
+      pivot: {x: 0.37288135, y: 0.4730392}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0040
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 807
+        width: 295
+        height: 403
+      alignment: 9
+      pivot: {x: 0.37288135, y: 0.4764268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0041
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 806
+        width: 296
+        height: 404
+      alignment: 9
+      pivot: {x: 0.375, y: 0.47772276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0042
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 389
+        width: 295
+        height: 405
+      alignment: 9
+      pivot: {x: 0.37288135, y: 0.47654322}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0043
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 391
+        width: 293
+        height: 403
+      alignment: 9
+      pivot: {x: 0.3686007, y: 0.4764268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0044
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 390
+        width: 293
+        height: 404
+      alignment: 9
+      pivot: {x: 0.3686007, y: 0.47524753}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0045
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 390
+        width: 293
+        height: 404
+      alignment: 9
+      pivot: {x: 0.3686007, y: 0.47772276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0046
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 390
+        width: 295
+        height: 404
+      alignment: 9
+      pivot: {x: 0.37288135, y: 0.47524753}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0047
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 387
+        width: 291
+        height: 407
+      alignment: 9
+      pivot: {x: 0.36426118, y: 0.47174448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

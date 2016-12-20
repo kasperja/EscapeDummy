@@ -22,6 +22,14 @@ tpsheetFileNames:
 - Assets/Textures/Butcher/ButcherWalk-1.tpsheet
 - Assets/Textures/Butcher/ButcherWalkBlink-0.tpsheet
 - Assets/Textures/Butcher/ButcherWalkBlink-1.tpsheet
+- Assets/Textures/EnemyWorkingSaw/idle-0.tpsheet
+- Assets/Textures/EnemyWorkingSaw/idle-1.tpsheet
+- Assets/Textures/EnemyWorkingSaw/surprised-0.tpsheet
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-0.tpsheet
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-1.tpsheet
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-2.tpsheet
+- Assets/Textures/EnemyWorkingSaw/working-0.tpsheet
+- Assets/Textures/EnemyWorkingSaw/working-1.tpsheet
 - Assets/Textures/MainChar/Anims19-10-16/Block-0.tpsheet
 - Assets/Textures/MainChar/Anims19-10-16/Block-1.tpsheet
 - Assets/Textures/MainChar/Anims19-10-16/Block-2.tpsheet
@@ -99,6 +107,14 @@ textureFileNames:
 - Assets/Textures/Butcher/ButcherWalk-1.png
 - Assets/Textures/Butcher/ButcherWalkBlink-0.png
 - Assets/Textures/Butcher/ButcherWalkBlink-1.png
+- Assets/Textures/EnemyWorkingSaw/idle-0.png
+- Assets/Textures/EnemyWorkingSaw/idle-1.png
+- Assets/Textures/EnemyWorkingSaw/surprised-0.png
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-0.png
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-1.png
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-2.png
+- Assets/Textures/EnemyWorkingSaw/working-0.png
+- Assets/Textures/EnemyWorkingSaw/working-1.png
 - Assets/Textures/MainChar/Anims19-10-16/Block-0.png
 - Assets/Textures/MainChar/Anims19-10-16/Block-1.png
 - Assets/Textures/MainChar/Anims19-10-16/Block-2.png
@@ -156,6 +172,14 @@ textureFileNames:
 - Assets/Textures/MainChar/Anims19-10-16/Strike01-3.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 - 
 - 
 - 

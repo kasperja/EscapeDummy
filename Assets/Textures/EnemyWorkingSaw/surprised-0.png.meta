@@ -1,0 +1,339 @@
+fileFormatVersion: 2
+guid: b65451316dcff8f49bf8a28f233c9e1f
+timeCreated: 1482225226
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: surprised-0000
+    21300002: surprised-0001
+    21300004: surprised-0002
+    21300006: surprised-0003
+    21300008: surprised-0004
+    21300010: surprised-0005
+    21300012: surprised-0006
+    21300014: surprised-0007
+    21300016: surprised-0008
+    21300018: surprised-0009
+    21300020: surprised-0010
+    21300022: surprised-0011
+    21300024: surprised-0012
+    21300026: surprised-0013
+    21300028: surprised-0014
+    21300030: surprised-0015
+    21300032: surprised-0016
+    21300034: surprised-0017
+    21300036: surprised-0018
+    21300038: surprised-0019
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: surprised-0000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1639
+        width: 288
+        height: 408
+      alignment: 9
+      pivot: {x: 0.35416666, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprised-0001
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1643
+        width: 289
+        height: 404
+      alignment: 9
+      pivot: {x: 0.35986158, y: 0.48267326}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprised-0002
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1640
+        width: 287
+        height: 407
+      alignment: 9
+      pivot: {x: 0.35191637, y: 0.47174448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprised-0003
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 1642
+        width: 290
+        height: 405
+      alignment: 9
+      pivot: {x: 0.36206895, y: 0.47407407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprised-0004
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 1652
+        width: 289
+        height: 395
+      alignment: 9
+      pivot: {x: 0.35986158, y: 0.48607594}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprised-0005
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1647
+        width: 283
+        height: 400
+      alignment: 9
+      pivot: {x: 0.34628975, y: 0.49}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprised-0006
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 1652
+        width: 288
+        height: 395
+      alignment: 9
+      pivot: {x: 0.3576389, y: 0.48607594}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprised-0007
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1237
+        width: 285
+        height: 400
+      alignment: 9
+      pivot: {x: 0.3508772, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprised-0008
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1240
+        width: 285
+        height: 397
+      alignment: 9
+      pivot: {x: 0.3508772, y: 0.4836272}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprised-0009
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1233
+        width: 289
+        height: 404
+      alignment: 9
+      pivot: {x: 0.35986158, y: 0.48267326}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprised-0010
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1233
+        width: 292
+        height: 404
+      alignment: 9
+      pivot: {x: 0.36643836, y: 0.47524753}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprised-0011
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1221
+        width: 298
+        height: 416
+      alignment: 9
+      pivot: {x: 0.37919462, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprised-0012
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 1232
+        width: 297
+        height: 405
+      alignment: 9
+      pivot: {x: 0.37710437, y: 0.47407407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprised-0013
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 807
+        width: 296
+        height: 412
+      alignment: 9
+      pivot: {x: 0.375, y: 0.4684466}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprised-0014
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 812
+        width: 292
+        height: 407
+      alignment: 9
+      pivot: {x: 0.36643836, y: 0.47420147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprised-0015
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 807
+        width: 295
+        height: 412
+      alignment: 9
+      pivot: {x: 0.37288135, y: 0.47330096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprised-0016
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 807
+        width: 295
+        height: 412
+      alignment: 9
+      pivot: {x: 0.37288135, y: 0.47330096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprised-0017
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 807
+        width: 295
+        height: 412
+      alignment: 9
+      pivot: {x: 0.37288135, y: 0.47330096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprised-0018
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 807
+        width: 295
+        height: 412
+      alignment: 9
+      pivot: {x: 0.37288135, y: 0.47330096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprised-0019
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 393
+        width: 295
+        height: 412
+      alignment: 9
+      pivot: {x: 0.37288135, y: 0.47330096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

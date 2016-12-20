@@ -1,0 +1,381 @@
+fileFormatVersion: 2
+guid: 9247702e02b96024baa90742b571957b
+timeCreated: 1482225223
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: working-0027
+    21300002: working-0028
+    21300004: working-0029
+    21300006: working-0030
+    21300008: working-0031
+    21300010: working-0032
+    21300012: working-0033
+    21300014: working-0034
+    21300016: working-0035
+    21300018: working-0036
+    21300020: working-0037
+    21300022: working-0038
+    21300024: working-0039
+    21300026: working-0040
+    21300028: working-0041
+    21300030: working-0042
+    21300032: working-0043
+    21300034: working-0044
+    21300036: working-0045
+    21300038: working-0046
+    21300040: working-0047
+    21300042: working-0048
+    21300044: working-0049
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: working-0027
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1640
+        width: 289
+        height: 407
+      alignment: 9
+      pivot: {x: 0.35986158, y: 0.47174448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0028
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1650
+        width: 289
+        height: 397
+      alignment: 9
+      pivot: {x: 0.35986158, y: 0.4836272}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0029
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1646
+        width: 289
+        height: 401
+      alignment: 9
+      pivot: {x: 0.35986158, y: 0.47880298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0030
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1649
+        width: 289
+        height: 398
+      alignment: 9
+      pivot: {x: 0.35986158, y: 0.48241207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0031
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 1648
+        width: 289
+        height: 399
+      alignment: 9
+      pivot: {x: 0.35986158, y: 0.48120302}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0032
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 1636
+        width: 288
+        height: 411
+      alignment: 9
+      pivot: {x: 0.3576389, y: 0.46715328}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0033
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 1648
+        width: 292
+        height: 399
+      alignment: 9
+      pivot: {x: 0.36643836, y: 0.48120302}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0034
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1234
+        width: 292
+        height: 400
+      alignment: 9
+      pivot: {x: 0.36643836, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0035
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1226
+        width: 293
+        height: 408
+      alignment: 9
+      pivot: {x: 0.3686007, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0036
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 1236
+        width: 292
+        height: 398
+      alignment: 9
+      pivot: {x: 0.36643836, y: 0.48241207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0037
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 1235
+        width: 288
+        height: 399
+      alignment: 9
+      pivot: {x: 0.3576389, y: 0.48120302}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0038
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 1226
+        width: 288
+        height: 408
+      alignment: 9
+      pivot: {x: 0.3576389, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0039
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 1227
+        width: 288
+        height: 407
+      alignment: 9
+      pivot: {x: 0.3576389, y: 0.47174448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0040
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 1237
+        width: 288
+        height: 397
+      alignment: 9
+      pivot: {x: 0.3576389, y: 0.4836272}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0041
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 825
+        width: 288
+        height: 399
+      alignment: 9
+      pivot: {x: 0.3576389, y: 0.48120302}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0042
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 821
+        width: 288
+        height: 403
+      alignment: 9
+      pivot: {x: 0.3576389, y: 0.4764268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0043
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 824
+        width: 288
+        height: 400
+      alignment: 9
+      pivot: {x: 0.3576389, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0044
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 823
+        width: 285
+        height: 401
+      alignment: 9
+      pivot: {x: 0.3508772, y: 0.47880298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0045
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 821
+        width: 287
+        height: 403
+      alignment: 9
+      pivot: {x: 0.3554007, y: 0.4764268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0046
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 821
+        width: 286
+        height: 403
+      alignment: 9
+      pivot: {x: 0.35314685, y: 0.4764268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0047
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 814
+        width: 291
+        height: 410
+      alignment: 9
+      pivot: {x: 0.36426118, y: 0.46829268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0048
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 410
+        width: 291
+        height: 402
+      alignment: 9
+      pivot: {x: 0.36426118, y: 0.47761193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: working-0049
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 410
+        width: 291
+        height: 402
+      alignment: 9
+      pivot: {x: 0.36426118, y: 0.47761193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
