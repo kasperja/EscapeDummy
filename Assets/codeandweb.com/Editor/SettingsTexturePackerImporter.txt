@@ -2,204 +2,72 @@ version: 2
 importPivots: 1
 tpsheetFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
-- Assets/Cutscenes/TitlePngs/title-0.tpsheet
-- Assets/Cutscenes/TitlePngs/title-1.tpsheet
-- Assets/Textures/Butcher/ButcherBlock-0.tpsheet
-- Assets/Textures/Butcher/ButcherBlock-1.tpsheet
-- Assets/Textures/Butcher/ButcherDeath-0.tpsheet
-- Assets/Textures/Butcher/ButcherDeath-1.tpsheet
-- Assets/Textures/Butcher/ButcherDeath-2.tpsheet
-- Assets/Textures/Butcher/ButcherHit-0.tpsheet
-- Assets/Textures/Butcher/ButcherHit-1.tpsheet
-- Assets/Textures/Butcher/ButcherIdle-0.tpsheet
-- Assets/Textures/Butcher/ButcherIdle-1.tpsheet
-- Assets/Textures/Butcher/ButcherIdleBlink-0.tpsheet
-- Assets/Textures/Butcher/ButcherIdleBlink-1.tpsheet
-- Assets/Textures/Butcher/ButcherStrike-0.tpsheet
-- Assets/Textures/Butcher/ButcherStrike-1.tpsheet
-- Assets/Textures/Butcher/ButcherStrike-2.tpsheet
-- Assets/Textures/Butcher/ButcherWalk-0.tpsheet
-- Assets/Textures/Butcher/ButcherWalk-1.tpsheet
-- Assets/Textures/Butcher/ButcherWalkBlink-0.tpsheet
-- Assets/Textures/Butcher/ButcherWalkBlink-1.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Block-0.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Block-1.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Block-2.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Death-0.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Death-1.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/GetUp-0.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/GetUp-1.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/hit-0.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Idle-0.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Idle-1.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Idle-2.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Idle3-4_EyesMoving-0.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Idle3-4_EyesMoving-1.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Idle3-4_EyesMoving-2.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Idle3-4-0.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Idle3-4-1.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Idle3-4-2.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Idle3-4Blink-0.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Idle3-4Blink-1.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Idle3-4Blink-2.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/IdleBlink_lookback_02-0.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/IdleBlink_lookback_02-1.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/IdleBlink_lookback_02-2.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/IdleLookUp_02-0.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/IdleLookUp_02-1.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/IdleLookUp_02-2.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/IdleLookUp_02-3.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/IdleLookUp_02-4.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/IdleLookUp_02-5.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/IdleLookUp_02-6.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/IdleLookUp_02-7.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/IdleLookUp_02-8.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Jump_new02-0.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Jump_new02-1.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Jump_new02-2.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/JumpGrab-0.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/JumpGrab-1.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/JumpGrab-2.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/JumpGrab-3.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/JumpGrab-4.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/JumpGrab-5.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/JumpKick_02-0.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/JumpKick_02-1.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Run-0.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Run-1.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Run-2.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Run-3.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Run3-4-0.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Run3-4-1.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Run3-4-2.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Run3-4-3.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Strike01-0.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Strike01-1.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Strike01-2.tpsheet
-- Assets/Textures/MainChar/Anims19-10-16/Strike01-3.tpsheet
+- Assets/Textures/EnemyWorkingSaw/idle-0.tpsheet
+- Assets/Textures/EnemyWorkingSaw/idle-1.tpsheet
+- Assets/Textures/EnemyWorkingSaw/idle-2.tpsheet
+- Assets/Textures/EnemyWorkingSaw/idle-3.tpsheet
+- Assets/Textures/EnemyWorkingSaw/idle-4.tpsheet
+- Assets/Textures/EnemyWorkingSaw/idle-5.tpsheet
+- Assets/Textures/EnemyWorkingSaw/idle-6.tpsheet
+- Assets/Textures/EnemyWorkingSaw/idle-7.tpsheet
+- Assets/Textures/EnemyWorkingSaw/idle-8.tpsheet
+- Assets/Textures/EnemyWorkingSaw/surprised-0.tpsheet
+- Assets/Textures/EnemyWorkingSaw/surprised-1.tpsheet
+- Assets/Textures/EnemyWorkingSaw/surprised-2.tpsheet
+- Assets/Textures/EnemyWorkingSaw/surprised-3.tpsheet
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-0.tpsheet
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-1.tpsheet
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-2.tpsheet
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-3.tpsheet
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-4.tpsheet
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-5.tpsheet
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-6.tpsheet
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-7.tpsheet
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-8.tpsheet
+- Assets/Textures/EnemyWorkingSaw/working-0.tpsheet
+- Assets/Textures/EnemyWorkingSaw/working-1.tpsheet
+- Assets/Textures/EnemyWorkingSaw/working-2.tpsheet
+- Assets/Textures/EnemyWorkingSaw/working-3.tpsheet
+- Assets/Textures/EnemyWorkingSaw/working-4.tpsheet
+- Assets/Textures/EnemyWorkingSaw/working-5.tpsheet
+- Assets/Textures/EnemyWorkingSaw/working-6.tpsheet
+- Assets/Textures/EnemyWorkingSaw/working-7.tpsheet
+- Assets/Textures/EnemyWorkingSaw/working-8.tpsheet
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
-- Assets/Cutscenes/TitlePngs/title-0.png
-- Assets/Cutscenes/TitlePngs/title-1.png
-- Assets/Textures/Butcher/ButcherBlock-0.png
-- Assets/Textures/Butcher/ButcherBlock-1.png
-- Assets/Textures/Butcher/ButcherDeath-0.png
-- Assets/Textures/Butcher/ButcherDeath-1.png
-- Assets/Textures/Butcher/ButcherDeath-2.png
-- Assets/Textures/Butcher/ButcherHit-0.png
-- Assets/Textures/Butcher/ButcherHit-1.png
-- Assets/Textures/Butcher/ButcherIdle-0.png
-- Assets/Textures/Butcher/ButcherIdle-1.png
-- Assets/Textures/Butcher/ButcherIdleBlink-0.png
-- Assets/Textures/Butcher/ButcherIdleBlink-1.png
-- Assets/Textures/Butcher/ButcherStrike-0.png
-- Assets/Textures/Butcher/ButcherStrike-1.png
-- Assets/Textures/Butcher/ButcherStrike-2.png
-- Assets/Textures/Butcher/ButcherWalk-0.png
-- Assets/Textures/Butcher/ButcherWalk-1.png
-- Assets/Textures/Butcher/ButcherWalkBlink-0.png
-- Assets/Textures/Butcher/ButcherWalkBlink-1.png
-- Assets/Textures/MainChar/Anims19-10-16/Block-0.png
-- Assets/Textures/MainChar/Anims19-10-16/Block-1.png
-- Assets/Textures/MainChar/Anims19-10-16/Block-2.png
-- Assets/Textures/MainChar/Anims19-10-16/Death-0.png
-- Assets/Textures/MainChar/Anims19-10-16/Death-1.png
-- Assets/Textures/MainChar/Anims19-10-16/GetUp-0.png
-- Assets/Textures/MainChar/Anims19-10-16/GetUp-1.png
-- Assets/Textures/MainChar/Anims19-10-16/hit-0.png
-- Assets/Textures/MainChar/Anims19-10-16/Idle-0.png
-- Assets/Textures/MainChar/Anims19-10-16/Idle-1.png
-- Assets/Textures/MainChar/Anims19-10-16/Idle-2.png
-- Assets/Textures/MainChar/Anims19-10-16/Idle3-4_EyesMoving-0.png
-- Assets/Textures/MainChar/Anims19-10-16/Idle3-4_EyesMoving-1.png
-- Assets/Textures/MainChar/Anims19-10-16/Idle3-4_EyesMoving-2.png
-- Assets/Textures/MainChar/Anims19-10-16/Idle3-4-0.png
-- Assets/Textures/MainChar/Anims19-10-16/Idle3-4-1.png
-- Assets/Textures/MainChar/Anims19-10-16/Idle3-4-2.png
-- Assets/Textures/MainChar/Anims19-10-16/Idle3-4Blink-0.png
-- Assets/Textures/MainChar/Anims19-10-16/Idle3-4Blink-1.png
-- Assets/Textures/MainChar/Anims19-10-16/Idle3-4Blink-2.png
-- Assets/Textures/MainChar/Anims19-10-16/IdleBlink_lookback_02-0.png
-- Assets/Textures/MainChar/Anims19-10-16/IdleBlink_lookback_02-1.png
-- Assets/Textures/MainChar/Anims19-10-16/IdleBlink_lookback_02-2.png
-- Assets/Textures/MainChar/Anims19-10-16/IdleLookUp_02-0.png
-- Assets/Textures/MainChar/Anims19-10-16/IdleLookUp_02-1.png
-- Assets/Textures/MainChar/Anims19-10-16/IdleLookUp_02-2.png
-- Assets/Textures/MainChar/Anims19-10-16/IdleLookUp_02-3.png
-- Assets/Textures/MainChar/Anims19-10-16/IdleLookUp_02-4.png
-- Assets/Textures/MainChar/Anims19-10-16/IdleLookUp_02-5.png
-- Assets/Textures/MainChar/Anims19-10-16/IdleLookUp_02-6.png
-- Assets/Textures/MainChar/Anims19-10-16/IdleLookUp_02-7.png
-- Assets/Textures/MainChar/Anims19-10-16/IdleLookUp_02-8.png
-- Assets/Textures/MainChar/Anims19-10-16/Jump_new02-0.png
-- Assets/Textures/MainChar/Anims19-10-16/Jump_new02-1.png
-- Assets/Textures/MainChar/Anims19-10-16/Jump_new02-2.png
-- Assets/Textures/MainChar/Anims19-10-16/JumpGrab-0.png
-- Assets/Textures/MainChar/Anims19-10-16/JumpGrab-1.png
-- Assets/Textures/MainChar/Anims19-10-16/JumpGrab-2.png
-- Assets/Textures/MainChar/Anims19-10-16/JumpGrab-3.png
-- Assets/Textures/MainChar/Anims19-10-16/JumpGrab-4.png
-- Assets/Textures/MainChar/Anims19-10-16/JumpGrab-5.png
-- Assets/Textures/MainChar/Anims19-10-16/JumpKick_02-0.png
-- Assets/Textures/MainChar/Anims19-10-16/JumpKick_02-1.png
-- Assets/Textures/MainChar/Anims19-10-16/Run-0.png
-- Assets/Textures/MainChar/Anims19-10-16/Run-1.png
-- Assets/Textures/MainChar/Anims19-10-16/Run-2.png
-- Assets/Textures/MainChar/Anims19-10-16/Run-3.png
-- Assets/Textures/MainChar/Anims19-10-16/Run3-4-0.png
-- Assets/Textures/MainChar/Anims19-10-16/Run3-4-1.png
-- Assets/Textures/MainChar/Anims19-10-16/Run3-4-2.png
-- Assets/Textures/MainChar/Anims19-10-16/Run3-4-3.png
-- Assets/Textures/MainChar/Anims19-10-16/Strike01-0.png
-- Assets/Textures/MainChar/Anims19-10-16/Strike01-1.png
-- Assets/Textures/MainChar/Anims19-10-16/Strike01-2.png
-- Assets/Textures/MainChar/Anims19-10-16/Strike01-3.png
+- Assets/Textures/EnemyWorkingSaw/idle-0.png
+- Assets/Textures/EnemyWorkingSaw/idle-1.png
+- Assets/Textures/EnemyWorkingSaw/idle-2.png
+- Assets/Textures/EnemyWorkingSaw/idle-3.png
+- Assets/Textures/EnemyWorkingSaw/idle-4.png
+- Assets/Textures/EnemyWorkingSaw/idle-5.png
+- Assets/Textures/EnemyWorkingSaw/idle-6.png
+- Assets/Textures/EnemyWorkingSaw/idle-7.png
+- Assets/Textures/EnemyWorkingSaw/idle-8.png
+- Assets/Textures/EnemyWorkingSaw/surprised-0.png
+- Assets/Textures/EnemyWorkingSaw/surprised-1.png
+- Assets/Textures/EnemyWorkingSaw/surprised-2.png
+- Assets/Textures/EnemyWorkingSaw/surprised-3.png
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-0.png
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-1.png
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-2.png
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-3.png
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-4.png
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-5.png
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-6.png
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-7.png
+- Assets/Textures/EnemyWorkingSaw/surprisedIdle-8.png
+- Assets/Textures/EnemyWorkingSaw/working-0.png
+- Assets/Textures/EnemyWorkingSaw/working-1.png
+- Assets/Textures/EnemyWorkingSaw/working-2.png
+- Assets/Textures/EnemyWorkingSaw/working-3.png
+- Assets/Textures/EnemyWorkingSaw/working-4.png
+- Assets/Textures/EnemyWorkingSaw/working-5.png
+- Assets/Textures/EnemyWorkingSaw/working-6.png
+- Assets/Textures/EnemyWorkingSaw/working-7.png
+- Assets/Textures/EnemyWorkingSaw/working-8.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
 - 
 - 
 - 

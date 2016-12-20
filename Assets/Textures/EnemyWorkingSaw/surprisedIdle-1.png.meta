@@ -1,0 +1,167 @@
+fileFormatVersion: 2
+guid: 121172159f9cfa54d81059de81b4f249
+timeCreated: 1482225212
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: surprisedIdle-0024
+    21300002: surprisedIdle-0025
+    21300004: surprisedIdle-0026
+    21300006: surprisedIdle-0027
+    21300008: surprisedIdle-0028
+    21300010: surprisedIdle-0029
+    21300012: surprisedIdle-0030
+    21300014: surprisedIdle-0031
+    21300016: surprisedIdle-0032
+    21300018: surprisedIdle-0033
+    21300020: surprisedIdle-0034
+    21300022: surprisedIdle-0035
+    21300024: surprisedIdle-0036
+    21300026: surprisedIdle-0037
+    21300028: surprisedIdle-0038
+    21300030: surprisedIdle-0039
+    21300032: surprisedIdle-0040
+    21300034: surprisedIdle-0041
+    21300036: surprisedIdle-0042
+    21300038: surprisedIdle-0043
+    21300040: surprisedIdle-0044
+    21300042: surprisedIdle-0045
+    21300044: surprisedIdle-0046
+    21300046: surprisedIdle-0047
+    21300048: surprisedIdle-0006
+    21300050: surprisedIdle-0007
+    21300052: surprisedIdle-0008
+    21300054: surprisedIdle-0009
+    21300056: surprisedIdle-0010
+    21300058: surprisedIdle-0011
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: surprisedIdle-0006
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1243
+        width: 580
+        height: 804
+      alignment: 9
+      pivot: {x: 0.36724138, y: 0.4751244}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0007
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1240
+        width: 577
+        height: 807
+      alignment: 9
+      pivot: {x: 0.36741766, y: 0.47335812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0008
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 1241
+        width: 579
+        height: 806
+      alignment: 9
+      pivot: {x: 0.36960277, y: 0.4764268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0009
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 436
+        width: 576
+        height: 802
+      alignment: 9
+      pivot: {x: 0.36631945, y: 0.47630924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0010
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 431
+        width: 577
+        height: 807
+      alignment: 9
+      pivot: {x: 0.36741766, y: 0.47707558}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0011
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 431
+        width: 580
+        height: 807
+      alignment: 9
+      pivot: {x: 0.37068966, y: 0.47335812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

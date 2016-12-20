@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: d4ecfc0bbcccd104d947753f28256112
+timeCreated: 1482231292
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: surprisedIdle-0030
+    21300002: surprisedIdle-0031
+    21300004: surprisedIdle-0032
+    21300006: surprisedIdle-0033
+    21300008: surprisedIdle-0034
+    21300010: surprisedIdle-0035
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: surprisedIdle-0030
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1241
+        width: 583
+        height: 806
+      alignment: 9
+      pivot: {x: 0.37049744, y: 0.4739454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0031
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 1237
+        width: 582
+        height: 810
+      alignment: 9
+      pivot: {x: 0.37285224, y: 0.47407407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0032
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1239
+        width: 582
+        height: 808
+      alignment: 9
+      pivot: {x: 0.37285224, y: 0.47524753}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0033
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 430
+        width: 581
+        height: 805
+      alignment: 9
+      pivot: {x: 0.3717728, y: 0.47204968}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0034
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 430
+        width: 583
+        height: 805
+      alignment: 9
+      pivot: {x: 0.37049744, y: 0.47453415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0035
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 426
+        width: 578
+        height: 809
+      alignment: 9
+      pivot: {x: 0.36851212, y: 0.47218788}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

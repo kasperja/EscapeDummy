@@ -1,0 +1,161 @@
+fileFormatVersion: 2
+guid: d3e55fc30717b05468ffa843d8534dce
+timeCreated: 1482225230
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: surprisedIdle-0000
+    21300002: surprisedIdle-0001
+    21300004: surprisedIdle-0002
+    21300006: surprisedIdle-0003
+    21300008: surprisedIdle-0004
+    21300010: surprisedIdle-0005
+    21300012: surprisedIdle-0006
+    21300014: surprisedIdle-0007
+    21300016: surprisedIdle-0008
+    21300018: surprisedIdle-0009
+    21300020: surprisedIdle-0010
+    21300022: surprisedIdle-0011
+    21300024: surprisedIdle-0012
+    21300026: surprisedIdle-0013
+    21300028: surprisedIdle-0014
+    21300030: surprisedIdle-0015
+    21300032: surprisedIdle-0016
+    21300034: surprisedIdle-0017
+    21300036: surprisedIdle-0018
+    21300038: surprisedIdle-0019
+    21300040: surprisedIdle-0020
+    21300042: surprisedIdle-0021
+    21300044: surprisedIdle-0022
+    21300046: surprisedIdle-0023
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2400
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: surprisedIdle-0000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1246
+        width: 574
+        height: 801
+      alignment: 9
+      pivot: {x: 0.3641115, y: 0.47690386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0001
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 1246
+        width: 574
+        height: 801
+      alignment: 9
+      pivot: {x: 0.3641115, y: 0.47690386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0002
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 1244
+        width: 576
+        height: 803
+      alignment: 9
+      pivot: {x: 0.36631945, y: 0.47571605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0003
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 441
+        width: 574
+        height: 801
+      alignment: 9
+      pivot: {x: 0.3641115, y: 0.47690386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0004
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 440
+        width: 577
+        height: 802
+      alignment: 9
+      pivot: {x: 0.36741766, y: 0.47630924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0005
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 436
+        width: 576
+        height: 806
+      alignment: 9
+      pivot: {x: 0.36631945, y: 0.4739454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
