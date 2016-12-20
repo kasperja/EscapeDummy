@@ -114,6 +114,7 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 			deathSound.Play ();
 			deathSoundVoice.Play ();
 
+			mainCharScript.enemyIsDead = true;
 			isDeadEnemy = true;
 			enemy_Animator.SetBool ("DeadBool", true);
 			enemy_Animator.SetBool ("Attack2Bool", false);

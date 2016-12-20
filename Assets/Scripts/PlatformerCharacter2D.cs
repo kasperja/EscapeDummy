@@ -171,11 +171,13 @@ using System.Collections;
 
 	public DoorAbattoir doorScript;
 
+	public Animator animWorkingButcher;
 	public AudioSource wtfSound;
 
 	public bool onStairsBool = false;
 	public bool onStairsSoundOnce = true;
 	public AudioSource longStopSound;
+	public bool enemyIsDead = false;
 
 	private bool breakOnce = true;
 
@@ -930,13 +932,15 @@ using System.Collections;
 
 	if (other.gameObject.tag == "WtfTrigger") {
 
+			animWorkingButcher.SetBool ("Surprised", true);
+			
 			wtfSound.Play ();
 
 	}
 	if (other.gameObject.tag == "OnStairs") {
 
 			onStairsBool = true;
-		if (onStairsSoundOnce){
+		if (onStairsSoundOnce && !enemyIsDead){
 				longStopSound.Play ();
 			onStairsSoundOnce = false;
 		}

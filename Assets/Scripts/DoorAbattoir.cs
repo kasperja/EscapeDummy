@@ -114,7 +114,7 @@ public class DoorAbattoir : MonoBehaviour {
 			
 				doorLockedSound.Play ();
 
-				if (iGotKeySoundOnce) {
+				if (iGotKeySoundOnce && !mainCharScript.enemyIsDead) {
 					
 					iGotKeySound.Play ();
 					iGotKeySoundOnce = false;
