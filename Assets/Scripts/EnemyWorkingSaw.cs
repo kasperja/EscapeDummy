@@ -31,7 +31,7 @@ public class EnemyWorkingSaw : MonoBehaviour {
 		
 		}
 
-		if (sawMoverScript.hookDetected || sawMoverScript.meatDetected) {
+		if ((sawMoverScript.hookDetected || sawMoverScript.meatDetected) && !enemyAnim.GetCurrentAnimatorStateInfo (0).IsName ("EnemyWorkingSaw")) {
 		
 			if (workActive) {
 				if (workOnce) {

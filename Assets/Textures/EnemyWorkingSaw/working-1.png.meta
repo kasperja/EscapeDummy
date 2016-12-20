@@ -27,6 +27,12 @@ TextureImporter:
     21300040: working-0047
     21300042: working-0048
     21300044: working-0049
+    21300046: working-0006
+    21300048: working-0007
+    21300050: working-0008
+    21300052: working-0009
+    21300054: working-0010
+    21300056: working-0011
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -76,301 +82,80 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: working-0027
+      name: working-0006
       rect:
         serializedVersion: 2
         x: 1
-        y: 1640
-        width: 289
-        height: 407
+        y: 1250
+        width: 566
+        height: 797
       alignment: 9
-      pivot: {x: 0.35986158, y: 0.47174448}
+      pivot: {x: 0.35512367, y: 0.48180678}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: working-0028
+      name: working-0007
       rect:
         serializedVersion: 2
-        x: 292
-        y: 1650
-        width: 289
-        height: 397
+        x: 569
+        y: 1244
+        width: 566
+        height: 803
       alignment: 9
-      pivot: {x: 0.35986158, y: 0.4836272}
+      pivot: {x: 0.35512367, y: 0.47820672}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: working-0029
+      name: working-0008
       rect:
         serializedVersion: 2
-        x: 583
-        y: 1646
-        width: 289
-        height: 401
+        x: 1137
+        y: 1251
+        width: 566
+        height: 796
       alignment: 9
-      pivot: {x: 0.35986158, y: 0.47880298}
+      pivot: {x: 0.35512367, y: 0.48241207}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: working-0030
-      rect:
-        serializedVersion: 2
-        x: 874
-        y: 1649
-        width: 289
-        height: 398
-      alignment: 9
-      pivot: {x: 0.35986158, y: 0.48241207}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: working-0031
-      rect:
-        serializedVersion: 2
-        x: 1165
-        y: 1648
-        width: 289
-        height: 399
-      alignment: 9
-      pivot: {x: 0.35986158, y: 0.48120302}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: working-0032
-      rect:
-        serializedVersion: 2
-        x: 1456
-        y: 1636
-        width: 288
-        height: 411
-      alignment: 9
-      pivot: {x: 0.3576389, y: 0.46715328}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: working-0033
-      rect:
-        serializedVersion: 2
-        x: 1746
-        y: 1648
-        width: 292
-        height: 399
-      alignment: 9
-      pivot: {x: 0.36643836, y: 0.48120302}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: working-0034
+      name: working-0009
       rect:
         serializedVersion: 2
         x: 1
-        y: 1234
-        width: 292
-        height: 400
+        y: 444
+        width: 567
+        height: 798
       alignment: 9
-      pivot: {x: 0.36643836, y: 0.48}
+      pivot: {x: 0.35626101, y: 0.48120302}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: working-0035
+      name: working-0010
       rect:
         serializedVersion: 2
-        x: 295
-        y: 1226
-        width: 293
-        height: 408
+        x: 570
+        y: 445
+        width: 567
+        height: 797
       alignment: 9
-      pivot: {x: 0.3686007, y: 0.47058824}
+      pivot: {x: 0.35626101, y: 0.48180678}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: working-0036
+      name: working-0011
       rect:
         serializedVersion: 2
-        x: 590
-        y: 1236
-        width: 292
-        height: 398
+        x: 1139
+        y: 447
+        width: 567
+        height: 795
       alignment: 9
-      pivot: {x: 0.36643836, y: 0.48241207}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: working-0037
-      rect:
-        serializedVersion: 2
-        x: 884
-        y: 1235
-        width: 288
-        height: 399
-      alignment: 9
-      pivot: {x: 0.3576389, y: 0.48120302}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: working-0038
-      rect:
-        serializedVersion: 2
-        x: 1174
-        y: 1226
-        width: 288
-        height: 408
-      alignment: 9
-      pivot: {x: 0.3576389, y: 0.47058824}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: working-0039
-      rect:
-        serializedVersion: 2
-        x: 1464
-        y: 1227
-        width: 288
-        height: 407
-      alignment: 9
-      pivot: {x: 0.3576389, y: 0.47174448}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: working-0040
-      rect:
-        serializedVersion: 2
-        x: 1754
-        y: 1237
-        width: 288
-        height: 397
-      alignment: 9
-      pivot: {x: 0.3576389, y: 0.4836272}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: working-0041
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 825
-        width: 288
-        height: 399
-      alignment: 9
-      pivot: {x: 0.3576389, y: 0.48120302}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: working-0042
-      rect:
-        serializedVersion: 2
-        x: 291
-        y: 821
-        width: 288
-        height: 403
-      alignment: 9
-      pivot: {x: 0.3576389, y: 0.4764268}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: working-0043
-      rect:
-        serializedVersion: 2
-        x: 581
-        y: 824
-        width: 288
-        height: 400
-      alignment: 9
-      pivot: {x: 0.3576389, y: 0.48}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: working-0044
-      rect:
-        serializedVersion: 2
-        x: 871
-        y: 823
-        width: 285
-        height: 401
-      alignment: 9
-      pivot: {x: 0.3508772, y: 0.47880298}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: working-0045
-      rect:
-        serializedVersion: 2
-        x: 1158
-        y: 821
-        width: 287
-        height: 403
-      alignment: 9
-      pivot: {x: 0.3554007, y: 0.4764268}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: working-0046
-      rect:
-        serializedVersion: 2
-        x: 1447
-        y: 821
-        width: 286
-        height: 403
-      alignment: 9
-      pivot: {x: 0.35314685, y: 0.4764268}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: working-0047
-      rect:
-        serializedVersion: 2
-        x: 1735
-        y: 814
-        width: 291
-        height: 410
-      alignment: 9
-      pivot: {x: 0.36426118, y: 0.46829268}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: working-0048
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 410
-        width: 291
-        height: 402
-      alignment: 9
-      pivot: {x: 0.36426118, y: 0.47761193}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: working-0049
-      rect:
-        serializedVersion: 2
-        x: 294
-        y: 410
-        width: 291
-        height: 402
-      alignment: 9
-      pivot: {x: 0.36426118, y: 0.47761193}
+      pivot: {x: 0.35626101, y: 0.48301888}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1

@@ -6,6 +6,12 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: surprisedIdle-0048
     21300002: surprisedIdle-0049
+    21300004: surprisedIdle-0012
+    21300006: surprisedIdle-0013
+    21300008: surprisedIdle-0014
+    21300010: surprisedIdle-0015
+    21300012: surprisedIdle-0016
+    21300014: surprisedIdle-0017
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -55,28 +61,80 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: surprisedIdle-0048
+      name: surprisedIdle-0012
       rect:
         serializedVersion: 2
         x: 1
-        y: 614
-        width: 296
-        height: 409
+        y: 1242
+        width: 580
+        height: 805
       alignment: 9
-      pivot: {x: 0.375, y: 0.46943766}
+      pivot: {x: 0.36724138, y: 0.47701862}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: surprisedIdle-0049
+      name: surprisedIdle-0013
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1244
+        width: 580
+        height: 803
+      alignment: 9
+      pivot: {x: 0.37068966, y: 0.4732254}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0014
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 1239
+        width: 579
+        height: 808
+      alignment: 9
+      pivot: {x: 0.36960277, y: 0.47524753}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0015
       rect:
         serializedVersion: 2
         x: 1
-        y: 204
-        width: 290
-        height: 408
+        y: 431
+        width: 581
+        height: 806
       alignment: 9
-      pivot: {x: 0.36206895, y: 0.47058824}
+      pivot: {x: 0.3717728, y: 0.4739454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0016
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 433
+        width: 579
+        height: 804
+      alignment: 9
+      pivot: {x: 0.36960277, y: 0.4751244}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: surprisedIdle-0017
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 429
+        width: 581
+        height: 808
+      alignment: 9
+      pivot: {x: 0.3717728, y: 0.47277227}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
