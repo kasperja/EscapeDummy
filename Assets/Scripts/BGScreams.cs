@@ -27,7 +27,7 @@ public class BGScreams : MonoBehaviour {
 
 	IEnumerator waitScream(){
 	
-		yield return new WaitForSeconds (Random.Range(2f, 14f));
+		yield return new WaitForSeconds (Random.Range(6f, 14f));
 
 		if (randomScreamFloat < 1f) {
 
