@@ -44,7 +44,7 @@ public class AttackEnemyManager : MonoBehaviour {
 		}
 
 
-		if (randomAttackNumber >= 0.0f && randomAttackNumber < 0.05f && blockOnce && em.isInRange && blockActive) {
+		if (randomAttackNumber >= 0.0f && randomAttackNumber < 0.1f && blockOnce && em.isInRange && blockActive && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.E))) {
 		
 
 			hpt.enemyBlock = true;
@@ -54,7 +54,7 @@ public class AttackEnemyManager : MonoBehaviour {
 			StartCoroutine (waitBlock ());
 
 		
-		} else if (randomAttackNumber >= 0.05f && randomAttackNumber <= 0.66f) {
+		} else if (randomAttackNumber >= 0.0f && randomAttackNumber <= 0.66f) {
 		
 			attackEnemyMiddle.activeAttack = true;
 			attackEnemyHigh.activeAttack = false;
@@ -115,14 +115,14 @@ public class AttackEnemyManager : MonoBehaviour {
 
 		yield return new WaitForSeconds (0.0f);
 
-		randomAttackNumber = Random.Range (0.15f, 0.66f);
+		randomAttackNumber = Random.Range (0.0f, 0.66f);
 		playOnceWaiter = true;
 
 	}
 
 	IEnumerator waitBlock(){
 		blockActive = false;
-		yield return new WaitForSeconds (4f);
+		yield return new WaitForSeconds (0f);
 		blockActive = true;
 		hpt.blockOnce = true;
 	

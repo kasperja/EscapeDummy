@@ -58,6 +58,9 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 
 	public DoorAbattoir doorScript;
 
+	public GameObject slashParticle;
+	public GameObject kneeParticle;
+
 
 
 	// Use this for initialization
@@ -72,7 +75,7 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 
 		if ((highDmg.blockColEnemyEnable || middleDmg.blockColEnemyEnable || lowDmg.blockColEnemyEnable) && blockOnceTwo) {
 
-
+			blockParticle.Play ();
 			Instantiate (blockParticle, blockParticlePos.transform.position, Quaternion.identity);
 			//iTween.MoveBy (enemyObj, new Vector3 (-20f, 0f, 0f), 0.3f);
 			//Debug.Log ("blockeedd");
@@ -175,18 +178,24 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 
 	IEnumerator waitBlock(){
 
-		enemy_Animator.SetBool ("Block", true);
-		iTween.MoveBy (enemyObj, new Vector3 (5f, 0f, 0f), 0.3f);
-		yield return new WaitForSeconds (0.1f);
-		enemy_Animator.SetBool ("Block", false);
-
 		blockColObj.SetActive (true);
+		slashParticle.SetActive (false);
+		kneeParticle.SetActive (false);
 		tarHigh.GetComponent<CircleCollider2D>().enabled = false;
 		tarMid.GetComponent<CircleCollider2D>().enabled = false;
 		tarLow.GetComponent<CircleCollider2D>().enabled = false;
 
-
+		enemy_Animator.SetBool ("Block", true);
+		//iTween.MoveBy (enemyObj, new Vector3 (5f, 0f, 0f), 0.3f);
 		yield return new WaitForSeconds (0.1f);
+		enemy_Animator.SetBool ("Block", false);
+
+
+
+
+		yield return new WaitForSeconds (0.5f);
+		slashParticle.SetActive (true);
+		kneeParticle.SetActive (true);
 		blockColObj.SetActive (false);
 		tarHigh.GetComponent<CircleCollider2D>().enabled = true;
 		tarMid.GetComponent<CircleCollider2D>().enabled = true;
