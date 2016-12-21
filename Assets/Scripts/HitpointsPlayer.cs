@@ -46,7 +46,9 @@ public class HitpointsPlayer : MonoBehaviour {
 			if (randomScreamFloat < 1f) {
 				
 				scream1.Play ();
+
 			} else if (randomScreamFloat >= 1f && randomScreamFloat < 2f) {
+				
 				scream2.Play ();
 
 			} else {
