@@ -1884,6 +1884,7 @@ MonoBehaviour:
   blockParticlePosObj: {fileID: 1000011028618528}
   blockPlayerParticle: {fileID: 198000011013232346, guid: 3beb64dad67bc664b8c41269e07dc6cd,
     type: 2}
+  blockSound: {fileID: 0}
   pc2D: {fileID: 114000013216347272}
   m_Anim: {fileID: 95000013725915842}
   isDead: 0
@@ -1985,6 +1986,10 @@ MonoBehaviour:
   sawMoverScript: {fileID: 0}
   hookStandingStill: 0
   attackSound1: {fileID: 0}
+  attackGrunt1: {fileID: 0}
+  attackGrunt2: {fileID: 0}
+  attackGrunt3: {fileID: 0}
+  randomGruntFloat: 0
   blinkOnce: 1
   blink2Once: 1
   velocity: 0
@@ -2001,6 +2006,7 @@ MonoBehaviour:
   isFootstepIndoor: 0
   footstepIndoor: {fileID: 0}
   footstepGravel: {fileID: 0}
+  runBreath: {fileID: 0}
   fadeSoundInSawScript: {fileID: 0}
   fadeSoundInSawScriptIdle: {fileID: 0}
   fadeSoundInSawScriptControllerIdle: {fileID: 0}
@@ -2018,10 +2024,12 @@ MonoBehaviour:
   canHook: 0
   doorScript: {fileID: 114000010396708776, guid: 2bedcc68db6da5f469a828640f20924a,
     type: 2}
+  animWorkingButcher: {fileID: 0}
   wtfSound: {fileID: 0}
   onStairsBool: 0
   onStairsSoundOnce: 1
   longStopSound: {fileID: 0}
+  enemyIsDead: 0
   landingSound: {fileID: 0}
 --- !u!114 &114000013304144382
 MonoBehaviour:

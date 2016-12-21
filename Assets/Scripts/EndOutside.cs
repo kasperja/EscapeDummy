@@ -17,6 +17,7 @@ public class EndOutside : MonoBehaviour {
 	public AudioSource ambienceOne;
 	public AudioSource ambienceTwo;
 	public AudioSource landingSound;
+	public AudioSource runBreath;
 	public bool fadeAmbienceOut = false;
 	// Use this for initialization
 	void Start () {
@@ -42,6 +43,7 @@ public class EndOutside : MonoBehaviour {
 			m_Anim.SetBool ("SideArrows", true);
 			footStepsSoundGravel.volume -= 0.1f * Time.deltaTime;
 			landingSound.volume -= 0.1f * Time.deltaTime;
+			runBreath.volume -= 0.02f * Time.deltaTime;
 		
 		}
 

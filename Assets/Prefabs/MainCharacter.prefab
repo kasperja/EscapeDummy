@@ -1772,6 +1772,7 @@ MonoBehaviour:
   isFootstepIndoor: 1
   footstepIndoor: {fileID: 0}
   footstepGravel: {fileID: 0}
+  runBreath: {fileID: 0}
   fadeSoundInSawScript: {fileID: 0}
   fadeSoundInSawScriptIdle: {fileID: 0}
   fadeSoundInSawScriptControllerIdle: {fileID: 0}
