@@ -154,6 +154,8 @@ using System.Collections;
 	public AudioSource footstepIndoor;
 	public AudioSource footstepGravel;
 
+	public AudioSource runBreath;
+
 	public FadeSawSoundsIn fadeSoundInSawScript;
 	public FadeSawSoundsIn fadeSoundInSawScriptIdle;
 	public FadeSawSoundsIn fadeSoundInSawScriptControllerIdle;
@@ -722,6 +724,9 @@ using System.Collections;
 			if(!footstepGravel.isPlaying && m_Grounded) footstepGravel.Play();
 
 			}
+
+		if(!runBreath.isPlaying && m_Grounded) runBreath.Play();
+
 		if (isEndOutside || isStartOutside) {
 
 				move = 1f;
@@ -835,6 +840,7 @@ using System.Collections;
 
 	public void Stop(float move, bool crouch, bool jump){
 
+		//runBreath.Stop ();
 		footstepIndoor.Stop ();
 		footstepGravel.Stop ();
 

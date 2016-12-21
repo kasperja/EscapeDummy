@@ -9,13 +9,19 @@ public class StartOutside : MonoBehaviour {
 	public GameObject mainCam;
 	public GameObject boxColStart;
 	public AudioSource footStepGravel;
+	public AudioSource runBreath;
 	private bool hasReachedMax = false;
+	private bool hasReachedMaxBreath = false;
+	private float breathMax;
 
 
 	// Use this for initialization
 	void Start () {
 
+		breathMax = runBreath.volume;
+
 		footStepGravel.volume = 0f;
+		runBreath.volume = 0f;
 
 		pc2D.isStartOutside = true;
 		pc2D.startCamBool = true;
@@ -28,10 +34,22 @@ public class StartOutside : MonoBehaviour {
 		if (footStepGravel.volume < 0.2f && !hasReachedMax) {
 		
 			footStepGravel.volume += 0.1f * Time.deltaTime;
+
 		
 		} else {
 		
 			hasReachedMax = true;
+
+		}
+
+		if (runBreath.volume < breathMax && !hasReachedMaxBreath) {
+
+
+			runBreath.volume += 0.1f * Time.deltaTime;
+
+		} else {
+
+			hasReachedMaxBreath = true;
 
 		}
 
