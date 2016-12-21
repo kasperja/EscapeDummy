@@ -61,7 +61,7 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 	public GameObject slashParticle;
 	public GameObject kneeParticle;
 
-
+	public AudioSource blockSound;
 
 	// Use this for initialization
 	void Start () {
@@ -75,8 +75,9 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 
 		if ((highDmg.blockColEnemyEnable || middleDmg.blockColEnemyEnable || lowDmg.blockColEnemyEnable) && blockOnceTwo) {
 
+			blockSound.Play ();
 			blockParticle.Play ();
-			Instantiate (blockParticle, blockParticlePos.transform.position, Quaternion.identity);
+			//Instantiate (blockParticle, blockParticlePos.transform.position, Quaternion.identity);
 			//iTween.MoveBy (enemyObj, new Vector3 (-20f, 0f, 0f), 0.3f);
 			//Debug.Log ("blockeedd");
 			StartCoroutine (waitBlockTwo ());
@@ -88,6 +89,8 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 
 		if (enemyBlock && blockOnce) {
 		
+			blockSound.Play ();
+			blockParticle.Play ();
 			StartCoroutine (waitBlock ());
 			enemyBlock = false;
 			blockOnce = false;

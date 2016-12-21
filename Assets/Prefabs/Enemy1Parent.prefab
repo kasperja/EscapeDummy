@@ -1359,6 +1359,7 @@ MonoBehaviour:
   doorScript: {fileID: 0}
   slashParticle: {fileID: 0}
   kneeParticle: {fileID: 0}
+  blockSound: {fileID: 0}
 --- !u!114 &114000013299482874
 MonoBehaviour:
   m_ObjectHideFlags: 1
