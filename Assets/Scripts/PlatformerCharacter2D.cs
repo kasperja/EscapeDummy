@@ -110,6 +110,11 @@ using System.Collections;
 	public bool hookStandingStill = false;
 
 	public AudioSource attackSound1;
+	public AudioSource attackGrunt1;
+	public AudioSource attackGrunt2;
+	public AudioSource attackGrunt3;
+	public float randomGruntFloat;
+
 	private bool attackSoundOnce = true;
 
 	private bool lookUpOnce = true;
@@ -228,6 +233,8 @@ using System.Collections;
 
 	}
 		private void Update(){
+		
+		randomGruntFloat = UnityEngine.Random.Range (0f, 5f);
 
 		if (doorScript.doorOpen) {
 			
@@ -526,6 +533,33 @@ using System.Collections;
 			if(attackSoundOnce){
 
 				attackSound1.Play ();
+				
+				if (randomGruntFloat >= 0f && randomGruntFloat < 1f) {
+
+				attackGrunt1.Play ();
+
+				} else if (randomGruntFloat >= 1f && randomGruntFloat < 2f) {
+
+				attackGrunt2.Play ();
+
+				} else if (randomGruntFloat >= 2f && randomGruntFloat < 3f) {
+
+				attackGrunt3.Play ();
+
+				} else if (randomGruntFloat >= 3f && randomGruntFloat < 4f) {
+
+
+
+				} else {
+
+			
+				}
+
+
+
+				//attackGrunt1.Play ();
+
+
 				attackSoundOnce = false;
 			}
 				m_Attack3 = true;
@@ -536,7 +570,8 @@ using System.Collections;
 	else if ((m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Idle Lookup") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerIdleBlink3-4") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerIdleBlinkLookback") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Hit")) && !m_Anim.GetBool("SpaceBool") && Input.GetKeyDown(KeyCode.E) && playOnce5 && cm.falconPunchBool == false && m_Grounded && !hpPlayerTotal.isDead && attackDone) {
 
 			if(attackSoundOnce){
-
+			
+				attackGrunt1.Play ();
 				attackSound1.Play ();
 				attackSoundOnce = false;
 			}

@@ -17,6 +17,7 @@ public class AttackEnemyManager : MonoBehaviour {
 	public HitPointsEnemyTotal hpt;
 	public bool blockOnce = true;
 	public bool blockActive = true;
+	//public AudioSource grunt1;
 
 	public EnemyMovement em;
 
@@ -74,6 +75,8 @@ public class AttackEnemyManager : MonoBehaviour {
 			m_Anim.SetBool ("Attack1Bool", true);
 
 			if (wooshPlayOnce) {
+
+				//grunt1.Play ();
 				woosh.Play ();
 				wooshPlayOnce = false;
 			}
@@ -84,6 +87,7 @@ public class AttackEnemyManager : MonoBehaviour {
 			m_Anim.SetBool ("Attack2Bool", true);
 
 			if (wooshPlayOnce) {
+				//grunt1.Play ();
 				woosh.Play ();
 				wooshPlayOnce = false;
 			}
@@ -93,6 +97,7 @@ public class AttackEnemyManager : MonoBehaviour {
 			m_Anim.SetBool ("Attack3Bool", true);
 
 			if (wooshPlayOnce) {
+				//grunt1.Play ();
 				woosh.Play ();
 				wooshPlayOnce = false;
 			}

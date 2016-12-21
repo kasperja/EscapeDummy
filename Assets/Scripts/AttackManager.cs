@@ -26,6 +26,7 @@ public class AttackManager : MonoBehaviour {
 	public HitpointsPlayerTotal hpT;
 	public AudioSource attackSound;
 
+
 	private bool attackSoundOnce = true;
 	private bool playOnceMoveObj = true;
 	public float attackDelay = 0.5f;

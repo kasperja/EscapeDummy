@@ -1754,6 +1754,10 @@ MonoBehaviour:
   sawMoverScript: {fileID: 0}
   hookStandingStill: 0
   attackSound1: {fileID: 0}
+  attackGrunt1: {fileID: 0}
+  attackGrunt2: {fileID: 0}
+  attackGrunt3: {fileID: 0}
+  randomGruntFloat: 0
   blinkOnce: 1
   blink2Once: 1
   velocity: 0
