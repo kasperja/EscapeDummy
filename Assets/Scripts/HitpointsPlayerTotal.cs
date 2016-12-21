@@ -33,6 +33,8 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 	public GameObject blockParticlePosObj;
 	public ParticleSystem blockPlayerParticle;
 
+	public AudioSource blockSound;
+
 	public PlatformerCharacter2D pc2D;
 
 	public Animator m_Anim;
@@ -137,7 +139,9 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 					iTween.MoveBy (MainCharObj, new Vector3 (-10f, 0f, 0f), 0.6f);
 
 				}
-				Instantiate (blockPlayerParticle, blockParticlePosObj.transform.position, Quaternion.identity);
+				blockSound.Play ();
+				blockPlayerParticle.Play ();
+				//Instantiate (blockPlayerParticle, blockParticlePosObj.transform.position, Quaternion.identity);
 				StartCoroutine (waitBlockEnable ());
 				blockOncePlayer = false;
 			
@@ -172,9 +176,9 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 				m_Anim.SetBool ("Hit", false);
 				blockBool = true;
 				StartCoroutine (waitBlock (0.5f));
-				UpperTarget.SetActive (false);
-				MiddleTarget.SetActive (false);
-				LowerTarget.SetActive (false);
+				UpperTarget.GetComponent<CircleCollider2D> ().enabled = false;
+				MiddleTarget.GetComponent<CircleCollider2D> ().enabled = false;
+				LowerTarget.GetComponent<CircleCollider2D> ().enabled = false;
 
 			}
 
@@ -190,9 +194,9 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 
 		m_Anim.SetBool ("Block", false);
 		blockBool = false;
-		UpperTarget.SetActive (true);
-		MiddleTarget.SetActive (true);
-		LowerTarget.SetActive (true);
+		UpperTarget.GetComponent<CircleCollider2D> ().enabled = true;
+		MiddleTarget.GetComponent<CircleCollider2D> ().enabled = true;
+		LowerTarget.GetComponent<CircleCollider2D> ().enabled = true;
 		blockCollider.GetComponent<BoxCollider2D> ().enabled = false;
 
 
