@@ -3054,7 +3054,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 1000013190606164}
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 1.5
+  m_LinearDrag: 3
   m_AngularDrag: 1
   m_GravityScale: 10
   m_IsKinematic: 0
@@ -3428,7 +3428,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 1000011387652838}
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 1.5
+  m_LinearDrag: 3
   m_AngularDrag: 1
   m_GravityScale: 10
   m_IsKinematic: 0
@@ -3445,7 +3445,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 1000012755815634}
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 1.5
+  m_LinearDrag: 3
   m_AngularDrag: 1
   m_GravityScale: 10
   m_IsKinematic: 0
@@ -4459,6 +4459,7 @@ MonoBehaviour:
   hookWaitOnceMoving: 1
   SawMoverScript: {fileID: 0}
   waitDetectOnce: 1
+  readyToStopMoving: 0
 --- !u!114 &114000011033719464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4509,6 +4510,7 @@ MonoBehaviour:
   hookWaitOnceMoving: 1
   SawMoverScript: {fileID: 0}
   waitDetectOnce: 1
+  readyToStopMoving: 0
 --- !u!114 &114000011184152536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4537,6 +4539,7 @@ MonoBehaviour:
   hookWaitOnceMoving: 1
   SawMoverScript: {fileID: 0}
   waitDetectOnce: 1
+  readyToStopMoving: 0
 --- !u!114 &114000011202130314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4565,6 +4568,7 @@ MonoBehaviour:
   hookWaitOnceMoving: 1
   SawMoverScript: {fileID: 0}
   waitDetectOnce: 1
+  readyToStopMoving: 0
 --- !u!114 &114000011459115140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4637,6 +4641,7 @@ MonoBehaviour:
   hookWaitOnceMoving: 1
   SawMoverScript: {fileID: 0}
   waitDetectOnce: 1
+  readyToStopMoving: 0
 --- !u!114 &114000012522524440
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4665,6 +4670,7 @@ MonoBehaviour:
   hookWaitOnceMoving: 1
   SawMoverScript: {fileID: 0}
   waitDetectOnce: 1
+  readyToStopMoving: 0
 --- !u!114 &114000012588858918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4759,6 +4765,7 @@ MonoBehaviour:
   speedUpStart: -11.547
   waitDetectOnce: 1
   SawMoverScript: {fileID: 0}
+  readyToStopMoving: 0
 --- !u!114 &114000013467894134
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4787,6 +4794,7 @@ MonoBehaviour:
   speedUpStart: 0
   waitDetectOnce: 1
   SawMoverScript: {fileID: 0}
+  readyToStopMoving: 0
 --- !u!114 &114000013739145424
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4815,6 +4823,7 @@ MonoBehaviour:
   speedUpStart: 0
   waitDetectOnce: 1
   SawMoverScript: {fileID: 0}
+  readyToStopMoving: 0
 --- !u!114 &114000013825478124
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4843,6 +4852,7 @@ MonoBehaviour:
   hookWaitOnceMoving: 1
   SawMoverScript: {fileID: 0}
   waitDetectOnce: 1
+  readyToStopMoving: 0
 --- !u!198 &198000011444602228
 ParticleSystem:
   m_ObjectHideFlags: 1
