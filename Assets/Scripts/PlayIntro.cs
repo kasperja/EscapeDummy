@@ -26,6 +26,7 @@ public class PlayIntro : MonoBehaviour {
 	
 
 		character.SetActive (false);
+		//Handheld.PlayFullScreenMovie ("intro02", Color.black, FullScreenMovieControlMode.Hidden);
 		introMovieTex.Play ();
 		introAudio.Play ();
 
@@ -43,6 +44,8 @@ public class PlayIntro : MonoBehaviour {
 			landingFemaleGruntSound.Play ();
 			pickupHookSound.Play ();
 			fadeAnim.SetBool ("Fade", true);
+
+
 			introMovieTex.Stop ();
 			userControlScript.initiateStanding = true;
 			character.SetActive (true);
