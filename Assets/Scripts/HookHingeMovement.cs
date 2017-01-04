@@ -114,7 +114,7 @@ public class HookHingeMovement : MonoBehaviour {
 			if (hookForceWaitBoolTwo && hookForceOnceTwo) {
 				SawMoverScript.hookDetected = false;
 				//SawMoverScript.hookDetectSpeed = -30f;
-				hookRb.AddForce (new Vector2 (-30f, 0), ForceMode2D.Impulse);
+				hookRb.AddForce (new Vector2 (-60f, 0), ForceMode2D.Impulse);
 				hookForceOnceTwo = false;
 				hookForceWaitBoolTwo = false;
 
@@ -124,7 +124,7 @@ public class HookHingeMovement : MonoBehaviour {
 			if (hookForceWaitBool) {
 				SawMoverScript.hookDetected = false;
 				//SawMoverScript.hookDetectSpeed = -30f;
-				hookRb.AddForce (new Vector2 (100f, 0), ForceMode2D.Impulse);
+				hookRb.AddForce (new Vector2 (200f, 0), ForceMode2D.Impulse);
 				hookForceOnce = false;
 				hookForceWaitBool = false;
 
