@@ -1697,7 +1697,7 @@ MonoBehaviour:
   - {fileID: 4000010387421468}
   - {fileID: 4000013317927302}
   attackTime: 0.2
-  attackDelay: 0.1
+  attackDelay: 0
   slashActive: 0
   attackAnimName: Attack5Bool
   attackStateName: Attack5
@@ -1705,6 +1705,8 @@ MonoBehaviour:
   rotateEnabled: 0
   rotation: {x: 0, y: 0, z: 0}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_anim: {fileID: 95000010344365076}
+  isKneeAttack: 1
   pc2Dscript: {fileID: 114000010164550830}
   am: {fileID: 114000013693667178}
 --- !u!114 &114000010164550830
@@ -1898,7 +1900,7 @@ MonoBehaviour:
   - {fileID: 4000010387421468}
   - {fileID: 4000013317927302}
   attackTime: 0.2
-  attackDelay: 0.1
+  attackDelay: 0
   slashActive: 0
   attackAnimName: Attack5Bool
   attackStateName: 
@@ -1906,6 +1908,8 @@ MonoBehaviour:
   rotateEnabled: 0
   rotation: {x: 0, y: 0, z: 0}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_anim: {fileID: 95000010344365076}
+  isKneeAttack: 1
   pc2Dscript: {fileID: 114000010164550830}
   am: {fileID: 0}
 --- !u!114 &114000010577870838
@@ -2126,6 +2130,8 @@ MonoBehaviour:
   rotateEnabled: 1
   rotation: {x: 10, y: 0, z: 0}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_anim: {fileID: 95000010344365076}
+  isKneeAttack: 0
   pc2Dscript: {fileID: 114000010164550830}
   am: {fileID: 0}
 --- !u!114 &114000012810001514
@@ -2307,6 +2313,8 @@ MonoBehaviour:
   rotateEnabled: 1
   rotation: {x: 10, y: 0, z: 0}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_anim: {fileID: 95000010344365076}
+  isKneeAttack: 0
   pc2Dscript: {fileID: 114000010164550830}
   am: {fileID: 114000013360199432}
 --- !u!114 &114000013964871146

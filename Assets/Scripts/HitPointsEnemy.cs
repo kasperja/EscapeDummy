@@ -139,7 +139,7 @@ public class HitPointsEnemy : MonoBehaviour {
 				StartCoroutine (hitWait ());
 
 				hitPointsTotalScript.hitpoints -= highDmg.attackDamage * dmgMultiplier;
-				Instantiate (hitParticle, gameObject.transform.position, Quaternion.identity);
+				//Instantiate (hitParticle, gameObject.transform.position, Quaternion.identity);
 				playOnceHigh = false;
 
 			}
@@ -176,7 +176,7 @@ public class HitPointsEnemy : MonoBehaviour {
 				//iTween.MoveBy (enemyObj, new Vector3 (-20f, 0f, 0f), 0.3f);
 				StartCoroutine (hitWait ());
 				hitPointsTotalScript.hitpoints -= middleDmg.attackDamage * dmgMultiplier;
-				Instantiate (hitParticle, gameObject.transform.position, Quaternion.identity);
+				//Instantiate (hitParticle, gameObject.transform.position, Quaternion.identity);
 				playOnceMiddle = false;
 
 			}
@@ -211,7 +211,7 @@ public class HitPointsEnemy : MonoBehaviour {
 				//iTween.MoveBy (enemyObj, new Vector3 (-20f, 0f, 0f), 0.3f);
 				StartCoroutine (hitWait ());
 				hitPointsTotalScript.hitpoints -= lowDmg.attackDamage * dmgMultiplier;
-				Instantiate (hitParticle, gameObject.transform.position, Quaternion.identity);
+				//Instantiate (hitParticle, gameObject.transform.position, Quaternion.identity);
 				playOnceLow = false;
 
 			}
