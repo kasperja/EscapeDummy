@@ -1827,6 +1827,7 @@ MonoBehaviour:
   box1: {fileID: 0}
   box2: {fileID: 0}
   box3: {fileID: 0}
+  boxBumpSound: {fileID: 0}
 --- !u!114 &114000010182849938
 MonoBehaviour:
   m_ObjectHideFlags: 1
