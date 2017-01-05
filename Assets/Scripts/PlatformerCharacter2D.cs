@@ -197,6 +197,7 @@ using System.Collections;
 	public GameObject box1;
 	public GameObject box2;
 	public GameObject box3;
+	public AudioSource boxBumpSound;
 
         private void Awake()
         {
@@ -997,14 +998,14 @@ using System.Collections;
 
 		iTween.PunchScale (box1, new Vector3 (1f, -1f, 0f), 0.5f);
 
-
+			boxBumpSound.Play ();
 
 	}
 	if (other.gameObject.tag == "BoxTwo") {
 
 		iTween.PunchScale (box2, new Vector3 (1f, -1f, 0f), 0.5f);
-		iTween.PunchScale (box3, new Vector3 (1f, -1f, 0f), 0.5f);
-
+		iTween.PunchScale (box3, new Vector3 (0.5f, -0.5f, 0f), 0.5f);
+		boxBumpSound.Play ();
 
 	}
 
