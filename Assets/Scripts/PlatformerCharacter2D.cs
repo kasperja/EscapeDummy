@@ -192,6 +192,8 @@ using System.Collections;
 	private bool landOnce = true;
 	//public AudioSource pickupHook;
 
+	private bool isJumpingFalseOnce = true;
+
 
         private void Awake()
         {
@@ -235,7 +237,32 @@ using System.Collections;
 
 	}
 		private void Update(){
+
+		if (m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("StartJump") ||
+		    m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("PlayerJump") ||
+		    m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Falling") ||
+		    m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Landing") || 
+			m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("PlayerJumpGrab")
 		
+		) {
+		
+			m_Anim.SetBool ("isJumping", true);
+		
+		} else if(isJumpingFalseOnce && !endCamBool){
+		
+			if(!endCamBool)StartCoroutine (waitBeforeFallingActive (0.2f));
+
+			isJumpingFalseOnce = false;
+		
+		} else{
+
+			m_Anim.SetBool ("isJumping", true);
+
+
+		}
+
+
+
 		randomGruntFloat = UnityEngine.Random.Range (0f, 5f);
 
 		if (doorScript.doorOpen) {
@@ -1528,7 +1555,24 @@ IEnumerator waitSpaceBool(float waitTime){
 
 }
 
+IEnumerator waitBeforeFallingActive(float waitTime){
 	
+	yield return new WaitForSeconds (waitTime);
+		if (!endCamBool) {
+		
+			m_Anim.SetBool ("isJumping", false);
+
+		} else {
+		
+		m_Anim.SetBool ("isJumping", true);
+	
+	}
+		isJumpingFalseOnce = true;
+
+}
+	
+
+
 void OnDrawGizmos(){
 
 		iTween.DrawPath (wayPointArray);

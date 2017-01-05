@@ -138,7 +138,7 @@ public class EnemyMovement : MonoBehaviour {
 
 
 			mainCharScript.FadeInMusic (mainCharScript.musicScript.breakdownMusic, mainCharScript.musicVolumeBreakDown);
-			mainCharScript.FadeOutMusic (mainCharScript.musicScript.introMusic, mainCharScript.musicVolumeIntro);
+			mainCharScript.FadeInMusic (mainCharScript.musicScript.introMusic, mainCharScript.musicVolumeIntro);
 
 			if (transform.position.x > player.transform.position.x) {
 
@@ -184,7 +184,7 @@ public class EnemyMovement : MonoBehaviour {
 
 			}
 			mainCharScript.FadeInMusic (mainCharScript.musicScript.fightMusic, mainCharScript.musicVolumeFight);
-		
+			mainCharScript.FadeOutMusic (mainCharScript.musicScript.introMusic, mainCharScript.musicVolumeIntro);
 			useSpeed = 0.0f;
 		
 		} 
