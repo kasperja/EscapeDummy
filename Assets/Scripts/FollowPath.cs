@@ -9,9 +9,9 @@ public class FollowPath : MonoBehaviour {
 	public float attackDelay;
 	float percentsPerSecond = 5f;
 	float currentPathPercent = 0.0f;
-	public bool slashActive = false;
+	public bool slashActive = true;
 	private bool slashOnce = true;
-	private bool slashStart = false;
+	private bool slashStart = true;
 	//public KeyCode attackKey;
 	public string attackAnimName;
 	public string attackStateName;
@@ -19,6 +19,9 @@ public class FollowPath : MonoBehaviour {
 	public bool rotateEnabled = false;
 	public Vector3 rotation = new Vector3();
 	public Quaternion startRotation;
+	public Animator m_anim;
+
+	public bool isKneeAttack = false;
 
 	public PlatformerCharacter2D pc2Dscript;
 	public AttackManager am;
@@ -88,12 +91,14 @@ public class FollowPath : MonoBehaviour {
 	}
 	IEnumerator waitSlash(){
 		
+
 		yield return new WaitForSeconds (attackTime);
 
 		slashParticle.Stop ();
 		slashStart = false;
 		slashOnce = true;
 		playOnce = true;
+
 	
 	}
 	IEnumerator slashDelay(float attackD){
@@ -104,8 +109,8 @@ public class FollowPath : MonoBehaviour {
 		yield return new WaitForSeconds (attackD);
 
 		slashActive = false;
-		slashStart = true;
-
+		if(isKneeAttack)slashStart = true;
+		if(!isKneeAttack && !m_anim.GetCurrentAnimatorStateInfo (0).IsName ("Attack3"))slashStart = true;
 
 	}
 }
