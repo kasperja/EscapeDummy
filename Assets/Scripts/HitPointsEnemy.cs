@@ -139,7 +139,7 @@ public class HitPointsEnemy : MonoBehaviour {
 				StartCoroutine (hitWait ());
 
 				hitPointsTotalScript.hitpoints -= highDmg.attackDamage * dmgMultiplier;
-				//Instantiate (hitParticle, gameObject.transform.position, Quaternion.identity);
+				Instantiate (hitParticle, gameObject.transform.position, Quaternion.identity);
 				playOnceHigh = false;
 
 			}

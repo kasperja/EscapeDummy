@@ -133,10 +133,10 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 			if (enemyMiddleAttack.playerBlockEnabled && blockOncePlayer) {
 				
 				if (!pc2D.m_FacingRight) {
-					iTween.MoveBy (MainCharObj, new Vector3 (10f, 0f, 0f), 0.6f);
+					//iTween.MoveBy (MainCharObj, new Vector3 (10f, 0f, 0f), 0.6f);
 				} else {
 				
-					iTween.MoveBy (MainCharObj, new Vector3 (-10f, 0f, 0f), 0.6f);
+					//iTween.MoveBy (MainCharObj, new Vector3 (-10f, 0f, 0f), 0.6f);
 
 				}
 				blockSound.Play ();
