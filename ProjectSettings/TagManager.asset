@@ -54,6 +54,8 @@ TagManager:
   - WtfTrigger
   - EnemyActive
   - OnStairs
+  - BoxOne
+  - BoxTwo
   layers:
   - Default
   - TransparentFX

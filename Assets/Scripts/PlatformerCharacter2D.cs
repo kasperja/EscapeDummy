@@ -194,6 +194,9 @@ using System.Collections;
 
 	private bool isJumpingFalseOnce = true;
 
+	public GameObject box1;
+	public GameObject box2;
+	public GameObject box3;
 
         private void Awake()
         {
@@ -989,6 +992,21 @@ using System.Collections;
 	}
 		void OnTriggerEnter2D(Collider2D other)
 		{
+
+	if (other.gameObject.tag == "BoxOne") {
+
+		iTween.PunchScale (box1, new Vector3 (1f, -1f, 0f), 0.5f);
+
+
+
+	}
+	if (other.gameObject.tag == "BoxTwo") {
+
+		iTween.PunchScale (box2, new Vector3 (1f, -1f, 0f), 0.5f);
+		iTween.PunchScale (box3, new Vector3 (1f, -1f, 0f), 0.5f);
+
+
+	}
 
 	if (other.gameObject.tag == "SoundTriggerSaw") {
 
