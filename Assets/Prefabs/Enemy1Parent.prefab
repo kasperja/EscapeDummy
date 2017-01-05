@@ -1119,7 +1119,6 @@ MonoBehaviour:
   hpt: {fileID: 114000013121274140}
   blockOnce: 1
   blockActive: 1
-  grunt1: {fileID: 0}
   em: {fileID: 114000010420429406}
 --- !u!114 &114000011764781940
 MonoBehaviour:
