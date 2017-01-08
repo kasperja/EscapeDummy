@@ -133,7 +133,7 @@ using System.Collections;
 	private float maxLerp = 400f;
 	private float minLerp = 0f;
 
-	private float waitJumpTime = 0.2f;
+	private float waitJumpTime = 0.0f;
 
 	public float velocity = 0f;
 
@@ -996,15 +996,15 @@ using System.Collections;
 
 	if (other.gameObject.tag == "BoxOne") {
 
-		iTween.PunchScale (box1, new Vector3 (1f, -1f, 0f), 0.5f);
+		//iTween.PunchScale (box1, new Vector3 (1f, -1f, 0f), 0.5f);
 
 			boxBumpSound.Play ();
 
 	}
 	if (other.gameObject.tag == "BoxTwo") {
 
-		iTween.PunchScale (box2, new Vector3 (1f, -1f, 0f), 0.5f);
-		iTween.PunchScale (box3, new Vector3 (0.5f, -0.5f, 0f), 0.5f);
+		//iTween.PunchScale (box2, new Vector3 (1f, -1f, 0f), 0.5f);
+		//iTween.PunchScale (box3, new Vector3 (0.5f, -0.5f, 0f), 0.5f);
 		boxBumpSound.Play ();
 
 	}
@@ -1436,13 +1436,13 @@ public void FadeOutMusic(AudioSource musicSource, float musicVolume){
 	
 	}
 
-	m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+	m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce), ForceMode2D.Impulse);
 
 		
 
 	//m_Rigidbody2D.AddForce(new Vector2(jumpXforce /  1f ,0f));
 
-		yield return new WaitForSeconds (0.0f);
+		yield return new WaitForSeconds (0.1f);
 		
 		
 
