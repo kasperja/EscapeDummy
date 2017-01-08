@@ -1721,12 +1721,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxSpeed: 110
-  m_JumpForce: 28000
+  m_JumpForce: 600
   m_CrouchSpeed: 0.25
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 4293134542
+    m_Bits: 4293134536
   m_Grounded: 1
   m_AnimHooked: {fileID: 95000013447369186}
   m_FacingRight: 1
