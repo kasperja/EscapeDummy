@@ -236,16 +236,16 @@ public class HitPointsEnemy : MonoBehaviour {
 
 			grunt1.Play ();
 
-		} else if (randomGruntFloat > 1f && randomGruntFloat <= 2f) {
+		} else if (randomGruntFloat > 1f && randomGruntFloat <= 2.5f) {
 
 			grunt2.Play ();
 
-		} else if (randomGruntFloat > 2f && randomGruntFloat <= 3f) {
+		} else if (randomGruntFloat > 2.5f && randomGruntFloat <= 4f) {
 
 			grunt3.Play ();
 
 
-		} else if (randomGruntFloat > 3f && randomGruntFloat <= 4f) {
+		} else if (randomGruntFloat > 4f && randomGruntFloat <= 4.5f) {
 
 			grunt4fuck.Play ();
 

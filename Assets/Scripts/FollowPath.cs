@@ -20,6 +20,7 @@ public class FollowPath : MonoBehaviour {
 	public Vector3 rotation = new Vector3();
 	public Quaternion startRotation;
 	public Animator m_anim;
+	public PlatformerCharacter2D pc2D;
 
 	public bool isKneeAttack = false;
 
@@ -110,7 +111,7 @@ public class FollowPath : MonoBehaviour {
 
 		slashActive = false;
 		if(isKneeAttack)slashStart = true;
-		if(!isKneeAttack && !m_anim.GetCurrentAnimatorStateInfo (0).IsName ("Attack3"))slashStart = true;
+		if(!isKneeAttack && !m_anim.GetCurrentAnimatorStateInfo (0).IsName ("Attack3") && !pc2D.m_FacingRight)slashStart = true;
 
 	}
 }
