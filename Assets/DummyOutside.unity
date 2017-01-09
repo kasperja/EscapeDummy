@@ -10610,6 +10610,51 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 223000010382386538, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+        type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 811125730}
+    - target: {fileID: 114000012816322340, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 142688742}
+    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+        type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 291855428}
+    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+        type: 2}
+      propertyPath: targetEnd
+      value: 
+      objectReference: {fileID: 307092759}
+    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+        type: 2}
+      propertyPath: targetStart
+      value: 
+      objectReference: {fileID: 634456507}
+    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+        type: 2}
+      propertyPath: targetSaw
+      value: 
+      objectReference: {fileID: 1717185043}
+    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+        type: 2}
+      propertyPath: targetHooked
+      value: 
+      objectReference: {fileID: 1341079187}
+    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+        type: 2}
+      propertyPath: targetNotHooked
+      value: 
+      objectReference: {fileID: 291855428}
+    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
+        type: 2}
+      propertyPath: MainCharScript
+      value: 
+      objectReference: {fileID: 142688740}
     - target: {fileID: 114000012058256994, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
         type: 2}
       propertyPath: Player
@@ -10660,51 +10705,6 @@ Prefab:
       propertyPath: LowerTarget
       value: 
       objectReference: {fileID: 692768767}
-    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
-        type: 2}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 291855428}
-    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
-        type: 2}
-      propertyPath: targetEnd
-      value: 
-      objectReference: {fileID: 307092759}
-    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
-        type: 2}
-      propertyPath: targetStart
-      value: 
-      objectReference: {fileID: 634456507}
-    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
-        type: 2}
-      propertyPath: targetSaw
-      value: 
-      objectReference: {fileID: 1717185043}
-    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
-        type: 2}
-      propertyPath: targetHooked
-      value: 
-      objectReference: {fileID: 1341079187}
-    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
-        type: 2}
-      propertyPath: targetNotHooked
-      value: 
-      objectReference: {fileID: 291855428}
-    - target: {fileID: 114000012250290308, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
-        type: 2}
-      propertyPath: MainCharScript
-      value: 
-      objectReference: {fileID: 142688740}
-    - target: {fileID: 114000012816322340, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
-        type: 2}
-      propertyPath: character
-      value: 
-      objectReference: {fileID: 142688742}
-    - target: {fileID: 223000010382386538, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6,
-        type: 2}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 811125730}
     - target: {fileID: 1000012502785530, guid: 732f8e1c99f134a4b92a1d4ec4f44aa6, type: 2}
       propertyPath: m_Name
       value: MainCamera

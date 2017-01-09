@@ -2067,6 +2067,7 @@ MonoBehaviour:
   mainCharScript: {fileID: 0}
   hpET: {fileID: 0}
   enemyActive: 0
+  ambientOutside: {fileID: 0}
 --- !u!114 &114000013985085476
 MonoBehaviour:
   m_ObjectHideFlags: 1

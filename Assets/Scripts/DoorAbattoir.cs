@@ -43,6 +43,8 @@ public class DoorAbattoir : MonoBehaviour {
 	private bool doorFullyOpenBool = false;
 
 	public bool enemyActive = false;
+
+	public AudioSource ambientOutside;
 	// Use this for initialization
 	void Start () {
 
@@ -65,13 +67,14 @@ public class DoorAbattoir : MonoBehaviour {
 
 		if (doorOpen) {
 		
+
 			mainCharScript.FadeOutMusic (mainCharScript.musicScript.introMusic, mainCharScript.musicVolumeIntro);
 
 			StartCoroutine (waitForSceneLoad (3f));
 
 			MainCamObj.GetComponent<SunShafts> ().sunShaftIntensity += 3f * Time.deltaTime;
 		
-
+			ambientOutside.volume += 0.5f * Time.deltaTime;
 			ambientSound.volume -= 0.5f * Time.deltaTime;
 			sawCutSound.volume -= 0.5f * Time.deltaTime;
 			sawIdleSound.volume -= 0.5f * Time.deltaTime;
@@ -142,8 +145,9 @@ public class DoorAbattoir : MonoBehaviour {
 		doorFullyOpenBool = true;
 	}
 	IEnumerator waitForSceneLoad(float waitTime){
-
-		yield return new WaitForSeconds (waitTime);
+		yield return new WaitForSeconds (2f);
+		//ambientOutside.volume -= 1f * Time.deltaTime;
+		yield return new WaitForSeconds (1f);
 		SceneManager.LoadScene (2);
 	}
 }

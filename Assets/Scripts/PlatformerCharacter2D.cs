@@ -858,7 +858,30 @@ using System.Collections;
             {
 			if (!sideArrowsBool) {
 			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") && /*!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") && */ !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
-					
+
+				if (randomGruntFloat >= 0f && randomGruntFloat < 1f) {
+
+					attackGrunt1.Play ();
+
+				} else if (randomGruntFloat >= 1f && randomGruntFloat < 2f) {
+
+					attackGrunt2.Play ();
+
+				} else if (randomGruntFloat >= 2f && randomGruntFloat < 3f) {
+
+					attackGrunt3.Play ();
+
+				} else if (randomGruntFloat >= 3f && randomGruntFloat < 4f) {
+
+					attackGrunt2.Play ();
+
+
+				} else {
+
+					attackGrunt3.Play ();
+
+				}
+
 				m_Anim.SetBool ("SpaceBool", true);
 				StartCoroutine (waitSpaceBool(0.2f));
 					// Add a vertical force to the player.
@@ -870,6 +893,26 @@ using System.Collections;
 
 			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") && /*!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") &&*/ !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
 					//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+				if (randomGruntFloat >= 0f && randomGruntFloat < 1f) {
+
+					attackGrunt1.Play ();
+
+				} else if (randomGruntFloat >= 1f && randomGruntFloat < 2f) {
+
+					attackGrunt2.Play ();
+
+				} else if (randomGruntFloat >= 2f && randomGruntFloat < 3f) {
+
+					attackGrunt2.Play ();
+
+				} else if (randomGruntFloat >= 3f && randomGruntFloat < 4f) {
+
+					attackGrunt1.Play ();
+
+				} else {
+
+					attackGrunt2.Play ();
+				}
 					m_Anim.SetBool ("SpaceBool", true);
 					m_Anim.SetBool ("StartJump", true);
 
@@ -976,7 +1019,27 @@ using System.Collections;
 		{
 			if (!sideArrowsBool) {
 			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") /* && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") */ && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
-					
+				if (randomGruntFloat >= 0f && randomGruntFloat < 1f) {
+
+					attackGrunt1.Play ();
+
+				} else if (randomGruntFloat >= 1f && randomGruntFloat < 2f) {
+
+					attackGrunt2.Play ();
+
+				} else if (randomGruntFloat >= 2f && randomGruntFloat < 3f) {
+
+					attackGrunt3.Play ();
+
+				} else if (randomGruntFloat >= 3f && randomGruntFloat < 4f) {
+
+					attackGrunt2.Play ();
+
+				} else {
+
+					attackGrunt1.Play ();
+
+				}
 					m_Anim.SetBool ("SpaceBool", true);
 					StartCoroutine (waitSpaceBool(0.2f));
 						// Add a vertical force to the player.
@@ -992,6 +1055,27 @@ using System.Collections;
 
 			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") /* && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") */ && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
 
+				if (randomGruntFloat >= 0f && randomGruntFloat < 1f) {
+
+					attackGrunt1.Play ();
+
+				} else if (randomGruntFloat >= 1f && randomGruntFloat < 2f) {
+
+					attackGrunt2.Play ();
+
+				} else if (randomGruntFloat >= 2f && randomGruntFloat < 3f) {
+
+					attackGrunt2.Play ();
+
+				} else if (randomGruntFloat >= 3f && randomGruntFloat < 4f) {
+
+					attackGrunt3.Play ();
+
+				} else {
+
+					attackGrunt2.Play ();
+
+				}
 					m_Anim.SetBool ("SpaceBool", true);
 					m_Anim.SetBool ("StartJump", true);
 
