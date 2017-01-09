@@ -622,7 +622,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000013691784304
 GameObject:
   m_ObjectHideFlags: 1
@@ -1439,7 +1439,7 @@ Rigidbody2D:
   m_Mass: 10
   m_LinearDrag: 1
   m_AngularDrag: 0
-  m_GravityScale: 22
+  m_GravityScale: 30
   m_IsKinematic: 0
   m_Interpolate: 2
   m_SleepingMode: 0
@@ -1696,8 +1696,8 @@ MonoBehaviour:
   wayPointArrayTwo:
   - {fileID: 4000010387421468}
   - {fileID: 4000013317927302}
-  attackTime: 0.2
-  attackDelay: 0
+  attackTime: 0.4
+  attackDelay: 0.3
   slashActive: 0
   attackAnimName: Attack5Bool
   attackStateName: Attack5
@@ -1722,7 +1722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxSpeed: 110
-  m_JumpForce: 600
+  m_JumpForce: 1000
   m_CrouchSpeed: 0.25
   m_AirControl: 1
   m_WhatIsGround:
@@ -1829,6 +1829,7 @@ MonoBehaviour:
   box2: {fileID: 0}
   box3: {fileID: 0}
   boxBumpSound: {fileID: 0}
+  boxWall: {fileID: 0}
 --- !u!114 &114000010182849938
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1904,8 +1905,8 @@ MonoBehaviour:
   wayPointArrayTwo:
   - {fileID: 4000010387421468}
   - {fileID: 4000013317927302}
-  attackTime: 0.2
-  attackDelay: 0
+  attackTime: 0.4
+  attackDelay: 0.3
   slashActive: 0
   attackAnimName: Attack5Bool
   attackStateName: 
@@ -2127,8 +2128,8 @@ MonoBehaviour:
   wayPointArrayTwo:
   - {fileID: 4000012986734900}
   - {fileID: 4000013512369418}
-  attackTime: 0.1
-  attackDelay: 0.5
+  attackTime: 0
+  attackDelay: 0.4
   slashActive: 0
   attackAnimName: Attack3Bool
   attackStateName: 
@@ -2311,8 +2312,8 @@ MonoBehaviour:
   wayPointArrayTwo:
   - {fileID: 4000012986734900}
   - {fileID: 4000013512369418}
-  attackTime: 0.1
-  attackDelay: 0.5
+  attackTime: 0
+  attackDelay: 0.4
   slashActive: 0
   attackAnimName: Attack3Bool
   attackStateName: Attack3
@@ -10956,7 +10957,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013727955424}
   serializedVersion: 4
-  lengthInSec: 1
+  lengthInSec: 0.4
   startDelay:
     scalar: 0
     maxCurve:
@@ -10993,7 +10994,7 @@ ParticleSystem:
       m_RotationOrder: 4
     minMaxState: 0
   speed: 1
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 0
   moveWithTransform: 0
@@ -11145,7 +11146,7 @@ ParticleSystem:
       maxColor: {r: 0.21176471, g: 0.05882353, b: 0.05882353, a: 1}
       minMaxState: 2
     startSize:
-      scalar: 1
+      scalar: 0.2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -11364,7 +11365,7 @@ ParticleSystem:
     serializedVersion: 2
     m_Type: 0
     rate:
-      scalar: 4000
+      scalar: 40
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -12655,7 +12656,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013990866274}
   serializedVersion: 4
-  lengthInSec: 1
+  lengthInSec: 0.4
   startDelay:
     scalar: 0
     maxCurve:
@@ -12692,7 +12693,7 @@ ParticleSystem:
       m_RotationOrder: 4
     minMaxState: 0
   speed: 1
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 0
   moveWithTransform: 0
@@ -12844,7 +12845,7 @@ ParticleSystem:
       maxColor: {r: 0.21176471, g: 0.05882353, b: 0.05882353, a: 1}
       minMaxState: 2
     startSize:
-      scalar: 2
+      scalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -12860,7 +12861,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: 0.5
+          value: 1
           inSlope: 0
           outSlope: 0
           tangentMode: 0
