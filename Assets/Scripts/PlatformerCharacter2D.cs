@@ -55,8 +55,11 @@ using System.Collections;
 	private float timer = 0.0f;
 	public float friction = 0.9f;
 	private bool jumpOnce = true;
+	private bool jumpOnceTwo = true;
 	public GameObject WaitForHookedCol;
 	public GameObject WaitForHookedCol2;
+
+	private bool spaceBoolTwo = false;
 
 	private bool anticiHook = true;
 
@@ -199,6 +202,7 @@ using System.Collections;
 	public GameObject box3;
 	public AudioSource boxBumpSound;
 
+	public GameObject boxWall;
         private void Awake()
         {
 			Application.targetFrameRate = 900;
@@ -241,6 +245,15 @@ using System.Collections;
 
 	}
 		private void Update(){
+
+		if (vSpeed > -0.0001f && vSpeed < 0.0001f && !spaceBoolTwo && !sideArrowsBool) {
+
+			//StartCoroutine (waitAndGround(1f));
+			//m_Grounded = true;
+		}
+
+		vSpeed = m_Rigidbody2D.velocity.y;
+
 
 		if (m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("StartJump") ||
 		    m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("PlayerJump") ||
@@ -304,7 +317,8 @@ using System.Collections;
 		if (Input.GetKeyDown (KeyCode.Space)  && !hpPlayerTotal.isDead && m_Grounded && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") 
 			&& !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
 			landOnce = true;
-			m_Anim.SetBool ("SpaceBool", true);
+
+
 			StartCoroutine (waitSpaceBool(0.2f));
 		
 		} else {
@@ -313,8 +327,16 @@ using System.Collections;
 		
 		}
 
+		if(Input.GetKey(KeyCode.Space)){
 
-			vSpeed = m_Rigidbody2D.velocity.y;
+			spaceBoolTwo = true;
+
+		}else{
+
+			spaceBoolTwo = false;
+
+		}
+			
 
 
 
@@ -688,6 +710,7 @@ using System.Collections;
 
         private void FixedUpdate()
         {
+	
 
 		/*if (!climbingStairsBool) {
 			m_Grounded = false;
@@ -847,6 +870,7 @@ using System.Collections;
 
 			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") && /*!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") &&*/ !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
 					//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+					m_Anim.SetBool ("SpaceBool", true);
 					m_Anim.SetBool ("StartJump", true);
 
 				
@@ -968,6 +992,7 @@ using System.Collections;
 
 			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") /* && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") */ && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
 
+					m_Anim.SetBool ("SpaceBool", true);
 					m_Anim.SetBool ("StartJump", true);
 
 					m_Grounded = false;
@@ -993,6 +1018,15 @@ using System.Collections;
 	}
 		void OnTriggerEnter2D(Collider2D other)
 		{
+
+
+	if (other.gameObject.tag == "BoxTrigger") {
+
+		//iTween.PunchScale (box1, new Vector3 (1f, -1f, 0f), 0.5f);
+
+			boxWall.SetActive (true);
+
+	}
 
 	if (other.gameObject.tag == "BoxOne") {
 
@@ -1422,7 +1456,7 @@ public void FadeOutMusic(AudioSource musicSource, float musicVolume){
 		yield return new WaitForSeconds (waitTime);
 		//hookParent.GetComponent<BoxCollider2D> ().enabled = true;
 		//tempHinge.enabled = true;
-		//m_Grounded = false;
+		m_Grounded = false;
 		
 		m_Anim.SetBool("Ground", false);
 
@@ -1587,6 +1621,13 @@ IEnumerator waitBeforeFallingActive(float waitTime){
 	
 	}
 		isJumpingFalseOnce = true;
+
+}
+
+IEnumerator waitAndGround(float waitTime){
+
+	yield return new WaitForSeconds (waitTime);
+	//if(vSpeed > -0.0001f && vSpeed < 0.0001f)m_Grounded = true;
 
 }
 	
