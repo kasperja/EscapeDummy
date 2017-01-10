@@ -57,6 +57,7 @@ TagManager:
   - BoxOne
   - BoxTwo
   - BoxTrigger
+  - RunTrigger
   layers:
   - Default
   - TransparentFX
