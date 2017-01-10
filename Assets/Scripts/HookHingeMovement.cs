@@ -147,7 +147,7 @@ public class HookHingeMovement : MonoBehaviour {
 
 			//readyToStopMoving = false;
 
-			StartCoroutine (waitIfDetected (2f));
+			StartCoroutine (waitIfDetected (1.5f));
 			waitDetectOnce = false;
 
 		}
@@ -176,7 +176,7 @@ public class HookHingeMovement : MonoBehaviour {
 
 		if (other.gameObject.tag == "MeatEndCol") {
 
-			this.gameObject.transform.position = new Vector3(StartTrigger.transform.position.x, meatStartPosY, transform.position.z);
+			gameObject.transform.position = new Vector3(StartTrigger.transform.position.x, meatStartPosY, transform.position.z);
 
 			meatSpeedVector = new Vector2(meatSpeed, -meatSpeedUp);
 
@@ -272,8 +272,8 @@ public class HookHingeMovement : MonoBehaviour {
 		yield return new WaitForSeconds(moveTime);
 		hookWaitOnce = true;
 		hookWaitOnceMoving = true;
-		waitDetectOnce = true;
 		waitTime = 1.5f;
+		waitDetectOnce = true;
 	}
 	IEnumerator waitIfDetected(float moveTime)
 	{
