@@ -202,6 +202,8 @@ using System.Collections;
 	public GameObject box3;
 	public AudioSource boxBumpSound;
 
+	private float gravOrig;
+
 	public GameObject boxWall;
         private void Awake()
         {
@@ -217,6 +219,8 @@ using System.Collections;
 
 	private void Start()
 	{
+
+		gravOrig = gameObject.GetComponent<Rigidbody2D> ().gravityScale;
 		
 		musicVolumeIntro = musicScript.introMusic.volume;
 		musicVolumeBreakDown = musicScript.introMusic.volume;
@@ -245,6 +249,18 @@ using System.Collections;
 
 	}
 		private void Update(){
+
+		if (climbingStairsBool) {
+			m_Anim.SetBool ("Ground", true);
+			m_Grounded = true;
+			m_Anim.SetBool ("Climb", true);
+			gameObject.GetComponent<Rigidbody2D> ().gravityScale = 50f;
+
+
+		} else {
+			m_Anim.SetBool ("Climb", false);
+			gameObject.GetComponent<Rigidbody2D> ().gravityScale = gravOrig;
+		}
 
 		if (vSpeed > -0.0001f && vSpeed < 0.0001f && !spaceBoolTwo && !sideArrowsBool) {
 
@@ -817,25 +833,30 @@ using System.Collections;
 				if(Input.GetKey(KeyCode.LeftArrow)){
 
 					//down Stairs
-				m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 1f, move * m_MaxSpeed * 0.8f);
-				
+				//m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 1f, move * m_MaxSpeed * 0.8f);
+				m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed, m_Rigidbody2D.velocity.y);
+				m_Rigidbody2D.isKinematic = false;
 				
 				}else{
 
 				if (isEndOutside || isStartOutside) {
 
 						m_Rigidbody2D.velocity = new Vector2 (m_MaxSpeed * 1f, 0f);
+						m_Rigidbody2D.isKinematic = false;
 				
 					} else {
 						//up Stairs
 
-						m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 1f, move * m_MaxSpeed * 0.2f);
+						//m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 1f, move * m_MaxSpeed * 0.2f);
+						m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed, m_Rigidbody2D.velocity.y);
+					m_Rigidbody2D.isKinematic = false;
 					}
 				}
 			
 			} else {
 			
 				m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed, m_Rigidbody2D.velocity.y);
+			m_Rigidbody2D.isKinematic = false;
 			
 			}
 				//m_Rigidbody2D.AddForce (new Vector2 (0f, m_Rigidbody2D.velocity.y));
@@ -858,30 +879,30 @@ using System.Collections;
             {
 			if (!sideArrowsBool) {
 			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") && /*!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") && */ !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
+					if (!isEndOutside) {
+						if (randomGruntFloat >= 0f && randomGruntFloat < 1f) {
 
-				if (randomGruntFloat >= 0f && randomGruntFloat < 1f) {
+							attackGrunt1.Play ();
 
-					attackGrunt1.Play ();
+						} else if (randomGruntFloat >= 1f && randomGruntFloat < 2f) {
 
-				} else if (randomGruntFloat >= 1f && randomGruntFloat < 2f) {
+							attackGrunt2.Play ();
 
-					attackGrunt2.Play ();
+						} else if (randomGruntFloat >= 2f && randomGruntFloat < 3f) {
 
-				} else if (randomGruntFloat >= 2f && randomGruntFloat < 3f) {
+							attackGrunt3.Play ();
 
-					attackGrunt3.Play ();
+						} else if (randomGruntFloat >= 3f && randomGruntFloat < 4f) {
 
-				} else if (randomGruntFloat >= 3f && randomGruntFloat < 4f) {
-
-					attackGrunt2.Play ();
+							attackGrunt2.Play ();
 
 
-				} else {
+						} else {
 
-					attackGrunt3.Play ();
+							attackGrunt3.Play ();
 
-				}
-
+						}
+					}
 				m_Anim.SetBool ("SpaceBool", true);
 				StartCoroutine (waitSpaceBool(0.2f));
 					// Add a vertical force to the player.
@@ -891,28 +912,31 @@ using System.Collections;
 				}
 			} else {
 
-			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") && /*!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") &&*/ !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
+			if (!climbingStairsBool && jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") && /*!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") &&*/ !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
 					//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-				if (randomGruntFloat >= 0f && randomGruntFloat < 1f) {
 
-					attackGrunt1.Play ();
+					if (!isEndOutside) {
+						if (randomGruntFloat >= 0f && randomGruntFloat < 1f) {
 
-				} else if (randomGruntFloat >= 1f && randomGruntFloat < 2f) {
+							attackGrunt1.Play ();
 
-					attackGrunt2.Play ();
+						} else if (randomGruntFloat >= 1f && randomGruntFloat < 2f) {
 
-				} else if (randomGruntFloat >= 2f && randomGruntFloat < 3f) {
+							attackGrunt2.Play ();
 
-					attackGrunt2.Play ();
+						} else if (randomGruntFloat >= 2f && randomGruntFloat < 3f) {
 
-				} else if (randomGruntFloat >= 3f && randomGruntFloat < 4f) {
+							attackGrunt2.Play ();
 
-					attackGrunt1.Play ();
+						} else if (randomGruntFloat >= 3f && randomGruntFloat < 4f) {
 
-				} else {
+							attackGrunt1.Play ();
 
-					attackGrunt2.Play ();
-				}
+						} else {
+
+							attackGrunt2.Play ();
+						}
+					}
 					m_Anim.SetBool ("SpaceBool", true);
 					m_Anim.SetBool ("StartJump", true);
 
@@ -980,18 +1004,23 @@ using System.Collections;
 
 			if (climbingStairsBool) {
 				
-				m_Rigidbody2D.velocity = new Vector2 (20.4f, -21.5f);
+				//m_Rigidbody2D.velocity = new Vector2 (20.4f, -21.5f);
+
+			//m_Rigidbody2D.velocity = new Vector2 (Mathf.Lerp (m_Rigidbody2D.velocity.x, 0f, timer), m_Rigidbody2D.velocity.y);
+			//m_Rigidbody2D.velocity = new Vector2 (m_Rigidbody2D.velocity.x, m_Rigidbody2D.velocity.y);
+				m_Rigidbody2D.isKinematic = true;
 			} else {
 
 
 			if (isEndOutside || isStartOutside) {
-
+					m_Rigidbody2D.isKinematic = false;
 					m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 1f, 0f);
 
 				} else {
 				
 					m_Rigidbody2D.velocity = new Vector2 (Mathf.Lerp (m_Rigidbody2D.velocity.x, 0f, timer), m_Rigidbody2D.velocity.y);
-			
+				//m_Rigidbody2D.velocity = new Vector2 (m_Rigidbody2D.velocity.x, m_Rigidbody2D.velocity.y);
+					//m_Rigidbody2D.isKinematic = true;
 				}
 			}
 
@@ -1019,27 +1048,30 @@ using System.Collections;
 		{
 			if (!sideArrowsBool) {
 			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") /* && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") */ && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
-				if (randomGruntFloat >= 0f && randomGruntFloat < 1f) {
 
-					attackGrunt1.Play ();
+					if (!isEndOutside) {
+						if (randomGruntFloat >= 0f && randomGruntFloat < 1f) {
 
-				} else if (randomGruntFloat >= 1f && randomGruntFloat < 2f) {
+							attackGrunt1.Play ();
 
-					attackGrunt2.Play ();
+						} else if (randomGruntFloat >= 1f && randomGruntFloat < 2f) {
 
-				} else if (randomGruntFloat >= 2f && randomGruntFloat < 3f) {
+							attackGrunt2.Play ();
 
-					attackGrunt3.Play ();
+						} else if (randomGruntFloat >= 2f && randomGruntFloat < 3f) {
 
-				} else if (randomGruntFloat >= 3f && randomGruntFloat < 4f) {
+							attackGrunt3.Play ();
 
-					attackGrunt2.Play ();
+						} else if (randomGruntFloat >= 3f && randomGruntFloat < 4f) {
 
-				} else {
+							attackGrunt2.Play ();
 
-					attackGrunt1.Play ();
+						} else {
 
-				}
+							attackGrunt1.Play ();
+
+						}
+					}
 					m_Anim.SetBool ("SpaceBool", true);
 					StartCoroutine (waitSpaceBool(0.2f));
 						// Add a vertical force to the player.
@@ -1053,29 +1085,31 @@ using System.Collections;
 
 				//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 
-			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") /* && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") */ && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
+			if (!climbingStairsBool && jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") /* && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") */ && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
 
-				if (randomGruntFloat >= 0f && randomGruntFloat < 1f) {
+					if (!isEndOutside) {
+						if (randomGruntFloat >= 0f && randomGruntFloat < 1f) {
 
-					attackGrunt1.Play ();
+							attackGrunt1.Play ();
 
-				} else if (randomGruntFloat >= 1f && randomGruntFloat < 2f) {
+						} else if (randomGruntFloat >= 1f && randomGruntFloat < 2f) {
 
-					attackGrunt2.Play ();
+							attackGrunt2.Play ();
 
-				} else if (randomGruntFloat >= 2f && randomGruntFloat < 3f) {
+						} else if (randomGruntFloat >= 2f && randomGruntFloat < 3f) {
 
-					attackGrunt2.Play ();
+							attackGrunt2.Play ();
 
-				} else if (randomGruntFloat >= 3f && randomGruntFloat < 4f) {
+						} else if (randomGruntFloat >= 3f && randomGruntFloat < 4f) {
 
-					attackGrunt3.Play ();
+							attackGrunt3.Play ();
 
-				} else {
+						} else {
 
-					attackGrunt2.Play ();
+							attackGrunt2.Play ();
 
-				}
+						}
+					}
 					m_Anim.SetBool ("SpaceBool", true);
 					m_Anim.SetBool ("StartJump", true);
 
@@ -1540,11 +1574,16 @@ public void FadeOutMusic(AudioSource musicSource, float musicVolume){
 		yield return new WaitForSeconds (waitTime);
 		//hookParent.GetComponent<BoxCollider2D> ().enabled = true;
 		//tempHinge.enabled = true;
-		m_Grounded = false;
+		if (!climbingStairsBool) {
+			m_Grounded = false;
 		
-		m_Anim.SetBool("Ground", false);
+			m_Anim.SetBool ("Ground", false);
 
-		m_Anim.SetBool("StartJump", false);
+		}
+
+			m_Anim.SetBool ("StartJump", false);
+
+
 	float jumpXforce = m_JumpForce;
 		if (!m_FacingRight) {
 			jumpXforce = -m_JumpForce;
