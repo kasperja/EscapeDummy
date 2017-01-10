@@ -204,6 +204,8 @@ using System.Collections;
 
 	private float gravOrig;
 
+	public GameObject runTrigger;
+
 	public GameObject boxWall;
         private void Awake()
         {
@@ -249,6 +251,9 @@ using System.Collections;
 
 	}
 		private void Update(){
+
+		if (hookJumpActive && !m_FacingRight)
+			Flip ();
 
 		if (climbingStairsBool) {
 			m_Anim.SetBool ("Ground", true);
@@ -1137,6 +1142,14 @@ using System.Collections;
 		void OnTriggerEnter2D(Collider2D other)
 		{
 
+	if (other.gameObject.tag == "RunTrigger") {
+
+		//iTween.PunchScale (box1, new Vector3 (1f, -1f, 0f), 0.5f);
+
+			isEndOutside = true;
+
+	}
+
 
 	if (other.gameObject.tag == "BoxTrigger") {
 
@@ -1316,6 +1329,15 @@ if (other.gameObject.tag == "IntroMusicTrigger") {
 
 	void OnTriggerExit2D(Collider2D other)
 	{
+
+	if (other.gameObject.tag == "RunTrigger") {
+
+		//iTween.PunchScale (box1, new Vector3 (1f, -1f, 0f), 0.5f);
+		runTrigger.SetActive(false);
+
+		isEndOutside = false;
+
+	}
 
 	if (other.gameObject.tag == "OnStairs") {
 
