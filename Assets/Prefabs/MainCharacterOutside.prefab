@@ -1346,7 +1346,7 @@ Rigidbody2D:
   m_Mass: 10
   m_LinearDrag: 1
   m_AngularDrag: 0
-  m_GravityScale: 22
+  m_GravityScale: 30
   m_IsKinematic: 0
   m_Interpolate: 2
   m_SleepingMode: 0
@@ -1615,6 +1615,9 @@ MonoBehaviour:
   rotateEnabled: 0
   rotation: {x: 0, y: 0, z: 0}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_anim: {fileID: 0}
+  pc2D: {fileID: 0}
+  isKneeAttack: 0
   pc2Dscript: {fileID: 114000013216347272}
   am: {fileID: 114000012266126036}
 --- !u!114 &114000010641362568
@@ -1925,12 +1928,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxSpeed: 110
-  m_JumpForce: 28000
+  m_JumpForce: 1000
   m_CrouchSpeed: 0.25
-  m_AirControl: 0
+  m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 4294772942
+    m_Bits: 4293134542
   m_Grounded: 1
   m_AnimHooked: {fileID: 95000012259068904}
   m_FacingRight: 1
@@ -2031,6 +2034,11 @@ MonoBehaviour:
   longStopSound: {fileID: 0}
   enemyIsDead: 0
   landingSound: {fileID: 0}
+  box1: {fileID: 0}
+  box2: {fileID: 0}
+  box3: {fileID: 0}
+  boxBumpSound: {fileID: 0}
+  boxWall: {fileID: 0}
 --- !u!114 &114000013304144382
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2068,6 +2076,9 @@ MonoBehaviour:
   rotateEnabled: 1
   rotation: {x: 10, y: 0, z: 0}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_anim: {fileID: 0}
+  pc2D: {fileID: 0}
+  isKneeAttack: 0
   pc2Dscript: {fileID: 114000013216347272}
   am: {fileID: 114000013630240450}
 --- !u!114 &114000013373012560
@@ -2176,6 +2187,9 @@ MonoBehaviour:
   rotateEnabled: 1
   rotation: {x: 10, y: 0, z: 0}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_anim: {fileID: 0}
+  pc2D: {fileID: 0}
+  isKneeAttack: 0
   pc2Dscript: {fileID: 114000013216347272}
   am: {fileID: 0}
 --- !u!114 &114000014152641598
@@ -2202,6 +2216,9 @@ MonoBehaviour:
   rotateEnabled: 0
   rotation: {x: 0, y: 0, z: 0}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_anim: {fileID: 0}
+  pc2D: {fileID: 0}
+  isKneeAttack: 0
   pc2Dscript: {fileID: 114000013216347272}
   am: {fileID: 0}
 --- !u!114 &114000014279143870
