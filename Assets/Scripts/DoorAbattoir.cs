@@ -48,7 +48,7 @@ public class DoorAbattoir : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-	
+		ambientOutside = GameObject.Find ("AmbientSoundOutside").GetComponent<AudioSource> ();
 	
 	}
 
