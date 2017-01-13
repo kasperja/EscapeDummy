@@ -1029,6 +1029,11 @@ using System.Collections;
 				
 				//m_Rigidbody2D.velocity = new Vector2 (20.4f, -21.5f);
 
+			/*if(m_FacingRight)move = 1f;
+			if(!m_FacingRight)move = -1f;
+			m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed * 1f, m_Rigidbody2D.velocity.y);
+			m_Anim.SetBool ("Climb", true);*/
+
 			//m_Rigidbody2D.velocity = new Vector2 (Mathf.Lerp (m_Rigidbody2D.velocity.x, 0f, timer), m_Rigidbody2D.velocity.y);
 			//m_Rigidbody2D.velocity = new Vector2 (m_Rigidbody2D.velocity.x, m_Rigidbody2D.velocity.y);
 				m_Rigidbody2D.isKinematic = true;
