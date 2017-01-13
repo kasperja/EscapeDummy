@@ -252,6 +252,16 @@ using System.Collections;
 	}
 		private void Update(){
 
+		if (sideArrowsBool && !climbingStairsBool) {
+		
+			gameObject.GetComponent<Rigidbody2D> ().gravityScale = 35;
+		
+		}else if(!sideArrowsBool && !climbingStairsBool){
+
+			gameObject.GetComponent<Rigidbody2D> ().gravityScale = 30;
+
+		}
+
 		if (hookJumpActive && !m_FacingRight)
 			Flip ();
 
@@ -264,7 +274,15 @@ using System.Collections;
 
 		} else {
 			m_Anim.SetBool ("Climb", false);
-			gameObject.GetComponent<Rigidbody2D> ().gravityScale = gravOrig;
+
+			if (sideArrowsBool) {
+
+				gameObject.GetComponent<Rigidbody2D> ().gravityScale = gravOrig;
+			} else {
+			
+				gameObject.GetComponent<Rigidbody2D> ().gravityScale = 30;
+			
+			}
 		}
 
 		if (vSpeed > -0.0001f && vSpeed < 0.0001f && !spaceBoolTwo && !sideArrowsBool) {
