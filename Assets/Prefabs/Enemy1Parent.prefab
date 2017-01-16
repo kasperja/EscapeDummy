@@ -489,7 +489,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010132264068}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 82.6, y: -20.5, z: 21.8}
+  m_LocalPosition: {x: 88.5, y: -20.5, z: 21.8}
   m_LocalScale: {x: -5.346011, y: 5.3460107, z: 0.030391095}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1055,6 +1055,7 @@ MonoBehaviour:
   grunt3: {fileID: 0}
   grunt4fuck: {fileID: 0}
   grunt5shit: {fileID: 0}
+  mainCharScript: {fileID: 0}
 --- !u!114 &114000011344686158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1178,6 +1179,7 @@ MonoBehaviour:
   grunt3: {fileID: 0}
   grunt4fuck: {fileID: 0}
   grunt5shit: {fileID: 0}
+  mainCharScript: {fileID: 0}
 --- !u!114 &114000012692433402
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1254,6 +1256,7 @@ MonoBehaviour:
   grunt3: {fileID: 0}
   grunt4fuck: {fileID: 0}
   grunt5shit: {fileID: 0}
+  mainCharScript: {fileID: 0}
 --- !u!114 &114000013107579268
 MonoBehaviour:
   m_ObjectHideFlags: 1

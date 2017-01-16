@@ -64,11 +64,14 @@ public class EnemyMovement : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Return) && hptScript.isDead) {
 			
 			StartCoroutine (Waiter ());
+
+			killOnce = true;
 		
 		}
 
 		if (hptScript.isDead && killOnce) {
-			
+
+
 
 			StartCoroutine (Waiter ());
 
@@ -191,8 +194,11 @@ public class EnemyMovement : MonoBehaviour {
 	}
 
 	IEnumerator Waiter(){
-
+		
+		walkWhenDead = false;
+		//enemy_Animator.SetBool ("idleBool", true);
 		yield return new WaitForSeconds (2f);
+		enemy_Animator.SetBool ("idleBool", false);
 		walkWhenDead = true;
 
 		flipDirOnce = true;
@@ -201,7 +207,7 @@ public class EnemyMovement : MonoBehaviour {
 
 		yield return new WaitForSeconds (0.1f);
 		walkWhenDead = false;
-		killOnce = true;
+		//killOnce = true;
 	}
 
 
