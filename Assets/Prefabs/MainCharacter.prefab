@@ -544,7 +544,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000013007580768
 GameObject:
   m_ObjectHideFlags: 1
@@ -1931,7 +1931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4f7a1d62c049984bbb0928e9c2a213c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 5000
+  hitpoints: 500
   deathSound: {fileID: 0}
   deathParticle: {fileID: 198000010405026494, guid: 0145611886b47c4499639bd14b6a999b,
     type: 2}
