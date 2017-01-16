@@ -123,6 +123,7 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 				m_Anim.SetBool ("Hit", false);
 				m_Anim.SetBool ("Dead", true);
 				isDead = true;
+				em.killOnce = true;
 		
 			}
 		

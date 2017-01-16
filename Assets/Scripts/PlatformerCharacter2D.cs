@@ -252,6 +252,8 @@ using System.Collections;
 	}
 		private void Update(){
 
+
+
 		if (sideArrowsBool && !climbingStairsBool) {
 		
 			gameObject.GetComponent<Rigidbody2D> ().gravityScale = 35;

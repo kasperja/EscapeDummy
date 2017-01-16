@@ -55,7 +55,9 @@ public class HitPointsEnemy : MonoBehaviour {
 
 	private float randomGruntFloat;
 
+	private float knockbackAmmount = 20f;
 
+	public PlatformerCharacter2D mainCharScript;
 	// Use this for initialization
 	/*public Collider2D highCol;
 	public Collider2D middleCol;
@@ -67,6 +69,16 @@ public class HitPointsEnemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (mainCharScript.m_FacingRight) {
+		
+			enemyFacingLeft = true;
+		
+		} else {
+		
+			enemyFacingLeft = false;
+		
+		}
 
 		randomGruntFloat = Random.Range (0f, 5f);
 
@@ -127,15 +139,17 @@ public class HitPointsEnemy : MonoBehaviour {
 
 			} else {
 				
-				/*if (enemyFacingLeft) {
-					iTween.PunchScale (graphicsObj, new Vector3 (punchAmmount, -1f, 0f), 0.5f);
+				if (enemyFacingLeft) {
+					//iTween.PunchScale (graphicsObj, new Vector3 (punchAmmount, -1f, 0f), 0.5f);
+					iTween.MoveBy (enemyObj, new Vector3 (knockbackAmmount, 0f, 0f), 0.3f);
 
 
 				} else {
 
-					iTween.PunchScale (graphicsObj, new Vector3 (-punchAmmount, -1f, 0f), 0.5f);
-				}*/
-				//iTween.MoveBy (enemyObj, new Vector3 (-10f, 0f, 0f), 0.3f);
+					//iTween.PunchScale (graphicsObj, new Vector3 (-punchAmmount, -1f, 0f), 0.5f);
+					iTween.MoveBy (enemyObj, new Vector3 (-knockbackAmmount, 0f, 0f), 0.3f);
+				}
+
 				StartCoroutine (hitWait ());
 
 				hitPointsTotalScript.hitpoints -= highDmg.attackDamage * dmgMultiplier;
@@ -166,13 +180,25 @@ public class HitPointsEnemy : MonoBehaviour {
 
 			}  else {
 
-				/*if (enemyFacingLeft) {
+				if (enemyFacingLeft) {
+					//iTween.PunchScale (graphicsObj, new Vector3 (punchAmmount, -1f, 0f), 0.5f);
+					iTween.MoveBy (enemyObj, new Vector3 (knockbackAmmount, 0f, 0f), 0.3f);
+
+
+				} else {
+
+					//iTween.PunchScale (graphicsObj, new Vector3 (-punchAmmount, -1f, 0f), 0.5f);
+					iTween.MoveBy (enemyObj, new Vector3 (-knockbackAmmount, 0f, 0f), 0.3f);
+				}
+
+
+				/* if (enemyFacingLeft) {
 					iTween.PunchScale (graphicsObj, new Vector3 (punchAmmount, -1f, 0f), 0.5f);
 
 				} else {
 
 					iTween.PunchScale (graphicsObj, new Vector3 (-punchAmmount, -1f, 0f), 0.5f);
-				}*/
+				} */
 				//iTween.MoveBy (enemyObj, new Vector3 (-20f, 0f, 0f), 0.3f);
 				StartCoroutine (hitWait ());
 				hitPointsTotalScript.hitpoints -= middleDmg.attackDamage * dmgMultiplier;
