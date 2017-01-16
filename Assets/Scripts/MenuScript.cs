@@ -6,6 +6,7 @@ public class MenuScript : MonoBehaviour {
 
 	public Animator spaceTextAnim;
 	public Animator textAnim;
+	public Animator textAnimControls;
 	public AudioSource startGameSound;
 	// Use this for initialization
 	void Start () {
@@ -19,6 +20,7 @@ public class MenuScript : MonoBehaviour {
 		
 			spaceTextAnim.SetBool ("SpaceBool", true);
 			textAnim.SetBool ("FadeOut", true);
+			textAnimControls.SetBool ("FadeOut", true);
 			startGameSound.Play ();
 			StartCoroutine (waitAndLoad ());
 		
