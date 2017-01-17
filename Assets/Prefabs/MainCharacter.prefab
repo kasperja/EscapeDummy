@@ -2215,7 +2215,7 @@ MonoBehaviour:
   AttackKey3: 119
   mainCharScript: {fileID: 114000010164550830}
   charObj: {fileID: 1000010055231870}
-  attackDamage: 100
+  attackDamage: 600
   hitCollider: {fileID: 58000013819224204}
   hpT: {fileID: 114000010577870838}
   attackSound: {fileID: 0}
@@ -2287,12 +2287,12 @@ MonoBehaviour:
   AttackKey3: 101
   mainCharScript: {fileID: 114000010164550830}
   charObj: {fileID: 1000010055231870}
-  attackDamage: 60
+  attackDamage: 300
   hitCollider: {fileID: 58000013629124678}
   hpT: {fileID: 114000010577870838}
   attackSound: {fileID: 0}
-  attackDelay: 0.1
-  attackSpeed: 0.2
+  attackDelay: 0.07
+  attackSpeed: 0.1
   enemyHpTwo: {fileID: 0}
   emTwo: {fileID: 0}
   charAnimator: {fileID: 95000010344365076}
