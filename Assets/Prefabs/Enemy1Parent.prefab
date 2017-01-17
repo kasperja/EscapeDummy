@@ -325,7 +325,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000012814306434
 GameObject:
   m_ObjectHideFlags: 1
@@ -1076,6 +1076,7 @@ MonoBehaviour:
   blockOnce: 1
   blockActive: 1
   em: {fileID: 114000010420429406}
+  isAttackingEnemy: 0
 --- !u!114 &114000011764781940
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1135,7 +1136,7 @@ MonoBehaviour:
   attackFrequency: 2
   attackDamage: 50
   attackSpeed: 0.4
-  attackDelay: 0.2
+  attackDelay: 0.5
   attackSound: {fileID: 0}
   attackEnemyManager: {fileID: 114000011344686158}
   hitPos: {fileID: 1000013165348842}
@@ -1280,7 +1281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f40e8e72bf1286243a490425262d835d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1500
+  hitpoints: 3000
   maxHitpoints: 0
   healthBar: {fileID: 1000010239694234}
   healthBarRect: {fileID: 224000013157589300}
