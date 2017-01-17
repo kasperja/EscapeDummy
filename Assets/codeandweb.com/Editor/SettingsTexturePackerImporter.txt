@@ -2,6 +2,8 @@ version: 2
 importPivots: 1
 tpsheetFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+- Assets/Textures/Butcher/ButcherStrike_02-0.tpsheet
+- Assets/Textures/Butcher/ButcherStrike_02-1.tpsheet
 - Assets/Textures/EnemyWorkingSaw/idle-0.tpsheet
 - Assets/Textures/EnemyWorkingSaw/idle-1.tpsheet
 - Assets/Textures/EnemyWorkingSaw/idle-2.tpsheet
@@ -35,6 +37,8 @@ tpsheetFileNames:
 - Assets/Textures/EnemyWorkingSaw/working-8.tpsheet
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+- Assets/Textures/Butcher/ButcherStrike_02-0.png
+- Assets/Textures/Butcher/ButcherStrike_02-1.png
 - Assets/Textures/EnemyWorkingSaw/idle-0.png
 - Assets/Textures/EnemyWorkingSaw/idle-1.png
 - Assets/Textures/EnemyWorkingSaw/idle-2.png
@@ -68,6 +72,8 @@ textureFileNames:
 - Assets/Textures/EnemyWorkingSaw/working-8.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
 - 
 - 
 - 
