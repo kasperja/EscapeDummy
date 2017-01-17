@@ -21,6 +21,8 @@ public class AttackEnemyManager : MonoBehaviour {
 
 	public EnemyMovement em;
 
+	public bool isAttackingEnemy = false;
+
 	// Use this for initialization
 	private void Awake(){
 
@@ -45,7 +47,7 @@ public class AttackEnemyManager : MonoBehaviour {
 		}
 
 
-		if (randomAttackNumber >= 0.0f && randomAttackNumber < 0.1f && blockOnce && em.isInRange && blockActive && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.E))) {
+		if (randomAttackNumber >= 0.0f && randomAttackNumber <= 0.66f && !m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Attack2") && blockOnce && em.isInRange && blockActive && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.E))) {
 		
 
 			hpt.enemyBlock = true;
