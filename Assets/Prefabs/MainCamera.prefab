@@ -267,6 +267,7 @@ Transform:
   - {fileID: 4000013247882142}
   - {fileID: 449728}
   - {fileID: 4000012639620352}
+  - {fileID: 4000012008311494}
   - {fileID: 4000011292703292}
   - {fileID: 4000013681514040}
   m_Father: {fileID: 0}
@@ -1115,7 +1116,7 @@ GameObject:
   - 4: {fileID: 4000011292703292}
   - 82: {fileID: 82000011986642922}
   m_Layer: 0
-  m_Name: Block
+  m_Name: BlockMetal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1493,6 +1494,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1000012668786402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000012008311494}
+  - 82: {fileID: 82000013451026716}
+  m_Layer: 0
+  m_Name: Block
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1000012783412430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1801,7 +1818,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 437066}
-  m_RootOrder: 42
+  m_RootOrder: 43
 --- !u!4 &4000011360460280
 Transform:
   m_ObjectHideFlags: 1
@@ -1867,6 +1884,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 437066}
   m_RootOrder: 33
+--- !u!4 &4000012008311494
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012668786402}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 244, y: 1.2999997, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 437066}
+  m_RootOrder: 42
 --- !u!4 &4000012238618178
 Transform:
   m_ObjectHideFlags: 1
@@ -2048,7 +2078,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 437066}
-  m_RootOrder: 43
+  m_RootOrder: 44
 --- !u!4 &4000013685259790
 Transform:
   m_ObjectHideFlags: 1
@@ -3221,7 +3251,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 79c3093a1a09a2849a064c52b65a695c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c5449789eb62e9c4d8fdc0ee96914553, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.769
   m_Pitch: 1
@@ -3972,7 +4002,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
-  Pan2D: -0.361
+  Pan2D: -0.799
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -4038,6 +4068,80 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: e724d4116dd713e4a9a22988a1414b29, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!82 &82000013451026716
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012668786402}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 79c3093a1a09a2849a064c52b65a695c, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.769
   m_Pitch: 1
   Loop: 0
   Mute: 0

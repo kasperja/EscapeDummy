@@ -156,12 +156,13 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 				m_Anim.SetBool ("Block", true);
 				m_Anim.SetBool ("Hit", false);
 				blockBool = true;
-				StartCoroutine (waitBlock (0.5f));
+
 
 				blockCollider.GetComponent<BoxCollider2D> ().enabled = true;
-				UpperTarget.SetActive (false);
-				MiddleTarget.SetActive (false);
-				LowerTarget.SetActive (false);
+				UpperTarget.GetComponent<CircleCollider2D> ().enabled = false;
+				MiddleTarget.GetComponent<CircleCollider2D> ().enabled = false;
+				LowerTarget.GetComponent<CircleCollider2D> ().enabled = false;
+				StartCoroutine (waitBlock (0.4f));
 			
 			}
 
@@ -176,10 +177,10 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 				m_Anim.SetBool ("Block", true);
 				m_Anim.SetBool ("Hit", false);
 				blockBool = true;
-				StartCoroutine (waitBlock (0.5f));
 				UpperTarget.GetComponent<CircleCollider2D> ().enabled = false;
 				MiddleTarget.GetComponent<CircleCollider2D> ().enabled = false;
 				LowerTarget.GetComponent<CircleCollider2D> ().enabled = false;
+				StartCoroutine (waitBlock (0.4f));
 
 			}
 

@@ -35,6 +35,7 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 	public AttackManager lowDmg;
 
 	public ParticleSystem blockParticle;
+	public ParticleSystem blockParticleMetal;
 	public GameObject blockParticlePos;
 
 	public GameObject slashHigh;
@@ -47,6 +48,7 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 	public AudioSource deathSoundVoice;
 	public Animator enemy_Animator;
 	public bool isDeadEnemy = false;
+	public Animator mainCharAnimator;
 
 	public bool enemyBlock = false;
 	public bool blockOnce = true;
@@ -62,6 +64,7 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 	public GameObject kneeParticle;
 
 	public AudioSource blockSound;
+	public AudioSource blockSoundMetal;
 
 	// Use this for initialization
 	void Start () {
@@ -75,8 +78,17 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 
 		if ((highDmg.blockColEnemyEnable || middleDmg.blockColEnemyEnable || lowDmg.blockColEnemyEnable) && blockOnceTwo) {
 
-			blockSound.Play ();
-			blockParticle.Play ();
+			if (mainCharAnimator.GetCurrentAnimatorStateInfo (0).IsName ("Attack3")) {
+				
+				blockSoundMetal.Play ();
+				blockParticleMetal.Play ();
+
+			} else {
+				
+				blockSound.Play ();
+				blockParticle.Play ();
+
+			}
 			//Instantiate (blockParticle, blockParticlePos.transform.position, Quaternion.identity);
 			//iTween.MoveBy (enemyObj, new Vector3 (-20f, 0f, 0f), 0.3f);
 			//Debug.Log ("blockeedd");
@@ -88,9 +100,18 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 
 
 		if (enemyBlock && blockOnce) {
-		
-			blockSound.Play ();
-			blockParticle.Play ();
+			
+			if (mainCharAnimator.GetCurrentAnimatorStateInfo (0).IsName ("Attack3")) {
+
+				blockSoundMetal.Play ();
+				blockParticleMetal.Play ();
+
+			} else {
+
+				blockSound.Play ();
+				blockParticle.Play ();
+
+			};
 			StartCoroutine (waitBlock ());
 			enemyBlock = false;
 			blockOnce = false;
@@ -101,10 +122,16 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 			mainCharScript.musicIntro = true;
 			mainCharScript.FadeOutMusic (mainCharScript.musicScript.fightMusic, mainCharScript.musicVolumeFight);
 
+
+
 			if(!doorScript.doorOpen) mainCharScript.FadeInMusic (mainCharScript.musicScript.introMusic, mainCharScript.musicVolumeIntro);
 
 
 			if(dieOnce){
+				
+				blockParticle.gameObject.SetActive (false);
+				blockParticleMetal.gameObject.SetActive (false);
+
 				mainCharScript.musicScript.introMusic.Play ();
 				mainCharScript.musicScript.deathMusic.Play ();
 				enemyMoveScript.isFollowing = false;
