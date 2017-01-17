@@ -621,9 +621,14 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110442774}
-  m_Text: '[W] to strike
+  m_Text: 'Controls:
+
+
+    [W] to strike
 
     [E] to kick
+
+    [Q] to block
 
     [Space] to jump
 
