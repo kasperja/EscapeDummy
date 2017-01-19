@@ -252,7 +252,13 @@ using System.Collections;
 	}
 		private void Update(){
 
-
+		if (vSpeed < -0.0001f) {
+			m_AirControl = false;
+		} else {
+		
+			m_AirControl = true;
+		
+		}
 
 		if (sideArrowsBool && !climbingStairsBool) {
 		
@@ -308,7 +314,7 @@ using System.Collections;
 		
 		} else if(isJumpingFalseOnce && !endCamBool){
 		
-			if(!endCamBool)StartCoroutine (waitBeforeFallingActive (0.2f));
+			if(!endCamBool)StartCoroutine (waitBeforeFallingActive (0.02f));
 
 			isJumpingFalseOnce = false;
 		
@@ -900,7 +906,7 @@ using System.Collections;
                 }
             }
             // If the player should jump...
-	if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive  && !hpPlayerTotal.isDead && jumpOnce && !m_Attack3 && !m_Attack5)
+	if ((m_Grounded || (vSpeed < 0.0001f && vSpeed > -0.0001f)) && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive  && !hpPlayerTotal.isDead && jumpOnce && !m_Attack3 && !m_Attack5)
             {
 			if (!sideArrowsBool) {
 			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") && /*!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") && */ !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
@@ -1074,7 +1080,7 @@ using System.Collections;
 			}
 		}
 		// If the player should jump...
-	if (m_Grounded && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive && !hpPlayerTotal.isDead && jumpOnce && !m_Attack3 && !m_Attack5)
+	if ((m_Grounded || (vSpeed < 0.0001f && vSpeed > -0.0001f)) && jump && m_Anim.GetBool("Ground") && !climbingStairsBool && !hookJumpActive && !hpPlayerTotal.isDead && jumpOnce && !m_Attack3 && !m_Attack5)
 		{
 			if (!sideArrowsBool) {
 			if (jumpOnce && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack3") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack5") /* && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("StartJump") */ && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerJump") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Falling") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Landing")) {
