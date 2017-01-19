@@ -1173,6 +1173,13 @@ using System.Collections;
 		void OnTriggerEnter2D(Collider2D other)
 		{
 
+	if (other.gameObject.tag == "BoxTriggerJump") {
+
+		//iTween.PunchScale (box1, new Vector3 (1f, -1f, 0f), 0.5f);
+		m_Anim.SetBool("BoxesBool", true);
+
+	}
+
 	if (other.gameObject.tag == "RunTrigger") {
 
 		//iTween.PunchScale (box1, new Vector3 (1f, -1f, 0f), 0.5f);
@@ -1360,6 +1367,14 @@ if (other.gameObject.tag == "IntroMusicTrigger") {
 
 	void OnTriggerExit2D(Collider2D other)
 	{
+
+
+	if (other.gameObject.tag == "BoxTriggerJump") {
+
+		//iTween.PunchScale (box1, new Vector3 (1f, -1f, 0f), 0.5f);
+		m_Anim.SetBool("BoxesBool",false);
+
+	}
 
 	if (other.gameObject.tag == "RunTrigger") {
 
