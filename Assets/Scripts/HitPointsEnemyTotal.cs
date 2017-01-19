@@ -66,6 +66,8 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 	public AudioSource blockSound;
 	public AudioSource blockSoundMetal;
 
+	public GameObject camSawTriggerWhenDead;
+
 	// Use this for initialization
 	void Start () {
 
@@ -128,6 +130,8 @@ public class HitPointsEnemyTotal : MonoBehaviour {
 
 
 			if(dieOnce){
+
+				camSawTriggerWhenDead.SetActive (true);
 				
 				blockParticle.gameObject.SetActive (false);
 				blockParticleMetal.gameObject.SetActive (false);

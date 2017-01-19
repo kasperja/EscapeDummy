@@ -1275,8 +1275,8 @@ MonoBehaviour:
   attackCollider: {fileID: 58000011986404360}
   attackFrequency: 4
   attackDamage: 50
-  attackSpeed: 0.8
-  attackDelay: 0.5
+  attackSpeed: 0.4
+  attackDelay: 0.6
   attackSound: {fileID: 0}
   attackEnemyManager: {fileID: 114000011344686158}
   hitPos: {fileID: 1000013165348842}
@@ -1480,6 +1480,7 @@ MonoBehaviour:
   kneeParticle: {fileID: 0}
   blockSound: {fileID: 0}
   blockSoundMetal: {fileID: 0}
+  camSawTriggerWhenDead: {fileID: 0}
 --- !u!114 &114000013178140916
 MonoBehaviour:
   m_ObjectHideFlags: 1
