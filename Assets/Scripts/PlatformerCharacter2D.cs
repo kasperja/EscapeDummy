@@ -301,6 +301,16 @@ using System.Collections;
 
 		vSpeed = m_Rigidbody2D.velocity.y;
 
+		if (m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Falling") || m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Landing")) {
+		
+			m_Anim.SetBool ("isFalling", true);
+		
+		
+		} else {
+		
+			m_Anim.SetBool ("isFalling", false);
+
+		}
 
 		if (m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("StartJump") ||
 		    m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("PlayerJump") ||
@@ -1170,15 +1180,13 @@ using System.Collections;
 	
 	
 	}
+
+
+
 		void OnTriggerEnter2D(Collider2D other)
 		{
 
-	if (other.gameObject.tag == "BoxTriggerJump") {
 
-		//iTween.PunchScale (box1, new Vector3 (1f, -1f, 0f), 0.5f);
-		m_Anim.SetBool("BoxesBool", true);
-
-	}
 
 	if (other.gameObject.tag == "RunTrigger") {
 
@@ -1498,6 +1506,13 @@ if (other.gameObject.tag == "IntroMusicTrigger") {
 
 	void OnTriggerStay2D(Collider2D other)
 	{
+	if (other.gameObject.tag == "BoxTriggerJump") {
+
+		//iTween.PunchScale (box1, new Vector3 (1f, -1f, 0f), 0.5f);
+		m_Anim.SetBool ("BoxesBool", true);
+
+	}
+
 		if (other.gameObject.tag == "StairsTrigger") {
 
 			m_Grounded = true;
