@@ -254,7 +254,7 @@ using System.Collections;
 	}
 		private void Update(){
 
-		if (m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Falling")) {
+		if (m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Falling") || m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Landing")) {
 
 			groundTrigger.SetActive (true);
 
