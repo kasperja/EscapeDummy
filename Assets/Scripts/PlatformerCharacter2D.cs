@@ -206,6 +206,8 @@ using System.Collections;
 
 	public GameObject runTrigger;
 
+	public GameObject groundTrigger;
+
 	public GameObject boxWall;
         private void Awake()
         {
@@ -251,6 +253,18 @@ using System.Collections;
 
 	}
 		private void Update(){
+
+		if (m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Falling")) {
+
+			groundTrigger.SetActive (true);
+
+		} else {
+		
+			groundTrigger.SetActive (false);
+		
+		
+		}
+
 
 		if (vSpeed < -0.0001f) {
 			m_AirControl = false;
