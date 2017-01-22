@@ -208,6 +208,8 @@ using System.Collections;
 
 	public GameObject groundTrigger;
 
+	private float gravSmall = 38f;
+
 	public GameObject boxWall;
         private void Awake()
         {
@@ -276,11 +278,11 @@ using System.Collections;
 
 		if (sideArrowsBool && !climbingStairsBool) {
 		
-			gameObject.GetComponent<Rigidbody2D> ().gravityScale = 35;
+			gameObject.GetComponent<Rigidbody2D> ().gravityScale = gravSmall;
 		
 		}else if(!sideArrowsBool && !climbingStairsBool){
 
-			gameObject.GetComponent<Rigidbody2D> ().gravityScale = 30;
+			gameObject.GetComponent<Rigidbody2D> ().gravityScale = gravSmall;
 
 		}
 
@@ -302,7 +304,7 @@ using System.Collections;
 				gameObject.GetComponent<Rigidbody2D> ().gravityScale = gravOrig;
 			} else {
 			
-				gameObject.GetComponent<Rigidbody2D> ().gravityScale = 30;
+				gameObject.GetComponent<Rigidbody2D> ().gravityScale = gravSmall;
 			
 			}
 		}

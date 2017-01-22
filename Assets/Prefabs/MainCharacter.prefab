@@ -1723,7 +1723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxSpeed: 110
-  m_JumpForce: 1100
+  m_JumpForce: 1000
   m_CrouchSpeed: 0.25
   m_AirControl: 1
   m_WhatIsGround:
