@@ -1,15 +1,18 @@
 fileFormatVersion: 2
-guid: f75ce47784af066438579a0701aeac0b
-timeCreated: 1476879125
+guid: 7d76953f1f2a1e348b9af6ed1e0c30f7
+timeCreated: 1485169867
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Strike01-0005
-    21300002: Strike01-0006
-    21300004: Strike01-0007
-    21300006: Strike01-0008
-    21300008: Strike01-0009
-    21300010: Strike01-0010
+    21300000: Strike02-0001
+    21300002: Strike02-0006
+    21300004: Strike02-0008
+    21300006: Strike02-0013
+    21300008: Strike02-0014
+    21300010: Strike02-0005
+    21300012: Strike02-0007
+    21300014: Strike02-0009
+    21300016: Strike02-0010
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -59,80 +62,80 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Strike01-0005
+      name: Strike02-0005
       rect:
         serializedVersion: 2
         x: 1
-        y: 1176
-        width: 730
-        height: 871
+        y: 1181
+        width: 740
+        height: 866
       alignment: 9
-      pivot: {x: 0.7479452, y: 0.8335247}
+      pivot: {x: 0.7391892, y: 0.8314088}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: Strike01-0006
+      name: Strike02-0006
       rect:
         serializedVersion: 2
-        x: 733
-        y: 1182
+        x: 743
+        y: 1183
         width: 691
-        height: 865
+        height: 864
       alignment: 9
-      pivot: {x: 0.70767003, y: 0.83930635}
+      pivot: {x: 0.70767003, y: 0.8402778}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: Strike01-0007
+      name: Strike02-0007
       rect:
         serializedVersion: 2
-        x: 1426
-        y: 1130
-        width: 589
-        height: 917
+        x: 1436
+        y: 1139
+        width: 583
+        height: 908
       alignment: 9
-      pivot: {x: 0.65025467, y: 0.78625953}
+      pivot: {x: 0.6466552, y: 0.79405284}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: Strike01-0008
+      name: Strike02-0008
       rect:
         serializedVersion: 2
         x: 1
-        y: 224
+        y: 237
         width: 550
-        height: 904
+        height: 900
       alignment: 9
-      pivot: {x: 0.6272727, y: 0.795354}
+      pivot: {x: 0.6272727, y: 0.79444444}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: Strike01-0009
+      name: Strike02-0009
       rect:
         serializedVersion: 2
         x: 553
-        y: 237
-        width: 606
-        height: 891
+        y: 218
+        width: 616
+        height: 919
       alignment: 9
-      pivot: {x: 0.5346535, y: 0.8013468}
+      pivot: {x: 0.53084415, y: 0.77366704}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: Strike01-0010
+      name: Strike02-0010
       rect:
         serializedVersion: 2
-        x: 1161
-        y: 359
-        width: 773
-        height: 769
+        x: 1171
+        y: 187
+        width: 776
+        height: 950
       alignment: 9
-      pivot: {x: 0.37904269, y: 0.9310793}
+      pivot: {x: 0.3775773, y: 0.7505263}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1

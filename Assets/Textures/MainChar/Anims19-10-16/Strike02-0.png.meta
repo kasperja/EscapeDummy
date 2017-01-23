@@ -1,14 +1,19 @@
 fileFormatVersion: 2
-guid: 2fd4afb5a3ae4a94fae6d0368a3f4257
-timeCreated: 1476879014
+guid: 5fb1e234538db784bb08e97ca2e794ad
+timeCreated: 1485169864
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Strike01-0000
-    21300002: Strike01-0001
-    21300004: Strike01-0002
-    21300006: Strike01-0003
-    21300008: Strike01-0004
+    21300000: Strike02-0007
+    21300002: Strike02-0009
+    21300004: Strike02-0010
+    21300006: Strike02-0011
+    21300008: Strike02-0012
+    21300010: Strike02-0000
+    21300012: Strike02-0001
+    21300014: Strike02-0002
+    21300016: Strike02-0003
+    21300018: Strike02-0004
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -58,7 +63,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Strike01-0000
+      name: Strike02-0000
       rect:
         serializedVersion: 2
         x: 1
@@ -71,54 +76,54 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: Strike01-0001
+      name: Strike02-0001
       rect:
         serializedVersion: 2
         x: 328
-        y: 1170
+        y: 1171
         width: 629
-        height: 877
+        height: 876
       alignment: 9
-      pivot: {x: 0.9300477, y: 0.8084379}
+      pivot: {x: 0.9300477, y: 0.80936074}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: Strike01-0002
+      name: Strike02-0002
       rect:
         serializedVersion: 2
         x: 959
-        y: 1210
-        width: 759
-        height: 837
+        y: 1208
+        width: 768
+        height: 839
       alignment: 9
-      pivot: {x: 0.84453225, y: 0.83512545}
+      pivot: {x: 0.8333333, y: 0.83432657}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: Strike01-0003
+      name: Strike02-0003
       rect:
         serializedVersion: 2
         x: 1
-        y: 312
+        y: 313
         width: 807
-        height: 853
+        height: 852
       alignment: 9
-      pivot: {x: 0.7930607, y: 0.82766706}
+      pivot: {x: 0.7930607, y: 0.8286385}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: Strike01-0004
+      name: Strike02-0004
       rect:
         serializedVersion: 2
         x: 810
-        y: 315
-        width: 768
-        height: 850
+        y: 302
+        width: 770
+        height: 863
       alignment: 9
-      pivot: {x: 0.7708333, y: 0.84117645}
+      pivot: {x: 0.7688312, y: 0.829664}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
