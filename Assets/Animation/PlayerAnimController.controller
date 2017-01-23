@@ -738,7 +738,7 @@ AnimatorStateMachine:
     m_Position: {x: 180, y: 228, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102000011559789084}
-    m_Position: {x: 744, y: 60, z: 0}
+    m_Position: {x: 696, y: 72, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102000011606396916}
     m_Position: {x: 432, y: 168, z: 0}
@@ -822,9 +822,6 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 2
     m_ConditionEvent: BoxesBool
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: Ground
     m_EventTreshold: 0
   - m_ConditionMode: 3
     m_ConditionEvent: vSpeed

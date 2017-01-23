@@ -256,7 +256,7 @@ using System.Collections;
 	}
 		private void Update(){
 
-		if (m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Falling") || m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Landing")) {
+		if (m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Falling") || m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Landing") || m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("PlayerJump")) {
 
 			groundTrigger.SetActive (true);
 
