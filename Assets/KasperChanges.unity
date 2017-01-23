@@ -601,12 +601,12 @@ Prefab:
     - target: {fileID: 61000012041175984, guid: a083af41cb6d1334097dee68269a2f70,
         type: 2}
       propertyPath: m_Size.x
-      value: 1.2
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 61000012041175984, guid: a083af41cb6d1334097dee68269a2f70,
         type: 2}
       propertyPath: m_Offset.x
-      value: -0.1
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 61000012041175984, guid: a083af41cb6d1334097dee68269a2f70,
         type: 2}
