@@ -35,6 +35,10 @@ tpsheetFileNames:
 - Assets/Textures/EnemyWorkingSaw/working-6.tpsheet
 - Assets/Textures/EnemyWorkingSaw/working-7.tpsheet
 - Assets/Textures/EnemyWorkingSaw/working-8.tpsheet
+- Assets/Textures/MainChar/Anims19-10-16/Strike02-0.tpsheet
+- Assets/Textures/MainChar/Anims19-10-16/Strike02-1.tpsheet
+- Assets/Textures/MainChar/Anims19-10-16/Strike02-2.tpsheet
+- Assets/Textures/MainChar/Anims19-10-16/Strike02-3.tpsheet
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 - Assets/Textures/Butcher/ButcherStrike_02-0.png
@@ -70,8 +74,16 @@ textureFileNames:
 - Assets/Textures/EnemyWorkingSaw/working-6.png
 - Assets/Textures/EnemyWorkingSaw/working-7.png
 - Assets/Textures/EnemyWorkingSaw/working-8.png
+- Assets/Textures/MainChar/Anims19-10-16/Strike02-0.png
+- Assets/Textures/MainChar/Anims19-10-16/Strike02-1.png
+- Assets/Textures/MainChar/Anims19-10-16/Strike02-2.png
+- Assets/Textures/MainChar/Anims19-10-16/Strike02-3.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
+- 
+- 
 - 
 - 
 - 
