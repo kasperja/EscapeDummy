@@ -136,7 +136,7 @@ using System.Collections;
 	private float maxLerp = 400f;
 	private float minLerp = 0f;
 
-	private float waitJumpTime = 0.0f;
+	private float waitJumpTime = 0.15f;
 
 	public float velocity = 0f;
 
@@ -208,7 +208,7 @@ using System.Collections;
 
 	public GameObject groundTrigger;
 
-	private float gravSmall = 38f;
+	private float gravSmall = 45f;
 
 	public GameObject boxWall;
         private void Awake()
@@ -1139,7 +1139,7 @@ using System.Collections;
 						// Add a vertical force to the player.
 					m_Anim.SetBool ("StartJump", false);
 					m_Anim.SetBool("Ground", false);
-					StartCoroutine (waitJump (waitJumpTime));
+				StartCoroutine (waitJump (waitJumpTime));
 					jumpOnce = false;
 				}
 			} else {

@@ -114,7 +114,7 @@ public class HookHingeMovement : MonoBehaviour {
 			if (hookForceWaitBoolTwo && hookForceOnceTwo) {
 				SawMoverScript.hookDetected = false;
 				//SawMoverScript.hookDetectSpeed = -30f;
-				hookRb.AddForce (new Vector2 (-60f, 0), ForceMode2D.Impulse);
+				hookRb.AddForce (new Vector2 (-40f, 0), ForceMode2D.Impulse);
 				hookForceOnceTwo = false;
 				hookForceWaitBoolTwo = false;
 
@@ -124,7 +124,7 @@ public class HookHingeMovement : MonoBehaviour {
 			if (hookForceWaitBool) {
 				SawMoverScript.hookDetected = false;
 				//SawMoverScript.hookDetectSpeed = -30f;
-				hookRb.AddForce (new Vector2 (200f, 0), ForceMode2D.Impulse);
+				hookRb.AddForce (new Vector2 (160f, 0), ForceMode2D.Impulse);
 				hookForceOnce = false;
 				hookForceWaitBool = false;
 
@@ -260,7 +260,7 @@ public class HookHingeMovement : MonoBehaviour {
 		yield return new WaitForSeconds(moveTime/2f);
 		hookForceWaitBoolTwo = true;
 		//iTween.PunchScale (hookRb.gameObject, new Vector3 (0.5f, 1f, 0f), 1.5f);
-		yield return new WaitForSeconds(moveTime/2f);
+		yield return new WaitForSeconds(moveTime/3f);
 		hookForceWaitBool = true;
 		yield return new WaitForSeconds(moveTime);
 		hookForceOnce = true;
