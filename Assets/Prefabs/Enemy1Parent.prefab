@@ -1274,7 +1274,7 @@ MonoBehaviour:
   playOnceWaiter: 1
   attackCollider: {fileID: 58000011986404360}
   attackFrequency: 4
-  attackDamage: 50
+  attackDamage: 70
   attackSpeed: 0.4
   attackDelay: 0.6
   attackSound: {fileID: 0}
