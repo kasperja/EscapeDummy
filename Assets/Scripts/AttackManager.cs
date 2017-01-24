@@ -161,7 +161,7 @@ public class AttackManager : MonoBehaviour {
 			StartCoroutine (Waiter());
 		
 		}
-		if (activate && !hpT.isDead && playOnceMoveObj) {
+		if (activate && !hpT.isDead && playOnceMoveObj && charAnimator.GetCurrentAnimatorStateInfo (0).IsName ("Attack3") || charAnimator.GetCurrentAnimatorStateInfo (0).IsName ("Attack5")) {
 		
 
 			StartCoroutine (MoveObj (transform, transform.position, hitPos.transform.position, attackSpeed));

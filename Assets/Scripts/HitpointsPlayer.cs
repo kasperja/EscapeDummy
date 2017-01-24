@@ -13,6 +13,7 @@ public class HitpointsPlayer : MonoBehaviour {
 	public SawMover SawTrapDamage;
 	public float dmgMultiplier = 1.0f;
 	public GameObject hitParticle;
+	public ParticleSystem hitParticleSystem;
 	public PlatformerCharacter2D MainCharScript;
 
 	public GameObject graphicsObj;
@@ -64,7 +65,8 @@ public class HitpointsPlayer : MonoBehaviour {
 
 			}
 			hitPointsTotalScript.hitpoints -= enemyAttackDmgHigh.attackDamage * dmgMultiplier;
-			Instantiate (hitParticle, this.gameObject.transform.position, Quaternion.identity);
+			if(m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Hit") || !m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Attack3"))hitParticleSystem.Play ();
+			//Instantiate (hitParticle, this.gameObject.transform.position, Quaternion.identity);
 			playOnceHigh = false;
 
 		}else if (collider.tag == "EnemyAttackMiddle") {
@@ -89,7 +91,8 @@ public class HitpointsPlayer : MonoBehaviour {
 			
 			}
 			hitPointsTotalScript.hitpoints -= enemyAttackDmgMiddle.attackDamage * dmgMultiplier;
-			Instantiate (hitParticle, this.gameObject.transform.position, Quaternion.identity);
+			if(m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Hit") || !m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Attack3"))hitParticleSystem.Play ();
+			//Instantiate (hitParticle, this.gameObject.transform.position, Quaternion.identity);
 			playOnceMiddle = false;
 
 		}else if (collider.tag == "EnemyAttackLow") {
@@ -113,7 +116,8 @@ public class HitpointsPlayer : MonoBehaviour {
 
 			}
 			hitPointsTotalScript.hitpoints -= enemyAttackDmgLow.attackDamage * dmgMultiplier;
-			Instantiate (hitParticle, this.gameObject.transform.position, Quaternion.identity);
+			if(m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Hit") || !m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("Attack3"))hitParticleSystem.Play ();
+			//Instantiate (hitParticle, this.gameObject.transform.position, Quaternion.identity);
 			playOnceLow = false;
 		}
 		if (collider.tag == "SawCol" && !MainCharScript.hookJumpActive && !hitPointsTotalScript.isDead) {
