@@ -1076,7 +1076,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 3, y: 10}
+  m_Size: {x: 3.2, y: 10}
 --- !u!61 &61000012486132508
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -1433,7 +1433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f40e8e72bf1286243a490425262d835d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 8000
+  hitpoints: 10000
   maxHitpoints: 0
   healthBar: {fileID: 1000010239694234}
   healthBarRect: {fileID: 224000013157589300}
