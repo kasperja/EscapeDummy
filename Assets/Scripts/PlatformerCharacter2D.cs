@@ -301,7 +301,7 @@ using System.Collections;
 
 			if (sideArrowsBool) {
 
-				gameObject.GetComponent<Rigidbody2D> ().gravityScale = gravOrig;
+				gameObject.GetComponent<Rigidbody2D> ().gravityScale = gravSmall;
 			} else {
 			
 				gameObject.GetComponent<Rigidbody2D> ().gravityScale = gravSmall;
