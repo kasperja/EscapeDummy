@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class HitpointsPlayerTotal : MonoBehaviour {
 
-	public float hitpoints = 10000.0f;
+	public float hitpoints = 600f;
 	public AudioSource deathSound;
 	public ParticleSystem deathParticle;
 	public ParticleSystem deathBloodParticle;
@@ -42,17 +43,79 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 	public bool dieOnce = true;
 
 	public bool blockBool;
+
+	public SpriteRenderer hp1;
+	public SpriteRenderer hp2;
+	public SpriteRenderer hp3;
+	public SpriteRenderer hp4;
+	public SpriteRenderer hp5;
+	public SpriteRenderer hp6;
+	public SpriteRenderer hp7;
 	//public Animation blockAnim;
+
+	// public DontDestroyUI UI;
 
 	// Use this for initialization
 	void Start () {
 	
-		maxHitpoints = hitpoints;
+		// if(SceneManager.GetActiveScene ().name == "DummyOutside")UI = GameObject.Find ("DontDestroyValues").GetComponent<DontDestroyUI> ();
+
+		maxHitpoints = 600f;
+		// if (SceneManager.GetActiveScene ().name == "DummyOutside")hitpoints = UI.hpPlayer;
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+	//	UI.hpPlayer = hitpoints;
+
+		if (hitpoints == maxHitpoints) {
+		
+			hp1.color = new Color (255, 255, 255, 0.89f);
+			hp2.color = new Color (255, 255, 255, 0.89f);
+			hp3.color = new Color (255, 255, 255, 0.89f);
+			hp4.color = new Color (255, 255, 255, 0.89f);
+			hp5.color = new Color (255, 255, 255, 0.89f);
+			hp6.color = new Color (255, 255, 255, 0.89f);
+			hp7.color = new Color (255, 255, 255, 0.89f);
+
+
+		
+		}
+
+
+		if ((hitpoints / maxHitpoints) < (1f / 1f)) {
+			hp7.color = new Color (255, 255, 255, 0.0f);
+		} 
+
+		if ((hitpoints / maxHitpoints) < (1f-((1f / 7f)*1f))) {
+			hp6.color = new Color (255, 255, 255, 0.0f);
+		} 
+
+		if ((hitpoints / maxHitpoints) < (1f-((1f / 7f)*2f))) {
+			hp5.color = new Color (255, 255, 255, 0.0f);
+		} 
+
+		if ((hitpoints / maxHitpoints) < (1f-((1f / 7f)*3f))) {
+			hp4.color = new Color (255, 255, 255, 0.0f);
+		}
+
+		if ((hitpoints / maxHitpoints) < (1f-((1f / 7f)*4f))) {
+			hp3.color = new Color (255, 255, 255, 0.0f);
+		} 
+
+		if ((hitpoints / maxHitpoints) < (1f-((1f / 7f)*5f))) {
+			hp2.color = new Color (255, 255, 255, 0.0f);
+		} 
+
+		if ((hitpoints / maxHitpoints) < (1f-((1f / 7f)*6f))) {
+			
+			hp1.color = new Color (255, 255, 255, 0.0f);
+
+		}
+
+
 
 		if (hitpoints <= 0.0f) {
 

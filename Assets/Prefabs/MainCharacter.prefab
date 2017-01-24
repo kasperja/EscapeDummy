@@ -357,7 +357,6 @@ GameObject:
   - 4: {fileID: 4000013169084064}
   - 198: {fileID: 198000011834309084}
   - 199: {fileID: 199000011306441366}
-  - 114: {fileID: 114000010732363118}
   m_Layer: 0
   m_Name: BloodParticle
   m_TagString: Untagged
@@ -1095,7 +1094,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014109482998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -600, y: 22, z: 38.8}
+  m_LocalPosition: {x: 300, y: 22, z: 38.8}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -2029,6 +2028,13 @@ MonoBehaviour:
   isDead: 0
   dieOnce: 1
   blockBool: 0
+  hp1: {fileID: 0}
+  hp2: {fileID: 0}
+  hp3: {fileID: 0}
+  hp4: {fileID: 0}
+  hp5: {fileID: 0}
+  hp6: {fileID: 0}
+  hp7: {fileID: 0}
 --- !u!114 &114000010712801092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2056,18 +2062,6 @@ MonoBehaviour:
   scream1: {fileID: 0}
   scream2: {fileID: 0}
   scream3: {fileID: 0}
---- !u!114 &114000010732363118
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012220890728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 718e72c29399d164d95aae8b7916c45d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destoyAfterSeconds: 3
 --- !u!114 &114000011102813864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2236,6 +2230,7 @@ MonoBehaviour:
   hasKey: 0
   keySound: {fileID: 0}
   KeyReadyForPickup: 0
+  keyUI: {fileID: 0}
 --- !u!114 &114000013128530734
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5965,7 +5960,7 @@ ParticleSystem:
   moveWithTransform: 0
   autoRandomSeed: 1
   scalingMode: 1
-  randomSeed: -1476714274
+  randomSeed: -68660785
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -11092,7 +11087,7 @@ ParticleSystem:
   moveWithTransform: 0
   autoRandomSeed: 1
   scalingMode: 1
-  randomSeed: 421096971
+  randomSeed: 1256311405
   InitialModule:
     serializedVersion: 2
     enabled: 1

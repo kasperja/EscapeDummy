@@ -15,8 +15,17 @@ public class StartOutside : MonoBehaviour {
 	private float breathMax;
 
 
+
+	void Awake(){
+	
+
+	
+	}
+
 	// Use this for initialization
 	void Start () {
+
+
 
 		breathMax = runBreath.volume;
 
