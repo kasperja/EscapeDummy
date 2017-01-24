@@ -336,7 +336,7 @@ using System.Collections;
 		
 		) {
 		
-			m_Anim.SetBool ("isJumping", true);
+			//m_Anim.SetBool ("isJumping", true);
 		
 		} else if(isJumpingFalseOnce && !endCamBool){
 		
@@ -345,8 +345,8 @@ using System.Collections;
 			isJumpingFalseOnce = false;
 		
 		} else{
-
-			m_Anim.SetBool ("isJumping", true);
+			
+			// m_Anim.SetBool ("isJumping", true);
 
 
 		}
@@ -1835,11 +1835,11 @@ IEnumerator waitBeforeFallingActive(float waitTime){
 	yield return new WaitForSeconds (waitTime);
 		if (!endCamBool) {
 		
-			m_Anim.SetBool ("isJumping", false);
+			//m_Anim.SetBool ("isJumping", false);
 
 		} else {
 		
-		m_Anim.SetBool ("isJumping", true);
+		//m_Anim.SetBool ("isJumping", true);
 	
 	}
 		isJumpingFalseOnce = true;
