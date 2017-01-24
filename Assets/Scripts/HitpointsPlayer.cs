@@ -35,6 +35,10 @@ public class HitpointsPlayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+
+
+
 		randomScreamFloat = Random.Range (0f, 3f);
 	
 	}

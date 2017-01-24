@@ -226,6 +226,9 @@ using System.Collections;
 	private void Start()
 	{
 
+
+
+
 		gravOrig = gameObject.GetComponent<Rigidbody2D> ().gravityScale;
 		
 		musicVolumeIntro = musicScript.introMusic.volume;

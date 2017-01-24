@@ -8,6 +8,8 @@ public class PickUp : MonoBehaviour {
 	public AudioSource keySound;
 	public bool KeyReadyForPickup = false;
 
+	public GameObject keyUI;
+
 	void OnTriggerEnter2D(Collider2D other)
 	{
 
@@ -15,6 +17,7 @@ public class PickUp : MonoBehaviour {
 
 		if (other.gameObject.tag == "Key" && KeyReadyForPickup) {
 
+			keyUI.SetActive (true);
 			keySound.Play ();
 			hasKey = true;
 			Destroy (keyObj);
