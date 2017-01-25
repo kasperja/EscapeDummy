@@ -112,7 +112,7 @@ public class AttackManager : MonoBehaviour {
 		if (Input.GetKey (AttackKey) && /* playOnce && */ !mainCharScript.sideArrowsBool && !hpT.isDead && (charAnimator.GetBool("Attack3Bool") || charAnimator.GetBool("Attack5Bool") ) ) {
 
 			if (attackDone) {
-				iTween.MoveBy (charObj, new Vector3 (10f, 0f, 0f), 0.8f);
+				//iTween.MoveBy (charObj, new Vector3 (10f, 0f, 0f), 0.8f);
 			}
 			activate = true;
 			//StopCoroutine ("MoveObjTwo");
