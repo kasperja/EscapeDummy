@@ -20,6 +20,7 @@ public class AttackEnemy : MonoBehaviour {
 	public AudioSource attackSound;
 
 	public AttackEnemyManager attackEnemyManager;
+	public Animator enemyAnim;
 	public GameObject hitPos;
 	public GameObject beginPos;
 	public bool activeAttack = true;
@@ -83,7 +84,21 @@ public class AttackEnemy : MonoBehaviour {
 		float elapsedTime = 0.0f;
 
 
-		iTween.MoveTo (gameObject, endPos, time);
+		if (enemyAnim.GetCurrentAnimatorStateInfo (0).IsName ("Hit")) {
+		
+			activate = false;
+
+			StartCoroutine (MoveObjTwo (this.transform, this.transform.position, beginPos.transform.position, 1f));
+
+			yield return null;
+		
+		} else {
+			
+			iTween.MoveTo (gameObject, endPos, time);
+
+		}
+
+			
 
 		/*while (elapsedTime < time) {
 

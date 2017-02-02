@@ -1274,11 +1274,12 @@ MonoBehaviour:
   playOnceWaiter: 1
   attackCollider: {fileID: 58000011986404360}
   attackFrequency: 4
-  attackDamage: 100
+  attackDamage: 80
   attackSpeed: 0.4
   attackDelay: 0.6
   attackSound: {fileID: 0}
   attackEnemyManager: {fileID: 114000011344686158}
+  enemyAnim: {fileID: 95000010490676528}
   hitPos: {fileID: 1000013165348842}
   beginPos: {fileID: 1000012814306434}
   activeAttack: 0
@@ -1354,6 +1355,7 @@ MonoBehaviour:
   attackDelay: 0.2
   attackSound: {fileID: 0}
   attackEnemyManager: {fileID: 114000011344686158}
+  enemyAnim: {fileID: 95000010490676528}
   hitPos: {fileID: 1000014128722602}
   beginPos: {fileID: 1000011855302490}
   activeAttack: 0
@@ -1526,6 +1528,7 @@ MonoBehaviour:
   attackDelay: 0.2
   attackSound: {fileID: 0}
   attackEnemyManager: {fileID: 114000011344686158}
+  enemyAnim: {fileID: 95000010490676528}
   hitPos: {fileID: 1000014103375718}
   beginPos: {fileID: 1000011297579572}
   activeAttack: 1

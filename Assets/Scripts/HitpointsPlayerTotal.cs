@@ -89,27 +89,27 @@ public class HitpointsPlayerTotal : MonoBehaviour {
 			hp7.color = new Color (255, 255, 255, 0.0f);
 		} 
 
-		if ((hitpoints / maxHitpoints) < (1f-((1f / 7f)*1f))) {
+		if ((hitpoints / maxHitpoints) < (1f-((1f / 7f)*2f))) {
 			hp6.color = new Color (255, 255, 255, 0.0f);
 		} 
 
-		if ((hitpoints / maxHitpoints) < (1f-((1f / 7f)*2f))) {
+		if ((hitpoints / maxHitpoints) < (1f-((1f / 7f)*3f))) {
 			hp5.color = new Color (255, 255, 255, 0.0f);
 		} 
 
-		if ((hitpoints / maxHitpoints) < (1f-((1f / 7f)*3f))) {
+		if ((hitpoints / maxHitpoints) < (1f-((1f / 7f)*4f))) {
 			hp4.color = new Color (255, 255, 255, 0.0f);
 		}
 
-		if ((hitpoints / maxHitpoints) < (1f-((1f / 7f)*4f))) {
+		if ((hitpoints / maxHitpoints) < (1f-((1f / 7f)*5f))) {
 			hp3.color = new Color (255, 255, 255, 0.0f);
 		} 
 
-		if ((hitpoints / maxHitpoints) < (1f-((1f / 7f)*5f))) {
+		if ((hitpoints / maxHitpoints) < (1f-((1f / 7f)*6f))) {
 			hp2.color = new Color (255, 255, 255, 0.0f);
 		} 
 
-		if ((hitpoints / maxHitpoints) < (1f-((1f / 7f)*6f))) {
+		if ((hitpoints / maxHitpoints) <= 0f /* (1f-((1f / 7f)*6f))*/) {
 			
 			hp1.color = new Color (255, 255, 255, 0.0f);
 
