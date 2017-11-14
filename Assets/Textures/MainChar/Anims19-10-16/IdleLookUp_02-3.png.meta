@@ -16,14 +16,16 @@ TextureImporter:
     21300018: IdleLookUp_02-0045
     21300020: IdleLookUp_02-0046
     21300022: IdleLookUp_02-0047
-  serializedVersion: 2
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -33,23 +35,22 @@ TextureImporter:
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: 16
     mipBias: -1
-    wrapMode: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -57,10 +58,23 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 2400
+  alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -76,6 +90,7 @@ TextureImporter:
       pivot: {x: 1.1358025, y: 0.8240741}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleLookUp_02-0037
@@ -89,6 +104,7 @@ TextureImporter:
       pivot: {x: 1.1014925, y: 0.82790697}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleLookUp_02-0038
@@ -102,6 +118,7 @@ TextureImporter:
       pivot: {x: 1.1246201, y: 0.82502896}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleLookUp_02-0039
@@ -115,6 +132,7 @@ TextureImporter:
       pivot: {x: 1.1242424, y: 0.82502896}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleLookUp_02-0040
@@ -128,6 +146,7 @@ TextureImporter:
       pivot: {x: 1.1276596, y: 0.82502896}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleLookUp_02-0041
@@ -141,6 +160,7 @@ TextureImporter:
       pivot: {x: 1.1367781, y: 0.8306264}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleLookUp_02-0042
@@ -154,6 +174,7 @@ TextureImporter:
       pivot: {x: 1.1574074, y: 0.8308051}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleLookUp_02-0043
@@ -167,6 +188,7 @@ TextureImporter:
       pivot: {x: 1.1380368, y: 0.8259861}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleLookUp_02-0044
@@ -180,6 +202,7 @@ TextureImporter:
       pivot: {x: 1.1481482, y: 0.8269454}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleLookUp_02-0045
@@ -193,6 +216,7 @@ TextureImporter:
       pivot: {x: 1.1746032, y: 0.82734644}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleLookUp_02-0046
@@ -206,6 +230,7 @@ TextureImporter:
       pivot: {x: 1.1578947, y: 0.8350877}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleLookUp_02-0047
@@ -219,8 +244,10 @@ TextureImporter:
       pivot: {x: 1.1625, y: 0.8364486}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     outline: []
+    physicsShape: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

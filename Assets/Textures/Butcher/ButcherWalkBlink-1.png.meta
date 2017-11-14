@@ -21,14 +21,16 @@ TextureImporter:
     21300028: ButcherWalkBlink-0036
     21300030: ButcherWalkBlink-0037
     21300032: ButcherWalkBlink-0038
-  serializedVersion: 2
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -38,23 +40,22 @@ TextureImporter:
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: 16
     mipBias: -1
-    wrapMode: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -62,10 +63,23 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 1200
+  alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -81,6 +95,7 @@ TextureImporter:
       pivot: {x: 0.3761062, y: 0.6856618}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherWalkBlink-0023
@@ -94,6 +109,7 @@ TextureImporter:
       pivot: {x: 0.4092664, y: 0.6817326}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherWalkBlink-0024
@@ -107,6 +123,7 @@ TextureImporter:
       pivot: {x: 0.44444445, y: 0.68292683}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherWalkBlink-0025
@@ -120,6 +137,7 @@ TextureImporter:
       pivot: {x: 0.4099617, y: 0.704797}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherWalkBlink-0026
@@ -133,6 +151,7 @@ TextureImporter:
       pivot: {x: 0.42857143, y: 0.7011494}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherWalkBlink-0027
@@ -146,6 +165,7 @@ TextureImporter:
       pivot: {x: 0.444, y: 0.7079304}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherWalkBlink-0028
@@ -159,6 +179,7 @@ TextureImporter:
       pivot: {x: 0.42035398, y: 0.7024952}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherWalkBlink-0029
@@ -172,6 +193,7 @@ TextureImporter:
       pivot: {x: 0.4084507, y: 0.6908397}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherWalkBlink-0030
@@ -185,6 +207,7 @@ TextureImporter:
       pivot: {x: 0.3915344, y: 0.693609}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherWalkBlink-0031
@@ -198,6 +221,7 @@ TextureImporter:
       pivot: {x: 0.3834197, y: 0.6797753}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherWalkBlink-0032
@@ -211,6 +235,7 @@ TextureImporter:
       pivot: {x: 0.44067797, y: 0.6697936}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherWalkBlink-0033
@@ -224,6 +249,7 @@ TextureImporter:
       pivot: {x: 0.4642857, y: 0.67597765}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherWalkBlink-0034
@@ -237,6 +263,7 @@ TextureImporter:
       pivot: {x: 0.52401745, y: 0.671028}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherWalkBlink-0035
@@ -250,6 +277,7 @@ TextureImporter:
       pivot: {x: 0.50751877, y: 0.6791045}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherWalkBlink-0036
@@ -263,6 +291,7 @@ TextureImporter:
       pivot: {x: 0.5102041, y: 0.6864564}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherWalkBlink-0037
@@ -276,6 +305,7 @@ TextureImporter:
       pivot: {x: 0.5181818, y: 0.6998124}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherWalkBlink-0038
@@ -289,8 +319,10 @@ TextureImporter:
       pivot: {x: 0.50287354, y: 0.70229006}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     outline: []
+    physicsShape: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

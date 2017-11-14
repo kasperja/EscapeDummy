@@ -24,7 +24,7 @@ public class PlayerDetect : MonoBehaviour {
 			if (dangerSoundPlayOnce) {
 				DangerSound.Play ();
 				dangerSoundPlayOnce = false;
-				StartCoroutine (WaitForSound (10.0f));
+                if (gameObject.activeSelf) StartCoroutine (WaitForSound (10.0f));
 			}
 			Em.isFollowing = true;
 
@@ -37,7 +37,7 @@ public class PlayerDetect : MonoBehaviour {
 
 			Em.isFollowing = false;
 			dangerSoundPlayOnce = false;
-			StartCoroutine (WaitForSound (10.0f));
+			if(gameObject.activeSelf)StartCoroutine (WaitForSound (10.0f));
 
 		}
 	}
