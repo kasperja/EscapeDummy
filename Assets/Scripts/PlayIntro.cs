@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Video;
 
 public class PlayIntro : MonoBehaviour {
 
-	public MovieTexture introMovieTex;
+	public UnityEngine.Video.VideoPlayer introMovieTex;
 	public AudioSource introAudio;
 
 	public GameObject character;
@@ -74,7 +75,7 @@ public class PlayIntro : MonoBehaviour {
 
 	IEnumerator waitIntro(){
 	
-		yield return new WaitForSeconds (introMovieTex.duration +1f);
+		yield return new WaitForSeconds (30f);
 	
 
 		fadeAnim.SetBool ("Fade", true);
