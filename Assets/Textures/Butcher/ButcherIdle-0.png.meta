@@ -28,14 +28,16 @@ TextureImporter:
     21300042: ButcherIdle-0021
     21300044: ButcherIdle-0022
     21300046: ButcherIdle-0023
-  serializedVersion: 2
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -45,23 +47,22 @@ TextureImporter:
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: 16
     mipBias: -1
-    wrapMode: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -69,10 +70,23 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 1200
+  alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -88,6 +102,7 @@ TextureImporter:
       pivot: {x: 0.3940678, y: 0.6972477}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0001
@@ -101,6 +116,7 @@ TextureImporter:
       pivot: {x: 0.39506173, y: 0.6998158}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0002
@@ -114,6 +130,7 @@ TextureImporter:
       pivot: {x: 0.4, y: 0.68703705}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0003
@@ -127,6 +144,7 @@ TextureImporter:
       pivot: {x: 0.38912135, y: 0.69525546}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0004
@@ -140,6 +158,7 @@ TextureImporter:
       pivot: {x: 0.39240506, y: 0.6998158}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0005
@@ -153,6 +172,7 @@ TextureImporter:
       pivot: {x: 0.4, y: 0.7009174}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0006
@@ -166,6 +186,7 @@ TextureImporter:
       pivot: {x: 0.3900415, y: 0.6978022}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0007
@@ -179,6 +200,7 @@ TextureImporter:
       pivot: {x: 0.39256197, y: 0.6972477}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0008
@@ -192,6 +214,7 @@ TextureImporter:
       pivot: {x: 0.39183673, y: 0.7}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0009
@@ -205,6 +228,7 @@ TextureImporter:
       pivot: {x: 0.39344263, y: 0.70686454}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0010
@@ -218,6 +242,7 @@ TextureImporter:
       pivot: {x: 0.38866398, y: 0.6998158}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0011
@@ -231,6 +256,7 @@ TextureImporter:
       pivot: {x: 0.38866398, y: 0.7037037}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0012
@@ -244,6 +270,7 @@ TextureImporter:
       pivot: {x: 0.38554215, y: 0.7063197}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0013
@@ -257,6 +284,7 @@ TextureImporter:
       pivot: {x: 0.396, y: 0.7063197}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0014
@@ -270,6 +298,7 @@ TextureImporter:
       pivot: {x: 0.3774319, y: 0.69906545}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0015
@@ -283,6 +312,7 @@ TextureImporter:
       pivot: {x: 0.39271256, y: 0.6998124}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0016
@@ -296,6 +326,7 @@ TextureImporter:
       pivot: {x: 0.38735178, y: 0.7053232}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0017
@@ -309,6 +340,7 @@ TextureImporter:
       pivot: {x: 0.39112905, y: 0.70817846}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0018
@@ -322,6 +354,7 @@ TextureImporter:
       pivot: {x: 0.37307692, y: 0.70555556}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0019
@@ -335,6 +368,7 @@ TextureImporter:
       pivot: {x: 0.39271256, y: 0.7094972}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0020
@@ -348,6 +382,7 @@ TextureImporter:
       pivot: {x: 0.38492063, y: 0.69906545}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0021
@@ -361,6 +396,7 @@ TextureImporter:
       pivot: {x: 0.3809524, y: 0.7042514}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0022
@@ -374,6 +410,7 @@ TextureImporter:
       pivot: {x: 0.38247013, y: 0.7037037}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherIdle-0023
@@ -387,8 +424,10 @@ TextureImporter:
       pivot: {x: 0.39344263, y: 0.702952}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     outline: []
+    physicsShape: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

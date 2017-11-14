@@ -16,14 +16,16 @@ TextureImporter:
     21300018: IdleBlink lookback_02-0009
     21300020: IdleBlink lookback_02-0010
     21300022: IdleBlink lookback_02-0011
-  serializedVersion: 2
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -33,23 +35,22 @@ TextureImporter:
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: 16
     mipBias: -1
-    wrapMode: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -57,10 +58,23 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 2400
+  alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -76,6 +90,7 @@ TextureImporter:
       pivot: {x: 1.1076924, y: 0.80795455}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleBlink lookback_02-0001
@@ -89,6 +104,7 @@ TextureImporter:
       pivot: {x: 1.106383, y: 0.8090909}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleBlink lookback_02-0002
@@ -102,6 +118,7 @@ TextureImporter:
       pivot: {x: 1.1165644, y: 0.806342}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleBlink lookback_02-0003
@@ -115,6 +132,7 @@ TextureImporter:
       pivot: {x: 1.0857989, y: 0.8081725}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleBlink lookback_02-0004
@@ -128,6 +146,7 @@ TextureImporter:
       pivot: {x: 1.1383648, y: 0.8100114}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleBlink lookback_02-0005
@@ -141,6 +160,7 @@ TextureImporter:
       pivot: {x: 1.1017964, y: 0.81093395}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleBlink lookback_02-0006
@@ -154,6 +174,7 @@ TextureImporter:
       pivot: {x: 1.125, y: 0.8072562}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleBlink lookback_02-0007
@@ -167,6 +188,7 @@ TextureImporter:
       pivot: {x: 1.1253823, y: 0.806342}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleBlink lookback_02-0008
@@ -180,6 +202,7 @@ TextureImporter:
       pivot: {x: 1.1276596, y: 0.8127854}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleBlink lookback_02-0009
@@ -193,6 +216,7 @@ TextureImporter:
       pivot: {x: 1.1363636, y: 0.810872}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleBlink lookback_02-0010
@@ -206,6 +230,7 @@ TextureImporter:
       pivot: {x: 1.158385, y: 0.8183908}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: IdleBlink lookback_02-0011
@@ -219,8 +244,10 @@ TextureImporter:
       pivot: {x: 1.1380368, y: 0.8100114}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     outline: []
+    physicsShape: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

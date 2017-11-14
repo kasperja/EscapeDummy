@@ -1,4 +1,6 @@
-﻿// Upgrade NOTE: replaced 'glstate.matrix.mvp' with 'UNITY_MATRIX_MVP'
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+// Upgrade NOTE: replaced 'glstate.matrix.mvp' with 'UNITY_MATRIX_MVP'
 
 //Shader "Custom/FlagWave" {
 	// Original shader by cboe - Mar, 23, 2009
@@ -61,7 +63,7 @@
 			v.vertex.y = sin(t*3.12 + sinOff)*fx*0.5 - fy*0.9;
 			v.vertex.z -= sin(t*2.2 + sinOff)*fx*0.2;
 
-			o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+			o.pos = UnityObjectToClipPos(v.vertex);
 			o.uv = v.texcoord;
 
 			return o;

@@ -24,14 +24,16 @@ TextureImporter:
     21300034: ButcherStrike02-0024
     21300036: ButcherStrike02-0030
     21300038: ButcherStrike02-0031
-  serializedVersion: 2
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -41,23 +43,22 @@ TextureImporter:
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: 16
     mipBias: -1
-    wrapMode: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -65,10 +66,23 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 1200
+  alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -84,6 +98,7 @@ TextureImporter:
       pivot: {x: 0.5255255, y: 0.6938776}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherStrike02-0017
@@ -97,6 +112,7 @@ TextureImporter:
       pivot: {x: 0.45519713, y: 0.69500923}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherStrike02-0018
@@ -110,6 +126,7 @@ TextureImporter:
       pivot: {x: 0.27299702, y: 0.69906545}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherStrike02-0019
@@ -123,6 +140,7 @@ TextureImporter:
       pivot: {x: 0.2857143, y: 0.7072243}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherStrike02-0020
@@ -136,6 +154,7 @@ TextureImporter:
       pivot: {x: 0.2857143, y: 0.70699435}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherStrike02-0021
@@ -149,6 +168,7 @@ TextureImporter:
       pivot: {x: 0.3068493, y: 0.7104762}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherStrike02-0022
@@ -162,6 +182,7 @@ TextureImporter:
       pivot: {x: 0.30167598, y: 0.71132076}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherStrike02-0023
@@ -175,6 +196,7 @@ TextureImporter:
       pivot: {x: 0.27142859, y: 0.707457}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherStrike02-0024
@@ -188,6 +210,7 @@ TextureImporter:
       pivot: {x: 0.27355623, y: 0.7036329}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherStrike02-0025
@@ -201,6 +224,7 @@ TextureImporter:
       pivot: {x: 0.2900302, y: 0.70699435}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherStrike02-0026
@@ -214,6 +238,7 @@ TextureImporter:
       pivot: {x: 0.3147541, y: 0.7015209}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherStrike02-0027
@@ -227,6 +252,7 @@ TextureImporter:
       pivot: {x: 0.3147541, y: 0.69402987}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherStrike02-0028
@@ -240,6 +266,7 @@ TextureImporter:
       pivot: {x: 0.33333334, y: 0.6987061}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherStrike02-0029
@@ -253,6 +280,7 @@ TextureImporter:
       pivot: {x: 0.43722942, y: 0.6972477}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherStrike02-0030
@@ -266,6 +294,7 @@ TextureImporter:
       pivot: {x: 0.40772533, y: 0.702952}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     - serializedVersion: 2
       name: ButcherStrike02-0031
@@ -279,8 +308,10 @@ TextureImporter:
       pivot: {x: 0.3940678, y: 0.6972477}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: -1
     outline: []
+    physicsShape: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
